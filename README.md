@@ -37,3 +37,4 @@ The problem I would like to try to solve will be implementing zero trust for (a)
 - https://en.wikipedia.org/wiki/List_of_most-produced_aircraft
 - https://en.wikipedia.org/wiki/Cirrus_SR22
 - https://cirrusaircraft.com/wp-content/uploads/2021/11/2022-SR22T-International-v4.pdf
+- https://www.instructables.com/Interfacing-Electronic-Circuits-to-Arduinos/
