@@ -38,3 +38,5 @@ The problem I would like to try to solve will be implementing zero trust for (a)
 - https://en.wikipedia.org/wiki/Cirrus_SR22
 - https://cirrusaircraft.com/wp-content/uploads/2021/11/2022-SR22T-International-v4.pdf
 - https://www.instructables.com/Interfacing-Electronic-Circuits-to-Arduinos/
+- https://read.pudn.com/downloads111/ebook/462196/429P1-17_Errata1.pdf <- Use the wayback machine for this one. Got it from the next source.
+- https://aviation.stackexchange.com/questions/65518/what-are-the-major-aircraft-systems-lrus-using-the-arinc429-protocol
