@@ -40,3 +40,9 @@ The problem I would like to try to solve will be implementing zero trust for (a)
 - https://www.instructables.com/Interfacing-Electronic-Circuits-to-Arduinos/
 - https://read.pudn.com/downloads111/ebook/462196/429P1-17_Errata1.pdf <- Use the wayback machine for this one. Got it from the next source.
 - https://aviation.stackexchange.com/questions/65518/what-are-the-major-aircraft-systems-lrus-using-the-arinc429-protocol
+- https://www.sciencedirect.com/science/article/pii/S0167404820303709
+- https://sitaltech.com/understanding-cyber-attacks-on-mil-std-1553-buses/
+- https://link.springer.com/chapter/10.1007/978-3-030-59013-0_3
+- https://www.csoonline.com/article/644636/greatest-cyber-threats-to-aircraft-come-from-the-ground.html
+- https://www.rapid7.com/research/report/investigating-can-bus-network-integrity-in-avionics-systems/
+- https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/
