@@ -1,0 +1,9 @@
+Project topic is a good and the problem is well motivated. However, the scope of the project seems too large for in-depth exploration of a set of questions that are answered by the project. 
+
+There should be two parts to the project. First, demonstrates vulnerabilities, which are your first 3 deliverables. The second one focuses on defenses against potential attacks. I would suggest that you either focus on 4 or 5. 
+
+I am also concerned about the viability of the physical lab setting mentioned in the proposal. What would it help you demonstrate beyond what can be done with the simulation? 
+
+Please keep these questions/concerns in mind as you revise the proposal. Also, keep in mind that we prefer more in-depth exploration for a fewer threats/attacks than a broad survey. 
+
+Finally, do discuss the threat model, threat actors and their motivation, any example attacks that may be out there.
