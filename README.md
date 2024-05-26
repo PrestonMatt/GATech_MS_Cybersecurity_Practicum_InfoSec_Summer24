@@ -8,6 +8,9 @@ The problem I would like to try to solve will be implementing zero trust for (a)
 - bus IDS device with similar ethos/functionality to Snort
 - Machine Learning AI -in-the-loop IPS that learns normal traffic and catches & stops malicious (but still bus compliant) commands.
 
+### Proposal
+todo
+
 ### Research
 - https://forums.ni.com/t5/Example-Code/Arinc-429-Rx-Implementation-in-LabVIEW-FPGA/ta-p/3507624
 - https://github.com/aeroneous/PyARINC429
