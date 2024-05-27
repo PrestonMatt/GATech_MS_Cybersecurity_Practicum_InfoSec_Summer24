@@ -33,7 +33,20 @@ I expect to develop and deliver the following by the conclusion of this practicu
 1. A simulated environment with visualization and code-based interfacing tools of an ARINC 429 bus. This would be an extension of current free and open-source resources for ARINC, such as pyARINC 429 (https://github.com/aeroneous/PyARINC 429). Current ARINC 429 simulation is non-existent.
 2. A simple hack/attack implemented on this simulation that can demonstrate the impact of various scenarios. It will assume compromise of the plane to ARINC 429 components – as one should with a Zero Trust mindset. For example, assuming the ARINC 429 transceiver component has been compromised, the hack would then be getting that component to send out valid commands with catastrophic effects, like turning the engines off or putting the plane into a downward trajectory.  Points 1 and 2 combine to a digital twin that includes malicious commands for the simulated ARINC 429.
 #### Part 2: Defending ARINC 429 Against Attacks:
-3. A rules-based intrusion detection unit for ARINC 429 data frames. This solution would have expected behaviors coded in, allowing it to show what the bus should look like devoid of an attacker at any moment, and allowing a human to be a manual monitor of the bus. Additionally, it could allow for an add-on machine-learning agent that stops malicious commands. This machine-learning add-on would be sorting each bus command into categories of effects (or plane behaviors) and then flagging and stopping dangerous ones. Each part of the defense will be evaluated on its reliability and minimal impact on system robustness, and computing/resource needs.
+3. A rules-based intrusion detection unit for ARINC 429 data frames. This solution would have expected behaviors coded in, allowing it to show what the bus should look like devoid of an attacker at any moment, and allowing a human to be a manual monitor of the bus. Additionally, it could allow for an add-on machine-learning agent that stops malicious commands. This machine-learning add-on would be sorting each bus command into categories of effects (or plane behaviors) and then flagging and stopping dangerous ones. Each part of the defense will be evaluated on its reliability and minimal impact on system robustness, and computing/resource needs. This IDS should be able to:  
+a. log alarms based on transmission ID. 
+b. log alarms based on parity, and if parity is correct. 
+c.  log alarms based on sign/statis matrix: 
+i.  If in normal operation (and then also if it indicates N/S, E/W orientation). 
+ii. If in functional test mode. 
+iii. If in failure warning mode.
+iv. If in no computed data mode. 
+d. log alarms based on data. 
+i. e.g. things like plane direction or other commands. 
+ii.  combine with previous frames to see for kinetic failure. 
+e. log alarms based on Source/Dest field. 
+f. log alarms based on Label (data type). 
+g. create a mode that can reset the bus upon any of these alarms. 
   
 From NIST Special Publication 800-207, there are seven basic tenets of zero trust. In my model and defense, I plan to address some of them:  
 1. “All data sources and computing services are considered resources.” In my model, I am considering LRUs, external connections and the bus itself as resources (logically speaking) to fly a plane.  
