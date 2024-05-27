@@ -26,7 +26,7 @@ def nextStep(points) -> list:
     #    "pitch":0.0,
     #    "Step":0,
     #    "Forward Velocity":31.3,
-    #    "Rotor":True
+    #    "Jet":True
     #}
 
     altitude = points["altitude"]
@@ -37,10 +37,10 @@ def nextStep(points) -> list:
     pitch = points["pitch"]
     step = points["Step"]
     forward_velocity = points["Forward Velocity"]
-    rotor_power = points["Rotor"]
+    jet_power = points["Jet"]
 
     interval_time = 0.1 # in seconds, this is the time interval
-    forward_velocity = forward_v(rotor_power, forward_velocity, 0.1*step)
+    forward_velocity = forward_v(jet_power, forward_velocity, 0.1*step)
 
     # Contant is gravity:
     grav = 9.8
@@ -49,9 +49,9 @@ def nextStep(points) -> list:
     #yaw_radians = math.radians(yaw)
     #roll_radians = math.radians(roll)
 
-    # Average RC Velocity is about 70 MPH
-    # Source: https://rcmodelhub.com/how-fast-do-rc-planes-go/
-    # This is close to 31.2928 per second
+    # Cruise velocity for B787 about 560 MPH
+    # Source: https://en.wikipedia.org/wiki/Boeing_787_Dreamliner#Specifications -> Cruise: Mach 0.85 (488 kn; 903 km/h) -> 903km/h = 561.0982mph
+    # this is 250.83 meters per second
 
     # Roll influences yaw. For example, if the roll is positive, the plane is tilting its right wing down, so it will turn (i.e. yaw) to the right.
     # If the roll is negative, it is tilting its left wing down so it will turn to the left.
@@ -114,17 +114,17 @@ def nextStep(points) -> list:
         "pitch":round(pitch,4),
         "Step":step + 1,
         "Forward Velocity":round(forward_velocity,4),
-        "Rotor":rotor_power
+        "Jet":jet_power
     }
     time.sleep(0.1)
 
     return(newPosition)
 
-def forward_v(rotor_on, forward_velocity, time):
+def forward_v(jet_on, forward_velocity, time):
     # Acceleration & Deceleration shouold be an exponential curve
     # In the form of v = t^2 + mt + b
     # Where t is time, b is the starting velocity
-    if(rotor_on == True):
+    if(jet_on == True):
         shape = 0.03
         middle = 0.5
     else:
@@ -134,20 +134,20 @@ def forward_v(rotor_on, forward_velocity, time):
     #print(diff)
     forward_velocity += diff
 
-    if(forward_velocity <= 67.05 and forward_velocity >= 0.0):
+    if(forward_velocity <= 265.55 and forward_velocity >= 0.0):
         return(forward_velocity)
-    elif(forward_velocity > 67.05):
+    elif(forward_velocity > 265.55):
         #return(67.05)
-        forward_velocity = 67.05
+        forward_velocity = 265.55
     elif(forward_velocity < 0.0):
         #return(0.0)
         forward_velocity = 0.0
     return(forward_velocity)
-    # 31.3 is the default starting
+    # 250.83 is the default starting
     # This translates to velocity = t^2 + 1/2t + previous velocity.
 
-    # The only difference is that if the rotor is off, it is decaying and if it's on, it's growing
-    # There is a ceiling and floor to this function though: floor is 0.01, and ceiling is 67.05 meters per second
+    # The only difference is that if the jet is off, it is decaying and if it's on, it's growing
+    # There is a ceiling and floor to this function though: floor is 0.01, and ceiling is 265.55 meters per second
 
 def refresh_graph(ax, parameters):
 
@@ -182,19 +182,19 @@ def refresh_graph(ax, parameters):
 
 def crash_plane(telemetry):
     # two main ways to crash the plane
-    # 1: Kill power to the rotor indefinitely
+    # 1: Kill power to the jet indefinitely
     # 2: Angle pitch downward with bounds: (0.0, -pi/2]
-    # 3: (Hidden) Both!
+    # 3: Both!
     random_decision = random.choice([True, False])
 
     """
     if(random_decision):
-        telemetry["Rotor"] = False
+        telemetry["Jet"] = False
     else:
         telemetry["pitch"] = -1.0 * (np.pi / 4)
     """
 
-    telemetry["Rotor"] = False
+    telemetry["Jet"] = False
     telemetry["pitch"] = -1.0 * (np.pi / 4)
 
     return(telemetry)
@@ -204,14 +204,14 @@ def crash_plane(telemetry):
 def circle_test(telemetry):
     telemetry_ = telemetry.copy()
     
-    rotor_on = telemetry["Rotor"]
+    jet_on = telemetry["Jet"]
     step = telemetry["Step"]
     roll = telemetry["roll"]
 
     if(step <= 5):
         telemetry_["roll"] += np.pi/10.0
 
-    telemetry_["Rotor"] = not telemetry["Rotor"]
+    telemetry_["Jet"] = not telemetry["Jet"]
     telemetry_["pitch"] = 0.1
 
     # 1 out 250 chance to crash the plane during the test
@@ -251,18 +251,18 @@ def collect_commands_from_flight_controll_dot_c(telemetry):
 
 def test():
 
-    print("You have 1 minute to try and crash this plane.")
+    print("Starting flying sim.")
     
     starting_point = {
-        "altitude":100.0,
+        "altitude":500.0,
         "X":0.0,
         "Y":0.0,
         "roll":0.0,
         "yaw":np.pi / 4,
         "pitch":np.pi / 100,
         "Step":0,
-        "Forward Velocity":31.3,
-        "Rotor":True
+        "Forward Velocity":250.83,
+        "Jet":True
     }
     
     points_3d = [[
@@ -283,14 +283,14 @@ def test():
         plt.pause(0.1)
 
         # Inject data we want to mess with:
-        # Get commands from control card!
+        # Get commands from Flight Management Computer
         starting_point = collect_commands_from_flight_controll_dot_c(starting_point)
         """
         turning_flag = False
         
         starting_point["pitch"] = 0.1
         if(x % 1 == 0):
-            starting_point["Rotor"] = not starting_point["Rotor"]
+            starting_point["Jet"] = not starting_point["Jet"]
         if(x <= 5):
             starting_point["roll"] += np.pi / 10
         if(x % 5 == 0):
@@ -302,7 +302,7 @@ def test():
             starting_point["roll"] -= np.pi / 100
         
         if(x >= 250):
-            starting_point["Rotor"] = False
+            starting_point["Jet"] = False
         """
 
         #starting_point["pitch"] -= np.pi / 100.0
@@ -312,11 +312,10 @@ def test():
 
         # check if the plane is downed:
         if(starting_point["altitude"] <= 0.0):
-            print("Congratualtions! You got this challenge for the CTF!")
+            print("plane at altitude zero, crash occured.")
             break
-            #print("cat /proc/flag")
             
-    print("600 Iterations Done! OR plane crashed")
+    print("600 Iterations Done!")
     plt.show()
 
 if __name__ == "__main__":
@@ -331,14 +330,14 @@ if __name__ == "__main__":
         "pitch":np.pi / 10,
         "Step":0,
         "Forward Velocity":31.3,
-        "Rotor":True
+        "Jet":True
     }
 
     this_point = starting_point
     for x in range(1000):
         this_point = nextStep(this_point)
         if(x > 50):
-            this_point["Rotor"] = False
+            this_point["Jet"] = False
         print(this_point)
     """
     
