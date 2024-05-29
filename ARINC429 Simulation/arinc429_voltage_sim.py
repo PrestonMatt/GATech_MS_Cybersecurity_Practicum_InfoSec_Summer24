@@ -15,5 +15,19 @@ import random
 def main():
     print("test")
 
+def create_ARINC429_one_highspeed(usec_start):
+    # first [0.5,2.0] usec
+    v_rise =[]
+    rise_usecs = random.randint(2,4) / 2
+    # next [4.5,5.5] usec
+    v_stab = []
+    stab_usecs = random.randint(9,11) / 2
+    # next [0.5,2.0] usec
+    v_fall = []
+    fall_usecs = random.randint(2,4) / 2
+    # final [4.5,5.5] usec
+    v_null = []
+    null_usecs = random.randint(9,11) / 2
+
 if __name__ == "__main__":
     main()
