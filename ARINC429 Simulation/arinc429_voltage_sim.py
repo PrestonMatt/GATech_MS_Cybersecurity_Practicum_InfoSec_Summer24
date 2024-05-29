@@ -13,7 +13,7 @@ import random
 # LOW   (i.e. 0) =>     [-13.0V, - 6.5V]
 
 def main():
-    print("Test being")
+    print("Test begin")
     test_all_functions()
 
 def test_all_functions():
@@ -25,10 +25,14 @@ def test_all_functions():
     #graph_words(create_ARINC429_zero(0,True),figtitle = "Zero High speed Bit")
     #print("Testing LOW SPEED 0 bit.")
     #graph_words(create_ARINC429_zero(0,False),figtitle = "Zero Low speed Bit")
-    print("Creating Random High Speed Word.")
-    graph_words(create_random_word(True))
-    print("Creating Random Low Speed Word.")
-    graph_words(create_random_word(False),tickrate = 50)
+    #print("Creating Random High Speed Word.")
+    #graph_words(create_random_word(True))
+    #print("Creating Random Low Speed Word.")
+    #graph_words(create_random_word(False),tickrate = 50)
+    print("Testing with given LS word of: 0b11111101000000000000001000110000")
+    graph_words(frombitstring_to_signal(False,0b11111101000000000000001000110000,0),figtitle="Set Word Engine Reverse Thrust 70%",tickrate=50)
+    print("Testing with null time of 4 bits in between random words, 5 words, HS.")
+    graph_words(generate_n_random_words(True),figtitle="Three Random Words")
 
 def graph_words(word,figtitle = "ARINC 429 Word with Random Bits",tickrate=5):
     ts = word[0]
@@ -169,6 +173,30 @@ def create_ARINC429_zero(usec_start,lh_speed):
 
     return(ts,zero_voltages)
 
+def create_null_time_between_words(hl_speed,usec_start):
+    # "Sequential words are separated by at least 4-bit times of null or zero voltage"
+    # zero voltage defined as: [-0.5, +0.5] volts
+
+    # HIGH SPEED BIT TIME -> 10 usec +/- 2.5% -> [7.5, 12.5] usec
+    # LOW SPEED BIT TIME -> 84 usec +/- 2.5% [82, 86] usec
+
+    null_time = 0
+    for x in range(4):
+        if(hl_speed): # HIGH SPEED
+            null_time += random.randint(15,25) / 2
+        else: # LOW SPEED
+            null_time += random.randint(82,86)
+
+    t_usecs = np.arange(usec_start,
+                         usec_start + null_time,
+                         0.05) # sample every 1/2 microsecond.
+    vs = []
+    for x in range(len(t_usecs)): # generate voltage samples
+        vs.append(random.uniform(-0.5,0.5))
+
+    voltages = np.array(vs)
+    return(t_usecs,voltages)
+
 def create_random_word(lh_speed):
     voltages = np.array([0.0])
     times = np.array([0.0])
@@ -185,6 +213,47 @@ def create_random_word(lh_speed):
 
         voltages = np.concatenate((voltages,vs), axis = 0)
         times = np.concatenate((times, ts), axis = 0)
+
+    return(times,voltages)
+
+def frombitstring_to_signal(hl_speed, bits, usec_start):
+    # bits -> int(0b01010101,2)
+
+    voltages = np.array([0.0])
+    times = np.array([usec_start])
+
+    o_bits = bin(bits)[2:] # cut out 0b
+    for o_bit in o_bits:
+        o_bit = int(o_bit,2)
+
+        vs = []
+        ts = []
+        if(o_bit): # 1
+            if(hl_speed): # HIGH SPEED
+                ts, vs = create_ARINC429_one_highspeed(times[-1] + 0.5)
+            else: # LOW SPEED
+                ts, vs = create_ARINC429_one_lowspeed(times[-1] + 0.5)
+        else: # 0
+            ts, vs = create_ARINC429_zero(times[-1] + 0.5,hl_speed)
+        voltages =  np.concatenate((voltages,vs), axis = 0)
+        times = np.concatenate((times, ts), axis = 0)
+
+    return(times,voltages)
+
+def generate_n_random_words(hl_speed,n=5):
+    voltages = np.array([0.0])
+    times = np.array([0.0])
+    for w in range(n):
+        randomword = random.getrandbits(32)
+
+        # Word
+        t1s, v1s = frombitstring_to_signal(hl_speed,randomword,times[-1] + 0.5)
+        voltages =  np.concatenate((voltages,v1s), axis = 0)
+        times = np.concatenate((times, t1s), axis = 0)
+
+        t2s, v2s = create_null_time_between_words(hl_speed,times[-1] + 0.5)
+        voltages =  np.concatenate((voltages,v2s), axis = 0)
+        times = np.concatenate((times, t2s), axis = 0)
 
     return(times,voltages)
 
