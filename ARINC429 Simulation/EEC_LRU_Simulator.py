@@ -1,6 +1,8 @@
 import os
 #import PyARINC429.arinc429
 import arinc429
+import arinc429_voltage_sim
+from pwn import *
 
 """
     Windows:
@@ -16,7 +18,7 @@ applicable_labels_BCD = {
         0o047: 'BCD', # Engine Serial No. (MSDs) -> BCD
     }
 
-applicable_lables_DISC = {
+applicable_labels_DISC = {
 
         0o270: 'DISC', # Discrete Data #1 -> DISC
         0o271: 'DISC', # Discrete Data #2 -> DISC
@@ -33,7 +35,7 @@ applicable_lables_DISC = {
         
     }
 
-applicable_lables_BNR = {
+applicable_labels_BNR = {
         0o114: 'BNR', # Selected Ambient Static Pressure -> BNR
         0o127: 'BNR', # Fan Discharge Static Pressure -> BNR
         0o130: 'BNR', # Selected Total Air Temperature -> BNR
@@ -84,12 +86,20 @@ applicable_lables_BNR = {
         0o347: 'BNR', # LPT Clearance Valve Position -> BNR
 
         0o360: 'BNR', # Throttle Rate of Change -> BNR
-        0o363: 'BNR', # Derivative of Thrust vs. N1 -> BNR
+        0o361: 'BNR', # Derivative of Thrust vs. N1 -> BNR
+        0o363: 'BNR', # Corrected Thrust -> BNR
         0o372: 'BNR', # Actual Fan Speed -> BNR
         0o373: 'BNR', # Actual Core Speed -> BNR
         0o374: 'BNR', # Left Thrust Reverser Position -> BNR
         0o375: 'BNR' # Right Thrust Reverser Position -> BNR
     }
+
+# engine: 76,100 pounds of thrust max
+# https://thepointsguy.com/guide/powering-the-dreamliner-how-the-787s-genx-engines-work/
+# 1lb of thrust = 32 feet per second per second acceleration or 9.8m/s^s
+
+# https://en.wikipedia.org/wiki/Boeing_787_Dreamliner
+# Operating empty weight is 298,700 lb / 135,500 kg
 
 def recv_ARINC429(data):
 
@@ -108,6 +118,41 @@ def recv_ARINC429(data):
     #else:
     #    return(0)
 
+def recv_word(hl_speed):
+
+    HOST = "127.0.0.1"
+    PORT = 42900
+    conn = pwn.remote(HOST, PORT)
+
+    try:
+        while(True):
+            # to fix
+            ts, vs = conn.recvline() # should be a line with a word?
+
+            #bin_num_rep = 0b0
+            word_binary = arinc429_voltage_sim.from_voltage_to_bin_word((ts,vs))
+            label = word_binary[:8] # first 8
+            bin_num_rep = int(bin(word_binary[11:29])[2:],2)
+            if(oct(label) == "0o137"): # Selected Thrust Reverser Position
+                print("Selected Thrust Reverser Position is: %s\%" % bin_num_rep)
+                # TO DO
+            elif(oct(label) == "0o343"):
+                print("N1 Command vs. TLA is: %s\%" % bin_num_rep)
+                # TO DO
+            elif(oct(label) == "0o363"):
+                print("Corrected Thrust: %s" % bin_num_rep)
+                # TO DO
+            elif(oct(label) == "0o374"):
+                print("Left Thrust Reverser Position is: %s\%" % bin_num_rep)
+                # TO DO
+            elif(oct(label) == "0o375"):
+                print("Right Thrust Reverser Position is: %s\%" % bin_num_rep)
+                # TO D0
+
+    except KeyboardInterrupt:
+        print("Engine Control LRU Shutting off")
+
+
 def main(word):
     print("Starting RX for EEC")
     print("The equip id for EEC is 0x10A and 0x10B")
@@ -121,9 +166,10 @@ def main(word):
     elif(label in applicable_labels_DISC):
         data = arinc429.Discrete.decode(word.data)
     elif(label in applicable_labels_BNR):
-        data = arinc429.BNR.decode(word.get_bit_field(bnr_bit_field.lsb, bnr_bit_field.msb), 17, 0.043945313)
+        pass
+        #data = arinc429.BNR.decode(word.get_bit_field(bnr_bit_field.lsb, bnr_bit_field.msb), 17, 0.043945313)
     else:
-        continue # next word.
+        pass # next word.
         
     recv_ARINC429(data)
 
