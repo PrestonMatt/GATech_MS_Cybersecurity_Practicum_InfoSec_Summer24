@@ -17,22 +17,43 @@ def main():
     test_all_functions()
 
 def test_all_functions():
-    #print("Testing HIGH SPEED 1 bit.")
-    #graph_words(create_ARINC429_one_highspeed(0),figtitle = "One High speed Bit")
-    #print("Testing LOW SPEED 1 bit.")
-    #graph_words(create_ARINC429_one_lowspeed(0),figtitle = "One Low speed Bit")
-    #print("Testing HIGH SPEED 0 bit.")
-    #graph_words(create_ARINC429_zero(0,True),figtitle = "Zero High speed Bit")
-    #print("Testing LOW SPEED 0 bit.")
-    #graph_words(create_ARINC429_zero(0,False),figtitle = "Zero Low speed Bit")
-    #print("Creating Random High Speed Word.")
-    #graph_words(create_random_word(True))
-    #print("Creating Random Low Speed Word.")
-    #graph_words(create_random_word(False),tickrate = 50)
+    print("Testing HIGH SPEED 1 bit.")
+    graph_words(create_ARINC429_one_highspeed(0),figtitle = "One High speed Bit")
+    print("Testing LOW SPEED 1 bit.")
+    graph_words(create_ARINC429_one_lowspeed(0),figtitle = "One Low speed Bit")
+    print("Testing HIGH SPEED 0 bit.")
+    graph_words(create_ARINC429_zero(0,True),figtitle = "Zero High speed Bit")
+    print("Testing LOW SPEED 0 bit.")
+
+    graph_words(create_ARINC429_zero(0,False),figtitle = "Zero Low speed Bit")
+    print("Creating Random High Speed Word.")
+    graph_words(create_random_word(True))
+    print("Creating Random Low Speed Word.")
+    graph_words(create_random_word(False),tickrate = 50)
+
     print("Testing with given LS word of: 0b11111101000000000000001000110000")
     graph_words(frombitstring_to_signal(False,0b11111101000000000000001000110000,0),figtitle="Set Word Engine Reverse Thrust 70%",tickrate=50)
+
     print("Testing with null time of 4 bits in between random words, 5 words, HS.")
-    graph_words(generate_n_random_words(True),figtitle="Three Random Words")
+    graph_words(generate_n_random_words(True, n = 3),figtitle="Three Random Words")
+
+    print("Trying to RX given HS word of: 0b11111101000000000000001000110000")
+    hl_speed = True
+    bits = from_voltage_to_bin(
+        frombitstring_to_signal(hl_speed,0b11111101000000000000001000110000,0.0),
+        hl_speed,
+        True # graph the word.
+    )
+    print("RX'd %s binary!" % bin(bits))
+
+    print("Trying to RX given LS word of: 0b11111101000000000000001000110000")
+    hl_speed = False
+    bits = from_voltage_to_bin(
+        frombitstring_to_signal(hl_speed,0b11111101000000000000001000110000,0.0),
+        hl_speed,
+        True # graph the word.
+    )
+    print("RX'd %s binary!" % bin(bits))
 
 def graph_words(word,figtitle = "ARINC 429 Word with Random Bits",tickrate=5):
     ts = word[0]
@@ -50,6 +71,78 @@ def graph_words(word,figtitle = "ARINC 429 Word with Random Bits",tickrate=5):
     plt.title(figtitle)
     plt.xticks(np.arange(min(ts),max(ts)+1,tickrate))
     plt.show()
+
+def from_voltage_to_bin_word(word,hl_speed,show_word=False):
+    ts = word[0]
+    vs = word[1]
+
+    if(show_word):
+        graph_words((ts,vs),figtitle = "70% reverse thrust ARINC 429 Word sent.")
+
+    # HIGH SPEED bits can be up/down as short as 4.5 usecs
+
+    # LOW SPEED bits can be up/down as short as 40 usecs
+
+    num_volts = 8 # HIGH SPEED
+    if(not hl_speed): # LOW SPEED
+        num_volts = 39
+
+    voltages = []
+
+    check_for_null = False
+
+    bits = []
+
+    for voltage in vs:
+        if(len(voltages) > num_volts):
+            voltages.pop()
+        voltages = [voltage] + voltages
+        #print(voltages)
+        if(check_for_null): # reset between bits
+            returned_to_null = check_all_voltages_is_ret2null(voltages)
+            if(returned_to_null):
+                check_for_null = False
+                voltages = []
+        else: # not looking for a reset between bits
+            if(check_all_voltages_is_1(voltages)):
+                # is a 1
+                bits.append(1)
+                check_for_null = True
+                voltages = []
+            elif(check_all_voltages_is_0(voltages)):
+                bits.append(0)
+                check_for_null = True
+                voltages = []
+
+    #print(len(bits))
+
+    bin_str = ""
+    for bit in bits:
+        bin_str += str(bit)
+
+    binary_ = int(bin_str,2)
+    #print(bin_str)
+    #print(binary_)
+
+    return(binary_)
+
+def check_all_voltages_is_1(vs):
+    for voltage in vs:
+        if(voltage < 6.5 or voltage > 13.0):
+            return(False)
+    return(True)
+
+def check_all_voltages_is_ret2null(vs):
+    for voltage in vs:
+        if(voltage < -2.5 or voltage >2.5):
+            return(False)
+    return(True)
+
+def check_all_voltages_is_0(vs):
+    for voltage in vs:
+        if(voltage < -13.0 or voltage > -6.5):
+            return(False)
+    return(True)
 
 def create_ARINC429_one_highspeed(usec_start):
     # first [0.5,2.0] usec
