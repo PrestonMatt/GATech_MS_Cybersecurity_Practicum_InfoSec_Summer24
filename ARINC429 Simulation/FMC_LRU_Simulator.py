@@ -1,16 +1,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import arinc429_voltage_sim
+#import arinc429
 #from pwn import *
 
 class flight_management_computer:
 
-    words_FIFO = []
+    words_scheduler = None
+    words_FIFO = None
 
     def __init__(self, scheduled_mode):
-        self.words_FIFO = []
+        #self.words_FIFO = []
         self.scheduled_mode = scheduled_mode
-        pass
+        if(scheduled_mode): # Run in scheduled mode.
+            self.words_scheduler = [[]]
+        else:
+            self.words_FIFO = []
 
     def __str__(self):
         pass
