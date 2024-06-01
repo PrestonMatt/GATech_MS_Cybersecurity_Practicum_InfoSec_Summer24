@@ -24,6 +24,9 @@ class binary_to_voltage:
     def __str__(self):
         print("Speed: %" % self.hl_speed)
 
+    def get_bus_speed(self):
+        return(self.hl_speed)
+
     def test_all_functions(self):
         print("Testing HIGH SPEED 1 bit.")
         self.graph_words(self.create_ARINC429_one_highspeed(0),figtitle = "One High speed Bit")
@@ -133,6 +136,27 @@ class binary_to_voltage:
         #print(binary_)
 
         return(binary_)
+
+    def is_four_nulls_in_a_row(self, word, hl_speed):
+        ts = word[0]
+        vs = word[1]
+
+        num_volts = 8 * 4 # HIGH SPEED
+        if(not hl_speed): # LOW SPEED
+            num_volts = 39 * 4
+
+        cnt = 0
+        copy_vs = vs
+        copy_ts = ts
+        for voltage in vs:
+            cnt += 1
+            if(voltage > 2.5 or voltage < -2.5):
+                if(cnt < num_volts):
+                    return(False, word)
+                else:
+                    return(True, (copy_ts,copy_vs))
+            copy_vs = copy_vs[1:]
+            copy_ts = copy_ts[1:] # Leftovers
 
     def check_all_voltages_is_1(self, vs):
         for voltage in vs:
