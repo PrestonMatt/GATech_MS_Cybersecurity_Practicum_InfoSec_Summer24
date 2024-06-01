@@ -83,7 +83,7 @@ class binary_to_voltage:
         plt.xticks(np.arange(min(ts),max(ts)+1,tickrate))
         plt.show()
 
-    def from_voltage_to_bin_word(self, word,hl_speed, show_word=False):
+    def from_voltage_to_bin_word(self, word, hl_speed, show_word=False):
         ts = word[0]
         vs = word[1]
 

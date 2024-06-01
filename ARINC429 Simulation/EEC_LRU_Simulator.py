@@ -2,6 +2,8 @@ import os
 #import PyARINC429.arinc429
 #import arinc429
 from arinc429_voltage_sim import binary_to_voltage as b2v
+from threading import Thread
+import ARINC429_Client_Server
 #from pwn import *
 
 """
@@ -12,6 +14,10 @@ from arinc429_voltage_sim import binary_to_voltage as b2v
     Otherwise put it in a subdir from this file and have the line:
     import PyARINC429.arinc429
 """
+
+class BusError(Exception):
+    """Warning Channel A and Channel B not congruent"""
+    pass
 
 class Full_Authority_Engine_Control:
 
@@ -103,76 +109,80 @@ class Full_Authority_Engine_Control:
     # https://en.wikipedia.org/wiki/Boeing_787_Dreamliner
     # Operating empty weight is 298,700 lb / 135,500 kg
 
-    def recv_ARINC429(data):
-
-        if(data == None):
-            return(0)
-
-        #eqp_id = label & int("00011100",2)
-        # bits 3,4,5 = equip id
-
-        #code_no = label & int("11100000",2)
-
-        #if(eqp_id == 0x108):
-        #    print("engine recieving wordon channel A.")
-        #elif(eqp_id == 0x109):
-        #    print("engine recieving word on channel B.")
-        #else:
-        #    return(0)
-
-    def recv_word(hl_speed):
-
-        HOST = "127.0.0.1"
-        PORT = 42900
-        conn = pwn.remote(HOST, PORT)
-
-        try:
-            while(True):
-                # to fix
-                ts, vs = conn.recvline() # should be a line with a word?
-
-                #bin_num_rep = 0b0
-                word_binary = arinc429_voltage_sim.from_voltage_to_bin_word((ts,vs))
-                label = word_binary[:8] # first 8
-                bin_num_rep = int(bin(word_binary[11:29])[2:],2)
-                if(oct(label) == "0o137"): # Selected Thrust Reverser Position
-                    print("Selected Thrust Reverser Position is: %s\%" % bin_num_rep)
-                    # TO DO
-                elif(oct(label) == "0o343"):
-                    print("N1 Command vs. TLA is: %s\%" % bin_num_rep)
-                    # TO DO
-                elif(oct(label) == "0o363"):
-                    print("Corrected Thrust: %s" % bin_num_rep)
-                    # TO DO
-                elif(oct(label) == "0o374"):
-                    print("Left Thrust Reverser Position is: %s\%" % bin_num_rep)
-                    # TO DO
-                elif(oct(label) == "0o375"):
-                    print("Right Thrust Reverser Position is: %s\%" % bin_num_rep)
-                    # TO D0
-
-        except KeyboardInterrupt:
-            print("Engine Control LRU Shutting off")
-
+    def __init__(self, channel_a_ip, channel_b_ip, channel_a_port, channel_b_port):
+        self.channel_a_ip = channel_a_ip
+        self.channel_b_ip = channel_b_ip
+        self.channel_b_port = channel_b_port
+        self.channel_a_port = channel_a_port
+        self.RXd_voltages = []
+        pass
 
     """
-    def main(word):
-        print("Starting RX for EEC")
-        print("The equip id for EEC is 0x10A and 0x10B")
-    
-        # recv word via pipe
-        # label is whatever mode it is
-        label = word.label
-        data = None
-        if(label in applicable_labels_BCD):
-            data = arinc429.BCD.decode(word.data, word.ssm, 0.1)
-        elif(label in applicable_labels_DISC):
-            data = arinc429.Discrete.decode(word.data)
-        elif(label in applicable_labels_BNR):
-            pass
-            #data = arinc429.BNR.decode(word.get_bit_field(bnr_bit_field.lsb, bnr_bit_field.msb), 17, 0.043945313)
+        Start listening simultaneously on both channels.
+    """
+    def listen_on_channels(self):
+        # Start listening on channels A and B
+        Thread(target=self._listen_channel_a).start()
+        Thread(target=self._listen_channel_b).start()
+
+    """
+        Listen for words on channel A.
+    """
+    def _listen_channel_a(self):
+        def voltage_reporter(voltage):
+            word = self._from_voltage_to_bin_word(voltage)
+            if word:
+                self.received_word_a = word
+                self._check_words()
+
+        client_a = ARINC429_Client_Server(client_or_server=True, client_ip=self.channel_a_ip, client_port=self.channel_a_port)
+        client_a.client(voltage_reporter)
+
+    def _listen_channel_b(self):
+        """Listen for words on channel B"""
+        def voltage_reporter(voltage):
+            word = self._from_voltage_to_bin_word(voltage)
+            if word:
+                self.received_word_b = word
+                self._check_words()
+
+        client_b = ARINC429_Client_Server(client_or_server=True, client_ip=self.channel_b_ip, client_port=self.channel_b_port)
+        client_b.client(voltage_reporter)
+
+    def _from_voltage_to_bin_word(self, voltage):
+        #"""Convert received voltage to binary word"""
+        # TODO
+        # Implement the logic to convert voltage to binary word
+        # Placeholder implementation, replace with actual logic
+        return voltage  # This should return the binary word
+
+    """Check if received words from both channels are the same"""
+    def _check_words(self):
+        if self.received_word_a is not None and self.received_word_b is not None:
+            if self.received_word_a == self.received_word_b:
+                binary_word = self.received_word_a
+                self.received_word_a = None
+                self.received_word_b = None
+                self._process_word(binary_word)
+            else:
+                self.received_word_a = None
+                self.received_word_b = None
+                raise BusError("Channel words are different")
+
+    """
+        Process the binary word
+    """
+    def _process_word(self, binary_word):
+
+        code = binary_word >> 24  # Extract the first 8 bits as the code
+        if code in self.code_table:
+            data = (binary_word >> 3) & 0x1FFFFF  # Extract bits 11 to 29
+            thrust = self._calculate_thrust(data)
+            print(f"Thrust: {thrust}")
         else:
-            pass # next word.
-            
-        recv_ARINC429(data)
-        """
+            print("Code not in code table")
+
+    def _calculate_thrust(self, data):
+        """Calculate thrust based on data"""
+        # Placeholder implementation, replace with actual calculation
+        return data  # This should return the calculated thrust
