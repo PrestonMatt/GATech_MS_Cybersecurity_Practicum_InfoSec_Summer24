@@ -11,6 +11,7 @@ class flight_management_computer:
         else:
             raise ValueError("Speed must be either 'HIGH' or 'LOW'")
 
+        # zero the bus clock.
         self.usec_start = time()
 
     def __str__(self):
@@ -44,15 +45,23 @@ class flight_management_computer:
         if(self.validate_word(word) == False): # word is invalid:
             raise ValueError("Word is not valid")
         else:
-            this_word_usec_start = time() - self.usec_start
+            this_word_usec_start = (time() - self.usec_start) # this is given in seconds.
+            this_word_usec_start *= 1_000_000 # now given in microseconds since FMC fired up.
+            # Just round to nearest half microseconds:
+            this_word_usec_start = self.return_nearest_half_microsecond(this_word_usec_start)
             print(this_word_usec_start)
             ts, vs = self.word_voltage_generator.from_intWord_to_signal(self.word_voltage_generator.get_speed(),
                                                                          word,
                                                                          this_word_usec_start)
             self.word_voltage_generator.graph_words((ts,vs),tickrate=300)
+            #print(ts)
             for voltage in vs:
                 self.transmit_single_voltage_to_wire(voltage)
                 sleep(0.5e-6) # sleep 1/2 microsecond
+
+    # https://stackoverflow.com/questions/24838629/round-off-float-to-nearest-0-5-in-python
+    def return_nearest_half_microsecond(self,usec_messy):
+        return(round(usec_messy * 2) / 2)
 
     def validate_word(self, word) -> bool:
 
@@ -61,7 +70,7 @@ class flight_management_computer:
 
         # First word must be 32 bits:
         if(len(word.replace("0b","")) > 32):
-            print("Word too large")
+            #print("Word too large")
             return(False)
 
         # Count the number of '1's in the bit string (excluding the parity bit)
@@ -76,7 +85,7 @@ class flight_management_computer:
         else: # odd
             return(parity_bit == '1')
 
-
     # TODO: Send them over some bus-like, simulation medium.
     def transmit_single_voltage_to_wire(self, voltage):
-        print(voltage)
+        #print(voltage)
+        pass

@@ -1,3 +1,5 @@
+import time
+
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from LRU_FMC_Simulator import flight_management_computer as FMC
 import pytest
@@ -83,6 +85,9 @@ def test_FMC_send_multiple_given_words():
     given_word3 = 0b11111111111111111111111111111111
 
     words = [given_word1, given_word2, given_word3]
+
+    print('\n')
+    time.sleep(1) # to show diff between FMC waking up and TX'd voltages.
 
     for word in words:
         FMC_test4.transmit_given_word(word)

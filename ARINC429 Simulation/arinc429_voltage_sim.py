@@ -371,8 +371,8 @@ class binary_to_voltage:
         voltages = np.concatenate( (voltages, vs), axis = 0)
         times = np.concatenate((times, ts), axis = 0)
 
-        print("TIMES: ", times)
-        print("Voltages: ", voltages)
+        #print("TIMES: ", times)
+        #print("Voltages: ", voltages)
         return(times, voltages)
 
     def generate_n_random_words(self, hl_speed, n=5):
