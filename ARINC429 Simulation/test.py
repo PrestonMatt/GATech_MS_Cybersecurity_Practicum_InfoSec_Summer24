@@ -132,7 +132,7 @@ def test5():
     # Start tshark process
     tshark_cmd = [
         "tshark",
-        "-i", "6",  # loopback address
+        "-i", "Adapter for loopback traffic capture",  # loopback address
         "-Y", "udp.port == " + str(0x429A)#,
     ]
     p = subprocess.Popen(tshark_cmd,
@@ -145,6 +145,7 @@ def test5():
     p.terminate()
     stdout, stderr = p.communicate()
     print("This is stdout:", stdout)
+    print("This is stderr:", strerr)
 
     # Parse tshark output
     lines = stdout.decode('latin1').strip().split('\n')
@@ -154,6 +155,18 @@ def test5():
     print("Original voltages:", word[1])
 
     assert(len(lines) == len(word[1]))
+
+"""
+    Test that FIFO_words in FMC sends words first in, first out
+"""
+def test6():
+    print("\n")
+    FMC_Test6 = flight_management_computer(scheduled_mode=False,
+                                           speed="Low")
+    for x in range(100):
+        rando_word = FMC_Test6.word_maker.create_random_word(FMC_Test6.word_maker.get_bus_speed())
+        print("Sending word #%d" % x)
+        FMC_Test6.FIFO_words(rando_word) # default stack length of FIFO = 8
 
 if __name__ == '__main__':
     main()

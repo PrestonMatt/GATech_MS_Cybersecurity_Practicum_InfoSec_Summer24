@@ -66,12 +66,21 @@ class flight_management_computer:
         Also based on MX program
     """
     def word_generation_calculation(self):
-        # Get data from ADIRU
-        # Get MX words prepped to send
         # Get pilot input words prepped to send
-        # if FIFO mode, just generate words and put them into the FIFO stack
+
+        # Get data from ADIRU
+        adiru_data = self.ADIRUI_RXd_voltages
+
+        # Get pilot input words
+        pilot_input_words = self.get_pilot_input()
+
+        # Combine words based on the mode
         # if Scheduled mode, assign conditions for the sending of every word and only send when condition is met
-        pass
+        if self.scheduled_mode:
+            self.scheduler_mode()
+        else: # if FIFO mode, just generate words and put them into the FIFO stack
+            for word in adiru_data + pilot_input_words:
+                self.FIFO_words(word)
 
     def get_pilot_input(self):
         pass
@@ -104,6 +113,9 @@ class flight_management_computer:
 
     def FIFO_words(self, next_word, stacklength = 8):
         if(len(self.words_FIFO) >= stacklength):
+            word_to_send = self.words_FIFO[-1]
+            self.send_voltage("A",word_to_send[0],word_to_send[1])
+            self.send_voltage("B",word_to_send[0],word_to_send[1])
             self.words_FIFO = self.words_FIFO[:-1]
         self.words_FIFO = [next_word] + self.words_FIFO
 
