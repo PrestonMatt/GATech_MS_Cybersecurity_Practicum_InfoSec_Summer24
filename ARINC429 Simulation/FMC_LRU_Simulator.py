@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from ARINC429_Client_Server import arinc429_client_server
-from threading import Thread
+from threading import Thread, Event
 #import arinc429
 #from pwn import *
 
@@ -102,10 +102,6 @@ class flight_management_computer:
             self.words_FIFO = self.words_FIFO[:-1]
         self.words_FIFO = [next_word] + self.words_FIFO
 
-    #def generate_voltage_for_word(self, word_binary):
-    #    ts, vs = self.word_maker.binary_to_voltage(word_binary)
-    #    return(ts, vs)
-
     def send_voltage(self, channel, ts, vs):
         if(channel == "A"):
             server = self.FMCServer_channelA
@@ -114,7 +110,10 @@ class flight_management_computer:
         else:
             raise ValueError("Channel must be A or B")
 
-        Thread(target=server.server, args=(self, ts, vs)).start()
+        voltage_event = Event()
+        voltageSentThread = Thread(target=server.server, args=(ts, vs, voltage_event,))
+        voltageSentThread.start()
+        #voltageSentThread.join()
 
     def scheduler_mode(self):
         pass

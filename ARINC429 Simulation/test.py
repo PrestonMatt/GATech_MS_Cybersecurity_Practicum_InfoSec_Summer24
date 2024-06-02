@@ -1,10 +1,12 @@
 import threading
 import time
+
+import pwn
 import pytest
 import numpy as np
 from threading import Thread, Event
-from queue import Queue
-
+import subprocess
+from pwn import process
 
 from arinc429_voltage_sim import binary_to_voltage
 from ARINC429_Client_Server import arinc429_client_server
@@ -119,6 +121,39 @@ def test4():
     print("TX'D Voltage: ", word_voltages[1])
 
     assert(np.array(voltage_RX) == word_voltages[1])
+
+"""
+    Test send_voltage function in FMC_LRU_Simulator
+"""
+def test5():
+    test5_FMC_A = flight_management_computer(scheduled_mode=False,speed="Low")
+    word = test5_FMC_A.word_maker.create_random_word(test5_FMC_A.word_maker.get_bus_speed())
+
+    # Start tshark process
+    tshark_cmd = [
+        "tshark",
+        "-i", "6",  # loopback address
+        "-Y", "udp.port == " + str(0x429A)#,
+    ]
+    p = subprocess.Popen(tshark_cmd,
+                         stdout=subprocess.PIPE,
+                         stderr=subprocess.PIPE,
+                         executable = "C:\\Program Files\\Wireshark\\tshark.exe")
+
+    test5_FMC_A.send_voltage("A",word[0],word[1])
+
+    p.terminate()
+    stdout, stderr = p.communicate()
+    print("This is stdout:", stdout)
+
+    # Parse tshark output
+    lines = stdout.decode('latin1').strip().split('\n')
+
+    # Debugging prints
+    print("Captured lines:", lines)
+    print("Original voltages:", word[1])
+
+    assert(len(lines) == len(word[1]))
 
 if __name__ == '__main__':
     main()
