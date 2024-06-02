@@ -139,13 +139,17 @@ def test5():
                          stdout=subprocess.PIPE,
                          stderr=subprocess.PIPE,
                          executable = "C:\\Program Files\\Wireshark\\tshark.exe")
+    # Allow some time for tshark to start
+    time.sleep(10)
 
     test5_FMC_A.send_voltage("A",word[0],word[1])
 
+    # Allow some time for the packets to be sent and captured
+    time.sleep(2)
     p.terminate()
     stdout, stderr = p.communicate()
     print("This is stdout:", stdout)
-    print("This is stderr:", strerr)
+    print("This is stderr:", stderr)
 
     # Parse tshark output
     lines = stdout.decode('latin1').strip().split('\n')
