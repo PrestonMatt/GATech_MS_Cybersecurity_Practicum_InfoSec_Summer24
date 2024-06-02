@@ -66,6 +66,11 @@ class flight_management_computer:
         Also based on MX program
     """
     def word_generation_calculation(self):
+        # Get data from ADIRU
+        # Get MX words prepped to send
+        # Get pilot input words prepped to send
+        # if FIFO mode, just generate words and put them into the FIFO stack
+        # if Scheduled mode, assign conditions for the sending of every word and only send when condition is met
         pass
 
     def get_pilot_input(self):
