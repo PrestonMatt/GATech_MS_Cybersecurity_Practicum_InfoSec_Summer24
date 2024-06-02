@@ -14,10 +14,6 @@ class binary_to_voltage:
     # NULL                  [- 2.5V, + 2.5V]
     # LOW   (i.e. 0) =>     [-13.0V, - 6.5V]
 
-#    def main():
-#        print("Test begin")
-#        test_all_functions()
-
     def __init__(self, hl_speed):
         self.hl_speed = hl_speed
 
@@ -381,6 +377,3 @@ class binary_to_voltage:
             times = np.concatenate((times, t2s), axis = 0)
 
         return(times,voltages)
-
-#if __name__ == "__main__":
-#    main()

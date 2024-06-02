@@ -1,6 +1,6 @@
 import socket
 import time
-from threading import Thread
+from threading import Thread, Event
 
 from arinc429_voltage_sim import binary_to_voltage as b2v
 
@@ -13,7 +13,7 @@ class arinc429_client_server:
                  server_port = 42900):
 
         if(client_mode == server_mode):
-            return("ERROR ! CANNOT BE BOTH CLIENT AND SERVER")
+            raise ValueError("Server and Client must be opposite boolean values.")
 
         self.client_mode = client_mode
         self.server_mode = server_mode
@@ -36,55 +36,45 @@ class arinc429_client_server:
             print("Is a ARINC429 Transmitter")
             print("Running on IP: %s with port %d." % (self.server_ip, self.server_port))
 
-    def client(self, voltage_reporter):
-        client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client_socket.connect((self.client_ip, self.client_port))
+    def client(self, voltage_reporter, bus_shutdown):
+        client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        client_socket.bind((self.client_ip, self.client_port))
 
         try:
-            while True:
-                data = client_socket.recv(1024)
-                if data:
-                    voltage = float(data.decode('utf-8').strip())
-                    voltage_reporter(voltage)
-                    print(f"Received voltage: {data.decode('utf-8').strip()}")
-        except KeyboardInterrupt:
-            client_socket.close()
-
-    def handle_client(self, client_socket, vs):
-        try:
-            while (True):
+            while(not bus_shutdown.is_set()):
                 try:
-                    current_voltage = f"{vs[current_index]}\n".encode('utf-8')
-                    client_socket.send(current_voltage)
-                    time.sleep(0.0005)
-                except socket.error:
-                    print("BUS CONNECTION ERROR")
-                    client_socket.close()
-                    break
+                    client_socket.settimeout(1)
+                    data, _ = client_socket.recvfrom(1024)
+                    if(data):
+                        voltage = float(data.decode('utf-8').strip())
+                        voltage_reporter(voltage)
+                        print(f"Received voltage: {voltage}", flush=True)
+                except socket.timeout:
+                    continue
         except KeyboardInterrupt:
-            print("User bus shutdown")
             client_socket.close()
-
+        finally:
+            client_socket.close()
 
     # Server setup
-    def server(self, ts, vs):
-        global current_index
-        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    def server(self, ts, vs, bus_shutdown):
+        server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         server_socket.bind((self.server_ip, self.server_port))
-        server_socket.listen(5)
-        print("ARINC429 Server listening on %s:%d" % (self.server_ip, self.server_port))
+        print("ARINC429 TX on %s:%d" % (self.server_ip, self.server_port), flush=True)
 
-        current_index = 0
-        while True:
-            #arinc429_voltage_gen = b2v(True)
-            #ts, vs = b2v.create_random_word(arinc429_voltage_gen,True)
-            print("Recieving data")
-            client_socket, addr = server_socket.accept()
-            print(f"Connection from {addr}")
-            client_handler = Thread(target=self.handle_client, args=(self, client_socket, vs,))
-            client_handler.start()
-
-            # Update voltage index based on timestamps
-            for i in range(len(ts)):
-                current_index = i
-                time.sleep(ts[i] / 1000000.0)  # Convert microseconds to seconds
+        try:
+            for i in range(len(vs)):
+                if(bus_shutdown.is_set()):
+                    break
+                current_voltage = f"{vs[i]}\n".encode('utf-8')
+                #print(f"Sending voltage: {vs[i]} at time: {ts[i]}", flush=True)
+                server_socket.sendto(current_voltage, (self.server_ip, self.server_port))
+                if i < len(ts) - 1:
+                    sleep_time = (ts[i + 1] - ts[i]) / 1_000_000.0 # 0.000 000 5 is a half microsecond
+                    #print(sleep_time)
+                    time.sleep(sleep_time)
+        except KeyboardInterrupt:
+            print("Server commanded shutdown")
+            server_socket.close()
+        finally:
+            server_socket.close()
