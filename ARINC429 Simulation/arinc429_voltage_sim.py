@@ -20,6 +20,9 @@ class binary_to_voltage:
     def __str__(self):
         return(f"Speed: {self.hl_speed}")
 
+    def get_speed(self):
+        return(self.hl_speed)
+
     def test_all_functions(self):
         print("Testing HIGH SPEED 1 bit.")
         self.graph_words(self.create_ARINC429_one_highspeed(0),figtitle = "One High speed Bit")
