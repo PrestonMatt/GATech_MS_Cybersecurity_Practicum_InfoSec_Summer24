@@ -85,8 +85,8 @@ def test4():
                                                  server_ip = "127.0.0.1",
                                                  server_port = 0x429)
     generic_ARINC429_RX = arinc429_client_server(client_mode = True, server_mode = False,
-                                                 server_ip = "127.0.0.1",
-                                                 server_port = 0x429)
+                                                 client_ip = "127.0.0.1",
+                                                 client_port = 0x429)
     hl_speed_is_high = True
     word_voltages = binary_to_voltage(hl_speed_is_high).create_random_word(hl_speed_is_high)
 
@@ -114,7 +114,9 @@ def test4():
     server.join()
     client.join()
 
-    print(voltage_RX)
+    print("\n")
+    print("RECV'D Voltage: ", voltage_RX)
+    print("TX'D Voltage: ", word_voltages[1])
 
     assert(np.array(voltage_RX) == word_voltages[1])
 

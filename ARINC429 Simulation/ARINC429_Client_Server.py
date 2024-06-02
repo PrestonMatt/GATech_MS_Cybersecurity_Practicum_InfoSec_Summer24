@@ -43,8 +43,9 @@ class arinc429_client_server:
         try:
             while(not bus_shutdown.is_set()):
                 try:
-                    client_socket.settimeout(1)
-                    data, _ = client_socket.recvfrom(1024)
+                    client_socket.settimeout(3)
+                    data, addr = client_socket.recvfrom(1024)
+                    print(f"Received data from {addr}")
                     if(data):
                         voltage = float(data.decode('utf-8').strip())
                         voltage_reporter(voltage)
@@ -60,7 +61,7 @@ class arinc429_client_server:
     def server(self, ts, vs, bus_shutdown):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         server_socket.bind((self.server_ip, self.server_port))
-        print("ARINC429 TX on %s:%d" % (self.server_ip, self.server_port), flush=True)
+        print("\nARINC429 TX on %s:%d" % (self.server_ip, self.server_port), flush=True)
 
         try:
             for i in range(len(vs)):
