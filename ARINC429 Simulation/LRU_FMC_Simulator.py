@@ -49,17 +49,19 @@ class flight_management_computer:
             ts, vs = self.word_voltage_generator.frombitstring_to_signal(self.word_voltage_generator.get_speed(),
                                                                          word,
                                                                          this_word_usec_start)
+            #self.word_voltage_generator.graph_words((ts,vs))
+            for voltage in vs:
+                self.transmit_single_voltage_to_wire(voltage)
+                sleep(0.5e-6) # sleep 1/2 microsecond
 
     def validate_word(self, word) -> bool:
 
         word = bin(word)
+        #print(word)
 
         # First word must be 32 bits:
         if(len(word.replace("0b","")) > 32):
-            return(False)
-
-        # Check if the string contains only '0' and '1'
-        if not all(bit in '01' for bit in word):
+            print("Word too large")
             return(False)
 
         # Count the number of '1's in the bit string (excluding the parity bit)
@@ -69,11 +71,12 @@ class flight_management_computer:
         parity_bit = word[-1]
 
         # Check the parity condition
-        if num_of_ones % 2 == 0:
+        if(num_of_ones % 2 == 0): # even
             return(parity_bit == '0')
-        else:
+        else: # odd
             return(parity_bit == '1')
 
 
+    # TODO: Send them over some bus-like, simulation medium.
     def transmit_single_voltage_to_wire(self, voltage):
         print(voltage)

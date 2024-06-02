@@ -336,10 +336,37 @@ class binary_to_voltage:
                     ts, vs = self.create_ARINC429_one_lowspeed(times[-1] + 0.5)
             else: # 0
                 ts, vs = self.create_ARINC429_zero(times[-1] + 0.5,hl_speed)
-            voltages =  np.concatenate((voltages,vs), axis = 0)
+            voltages = np.concatenate((voltages,vs), axis = 0)
             times = np.concatenate((times, ts), axis = 0)
 
         return(times,voltages)
+
+    def from_intWord_to_signal(self, hl_speed, word: int, usec_start):
+        bitstring = bin(word).replace("0b","")
+
+        voltages = np.array([0.0])
+        times = np.array([usec_start])
+
+        if(len(bitstring) < 32):
+            ts = []
+            vs = []
+            num_leading_zeros = 32 - len(bitstring)
+            # make that many zeros
+            for x in range(num_leading_zeros):
+                ts, vs = self.create_ARINC429_zero(times[-1] + 0.5, hl_speed)
+                voltages = np.concatenate( (voltages, vs), axis = 0)
+                times = np.concatenate((times, ts), axis = 0)
+
+        ts = []
+        vs = []
+        # no else; just move to the rest of the word (first 1 and beyond)
+        ts, vs = self.frombitstring_to_signal(hl_speed, word, times[-1] + 0.5)
+        voltages = np.concatenate( (voltages, vs), axis = 0)
+        times = np.concatenate((times, ts), axis = 0)
+
+        print("TIMES: ", times)
+        print("Voltages: ", voltages)
+        return(times, voltages)
 
     def generate_n_random_words(self, hl_speed, n=5):
         voltages = np.array([0.0])
