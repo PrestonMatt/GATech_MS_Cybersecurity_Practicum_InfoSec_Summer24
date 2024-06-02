@@ -101,7 +101,7 @@ class full_authority_engine_control:
     def recieve_single_voltage_from_wire(self):
         # TODO : get voltage from queue
         voltage = 0.0
-        return (voltage)
+        return(voltage)
 
 # engine: 76,100 pounds of thrust max
 # https://thepointsguy.com/guide/powering-the-dreamliner-how-the-787s-genx-engines-work/
