@@ -40,16 +40,16 @@ class flight_management_computer:
             except KeyboardInterrupt:
                 break
 
-    def transmit_given_word(self, word):
+    def transmit_given_word(self, word:int):
         if(self.validate_word(word) == False): # word is invalid:
             raise ValueError("Word is not valid")
         else:
             this_word_usec_start = time() - self.usec_start
             print(this_word_usec_start)
-            ts, vs = self.word_voltage_generator.frombitstring_to_signal(self.word_voltage_generator.get_speed(),
+            ts, vs = self.word_voltage_generator.from_intWord_to_signal(self.word_voltage_generator.get_speed(),
                                                                          word,
                                                                          this_word_usec_start)
-            #self.word_voltage_generator.graph_words((ts,vs))
+            self.word_voltage_generator.graph_words((ts,vs),tickrate=300)
             for voltage in vs:
                 self.transmit_single_voltage_to_wire(voltage)
                 sleep(0.5e-6) # sleep 1/2 microsecond

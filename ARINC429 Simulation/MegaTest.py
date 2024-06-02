@@ -4,6 +4,7 @@ import pytest
 
 def main():
     test_voltage_sim()
+    test_intWord_to_voltage()
     test_FMC_word_validation1()
     test_FMC_word_validation2()
     test_FMC_word_validation3()
@@ -60,15 +61,31 @@ def test_FMC_word_validation3():
     word_1 = 0b11111101000000000000001000110000
     assert(FMC_test2.validate_word(word_1) == True)
 
-def test_FMC_send_given_word():
+def test_FMC_send_given_word1():
     FMC_test3 = FMC("lOW")
     given_word = 0b11111101000000000000001000110000
     FMC_test3.transmit_given_word(given_word)
 
-def test_FMC_send_given_word():
+def test_FMC_send_given_word2():
     FMC_test3 = FMC("lOW")
     given_word = 0b00000000000000000000000000000011
     FMC_test3.transmit_given_word(given_word)
+
+def test_FMC_send_given_word3():
+    FMC_test3 = FMC("high")
+    given_word = 0b11111111111111111111111111111111
+    FMC_test3.transmit_given_word(given_word)
+
+def test_FMC_send_multiple_given_words():
+    FMC_test4 = FMC("high")
+    given_word1 = 0b11111101000000000000001000110000
+    given_word2 = 0b00000000000000000000000000000011
+    given_word3 = 0b11111111111111111111111111111111
+
+    words = [given_word1, given_word2, given_word3]
+
+    for word in words:
+        FMC_test4.transmit_given_word(word)
 
 if __name__ == "__main__":
     main()

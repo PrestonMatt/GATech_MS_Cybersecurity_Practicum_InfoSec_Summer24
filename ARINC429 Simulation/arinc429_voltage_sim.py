@@ -364,6 +364,13 @@ class binary_to_voltage:
         voltages = np.concatenate( (voltages, vs), axis = 0)
         times = np.concatenate((times, ts), axis = 0)
 
+        ts = []
+        vs = []
+        # also needs the null time between words.
+        ts, vs = self.create_null_time_between_words(hl_speed, times[-1] + 0.5)
+        voltages = np.concatenate( (voltages, vs), axis = 0)
+        times = np.concatenate((times, ts), axis = 0)
+
         print("TIMES: ", times)
         print("Voltages: ", voltages)
         return(times, voltages)
