@@ -1,5 +1,6 @@
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from time import sleep, time
+import keyboard
 
 class flight_management_computer:
 
@@ -16,6 +17,27 @@ class flight_management_computer:
 
     def __str__(self):
         pass
+
+    def FIFO_words(self):
+        pass
+
+    def pilot_input(self):
+        # listen for arrow keys to simulate the joystick
+        while(True):
+            # UP -> Pitch plane up
+            if(keyboard.is_pressed('up')):
+                pass
+        # DOWN -> Pitch plane down
+        # LEFT -> pitch plane left
+        # RIGHT -> pitch plane right
+        # W -> push plane forward
+        # S -> slow plane down and go backwards
+        pass
+
+    def generate_word_to_pitch_plane(self, direction):
+        if(direction.lower() == "up"):
+            # word goes to FAEC
+            pass
 
     def transmit_random_voltages(self):
         while(True):
