@@ -12,7 +12,7 @@ class GlobalBus:
         with self.lock:
             if(self.voltageQueue.full()):
                 # Drop oldest voltage off the wire
-                self.queue.get()
+                self.voltageQueue.get()
             # add new voltage -> This happens if the queue is full or not.
             self.voltageQueue.put(voltage)
 

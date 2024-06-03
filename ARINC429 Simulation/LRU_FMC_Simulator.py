@@ -36,22 +36,22 @@ class flight_management_computer:
             direction = ""
             # UP -> Pitch plane up
             if(keyboard.is_pressed('up')):
-                generate_word_to_pitch_plane(self, "UP")
+                self.generate_word_to_pitch_plane(self, "UP")
             # DOWN -> Pitch plane down
             if(keyboard.is_pressed('down')):
-                generate_word_to_pitch_plane(self, "DOWN")
+                self.generate_word_to_pitch_plane(self, "DOWN")
             # LEFT -> pitch plane left
             if(keyboard.is_pressed('left')):
-                generate_word_to_pitch_plane(self, "LEFT")
+                self.generate_word_to_pitch_plane(self, "LEFT")
             # RIGHT -> pitch plane right
             if(keyboard.is_pressed('right')):
-                generate_word_to_pitch_plane(self, "RIGHT")
+                self.generate_word_to_pitch_plane(self, "RIGHT")
             # W -> push plane forward
             if(keyboard.is_pressed('w')):
-                generate_word_to_pitch_plane(self, "W")
+                self.generate_word_to_pitch_plane(self, "W")
             # S -> slow plane down and go backwards
             if(keyboard.is_pressed('s')):
-                generate_word_to_pitch_plane(self, "S")
+                self.generate_word_to_pitch_plane(self, "S")
 
     def generate_word_to_pitch_plane(self, direction):
 
@@ -101,15 +101,15 @@ class flight_management_computer:
             pass
 
         if(self.fifo_mode):
-            FIFO_mode(word)
+            self.FIFO_mode(word)
         else:
-            scheduler_mode(word, 20_000_000) # send 20 sec later
+            self.scheduler_mode(word, 20_000_000) # send 20 sec later
 
     def calc_parity(self, word_bitStr):
         if(len(word_bitStr) != 31):
             raise ValueError("Checking parity must be for 31 bit imcomplete words")
         # Count the number of '1's in the bit string (excluding the parity bit)
-        num_of_ones = word[:-1].count('1')
+        num_of_ones = word_bitStr[:-1].count('1')
 
         # Check the parity condition
         if(num_of_ones % 2 == 0): # even
@@ -121,18 +121,18 @@ class flight_management_computer:
     def FIFO_mode(self, next_word):
         self.FIFO.put(next_word)
         if(len(self.FIFO) > self.fifo_len):
-            word_to_send = FIFO.get() # remove from queue
+            word_to_send = self.FIFO.get() # remove from queue
             self.transmit_given_word(word_to_send)
 
     def scheduler_mode(self, next_word, condition):
         # add to scheduler dict:
-        scheduler[next_word] = condition
-        for word in scheduler: # check to see if any contition is set
-            this_cond = scheduler[word]
-            if(check_condition_met(this_cond)):
+        self.scheduler[next_word] = condition
+        for word in self.scheduler: # check to see if any contition is set
+            this_cond = self.scheduler[word]
+            if(self.check_condition_met(this_cond)):
                 self.transmit_given_word(word)
                 # remove from scheduler
-                scheduler.pop(word)
+                self.scheduler.pop(word)
 
     def check_condition_met(self, condition):
         if(isinstance(condition, int)): # this is usecs
