@@ -10,6 +10,7 @@ def main():
     test_FMC_word_validation1()
     test_FMC_word_validation2()
     test_FMC_word_validation3()
+    test_FMC_pilot_input()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -91,6 +92,10 @@ def test_FMC_send_multiple_given_words():
 
     for word in words:
         FMC_test4.transmit_given_word(word)
+
+def test_FMC_pilot_input():
+    FMC_test5 = FMC("HIGH")
+    FMC_test5.transmit_pilot_input()
 
 if __name__ == "__main__":
     main()

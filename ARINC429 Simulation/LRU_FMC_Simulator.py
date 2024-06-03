@@ -1,10 +1,11 @@
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from time import sleep, time
 import keyboard
+from queue import Queue
 
 class flight_management_computer:
 
-    def __init__(self, speed, mode = "FIFO"): # Default is FIFO mode
+    def __init__(self, speed, mode = "FIFO", fifo_len = 8): # Default is FIFO mode
         if(speed.lower() == "high"):
             self.word_voltage_generator = b2v(True)
         elif(speed.lower() == "low"):
@@ -21,10 +22,12 @@ class flight_management_computer:
             self.scheduler_mode = True
             self.fifo_mode = False
 
-    def __str__(self):
-        pass
+        self.fifo_len = fifo_len
 
-    def FIFO_words(self):
+        self.FIFO = Queue() # inherently FIFO
+        self.scheduler = {}
+
+    def __str__(self):
         pass
 
     def pilot_input(self):
@@ -51,12 +54,102 @@ class flight_management_computer:
                 generate_word_to_pitch_plane(self, "S")
 
     def generate_word_to_pitch_plane(self, direction):
+
+        # if scheduled mode; send word to scheduler.
+        # if FIFO mode; send word to FIFO
+
+        word = 0b0
+
         if(direction.lower() == "up"):
-            # word goes to FAEC
-            word
+            # Want to send to W&BS
+            # label = 0o066, longitudinal CG
+            word_bitStr = bin(0o066)[2:]
+            if(len(word_bitStr) < 8):
+                word_bitStr = "0"*(8-len(word_bitStr)) + word_bitStr
+
+            # SDI = 11
+            word_bitStr += "11"
+
+            # Data = BCD
+            # Digit 5 = 11 to 14 (4 bits)
+            word_bitStr += "0000"
+            # Digit 4 = 15 to 18 (4 bits)
+            word_bitStr += "1111"
+            # Digit 3 = 19 to 22 (4 bits)
+            word_bitStr += "1111"
+            # Digit 2 = 26 to 23 (4 bits)
+            word_bitStr += "1111"
+            # Digit 1 = 27 to 29 (3 bits)
+            word_bitStr += "1111" # TODO check all these lols
+
+            # SSM = 00 for normal ops
+            word_bitStr += "00"
+
+            # calculate parity
+            word_bitStr += self.calc_parity(word_bitStr)
+
+            word = int(word_bitStr,2)
         if(direction.lower() == "down"):
             pass
+        if(direction.lower() == "left"):
+            pass
+        if(direction.lower() == "right"):
+            pass
+        if(direction.lower() == "w"):
+            pass
+        if(direction.lower() == "s"):
+            pass
 
+        if(self.fifo_mode):
+            FIFO_mode(word)
+        else:
+            scheduler_mode(word, 20_000_000) # send 20 sec later
+
+    def calc_parity(self, word_bitStr):
+        if(len(word_bitStr) != 31):
+            raise ValueError("Checking parity must be for 31 bit imcomplete words")
+        # Count the number of '1's in the bit string (excluding the parity bit)
+        num_of_ones = word[:-1].count('1')
+
+        # Check the parity condition
+        if(num_of_ones % 2 == 0): # even
+            return('0')
+        else: # odd
+            return('1')
+
+
+    def FIFO_mode(self, next_word):
+        self.FIFO.put(next_word)
+        if(len(self.FIFO) > self.fifo_len):
+            word_to_send = FIFO.get() # remove from queue
+            self.transmit_given_word(word_to_send)
+
+    def scheduler_mode(self, next_word, condition):
+        # add to scheduler dict:
+        scheduler[next_word] = condition
+        for word in scheduler: # check to see if any contition is set
+            this_cond = scheduler[word]
+            if(check_condition_met(this_cond)):
+                self.transmit_given_word(word)
+                # remove from scheduler
+                scheduler.pop(word)
+
+    def check_condition_met(self, condition):
+        if(isinstance(condition, int)): # this is usecs
+            usec_now = (time() - self.usec_start) # this is given in seconds.
+            usec_now *= 1_000_000 # now given in microseconds since FMC fired up.
+            # Just round to nearest half microseconds:
+            usec_now = self.return_nearest_half_microsecond(usec_now)
+            if(usec_now >= condition):
+                return(True)
+            else:
+                return(False)
+        elif(isinstance(condition, str)):
+            # TODO set more example conditions
+            pass
+        else:
+            # mis-made word. Never send then
+            return(False)
 
     def transmit_random_voltages(self):
         while(True):
