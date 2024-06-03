@@ -46,7 +46,7 @@ class binary_to_voltage:
 
         print("Trying to RX given HS word of: 0b11111101000000000000001000110000")
         hl_speed = True
-        bits = self.from_voltage_to_bin_word(
+        bits, _ = self.from_voltage_to_bin_word(
             self.frombitstring_to_signal(hl_speed,0b11111101000000000000001000110000,0.0),
             hl_speed,
             True # graph the word.
@@ -55,7 +55,7 @@ class binary_to_voltage:
 
         print("Trying to RX given LS word of: 0b11111101000000000000001000110000")
         hl_speed = False
-        bits = self.from_voltage_to_bin_word(
+        bits, _ = self.from_voltage_to_bin_word(
             self.frombitstring_to_signal(hl_speed,0b11111101000000000000001000110000,0.0),
             hl_speed,
             True # graph the word.
@@ -79,7 +79,7 @@ class binary_to_voltage:
         plt.xticks(np.arange(min(ts),max(ts)+1,tickrate))
         plt.show()
 
-    def from_voltage_to_bin_word(self, word,hl_speed, show_word=False):
+    def from_voltage_to_bin_word(self, word, hl_speed, show_word=False):
         ts = word[0]
         vs = word[1]
 
@@ -131,7 +131,7 @@ class binary_to_voltage:
         #print(bin_str)
         #print(binary_)
 
-        return(binary_)
+        return(binary_, bit_str)
 
     def check_all_voltages_is_1(self, vs):
         for voltage in vs:

@@ -4,7 +4,7 @@ import keyboard
 
 class flight_management_computer:
 
-    def __init__(self, speed):
+    def __init__(self, speed, mode = "FIFO"): # Default is FIFO mode
         if(speed.lower() == "high"):
             self.word_voltage_generator = b2v(True)
         elif(speed.lower() == "low"):
@@ -14,6 +14,12 @@ class flight_management_computer:
 
         # zero the bus clock.
         self.usec_start = time()
+        if(mode.lower() == "fifo"):
+            self.fifo_mode = True
+            self.scheduler_mode = False
+        if(mode.lower() == "scheduler"):
+            self.scheduler_mode = True
+            self.fifo_mode = False
 
     def __str__(self):
         pass
@@ -24,20 +30,33 @@ class flight_management_computer:
     def pilot_input(self):
         # listen for arrow keys to simulate the joystick
         while(True):
+            direction = ""
             # UP -> Pitch plane up
             if(keyboard.is_pressed('up')):
-                pass
-        # DOWN -> Pitch plane down
-        # LEFT -> pitch plane left
-        # RIGHT -> pitch plane right
-        # W -> push plane forward
-        # S -> slow plane down and go backwards
-        pass
+                generate_word_to_pitch_plane(self, "UP")
+            # DOWN -> Pitch plane down
+            if(keyboard.is_pressed('down')):
+                generate_word_to_pitch_plane(self, "DOWN")
+            # LEFT -> pitch plane left
+            if(keyboard.is_pressed('left')):
+                generate_word_to_pitch_plane(self, "LEFT")
+            # RIGHT -> pitch plane right
+            if(keyboard.is_pressed('right')):
+                generate_word_to_pitch_plane(self, "RIGHT")
+            # W -> push plane forward
+            if(keyboard.is_pressed('w')):
+                generate_word_to_pitch_plane(self, "W")
+            # S -> slow plane down and go backwards
+            if(keyboard.is_pressed('s')):
+                generate_word_to_pitch_plane(self, "S")
 
     def generate_word_to_pitch_plane(self, direction):
         if(direction.lower() == "up"):
             # word goes to FAEC
+            word
+        if(direction.lower() == "down"):
             pass
+
 
     def transmit_random_voltages(self):
         while(True):
