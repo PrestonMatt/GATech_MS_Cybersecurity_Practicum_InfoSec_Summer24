@@ -103,6 +103,7 @@ def test_FMC_pilot_input():
     FMC_test5.transmit_pilot_input()
 
 def test_bus_queue():
+    print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = True)
     channel_a = ARINC429BUS()
 
