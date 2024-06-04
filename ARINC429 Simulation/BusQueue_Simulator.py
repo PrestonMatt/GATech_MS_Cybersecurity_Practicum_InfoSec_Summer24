@@ -2,6 +2,7 @@ import threading
 from queue import Queue
 import time
 import random
+import matplotlib.pyplot as plt
 
 class GlobalBus:
     def __init__(self, max_size = 100):
@@ -25,6 +26,33 @@ class GlobalBus:
                 # the queue is empty so voltage should be with spec 0
                 # There may be some noise raising the voltage up/down by half a volt
                 return(random.uniform(-0.5, 0.5))
+
+    def get_all_voltage(self):
+        with self.lock:
+            return list(self.voltageQueue.queue)
+
+    def queue_visual(self, update_interval = 0.01):
+        # interactive plot
+        plt.ion()
+        fig, ax = plt.subplots()
+        line, = ax.plot([], [], 'go--')
+
+        ax.set_xlim(self.voltageQueue.maxsize)
+        ax.set_ylim(-14, 14) # within spec
+
+        # https://stackoverflow.com/questions/4098131/how-to-update-a-plot-in-matplotlib
+        while(True):
+            #print("Updating voltage queue graph")
+            voltages = self.get_all_voltage() # for debugging, not simulation
+            line.set_xdata(range(len(voltages)))
+            line.set_ydata(voltages)
+
+            ax.set_xlim(0, max(len(voltages), 1))
+
+            fig.canvas.draw()
+            fig.canvas.flush_events()
+
+            time.sleep(update_interval)
 
     # TODO This will have to be tested and used later
     # to simulate robustness of the bus

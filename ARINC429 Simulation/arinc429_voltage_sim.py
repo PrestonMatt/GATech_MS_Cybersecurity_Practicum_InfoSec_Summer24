@@ -342,6 +342,12 @@ class binary_to_voltage:
         return(times,voltages)
 
     def from_intWord_to_signal(self, hl_speed, word: int, usec_start):
+
+        if(not isinstance(word, int)):
+            raise ValueError("Word has to be integer")
+        elif(len(bin(word)[2:]) > 32):
+            raise ValueError("Word length too long -- not valid!")
+
         bitstring = bin(word).replace("0b","")
 
         voltages = np.array([0.0])

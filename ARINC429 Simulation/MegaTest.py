@@ -1,16 +1,21 @@
+# Standard Libraries
 import time
-
+import random
+import pytest
+from threading import Thread
+# Preston's libraries hehe
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from LRU_FMC_Simulator import flight_management_computer as FMC
-import pytest
+from BusQueue_Simulator import GlobalBus as ARINC429BUS
 
 def main():
-    test_voltage_sim()
-    test_intWord_to_voltage()
-    test_FMC_word_validation1()
-    test_FMC_word_validation2()
-    test_FMC_word_validation3()
-    test_FMC_pilot_input()
+    #test_voltage_sim()
+    #test_intWord_to_voltage()
+    #test_FMC_word_validation1()
+    #test_FMC_word_validation2()
+    #test_FMC_word_validation3()
+    #test_FMC_pilot_input()
+    test_bus_queue()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -96,6 +101,36 @@ def test_FMC_send_multiple_given_words():
 def test_FMC_pilot_input():
     FMC_test5 = FMC("HIGH")
     FMC_test5.transmit_pilot_input()
+
+def test_bus_queue():
+    word_voltage_obj = b2v(hl_speed = True)
+    channel_a = ARINC429BUS()
+
+    # TX random voltages thread -> probably will be good as template for TXrs
+    def generate_voltage_data(ARINC_Channel):
+        while(True):
+            usec_start = time.time()*1_000_000
+            word = random.randint(0, 0b11111111111111111111111111111111)
+            ts, vs = word_voltage_obj.from_intWord_to_signal(hl_speed = word_voltage_obj.get_speed(),
+                                                             word = word,
+                                                             usec_start = usec_start)
+            for voltage in vs:
+                ARINC_Channel.add_voltage(voltage)
+                time.sleep(5e-7)
+
+    # Start the TXr transmission in thread
+    transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
+    transmitter_thread.start()
+    # Start the real-time visualization in a separate thread
+    visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,))
+    visualization_thread.start()
+    #time.sleep(0.33)
+
+    # Join threads to main thread keeping simulation running
+    transmitter_thread.join()
+    visualization_thread.join()
+
+#channel_a.queue_visual()
 
 if __name__ == "__main__":
     main()
