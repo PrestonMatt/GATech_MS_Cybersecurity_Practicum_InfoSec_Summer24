@@ -31,7 +31,7 @@ class GlobalBus:
         with self.lock:
             return list(self.voltageQueue.queue)
 
-    def queue_visual(self, update_interval = 0.01):
+    def queue_visual(self, update_interval = 5e-7):
         # interactive plot
         plt.ion()
         fig, ax = plt.subplots()
