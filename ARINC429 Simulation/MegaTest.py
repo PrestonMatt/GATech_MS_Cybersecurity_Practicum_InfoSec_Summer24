@@ -17,7 +17,8 @@ def main():
     #test_FMC_word_validation3()
     #test_FMC_pilot_input()
     #test_bus_queue_TX()
-    test_bus_queue_RX()
+    #test_bus_queue_RX()
+    test_FMC_TX()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -119,7 +120,7 @@ def test_bus_queue_TX():
                                                              usec_start = usec_start)
             for voltage in vs:
                 ARINC_Channel.add_voltage(voltage)
-                time.sleep(0.005)
+                time.sleep(5e-7)
 
     # Start the TXr transmission in thread
     transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
@@ -189,6 +190,19 @@ def test_bus_queue_RX():
     transmitter_thread.join()
     receiver_thread.join()
     visualization_thread.join()
+
+def test_FMC_TX():
+    Channel_A = ARINC429BUS()
+    FMC_test6 = FMC("HIGH", BUS_CHANNELS=[Channel_A])
+
+    # FMC Random Word Thread:
+    txer_thread = Thread(target=FMC_test6.transmit_random_voltages, args=(0,) )
+    txer_thread.start()
+
+    # FMC build in visualization:
+    FMC_test6.visualize_FMC_transmissions(Channel_A)
+
+    txer_thread.join()
 
 if __name__ == "__main__":
     main()

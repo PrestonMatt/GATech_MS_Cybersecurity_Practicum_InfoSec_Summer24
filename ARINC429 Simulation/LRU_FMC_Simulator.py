@@ -1,11 +1,13 @@
 from arinc429_voltage_sim import binary_to_voltage as b2v
+from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from time import sleep, time
 import keyboard
+from threading import Thread
 from queue import Queue
 
 class flight_management_computer:
 
-    def __init__(self, speed, mode = "FIFO", fifo_len = 8): # Default is FIFO mode
+    def __init__(self, speed, mode = "FIFO", fifo_len = 8, BUS_CHANNELS = []): # Default is FIFO mode
         if(speed.lower() == "high"):
             self.word_voltage_generator = b2v(True)
         elif(speed.lower() == "low"):
@@ -26,6 +28,8 @@ class flight_management_computer:
 
         self.FIFO = Queue() # inherently FIFO
         self.scheduler = {}
+        # pass bus channels here
+        self.BUS_CHANNELS = BUS_CHANNELS
 
     def __str__(self):
         pass
@@ -151,11 +155,11 @@ class flight_management_computer:
             # mis-made word. Never send then
             return(False)
 
-    def transmit_random_voltages(self):
+    def transmit_random_voltages(self, channel_index = 0):
         while(True):
             try:
                 random_word = self.word_voltage_generator.generate_n_random_words(self.word_voltage_generator.get_speed(), n = 1)
-                self.word_voltage_generator.graph_words(random_word)
+                #self.word_voltage_generator.graph_words(random_word)
 
                 cnt = 0
                 voltages = random_word[1]
@@ -163,7 +167,7 @@ class flight_management_computer:
 
                 for voltage in voltages:
                     # send this voltage to the wire
-                    self.transmit_single_voltage_to_wire(voltage)
+                    self.transmit_single_voltage_to_wire(voltage, self.BUS_CHANNELS[channel_index])
                     # sleep for the appropriate amount of time.
                     # will always be 0.5 microseconds so the math is redundant.
                     #if(cnt < len(times)):
@@ -175,7 +179,7 @@ class flight_management_computer:
             except KeyboardInterrupt:
                 break
 
-    def transmit_given_word(self, word:int):
+    def transmit_given_word(self, word:int, channel_index=0):
         if(self.validate_word(word) == False): # word is invalid:
             raise ValueError("Word is not valid")
         else:
@@ -190,8 +194,8 @@ class flight_management_computer:
             self.word_voltage_generator.graph_words((ts,vs),tickrate=300)
             #print(ts)
             for voltage in vs:
-                self.transmit_single_voltage_to_wire(voltage)
-                sleep(0.5e-6) # sleep 1/2 microsecond
+                self.transmit_single_voltage_to_wire(voltage, self.BUS_CHANNELS[channel_index])
+                sleep(0.5e-7) # sleep 1/2 microsecond
 
     # https://stackoverflow.com/questions/24838629/round-off-float-to-nearest-0-5-in-python
     def return_nearest_half_microsecond(self,usec_messy):
@@ -219,7 +223,16 @@ class flight_management_computer:
         else: # odd
             return(parity_bit == '1')
 
-    # TODO: Send them over some bus-like, simulation medium.
-    def transmit_single_voltage_to_wire(self, voltage):
-        #print(voltage)
-        pass
+    def transmit_single_voltage_to_wire(self, voltage, channel):
+        if(not channel in self.BUS_CHANNELS):
+            raise ValueError("Bus must exist!")
+        channel.add_voltage(voltage)
+
+    def visualize_FMC_transmissions(self, channel):
+        if(not channel in self.BUS_CHANNELS):
+            raise ValueError("Bus must exist to visualize!")
+        # Start the real-time visualization in a separate thread
+        visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel,0.005,"Transmit Data"))
+        visualization_thread.start()
+        #channel.queue_visual(fig_title = f"FMC LRU TX Voltages on Channel {channel}")
+        visualization_thread.join()
