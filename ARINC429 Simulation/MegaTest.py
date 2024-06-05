@@ -3,6 +3,7 @@ import time
 import random
 import pytest
 from threading import Thread
+import matplotlib.pyplot as plt
 # Preston's libraries hehe
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from LRU_FMC_Simulator import flight_management_computer as FMC
@@ -15,7 +16,8 @@ def main():
     #test_FMC_word_validation2()
     #test_FMC_word_validation3()
     #test_FMC_pilot_input()
-    test_bus_queue()
+    #test_bus_queue_TX()
+    test_bus_queue_RX()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -102,7 +104,7 @@ def test_FMC_pilot_input():
     FMC_test5 = FMC("HIGH")
     FMC_test5.transmit_pilot_input()
 
-def test_bus_queue():
+def test_bus_queue_TX():
     print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = True)
     channel_a = ARINC429BUS()
@@ -117,13 +119,13 @@ def test_bus_queue():
                                                              usec_start = usec_start)
             for voltage in vs:
                 ARINC_Channel.add_voltage(voltage)
-                time.sleep(5e-7)
+                time.sleep(0.005)
 
     # Start the TXr transmission in thread
     transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
     transmitter_thread.start()
     # Start the real-time visualization in a separate thread
-    visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,))
+    visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005))
     visualization_thread.start()
     #time.sleep(0.33)
 
@@ -131,7 +133,62 @@ def test_bus_queue():
     transmitter_thread.join()
     visualization_thread.join()
 
-#channel_a.queue_visual()
+def test_bus_queue_RX():
+    print("You need to be using IDLE for this")
+    word_voltage_obj = b2v(hl_speed = True)
+    channel_a = ARINC429BUS()
+
+    # TX random voltages thread -> probably will be good as template for TXrs
+    def generate_voltage_data(ARINC_Channel):
+        while(True):
+            usec_start = time.time()*1_000_000
+            word = random.randint(0, 0b11111111111111111111111111111111)
+            ts, vs = word_voltage_obj.from_intWord_to_signal(hl_speed = word_voltage_obj.get_speed(),
+                                                             word = word,
+                                                             usec_start = usec_start)
+            for voltage in vs:
+                ARINC_Channel.add_voltage(voltage)
+                time.sleep(0.05)
+
+    def recieve_voltage_data(ARINC_Channel):
+        vs = [0.0 for x in range(100)]
+        # interactive plot
+        plt.ion()
+        fig, ax = plt.subplots()
+        line, = ax.plot([], [], 'go--')
+        fig.suptitle("Recieve Data")
+
+        ax.set_xlim(100)
+        ax.set_ylim(-14, 14) # within spec
+        while(True):
+            vs.append(ARINC_Channel.get_all_voltage()[0])
+
+            line.set_xdata(range(100))
+            line.set_ydata(vs[-101:-1])
+
+            ax.set_xlim(0, max(100, 1))
+
+            fig.canvas.draw()
+            fig.canvas.flush_events()
+
+            #time.sleep(0.000005)
+
+    # Start the TXr transmission in thread
+    transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
+    transmitter_thread.start()
+
+    # Start the receiver in a separate thread
+    receiver_thread = Thread(target=recieve_voltage_data, args=(channel_a,))
+    receiver_thread.start()
+
+    # Start the real-time visualization in a separate thread
+    visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005,"Transmit Data"))
+    visualization_thread.start()
+
+    # Join threads to main thread keeping simulation running
+    transmitter_thread.join()
+    receiver_thread.join()
+    visualization_thread.join()
 
 if __name__ == "__main__":
     main()

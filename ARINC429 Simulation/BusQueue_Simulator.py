@@ -8,6 +8,7 @@ class GlobalBus:
     def __init__(self, max_size = 100):
         self.voltageQueue = Queue(maxsize = max_size)
         self.lock = threading.Lock()
+        self.RX_pointer = 0
 
     def add_voltage(self, voltage):
         with self.lock:
@@ -21,7 +22,7 @@ class GlobalBus:
         with self.lock:
             try: # further down the queue the RX should get it
                 # but not at position 100
-                return list(self.voltageQueue.queue)[75]
+                return list(self.voltageQueue.queue)[self.RX_pointer]
             except IndexError:
                 # the queue is empty so voltage should be with spec 0
                 # There may be some noise raising the voltage up/down by half a volt
@@ -31,11 +32,13 @@ class GlobalBus:
         with self.lock:
             return list(self.voltageQueue.queue)
 
-    def queue_visual(self, update_interval = 5e-7):
+    def queue_visual(self, update_interval = 5e-7, fig_title = "default"):
         # interactive plot
         plt.ion()
         fig, ax = plt.subplots()
         line, = ax.plot([], [], 'go--')
+
+        fig.suptitle(fig_title)
 
         ax.set_xlim(self.voltageQueue.maxsize)
         ax.set_ylim(-14, 14) # within spec
