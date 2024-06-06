@@ -1,20 +1,14 @@
+# Import Python modules
 import threading
 import time
-
-from FMC_LRU_Simulator import flight_management_computer
-from EEC_LRU_Simulator import Full_Authority_Engine_Control, BusError
+# Import MY classes
+from LRU_FMC_Simulator import flight_management_computer as FMC
+from LRU_FAEC_Simulator import full_authority_engine_control as FAEC
+from LRU_GPS_Simulator import global_positioning_system as GPS
+from LRU_WnBS_Simulator import weight_and_balance_system as WnBS
 
 def main():
-    # Create an instance of the Flight Management Computer (FMC)
-    Flight_Management_Computer = flight_management_computer(scheduled_mode=False)
-    # This should now be sending data on channel A and B
-    # This should now be recieveing data from the ADIRU
-
-    # Create instances of the Full Authority Engine Controllers for Left and Right engines.
-    FAEC_LRU_Lefty_Engine = Full_Authority_Engine_Control()
-    # This should be listening on channel A and B
-    FAEC_LRU_Right_Engine = Full_Authority_Engine_Control()
-    # This should be listening on channel A and B
+    pass
 
 if __name__ == '__main__':
     main()
