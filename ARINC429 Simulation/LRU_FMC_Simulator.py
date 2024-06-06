@@ -1,5 +1,8 @@
+# My Classes
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
+from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
+# Python Classes
 from time import sleep, time
 import keyboard
 from threading import Thread
@@ -31,6 +34,8 @@ class flight_management_computer:
         # pass bus channels here
         self.BUS_CHANNELS = BUS_CHANNELS
 
+        self.communication_chip = lru_txr(bus_speed = speed.lower(), BUS_CHANNELS = self.BUS_CHANNELS)
+
     def __str__(self):
         pass
 
@@ -40,22 +45,22 @@ class flight_management_computer:
             direction = ""
             # UP -> Pitch plane up
             if(keyboard.is_pressed('up')):
-                self.generate_word_to_pitch_plane(self, "UP")
+                self.generate_word_to_pitch_plane("UP")
             # DOWN -> Pitch plane down
             if(keyboard.is_pressed('down')):
-                self.generate_word_to_pitch_plane(self, "DOWN")
+                self.generate_word_to_pitch_plane("DOWN")
             # LEFT -> pitch plane left
             if(keyboard.is_pressed('left')):
-                self.generate_word_to_pitch_plane(self, "LEFT")
+                self.generate_word_to_pitch_plane("LEFT")
             # RIGHT -> pitch plane right
             if(keyboard.is_pressed('right')):
-                self.generate_word_to_pitch_plane(self, "RIGHT")
+                self.generate_word_to_pitch_plane("RIGHT")
             # W -> push plane forward
             if(keyboard.is_pressed('w')):
-                self.generate_word_to_pitch_plane(self, "W")
+                self.generate_word_to_pitch_plane("W")
             # S -> slow plane down and go backwards
             if(keyboard.is_pressed('s')):
-                self.generate_word_to_pitch_plane(self, "S")
+                self.generate_word_to_pitch_plane("S")
 
     def generate_word_to_pitch_plane(self, direction):
 
@@ -84,10 +89,11 @@ class flight_management_computer:
             # Digit 2 = 26 to 23 (4 bits)
             word_bitStr += "1111"
             # Digit 1 = 27 to 29 (3 bits)
-            word_bitStr += "1111" # TODO check all these lols
+            word_bitStr += "111" # TODO check all these lols
 
             # SSM = 00 for normal ops
             word_bitStr += "00"
+            #print(word_bitStr)
 
             # calculate parity
             word_bitStr += self.calc_parity(word_bitStr)
@@ -121,12 +127,12 @@ class flight_management_computer:
         else: # odd
             return('1')
 
-
     def FIFO_mode(self, next_word):
-        self.FIFO.put(next_word)
-        if(len(self.FIFO) > self.fifo_len):
+        if(self.FIFO.full()):
             word_to_send = self.FIFO.get() # remove from queue
             self.transmit_given_word(word_to_send)
+        self.FIFO.put(next_word)
+        #if(len(self.FIFO) > self.fifo_len):
 
     def scheduler_mode(self, next_word, condition):
         # add to scheduler dict:
@@ -156,6 +162,8 @@ class flight_management_computer:
             return(False)
 
     def transmit_random_voltages(self, channel_index = 0):
+        self.communication_chip.transmit_random_voltages(channel_index)
+        """
         while(True):
             try:
                 random_word = self.word_voltage_generator.generate_n_random_words(self.word_voltage_generator.get_speed(), n = 1)
@@ -178,8 +186,11 @@ class flight_management_computer:
                     sleep(0.5e-6) # sleep 1/2 microsecond
             except KeyboardInterrupt:
                 break
+        """
 
     def transmit_given_word(self, word:int, channel_index=0):
+        self.communication_chip.transmit_given_word(word, channel_index)
+        """
         if(self.validate_word(word) == False): # word is invalid:
             raise ValueError("Word is not valid")
         else:
@@ -196,13 +207,14 @@ class flight_management_computer:
             for voltage in vs:
                 self.transmit_single_voltage_to_wire(voltage, self.BUS_CHANNELS[channel_index])
                 sleep(0.5e-7) # sleep 1/2 microsecond
+        """
 
     # https://stackoverflow.com/questions/24838629/round-off-float-to-nearest-0-5-in-python
     def return_nearest_half_microsecond(self,usec_messy):
         return(round(usec_messy * 2) / 2)
 
     def validate_word(self, word) -> bool:
-
+        """
         word = bin(word)
         #print(word)
 
@@ -222,11 +234,16 @@ class flight_management_computer:
             return(parity_bit == '0')
         else: # odd
             return(parity_bit == '1')
+        """
+        return(self.communication_chip.validate_word(word))
 
     def transmit_single_voltage_to_wire(self, voltage, channel):
+        """
         if(not channel in self.BUS_CHANNELS):
             raise ValueError("Bus must exist!")
         channel.add_voltage(voltage)
+        """
+        self.communication_chip.transmit_single_voltage_to_wire(voltage, channel)
 
     def visualize_FMC_transmissions(self, channel):
         if(not channel in self.BUS_CHANNELS):

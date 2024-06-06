@@ -6,19 +6,21 @@ from threading import Thread
 import matplotlib.pyplot as plt
 # Preston's libraries hehe
 from arinc429_voltage_sim import binary_to_voltage as b2v
-from LRU_FMC_Simulator import flight_management_computer as FMC
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
+from LRU_FMC_Simulator import flight_management_computer as FMC
+from LRU_GPS_Simulator import global_positioning_system as GPS
 
 def main():
     #test_voltage_sim()
     #test_intWord_to_voltage()
-    #test_FMC_word_validation1()
-    #test_FMC_word_validation2()
-    #test_FMC_word_validation3()
+    test_FMC_word_validation1()
+    test_FMC_word_validation2()
+    test_FMC_word_validation3()
     #test_FMC_pilot_input()
     #test_bus_queue_TX()
     #test_bus_queue_RX()
     test_FMC_TX()
+    test_GPS_comm()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -103,7 +105,7 @@ def test_FMC_send_multiple_given_words():
 
 def test_FMC_pilot_input():
     FMC_test5 = FMC("HIGH")
-    FMC_test5.transmit_pilot_input()
+    FMC_test5.pilot_input()
 
 def test_bus_queue_TX():
     print("You need to be using IDLE for this")
@@ -203,6 +205,10 @@ def test_FMC_TX():
     FMC_test6.visualize_FMC_transmissions(Channel_A)
 
     txer_thread.join()
+
+def test_GPS_comm():
+    GPS_test1 = GPS("HIGH")
+    GPS_test1.communicate_to_bus()
 
 if __name__ == "__main__":
     main()
