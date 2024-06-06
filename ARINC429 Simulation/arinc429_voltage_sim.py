@@ -18,9 +18,9 @@ class binary_to_voltage:
         self.hl_speed = hl_speed
 
     def __str__(self):
-        print("Speed: %" % self.hl_speed)
+        return(f"Speed: {self.hl_speed}")
 
-    def get_bus_speed(self):
+    def get_speed(self):
         return(self.hl_speed)
 
     def test_all_functions(self):
@@ -41,12 +41,12 @@ class binary_to_voltage:
         print("Testing with given LS word of: 0b11111101000000000000001000110000")
         self.graph_words(self.frombitstring_to_signal(False,0b11111101000000000000001000110000,0),figtitle="Set Word Engine Reverse Thrust 70%",tickrate=50)
 
-        print("Testing with null time of 4 bits in between random words, 5 words, HS.")
+        print("Testing with null time of 4 bits in between random words, 3 words, HS.")
         self.graph_words(self.generate_n_random_words(True, n = 3),figtitle="Three Random Words")
 
         print("Trying to RX given HS word of: 0b11111101000000000000001000110000")
         hl_speed = True
-        bits = self.from_voltage_to_bin(
+        bits, _ = self.from_voltage_to_bin_word(
             self.frombitstring_to_signal(hl_speed,0b11111101000000000000001000110000,0.0),
             hl_speed,
             True # graph the word.
@@ -55,7 +55,7 @@ class binary_to_voltage:
 
         print("Trying to RX given LS word of: 0b11111101000000000000001000110000")
         hl_speed = False
-        bits = self.from_voltage_to_bin(
+        bits, _ = self.from_voltage_to_bin_word(
             self.frombitstring_to_signal(hl_speed,0b11111101000000000000001000110000,0.0),
             hl_speed,
             True # graph the word.
@@ -131,28 +131,7 @@ class binary_to_voltage:
         #print(bin_str)
         #print(binary_)
 
-        return(binary_)
-
-    def is_four_nulls_in_a_row(self, word, hl_speed):
-        ts = word[0]
-        vs = word[1]
-
-        num_volts = 8 * 4 # HIGH SPEED
-        if(not hl_speed): # LOW SPEED
-            num_volts = 39 * 4
-
-        cnt = 0
-        copy_vs = vs
-        copy_ts = ts
-        for voltage in vs:
-            cnt += 1
-            if(voltage > 2.5 or voltage < -2.5):
-                if(cnt < num_volts):
-                    return(False, word)
-                else:
-                    return(True, (copy_ts,copy_vs))
-            copy_vs = copy_vs[1:]
-            copy_ts = copy_ts[1:] # Leftovers
+        return(binary_, bin_str)
 
     def check_all_voltages_is_1(self, vs):
         for voltage in vs:
@@ -310,12 +289,13 @@ class binary_to_voltage:
 
         t_usecs = np.arange(usec_start,
                              usec_start + null_time,
-                             0.05) # sample every 1/2 microsecond.
+                             0.5) # sample every 1/2 microsecond.
         vs = []
         for x in range(len(t_usecs)): # generate voltage samples
             vs.append(random.uniform(-0.5,0.5))
 
         voltages = np.array(vs)
+        #print(len(t_usecs),len(voltages))
         return(t_usecs,voltages)
 
     def create_random_word(self, lh_speed):
@@ -356,12 +336,52 @@ class binary_to_voltage:
                     ts, vs = self.create_ARINC429_one_lowspeed(times[-1] + 0.5)
             else: # 0
                 ts, vs = self.create_ARINC429_zero(times[-1] + 0.5,hl_speed)
-            voltages =  np.concatenate((voltages,vs), axis = 0)
+            voltages = np.concatenate((voltages,vs), axis = 0)
             times = np.concatenate((times, ts), axis = 0)
 
         return(times,voltages)
 
-    def generate_n_random_words(self, hl_speed,n=5):
+    def from_intWord_to_signal(self, hl_speed, word: int, usec_start):
+
+        if(not isinstance(word, int)):
+            raise ValueError("Word has to be integer")
+        elif(len(bin(word)[2:]) > 32):
+            raise ValueError("Word length too long -- not valid!")
+
+        bitstring = bin(word).replace("0b","")
+
+        voltages = np.array([0.0])
+        times = np.array([usec_start])
+
+        if(len(bitstring) < 32):
+            ts = []
+            vs = []
+            num_leading_zeros = 32 - len(bitstring)
+            # make that many zeros
+            for x in range(num_leading_zeros):
+                ts, vs = self.create_ARINC429_zero(times[-1] + 0.5, hl_speed)
+                voltages = np.concatenate( (voltages, vs), axis = 0)
+                times = np.concatenate((times, ts), axis = 0)
+
+        ts = []
+        vs = []
+        # no else; just move to the rest of the word (first 1 and beyond)
+        ts, vs = self.frombitstring_to_signal(hl_speed, word, times[-1] + 0.5)
+        voltages = np.concatenate( (voltages, vs), axis = 0)
+        times = np.concatenate((times, ts), axis = 0)
+
+        ts = []
+        vs = []
+        # also needs the null time between words.
+        ts, vs = self.create_null_time_between_words(hl_speed, times[-1] + 0.5)
+        voltages = np.concatenate( (voltages, vs), axis = 0)
+        times = np.concatenate((times, ts), axis = 0)
+
+        #print("TIMES: ", times)
+        #print("Voltages: ", voltages)
+        return(times, voltages)
+
+    def generate_n_random_words(self, hl_speed, n=5):
         voltages = np.array([0.0])
         times = np.array([0.0])
         for w in range(n):
@@ -369,11 +389,15 @@ class binary_to_voltage:
 
             # Word
             t1s, v1s = self.frombitstring_to_signal(hl_speed, randomword, times[-1] + 0.5)
-            voltages =  np.concatenate((voltages,v1s), axis = 0)
+            voltages = np.concatenate((voltages, v1s), axis = 0)
             times = np.concatenate((times, t1s), axis = 0)
 
+            # Four null voltages between each word
             t2s, v2s = self.create_null_time_between_words(hl_speed, times[-1] + 0.5)
-            voltages =  np.concatenate((voltages,v2s), axis = 0)
+            voltages = np.concatenate((voltages, v2s), axis = 0)
             times = np.concatenate((times, t2s), axis = 0)
+
+        if(len(times) != len(voltages)):
+            raise ValueError("VOLTAGES AND TIMES MUST BE THE SAME SHAPE!")
 
         return(times,voltages)
