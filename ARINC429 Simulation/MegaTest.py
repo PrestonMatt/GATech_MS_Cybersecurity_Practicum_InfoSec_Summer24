@@ -41,6 +41,11 @@ def test_all():
     test_RMS_Test_latitudedecode_BCD()
     test_RMS_Test_longitudedecode_BCD()
     test_RMS_flight_number()
+    test_RMS_ground_speed_BCD()
+    test_RMS_track_speed_BCD()
+    test_RMS_vert_speed_BCD()
+    test_RMS_heading_BCD()
+    test_RMS_altitude_BCD()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -452,7 +457,7 @@ def test_RMS_Test_latitudedecode_BCD():
     RMS_test1 = RMS("low",[ARINC_Channel])
     label, _ = tx_chip.make_label_for_word(int(0o010))
     data = "1001" + "1001" + "1010" + "1010" + "1110" + "0" + "00" + "1"
-    print(len(data))
+    #print(len(data))
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
@@ -477,7 +482,7 @@ def test_RMS_Test_longitudedecode_BCD():
     RMS_test1 = RMS("low",[ARINC_Channel])
     label, _ = tx_chip.make_label_for_word(int(0o011))
     data = "0001" + "1010" + "0100" + "1001" + "0110" + "1" + "11" + "1"
-    print(len(data))
+    #print(len(data))
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
@@ -504,7 +509,7 @@ def test_RMS_flight_number():
     data = "00" + "000" + "1110" + "1000" + "1000" + "0000" + "00"
     par_bit = tx_chip.calc_parity(label+data)
     data += par_bit
-    print(len(data))
+    #print(len(data))
     word = label + data
     RMS_test1.decode_word(word)
     # 117
@@ -521,6 +526,185 @@ def test_RMS_flight_number():
                 "Ident Switch": False,
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
+
+def test_RMS_lat_BNR():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o310))
+    data = "00" + "010101011111001110" + "011" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": "N 81.5 Deg",
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_ground_speed_BCD():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o012))
+    data = "00" + \
+           "0000" + \
+            "0000" + "1010" + "0110" + "000" + "00" + "1" #"PPPP" -> middle 0s
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": None,
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": 650,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_ground_speed_BNR():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o312))
+    data = "00" + "000000010100010100" + "011" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": None,
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": 650,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_track_speed_BCD():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o013))
+    data = "00" + "0000" + "1010" + "1010" + "0110" + "100" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": None,
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": 165.5,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_vert_speed_BCD():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o020))
+    data = "00" + "0000" + "0000" + "0000" + "0100" + "010" + "11" + "0"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": None,
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": -2200,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_heading_BCD():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o023))
+    data = "00" + "0000" + "0000" + "1110" + "1110" + "100" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": None,
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": 177,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_altitude_BCD():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o025))
+    data = "00" + "0000" + "0000" + "0000" + "1000" + "001" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": None,
+                "Longitude": None,
+                "Altitude": 41000,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+
 
 if __name__ == "__main__":
     test_all()

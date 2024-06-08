@@ -18,9 +18,11 @@ class radio_management_system:
         0o020: "Selected Vertical Speed",
         0o023: "Selected Heading",
         0o025: "Selected Altitude",
+        #0o026: "Selected Airspeed",
         0o032: "ADF Frequency",
+        #0o125: "UTC",
         0o261: "Flight Number Word",
-        0o230: "True Airspeed"
+        #0o230: "True Airspeed"
     }
     applicable_labels_DISC = {
         0o033: "Frequency (Hz)",
@@ -28,18 +30,18 @@ class radio_management_system:
         0o035: "DME Frequency",
         0o037: "HF COM Frequency",
         0o205: "HF COM Frequency (alt.)",
-        0o150: "UTC",
+        #0o150: "UTC",
         0o214: "ICAO Address no. 1",
         0o216: "ICAO Address no. 2"
     }
     applicable_labels_BNR = {
         0o101: "Selected Heading",
         0o102: "Selected Altitude", #
-        0o103: "Selected Airspeed", # Deg/180 [-180,180], res: 0.25 deg
-        0o142: "UTC",
+        #0o103: "Selected Airspeed", # Deg/180 [-180,180], res: 0.25 deg
+        #0o142: "UTC",
         0o203: "Altitude", # Feet, [0,131,071], res: ~1 ft
-        0o206: "Computed Airspeed", # Knots [0,1024], res ~ 0.25
-        0o210: "True Airspeed", # Knots [0,2048], res ~ 0.25
+        #0o206: "Computed Airspeed", # Knots [0,1024], res ~ 0.25
+        #0o210: "True Airspeed", # Knots [0,2048], res ~ 0.25
         0o310: "Latitude (Present Position)",
         0o311: "Longitude (Present Position)",
         0o312: "Ground Speed",
@@ -171,23 +173,125 @@ class radio_management_system:
                                    is_north + str6+str(dig_5)+str(dig_4) + " Deg " + str(dig_3)+str(dig_2) + "." + str(dig_1) + "'"
                                    )
         elif label == 0o310: # Latitude (Present Position)
-            pass
+            SDI = word[8:10]
+            data = word[10:28][::-1]
+            dir = word[28:31]
+            print(int(data,2))
+            if(dir == "011"):
+                is_north = "N "
+            else:
+                is_north = "S "
+            # TODO: figure this shit out.
+            self.set_ADS_B_Message("Latitude",
+                                   is_north + "TODO" + "." + "TODO" + " Deg "
+                                   )
         elif label == 0o311: # Longitude (Present Position)
             pass
-        elif label == 0o012:
-            pass  # Ground Speed
-        elif label == 0o312:
-            pass  # Ground Speed
-        elif label == 0o013:
-            pass  # Track Angle
-        elif label == 0o020:
-            pass  # Selected Vertical Speed
-        elif label == 0o023:
-            pass  # Selected Heading
-        elif label == 0o025:
-            pass  # Selected Altitude
-        elif label == 0o032:
-            pass  # ADF Frequency
+        elif label == 0o012: # Ground Speed
+            SDI = word[8:10]
+            parity = word[10:14] # Do nothing with these two values
+
+            digits = self.get_digits_BCD(word)
+
+            x1s = digits[1]
+            x10s = digits[2]
+            x100s = digits[3]
+            x1000s = digits[4]
+
+            #print(f"{x1000s}{x100s}{x10s}{x1s}")
+            self.set_ADS_B_Message("Ground Speed",int(f"{x1000s}{x100s}{x10s}{x1s}"))
+        elif label == 0o312: # Ground Speed
+            #SDI = word[8:10]
+            data = word[10:27]
+            speed = int(data,2)
+            #dir = word[28:31]
+            #print(speed)
+            self.set_ADS_B_Message("Ground Speed",speed)
+        elif label == 0o013: # Track Angle
+            #SDI = word[8:10]
+            #parity = word[10:14] # Do nothing with these two values
+
+            digits = self.get_digits_BCD(word)
+
+            xpoint1s = digits[1]
+            x1s = digits[2]
+            x10s = digits[3]
+            x100s = digits[4]
+
+            angle = float(f"{x100s}{x10s}{x1s}.{xpoint1s}")
+
+            self.set_ADS_B_Message("Track Angle",angle)
+        elif label == 0o313: # Track Angle True
+            pass
+        elif label == 0o020: # Selected Vertical Speed
+            digits = self.get_digits_BCD(word)
+
+            x1s = digits[1]
+            x10s = digits[2]
+            x100s = digits[3]
+            x1000s = digits[4]
+
+            #print(f"{x1000s}{x100s}{x10s}{x1s}")
+
+            if(word[29:31] == "11"):
+                sign = -1
+            else:
+                sign = 1
+
+            self.set_ADS_B_Message("Vertical Speed",sign*int(f"{x1000s}{x100s}{x10s}{x1s}"))
+        elif label == 0o023: # Selected Heading
+            digits = self.get_digits_BCD(word)
+
+            x1s = digits[2]
+            x10s = digits[3]
+            x100s = digits[4]
+
+            #print(f"{x100s}{x10s}{x1s}")
+
+            if(word[29:31] == "11"):
+                sign = -1
+            else:
+                sign = 1
+
+            self.set_ADS_B_Message("Magnetic Heading",sign*int(f"{x100s}{x10s}{x1s}"))
+        elif label == 0o101: # Selected Heading
+            pass
+        elif label == 0o314: # True Heading
+            pass
+        elif label == 0o320: # Magnetic Heading
+            pass
+        elif label == 0o025: # Selected Altitude
+            digits = self.get_digits_BCD(word)
+
+            x1s = digits[0]
+            x10s = digits[1]
+            x100s = digits[2]
+            x1000s = digits[3]
+            x10000s = digits[4]
+
+            #print(f"{x1000s}{x100s}{x10s}{x1s}")
+
+            self.set_ADS_B_Message("Altitude",int(f"{x10000s}{x1000s}{x100s}{x10s}{x1s}"))
+        elif label == 0o102: # Selected Altitude
+            pass
+        elif label == 0o203: # Altitude
+            pass
+        elif label == 0o214:
+            pass  # ICAO Address no. 1
+        elif label == 0o216:
+            pass  # ICAO Address no. 2
+        elif label == 0o032: # ADF Frequency
+            pass
+        elif label == 0o033: # Frequency (Hz)
+            pass
+        elif label == 0o034: # VOR/ILS Frequency
+            pass
+        elif label == 0o035: # DME Frequency
+            pass
+        elif label == 0o037: # HF COM Frequency
+            pass
+        elif label == 0o205: # HF COM Frequency (alt.)
+            pass
         elif label == 0o261: # Flight Number Word
             ones_place = word[13:17]
             flt_dig_1 = int(ones_place[::-1],2)
@@ -202,46 +306,50 @@ class radio_management_system:
             self.set_ADS_B_Message("Flight Number",
                                    int(f"{flt_dig_4}{flt_dig_3}{flt_dig_2}{flt_dig_1}")
                                    )
-        elif label == 0o230:
-            pass  # True Airspeed
-        elif label == 0o210:
-            pass  # True Airspeed
-        elif label == 0o033:
-            pass  # Frequency (Hz)
-        elif label == 0o034:
-            pass  # VOR/ILS Frequency
-        elif label == 0o035:
-            pass  # DME Frequency
-        elif label == 0o037:
-            pass  # HF COM Frequency
-        elif label == 0o205:
-            pass  # HF COM Frequency (alt.)
-        elif label == 0o150:
-            pass  # UTC
-        elif label == 0o214:
-            pass  # ICAO Address no. 1
-        elif label == 0o216:
-            pass  # ICAO Address no. 2
-        elif label == 0o101:
-            pass  # Selected Heading
-        elif label == 0o102:
-            pass  # Selected Altitude
-        elif label == 0o103:
-            pass  # Selected Airspeed
-        elif label == 0o142:
-            pass  # UTC
-        elif label == 0o203:
-            pass  # Altitude
-        elif label == 0o206:
-            pass  # Computed Airspeed
-        elif label == 0o313:
-            pass  # Track Angle True
-        elif label == 0o314:
-            pass  # True Heading
-        elif label == 0o320:
-            pass  # Magnetic Heading
         else:
             pass  # Label not found -> do nothing
+
+        """
+        elif label == 0o026: # True Airspeed
+            digits = self.get_digits_BCD(word)
+    
+            x1s = digits[2]
+            x10s = digits[3]
+            x100s = digits[4]
+    
+            #print(f"{x1000s}{x100s}{x10s}{x1s}")
+    
+            self.set_ADS_B_Message("Altitude",int(f"{x100s}{x10s}{x1s}"))
+        elif label == 0o230: # True Airspeed
+            pass
+        elif label == 0o210: # True Airspeed
+            pass
+        elif label == 0o103: # Selected Airspeed
+            pass
+        elif label == 0o206: # Computed Airspeed
+            pass
+        elif label == 0o125: # UTC
+            pass
+        elif label == 0o150: # UTC
+            pass
+        elif label == 0o142: # UTC
+            pass
+        """
+
+    def get_digits_BCD(self,word:str) -> (int,int,int,int,int):
+
+        optionals_place = word[10:14]
+        xOps = int(optionals_place[::-1],2)
+        ones_place = word[14:18]
+        x1s = int(ones_place[::-1],2)
+        tens_place = word[18:22]
+        x10s = int(tens_place[::-1],2)
+        hunds_place = word[22:26]
+        x100s = int(hunds_place[::-1],2)
+        thousand_place = word[26:29]
+        x1000s = int(thousand_place[::-1],2)
+
+        return(xOps,x1s,x10s,x100s,x1000s)
 
     def set_DME_frequency(self,frequency:float):
         self.DME_Frequency = frequency
