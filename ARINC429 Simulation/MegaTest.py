@@ -38,6 +38,7 @@ def test_all():
     test_TX_label_reverser4()
     test_TX_label_reverser5()
     test_RMS_Test_Static1()
+    test_RMS_Test_latitudedecode_BCD()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -442,15 +443,55 @@ def test_RMS_Test_Static1():
              "ICAO Address": None,
              "Aircraft Type": "Civilian"})
 
-def test_RMS_Test_Static2():
+def test_RMS_Test_latitudedecode_BCD():
     print("\n")
+    tx_chip = lru_txr()
     ARINC_Channel = ARINC429BUS()
     RMS_test1 = RMS("low",[ARINC_Channel])
-    label = "00010000"
-    data = "1001100110101001111000001"
+    label, _ = tx_chip.make_label_for_word(int(0o010))
+    data = "1001" + "1001" + "1010" + "1010" + "1110" + "0" + "00" + "1"
+    print(len(data))
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": "N 75 Deg 59.9'",
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_Test_longitudedecode_BCD():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o011))
+    data = "0001" + "1010" + "0100" + "1001" + "0110" + "1" + "11" + "1"
+    print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": "W 169 Deg 25.8'",
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
 
 if __name__ == "__main__":
     test_all()

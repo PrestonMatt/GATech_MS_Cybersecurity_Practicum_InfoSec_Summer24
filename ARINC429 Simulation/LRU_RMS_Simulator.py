@@ -112,23 +112,64 @@ class radio_management_system:
     # Aircraft Type - NOT OVER BUS
     def decode_word(self,word:str):
         label = self.receive_chip.get_label_from_word(int(word,2))
-        print(label)
-        print(word)
+        #print(oct(label))
+        #print(word)
 
         if label == 0o010: # Latitude (Present Position)
-            print("HI")
-            num1 = word[9:12]
-            num2 = word[13:16]
-            num3 = word[17:20]
-            num4 = word[21:24]
-            num5 = word[26:28]
-            is_north = (word[29] == 0)
-            ssm = word[30:31] # BCD ->
+            #print("HI")
+            num1 = word[8:12]
+            dig_1 = int(num1[::-1],2)
+            num2 = word[12:16]
+            dig_2 = int(num2[::-1],2)
+            num3 = word[16:20]
+            dig_3 = int(num3[::-1],2)
+            num4 = word[20:24]
+            dig_4 = int(num4[::-1],2)
+            num5 = word[24:28]
+            dig_5 = int(num5[::-1],2)
+            num6 = word[28]
+            dig_6 = int(num6[::-1],2)
+            str6 = ""
+            if(dig_6 == 1):
+                str6 = "1"
+            ssm = word[29:31]
+            #print(ssm)
             if(ssm == "00"):
-                # Failure Warning
-                self.set_ADS_B_Message("Emergency Status","Failure Warning")
-        elif label == 0o011:
-            pass  # Longitude (Present Position)
+                is_north = "N "
+            else:
+                is_north = "S "
+
+            #print(f"Number 1: {num1}\nNumber 2: {num2}\nNumber 3: {num3}\nNumber 4: {num4}\nNumber 5: {num5}")
+            #print(f"Digit 1: {dig_1}\nDigit 2: {dig_2}\nDigit 3: {dig_3}\nDigit 4: {dig_4}\nDigit 5: {dig_5}")
+
+            self.set_ADS_B_Message("Latitude",
+                                   is_north + str6+str(dig_5)+str(dig_4) + " Deg " + str(dig_3)+str(dig_2) + "." + str(dig_1) + "'"
+                                   )
+        elif label == 0o011: # Longitude (Present Position)
+            num1 = word[8:12]
+            dig_1 = int(num1[::-1],2)
+            num2 = word[12:16]
+            dig_2 = int(num2[::-1],2)
+            num3 = word[16:20]
+            dig_3 = int(num3[::-1],2)
+            num4 = word[20:24]
+            dig_4 = int(num4[::-1],2)
+            num5 = word[24:28]
+            dig_5 = int(num5[::-1],2)
+            num6 = word[28]
+            dig_6 = int(num6[::-1],2)
+            str6 = ""
+            if(dig_6 == 1):
+                str6 = "1"
+            ssm = word[29:31]
+            #print(ssm)
+            if(ssm == "00"):
+                is_north = "E "
+            else:
+                is_north = "W "
+            self.set_ADS_B_Message("Latitude",
+                                   is_north + str6+str(dig_5)+str(dig_4) + " Deg " + str(dig_3)+str(dig_2) + "." + str(dig_1) + "'"
+                                   )
         elif label == 0o310:
             pass  # Latitude (Present Position)
         elif label == 0o311:
