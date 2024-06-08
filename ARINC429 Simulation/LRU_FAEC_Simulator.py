@@ -101,7 +101,7 @@ class full_authority_engine_control:
         #       see which label it is;
         #       do what the label wants (actuation)
         # else; ignore
-        if(check_if_words_same(self.word_channelA, self.word_channelB)):
+        if(self.check_if_words_same(self.word_channelA, self.word_channelB)):
             # words are the same
             true_word = self.word_channelA
             word_bitstr = bin(true_word)[2:]
@@ -116,9 +116,9 @@ class full_authority_engine_control:
         # BCD
         if(label in self.applicable_labels_BCD):
             if(label == 0o046):
-                engine_serial_no(self,"LSD")
+                self.engine_serial_no(self,"LSD")
             elif(label == 0o047):
-                engine_serial_no(self,"MSB")
+                self.engine_serial_no(self,"MSB")
         # DISC
         elif(label in self.applicable_labels_DISC):
             pass # TODO
@@ -153,7 +153,7 @@ class full_authority_engine_control:
             vs = np.concatenate((vs, self.recieve_single_voltage_from_wire()))
 
             word_as_int, word_bitStr = self.word_generator_obj.from_voltage_to_bin_word((ts, vs),
-                                                                    word_generator_obj.get_speed())
+                                                                                        self.word_generator_obj.get_speed())
 
         return(word_as_int)
 

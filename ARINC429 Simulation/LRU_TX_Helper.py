@@ -38,7 +38,7 @@ class arinc429_TX_Helpers():
             except KeyboardInterrupt:
                 break
 
-    def transmit_given_word(self, word:int, bus_usec_start, channel_index=0):
+    def transmit_given_word(self, word:int, bus_usec_start, channel_index=0, slowdown_rate = 5e-7):
         if(self.validate_word(word) == False): # word is invalid:
             raise ValueError("Word is not valid")
         else:
@@ -54,13 +54,13 @@ class arinc429_TX_Helpers():
             #print(ts)
             for voltage in vs:
                 self.transmit_single_voltage_to_wire(voltage, self.BUS_CHANNELS[channel_index])
-                sleep(0.5e-7) # sleep 1/2 microsecond
+                sleep(slowdown_rate) # sleep 1/2 microsecond is default
 
     # https://stackoverflow.com/questions/24838629/round-off-float-to-nearest-0-5-in-python
     def return_nearest_half_microsecond(self,usec_messy):
         return(round(usec_messy * 2) / 2)
 
-    def validate_word(self, word) -> bool:
+    def validate_word(self, word:int) -> bool:
 
         word = bin(word)
 

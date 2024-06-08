@@ -8,7 +8,10 @@ class GlobalBus:
     def __init__(self, max_size = 100):
         self.voltageQueue = Queue(maxsize = max_size)
         self.lock = threading.Lock()
-        self.RX_pointer = 0
+        self.RX_pointer = 75
+
+    def __str__(self):
+        pass
 
     def add_voltage(self, voltage):
         with self.lock:

@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 # Preston's libraries hehe
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
+from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
+from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 from LRU_FMC_Simulator import flight_management_computer as FMC
 from LRU_GPS_Simulator import global_positioning_system as GPS
 
@@ -19,8 +21,11 @@ def main():
     #test_FMC_pilot_input()
     #test_bus_queue_TX()
     #test_bus_queue_RX()
-    test_FMC_TX()
-    test_GPS_comm()
+    #test_FMC_TX()
+    #test_GPS_comm()
+    #test_RX_Helper1()
+    #test_RX_Helper2()
+    test_RX_Helper3()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -159,7 +164,7 @@ def test_bus_queue_RX():
         plt.ion()
         fig, ax = plt.subplots()
         line, = ax.plot([], [], 'go--')
-        fig.suptitle("Recieve Data")
+        fig.suptitle("Receive Data")
 
         ax.set_xlim(100)
         ax.set_ylim(-14, 14) # within spec
@@ -209,6 +214,118 @@ def test_FMC_TX():
 def test_GPS_comm():
     GPS_test1 = GPS("HIGH")
     GPS_test1.communicate_to_bus()
+
+def test_RX_Helper1():
+    print("You need to be using IDLE for this")
+    word_voltage_obj = b2v(hl_speed = False)
+    channel_a = ARINC429BUS()
+    def generate_voltage_data(ARINC_Channel):
+        while(True):
+            usec_start = time.time()*1_000_000
+            word = random.randint(0, 0b11111111111111111111111111111111)
+            ts, vs = word_voltage_obj.from_intWord_to_signal(hl_speed = word_voltage_obj.get_speed(),
+                                                             word = word,
+                                                             usec_start = usec_start)
+            for voltage in vs:
+                ARINC_Channel.add_voltage(voltage)
+                time.sleep(0.05)
+
+    def recieve_voltage_data(ARINC_Channel):
+        reciever_chip = lru_rxr(bus_speed = "low", BUS_CHANNELS = [ARINC_Channel])
+        reciever_chip.visualize_LRU_receiveds(ARINC_Channel)
+
+    # Start the TXr transmission in thread
+    transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
+    transmitter_thread.start()
+
+    # Start the receiver in a separate thread
+    receiver_thread = Thread(target=recieve_voltage_data, args=(channel_a,))
+    receiver_thread.start()
+
+    # Start the real-time visualization in a separate thread
+    visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005,"Transmit Data"))
+    visualization_thread.start()
+
+    # Join threads to main thread keeping simulation running
+    transmitter_thread.join()
+    receiver_thread.join()
+    visualization_thread.join()
+
+def test_RX_Helper2():
+    print("You need to be using IDLE for this")
+    word_voltage_obj = b2v(hl_speed = False)
+    channel_a = ARINC429BUS()
+    def generate_voltage_data(ARINC_Channel):
+        while(True):
+            usec_start = time.time()*1_000_000
+            word = random.randint(0, 0b11111111111111111111111111111111)
+            cont = input(f"Transmitting given word:{bin(word)}")
+            ts, vs = word_voltage_obj.from_intWord_to_signal(hl_speed = word_voltage_obj.get_speed(),
+                                                             word = word,
+                                                             usec_start = usec_start)
+            for voltage in vs:
+                ARINC_Channel.add_voltage(voltage)
+                time.sleep(0.005)
+
+    def recieve_voltage_data(ARINC_Channel):
+        reciever_chip = lru_rxr(bus_speed = "low", BUS_CHANNELS = [ARINC_Channel])
+        #reciever_chip.visualize_LRU_receiveds(ARINC_Channel)
+        print(f"RECIEVED WORD AS INT: {reciever_chip.receive_given_word(0)}")
+
+    # Start the TXr transmission in thread
+    transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
+    transmitter_thread.start()
+
+    # Start the receiver in a separate thread
+    receiver_thread = Thread(target=recieve_voltage_data, args=(channel_a,))
+    receiver_thread.start()
+
+    # Start the real-time visualization in a separate thread
+    #visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005,"Transmit Data"))
+    #visualization_thread.start()
+
+    # Join threads to main thread keeping simulation running
+    transmitter_thread.join()
+    receiver_thread.join()
+    visualization_thread.join()
+
+def test_RX_Helper3():
+    print("You need to be using IDLE for this")
+    word_voltage_obj = b2v(hl_speed = True)
+    channel_a = ARINC429BUS()
+    def generate_voltage_data(ARINC_Channel):
+        while(True):
+            usec_start = time.time()*1_000_000
+            word = random.randint(0, 0b11111111111111111111111111111111)
+            cont = input(f"Transmitting given word:{bin(word)}")
+            ts, vs = word_voltage_obj.from_intWord_to_signal(hl_speed = word_voltage_obj.get_speed(),
+                                                             word = word,
+                                                             usec_start = usec_start)
+            for voltage in vs:
+                ARINC_Channel.add_voltage(voltage)
+                time.sleep(0.005)
+
+    def recieve_voltage_data(ARINC_Channel):
+        reciever_chip = lru_rxr(bus_speed = "high", BUS_CHANNELS = [ARINC_Channel])
+        #reciever_chip.visualize_LRU_receiveds(ARINC_Channel)
+        print(f"RECIEVED WORD AS INT: {reciever_chip.receive_given_word(0)}")
+
+    # Start the TXr transmission in thread
+    transmitter_thread = Thread(target=generate_voltage_data, args=(channel_a,))
+    transmitter_thread.start()
+
+    # Start the receiver in a separate thread
+    receiver_thread = Thread(target=recieve_voltage_data, args=(channel_a,))
+    receiver_thread.start()
+
+    # Start the real-time visualization in a separate thread
+    #visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005,"Transmit Data"))
+    #visualization_thread.start()
+
+    # Join threads to main thread keeping simulation running
+    transmitter_thread.join()
+    receiver_thread.join()
+    #visualization_thread.join()
 
 if __name__ == "__main__":
     main()
