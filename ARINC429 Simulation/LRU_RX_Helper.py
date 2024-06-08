@@ -57,6 +57,21 @@ class arinc429_RX_Helpers():
 
         return(word_as_int, word_bitStr)
 
+    def get_label_from_word(self, word:int) -> int:
+        # remember label is transmitted BACKWARDS for some ******** reason
+        # get the top 8 bits from a 32bit word:
+        top8_bits = word >> 24
+        # Convert the integer to a binary string without the '0b' prefix
+        label_bin_str = bin(top8_bits)[2:]
+        if(len(label_bin_str) < 8):
+            # Need to append zeros.
+            label_bin_str = "0"*(8-len(label_bin_str)) + label_bin_str
+        # Reverse the binary string
+        reversed_label_str = label_bin_str[::-1]
+        # Convert the reversed binary string back to an integer
+        true_label = int(reversed_label_str, 2)
+        return(true_label)
+
     """
     # https://stackoverflow.com/questions/24838629/round-off-float-to-nearest-0-5-in-python
     def return_nearest_half_microsecond(self,usec_messy):

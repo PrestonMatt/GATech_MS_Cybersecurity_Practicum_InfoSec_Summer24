@@ -11,6 +11,7 @@ from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
 from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 from LRU_FMC_Simulator import flight_management_computer as FMC
 from LRU_GPS_Simulator import global_positioning_system as GPS
+from LRU_RMS_Simulator import radio_management_system as RMS
 
 def main():
     #test_voltage_sim()
@@ -25,7 +26,13 @@ def main():
     #test_GPS_comm()
     #test_RX_Helper1()
     #test_RX_Helper2()
-    test_RX_Helper3()
+    #test_RX_Helper3()
+    test_RX_label_fetch1()
+    test_RX_label_fetch2()
+    test_RX_label_fetch3()
+    test_RX_label_fetch4()
+    test_RX_label_fetch5()
+    test_RMS_Test_Static1()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -287,8 +294,9 @@ def test_RX_Helper2():
     # Join threads to main thread keeping simulation running
     transmitter_thread.join()
     receiver_thread.join()
-    visualization_thread.join()
+    #visualization_thread.join()
 
+# TODO: Use this test to fix the high speed get voltage function and actually RX words.
 def test_RX_Helper3():
     print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = True)
@@ -326,6 +334,55 @@ def test_RX_Helper3():
     transmitter_thread.join()
     receiver_thread.join()
     #visualization_thread.join()
+
+def test_RX_label_fetch1():
+    label_1 = "11111111000000001111111100000000"
+    RX_Helper = lru_rxr()
+    assert(0b11111111 == RX_Helper.get_label_from_word(int(label_1,2)))
+
+def test_RX_label_fetch2():
+    label_1 = "10100101000000001111111100000000"
+    RX_Helper = lru_rxr()
+    assert(0b10100101 == RX_Helper.get_label_from_word(int(label_1,2)))
+
+def test_RX_label_fetch3():
+    label_1 = "00000000111111110000000011111111"
+    RX_Helper = lru_rxr()
+    assert(0b00000000 == RX_Helper.get_label_from_word(int(label_1,2)))
+
+def test_RX_label_fetch4():
+    label_1 = "00110101000000001111111100000000"
+    RX_Helper = lru_rxr()
+    # 00110101 reversed
+    assert(0b10101100 == RX_Helper.get_label_from_word(int(label_1,2)))
+
+def test_RX_label_fetch5():
+    label_1 = "00000001000000001111111100000000"
+    RX_Helper = lru_rxr()
+    # 00110101 reversed
+    assert(0b10000000 == RX_Helper.get_label_from_word(int(label_1,2)))
+
+def test_RMS_Test_Static1():
+    print("\n")
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    print("Default RMS Bootup Status.")
+    assert str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+        str({"Flight Number": None,
+             "Latitude": None,
+             "Longitude": None,
+             "Altitude": None,
+             "Ground Speed": None,
+             "Vertical Speed": None,
+             "Track Angle": None,
+             "Magnetic Heading": None,
+             "Emergency Status": "Normal Operations",
+             "Ident Switch": False,
+             "ICAO Address": None,
+             "Aircraft Type": "Civilian"})
+
+def test_RMS_Test_Static2():
+    pass
 
 if __name__ == "__main__":
     main()
