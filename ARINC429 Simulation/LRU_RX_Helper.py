@@ -55,7 +55,7 @@ class arinc429_RX_Helpers():
             print("Word is not valid")
             # Don't raise an error because we don't want to stop the bus from collapsing
 
-        return(word_as_int)
+        return(word_as_int, word_bitStr)
 
     """
     # https://stackoverflow.com/questions/24838629/round-off-float-to-nearest-0-5-in-python
