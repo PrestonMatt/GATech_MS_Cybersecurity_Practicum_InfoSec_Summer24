@@ -170,10 +170,10 @@ class radio_management_system:
             self.set_ADS_B_Message("Latitude",
                                    is_north + str6+str(dig_5)+str(dig_4) + " Deg " + str(dig_3)+str(dig_2) + "." + str(dig_1) + "'"
                                    )
-        elif label == 0o310:
-            pass  # Latitude (Present Position)
-        elif label == 0o311:
-            pass  # Longitude (Present Position)
+        elif label == 0o310: # Latitude (Present Position)
+            pass
+        elif label == 0o311: # Longitude (Present Position)
+            pass
         elif label == 0o012:
             pass  # Ground Speed
         elif label == 0o312:
@@ -188,8 +188,20 @@ class radio_management_system:
             pass  # Selected Altitude
         elif label == 0o032:
             pass  # ADF Frequency
-        elif label == 0o261:
-            pass  # Flight Number Word
+        elif label == 0o261: # Flight Number Word
+            ones_place = word[13:17]
+            flt_dig_1 = int(ones_place[::-1],2)
+            tens_place = word[17:21]
+            flt_dig_2 = int(tens_place[::-1],2)
+            hunds_place = word[21:25]
+            flt_dig_3 = int(hunds_place[::-1],2)
+            thous_place = word[25:29]
+            flt_dig_4 = int(thous_place[::-1],2)
+            #print(f"x1: {ones_place}\nx10: {tens_place}\nx100: {hunds_place}\nx1000: {thous_place}")
+            #print(f"{flt_dig_4}{flt_dig_3}{flt_dig_2}{flt_dig_1}")
+            self.set_ADS_B_Message("Flight Number",
+                                   int(f"{flt_dig_4}{flt_dig_3}{flt_dig_2}{flt_dig_1}")
+                                   )
         elif label == 0o230:
             pass  # True Airspeed
         elif label == 0o210:

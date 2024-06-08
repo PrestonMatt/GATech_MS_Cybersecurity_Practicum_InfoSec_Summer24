@@ -39,6 +39,8 @@ def test_all():
     test_TX_label_reverser5()
     test_RMS_Test_Static1()
     test_RMS_Test_latitudedecode_BCD()
+    test_RMS_Test_longitudedecode_BCD()
+    test_RMS_flight_number()
 
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
@@ -482,6 +484,33 @@ def test_RMS_Test_longitudedecode_BCD():
     assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": "W 169 Deg 25.8'",
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+def test_RMS_flight_number():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o261))
+    data = "00" + "000" + "1110" + "1000" + "1000" + "0000" + "00"
+    par_bit = tx_chip.calc_parity(label+data)
+    data += par_bit
+    print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # 117
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": 117,
+                "Latitude": None,
                 "Longitude": None,
                 "Altitude": None,
                 "Ground Speed": None,

@@ -106,3 +106,15 @@ class arinc429_TX_Helpers():
         # Convert the reversed binary string back to an integer
         true_label = int(reversed_label_str, 2)
         return(reversed_label_str,true_label)
+
+    def calc_parity(self, word_bitStr):
+        if(len(word_bitStr) != 31):
+            raise ValueError("Checking parity must be for 31 bit imcomplete words")
+        # Count the number of '1's in the bit string (excluding the parity bit)
+        num_of_ones = word_bitStr[:-1].count('1')
+
+        # Check the parity condition
+        if(num_of_ones % 2 == 0): # even
+            return('0')
+        else: # odd
+            return('1')
