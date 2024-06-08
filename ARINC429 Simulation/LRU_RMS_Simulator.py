@@ -36,7 +36,8 @@ class radio_management_system:
     }
     applicable_labels_BNR = {
         0o101: "Selected Heading",
-        0o102: "Selected Altitude", #
+        0o102: "Selected Altitude",
+        0o104: "Selected Vertical Speed",
         #0o103: "Selected Airspeed", # Deg/180 [-180,180], res: 0.25 deg
         #0o142: "UTC",
         0o203: "Altitude", # Feet, [0,131,071], res: ~1 ft
@@ -90,6 +91,9 @@ class radio_management_system:
             "ICAO Address": None,
             "Aircraft Type": "Civilian"
         }
+
+        self.ICAO_part1 = 0b0
+        self.ICAO_part2 = 0b0
 
     def __str__(self):
         message_1 = f"Commanded Frequencies:\n\tGeneral:{self.frequency}\n\tVOR/ILS:{self.VOR_ILS_Frequency}\n\tDME:{self.DME_Frequency}\n\tHF_COMM:{self.HF_COM_Frequency}"
@@ -239,6 +243,8 @@ class radio_management_system:
                 sign = 1
 
             self.set_ADS_B_Message("Vertical Speed",sign*int(f"{x1000s}{x100s}{x10s}{x1s}"))
+        elif label == 0o104: # Selected Vertical Speed
+            pass
         elif label == 0o023: # Selected Heading
             digits = self.get_digits_BCD(word)
 
@@ -273,13 +279,29 @@ class radio_management_system:
 
             self.set_ADS_B_Message("Altitude",int(f"{x10000s}{x1000s}{x100s}{x10s}{x1s}"))
         elif label == 0o102: # Selected Altitude
-            pass
+            #SDI = word[8:10]
+            data = word[11:29][::-1]
+            #print(data)
+            #ssm = word[28:31]
+            altitude = int(data,2)
+            self.set_ADS_B_Message("Altitude",altitude)
         elif label == 0o203: # Altitude
-            pass
-        elif label == 0o214:
-            pass  # ICAO Address no. 1
-        elif label == 0o216:
-            pass  # ICAO Address no. 2
+            #SDI = word[8:10]
+            data = word[11:29][::-1]
+            print(data)
+            #ssm = word[28:31]
+            altitude = int(data,2)
+            self.set_ADS_B_Message("Altitude",altitude)
+        elif label == 0o214: # ICAO Address no. 1
+            data = word[17:29]
+            print(data)
+            self.ICAO_part1 = data
+        elif label == 0o216: # ICAO Address no. 2
+            data = word[17:29]
+            self.ICAO_part2 = data
+            print(self.ICAO_part1+self.ICAO_part2)
+            full_addr = int(self.ICAO_part1 + self.ICAO_part2,2)
+            self.set_ADS_B_Message("ICAO Address",full_addr)
         elif label == 0o032: # ADF Frequency
             pass
         elif label == 0o033: # Frequency (Hz)
