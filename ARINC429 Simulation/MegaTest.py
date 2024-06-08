@@ -13,7 +13,7 @@ from LRU_FMC_Simulator import flight_management_computer as FMC
 from LRU_GPS_Simulator import global_positioning_system as GPS
 from LRU_RMS_Simulator import radio_management_system as RMS
 
-def main():
+def test_all():
     #test_voltage_sim()
     #test_intWord_to_voltage()
     test_FMC_word_validation1()
@@ -412,6 +412,17 @@ def test_TX_label_reverser_all():
         #print(label)
         assert(label == tx_chip.make_label_for_word(x)[0])
 
+def test_RX_label_fetchall():
+    rx_chip = lru_rxr()
+    tx_chip = lru_txr()
+    for x in range(0o000, 0o377):
+        txd_label = tx_chip.make_label_for_word(x)[0]
+        word = txd_label + "0"*24
+        word_int = int(word, 2)
+        rxd_label = rx_chip.get_label_from_word(word_int)
+        #print(label)
+        assert(rxd_label == x)
+
 def test_RMS_Test_Static1():
     print("\n")
     ARINC_Channel = ARINC429BUS()
@@ -442,4 +453,4 @@ def test_RMS_Test_Static2():
     # N 75 Deg 59.9'
 
 if __name__ == "__main__":
-    main()
+    test_all()

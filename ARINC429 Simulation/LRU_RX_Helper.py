@@ -66,19 +66,10 @@ class arinc429_RX_Helpers():
         if(len(label_bin_str) < 8):
             # Need to append zeros.
             label_bin_str = "0"*(8-len(label_bin_str)) + label_bin_str
-        # This is wrong:
-        """
         # Reverse the binary string
         reversed_label_str = label_bin_str[::-1]
         # Convert the reversed binary string back to an integer
         true_label = int(reversed_label_str, 2)
-        """
-
-        label_int1 = int(label_bin_str[7:8],2)
-        label_int2 = int(label_bin_str[4:6],2)
-        label_int3 = int(label_bin_str[1:3],2)
-
-        true_label = int(str(label_int1) + str(label_int2) + str(label_int3), 8)
 
         return(true_label)
 
