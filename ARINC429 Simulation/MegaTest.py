@@ -32,6 +32,11 @@ def main():
     test_RX_label_fetch3()
     test_RX_label_fetch4()
     test_RX_label_fetch5()
+    test_TX_label_reverser1()
+    test_TX_label_reverser2()
+    test_TX_label_reverser3()
+    test_TX_label_reverser4()
+    test_TX_label_reverser5()
     test_RMS_Test_Static1()
 
 def test_voltage_sim():
@@ -362,6 +367,51 @@ def test_RX_label_fetch5():
     # 00110101 reversed
     assert(0b10000000 == RX_Helper.get_label_from_word(int(label_1,2)))
 
+def test_TX_label_reverser1():
+    label = 0o066
+    # print(bin(label))
+    # -> "00110110"
+    tx_chip = lru_txr()
+    assert("01101100" == tx_chip.make_label_for_word(label)[0])
+
+def test_TX_label_reverser2():
+    label = 0o010
+    # print(bin(label))
+    # -> "00001000"
+    tx_chip = lru_txr()
+    assert("00001000"[::-1] == tx_chip.make_label_for_word(label)[0])
+
+def test_TX_label_reverser3():
+    label = 0o011
+    # print(bin(label))
+    # -> "00001001"
+    tx_chip = lru_txr()
+    assert("00001001"[::-1] == tx_chip.make_label_for_word(label)[0])
+
+def test_TX_label_reverser4():
+    label = 0o210
+    # print(bin(label))
+    # -> "10001000"
+    tx_chip = lru_txr()
+    assert("10001000"[::-1] == tx_chip.make_label_for_word(label)[0])
+
+def test_TX_label_reverser5():
+    label = 0o320
+    print(bin(label))
+    # -> "11010000"
+    tx_chip = lru_txr()
+    assert("11010000"[::-1] == tx_chip.make_label_for_word(label)[0])
+
+def test_TX_label_reverser_all():
+    tx_chip = lru_txr()
+    for x in range(0o000, 0o377):
+        label = x
+        label = bin(label)[2:]
+        label = "0"*(8-len(label)) + label
+        label = label[::-1]
+        #print(label)
+        assert(label == tx_chip.make_label_for_word(x)[0])
+
 def test_RMS_Test_Static1():
     print("\n")
     ARINC_Channel = ARINC429BUS()
@@ -382,7 +432,14 @@ def test_RMS_Test_Static1():
              "Aircraft Type": "Civilian"})
 
 def test_RMS_Test_Static2():
-    pass
+    print("\n")
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label = "00010000"
+    data = "1001100110101001111000001"
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
 
 if __name__ == "__main__":
     main()

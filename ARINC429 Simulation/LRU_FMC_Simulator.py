@@ -72,9 +72,12 @@ class flight_management_computer:
         if(direction.lower() == "up"):
             # Want to send to W&BS
             # label = 0o066, longitudinal CG
+            """
             word_bitStr = bin(0o066)[2:]
             if(len(word_bitStr) < 8):
                 word_bitStr = "0"*(8-len(word_bitStr)) + word_bitStr
+            """
+            word_bitStr, _ = self.communication_chip.make_label_for_word(0o066)
 
             # SDI = 11
             word_bitStr += "11"

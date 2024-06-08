@@ -94,3 +94,15 @@ class arinc429_TX_Helpers():
         visualization_thread.start()
         #channel.queue_visual(fig_title = f"FMC LRU TX Voltages on Channel {channel}")
         visualization_thread.join()
+
+    def make_label_for_word(self, label:int) -> (str,int):
+        # Convert the integer to a binary string without the '0b' prefix
+        label_bin_str = bin(label)[2:]
+        if(len(label_bin_str) < 8):
+            # Need to append zeros.
+            label_bin_str = "0"*(8-len(label_bin_str)) + label_bin_str
+        # Reverse the binary string
+        reversed_label_str = label_bin_str[::-1]
+        # Convert the reversed binary string back to an integer
+        true_label = int(reversed_label_str, 2)
+        return(reversed_label_str,true_label)

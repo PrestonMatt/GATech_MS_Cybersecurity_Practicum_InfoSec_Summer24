@@ -11,8 +11,8 @@ from queue import Queue
 class radio_management_system:
 
     applicable_labels_BCD = {
-        0o010: "Latitude (Present Position)",
-        0o011: "Longitude (Present Position)",
+        0o010: "Latitude (Present Position)", # Deg: Min [180N - 180S] POS SENSE: N, Res: 0.1
+        0o011: "Longitude (Present Position)", # Deg: Min [180E - 180W] POS SENSE: E, Res: 0.1
         0o012: "Ground Speed",
         0o013: "Track Angle",
         0o020: "Selected Vertical Speed",
@@ -67,7 +67,7 @@ class radio_management_system:
         # zero out our bus time
         self.usec_start = time()
         # create receive chip object
-        self.receive_chip = lru_rxr
+        self.receive_chip = lru_rxr(bus_speed, BUS_CHANNELS)
 
         self.frequency = 0.0
         self.VOR_ILS_Frequency = 0.0
@@ -111,8 +111,84 @@ class radio_management_system:
     # ICAO Address - DISC
     # Aircraft Type - NOT OVER BUS
     def decode_word(self,word:str):
-        if(True):
-            pass
+        label = self.receive_chip.get_label_from_word(int(word,2))
+        print(label)
+        print(word)
+
+        if label == 0o010: # Latitude (Present Position)
+            print("HI")
+            num1 = word[9:12]
+            num2 = word[13:16]
+            num3 = word[17:20]
+            num4 = word[21:24]
+            num5 = word[26:28]
+            is_north = (word[29] == 0)
+            ssm = word[30:31] # BCD ->
+            if(ssm == "00"):
+                # Failure Warning
+                self.set_ADS_B_Message("Emergency Status","Failure Warning")
+        elif label == 0o011:
+            pass  # Longitude (Present Position)
+        elif label == 0o310:
+            pass  # Latitude (Present Position)
+        elif label == 0o311:
+            pass  # Longitude (Present Position)
+        elif label == 0o012:
+            pass  # Ground Speed
+        elif label == 0o312:
+            pass  # Ground Speed
+        elif label == 0o013:
+            pass  # Track Angle
+        elif label == 0o020:
+            pass  # Selected Vertical Speed
+        elif label == 0o023:
+            pass  # Selected Heading
+        elif label == 0o025:
+            pass  # Selected Altitude
+        elif label == 0o032:
+            pass  # ADF Frequency
+        elif label == 0o261:
+            pass  # Flight Number Word
+        elif label == 0o230:
+            pass  # True Airspeed
+        elif label == 0o210:
+            pass  # True Airspeed
+        elif label == 0o033:
+            pass  # Frequency (Hz)
+        elif label == 0o034:
+            pass  # VOR/ILS Frequency
+        elif label == 0o035:
+            pass  # DME Frequency
+        elif label == 0o037:
+            pass  # HF COM Frequency
+        elif label == 0o205:
+            pass  # HF COM Frequency (alt.)
+        elif label == 0o150:
+            pass  # UTC
+        elif label == 0o214:
+            pass  # ICAO Address no. 1
+        elif label == 0o216:
+            pass  # ICAO Address no. 2
+        elif label == 0o101:
+            pass  # Selected Heading
+        elif label == 0o102:
+            pass  # Selected Altitude
+        elif label == 0o103:
+            pass  # Selected Airspeed
+        elif label == 0o142:
+            pass  # UTC
+        elif label == 0o203:
+            pass  # Altitude
+        elif label == 0o206:
+            pass  # Computed Airspeed
+        elif label == 0o313:
+            pass  # Track Angle True
+        elif label == 0o314:
+            pass  # True Heading
+        elif label == 0o320:
+            pass  # Magnetic Heading
+        else:
+            pass  # Label not found -> do nothing
 
     def set_DME_frequency(self,frequency:float):
         self.DME_Frequency = frequency
