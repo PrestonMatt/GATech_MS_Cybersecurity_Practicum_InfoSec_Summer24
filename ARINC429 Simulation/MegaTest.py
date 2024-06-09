@@ -49,6 +49,10 @@ def test_all():
     test_RMS_gen_freq()
     test_RMS_SetHFCOMM_Freq()
     test_RMS_HF_COM_tune()
+    test_GPS_setup()
+    test_GPS_latlon_update()
+    test_GPS_digit_translate_update()
+    test_GPS_word_maker()
 
 def test_all_non_asserts():
     #test_voltage_sim()
@@ -540,8 +544,8 @@ def test_RMS_Test_longitudedecode_BCD():
     # N 75 Deg 59.9'
     assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
-                "Latitude": "W 169 Deg 25.8'",
-                "Longitude": None,
+                "Latitude": None,
+                "Longitude": "W 169 Deg 25.8'",
                 "Altitude": None,
                 "Ground Speed": None,
                 "Vertical Speed": None,
@@ -968,6 +972,7 @@ def test_RMS_DME2():
     RMS_test1.decode_word(word)
     assert(RMS_test1.VOR_Frequency == 15.60)
 
+# Tests DME function for ILR frequency set.
 def test_RMS_DME3():
     print("\n")
     tx_chip = lru_txr()
@@ -994,7 +999,7 @@ def test_RMS_DME4():
     RMS_test1.decode_word(word)
     assert(RMS_test1.ADS_B_Message["Ident Switch"] == True)
 
-# Tests VOR label to set VOR freq
+# Tests VOR label to set VOR freq.
 def test_RMS_VOR_ILS_freq1():
     print("\n")
     tx_chip = lru_txr()
@@ -1007,7 +1012,7 @@ def test_RMS_VOR_ILS_freq1():
     RMS_test1.decode_word(word)
     assert(RMS_test1.VOR_Frequency == 9.30)
 
-# Tests VOR label to set VOR freq
+# Tests VOR label to set VOR freq.
 def test_RMS_VOR_ILS_freq2():
     print("\n")
     tx_chip = lru_txr()
@@ -1020,6 +1025,7 @@ def test_RMS_VOR_ILS_freq2():
     RMS_test1.decode_word(word)
     assert(RMS_test1.ILS_Frequency == 9.30)
 
+# Test general freq for RMS.
 def test_RMS_gen_freq():
     print("\n")
     tx_chip = lru_txr()
@@ -1032,6 +1038,7 @@ def test_RMS_gen_freq():
     RMS_test1.decode_word(word)
     assert(RMS_test1.frequency == 9.30)
 
+# Test HFComm freq for RMS.
 def test_RMS_SetHFCOMM_Freq():
     print("\n")
     tx_chip = lru_txr()
@@ -1044,6 +1051,7 @@ def test_RMS_SetHFCOMM_Freq():
     RMS_test1.decode_word(word)
     assert(RMS_test1.HF_COM_Frequency == 23.579)
 
+# Test HF Comm inc for RMS.
 def test_RMS_HF_COM_tune():
     print("\n")
     tx_chip = lru_txr()
@@ -1063,6 +1071,57 @@ def test_RMS_HF_COM_tune():
     RMS_test1.decode_word(word2)
 
     assert(RMS_test1.HF_COM_Frequency == (23.579 + 0.4))
+
+# Tests default GPS Set up
+def test_GPS_setup():
+    print("\n")
+    Orange_Channel = ARINC429BUS()
+    GPS_test1 = GPS("low", Orange_Channel, lat='N 75 Deg 59.9\'', lon='W 169 Deg 25.8\'')
+    assert(str(GPS_test1) == "Current latitude: N 75 Deg 59.9'\nCurrent longitude: W 169 Deg 25.8'\nBus Channel: ARINC429 Bus Object and Speed: low")
+
+# Tests GPS ability to update position.
+def test_GPS_latlon_update():
+    print("\n")
+    Orange_Channel = ARINC429BUS()
+    GPS_test1 = GPS("low", Orange_Channel, lat='N 75 Deg 59.9\'', lon='W 169 Deg 25.8\'')
+    GPS_test1.determine_next_position()
+    GPS_test1.determine_next_position()
+    GPS_test1.determine_next_position()
+    assert(str(GPS_test1) == "Current latitude: N 75 Deg 60.2'\nCurrent longitude: W 169 Deg 26.1'\nBus Channel: ARINC429 Bus Object and Speed: low")
+
+# Test GPS ability to translate the digit data into binary for word.
+def test_GPS_digit_translate_update():
+    print("\n")
+    Orange_Channel = ARINC429BUS()
+    GPS_test1 = GPS("low", Orange_Channel, lat='N 75 Deg 59.9\'', lon='W 169 Deg 25.8\'')
+    latdigi = GPS_test1.from_digits_to_data("75","59.9")
+    londigi = GPS_test1.from_digits_to_data("169","25.8")
+    assert(latdigi == "100110011010101011100")
+    assert(londigi == "000110100100100101101")
+
+# Test GPS ability to make words based on lat and lon data.
+def test_GPS_word_maker():
+    print("\n")
+    Orange_Channel = ARINC429BUS()
+    GPS_test1 = GPS("low", Orange_Channel, lat='N 75 Deg 59.9\'', lon='W 169 Deg 25.8\'')
+
+    lat_word, lon_word = GPS_test1.from_lat_lon_to_word()
+    lat_word = "0"*(32-len(bin(lat_word)[2:])) + bin(lat_word)[2:]
+    lon_word = "0"*(32-len(bin(lon_word)[2:])) + bin(lon_word)[2:]
+
+    RMS_test2 = RMS("low",[Orange_Channel])
+    print(f"Latitude word:{lat_word}")
+    print(f"Longitude word:{lon_word}")
+    RMS_test2.decode_word(lat_word)
+    RMS_test2.decode_word(lon_word)
+
+    assert(RMS_test2.ADS_B_Message["Latitude"] == 'N 75 Deg 59.9\'')
+    assert(RMS_test2.ADS_B_Message["Longitude"] == 'W 169 Deg 25.8\'')
+
+    #latdigi = GPS_test1.from_digits_to_data("75","59.9")
+    #londigi = GPS_test1.from_digits_to_data("169","25.8")
+    #assert(latdigi == "100110011010101011100")
+    #assert(londigi == "000110100100100101101")
 
 if __name__ == "__main__":
     #test_all()

@@ -11,7 +11,7 @@ class GlobalBus:
         self.RX_pointer = 75
 
     def __str__(self):
-        pass
+        return(f"ARINC429 Bus Object")
 
     def add_voltage(self, voltage):
         with self.lock:

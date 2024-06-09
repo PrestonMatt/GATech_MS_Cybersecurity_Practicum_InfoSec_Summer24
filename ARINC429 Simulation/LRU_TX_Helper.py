@@ -95,6 +95,7 @@ class arinc429_TX_Helpers():
         #channel.queue_visual(fig_title = f"FMC LRU TX Voltages on Channel {channel}")
         visualization_thread.join()
 
+    # TODO Fix LABELS!
     def make_label_for_word(self, label:int) -> (str,int):
         # Convert the integer to a binary string without the '0b' prefix
         label_bin_str = bin(label)[2:]

@@ -121,7 +121,7 @@ class radio_management_system:
     # Aircraft Type - NOT OVER BUS
     def decode_word(self,word:str):
         label = self.receive_chip.get_label_from_word(int(word,2))
-        #print(oct(label))
+        print(oct(label))
         #print(word)
 
         if label == 0o010: # Latitude (Present Position)
@@ -176,7 +176,7 @@ class radio_management_system:
                 is_north = "E "
             else:
                 is_north = "W "
-            self.set_ADS_B_Message("Latitude",
+            self.set_ADS_B_Message("Longitude",
                                    is_north + str6+str(dig_5)+str(dig_4) + " Deg " + str(dig_3)+str(dig_2) + "." + str(dig_1) + "'"
                                    )
         elif label == 0o310: # Latitude (Present Position)
