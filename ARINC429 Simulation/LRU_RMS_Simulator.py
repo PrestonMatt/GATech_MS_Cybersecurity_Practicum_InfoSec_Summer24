@@ -335,11 +335,51 @@ class radio_management_system:
             else:
                 x05kHz = 0
 
-            self.ADF_freq = float(f"{x1000Khz}{x100Khz}{x10Khz}{x1Khz}.{x05kHz}")
+            self.set_ADF_freqeuncy(float(f"{x1000Khz}{x100Khz}{x10Khz}{x1Khz}.{x05kHz}"))
+            #self.ADF_freq =
         elif label == 0o033: # Frequency (Hz)
-            pass
+            ILS_CAT = word[10:12][::-1]
+            if(ILS_CAT == "01"):
+                print("ILS Cat I")
+            elif(ILS_CAT == "10"):
+                print("ILS Cat II")
+            elif(ILS_CAT == "11"):
+                print("ILS Cat III")
+
+            hundredths_place = word[14:18][::-1]
+            xPoint01s = int(hundredths_place,2)
+
+            tenths_place = word[18:22][::-1]
+            xPoint1s = int(tenths_place,2)
+
+            ones_place = word[22:26][::-1]
+            x1s = int(ones_place,2)
+
+            tens_place = word[26:29][::-1]
+            x10s = int(tens_place,2)
+
+            freq = float(f"{x10s}{x1s}.{xPoint1s}{xPoint01s}")
+            self.set_general_frequency(freq)
         elif label == 0o034: # VOR/ILS Frequency
-            pass
+
+            hundredths_place = word[14:18][::-1]
+            xPoint01s = int(hundredths_place,2)
+
+            tenths_place = word[18:22][::-1]
+            xPoint1s = int(tenths_place,2)
+
+            ones_place = word[22:26][::-1]
+            x1s = int(ones_place,2)
+
+            tens_place = word[26:29][::-1]
+            x10s = int(tens_place,2)
+
+            freq = float(f"{x10s}{x1s}.{xPoint1s}{xPoint01s}")
+
+            if(word[13] == "0"): # VOR MODE
+                self.VOR_Frequency = freq
+            else: # ILS MODE
+                self.ILS_Frequency = freq
         elif label == 0o035: # DME Frequency
 
             DME_mode = word[10:13]
@@ -354,33 +394,64 @@ class radio_management_system:
             tens_place = word[26:29][::-1]
             x10s = int(tens_place,2)
 
-            freq = f"{tens_place}{ones_place}.{tenths_place}"
+            # Although not encoded in the tuning word all MLS frequencies have 5 as the thousand digit and
+            # 0 as the hundred digit. Add 5031 MHz to the coded value to obtain the MLS frequency.
+            freq = f"{0}{x10s}{x1s}.{xPoint1s}{5}"
+
+            if(word[15] == "1"):
+                print("displayable BCD output is to be provided for that station")
+            if(word[16] == "1"):
+                self.set_ADS_B_Message("Ident Switch",True)
 
             # Bits 15 & 14 codes: VOR (0,0), ILS (0,1) or MLS (1,0), (1,1) is spare
-            fourteen_fifteen_codes = word[13:14]
+            fourteen_fifteen_codes = word[13:15][::-1]
             if(fourteen_fifteen_codes == "00"):
                 hundreths_place = word[17]
                 if(hundreths_place == "1"):
                     hundreths_place = 5
                 else:
                     hundreths_place = 0
-                freq = f"{tens_place}{ones_place}.{tenths_place}{hundreths_place}"
-                self.VOR_ILS_Frequency = freq
+                freq = f"{x10s}{x1s}.{xPoint1s}{hundreths_place}"
+                self.VOR_Frequency = float(freq)
             elif(fourteen_fifteen_codes == "01"):
                 hundreths_place = word[17]
                 if(hundreths_place == "1"):
                     hundreths_place = 5
                 else:
                     hundreths_place = 0
-                freq = f"{tens_place}{ones_place}.{tenths_place}{hundreths_place}"
+                freq = f"{x10s}{x1s}.{xPoint1s}{hundreths_place}"
+                self.ILS_Frequency = float(freq)
             elif(fourteen_fifteen_codes == "10"):
-                pass
+                self.DME_Frequency = float(freq) + 5031
             else:
-                self.DME_Frequency = freq
+                self.DME_Frequency = float(freq) + 5031
         elif label == 0o037: # HF COM Frequency
-            pass
+            thousandths_place = word[11:15][::-1]
+            xPoint001s = int(thousandths_place,2)
+
+            hundredths_place = word[15:19][::-1]
+            xPoint01s = int(hundredths_place,2)
+
+            tenths_place = word[19:23][::-1]
+            xPoint1s = int(tenths_place,2)
+
+            ones_place = word[23:27][::-1]
+            x1s = int(ones_place,2)
+
+            tens_place = word[27:29][::-1]
+            x10s = int(tens_place,2)
+
+            freq = f"{x10s}{x1s}.{xPoint1s}{xPoint01s}{xPoint001s}"
+            freq = float(freq)
+            self.set_HF_COM_frequency(freq)
         elif label == 0o205: # HF COM Frequency (alt.)
-            pass
+
+            tenths_place = word[25:29][::-1]
+            xPoint1s = int(tenths_place,2)
+
+            freq_add = float(f".{xPoint1s}")
+
+            self.HF_COM_Frequency += freq_add
         elif label == 0o261: # Flight Number Word
             ones_place = word[13:17]
             flt_dig_1 = int(ones_place[::-1],2)
@@ -449,8 +520,10 @@ class radio_management_system:
     def set_HF_COM_frequency(self,frequency:float):
         self.HF_COM_Frequency = frequency
 
+    """
     def set_VOR_ILS_frequency(self,frequency:float):
         self.VOR_ILS_Frequency = frequency
+    """
 
     def set_general_frequency(self,frequency:float):
         self.frequency = frequency

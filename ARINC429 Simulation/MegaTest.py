@@ -40,47 +40,32 @@ def test_all():
     test_RMS_altitude_BCD()
     test_RMS_ICAO()
     test_RMS_ADF()
+    test_RMS_DME1()
+    test_RMS_DME2()
+    test_RMS_DME3()
+    test_RMS_DME4()
+    test_RMS_VOR_ILS_freq1()
+    test_RMS_VOR_ILS_freq2()
+    test_RMS_gen_freq()
+    test_RMS_SetHFCOMM_Freq()
+    test_RMS_HF_COM_tune()
 
 def test_all_non_asserts():
-    test_voltage_sim()
-    test_intWord_to_voltage()
+    #test_voltage_sim()
+    #test_intWord_to_voltage()
 
-    try:
-        test_FMC_pilot_input()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_bus_queue_TX()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_bus_queue_RX()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_FMC_TX()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_FMC_TX()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_GPS_comm()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_RX_Helper1()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_RX_Helper2()
-    except KeyboardInterrupt:
-        pass
-    try:
-        test_RX_Helper3()
-    except KeyboardInterrupt:
-        pass
+    test_FMC_pilot_input()
+    test_bus_queue_TX()
+    test_bus_queue_RX()
+    test_FMC_TX()
+    test_FMC_TX()
+    test_GPS_comm()
+    test_RX_Helper1()
+    test_RX_Helper1()
+    test_RX_Helper2()
+    test_RX_Helper3()
+
+    pass
 
 # Runs all voltage simulator tests. No assert.
 def test_voltage_sim():
@@ -957,18 +942,128 @@ def test_RMS_ADF():
     RMS_test1.decode_word(word)
     assert(RMS_test1.ADF_freq == 1057.5)
 
-def test_RMS_DME():
+# Tests DME function for MLS frequency set.
+def test_RMS_DME1():
     print("\n")
     tx_chip = lru_txr()
     ARINC_Channel = ARINC429BUS()
     RMS_test1 = RMS("low",[ARINC_Channel])
-    label, _ = tx_chip.make_label_for_word(int(0o032))
-    data = "00" + "000" + "0" + "0" + "01" + "1" + "0110" + "1010" + "001" + "00" + "1"
+    label, _ = tx_chip.make_label_for_word(int(0o035))
+    data = "00" + "000" + "0" + "1" + "01" + "1" + "0110" + "1010" + "100" + "00" + "0"
     #print(len(data))
     word = label + data
     RMS_test1.decode_word(word)
-    assert(RMS_test1.ADF_freq == 1057.5)
+    assert(RMS_test1.DME_Frequency == 5046.65)
+
+# Tests DME function for VOR frequency set.
+def test_RMS_DME2():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o035))
+    data = "00" + "000" + "0" + "0" + "00" + "0" + "0110" + "1010" + "100" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.VOR_Frequency == 15.60)
+
+def test_RMS_DME3():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o035))
+    data = "00" + "000" + "1" + "0" + "10" + "1" + "1110" + "1010" + "100" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    #print(word[13:15])
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.ILS_Frequency == 15.75)
+
+# Check instead that IDENT was turned on.
+def test_RMS_DME4():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o035))
+    data = "00" + "000" + "0" + "0" + "01" + "1" + "0110" + "1010" + "100" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.ADS_B_Message["Ident Switch"] == True)
+
+# Tests VOR label to set VOR freq
+def test_RMS_VOR_ILS_freq1():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o034))
+    data = "00" + "000" + "0" + "0000" + "1100" + "1001" + "000" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.VOR_Frequency == 9.30)
+
+# Tests VOR label to set VOR freq
+def test_RMS_VOR_ILS_freq2():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o034))
+    data = "00" + "000" + "1" + "0000" + "1100" + "1001" + "000" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.ILS_Frequency == 9.30)
+
+def test_RMS_gen_freq():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o033))
+    data = "00" + "000" + "1" + "0000" + "1100" + "1001" + "000" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.frequency == 9.30)
+
+def test_RMS_SetHFCOMM_Freq():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o037))
+    data = "01" + "0" + "1001" + "1110" + "1010" + "1100" + "01" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.HF_COM_Frequency == 23.579)
+
+def test_RMS_HF_COM_tune():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+
+    label1, _ = tx_chip.make_label_for_word(int(0o037))
+    data1 = "01" + "0" + "1001" + "1110" + "1010" + "1100" + "01" + "00" + "1"
+    #print(len(data))
+    word1 = label1 + data1
+    RMS_test1.decode_word(word1)
+
+    label2, _ = tx_chip.make_label_for_word(int(0o205))
+    data2 = "00" + "1" + "00000000000000" + "0010" + "00" + "0"
+    #print(len(data))
+    word2 = label2 + data2
+    RMS_test1.decode_word(word2)
+
+    assert(RMS_test1.HF_COM_Frequency == (23.579 + 0.4))
 
 if __name__ == "__main__":
-    test_all()
+    #test_all()
     test_all_non_asserts()
