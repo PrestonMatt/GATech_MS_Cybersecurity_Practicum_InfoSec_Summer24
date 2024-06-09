@@ -55,19 +55,19 @@ def test_all():
     test_GPS_word_maker()
 
 def test_all_non_asserts():
-    #test_voltage_sim()
+    test_voltage_sim()
     #test_intWord_to_voltage()
 
-    test_FMC_pilot_input()
-    test_bus_queue_TX()
-    test_bus_queue_RX()
-    test_FMC_TX()
-    test_FMC_TX()
-    test_GPS_comm()
-    test_RX_Helper1()
-    test_RX_Helper1()
-    test_RX_Helper2()
-    test_RX_Helper3()
+    #test_FMC_pilot_input()
+    #test_bus_queue_TX()
+    #test_bus_queue_RX()
+    #test_FMC_TX()
+    #test_FMC_TX()
+    #test_GPS_comm()
+    #test_RX_Helper1()
+    #test_RX_Helper1()
+    #test_RX_Helper2()
+    #test_RX_Helper3()
 
     pass
 
