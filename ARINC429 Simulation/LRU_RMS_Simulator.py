@@ -25,6 +25,7 @@ class radio_management_system:
         #0o230: "True Airspeed"
     }
     applicable_labels_DISC = {
+        0o032: "ADF Frequency",
         0o033: "Frequency (Hz)",
         0o034: "VOR/ILS Frequency",
         0o035: "DME Frequency",
@@ -73,7 +74,9 @@ class radio_management_system:
         self.receive_chip = lru_rxr(bus_speed, BUS_CHANNELS)
 
         self.frequency = 0.0
-        self.VOR_ILS_Frequency = 0.0
+        self.ADF_freq = 0.0
+        self.VOR_Frequency = 0.0
+        self.ILS_Frequency = 0.0
         self.DME_Frequency = 0.0
         self.HF_COM_Frequency = 0.0
 
@@ -96,7 +99,7 @@ class radio_management_system:
         self.ICAO_part2 = 0b0
 
     def __str__(self):
-        message_1 = f"Commanded Frequencies:\n\tGeneral:{self.frequency}\n\tVOR/ILS:{self.VOR_ILS_Frequency}\n\tDME:{self.DME_Frequency}\n\tHF_COMM:{self.HF_COM_Frequency}"
+        message_1 = f"Commanded Frequencies:\n\tGeneral:{self.frequency}\n\tADF:{self.ADF_freq}\n\tVOR:{self.VOR_Frequency}\n\tILS:{self.ILS_Frequency}\n\tDME:{self.DME_Frequency}\n\tHF_COMM:{self.HF_COM_Frequency}"
         message_2a = "\n\nADS-B Message:"
         message_2b = str(self.ADS_B_Message)
         print(message_1 + message_2a + message_2b)
@@ -303,13 +306,77 @@ class radio_management_system:
             full_addr = int(self.ICAO_part1 + self.ICAO_part2,2)
             self.set_ADS_B_Message("ICAO Address",full_addr)
         elif label == 0o032: # ADF Frequency
-            pass
+            BFO = word[10]
+            if(BFO == "1"):
+                print("BFO on")
+            else:
+                print("BFO off")
+            ANT = word[11]
+            if(ANT == "1"):
+                print("ANT Mode 1")
+            else:
+                print("ANT Mode 2")
+            x05kHz = word[13]
+            # = int(point_5s_place,2)
+            ones_place = word[14:18][::-1]
+            x1Khz = int(ones_place,2)
+
+            tens_place = word[18:22][::-1]
+            x10Khz = int(tens_place,2)
+
+            hundreds_place = word[22:26][::-1]
+            x100Khz = int(hundreds_place,2)
+
+            thousands_place = word[26:29][::-1]
+            x1000Khz = int(thousands_place,2)
+
+            if(x05kHz == "1"):
+                x05kHz = 5
+            else:
+                x05kHz = 0
+
+            self.ADF_freq = float(f"{x1000Khz}{x100Khz}{x10Khz}{x1Khz}.{x05kHz}")
         elif label == 0o033: # Frequency (Hz)
             pass
         elif label == 0o034: # VOR/ILS Frequency
             pass
         elif label == 0o035: # DME Frequency
-            pass
+
+            DME_mode = word[10:13]
+            # Not in guide
+
+            tenths_place = word[18:22][::-1]
+            xPoint1s = int(tenths_place,2)
+
+            ones_place = word[22:26][::-1]
+            x1s = int(ones_place,2)
+
+            tens_place = word[26:29][::-1]
+            x10s = int(tens_place,2)
+
+            freq = f"{tens_place}{ones_place}.{tenths_place}"
+
+            # Bits 15 & 14 codes: VOR (0,0), ILS (0,1) or MLS (1,0), (1,1) is spare
+            fourteen_fifteen_codes = word[13:14]
+            if(fourteen_fifteen_codes == "00"):
+                hundreths_place = word[17]
+                if(hundreths_place == "1"):
+                    hundreths_place = 5
+                else:
+                    hundreths_place = 0
+                freq = f"{tens_place}{ones_place}.{tenths_place}{hundreths_place}"
+                self.VOR_ILS_Frequency = freq
+            elif(fourteen_fifteen_codes == "01"):
+                hundreths_place = word[17]
+                if(hundreths_place == "1"):
+                    hundreths_place = 5
+                else:
+                    hundreths_place = 0
+                freq = f"{tens_place}{ones_place}.{tenths_place}{hundreths_place}"
+            elif(fourteen_fifteen_codes == "10"):
+                pass
+            else:
+                self.DME_Frequency = freq
         elif label == 0o037: # HF COM Frequency
             pass
         elif label == 0o205: # HF COM Frequency (alt.)
@@ -372,6 +439,9 @@ class radio_management_system:
         x1000s = int(thousand_place[::-1],2)
 
         return(xOps,x1s,x10s,x100s,x1000s)
+
+    def set_ADF_freqeuncy(self,frequency:float):
+        self.ADF_freq = frequency
 
     def set_DME_frequency(self,frequency:float):
         self.DME_Frequency = frequency

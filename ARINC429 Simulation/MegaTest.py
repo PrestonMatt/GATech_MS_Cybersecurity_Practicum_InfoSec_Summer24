@@ -14,19 +14,11 @@ from LRU_GPS_Simulator import global_positioning_system as GPS
 from LRU_RMS_Simulator import radio_management_system as RMS
 
 def test_all():
-    #test_voltage_sim()
-    #test_intWord_to_voltage()
+
     test_FMC_word_validation1()
     test_FMC_word_validation2()
     test_FMC_word_validation3()
-    #test_FMC_pilot_input()
-    #test_bus_queue_TX()
-    #test_bus_queue_RX()
-    #test_FMC_TX()
-    #test_GPS_comm()
-    #test_RX_Helper1()
-    #test_RX_Helper2()
-    #test_RX_Helper3()
+
     test_RX_label_fetch1()
     test_RX_label_fetch2()
     test_RX_label_fetch3()
@@ -46,12 +38,57 @@ def test_all():
     test_RMS_vert_speed_BCD()
     test_RMS_heading_BCD()
     test_RMS_altitude_BCD()
+    test_RMS_ICAO()
+    test_RMS_ADF()
 
+def test_all_non_asserts():
+    test_voltage_sim()
+    test_intWord_to_voltage()
+
+    try:
+        test_FMC_pilot_input()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_bus_queue_TX()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_bus_queue_RX()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_FMC_TX()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_FMC_TX()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_GPS_comm()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_RX_Helper1()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_RX_Helper2()
+    except KeyboardInterrupt:
+        pass
+    try:
+        test_RX_Helper3()
+    except KeyboardInterrupt:
+        pass
+
+# Runs all voltage simulator tests. No assert.
 def test_voltage_sim():
     word_voltage_obj = b2v(True)
     print(str(word_voltage_obj))
     word_voltage_obj.test_all_functions()
 
+# Shows graphs for various words. No assert.
 def test_intWord_to_voltage():
     word_voltage_obj1 = b2v(True)
     print(str(word_voltage_obj1))
@@ -80,40 +117,48 @@ def test_intWord_to_voltage():
     ts, vs = word_voltage_obj2.from_intWord_to_signal(word_voltage_obj2.get_speed(), word_3,0.0)
     word_voltage_obj2.graph_words((ts,vs))
 
+# Tests FMC sending rando voltages. No assert.
 def test_FMC_send_random_voltages():
     FMC_test1 = FMC("HiGh")
     FMC_test1.transmit_random_voltages()
 
+# Tests word validation function.
 def test_FMC_word_validation1():
     FMC_test2 = FMC("HIGh")
     word_1 = 0b11111111111111111111111111111111
     assert(FMC_test2.validate_word(word_1) == True)
 
+# Tests word validation function.
 def test_FMC_word_validation2():
     FMC_test2 = FMC("HIGh")
     word_1 = 0b11111111111111111111111111111110
     assert(FMC_test2.validate_word(word_1) == False)
 
+# Tests word validation function.
 def test_FMC_word_validation3():
     FMC_test2 = FMC("HIGh")
     word_1 = 0b11111101000000000000001000110000
     assert(FMC_test2.validate_word(word_1) == True)
 
+# Tests sending a given word from TX FMC. No assert.
 def test_FMC_send_given_word1():
     FMC_test3 = FMC("lOW")
     given_word = 0b11111101000000000000001000110000
     FMC_test3.transmit_given_word(given_word)
 
+# Tests sending a given word from TX FMC. No assert.
 def test_FMC_send_given_word2():
     FMC_test3 = FMC("lOW")
     given_word = 0b00000000000000000000000000000011
     FMC_test3.transmit_given_word(given_word)
 
+# Tests sending a given word from TX FMC. No assert.
 def test_FMC_send_given_word3():
     FMC_test3 = FMC("high")
     given_word = 0b11111111111111111111111111111111
     FMC_test3.transmit_given_word(given_word)
 
+# Tests sending a few given words from TX FMC. No assert.
 def test_FMC_send_multiple_given_words():
     FMC_test4 = FMC("high")
     given_word1 = 0b11111101000000000000001000110000
@@ -128,10 +173,12 @@ def test_FMC_send_multiple_given_words():
     for word in words:
         FMC_test4.transmit_given_word(word)
 
+# Tests sending words from Pilot input from TX FMC. No assert.
 def test_FMC_pilot_input():
     FMC_test5 = FMC("HIGH")
     FMC_test5.pilot_input()
 
+# Tests FMC ability to send data. No assert.
 def test_bus_queue_TX():
     print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = True)
@@ -161,6 +208,7 @@ def test_bus_queue_TX():
     transmitter_thread.join()
     visualization_thread.join()
 
+# Tests FMC ability to send and recieve data. No assert.
 def test_bus_queue_RX():
     print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = True)
@@ -218,6 +266,7 @@ def test_bus_queue_RX():
     receiver_thread.join()
     visualization_thread.join()
 
+# Tests FMC ability to random send data. No assert.
 def test_FMC_TX():
     Channel_A = ARINC429BUS()
     FMC_test6 = FMC("HIGH", BUS_CHANNELS=[Channel_A])
@@ -231,10 +280,12 @@ def test_FMC_TX():
 
     txer_thread.join()
 
+# TODO: Impliment GPS and use this test.
 def test_GPS_comm():
     GPS_test1 = GPS("HIGH")
     GPS_test1.communicate_to_bus()
 
+# Tests RX helper class ability to receive Low Speed bus data. No assert.
 def test_RX_Helper1():
     print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = False)
@@ -271,6 +322,7 @@ def test_RX_Helper1():
     receiver_thread.join()
     visualization_thread.join()
 
+# Tests RX helper class ability to receive Low Speed bus data and convert it to a word. No assert.
 def test_RX_Helper2():
     print("You need to be using IDLE for this")
     word_voltage_obj = b2v(hl_speed = False)
@@ -348,33 +400,39 @@ def test_RX_Helper3():
     receiver_thread.join()
     #visualization_thread.join()
 
+# Tests ability for RX helper to parse a label from a word.
 def test_RX_label_fetch1():
     label_1 = "11111111000000001111111100000000"
     RX_Helper = lru_rxr()
     assert(0b11111111 == RX_Helper.get_label_from_word(int(label_1,2)))
 
+# Tests ability for RX helper to parse a label from a word.
 def test_RX_label_fetch2():
     label_1 = "10100101000000001111111100000000"
     RX_Helper = lru_rxr()
     assert(0b10100101 == RX_Helper.get_label_from_word(int(label_1,2)))
 
+# Tests ability for RX helper to parse a label from a word.
 def test_RX_label_fetch3():
     label_1 = "00000000111111110000000011111111"
     RX_Helper = lru_rxr()
     assert(0b00000000 == RX_Helper.get_label_from_word(int(label_1,2)))
 
+# Tests ability for RX helper to parse a label from a word.
 def test_RX_label_fetch4():
     label_1 = "00110101000000001111111100000000"
     RX_Helper = lru_rxr()
     # 00110101 reversed
     assert(0b10101100 == RX_Helper.get_label_from_word(int(label_1,2)))
 
+# Tests ability for RX helper to parse a label from a word.
 def test_RX_label_fetch5():
     label_1 = "00000001000000001111111100000000"
     RX_Helper = lru_rxr()
     # 00110101 reversed
     assert(0b10000000 == RX_Helper.get_label_from_word(int(label_1,2)))
 
+# Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser1():
     label = 0o066
     # print(bin(label))
@@ -382,6 +440,7 @@ def test_TX_label_reverser1():
     tx_chip = lru_txr()
     assert("01101100" == tx_chip.make_label_for_word(label)[0])
 
+# Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser2():
     label = 0o010
     # print(bin(label))
@@ -389,6 +448,7 @@ def test_TX_label_reverser2():
     tx_chip = lru_txr()
     assert("00001000"[::-1] == tx_chip.make_label_for_word(label)[0])
 
+# Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser3():
     label = 0o011
     # print(bin(label))
@@ -396,6 +456,7 @@ def test_TX_label_reverser3():
     tx_chip = lru_txr()
     assert("00001001"[::-1] == tx_chip.make_label_for_word(label)[0])
 
+# Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser4():
     label = 0o210
     # print(bin(label))
@@ -403,6 +464,7 @@ def test_TX_label_reverser4():
     tx_chip = lru_txr()
     assert("10001000"[::-1] == tx_chip.make_label_for_word(label)[0])
 
+# Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser5():
     label = 0o320
     print(bin(label))
@@ -410,6 +472,7 @@ def test_TX_label_reverser5():
     tx_chip = lru_txr()
     assert("11010000"[::-1] == tx_chip.make_label_for_word(label)[0])
 
+# Tests ability for TX helper to pack all possible labels into a word.
 def test_TX_label_reverser_all():
     tx_chip = lru_txr()
     for x in range(0o000, 0o377):
@@ -420,6 +483,7 @@ def test_TX_label_reverser_all():
         #print(label)
         assert(label == tx_chip.make_label_for_word(x)[0])
 
+# Tests ability for RX helper to parse all possible labels from a word.
 def test_RX_label_fetchall():
     rx_chip = lru_rxr()
     tx_chip = lru_txr()
@@ -431,12 +495,13 @@ def test_RX_label_fetchall():
         #print(label)
         assert(rxd_label == x)
 
+# Tests default RMS stand up.
 def test_RMS_Test_Static1():
     print("\n")
     ARINC_Channel = ARINC429BUS()
     RMS_test1 = RMS("low",[ARINC_Channel])
     print("Default RMS Bootup Status.")
-    assert str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
         str({"Flight Number": None,
              "Latitude": None,
              "Longitude": None,
@@ -450,6 +515,7 @@ def test_RMS_Test_Static1():
              "ICAO Address": None,
              "Aircraft Type": "Civilian"})
 
+# Tests RMS BCD of Lat data for ADS-B.
 def test_RMS_Test_latitudedecode_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -461,7 +527,7 @@ def test_RMS_Test_latitudedecode_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": "N 75 Deg 59.9'",
                 "Longitude": None,
@@ -475,6 +541,7 @@ def test_RMS_Test_latitudedecode_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BCD of Lon data for ADS-B.
 def test_RMS_Test_longitudedecode_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -486,7 +553,7 @@ def test_RMS_Test_longitudedecode_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": "W 169 Deg 25.8'",
                 "Longitude": None,
@@ -500,6 +567,7 @@ def test_RMS_Test_longitudedecode_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS flight # for ADS-B.
 def test_RMS_flight_number():
     print("\n")
     tx_chip = lru_txr()
@@ -513,7 +581,7 @@ def test_RMS_flight_number():
     word = label + data
     RMS_test1.decode_word(word)
     # 117
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": 117,
                 "Latitude": None,
                 "Longitude": None,
@@ -527,6 +595,7 @@ def test_RMS_flight_number():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BCD of ground speed for ADS-B.
 def test_RMS_ground_speed_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -540,7 +609,7 @@ def test_RMS_ground_speed_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -554,6 +623,7 @@ def test_RMS_ground_speed_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BNR of ground speed for ADS-B.
 def test_RMS_ground_speed_BNR():
     print("\n")
     tx_chip = lru_txr()
@@ -565,7 +635,7 @@ def test_RMS_ground_speed_BNR():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -579,6 +649,7 @@ def test_RMS_ground_speed_BNR():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BCD of track speed for ADS-B.
 def test_RMS_track_speed_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -590,7 +661,7 @@ def test_RMS_track_speed_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -604,6 +675,7 @@ def test_RMS_track_speed_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BCD of vert speed for ADS-B.
 def test_RMS_vert_speed_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -615,7 +687,7 @@ def test_RMS_vert_speed_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -629,6 +701,7 @@ def test_RMS_vert_speed_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BCD of heading for ADS-B.
 def test_RMS_heading_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -640,7 +713,7 @@ def test_RMS_heading_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -654,6 +727,7 @@ def test_RMS_heading_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BCD of altitude for ADS-B.
 def test_RMS_altitude_BCD():
     print("\n")
     tx_chip = lru_txr()
@@ -665,7 +739,7 @@ def test_RMS_altitude_BCD():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -679,6 +753,8 @@ def test_RMS_altitude_BCD():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# TODO figure out what this word decodes to?
+# Tests RMS BNR of heading for ADS-B.
 def test_RMS_heading_BNR():
     print("\n")
     tx_chip = lru_txr()
@@ -690,7 +766,7 @@ def test_RMS_heading_BNR():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -704,6 +780,7 @@ def test_RMS_heading_BNR():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BNR of altitude label code 1 for ADS-B.
 def test_RMS_altitude_BNR1():
     print("\n")
     tx_chip = lru_txr()
@@ -715,7 +792,7 @@ def test_RMS_altitude_BNR1():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -729,6 +806,7 @@ def test_RMS_altitude_BNR1():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# Tests RMS BNR of altitude label code 2 for ADS-B.
 def test_RMS_altitude_BNR2():
     print("\n")
     tx_chip = lru_txr()
@@ -740,7 +818,7 @@ def test_RMS_altitude_BNR2():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -754,6 +832,8 @@ def test_RMS_altitude_BNR2():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# TODO figure out what this word decodes to?
+# Tests RMS BNR of lat label code 2 for ADS-B.
 def test_RMS_lat_BNR():
     print("\n")
     tx_chip = lru_txr()
@@ -765,7 +845,7 @@ def test_RMS_lat_BNR():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": "N 81.5 Deg",
                 "Longitude": None,
@@ -779,6 +859,8 @@ def test_RMS_lat_BNR():
                 "ICAO Address": None,
                 "Aircraft Type": "Civilian"}))
 
+# TODO figure out what this word decodes to?
+# Tests RMS BNR of lat label code 2 for ADS-B.
 def test_RMS_lon_BNR():
     print("\n")
     tx_chip = lru_txr()
@@ -790,13 +872,40 @@ def test_RMS_lon_BNR():
     word = label + data
     RMS_test1.decode_word(word)
     # N 75 Deg 59.9'
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": "W 100.25",
                 "Longitude": None,
                 "Altitude": None,
                 "Ground Speed": None,
                 "Vertical Speed": None,
+                "Track Angle": None,
+                "Magnetic Heading": None,
+                "Emergency Status": "Normal Operations",
+                "Ident Switch": False,
+                "ICAO Address": None,
+                "Aircraft Type": "Civilian"}))
+
+# TODO figure out what this word decodes to?
+# Tests RMS BNR of lat label code 2 for ADS-B.
+def test_RMS_vertspeed_BNR():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o104))
+    data = "00" + "00000000" + "0110111011" + "111" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    # N 75 Deg 59.9'
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+           str({"Flight Number": None,
+                "Latitude": "W 100.25",
+                "Longitude": None,
+                "Altitude": None,
+                "Ground Speed": None,
+                "Vertical Speed": -2200,
                 "Track Angle": None,
                 "Magnetic Heading": None,
                 "Emergency Status": "Normal Operations",
@@ -822,7 +931,7 @@ def test_RMS_ICAO():
     word2 = label2 + data2
     RMS_test1.decode_word(word1)
     RMS_test1.decode_word(word2)
-    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tVOR/ILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
+    assert(str(RMS_test1) == f"Commanded Frequencies:\n\tGeneral:0.0\n\tADF:0.0\n\tVOR:0.0\n\tILS:0.0\n\tDME:0.0\n\tHF_COMM:0.0" + "\n\nADS-B Message:" + \
            str({"Flight Number": None,
                 "Latitude": None,
                 "Longitude": None,
@@ -836,5 +945,30 @@ def test_RMS_ICAO():
                 "ICAO Address": 0b101011001001011100100110,
                 "Aircraft Type": "Civilian"}))
 
+def test_RMS_ADF():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o032))
+    data = "00" + "0" + "0" + "0" + "1" + "1110" + "1010" + "0000" + "100" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.ADF_freq == 1057.5)
+
+def test_RMS_DME():
+    print("\n")
+    tx_chip = lru_txr()
+    ARINC_Channel = ARINC429BUS()
+    RMS_test1 = RMS("low",[ARINC_Channel])
+    label, _ = tx_chip.make_label_for_word(int(0o032))
+    data = "00" + "000" + "0" + "0" + "01" + "1" + "0110" + "1010" + "001" + "00" + "1"
+    #print(len(data))
+    word = label + data
+    RMS_test1.decode_word(word)
+    assert(RMS_test1.ADF_freq == 1057.5)
+
 if __name__ == "__main__":
     test_all()
+    test_all_non_asserts()
