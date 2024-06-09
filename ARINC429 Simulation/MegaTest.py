@@ -55,10 +55,13 @@ def test_all():
     test_GPS_word_maker()
 
 def test_all_non_asserts():
-    test_voltage_sim()
+    #test_voltage_sim()
+    #test_graph_lat_word_HS()
+    #test_graph_lat_word_LS()
+    #test_graph_3_words()
     #test_intWord_to_voltage()
 
-    #test_FMC_pilot_input()
+    test_FMC_pilot_input()
     #test_bus_queue_TX()
     #test_bus_queue_RX()
     #test_FMC_TX()
@@ -105,6 +108,26 @@ def test_intWord_to_voltage():
 
     ts, vs = word_voltage_obj2.from_intWord_to_signal(word_voltage_obj2.get_speed(), word_3,0.0)
     word_voltage_obj2.graph_words((ts,vs))
+
+# Tests voltage set generation for the latitude send. No Assert.
+def test_graph_lat_word_HS():
+    word_voltage_obj = b2v(True)
+    word_1 = 0b00010000000100110011010101011100
+    ts, vs = word_voltage_obj.from_intWord_to_signal(word_voltage_obj.get_speed(), word_1,0.0)
+    word_voltage_obj.graph_words((ts,vs), tickrate=30,figtitle="Word for N 75 Deg 59.9'")
+
+# Tests voltage set generation for the latitude send. No Assert.
+def test_graph_lat_word_LS():
+    word_voltage_obj = b2v(False)
+    word_1 = 0b00010000000100110011010101011100
+    ts, vs = word_voltage_obj.from_intWord_to_signal(word_voltage_obj.get_speed(), word_1,0.0)
+    word_voltage_obj.graph_words((ts,vs),tickrate=300, figtitle="Word for N 75 Deg 59.9'")
+
+# Tests voltage set generation for 3 words. No assert.
+def test_graph_3_words():
+    word_voltage_obj = b2v(True)
+    ts, vs = word_voltage_obj.generate_n_random_words(True, n=3)
+    word_voltage_obj.graph_words((ts,vs),tickrate=300, figtitle="3 random words.")
 
 # Tests FMC sending rando voltages. No assert.
 def test_FMC_send_random_voltages():
@@ -164,8 +187,23 @@ def test_FMC_send_multiple_given_words():
 
 # Tests sending words from Pilot input from TX FMC. No assert.
 def test_FMC_pilot_input():
-    FMC_test5 = FMC("HIGH")
-    FMC_test5.pilot_input()
+    channel_a = ARINC429BUS()
+    FMC_test5 = FMC("HIGH",fifo_len=5,BUS_CHANNELS = [channel_a])
+
+    def pilot_thread(FMC_test5):
+        FMC_test5.pilot_input()
+
+    # Start the pilot input thread:
+    pilot_thread = Thread(target=pilot_thread, args=(FMC_test5,))
+    pilot_thread.start()
+    FMC_test5.visualize_FMC_transmissions(channel_a)
+
+    visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005))
+    visualization_thread.start()
+
+    # Join threads to main thread keeping simulation running
+    visualization_thread.join()
+    pilot_thread.join()
 
 # Tests FMC ability to send data. No assert.
 def test_bus_queue_TX():

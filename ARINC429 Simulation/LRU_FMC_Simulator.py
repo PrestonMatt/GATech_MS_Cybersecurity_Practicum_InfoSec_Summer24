@@ -112,9 +112,12 @@ class flight_management_computer:
             pass
         if(direction.lower() == "s"):
             pass
+        print(word)
 
         if(self.fifo_mode):
-            self.FIFO_mode(word)
+            # TODO fix FIFO Full feature
+            #self.FIFO_mode(word)
+            self.transmit_given_word(word)
         else:
             self.scheduler_mode(word, 20_000_000) # send 20 sec later
 
@@ -131,7 +134,9 @@ class flight_management_computer:
             return('1')
 
     def FIFO_mode(self, next_word):
+        print(str(self.FIFO))
         if(self.FIFO.full()):
+            print("FIFO is full")
             word_to_send = self.FIFO.get() # remove from queue
             self.transmit_given_word(word_to_send)
         self.FIFO.put(next_word)
@@ -192,6 +197,7 @@ class flight_management_computer:
         """
 
     def transmit_given_word(self, word:int, channel_index=0):
+        #print(f"TX word:{word}")
         self.communication_chip.transmit_given_word(word, channel_index)
         """
         if(self.validate_word(word) == False): # word is invalid:
