@@ -462,6 +462,11 @@ def test_RX_label_fetch5():
 # Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser1():
     label = 0o066
+    # 00 110 110
+    # 1&2 = 00
+    # 34&5 = 110
+    # 67&8 = 110
+    # 00110110 -> 01101100
     # print(bin(label))
     # -> "00110110"
     tx_chip = lru_txr()

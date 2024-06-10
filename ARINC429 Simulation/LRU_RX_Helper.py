@@ -70,7 +70,18 @@ class arinc429_RX_Helpers():
         # Reverse the binary string
         reversed_label_str = label_bin_str[::-1]
         # Convert the reversed binary string back to an integer
-        true_label = int(reversed_label_str, 2)
+        # This has to be digit by digit.
+        dig1 = reversed_label_str[0:2] # bits 1 and 2
+        dig2 = reversed_label_str[2:5] # bits 3, 4, and 5
+        dig3 = reversed_label_str[5:] # bits 6, 7, 8
+
+        digit1 = int(dig1,2) # this should be in octal
+        digit2 = int(dig2,2) # this should be in octal
+        digit3 = int(dig3,2) # this should be in octal
+
+        full_octal_code = str(digit1) + str(digit2) + str(digit3)
+
+        true_label = int(full_octal_code, 8)
 
         return(true_label)
 

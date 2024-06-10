@@ -95,8 +95,31 @@ class arinc429_TX_Helpers():
         #channel.queue_visual(fig_title = f"FMC LRU TX Voltages on Channel {channel}")
         visualization_thread.join()
 
-    # TODO Fix LABELS!
     def make_label_for_word(self, label:int) -> (str,int):
+        digits = oct(label)[2:]
+        digits = digits[::-1] # reverse to make it easier to conceptualize
+        dig1 = digits[0]
+        try:
+            dig2 = digits[1]
+        except IndexError:
+            dig2 = "0"
+        try:
+            dig3 = digits[2]
+        except IndexError:
+            dig3 = "0"
+        bits12 = bin(int(dig3))[2:]
+        bits12 = "0"*(2-len(bits12)) + bits12
+
+        bits_345 = bin(int(dig2))[2:]
+        bits_345 = "0"*(3-len(bits_345)) + bits_345
+
+        bits_678 = bin(int(dig1))[2:]
+        bits_678 = "0"*(3-len(bits_678)) + bits_678
+
+        full_label_bitstr = bits12 + bits_345 + bits_678
+        reversed_label_str = full_label_bitstr[::-1]
+        true_label = int(full_label_bitstr,2)
+        """
         # Convert the integer to a binary string without the '0b' prefix
         label_bin_str = bin(label)[2:]
         if(len(label_bin_str) < 8):
@@ -106,6 +129,7 @@ class arinc429_TX_Helpers():
         reversed_label_str = label_bin_str[::-1]
         # Convert the reversed binary string back to an integer
         true_label = int(reversed_label_str, 2)
+        """
         return(reversed_label_str,true_label)
 
     def calc_parity(self, word_bitStr):
