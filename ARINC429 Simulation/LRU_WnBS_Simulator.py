@@ -24,12 +24,10 @@ class weight_and_balance_system:
         0o167: 'Zero Fuel Weight (lb)', #
         0o243: 'Zero Fuel Weight (kg)', #
     }
-
     applicable_labels_DISC = {
         0o270: 'Discrete Data #1', #
         0o357: 'ISO Alphabet #5 Message' #
     }
-
     applicable_labels_BNR = {
         0o054: 'Zero Fuel Weight (KG)', #
         0o070: 'Hard landing Magnitude #1', #
@@ -39,7 +37,9 @@ class weight_and_balance_system:
         0o076: 'Longitudinal Center of Gravity', #
         0o077: 'Lateral Center of Gravity', #
         0o100: 'Gross Weight (Kilogram)', #
-        0o107: 'Longitude Zero Fuel C/G', #
+        0o103: 'Left Outboard Flap Position',
+        0o104: 'Right Outboard Flap Postion',
+        0o107: 'Longitude Zero Fuel C/G' #
     }
 
     def __init__(self, bus_speed = "low", BUS_CHANNELS = []):
@@ -63,4 +63,7 @@ class weight_and_balance_system:
     def decode_word(self, word:str):
         label = self.receive_chip.get_label(word)
 
-        pass
+        if(label == 0o103):
+            print("Adjusting pitch")
+        elif(label == 0o104):
+            print("Adjusting pitch")
