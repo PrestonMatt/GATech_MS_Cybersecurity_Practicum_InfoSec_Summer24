@@ -57,7 +57,6 @@ class arinc429_RX_Helpers():
 
         return(word_as_int, word_bitStr)
 
-    # TODO Fix LABELS!
     def get_label_from_word(self, word:int) -> int:
         # remember label is transmitted BACKWARDS for some ******** reason
         # get the top 8 bits from a 32bit word:

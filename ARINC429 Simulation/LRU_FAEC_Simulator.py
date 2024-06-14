@@ -79,7 +79,7 @@ class full_authority_engine_control:
         0o375: 'Right Thrust Reverser Position' # -> BNR
     }
 
-    def __init__(self, bus_speed, wingCardinality, serial_no = 0b11110000, BUS_CHANNELS = []):
+    def __init__(self, bus_speed, wingCardinality, serial_no = 000000, BUS_CHANNELS = []):
         if(bus_speed.lower() == "high"):
             self.word_generator_obj = b2v(True)
         elif(bus_speed.lower() == "low"):
@@ -105,49 +105,72 @@ class full_authority_engine_control:
             engine_str += f"\n{oct(label)} data: " + self.applicable_labels_BNR[label]
         return(engine_str)
 
-    def decode_words(self, word:str):
+    def decode_word(self, word:str):
         label = self.receive_chip.get_label_from_word(int(word,2))
         print(oct(label))
 
-        # Engine Serial No. (LSDs), BCD
-        if label == 0o046:
-            pass
-        # Engine Serial No. (MSDs), BCD
-        elif label == 0o047:
-            pass
-        # Discrete Data #1, DISC
-        elif label == 0o270:
-            pass
-        # Discrete Data #2, DISC
-        elif label == 0o271:
-            pass
-        # Discrete Data #3, DISC
-        elif label == 0o272:
-            pass
-        # Discrete Data #4, DISC
-        elif label == 0o273:
-            pass
-        # Discrete Data #5, DISC
-        elif label == 0o274:
-            pass
-        # Discrete Data #6, DISC
-        elif label == 0o275:
-            pass
-        # Maintenance Data #1, DISC
-        elif label == 0o350:
-            pass
-        # Maintenance Data #2, DISC
-        elif label == 0o351:
-            pass
-        # Maintenance Data #3, DISC
-        elif label == 0o352:
-            pass
-        # Maintenance Data #4, DISC
-        elif label == 0o353:
-            pass
-        # Maintenance Data #5, DISC
-        elif label == 0o354:
-            pass
+        if(label == 0o046): # Engine Serial No. (LSDs), BCD
+            lower_half = self.serial_number_decoder(word)
+            # grab the upper half:
+            MSBs = int(self.serial_no / 1000) * 1000
+            self.serial_no = int(MSBs + lower_half)
+            """
+            if(self.serial_no < 1_000):
+                # First time set
+                self.serial_no = lower_half
+            else:
+                # MSB came across first
+                self.serial_no += lower_half
+            """
+        elif label == 0o047: # Engine Serial No. (MSDs), BCD
+            # Get the lower half:
+            LSBs = self.serial_no % 1000
+            # Decimal shift over by three
+            upper_half = self.serial_number_decoder(word) * 1000
+            self.serial_no = int(upper_half + LSBs)
+            """
+            if(self.serial_no < 1_000): # The lower half may have been set.
+                self.serial_no += upper_half
+            else:
+                self.serial_no = upper_half
+            """
+        elif label >= 0o270 and label <= 0o275: # Discrete Data #1-6, DISC
+            """ # save this for later
+            # Discrete Data #2, DISC
+            elif :
+                pass
+            # Discrete Data #3, DISC
+            elif label == 0o272:
+                pass
+            # Discrete Data #4, DISC
+            elif label == 0o273:
+                pass
+            # Discrete Data #5, DISC
+            elif label == 0o274:
+                pass
+            # Discrete Data #6, DISC
+            elif label == 0o275:
+                pass
+            """
+            # should be 0o270, 0o271, 0o272, 0o273, 0o274, and 0o275
+            print(f"ACK recv'd discrete data: {word[8:30]}")
+        elif label >= 0o350 and label <= 0o354: # Maintenance Data #1-5, DISC
+            # should be 0o350, 0o351, 0o352, 0o353, and 0o354
+            print(f"ACK recv'd Maintenance data: {word[8:30]}")
+            """ # save for later
+            # Maintenance Data #2, DISC
+            elif label == 0o351:
+                pass
+            # Maintenance Data #3, DISC
+            elif label == 0o352:
+                pass
+            # Maintenance Data #4, DISC
+            elif label == 0o353:
+                pass
+            # Maintenance Data #5, DISC
+            elif label == 0o354:
+                pass
+            """
         # Selected Ambient Static Pressure, BNR
         elif label == 0o114:
             pass
@@ -312,6 +335,16 @@ class full_authority_engine_control:
             pass
         else:
             print('Label not found.')
+
+        if(self.serial_no >= 1_000_000):
+            raise ValueError("Serial number too high")
+
+    def serial_number_decoder(self, word:str)->int:
+        dig1 = int(word[14:18][::-1],2)
+        dig2 = int(word[18:22][::-1],2)
+        dig3 = int(word[22:26][::-1],2)
+        half_serial_num = int(str(dig3) + str(dig2) + str(dig1))
+        return(half_serial_num)
 
         """
         # Check if words are same
