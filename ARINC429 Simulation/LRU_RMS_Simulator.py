@@ -121,7 +121,7 @@ class radio_management_system:
     # Aircraft Type - NOT OVER BUS
     def decode_word(self,word:str):
         label = self.receive_chip.get_label_from_word(int(word,2))
-        print(oct(label))
+        #print(oct(label))
         #print(word)
 
         if label == 0o010: # Latitude (Present Position)

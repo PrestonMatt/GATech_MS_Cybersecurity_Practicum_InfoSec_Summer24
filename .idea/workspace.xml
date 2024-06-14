@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3439f6df-92eb-4d0f-8da0-d7e106e162e4" name="Changes" comment="Tweaked W&amp;BS">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARINC429 Simulation/LRU_FAEC_Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARINC429 Simulation/LRU_FAEC_Simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARINC429 Simulation/LRU_RMS_Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARINC429 Simulation/LRU_RMS_Simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARINC429 Simulation/MegaTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARINC429 Simulation/MegaTest.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2hI4oDRJ6UnT2oiIqPT3Ejpb7ZR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python tests.Python tests for MegaTest.test_FAEC_default.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_TX.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_send_given_word.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_send_given_word1.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_send_given_word3.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_send_multiple_given_words.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_send_random_voltages.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_word_validation.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_word_validation1.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_word_validation2.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FMC_word_validation3.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_GPS_word_maker.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RMS_HF_COM_tune.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RMS_Test_latitudedecode_BCD.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RMS_Test_longitudedecode_BCD.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RX_label_fetch1.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RX_label_fetch2.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RX_label_fetch3.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RX_label_fetch4.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RX_label_fetch5.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_RX_label_fetchall.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_TX_label_reverser1.executor": "Debug",
+    "Python tests.Python tests for MegaTest.test_TX_label_reverser_all.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_all.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_bus_queue.executor": "Debug",
+    "Python tests.Python tests for MegaTest.test_bus_queue_RX.executor": "Debug",
+    "Python tests.Python tests for MegaTest.test_intWord_to_voltage.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_voltage_sim.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_voltage_sim_HighSpeed.executor": "Run",
+    "Python tests.Python tests for test.test2.executor": "Run",
+    "Python tests.Python tests for test.test3.executor": "Run",
+    "Python tests.Python tests for test.test4.executor": "Run",
+    "Python tests.Python tests for test.test5.executor": "Debug",
+    "Python tests.Python tests for test.test6.executor": "Run",
+    "Python tests.Python tests in MegaTest.py.executor": "Run",
+    "Python tests.Python tests in test.py.executor": "Run",
+    "Python.ARINC429_Client.executor": "Run",
+    "Python.ARINC429_Server.executor": "Debug",
+    "Python.FMC_LRU_Simulator.executor": "Run",
+    "Python.arinc429_voltage_sim.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/mspreston/Desktop/Grad School Work/7 - Summer Semester 2024/Cybersecurity Practicum/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for MegaTest.test_FAEC_default">
+    <configuration name="Python tests for MegaTest.test_FAEC_default" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ARINC429 Simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_FAEC_default&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for MegaTest.test_GPS_word_maker" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ARINC429 Simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_GPS_word_maker&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for MegaTest.test_RMS_HF_COM_tune" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ARINC429 Simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_RMS_HF_COM_tune&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for MegaTest.test_RMS_Test_longitudedecode_BCD" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ARINC429 Simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_RMS_Test_longitudedecode_BCD&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for MegaTest.test_all" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ARINC429 Simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_all&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_default" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_GPS_word_maker" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_RMS_Test_longitudedecode_BCD" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_RMS_HF_COM_tune" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_all" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3439f6df-92eb-4d0f-8da0-d7e106e162e4" name="Changes" comment="" />
+      <created>1717268430701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717268430701</updated>
+      <workItem from="1717268431642" duration="300000" />
+      <workItem from="1717268746766" duration="12078000" />
+      <workItem from="1717283801194" duration="10027000" />
+      <workItem from="1717345664844" duration="22446000" />
+      <workItem from="1718022559930" duration="3356000" />
+      <workItem from="1718371013100" duration="1320000" />
+      <workItem from="1718372589293" duration="1544000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adding RX/TX Bus functionality">
+      <option name="closed" value="true" />
+      <created>1717271345159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717271345159</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding functionality to FMC and Full Engine Auth Control">
+      <option name="closed" value="true" />
+      <created>1717277755039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717277755039</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ARINC TX Working, Client RX not">
+      <option name="closed" value="true" />
+      <created>1717288910030</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717288910030</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ARINC TX Working, Client RX still not">
+      <option name="closed" value="true" />
+      <created>1717289738992</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717289738992</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Testing the send_voltages function for the FMC">
+      <option name="closed" value="true" />
+      <created>1717296307162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717296307162</updated>
+    </task>
+    <task id="LOCAL-00006" summary="outlined word_gen_calc function">
+      <option name="closed" value="true" />
+      <created>1717345567855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717345567855</updated>
+    </task>
+    <task id="LOCAL-00007" summary="further outlined word_gen_calc function">
+      <option name="closed" value="true" />
+      <created>1717347279842</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717347279842</updated>
+    </task>
+    <task id="LOCAL-00008" summary="More testing...">
+      <option name="closed" value="true" />
+      <created>1717347798039</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717347798039</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ironed out some bugs in voltage sim">
+      <option name="closed" value="true" />
+      <created>1717349768404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717349768404</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Starting FMC_LRU. Got it to TX rando words">
+      <option name="closed" value="true" />
+      <created>1717352463209</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717352463209</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed a bug in arinc vol sim that cause words starting in a 0 bit to get cut short">
+      <option name="closed" value="true" />
+      <created>1717354920790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717354920790</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed a bug in arinc vol sim that caused generated words from 0b-&gt;bitstrings to not include null time on the bus">
+      <option name="closed" value="true" />
+      <created>1717355408202</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717355408202</updated>
+    </task>
+    <task id="LOCAL-00013" summary="FMC Sim can now send voltages in microsecond accuracy">
+      <option name="closed" value="true" />
+      <created>1717356338461</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717356338461</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Outlined pilot input, FAEC and W&amp;BS">
+      <option name="closed" value="true" />
+      <created>1717372013526</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717372013526</updated>
+    </task>
+    <task id="LOCAL-00015" summary="W&amp;BS Label Start">
+      <option name="closed" value="true" />
+      <created>1717372579056</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717372579056</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Outlined the main functionality of the queue bus">
+      <option name="closed" value="true" />
+      <created>1717457328929</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717457328929</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fixed typo in busqueue class and refrences to self in FMU">
+      <option name="closed" value="true" />
+      <created>1717457491043</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717457491043</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added some ValueErrors in from_intWord_to_signal for voltage sim, visualization functionality for busqueue and first testing function for busqueue">
+      <option name="closed" value="true" />
+      <created>1717462779818</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717462779818</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Use IDLE to see the bus fly!">
+      <option name="closed" value="true" />
+      <created>1717462830392</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717462830392</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Plotting now waits 1/5 microseconds befor updating">
+      <option name="closed" value="true" />
+      <created>1717463005802</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717463005802</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Got it to TX and RX data">
+      <option name="closed" value="true" />
+      <created>1717547300832</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717547300832</updated>
+    </task>
+    <task id="LOCAL-00022" summary="FMC can TX data">
+      <option name="closed" value="true" />
+      <created>1717548624675</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717548624675</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed label encoding and decoding">
+      <option name="closed" value="true" />
+      <created>1718024250984</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718024250984</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixed bug in GPS LRU that forgot to add parity and SSM to words">
+      <option name="closed" value="true" />
+      <created>1718025413604</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718025413604</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Tweaked W&amp;BS">
+      <option name="closed" value="true" />
+      <created>1718064800017</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718064800017</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding RX/TX Bus functionality" />
+    <MESSAGE value="Adding functionality to FMC and Full Engine Auth Control" />
+    <MESSAGE value="ARINC TX Working, Client RX not" />
+    <MESSAGE value="ARINC TX Working, Client RX still not" />
+    <MESSAGE value="Testing the send_voltages function for the FMC" />
+    <MESSAGE value="outlined word_gen_calc function" />
+    <MESSAGE value="further outlined word_gen_calc function" />
+    <MESSAGE value="More testing..." />
+    <MESSAGE value="Ironed out some bugs in voltage sim" />
+    <MESSAGE value="Starting FMC_LRU. Got it to TX rando words" />
+    <MESSAGE value="Fixed a bug in arinc vol sim that cause words starting in a 0 bit to get cut short" />
+    <MESSAGE value="Fixed a bug in arinc vol sim that caused generated words from 0b-&gt;bitstrings to not include null time on the bus" />
+    <MESSAGE value="FMC Sim can now send voltages in microsecond accuracy" />
+    <MESSAGE value="Outlined pilot input, FAEC and W&amp;BS" />
+    <MESSAGE value="W&amp;BS Label Start" />
+    <MESSAGE value="Outlined the main functionality of the queue bus" />
+    <MESSAGE value="Fixed typo in busqueue class and refrences to self in FMU" />
+    <MESSAGE value="Added some ValueErrors in from_intWord_to_signal for voltage sim, visualization functionality for busqueue and first testing function for busqueue" />
+    <MESSAGE value="Use IDLE to see the bus fly!" />
+    <MESSAGE value="Plotting now waits 1/5 microseconds befor updating" />
+    <MESSAGE value="Got it to TX and RX data" />
+    <MESSAGE value="FMC can TX data" />
+    <MESSAGE value="Fixed label encoding and decoding" />
+    <MESSAGE value="Fixed bug in GPS LRU that forgot to add parity and SSM to words" />
+    <MESSAGE value="Tweaked W&amp;BS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaked W&amp;BS" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_TX_Helper.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_TX_Helper.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_TX_Helper.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$.coverage" NAME=" Coverage Results" MODIFIED="1718374400317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$ARINC429_Client.coverage" NAME="ARINC429_Client Coverage Results" MODIFIED="1717270818122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$test.coverage" NAME="test Coverage Results" MODIFIED="1717282160723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$arinc429_voltage_sim.coverage" NAME="arinc429_voltage_sim Coverage Results" MODIFIED="1717268567021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$ARINC429_Server.coverage" NAME="ARINC429_Server Coverage Results" MODIFIED="1717270732882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$FMC_LRU_Simulator.coverage" NAME="FMC_LRU_Simulator Coverage Results" MODIFIED="1717275071851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+  </component>
+</project>
