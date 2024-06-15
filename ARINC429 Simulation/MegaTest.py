@@ -61,13 +61,12 @@ def test_all_non_asserts():
     #test_graph_3_words()
     #test_intWord_to_voltage()
 
-    test_FMC_pilot_input()
+    #test_FMC_pilot_input()
     #test_bus_queue_TX()
-    #test_bus_queue_RX()
+    test_bus_queue_RX()
     #test_FMC_TX()
     #test_FMC_TX()
     #test_GPS_comm()
-    #test_RX_Helper1()
     #test_RX_Helper1()
     #test_RX_Helper2()
     #test_RX_Helper3()
@@ -196,7 +195,7 @@ def test_FMC_pilot_input():
     # Start the pilot input thread:
     pilot_thread = Thread(target=pilot_thread, args=(FMC_test5,))
     pilot_thread.start()
-    FMC_test5.visualize_FMC_transmissions(channel_a)
+    #FMC_test5.visualize_FMC_transmissions(channel_a)
 
     visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(channel_a,0.005))
     visualization_thread.start()
