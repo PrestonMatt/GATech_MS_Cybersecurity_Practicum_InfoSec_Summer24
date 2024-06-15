@@ -171,9 +171,13 @@ class full_authority_engine_control:
             elif label == 0o354:
                 pass
             """
-        # Selected Ambient Static Pressure, BNR
-        elif label == 0o114:
-            pass
+        elif label == 0o114: # Selected Ambient Static Pressure, BNR
+            # Units: PSIA
+            # Range: 1.5-20.0
+            # Sig bits: 11
+            # Precision: 0.016
+            data = word[10:29]
+            ambient_static_pressure = bin(data[:11],2)
         # Fan Discharge Static Pressure, BNR
         elif label == 0o127:
             pass

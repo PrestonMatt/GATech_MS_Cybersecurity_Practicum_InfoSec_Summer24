@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3439f6df-92eb-4d0f-8da0-d7e106e162e4" name="Changes" comment="Tweaked W&amp;BS">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3439f6df-92eb-4d0f-8da0-d7e106e162e4" name="Changes" comment="Added a few codes to FAEC">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ARINC429 Simulation/LRU_FAEC_Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARINC429 Simulation/LRU_FAEC_Simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ARINC429 Simulation/LRU_RMS_Simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARINC429 Simulation/LRU_RMS_Simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ARINC429 Simulation/MegaTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARINC429 Simulation/MegaTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +34,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender configuration",
+    "Notification.DoNotAsk-WindowsDefender": "true",
     "Python tests.Python tests for MegaTest.test_FAEC_default.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FAEC_full_serial_1.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FAEC_full_serial_2.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FAEC_full_serial_3.executor": "Debug",
+    "Python tests.Python tests for MegaTest.test_FAEC_full_serial_4.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FAEC_serial_LSB.executor": "Run",
+    "Python tests.Python tests for MegaTest.test_FAEC_serial_MSB.executor": "Run",
     "Python tests.Python tests for MegaTest.test_FMC_TX.executor": "Run",
     "Python tests.Python tests for MegaTest.test_FMC_send_given_word.executor": "Run",
     "Python tests.Python tests for MegaTest.test_FMC_send_given_word1.executor": "Run",
@@ -91,8 +94,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for MegaTest.test_FAEC_default">
-    <configuration name="Python tests for MegaTest.test_FAEC_default" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for MegaTest.test_FAEC_full_serial_4">
+    <configuration name="Python tests for MegaTest.test_FAEC_full_serial_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,11 +107,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MegaTest.test_FAEC_default&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_FAEC_full_serial_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for MegaTest.test_GPS_word_maker" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for MegaTest.test_FAEC_full_serial_2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,11 +123,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MegaTest.test_GPS_word_maker&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_FAEC_full_serial_2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for MegaTest.test_RMS_HF_COM_tune" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for MegaTest.test_FAEC_full_serial_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,11 +139,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MegaTest.test_RMS_HF_COM_tune&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_FAEC_full_serial_3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for MegaTest.test_RMS_Test_longitudedecode_BCD" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for MegaTest.test_FAEC_full_serial_4" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,11 +155,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MegaTest.test_RMS_Test_longitudedecode_BCD&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_FAEC_full_serial_4&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for MegaTest.test_all" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for MegaTest.test_FAEC_serial_MSB" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,17 +171,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;MegaTest.test_all&quot;" />
+      <option name="_new_target" value="&quot;MegaTest.test_FAEC_serial_MSB&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_default" />
-        <item itemvalue="Python tests.Python tests for MegaTest.test_GPS_word_maker" />
-        <item itemvalue="Python tests.Python tests for MegaTest.test_RMS_Test_longitudedecode_BCD" />
-        <item itemvalue="Python tests.Python tests for MegaTest.test_RMS_HF_COM_tune" />
-        <item itemvalue="Python tests.Python tests for MegaTest.test_all" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_full_serial_4" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_full_serial_3" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_full_serial_2" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_full_serial_1" />
+        <item itemvalue="Python tests.Python tests for MegaTest.test_FAEC_serial_MSB" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +208,7 @@
       <workItem from="1718022559930" duration="3356000" />
       <workItem from="1718371013100" duration="1320000" />
       <workItem from="1718372589293" duration="1544000" />
+      <workItem from="1718393478312" duration="4974000" />
     </task>
     <task id="LOCAL-00001" summary="Adding RX/TX Bus functionality">
       <option name="closed" value="true" />
@@ -406,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718064800017</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added a few codes to FAEC">
+      <option name="closed" value="true" />
+      <created>1718397636426</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718397636426</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding RX/TX Bus functionality" />
     <MESSAGE value="Adding functionality to FMC and Full Engine Auth Control" />
     <MESSAGE value="ARINC TX Working, Client RX not" />
     <MESSAGE value="ARINC TX Working, Client RX still not" />
@@ -449,96 +460,11 @@
     <MESSAGE value="Fixed label encoding and decoding" />
     <MESSAGE value="Fixed bug in GPS LRU that forgot to add parity and SSM to words" />
     <MESSAGE value="Tweaked W&amp;BS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tweaked W&amp;BS" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_TX_Helper.py</url>
-          <line>99</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_TX_Helper.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_TX_Helper.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ARINC429 Simulation/LRU_RX_Helper.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added a few codes to FAEC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a few codes to FAEC" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$.coverage" NAME=" Coverage Results" MODIFIED="1718374400317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
+    <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$.coverage" NAME=" Coverage Results" MODIFIED="1718396649383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
     <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$ARINC429_Client.coverage" NAME="ARINC429_Client Coverage Results" MODIFIED="1717270818122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
     <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$test.coverage" NAME="test Coverage Results" MODIFIED="1717282160723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
     <SUITE FILE_PATH="coverage/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24$arinc429_voltage_sim.coverage" NAME="arinc429_voltage_sim Coverage Results" MODIFIED="1717268567021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ARINC429 Simulation" />
