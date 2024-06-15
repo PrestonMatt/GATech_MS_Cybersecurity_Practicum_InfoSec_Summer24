@@ -54,19 +54,34 @@ class global_positioning_system():
     def from_lat_lon_to_word(self) -> (int,int):
         #lat, lon = self.determine_position()
 
-        lat_label, _ = self.communicator_chip.make_label_for_word(0o010)
+        lat_label, _ = self.communicator_chip.make_label_for_word(int(0o010))
         lat_num = self.latitude.split(" ")[1]
         lat_deg = self.latitude.split(" ")[-1].replace("'","")
+        lat_NS = self.latitude.split(" ")[0]
+        if(lat_NS == "N"):
+            SSM = "00"
+        else:
+            SSM = "11"
         lat_data = self.from_digits_to_data(lat_num,lat_deg)
 
-        lat_word = lat_label + lat_data
+        lat_word = lat_label + lat_data + SSM
+        lat_word += self.communicator_chip.calc_parity(lat_word)
+        # print(len(lat_label))
+        # print(len(lat_data))
+        # print(len(lat_word))
 
-        lon_label, _ = self.communicator_chip.make_label_for_word(0o011)
+        lon_label, _ = self.communicator_chip.make_label_for_word(int(0o011))
         lon_num = self.longitude.split(" ")[1]
         lon_deg = self.longitude.split(" ")[-1].replace("'","")
         lon_data = self.from_digits_to_data(lon_num,lon_deg)
+        lon_EW = self.longitude.split(" ")[0]
+        if(lon_EW == "W"):
+            SSM = "11"
+        else:
+            SSM = "00"
 
-        lon_word = lon_label + lon_data
+        lon_word = lon_label + lon_data + SSM
+        lon_word += self.communicator_chip.calc_parity(lon_word)
 
         return(int(lat_word,2),int(lon_word,2))
 

@@ -12,6 +12,7 @@ from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 from LRU_FMC_Simulator import flight_management_computer as FMC
 from LRU_GPS_Simulator import global_positioning_system as GPS
 from LRU_RMS_Simulator import radio_management_system as RMS
+from LRU_FAEC_Simulator import full_authority_engine_control as FAEC
 
 def test_all():
 
@@ -461,6 +462,11 @@ def test_RX_label_fetch5():
 # Tests ability for TX helper to pack a label into a word.
 def test_TX_label_reverser1():
     label = 0o066
+    # 00 110 110
+    # 1&2 = 00
+    # 34&5 = 110
+    # 67&8 = 110
+    # 00110110 -> 01101100
     # print(bin(label))
     # -> "00110110"
     tx_chip = lru_txr()
@@ -1159,6 +1165,136 @@ def test_GPS_word_maker():
     #londigi = GPS_test1.from_digits_to_data("169","25.8")
     #assert(latdigi == "100110011010101011100")
     #assert(londigi == "000110100100100101101")
+
+def test_FAEC_default():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+
+    FAEC_test1 = FAEC("low","riGHt",BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+    assert(str(FAEC_test1) == f'Engine Serial Number: 240\nOn right wing\n0o114 data: Selected Ambient Static Pressure\n0o127 data: Fan Discharge Static Pressure\n0o130 data: Selected Total Air Temperature\n0o133 data: Selected Throttle Lever Angle\n0o134 data: Throttle Lever Angle\n0o137 data: Selected Thrust Reverser Position\n0o155 data: Maintenance Data #6\n0o156 data: Maintenance Data #7\n0o157 data: Maintenance Data #8\n0o160 data: Maintenance Data #9\n0o161 data: Maintenance Data #10\n0o203 data: Ambient Static Pressure\n0o205 data: Mach Number\n0o211 data: Total Fan Inlet Temperature\n0o244 data: Fuel Mass Flow\n0o260 data: LP Turbine Discharge Temperature\n0o261 data: LP Turbine Inlet Pressure\n0o262 data: HP Compressor Inlet Total Pressure\n0o263 data: Selected Compressor Inlet Temperature (Total)\n0o264 data: Selected Compressor Discharge Temperature\n0o265 data: Selected Compressor Discharge Temperature\n0o267 data: HP Compressor Inlet Temperature (Total)\n0o300 data: ECU Internal Temperature\n0o301 data: Demanded Fuel Metering Valve Position\n0o302 data: Demanded Variable Stator Vane Position\n0o303 data: Demanded Variable Bleed Valve Position\n0o304 data: Demanded HPT Clearance Valve Position\n0o305 data: Demanded LPT Clearance Valve Position\n0o316 data: Engine Oil Temperature\n0o321 data: Exhaust gas Temperature (Total)\n0o322 data: Total Compressor Discharge Temperature\n0o323 data: Variable Stator Vane Position\n0o324 data: Selected Fuel Metering Valve Position\n0o325 data: Selected Fuel Metering Vane Position\n0o327 data: Compressor Discharge Static Pressure\n0o330 data: Fuel Metering Valve Position\n0o331 data: Selected HPT Clearance Valve Postion\n0o335 data: Selected Variable Bleed Valve Position\n0o336 data: Variable Bleed Value Position\n0o337 data: HPT Clearance Valve Position\n0o341 data: Command Fan Speed\n0o342 data: Maximum Allowed Fan Speed\n0o343 data: Maximum Allowed Fan Speed\n0o344 data: Selected Actual Core Speed\n0o345 data: Selected Exhaust Gas Temperature (Total)\n0o346 data: Selected Actual Fan Speed\n0o347 data: LPT Clearance Valve Position\n0o360 data: Throttle Rate of Change\n0o361 data: Derivative of Thrust vs. N1\n0o363 data: Corrected Thrust\n0o372 data: Actual Fan Speed\n0o373 data: Actual Core Speed\n0o374 data: Left Thrust Reverser Position\n0o375 data: Right Thrust Reverser Position')
+
+def test_FAEC_serial_LSB():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+    tx_chip = lru_txr()
+    FAEC_lsbtest = FAEC("low","riGHt",BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+
+    label, _ = tx_chip.make_label_for_word(0o046)
+    data = "00" + "0000" + "1001" + "0010" + "0110" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word = label + data
+    FAEC_lsbtest.decode_word(word)
+
+    assert(FAEC_lsbtest.serial_no == int("000649"))
+
+def test_FAEC_serial_MSB():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+    tx_chip = lru_txr()
+    FAEC_lsbtest = FAEC("low","riGHt",BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+
+    label, _ = tx_chip.make_label_for_word(0o047)
+    data = "00" + "0000" + "0100" + "1100" + "0000" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word = label + data
+    FAEC_lsbtest.decode_word(word)
+
+    assert(FAEC_lsbtest.serial_no == int("032000"))
+
+def test_FAEC_full_serial_1():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+    tx_chip = lru_txr()
+    FAEC_lsbtest = FAEC("low","riGHt",BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+
+    # Send MSB first
+    label1, _ = tx_chip.make_label_for_word(0o047)
+    data1 = "00" + "0000" + "0100" + "1100" + "0000" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word1 = label1 + data1
+    FAEC_lsbtest.decode_word(word1)
+
+    # Send LSB second
+    label2, _ = tx_chip.make_label_for_word(0o046)
+    data2 = "00" + "0000" + "1001" + "0010" + "0110" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word2 = label2 + data2
+    FAEC_lsbtest.decode_word(word2)
+
+    assert(FAEC_lsbtest.serial_no == int("032649"))
+
+def test_FAEC_full_serial_2():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+    tx_chip = lru_txr()
+    FAEC_lsbtest = FAEC("low","riGHt",BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+
+    # Send LSB first
+    label2, _ = tx_chip.make_label_for_word(0o046)
+    data2 = "00" + "0000" + "1001" + "0010" + "0110" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word2 = label2 + data2
+    FAEC_lsbtest.decode_word(word2)
+
+    # Send MSB second
+    label1, _ = tx_chip.make_label_for_word(0o047)
+    data1 = "00" + "0000" + "0100" + "1100" + "0000" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word1 = label1 + data1
+    FAEC_lsbtest.decode_word(word1)
+
+    assert(FAEC_lsbtest.serial_no == int("032649"))
+
+def test_FAEC_full_serial_3():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+    tx_chip = lru_txr()
+    FAEC_lsbtest = FAEC("low","riGHt", serial_no=123456, BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+
+    # Send LSB first
+    label2, _ = tx_chip.make_label_for_word(0o046)
+    data2 = "00" + "0000" + "1001" + "0010" + "0110" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word2 = label2 + data2
+    FAEC_lsbtest.decode_word(word2)
+
+    # Send MSB second
+    label1, _ = tx_chip.make_label_for_word(0o047)
+    data1 = "00" + "0000" + "0100" + "1100" + "0000" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word1 = label1 + data1
+    FAEC_lsbtest.decode_word(word1)
+
+    assert(FAEC_lsbtest.serial_no == int("032649"))
+
+def test_FAEC_full_serial_4():
+    print("\n")
+    Purple_Channel_A = ARINC429BUS()
+    Green_Channel_B = ARINC429BUS()
+    tx_chip = lru_txr()
+    FAEC_lsbtest = FAEC("low","riGHt", serial_no=123456, BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
+
+    # Send MSB first
+    label1, _ = tx_chip.make_label_for_word(0o047)
+    data1 = "00" + "0000" + "0100" + "1100" + "0000" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word1 = label1 + data1
+    FAEC_lsbtest.decode_word(word1)
+
+    # Send LSB second
+    label2, _ = tx_chip.make_label_for_word(0o046)
+    data2 = "00" + "0000" + "1001" + "0010" + "0110" + "000" + "00" + "1"
+    #assert(len(data) == 24)
+    word2 = label2 + data2
+    FAEC_lsbtest.decode_word(word2)
+
+    assert(FAEC_lsbtest.serial_no == int("032649"))
 
 if __name__ == "__main__":
     #test_all()
