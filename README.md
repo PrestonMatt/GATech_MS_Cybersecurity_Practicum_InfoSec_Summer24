@@ -103,3 +103,4 @@ From NIST Special Publication 800-207, there are seven basic tenets of zero trus
 - https://termaviation.com/what-is-lru-on-boeing-737/
 - https://www.logic-fruit.com/blog/arinc-standard/designers-guide-arinc-429-standard-specification/
 - https://www.ueidaq.com/uploads/dnx-429-516-manual.pdf
+- https://c3.ndc.nasa.gov/dashlink/resources/664/

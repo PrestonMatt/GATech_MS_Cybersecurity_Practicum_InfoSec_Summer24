@@ -102,7 +102,7 @@ class global_positioning_system():
 
         digit3 = int(degree[2])
         dig3 = bin(digit3)[2:]
-        dig3 = "0"*(4-len(dig3) )+ dig3
+        dig3 = "0"*(4-len(dig3)) + dig3
         dig3 = dig3[::-1]
 
         digit4 = int(number[0])

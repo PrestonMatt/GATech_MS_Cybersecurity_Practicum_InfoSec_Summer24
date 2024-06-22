@@ -132,7 +132,7 @@ class arinc429_TX_Helpers():
         """
         return(reversed_label_str,true_label)
 
-    def calc_parity(self, word_bitStr):
+    def calc_parity(self, word_bitStr) -> str:
         if(len(word_bitStr) != 31):
             raise ValueError("Checking parity must be for 31 bit incomplete words")
         # Count the number of '1's in the bit string (excluding the parity bit)

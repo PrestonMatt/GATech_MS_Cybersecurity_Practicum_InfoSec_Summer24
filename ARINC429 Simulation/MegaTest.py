@@ -13,6 +13,7 @@ from LRU_FMC_Simulator import flight_management_computer as FMC
 from LRU_GPS_Simulator import global_positioning_system as GPS
 from LRU_RMS_Simulator import radio_management_system as RMS
 from LRU_FAEC_Simulator import full_authority_engine_control as FAEC
+from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
 
 def test_all():
 
@@ -1295,6 +1296,113 @@ def test_FAEC_full_serial_4():
     FAEC_lsbtest.decode_word(word2)
 
     assert(FAEC_lsbtest.serial_no == int("032649"))
+
+def test_ADIRU_rx_GPS1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    GPS_test1 = GPS(bus_speed="low", channel=Orange_bus, lat='N 75 Deg 59.9\'', lon='W 169 Deg 25.8\'')
+    word1, word2 = GPS_test1.from_lat_lon_to_word()
+
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    word1str = bin(word1)[2:]
+    word1str = "0" * (32 - len(word1str)) + word1str
+    word2str = bin(word2)[2:]
+    word2str = "0" * (32 - len(word2str)) + word2str
+
+    #print(word1str)
+    #print(word2str)
+
+    ADIRU_test.decode_GPS_word(word1str)
+    ADIRU_test.decode_GPS_word(word2str)
+
+    ADIRU_str = str(ADIRU_test)
+    lat_ADIRU_str = ADIRU_str.split(":")[1]
+    lon_ADIRU_str = ADIRU_str.split(":")[2]
+
+    #print(lat_ADIRU_str)
+    #print(lon_ADIRU_str)
+
+    assert(lat_ADIRU_str.__contains__("N 75 Deg 59.9'") == True)
+    assert(lon_ADIRU_str.__contains__("W 169 Deg 25.8'") == True)
+
+def test_ADIRU_rx_GPS2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    GPS_test1 = GPS(bus_speed="low", channel=Orange_bus)
+    word1, word2 = GPS_test1.from_lat_lon_to_word()
+
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    word1str = bin(word1)[2:]
+    word1str = "0" * (32 - len(word1str)) + word1str
+    word2str = bin(word2)[2:]
+    word2str = "0" * (32 - len(word2str)) + word2str
+
+    #print(word1str)
+    #print(word2str)
+
+    ADIRU_test.decode_GPS_word(word1str)
+    ADIRU_test.decode_GPS_word(word2str)
+
+    ADIRU_str = str(ADIRU_test)
+    lat_ADIRU_str = ADIRU_str.split(":")[1]
+    lon_ADIRU_str = ADIRU_str.split(":")[2]
+
+    #print(lat_ADIRU_str)
+    #print(lon_ADIRU_str)
+
+    assert(lat_ADIRU_str.__contains__("N 42 Deg 21.0'") == True)
+    assert(lon_ADIRU_str.__contains__("W 71 Deg 23.0'") == True)
+
+def test_ADIRU_default_values():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    ADIRU_test.bootup_values()
+
+    assert(str(ADIRU_test) == "")
+
+def test_ADIRU_lat():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    # N 75 Deg 59.9'
+    ADIRU_test.set_value('Present Position - Latitude',"N 75 Deg 59.9'")
+    produced_word = ADIRU_test.encode_word(0o010)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    label, _ = tx_chip.make_label_for_word(int(0o010))
+    data = "1001" + "1001" + "1010" + "1010" + "1110" + "0" + "00" + "0"
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_lon():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    # W 169 Deg 25.8'
+    ADIRU_test.set_value('Present Position - Longitude',"W 169 Deg 25.8'")
+    produced_word = ADIRU_test.encode_word(0o011)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    label, _ = tx_chip.make_label_for_word(int(0o011))
+    data = "0001" + "1010" + "0100" + "1001" + "0110" + "1" + "11" + "0"
+    word = label + data
+
+    assert(produced_word == word)
+
+
 
 if __name__ == "__main__":
     #test_all()
