@@ -468,7 +468,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Ground Speed Error")
             # 4 sig bits
             # Resolution: 1 knot
-            word_data_str = self.BNR_digs(float(word_data),1.0)
+            word_data_str = self.BCD_digs(float(word_data),1.0)
         elif data_key == 'Track Angle - True':
             # Remove Degrees from the data point:
             word_data = word_data.split(" ")[0]
@@ -477,7 +477,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Track Angle Error")
             # 4 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),0.1)
+            word_data_str = self.BCD_digs(float(word_data),0.1)
         elif data_key == 'Magnetic Heading':
             # Remove Degrees from the data point:
             word_data = word_data.split(" ")[0]
@@ -486,7 +486,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Magnetic Heading Error")
             # 4 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),0.1)
+            word_data_str = self.BCD_digs(float(word_data),0.1)
         elif data_key == 'Wind Speed':
             # Remove Knots from the data point:
             word_data = word_data.split(" ")[0]
@@ -495,7 +495,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Wind Speed Error")
             # 4 sig bits
             # Resolution: 1 knot
-            word_data_str = self.BNR_digs(float(word_data),1.0)
+            word_data_str = self.BCD_digs(float(word_data),1.0)
         elif data_key == 'Wind Direction - True':
             # Remove Degrees from the data point:
             word_data = word_data.split(" ")[0]
@@ -504,7 +504,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Wind Direction Error")
             # 4 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),1.0)
+            word_data_str = self.BCD_digs(float(word_data),1.0)
         elif data_key == 'True Heading':
             # Remove Degrees from the data point:
             word_data = word_data.split(" ")[0]
@@ -513,7 +513,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("True Heading Error")
             # 4 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),0.1)
+            word_data_str = self.BCD_digs(float(word_data),0.1)
         elif data_key == 'Total Air Temperature':
             # Remove Degrees Celsius from the data point:
             word_data = word_data.split(" ")[0]
@@ -522,7 +522,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Total Air Temperature Error")
             # 3 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),1.0)
+            word_data_str = self.BCD_digs(float(word_data),1.0)
         elif data_key == 'Static Air Temperature':
             # Remove Degrees Celsius from the data point:
             word_data = word_data.split(" ")[0]
@@ -531,7 +531,7 @@ class air_data_inertial_reference_unit:
                 raise Exception("Static Air Temperature Error")
             # 3 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),1.0)
+            word_data_str = self.BCD_digs(float(word_data),1.0)
         elif data_key == 'Baro Correction (mb) #1':
             # Remove mb from the data point:
             word_data = word_data.split(" ")[0]
@@ -540,64 +540,128 @@ class air_data_inertial_reference_unit:
                 raise Exception("Baro Correction (mb) #1 Error")
             # 5 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),0.1)
+            word_data_str = self.BCD_digs(float(word_data),0.1)
         elif data_key == 'Baro Correction (ins. Hg) #1':
             # Remove ins Hg from the data point:
             word_data = word_data.split(" ")[0]
-            # Range: -060 to 099 Degrees
+            # Range: 22.000 to 31.000 ins Hg
             if(float(word_data) < 22.0 or float(word_data) > 31.0):
-                raise Exception("Baro Correction (ins. Hg) #1")
+                raise Exception("Baro Correction (ins. Hg) #1 Error")
             # 5 sig bits
             # Resolution: 0.001 degree
-            word_data_str = self.BNR_digs(float(word_data),0.001)
+            word_data_str = self.BCD_digs(float(word_data),0.001)
         elif data_key == 'Baro Correction (mb) #2':
             # Remove mb from the data point:
             word_data = word_data.split(" ")[0]
             # Range: 745 to 1050 mb
             if(float(word_data) < 745.0 or float(word_data) > 1050.0):
-                raise Exception("Baro Correction (mb) #1 Error")
+                raise Exception("Baro Correction (mb) #2 Error")
             # 5 sig bits
             # Resolution: 0.1 degree
-            word_data_str = self.BNR_digs(float(word_data),0.1)
+            word_data_str = self.BCD_digs(float(word_data),0.1)
         elif data_key == 'Baro Correction (ins. Hg) #2':
             # Remove ins Hg from the data point:
             word_data = word_data.split(" ")[0]
-            # Range: -060 to 099 Degrees
+            # Range: 22.000 to 31.000 ins Hg
             if(float(word_data) < 22.0 or float(word_data) > 31.0):
-                raise Exception("Baro Correction (ins. Hg) #1")
+                raise Exception("Baro Correction (ins. Hg) #2 Error")
             # 5 sig bits
             # Resolution: 0.001 degree
-            word_data_str = self.BNR_digs(float(word_data),0.001)
+            word_data_str = self.BCD_digs(float(word_data),0.001)
         # DISC
         elif data_key == 'Total Pressure':
-            pass
+            # Remove mb from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 2045 mb
+            # This is "00000000000" to "11111111101"
+            if(float(word_data) < 0.0 or float(word_data) > 2045.0):
+                raise Exception("Total Pressure Error")
+            # 11 sig bits
+            data = bin(int(word_data))[2:]
+            # Add extra bits if less than 11 bits
+            data = "0" * (11 - len(data)) + data
+            padding = "00000000"
+            data = padding + data
+            data = data[::-1]
+
+            SSM = "00" # Always positive
+            SDI = "00" # Always towards 1 LRU
+            # Resolution: 1.0 degree
+            word_data_str = SDI + data + SSM
         elif data_key == 'Discrete Data #1':
-            pass
+            pass # This isn't detailed in the spec.
         elif data_key == 'Discrete Data #2':
-            pass
+            pass # This isn't detailed in the spec.
         elif data_key == 'Discrete Data #3':
-            pass
+            pass # This isn't detailed in the spec.
         elif data_key == 'IR Discrete Word #2':
             pass
         elif data_key == 'IR Test':
-            pass
+            mode = word_data.split(" ")[0] # get rid of extraneous words
+            SDI = "00"
+            SSM = "00"
+            if(mode == "ON"):
+                data = "0"* (19)
+            elif(mode == "OFF"):
+                data = "1"* (19)
+            else:
+                raise Exception("IR Discrete Word Error")
+            word_data_str += SDI + data + SSM
         elif data_key == 'IRS Maintenance Word #1':
-            pass
+            pass # This isn't detailed in the spec.
         elif data_key == 'IRS Maintenance Word #2':
-            pass
+            pass # This isn't detailed in the spec.
         elif data_key == 'IRS Maintenance Word #3':
-            pass
+            pass # This isn't detailed in the spec.
         elif data_key == 'IRS Maintenance Word #4':
-            pass
+            pass # This isn't detailed in the spec.
         # BNR
-        elif data_key == 'Body Pitch Acceleration':
-            pass
-        elif data_key == 'Body Roll Acceleration':
-            pass
-        elif data_key == 'Body Yaw Acceleration':
-            pass
+        elif data_key == 'Body Pitch Acceleration' or data_key == 'Body Roll Acceleration' or data_key == 'Body Yaw Acceleration':
+            # Remove Deg/Sec^2 from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: -64 to 64 Deg/Sec^2
+            if(float(word_data) < -64.0 or float(word_data) > 64.0):
+                raise Exception("Body Pitch Acceleration Error")
+            # 15 sig bits
+            # Resolution: 0.002 Deg/Sec^2 -> this means that what's encoded
+            # is actually [-32000, +32000]
+            value = float(word_data)/2.0
+            if(len(str(value).replace(".","").replace("-","")) > 5): #54.123 -> 27.061_5 <- don't want this
+                value = str(value)[:-1] # cut off the 0.5
+                value = float(value)
+            word_data_str = self.BNR_bits(value,0.002,15)
+            """
+            elif data_key == 'Body Roll Acceleration':
+                # Remove Deg/Sec^2 from the data point:
+                word_data = word_data.split(" ")[0]
+                # Range: -64 to 64 Deg/Sec^2
+                if(float(word_data) < -64.0 or float(word_data) > 64.0):
+                    raise Exception("Body Roll Acceleration Error")
+                # 15 sig bits
+                # Resolution: 0.002 Deg/Sec^2 -> this means that what's encoded
+                # is actually [-32000, +32000]
+                value = float(word_data)/2.0
+                if(len(str(value).replace(".","").replace("-","")) > 5): #54.123 -> 27.061_5 <- don't want this
+                    value = str(value)[:-1] # cut off the 0.5
+                    value = float(value)
+                word_data_str = self.BNR_bits(value,0.002,15)
+            elif data_key == 'Body Yaw Acceleration':
+                pass
+            """
         elif data_key == 'Cabin Pressure':
-            pass
+            # Remove mB from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 2048 mB
+            if(float(word_data) < 0.0 or float(word_data) > 2048.0):
+                raise Exception("Cabin Pressure Error")
+            # 16 sig bits
+            # Resolution: 0.008 mB -> this means that what's encoded
+            # is actually [-32000, +32000]
+            value = float(word_data)/8.0
+            if(len(str(value).replace(".","").replace("-","")) > 6):
+                value = str(value)[0:8] # grab first six digits -> including . e.g. 123.321
+                value = float(value)
+            word_data_str = self.BNR_bits(value,0.008,18)
         elif data_key == 'Left Static Pressure Uncorrected, mb':
             pass
         elif data_key == 'Right Static Pressure Uncorrected, mb':
@@ -708,7 +772,7 @@ class air_data_inertial_reference_unit:
     def set_value(self,key_str:str, value:str):
         self.data[key_str] = value
 
-    def BNR_digs(self, value:float, res:float):
+    def BCD_digs(self, value:float, res:float):
         SDI = "00"
         SSM = "00"
         if(value < 0):
@@ -755,6 +819,32 @@ class air_data_inertial_reference_unit:
 
         partial_data = SDI + dig5 + dig4 + dig3 + dig2 + dig1 + SSM
         return(partial_data)
+
+    def BNR_bits(self, value:float, res:float, sig_digs:int)->str:
+        # get leading padding zeros
+        padding = "0" * (19-sig_digs)
+        # set SDI
+        SDI = "00"
+        # Set the sign to +/-
+        SSM = "00"
+        if(value < 0):
+            SSM = "11"
+        # get right of sign, we have saved that value
+        val = str(value).strip("-")
+        # get right of a X.0 if the resolution is 1+
+        if(res >= 1.0):
+            val = val.split(".")[0]
+        # get rid of any decimal
+        val = val.replace(".","")
+        # get the bitstring from that value now
+        val = bin(int(val))[2:]
+        # add leading zeros as necessary
+        val = "0" * (sig_digs - len(val)) + val
+        # get the full data field
+        data = padding + val
+        # reverse it because everything is fucking reverse order
+        data = data[::-1]
+        return(SDI+data+SSM)
 
     def set_data(self, key, value):
         self.data[key] = value
