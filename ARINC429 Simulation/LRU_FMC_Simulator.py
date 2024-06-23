@@ -84,15 +84,15 @@ class flight_management_computer:
 
             # Data = BCD
             # Digit 5 = 11 to 14 (4 bits)
-            word_bitStr += "0000"
+            word_bitStr += "1111" # UP = 1111
             # Digit 4 = 15 to 18 (4 bits)
-            word_bitStr += "1111"
+            word_bitStr += "0000" # DOWN = 0000
             # Digit 3 = 19 to 22 (4 bits)
-            word_bitStr += "1111"
+            word_bitStr += "0000" # LEFT = 0000
             # Digit 2 = 26 to 23 (4 bits)
-            word_bitStr += "1111"
+            word_bitStr += "0000" # RIGHT = 0000
             # Digit 1 = 27 to 29 (3 bits)
-            word_bitStr += "111" # TODO check all these lols
+            word_bitStr += "000" # FORWARD = 000, BACKWARD = 111
 
             # SSM = 00 for normal ops
             word_bitStr += "00"
@@ -103,15 +103,181 @@ class flight_management_computer:
 
             word = int(word_bitStr,2)
         if(direction.lower() == "down"):
-            pass
+            word_bitStr, _ = self.communication_chip.make_label_for_word(0o066)
+
+            # SDI = 11 for W&BS
+            word_bitStr += "11"
+
+            # Data = BCD
+            # Digit 5 = 11 to 14 (4 bits)
+            word_bitStr += "0000" # UP = 1111
+            # Digit 4 = 15 to 18 (4 bits)
+            word_bitStr += "1111" # DOWN = 0000
+            # Digit 3 = 19 to 22 (4 bits)
+            word_bitStr += "0000" # LEFT = 0000
+            # Digit 2 = 26 to 23 (4 bits)
+            word_bitStr += "0000" # RIGHT = 0000
+            # Digit 1 = 27 to 29 (3 bits)
+            word_bitStr += "000" # FORWARD = 000, BACKWARD = 111
+
+            # SSM = 00 for normal ops
+            word_bitStr += "00"
+            #print(word_bitStr)
+
+            # calculate parity
+            word_bitStr += self.calc_parity(word_bitStr)
         if(direction.lower() == "left"):
-            pass
+            word_bitStr, _ = self.communication_chip.make_label_for_word(0o067)
+
+            # SDI = 11 for W&BS
+            word_bitStr += "11"
+
+            # Data = BCD
+            # Digit 5 = 11 to 14 (4 bits)
+            word_bitStr += "0000" # UP = 1111
+            # Digit 4 = 15 to 18 (4 bits)
+            word_bitStr += "0000" # DOWN = 0000
+            # Digit 3 = 19 to 22 (4 bits)
+            word_bitStr += "1111" # LEFT = 0000
+            # Digit 2 = 23 to 26 (4 bits)
+            word_bitStr += "0000" # RIGHT = 0000
+            # Digit 1 = 27 to 29 (3 bits)
+            word_bitStr += "000" # FORWARD = 000, BACKWARD = 111
+
+            # SSM = 00 for normal ops
+            word_bitStr += "00"
+            #print(word_bitStr)
+
+            # calculate parity
+            word_bitStr += self.calc_parity(word_bitStr)
+            # Close flap on the right:
+            second_word = self.communication_chip.make_label_for_word(0o104) + "11" # SDI = W&BS
+            second_word += "0000" # UP = 0000
+            second_word += "0000" # DOWN = 0000
+            second_word += "0000" # LEFT = 0000
+            second_word += "0101" # RIGHT = 0000
+            second_word += "000" # FORWARD = 000, BACKWARD = 111
+            # SSM = 00 for normal ops
+            second_word += "00"
+            second_word += self.calc_parity(second_word)
+            # Open flap on left:
+            third_word = self.communication_chip.make_label_for_word(0o103) + "11" # SDI = W&BS
+            third_word += "0000" # UP = 0000
+            third_word += "0000" # DOWN = 0000
+            third_word += "1010" # LEFT = 0000
+            third_word += "0000" # RIGHT = 0000
+            third_word += "000" # FORWARD = 000, BACKWARD = 111
+            # SSM = 00 for normal ops
+            third_word += "00"
+            third_word += self.calc_parity(third_word)
+
+            if(self.fifo_mode):
+                # TODO fix FIFO Full feature
+                #self.FIFO_mode(word)
+                self.transmit_given_word(second_word)
+                self.transmit_given_word(third_word)
+            else:
+                self.scheduler_mode(second_word, 20_000_000) # send 20 sec later
+                self.scheduler_mode(third_word, 20_000_000) # send 20 sec later
         if(direction.lower() == "right"):
-            pass
+            word_bitStr, _ = self.communication_chip.make_label_for_word(0o067)
+
+            # SDI = 11
+            word_bitStr += "11"
+
+            # Data = BCD
+            # Digit 5 = 11 to 14 (4 bits)
+            word_bitStr += "0000" # UP = 1111
+            # Digit 4 = 15 to 18 (4 bits)
+            word_bitStr += "0000" # DOWN = 0000
+            # Digit 3 = 19 to 22 (4 bits)
+            word_bitStr += "0000" # LEFT = 0000
+            # Digit 2 = 26 to 23 (4 bits)
+            word_bitStr += "1111" # RIGHT = 0000
+            # Digit 1 = 27 to 29 (3 bits)
+            word_bitStr += "000" # FORWARD = 000, BACKWARD = 111
+
+            # SSM = 00 for normal ops
+            word_bitStr += "00"
+            #print(word_bitStr)
+
+            # calculate parity
+            word_bitStr += self.calc_parity(word_bitStr)
+
+            # Close flap on the left:
+            second_word = self.communication_chip.make_label_for_word(0o104) + "11" # SDI = W&BS
+            second_word += "0000" # UP = 0000
+            second_word += "0000" # DOWN = 0000
+            second_word += "0101" # LEFT = 0000
+            second_word += "0000" # RIGHT = 0000
+            second_word += "000" # FORWARD = 000, BACKWARD = 111
+            # SSM = 00 for normal ops
+            second_word += "00"
+            second_word += self.calc_parity(second_word)
+            # Open flap on left:
+            third_word = self.communication_chip.make_label_for_word(0o103) + "11" # SDI = W&BS
+            third_word += "0000" # UP = 0000
+            third_word += "0000" # DOWN = 0000
+            third_word += "0000" # LEFT = 0000
+            third_word += "1010" # RIGHT = 0000
+            third_word += "000" # FORWARD = 000, BACKWARD = 111
+            # SSM = 00 for normal ops
+            third_word += "00"
+            third_word += self.calc_parity(third_word)
+
+            if(self.fifo_mode):
+                # TODO fix FIFO Full feature
+                #self.FIFO_mode(word)
+                self.transmit_given_word(second_word)
+                self.transmit_given_word(third_word)
+            else:
+                self.scheduler_mode(second_word, 20_000_000) # send 20 sec later
+                self.scheduler_mode(third_word, 20_000_000) # send 20 sec later
+
         if(direction.lower() == "w"):
-            pass
+            # SDI = 11
+            word_bitStr += "11"
+
+            # Data = BCD
+            # Digit 5 = 11 to 14 (4 bits)
+            word_bitStr += "0000" # UP = 1111
+            # Digit 4 = 15 to 18 (4 bits)
+            word_bitStr += "0000" # DOWN = 0000
+            # Digit 3 = 19 to 22 (4 bits)
+            word_bitStr += "0000" # LEFT = 0000
+            # Digit 2 = 26 to 23 (4 bits)
+            word_bitStr += "0000" # RIGHT = 0000
+            # Digit 1 = 27 to 29 (3 bits)
+            word_bitStr += "000" # FORWARD = 000, BACKWARD = 111
+
+            # SSM = 00 for normal ops
+            word_bitStr += "00"
+            #print(word_bitStr)
+
+            # calculate parity
+            word_bitStr += self.calc_parity(word_bitStr)
         if(direction.lower() == "s"):
-            pass
+            # SDI = 11
+            word_bitStr += "11"
+
+            # Data = BCD
+            # Digit 5 = 11 to 14 (4 bits)
+            word_bitStr += "1111" # UP = 1111
+            # Digit 4 = 15 to 18 (4 bits)
+            word_bitStr += "0000" # DOWN = 0000
+            # Digit 3 = 19 to 22 (4 bits)
+            word_bitStr += "0000" # LEFT = 0000
+            # Digit 2 = 26 to 23 (4 bits)
+            word_bitStr += "0000" # RIGHT = 0000
+            # Digit 1 = 27 to 29 (3 bits)
+            word_bitStr += "000" # FORWARD = 000, BACKWARD = 111
+
+            # SSM = 00 for normal ops
+            word_bitStr += "00"
+            #print(word_bitStr)
+
+            # calculate parity
+            word_bitStr += self.calc_parity(word_bitStr)
         print(word)
 
         if(self.fifo_mode):

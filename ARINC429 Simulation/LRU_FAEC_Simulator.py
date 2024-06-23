@@ -107,7 +107,14 @@ class full_authority_engine_control:
 
     def decode_word(self, word:str):
         label = self.receive_chip.get_label_from_word(int(word,2))
-        print(oct(label))
+        #print(oct(label))
+
+        SDI = word[8:10]
+        if(self.wingCardinality == "left" and SDI != "01"):
+            return
+
+        if(self.wingCardinality == "right" and SDI != "10"):
+            return
 
         if(label == 0o046): # Engine Serial No. (LSDs), BCD
             lower_half = self.serial_number_decoder(word)

@@ -44,8 +44,8 @@ class weight_and_balance_system:
 
     def __init__(self, bus_speed = "low", BUS_CHANNELS = []):
         self.usec_start = time()
-        self.word_channelA = 0b0
-        self.word_channelB = 0b0
+        #self.word_channelA = 0b0
+        #self.word_channelB = 0b0
         if(bus_speed.lower() == "high"):
             self.word_generator_obj = b2v(True)
         elif(bus_speed.lower() == "low"):
@@ -63,7 +63,29 @@ class weight_and_balance_system:
     def decode_word(self, word:str):
         label = self.receive_chip.get_label(word)
 
+        """
         if(label == 0o103):
             print("Adjusting pitch")
         elif(label == 0o104):
             print("Adjusting pitch")
+        """
+        if(label == 0o066):
+            if(word[10:14] == "1111"):
+                print("Adjusting pitch upwards")
+            elif(word[14:18] == "1111"):
+                print("Adjusting pitch downwards")
+        elif(label == 0o067):
+            if(word[18:22] == "1111"):
+                print("Adjusting Roll Left")
+            elif(word[22:26] == "1111"):
+                print("Adjusting Roll Left")
+        elif(label == 0o103):
+            if(word[18:22] == "1010"):
+                print("Raising Left Outbound Flap")
+            elif(word[18:22] == "0101"):
+                print("Lowering Left Outbound Flap")
+        elif(label == 0o104):
+            if(word[18:22] == "1010"):
+                print("Raising Right Outbound Flap")
+            elif(word[18:22] == "0101"):
+                print("Lowering Right Outbound Flap")
