@@ -2,6 +2,7 @@
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
+from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 # Python Classes
 from time import sleep, time
 import keyboard
@@ -34,7 +35,9 @@ class flight_management_computer:
         # pass bus channels here
         self.BUS_CHANNELS = BUS_CHANNELS
 
-        self.communication_chip = lru_txr(bus_speed = speed.lower(), BUS_CHANNELS = self.BUS_CHANNELS)
+        self.communication_chip = lru_txr(bus_speed = speed.lower(), BUS_CHANNELS = [self.BUS_CHANNELS[1:]])
+
+        self.RXcomm_chip = lru_rxr(bus_speed = speed.lower(), BUS_CHANNELS = [self.BUS_CHANNELS[0]])
 
     def __str__(self):
         pass
@@ -233,7 +236,6 @@ class flight_management_computer:
             else:
                 self.scheduler_mode(second_word, 20_000_000) # send 20 sec later
                 self.scheduler_mode(third_word, 20_000_000) # send 20 sec later
-
         if(direction.lower() == "w"):
             # SDI = 11
             word_bitStr += "11"
