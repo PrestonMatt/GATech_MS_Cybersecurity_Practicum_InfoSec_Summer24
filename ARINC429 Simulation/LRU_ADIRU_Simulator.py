@@ -108,9 +108,9 @@ class air_data_inertial_reference_unit:
         0o276: "Cross Heading Acceleration"
     }
 
-    def __init__(self, bus_speed="low", BUS_CHANNELS=[]):\
+    def __init__(self, bus_speed="low", BUS_CHANNELS=[]):
         # Set bus start time
-        self.bus_start = time()
+        #self.bus_start = time()
         # Set bus channels.
         self.BUS_CHANNELS = BUS_CHANNELS
         # set ADIRU T/Rx bus speed
