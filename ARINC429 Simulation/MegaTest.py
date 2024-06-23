@@ -2252,6 +2252,130 @@ def test_ADIRU_Cabin_Pressure_exception2():
         ADIRU_test.set_value('Cabin Pressure',"-1.008 mB")
         produced_word = ADIRU_test.encode_word(0o152)
 
+def test_ADIRU_Left_Static_Pressure_Uncorrected():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Left Static Pressure Uncorrected, mb',"2047.008 mB")
+    produced_word = ADIRU_test.encode_word(0o176)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o176))
+    #               padding  2048.008 / 8 = 255.876->bin(255876)
+    partial_data = "0" + "111110011110000100"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Right_Static_Pressure_Uncorrected():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Right Static Pressure Uncorrected, mb',"2047.008 mB")
+    produced_word = ADIRU_test.encode_word(0o177)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o177))
+    #               padding  2048.008 / 8 = 255.876->bin(255876)
+    partial_data = "0" + "111110011110000100"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_altitude_1013():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Altitude (1013.25mB)',"35242 feet")
+    produced_word = ADIRU_test.encode_word(0o203)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o203))
+    #               padding  bin(35242)
+    partial_data = "00" + "01000100110101010"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_altitude_1013_special_case():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Altitude (1013.25mB)',"131072 feet")
+    produced_word = ADIRU_test.encode_word(0o203)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o203))
+    #               padding  bin(35242)
+    partial_data = "00" + "0"*17
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_altitude_1013_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as pyE:
+        ADIRU_test.set_value('Altitude (1013.25mB)',"131073 feet")
+        produced_word = ADIRU_test.encode_word(0o203)
+
+def test_ADIRU_Baro_Corrected_Altitude():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Corrected Altitude #1',"35242 feet")
+    produced_word = ADIRU_test.encode_word(0o204)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o204))
+    #               padding  bin(35242)
+    partial_data = "00" + "01000100110101010"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
 def test_all_ADIRUs():
     test_ADIRU_rx_GPS1()
     test_ADIRU_rx_GPS2()
@@ -2316,6 +2440,12 @@ def test_all_ADIRUs():
     test_ADIRU_Cabin_Pressure1()
     test_ADIRU_Cabin_Pressure_exception1()
     test_ADIRU_Cabin_Pressure_exception2()
+    test_ADIRU_Left_Static_Pressure_Uncorrected()
+    test_ADIRU_Right_Static_Pressure_Uncorrected()
+    test_ADIRU_altitude_1013()
+    test_ADIRU_altitude_1013_exception()
+    test_ADIRU_altitude_1013_special_case()
+    test_ADIRU_Baro_Corrected_Altitude()
 
 if __name__ == "__main__":
     #test_all()

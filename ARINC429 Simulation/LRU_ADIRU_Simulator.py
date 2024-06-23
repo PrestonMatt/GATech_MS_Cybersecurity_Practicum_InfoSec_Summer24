@@ -621,7 +621,7 @@ class air_data_inertial_reference_unit:
             word_data = word_data.split(" ")[0]
             # Range: -64 to 64 Deg/Sec^2
             if(float(word_data) < -64.0 or float(word_data) > 64.0):
-                raise Exception("Body Pitch Acceleration Error")
+                raise Exception("Body Pitch/Roll/Yaw Acceleration Error")
             # 15 sig bits
             # Resolution: 0.002 Deg/Sec^2 -> this means that what's encoded
             # is actually [-32000, +32000]
@@ -648,12 +648,12 @@ class air_data_inertial_reference_unit:
             elif data_key == 'Body Yaw Acceleration':
                 pass
             """
-        elif data_key == 'Cabin Pressure':
+        elif data_key == 'Cabin Pressure' or data_key == 'Left Static Pressure Uncorrected, mb' or data_key == 'Right Static Pressure Uncorrected, mb':
             # Remove mB from the data point:
             word_data = word_data.split(" ")[0]
             # Range: 0 to 2048 mB
             if(float(word_data) < 0.0 or float(word_data) > 2048.0):
-                raise Exception("Cabin Pressure Error")
+                raise Exception("Cabin/Left Static/Right Static Pressure Error")
             # 16 sig bits
             # Resolution: 0.008 mB -> this means that what's encoded
             # is actually [-32000, +32000]
@@ -662,14 +662,30 @@ class air_data_inertial_reference_unit:
                 value = str(value)[0:8] # grab first six digits -> including . e.g. 123.321
                 value = float(value)
             word_data_str = self.BNR_bits(value,0.008,18)
-        elif data_key == 'Left Static Pressure Uncorrected, mb':
-            pass
-        elif data_key == 'Right Static Pressure Uncorrected, mb':
-            pass
-        elif data_key == 'Altitude (1013.25mB)':
-            pass
-        elif data_key == 'Baro Corrected Altitude #1':
-            pass
+            """
+            elif data_key == 'Left Static Pressure Uncorrected, mb':
+                pass
+            elif data_key == 'Right Static Pressure Uncorrected, mb':
+                pass
+            """
+        elif data_key == 'Altitude (1013.25mB)' or data_key == 'Baro Corrected Altitude #1':
+            # Remove feet from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 131072 feet
+            if(float(word_data) < 1.0 or float(word_data) > 131072.0):
+                raise Exception("Altitude (1013.25mB)/Baro Corrected Altitude Error")
+            # 18 sig bits
+            # Resolution: 1.0
+            value = int(word_data)
+            value = float(value)
+            if(value == 131072.0): # The leading 1 is implied.
+                word_data_str = "00" + "00" + "0"*17 + "00"
+            else:
+                word_data_str = self.BNR_bits(value,1.0,17)
+            """
+            elif data_key == 'Baro Corrected Altitude #1':
+                pass
+            """
         elif data_key == 'Mach':
             pass
         elif data_key == 'Max. Allowable Airspeed':
