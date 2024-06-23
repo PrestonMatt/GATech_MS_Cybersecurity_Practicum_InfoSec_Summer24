@@ -30,7 +30,6 @@ class air_data_inertial_reference_unit:
         0o237: "Baro Correction (ins. Hg) #2"
     }
     applicable_labels_DISC = {
-        0o241: "Corrected Angle of Attack",
         0o242: "Total Pressure",
         0o270: "Discrete Data #1", # Also 0x0AD
         0o271: "Discrete Data #2", # Also 0x0AD
@@ -63,6 +62,7 @@ class air_data_inertial_reference_unit:
         0o220: "Baro Corrected Altitude #2",
         0o221: "Indicated Angle of Attack (Average)", # Also 0x0AD
         0o230: "True Airspeed",
+        0o241: "Corrected Angle of Attack",
         0o242: "Total Pressure", # 0x0AD -> Total Pressure, Uncorrected, mb
         0o245: "Average Static Pressure mb, Uncorrected", # 0x0AD -> Average Static Pressure mb, Uncorrected
         0o246: "Average Static Pressure mb, Corrected",
@@ -569,8 +569,6 @@ class air_data_inertial_reference_unit:
             # Resolution: 0.001 degree
             word_data_str = self.BNR_digs(float(word_data),0.001)
         # DISC
-        elif data_key == 'Corrected Angle of Attack':
-            pass
         elif data_key == 'Total Pressure':
             pass
         elif data_key == 'Discrete Data #1':
@@ -613,6 +611,8 @@ class air_data_inertial_reference_unit:
         elif data_key == 'Max. Allowable Airspeed':
             pass
         elif data_key == 'True Airspeed':
+            pass
+        elif data_key == 'Corrected Angle of Attack':
             pass
         elif data_key == 'Altitude Rate':
             pass
