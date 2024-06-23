@@ -1357,6 +1357,7 @@ def test_ADIRU_rx_GPS2():
     assert(lat_ADIRU_str.__contains__("N 42 Deg 21.0'") == True)
     assert(lon_ADIRU_str.__contains__("W 71 Deg 23.0'") == True)
 
+# TODO Make the test values here something
 def test_ADIRU_default_values():
     print("\n")
     Orange_bus = ARINC429BUS()
@@ -1402,7 +1403,525 @@ def test_ADIRU_lon():
 
     assert(produced_word == word)
 
+def test_ADIRU_ground_speed():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
 
+    ADIRU_test.set_value('Ground Speed',"6592 Knots")
+    produced_word = ADIRU_test.encode_word(0o012)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001010
+    label, _ = tx_chip.make_label_for_word(int(0o012))
+    # 06592 Knots
+    #               2              9              5               6             0             +
+    data = "00" + "0010"[::-1] + "1001"[::-1] + "0101"[::-1] + "0110"[::-1] + "000"[::-1] + "00" + "1"
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_ground_speed_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Ground Speed',"10000 Knots")
+        produced_word = ADIRU_test.encode_word(0o012)
+
+def test_ADIRU_ground_speed_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Ground Speed',"-399 Knots")
+        produced_word = ADIRU_test.encode_word(0o012)
+
+def test_ADIRU_Track_Angle_True():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Track Angle - True',"273.6 Degrees")
+    produced_word = ADIRU_test.encode_word(0o013)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o013))
+    # 0273.6 Degrees
+    #               6              3              7               2             0             +
+    data = "00" + "0110"[::-1] + "0011"[::-1] + "0111"[::-1] + "0010"[::-1] + "000"[::-1] + "00" + "1"
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Track_Angle_True_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Track Angle - True',"400.0 Degrees")
+        produced_word = ADIRU_test.encode_word(0o013)
+
+def test_ADIRU_Track_Angle_True_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Track Angle - True',"-400.0 Degrees")
+        produced_word = ADIRU_test.encode_word(0o013)
+
+def test_ADIRU_Magnetic_Heading():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Magnetic Heading',"273.6 Degrees")
+    produced_word = ADIRU_test.encode_word(0o014)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o014))
+    # 0273.6 Degrees
+    #               6              3              7               2             0             +
+    data = "00" + "0110"[::-1] + "0011"[::-1] + "0111"[::-1] + "0010"[::-1] + "000"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Magnetic_Heading_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Magnetic Heading',"400.0 Degrees")
+        produced_word = ADIRU_test.encode_word(0o014)
+
+def test_ADIRU_Magnetic_Heading_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Magnetic Heading',"-400.6 Degrees")
+        produced_word = ADIRU_test.encode_word(0o014)
+
+def test_ADIRU_Wind_Speed():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Wind Speed',"439 Knots")
+    produced_word = ADIRU_test.encode_word(0o015)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o015))
+    # 0273.6 Degrees
+    #               9              3              4               0             0             +
+    data = "00" + "1001"[::-1] + "0011"[::-1] + "0100"[::-1] + "0000"[::-1] + "000"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Wind_Speed_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Wind Speed',"800 Knots")
+        produced_word = ADIRU_test.encode_word(0o015)
+
+def test_ADIRU_Wind_Speed_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Wind Speed',"-20.01 Knots")
+        produced_word = ADIRU_test.encode_word(0o015)
+
+def test_ADIRU_Wind_Direction_True():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Wind Direction - True',"355 Degrees")
+    produced_word = ADIRU_test.encode_word(0o016)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o016))
+    # 0273.6 Degrees
+    #               5              5              3               0             0             +
+    data = "00" + "0101"[::-1] + "0101"[::-1] + "0011"[::-1] + "0000"[::-1] + "000"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Wind_Direction_True_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Wind Direction - True',"1000 Degrees")
+        produced_word = ADIRU_test.encode_word(0o016)
+
+def test_ADIRU_Wind_Direction_True_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Wind Direction - True',"-6 Degrees")
+        produced_word = ADIRU_test.encode_word(0o016)
+
+def test_ADIRU_True_Heading():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('True Heading',"342.1 Degrees")
+    produced_word = ADIRU_test.encode_word(0o044)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o044))
+    # 0273.6 Degrees
+    #               1               2              4             3              0            -
+    data = "00" + "0001"[::-1] + "0010"[::-1] + "0100"[::-1] + "0011"[::-1] + "000"[::-1] + "11"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_True_Heading_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('True Heading',"-80 Degrees")
+        produced_word = ADIRU_test.encode_word(0o044)
+
+def test_ADIRU_True_Heading_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('True Heading',"400.0 Degrees")
+        produced_word = ADIRU_test.encode_word(0o044)
+
+def test_ADIRU_Total_Air_Temperature():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Total Air Temperature',"-50 Degrees Celsius")
+    produced_word = ADIRU_test.encode_word(0o231)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o231))
+    # 0273.6 Degrees
+    #               0               5              0             0              0            -
+    data = "00" + "0000"[::-1] + "0101"[::-1] + "0000"[::-1] + "0000"[::-1] + "000"[::-1] + "11"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Total_Air_Temperature_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Total Air Temperature',"-80 Degrees Celsius")
+        produced_word = ADIRU_test.encode_word(0o231)
+
+def test_ADIRU_Total_Air_Temperature_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Total Air Temperature',"100 Degrees Celsius")
+        produced_word = ADIRU_test.encode_word(0o231)
+
+def test_ADIRU_Static_Air_Temperature():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Static Air Temperature',"-50 Degrees Celsius")
+    produced_word = ADIRU_test.encode_word(0o233)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o233))
+    # 0273.6 Degrees
+    #               0               5              0             0              0            -
+    data = "00" + "0000"[::-1] + "0101"[::-1] + "0000"[::-1] + "0000"[::-1] + "000"[::-1] + "11"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Static_Air_Temperature_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Static Air Temperature',"-80 Degrees Celsius")
+        produced_word = ADIRU_test.encode_word(0o233)
+
+def test_ADIRU_Static_Air_Temperature_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Static Air Temperature',"100 Degrees Celsius")
+        produced_word = ADIRU_test.encode_word(0o233)
+
+def test_ADIRU_Baro_Correction_mb_1_part1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Correction (mb) #1',"872.8 mb")
+    produced_word = ADIRU_test.encode_word(0o234)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o234))
+    # 0273.6 Degrees
+    #               8               2              7             8              0            +
+    data = "00" + "1000"[::-1] + "0010"[::-1] + "0111"[::-1] + "1000"[::-1] + "000"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Baro_Correction_mb_1_part2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Correction (mb) #1',"1022.8 mb")
+    produced_word = ADIRU_test.encode_word(0o234)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o234))
+    # 0273.6 Degrees
+    #               8               2              2             0              1            +
+    data = "00" + "1000"[::-1] + "0010"[::-1] + "0010"[::-1] + "0000"[::-1] + "001"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Baro_Correction_mb_1_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (mb) #1',"80 mb")
+        produced_word = ADIRU_test.encode_word(0o234)
+
+def test_ADIRU_Baro_Correction_mb_1_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (mb) #1',"2000 mb")
+        produced_word = ADIRU_test.encode_word(0o234)
+
+def test_ADIRU_Baro_Correction_ins_Hg_1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Correction (ins. Hg) #1',"26.431 Ins. Hg")
+    produced_word = ADIRU_test.encode_word(0o235)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o235))
+    # 0273.6 Degrees
+    #               1               3              4             6              2            +
+    data = "00" + "0001"[::-1] + "0011"[::-1] + "0100"[::-1] + "0110"[::-1] + "010"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Baro_Correction_ins_Hg_1_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (ins. Hg) #1',"50 mb")
+        produced_word = ADIRU_test.encode_word(0o235)
+
+def test_ADIRU_Baro_Correction_ins_Hg_1_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (ins. Hg) #1',"3 mb")
+        produced_word = ADIRU_test.encode_word(0o235)
+
+def test_ADIRU_Baro_Correction_mb_2_part1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Correction (mb) #2',"872.8 mb")
+    produced_word = ADIRU_test.encode_word(0o236)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o236))
+    # 0273.6 Degrees
+    #               8               2              7             8              0            +
+    data = "00" + "1000"[::-1] + "0010"[::-1] + "0111"[::-1] + "1000"[::-1] + "000"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Baro_Correction_mb_2_part2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Correction (mb) #2',"1022.8 mb")
+    produced_word = ADIRU_test.encode_word(0o236)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o236))
+    # 0273.6 Degrees
+    #               8               2              2             0              1            +
+    data = "00" + "1000"[::-1] + "0010"[::-1] + "0010"[::-1] + "0000"[::-1] + "001"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Baro_Correction_mb_2_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (mb) #2',"80 mb")
+        produced_word = ADIRU_test.encode_word(0o236)
+
+def test_ADIRU_Baro_Correction_mb_2_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (mb) #2',"2000 mb")
+        produced_word = ADIRU_test.encode_word(0o236)
+
+def test_ADIRU_Baro_Correction_ins_Hg_2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Baro Correction (ins. Hg) #2',"26.431 Ins. Hg")
+    produced_word = ADIRU_test.encode_word(0o237)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o237))
+    # 0273.6 Degrees
+    #               1               3              4             6              2            +
+    data = "00" + "0001"[::-1] + "0011"[::-1] + "0100"[::-1] + "0110"[::-1] + "010"[::-1] + "00"
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Baro_Correction_ins_Hg_2_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (ins. Hg) #2',"50 mb")
+        produced_word = ADIRU_test.encode_word(0o237)
+
+def test_ADIRU_Baro_Correction_ins_Hg_2_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Baro Correction (ins. Hg) #2',"3 mb")
+        produced_word = ADIRU_test.encode_word(0o237)
 
 if __name__ == "__main__":
     #test_all()
