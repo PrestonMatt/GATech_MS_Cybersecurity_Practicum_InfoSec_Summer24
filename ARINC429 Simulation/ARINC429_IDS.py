@@ -2,8 +2,8 @@ from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from time import sleep, time
 
-class arinv429_intrusion_detection_system:
-    def __init__(self, bus_speed="low", BUS_CHANNELS=[]):
+class arinc429_intrusion_detection_system:
+    def __init__(self, bus_speed="low", BUS_CHANNELS=[], rules_file = r"C:\Users\mspreston\Desktop\Grad School Work\7 - Summer Semester 2024\Cybersecurity Practicum\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt"):
         # Set bus start time
         self.start_time = time()
         # Set bus channels.
@@ -14,12 +14,23 @@ class arinv429_intrusion_detection_system:
         self.communication_chip = lru_rxr(bus_speed=self.bus_speed,
                                           BUS_CHANNELS=self.BUS_CHANNELS)
 
-        self.rules = self.make_default_rules()
-
+        # Output files:
         self.default_filepath = r"C:/ARINC429_IDS/"
+        # Input file
+        self.rules_file = rules_file
+        # Log File location =>
+        self.log_filepath = ""
+        # Alert File location =>
+        self.alert_filepath = ""
+        self.get_log_alert_file_path()
 
-        self.buses = {}
-        self.SDI = {}
+        #self.rules = self.make_default_rules()
+
+        #self.default_filepath = r"C:/ARINC429_IDS/"
+        #self.log_filepath =
+
+        #self.buses = {}
+        #self.SDI = {}
 
     def make_default_rules(self):
 
@@ -48,10 +59,35 @@ class arinv429_intrusion_detection_system:
     def __str__(self):
         return(str(self.rules))
 
+    def get_log_alert_file_path(self) -> str:
+        # Log File location =>
+        self.log_filepath = self.default_filepath + r"Alerts/Logs.txt"
+        # Alert File location =>
+        self.alert_filepath = self.default_filepath + r"Logs/Logs.txt"
+
+        lines = []
+        with open(self.rules_file, "r") as rules_fd:
+            lines = rules_fd.readlines()
+        rules_fd.close()
+
+        files_lines = []
+        filines = False
+        for line in lines:
+            if(line.__contains__("!Outfile")):
+                filines = True
+            if(filines and line.__contains__("alerts")):
+                self.alert_filepath = line.split(" ")[2]
+            if(filines and line.__contains__("logs")):
+                self.log_filepath = line.split(" ")[2]
+        # else keep defaults:
+        return
+
     def get_rules(self):
         with open("ARINC429_rules.txt","r") as rules_fd:
             temp_rules = rules_fd.readlines()
         rules_fd.close()
+
+        #
 
         lines = []
         for line in temp_rules:
@@ -61,7 +97,15 @@ class arinv429_intrusion_detection_system:
                 line = line.split("#")[0] # remove endline comments
                 lines.append(line)
 
-        for cleanLine in lines:
+
+        # Example formats:
+        # <alert/log>* <channel>* <label> <SDI> <data> <SSM> <P> <Time> "<message (if alert)>"
+        # <log>* <channel>* <label>/<bits>* -> logs the decoded data for this channel & label.
+        # <alert/log>* <channel>* <bit[index1:index2) = "01..10"> "<message (if alert)>"
+        # <alert/log>* <channel>* <label> <BCD/BNR/DISC> "<message (if alert)>"
+
+        for rule_Line in lines:
+
             pass # find rules
 
     def alert(self):

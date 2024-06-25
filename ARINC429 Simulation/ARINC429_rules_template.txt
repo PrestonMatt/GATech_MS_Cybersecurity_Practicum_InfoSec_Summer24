@@ -1,7 +1,7 @@
 !Outfiles
 #Default path is C:/ARINC_IDS/ or ./home/ARINC_IDS/
 alerts = C:/ARINC_IDS/Alerts/Alerts.txt
-logs = C:/ARINC_IDS/Alerts/Logs.txt
+logs = C:/ARINC_IDS/Logs/Logs.txt
 
 !Channels
 Orange: GPS -> ADIRU

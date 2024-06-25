@@ -22,6 +22,7 @@ class air_data_inertial_reference_unit:
         0o015: "Wind Speed",
         0o016: "Wind Direction - True",
         0o044: "True Heading",
+        0o230: "True Airspeed", #-> BCD
         0o231: "Total Air Temperature",
         0o233: "Static Air Temperature",
         0o234: "Baro Correction (mb) #1",
@@ -61,7 +62,6 @@ class air_data_inertial_reference_unit:
         0o217: "Static Pressure, Average, Corrected (In. Hg)",
         0o220: "Baro Corrected Altitude #2",
         0o221: "Indicated Angle of Attack (Average)", # Also 0x0AD
-        0o230: "True Airspeed",
         0o241: "Corrected Angle of Attack",
         0o242: "Total Pressure", # 0x0AD -> Total Pressure, Uncorrected, mb
         0o245: "Average Static Pressure mb, Uncorrected", # 0x0AD -> Average Static Pressure mb, Uncorrected
@@ -523,12 +523,21 @@ class air_data_inertial_reference_unit:
             # 3 sig bits
             # Resolution: 0.1 degree
             word_data_str = self.BCD_digs(float(word_data),1.0)
-        elif data_key == 'Static Air Temperature':
+        elif data_key == 'Static Air Temperature' and word_label == 0o233:
             # Remove Degrees Celsius from the data point:
             word_data = word_data.split(" ")[0]
             # Range: -060 to 099 Degrees
             if(float(word_data) < -60.0 or float(word_data) > 99.0):
                 raise Exception("Static Air Temperature Error")
+            # 3 sig bits
+            # Resolution: 0.1 degree
+            word_data_str = self.BCD_digs(float(word_data),1.0)
+        elif data_key == 'True Airspeed' and word_label == 0o230:
+            # Remove Knots from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: -060 to 099 Degrees
+            if(float(word_data) < 0.0 or float(word_data) > 799.0):
+                raise Exception("True Airspeed Error")
             # 3 sig bits
             # Resolution: 0.1 degree
             word_data_str = self.BCD_digs(float(word_data),1.0)
@@ -626,9 +635,10 @@ class air_data_inertial_reference_unit:
             # Resolution: 0.002 Deg/Sec^2 -> this means that what's encoded
             # is actually [-32000, +32000]
             value = float(word_data)/2.0
-            if(len(str(value).replace(".","").replace("-","")) > 5): #54.123 -> 27.061_5 <- don't want this
-                value = str(value)[:-1] # cut off the 0.5
-                value = float(value)
+            value = round(value,3)
+            #if(len(str(value).replace(".","").replace("-","")) > 5): #54.123 -> 27.061_5 <- don't want this
+            #    value = str(value)[:-1] # cut off the 0.5
+            #    value = float(value)
             word_data_str = self.BNR_bits(value,0.002,15)
             """
             elif data_key == 'Body Roll Acceleration':
@@ -658,9 +668,10 @@ class air_data_inertial_reference_unit:
             # Resolution: 0.008 mB -> this means that what's encoded
             # is actually [-32000, +32000]
             value = float(word_data)/8.0
-            if(len(str(value).replace(".","").replace("-","")) > 6):
-                value = str(value)[0:8] # grab first six digits -> including . e.g. 123.321
-                value = float(value)
+            value = round(value,3)
+            #if(len(str(value).replace(".","").replace("-","")) > 6):
+            #    value = str(value)[0:8] # grab first six digits -> including . e.g. 123.321
+            #    value = float(value)
             word_data_str = self.BNR_bits(value,0.008,18)
             """
             elif data_key == 'Left Static Pressure Uncorrected, mb':
@@ -668,7 +679,10 @@ class air_data_inertial_reference_unit:
             elif data_key == 'Right Static Pressure Uncorrected, mb':
                 pass
             """
-        elif data_key == 'Altitude (1013.25mB)' or data_key == 'Baro Corrected Altitude #1':
+        elif (data_key == 'Altitude (1013.25mB)' or data_key == 'Baro Corrected Altitude #1'
+              or data_key == 'Baro Corrected Altitude #2'
+              or data_key == 'Baro Corrected Altitude #3'
+              or data_key == 'Baro Corrected Altitude #4'):
             # Remove feet from the data point:
             word_data = word_data.split(" ")[0]
             # Range: 0 to 131072 feet
@@ -687,37 +701,158 @@ class air_data_inertial_reference_unit:
                 pass
             """
         elif data_key == 'Mach':
-            pass
+            # Remove Mach from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 2048 mB
+            if(float(word_data) < 0.0 or float(word_data) > 4.096):
+                raise Exception("Mach Error")
+            # 16 sig bits
+            # Resolution: 0.008 mB -> this means that what's encoded
+            # is actually [-32000, +32000]
+            value = float(word_data)/625.0
+            value = round(value, 7)
+            #if(len(str(value).replace(".","").replace("-","")) > 10):
+            #    value = str(value)[:9] # drop the last digits -> e.g. 0.0065534
+            #    value = float(value)
+            word_data_str = self.BNR_bits(value,0.000625,16)
         elif data_key == 'Max. Allowable Airspeed':
-            pass
-        elif data_key == 'True Airspeed':
-            pass
-        elif data_key == 'Corrected Angle of Attack':
-            pass
+            # Remove knots from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 2048 mB
+            if(float(word_data) < 0.0 or float(word_data) > 1024):
+                raise Exception("Max Allowable Airspeed Error")
+            # 16 sig bits
+            # Resolution: .25
+            value = float(word_data)/25.0
+            value = round(value, 2)
+            #if(len(str(value).replace(".","").replace("-","")) > 4):
+            #    value = str(value)[:5] # drop the last digits -> e.g. 0.0065534
+            #    value = float(value)
+            word_data_str = self.BNR_bits(value,0.25,12)
+        elif data_key == 'True Airspeed' and word_label == 0o210:
+            # Remove knots from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 2048 mB
+            if(float(word_data) < 0.0 or float(word_data) > 2048.0):
+                raise Exception("True Airspeed Error")
+            # 15 sig bits
+            # Resolution: 0.0625
+            value = float(word_data)/625.0
+            value = round(value, 4)
+            #if(len(str(value).replace(".","").replace("-","")) > 5):
+            #    value = str(value)[:6]
+            #    value = float(value)
+            word_data_str = self.BNR_bits(value,0.0625,15)
+        elif (data_key == 'Corrected Angle of Attack'
+              or data_key == 'Indicated Angle of Attack (Average)'
+              or data_key == 'Indicated Side Slip Angle'
+              or data_key == 'Corrected Side Slip Angle'):
+            # Remove Deg from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: -180 to 180 Deg
+            if(float(word_data) < -180.0 or float(word_data) > 180.0):
+                raise Exception("Corrected Angle of Attack Error")
+            # 12 sig bits
+            # Resolution: 0.05
+            value = float(word_data)/5.0
+            value = round(value, 2)
+            #if(len(str(value).replace(".","").replace("-","")) > 5):
+            #    value = str(value).replace("-","")[:5] # cut off extra float digits
+            #    value = float(value)
+            #    if(float(word_data) < 0.0):
+            #        value *= -1.0
+            word_data_str = self.BNR_bits(value,0.05,12)
         elif data_key == 'Altitude Rate':
-            pass
+            # Remove Ft/Min from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 32768 Ft/Min
+            if(float(word_data) < 0.0 or float(word_data) >= 32768.0):
+                raise Exception("Altitude Rate Error")
+            # 11 sig bits
+            # Resolution: 16.0
+            value = int(float(word_data)/16.0)
+            word_data_str = self.BNR_bits(float(value),16.0,11)
+        elif data_key == 'Static Air Temperature' and word_label == 0o213:
+            # Remove Degrees Celsius from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 512 Degrees Celsius
+            if(float(word_data) < 0.0 or float(word_data) >= 512.0):
+                raise Exception("Static Air Temperature Error")
+            # 11 sig bits
+            # Resolution: 0.25
+            value = float(word_data)/25.0
+            value = round(value, 2)
+            #if(len(str(value).replace(".","").replace("-","")) > 4):
+            #    value = str(value)[:5]
+            #    value = float(value)
+            word_data_str = self.BNR_bits(value,0.25,11)
         elif data_key == 'Impacted Pressure, Uncorrected, mb':
-            pass
+            # Remove mb from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 512 mb
+            if(float(word_data) < 0.0 or float(word_data) >= 512.0):
+                raise Exception("Impacted Pressure, Uncorrected, mb Error")
+            # 11 sig bits
+            # Resolution: 0.25
+            value = float(word_data)/8.0
+            value = round(value, 3)
+            #if(len(str(value).replace(".","").replace("-","")) > 5):
+            #    value = str(value)[:6]
+            #    value = float(value)
+            word_data_str = self.BNR_bits(value,0.008,16)
         elif data_key == 'Static Pressure, Average, Corrected (In. Hg)':
-            pass
-        elif data_key == 'Baro Corrected Altitude #2':
-            pass
-        elif data_key == 'Indicated Angle of Attack (Average)':
-            pass
-        elif data_key == 'Average Static Pressure mb, Uncorrected':
-            pass
-        elif data_key == 'Average Static Pressure mb, Corrected':
-            pass
-        elif data_key == 'Indicated Side Slip Angle':
-            pass
-        elif data_key == 'Baro Corrected Altitude #3':
-            pass
-        elif data_key == 'Baro Corrected Altitude #4':
-            pass
-        elif data_key == 'Corrected Side Slip Angle':
-            pass
+            # Remove In. Hg from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 64 In. Hg
+            if(float(word_data) < 0.0 or float(word_data) >= 64.0):
+                raise Exception("Static Air Temperature Error")
+            # 16 sig bits
+            # Resolution: 0.001
+            value = float(word_data)
+            value = round(value, 3)
+            #if(len(str(value).replace(".","").replace("-","")) > 5):
+            #    value = str(value)[:6]
+            #    value = float(value)
+            word_data_str = self.BNR_bits(value,0.001,16)
+        #elif data_key == 'Baro Corrected Altitude #2':
+        #    pass
+        #elif data_key == 'Indicated Angle of Attack (Average)':
+        #    pass
+        elif data_key == 'Average Static Pressure mb, Uncorrected' or data_key == 'Average Static Pressure mb, Corrected':
+            # Remove mb from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 64 In. Hg
+            if(float(word_data) < 0.0 or float(word_data) >= 2048.0):
+                raise Exception("Static Air Temperature Error")
+            # 16 sig bits
+            # Resolution: 0.03125
+            value = float(word_data)/3125.0
+            value = round(value, 5)
+            word_data_str = self.BNR_bits(value,0.03125,16)
+        #elif data_key == 'Average Static Pressure mb, Corrected':
+        #    pass
+        #elif data_key == 'Indicated Side Slip Angle':
+        #    pass
+        #elif data_key == 'Baro Corrected Altitude #3':
+        #    pass
+        #elif data_key == 'Baro Corrected Altitude #4':
+        #    pass
+        #elif data_key == 'Corrected Side Slip Angle':
+        #    pass
         elif data_key == 'Integrated Vertical Acceleration':
-            pass
+            pass # special case because 20 sig digs.
+            """
+            # Remove Ft/Sec from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: -256 to +256 Feet
+            if(float(word_data) < -256.0 or float(word_data) >= 256.0):
+                raise Exception("Static Air Temperature Error")
+            # 20 sig bits
+            # Resolution: 0.000244
+            value = float(word_data)/244
+            value = round(value, 5)
+            word_data_str = self.BNR_bits(value,0.000244,20)[1:] # for the 20 sigbigs
+            """
         elif data_key == 'Wind Angle':
             pass
         elif data_key == 'Track Angle - Magnetic':
