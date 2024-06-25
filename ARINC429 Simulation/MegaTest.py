@@ -2988,9 +2988,21 @@ def test_all_ADIRUs():
     test_ADIRU_Baro_Corrected_Altitude4()
     test_ADIRU_Corrected_Side_Slip_Angle()
 
-def test_IDS_outfiles():
-    #TODO
-    pass
+def test_IDS_log_outfile_path():
+    IDS_test_default = IDS()
+    log_file = IDS_test_default.log_filepath
+    assert(log_file == r"C:/ARINC_IDS/Logs/Logs.txt")
+
+def test_IDS_alert_outfile_path():
+    IDS_test_default = IDS()
+    alert_file = IDS_test_default.alert_filepath
+    assert(alert_file == r"C:/ARINC_IDS/Alerts/Alerts.txt")
+
+def test_IDS_Channel_inputs():
+    IDS_test_default = IDS()
+    channels = IDS_test_default.channels
+    #print("\n", channels)
+    assert(channels == {'Orange': ['GPS -> ADIRU'], 'Blue': ['ADIRU -> FMC'], 'Purple': ['FMC -> RMS', 'FMC -> FAEC 1', 'FMC -> FAEC 2', 'FMC -> WnBS'], 'Green': ['FMC -> RMS', 'FMC -> FAEC 1', 'FMC -> FAEC 2', 'FMC -> RWnBS']})
 
 if __name__ == "__main__":
     #test_all()

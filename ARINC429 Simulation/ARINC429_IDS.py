@@ -24,6 +24,9 @@ class arinc429_intrusion_detection_system:
         self.alert_filepath = ""
         self.get_log_alert_file_path()
 
+        self.channels = {}
+        self.get_channel_connections()
+
         #self.rules = self.make_default_rules()
 
         #self.default_filepath = r"C:/ARINC429_IDS/"
@@ -61,9 +64,9 @@ class arinc429_intrusion_detection_system:
 
     def get_log_alert_file_path(self) -> str:
         # Log File location =>
-        self.log_filepath = self.default_filepath + r"Alerts/Logs.txt"
+        self.alert_filepath = self.default_filepath + r"Alerts/Logs.txt"
         # Alert File location =>
-        self.alert_filepath = self.default_filepath + r"Logs/Logs.txt"
+        self.log_filepath = self.default_filepath + r"Logs/Logs.txt"
 
         lines = []
         with open(self.rules_file, "r") as rules_fd:
@@ -76,11 +79,42 @@ class arinc429_intrusion_detection_system:
             if(line.__contains__("!Outfile")):
                 filines = True
             if(filines and line.__contains__("alerts")):
-                self.alert_filepath = line.split(" ")[2]
+                self.alert_filepath = line.split(" ")[2].replace("\n","")
+                #print(line.split(" "))
             if(filines and line.__contains__("logs")):
-                self.log_filepath = line.split(" ")[2]
+                self.log_filepath = line.split(" ")[2].replace("\n","")
+                print(line.split(" "))
+            if(line.__contains__("!Channels")):
+                return
         # else keep defaults:
         return
+
+    def get_channel_connections(self):
+        lines = []
+        with open(self.rules_file, "r") as rules_fd:
+            lines = rules_fd.readlines()
+        rules_fd.close()
+
+        #files_lines = []
+        filines = False
+        for line in lines:
+            if(line == "\n"):
+                continue
+            if(line.__contains__("!SDI")):
+                break
+                #filines = False
+                #return
+            if(filines): # and not line.__contains__("!Channels") or not line.__contains__("!SDI")):
+                channel = line.split(":")[0]
+                #print(line.split(":"))
+                tx_to_rx = line.split(":")[1][1:].replace("\n","")
+                try:
+                    self.channels[channel].append(tx_to_rx)
+                except KeyError:
+                    self.channels[channel] = [tx_to_rx]
+            if(line.__contains__("!Channels")):
+                filines = True
+
 
     def get_rules(self):
         with open("ARINC429_rules.txt","r") as rules_fd:
