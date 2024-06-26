@@ -2866,24 +2866,512 @@ def test_ADIRU_Corrected_Side_Slip_Angle():
 
     assert(produced_word == word)
 
-# TODO fix this:
-def test_ADIRU_Integrated_Vertical_Acceleration():
+def test_ADIRU_Integrated_Vertical_Acceleration1():
     print("\n")
     Orange_bus = ARINC429BUS()
     Blue_bus = ARINC429BUS()
     ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
 
-    ADIRU_test.set_value('Integrated Vertical Acceleration',"255.999756 Ft/Sec")
+    ADIRU_test.set_value('Integrated Vertical Acceleration',"243.8523 Ft/Sec")
     produced_word = ADIRU_test.encode_word(0o265)
 
     # Make word to assert to
     tx_chip = lru_txr()
     # 0b00001011
     label, _ = tx_chip.make_label_for_word(int(0o265))
-    #              no padding     45.67 / 5 = 9.134, bin(0913) = 001110010001
-    partial_data = "001110010001"
+    #  no padding     243.8523 / 244 = 0.9993946721311476, bin(999394) = 11110011111111100010
+    x = round(243.8523 / 244, 6)
+    partial_data = bin(int(str(x).replace(".","")))[2:] #"11110011111111100010"
     #       SDI
     data = "00" + partial_data[::-1] + "0" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Integrated_Vertical_Acceleration2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Integrated Vertical Acceleration',"-243.8523 Ft/Sec")
+    produced_word = ADIRU_test.encode_word(0o265)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o265))
+    #  no padding     243.8523 / 244 = 0.9993946721311476, bin(999394) = 11110011111111100010
+    x = round(243.8523 / 244, 6)
+    partial_data = bin(int(str(x).replace(".","").replace("-","")))[2:] #"11110011111111100010"
+    #       SDI
+    data = "00" + partial_data[::-1] + "1" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Integrated_Vertical_Acceleration_exception1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Integrated Vertical Acceleration',"-300.8523 Ft/Sec")
+        produced_word = ADIRU_test.encode_word(0o265)
+
+def test_ADIRU_Integrated_Vertical_Acceleration_exception2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Integrated Vertical Acceleration',"-255.9999 Ft/Sec")
+        produced_word = ADIRU_test.encode_word(0o265)
+
+def test_ADIRU_Latitude_BNR1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Present Position - Latitude',"145.8672 N")
+    produced_word = ADIRU_test.encode_word(0o310)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o310))
+    #  no padding     243.8523 / 244 = 0.9993946721311476, bin(999394) = 11110011111111100010
+    x = round(145.8672 / 172, 6)
+    partial_data = bin(int(str(x).replace(".","").replace("-","")))[2:] #"11110011111111100010"
+    #       SDI
+    data = "00" + partial_data[::-1] + "0" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Latitude_BNR2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Present Position - Latitude',"60.1010 S")
+    produced_word = ADIRU_test.encode_word(0o310)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o310))
+    #  no padding     243.8523 / 244 = 0.9993946721311476, bin(999394) = 11110011111111100010
+    x = round(60.1010 / 172, 6)
+    partial_data = bin(int(str(x).replace(".","").replace("-","")))[2:] #"11110011111111100010"
+    partial_data = "0" * (20-len(partial_data)) + partial_data
+    #       SDI
+    data = "00" + partial_data[::-1] + "1" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Latitude_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Present Position - Latitude',"660.1010 S")
+        produced_word = ADIRU_test.encode_word(0o310)
+
+def test_ADIRU_Longitude_BNR1():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Present Position - Longitude',"145.8672 W")
+    produced_word = ADIRU_test.encode_word(0o311)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o311))
+    #  no padding     243.8523 / 244 = 0.9993946721311476, bin(999394) = 11110011111111100010
+    x = round(145.8672 / 172, 6)
+    partial_data = bin(int(str(x).replace(".","").replace("-","")))[2:] #"11110011111111100010"
+    #       SDI
+    data = "00" + partial_data[::-1] + "0" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Longitude_BNR2():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Present Position - Longitude',"60.1010 E")
+    produced_word = ADIRU_test.encode_word(0o311)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o311))
+    #  no padding     243.8523 / 244 = 0.9993946721311476, bin(999394) = 11110011111111100010
+    x = round(60.1010 / 172, 6)
+    partial_data = bin(int(str(x).replace(".","").replace("-","")))[2:] #"11110011111111100010"
+    partial_data = "0" * (20-len(partial_data)) + partial_data
+    #       SDI
+    data = "00" + partial_data[::-1] + "1" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Longitude_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Present Position - Longitude',"660.1010 S")
+        produced_word = ADIRU_test.encode_word(0o311)
+
+def test_ADIRU_ground_speed_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Ground Speed',"4095 Knots")
+    produced_word = ADIRU_test.encode_word(0o312)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o312))
+    #              padding    4095 / 125 -> 32.76 -> bin(32760)
+    partial_data = "0000" + "111111111111000"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_ground_speed_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Ground Speed',"5095 Knots")
+        produced_word = ADIRU_test.encode_word(0o312)
+
+def test_ADIRU_Track_Angle_True_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Track Angle - True',"145.067 Degrees")
+    produced_word = ADIRU_test.encode_word(0o313)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o313))
+    #              padding    145.067 / 55 -> 2.6375818181818182 -> bin(26376)
+    partial_data = "0000" + "110011100001000"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Track_Angle_True_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Track Angle - True',"1145.067 Degrees")
+        produced_word = ADIRU_test.encode_word(0o313)
+
+def test_ADIRU_True_Heading_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('True Heading',"145.067 Degrees")
+    produced_word = ADIRU_test.encode_word(0o314)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o314))
+    #              padding    145.067 / 55 -> 2.6375818181818182 -> bin(26376)
+    partial_data = "0000" + "110011100001000"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Wind_Speed_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Wind Speed',"127 Knots")
+    produced_word = ADIRU_test.encode_word(0o315)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o315))
+    #              padding   bin(127)
+    partial_data = "0"*11 + "01111111"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Wind_Speed_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Wind Speed',"300 Knots")
+        produced_word = ADIRU_test.encode_word(0o315)
+
+def test_ADIRU_Wind_Angle_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Wind Angle',"-127.3 Degrees")
+    produced_word = ADIRU_test.encode_word(0o316)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o316))
+    #              padding   -127.3/7 = -18.18 -> bin(182)
+    partial_data = "0"*11 + "10110110"
+    #       SDI
+    data = "00" + partial_data[::-1] + "11" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Wind_Angle_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Wind Angle',"-197.3 Degrees")
+        produced_word = ADIRU_test.encode_word(0o316)
+
+def test_ADIRU_Track_Angle_Magnetic_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Track Angle - Magnetic',"145.067 Degrees")
+    produced_word = ADIRU_test.encode_word(0o317)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o317))
+    #              padding    145.067 / 55 -> 2.6375818181818182 -> bin(26376)
+    partial_data = "0000" + "110011100001000"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Magnetic_Heading_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Magnetic Heading',"145.067 Degrees")
+    produced_word = ADIRU_test.encode_word(0o320)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o320))
+    #              padding    145.067 / 55 -> 2.6375818181818182 -> bin(26376)
+    partial_data = "0000" + "110011100001000"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Drift_Angle_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Drift Angle',"-45.06 Degrees")
+    produced_word = ADIRU_test.encode_word(0o321)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o321))
+    #              padding    -45.06 / 5 -> 9.012 -> bin(901)
+    partial_data = "0000000" + "001110000101"
+    #       SDI
+    data = "00" + partial_data[::-1] + "11" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Flight_Path_Angle_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Flight Path Angle',"-45.06 Degrees")
+    produced_word = ADIRU_test.encode_word(0o322)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o322))
+    #              padding    -45.06 / 5 -> 9.012 -> bin(901)
+    partial_data = "0000000" + "001110000101"
+    #       SDI
+    data = "00" + partial_data[::-1] + "11" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Flight_Path_Acceleration_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Flight Path Acceleration',"3.111 gs")
+    produced_word = ADIRU_test.encode_word(0o323)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o323))
+    #              padding    bin(3111)
+    partial_data = "0000000" + "110000100111"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Flight_Path_Acceleration_exception_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Flight Path Acceleration',"4.001 gs")
+        produced_word = ADIRU_test.encode_word(0o323)
+
+def test_ADIRU_Pitch_Angle_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Pitch Angle',"35.35 Degrees")
+    produced_word = ADIRU_test.encode_word(0o324)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o324))
+    #              padding    bin(3535)
+    partial_data = "00000" + "00110111001111"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
+    # Parity - need label for this
+    data += tx_chip.calc_parity(label + data)
+    word = label + data
+
+    assert(produced_word == word)
+
+def test_ADIRU_Pitch_Angle_BNR_exception():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+    with pytest.raises(Exception) as ptE:
+        ADIRU_test.set_value('Pitch Angle',"99935.35 Degrees")
+        produced_word = ADIRU_test.encode_word(0o324)
+
+def test_ADIRU_Roll_Angle_BNR():
+    print("\n")
+    Orange_bus = ARINC429BUS()
+    Blue_bus = ARINC429BUS()
+    ADIRU_test = ADIRU(bus_speed="low", BUS_CHANNELS=[Orange_bus, Blue_bus])
+
+    ADIRU_test.set_value('Roll Angle',"35.35 Degrees")
+    produced_word = ADIRU_test.encode_word(0o325)
+
+    # Make word to assert to
+    tx_chip = lru_txr()
+    # 0b00001011
+    label, _ = tx_chip.make_label_for_word(int(0o325))
+    #              padding    bin(3535)
+    partial_data = "00000" + "00110111001111"
+    #       SDI
+    data = "00" + partial_data[::-1] + "00" # <- SSM for - degrees
     # Parity - need label for this
     data += tx_chip.calc_parity(label + data)
     word = label + data
@@ -2987,6 +3475,34 @@ def test_all_ADIRUs():
     test_ADIRU_Baro_Corrected_Altitude3()
     test_ADIRU_Baro_Corrected_Altitude4()
     test_ADIRU_Corrected_Side_Slip_Angle()
+    test_ADIRU_Integrated_Vertical_Acceleration1()
+    test_ADIRU_Integrated_Vertical_Acceleration2()
+    test_ADIRU_Integrated_Vertical_Acceleration_exception1()
+    test_ADIRU_Integrated_Vertical_Acceleration_exception2()
+    test_ADIRU_Latitude_BNR1()
+    test_ADIRU_Latitude_BNR2()
+    test_ADIRU_Latitude_BNR_exception()
+    test_ADIRU_Longitude_BNR1()
+    test_ADIRU_Longitude_BNR2()
+    test_ADIRU_Longitude_BNR_exception()
+    test_ADIRU_ground_speed_BNR()
+    test_ADIRU_ground_speed_BNR_exception()
+    test_ADIRU_Track_Angle_True_BNR()
+    test_ADIRU_Track_Angle_True_BNR_exception()
+    test_ADIRU_True_Heading_BNR()
+    test_ADIRU_Wind_Speed_BNR()
+    test_ADIRU_Wind_Speed_BNR_exception()
+    test_ADIRU_Wind_Angle_BNR()
+    test_ADIRU_Wind_Angle_BNR_exception()
+    test_ADIRU_Track_Angle_Magnetic_BNR()
+    test_ADIRU_Magnetic_Heading_BNR()
+    test_ADIRU_Drift_Angle_BNR()
+    test_ADIRU_Flight_Path_Angle_BNR()
+    test_ADIRU_Flight_Path_Acceleration_BNR()
+    test_ADIRU_Flight_Path_Acceleration_exception_BNR()
+    test_ADIRU_Pitch_Angle_BNR()
+    test_ADIRU_Pitch_Angle_BNR_exception()
+    test_ADIRU_Roll_Angle_BNR()
 
 def test_IDS_log_outfile_path():
     IDS_test_default = IDS()
