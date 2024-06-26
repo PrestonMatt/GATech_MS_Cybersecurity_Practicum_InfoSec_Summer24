@@ -7,12 +7,12 @@ logs = C:/ARINC_IDS/Logs/Logs.txt
 Orange: GPS -> ADIRU
 Blue: ADIRU -> FMC
 Purple: FMC -> RMS
-Purple: FMC -> FAEC 1
-Purple: FMC -> FAEC 2
+Purple: FMC -> FAEC1
+Purple: FMC -> FAEC2
 Purple: FMC -> WnBS
 Green: FMC -> RMS
-Green: FMC -> FAEC 1
-Green: FMC -> FAEC 2
+Green: FMC -> FAEC1
+Green: FMC -> FAEC2
 Green: FMC -> RWnBS
 
 !SDI
@@ -20,19 +20,19 @@ Green: FMC -> RWnBS
 Orange: ADIRU -> 11
 Blue: FMC -> 11
 Purple: RMS -> 00
-Purple: FAEC 1 -> 01
-Purple: FAEC 2 -> 10
+Purple: FAEC1 -> 01
+Purple: FAEC2 -> 10
 Purple: WnBS -> 11
 Green: RMS -> 00
-Green: FAEC 1 -> 01
-Green: FAEC 2 -> 10
+Green: FAEC1 -> 01
+Green: FAEC2 -> 10
 Green: WnBS -> 11
 
 !Rules
 # Example formats:
-# <alert/log>* <channel>* <label> <SDI> <data> <SSM> <P> <Time> "<message (if alert)>"
+# <alert/log>* <channel>* <label> <SDI> data:<data> <SSM> <P> <Time> "<message (if alert)>"
 # <log>* <channel>* <label>/<bits>* -> logs the decoded data for this channel & label.
-# <alert/log>* <channel>* <bit[index1:index2) = "01..10"> "<message (if alert)>"
+# <alert/log>* <channel>* <bit[index1:index2)="01..10"> "<message (if alert)>"
 # <alert/log>* <channel>* <label> <BCD/BNR/DISC> "<message (if alert)>"
 
 # Some information:
@@ -41,10 +41,10 @@ Green: WnBS -> 11
 # Labels must be in octal format 0oXXX since some of the data is the same for different words!
 # E.G. ACMS Information is for both 0o062 and 0o063
 
-# bit[index1:index2) = "10..." option must have indexs be integers in [1,33] (length of a word)
+# bit[index1:index2)="10..." option must have indices be integers in [1,33] (length of a word)
 # AND the difference between must match the length of the given string
-# E.G. bit[5:10) = "11111" gets bits 5, 6, 7, 8, and 9.
-# bit[20:33) = "1011010010110" gets bits 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, and 32
+# E.G. bit[5:10)="11111" gets bits 5, 6, 7, 8, and 9.
+# bit[20:33)="1011010010110" gets bits 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, and 32
 
 # <SDI> = human-readable name for that channel.
 # E.G. in examples above, Orange: ADIRU -> 11 would be ADIRU and not 11

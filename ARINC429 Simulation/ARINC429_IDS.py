@@ -29,7 +29,11 @@ class arinc429_intrusion_detection_system:
         self.channels = {}
         self.get_channel_connections()
 
+        self.sdis = self.get_sdis()
+
         self.rules = None
+
+
 
         #self.rules = self.make_default_rules()
 
@@ -109,7 +113,7 @@ class arinc429_intrusion_detection_system:
                 #filines = False
                 #return
             if(filines): # and not line.__contains__("!Channels") or not line.__contains__("!SDI")):
-                channel = line.split(":")[0]
+                channel = line.split(":")[0].replace(":","")
                 #print(line.split(":"))
                 tx_to_rx = line.split(":")[1][1:].replace("\n","")
                 try:
@@ -118,6 +122,39 @@ class arinc429_intrusion_detection_system:
                     self.channels[channel] = [tx_to_rx]
             if(line.__contains__("!Channels")):
                 filines = True
+
+    def get_sdis(self)->dict:
+
+        sdis = {}
+
+        lines = []
+        with open(self.rules_file, "r") as rules_fd:
+            lines = rules_fd.readlines()
+        rules_fd.close()
+
+        SDI_flag = False
+        for line in lines:
+            if(line == "\n"):
+                continue
+            if(line.__contains__("!Rules")):
+                break
+            if(SDI_flag):
+                # remove endline comments
+                line = line.split("#")[0]
+                # remove full line comments
+                if(line == "" or line == "\n"):
+                    continue
+                try:
+                    channel = line.split(" ")[0].replace(":","")
+                    sdi_name = line.split(" ")[1]
+                    bitmask = line.split(" ")[3].replace("\n","")
+                    sdis[sdi_name+"_"+channel] = bitmask
+                except IndexError:
+                    raise ValueError("SDI Lines formated incorrectly.")
+            if(line.__contains__("!SDI")):
+                SDI_flag = True
+
+        return(sdis)
 
     def get_rules(self):
         with open("ARINC429_rules.txt","r") as rules_fd:

@@ -3518,7 +3518,35 @@ def test_IDS_Channel_inputs():
     IDS_test_default = IDS()
     channels = IDS_test_default.channels
     #print("\n", channels)
-    assert(channels == {'Orange': ['GPS -> ADIRU'], 'Blue': ['ADIRU -> FMC'], 'Purple': ['FMC -> RMS', 'FMC -> FAEC 1', 'FMC -> FAEC 2', 'FMC -> WnBS'], 'Green': ['FMC -> RMS', 'FMC -> FAEC 1', 'FMC -> FAEC 2', 'FMC -> RWnBS']})
+    assert(channels == {
+        'Orange': ['GPS -> ADIRU'],
+        'Blue': ['ADIRU -> FMC'],
+        'Purple': ['FMC -> RMS', 'FMC -> FAEC1', 'FMC -> FAEC2', 'FMC -> WnBS'],
+        'Green': ['FMC -> RMS', 'FMC -> FAEC1', 'FMC -> FAEC2', 'FMC -> RWnBS']
+    })
+
+def test_IDS_SDI_masks():
+    IDS_test_default = IDS()
+    sdis = IDS_test_default.sdis
+    assert(sdis == {
+        "ADIRU_Orange": "11",
+        "FMC_Blue": "11",
+        "RMS_Purple": "00",
+        "FAEC1_Purple": "01",
+        "FAEC2_Purple": "10",
+        "WnBS_Purple": "11",
+        "RMS_Green": "00",
+        "FAEC1_Green": "01",
+        "FAEC2_Green": "10",
+        "WnBS_Green": "11"
+    })
+
+def test_all_IDS_tests():
+    test_IDS_log_outfile_path()
+    test_IDS_alert_outfile_path()
+    test_IDS_Channel_inputs()
+    test_IDS_SDI_masks()
+
 
 if __name__ == "__main__":
     #test_all()
