@@ -216,9 +216,9 @@ class arinc429_intrusion_detection_system:
                 label = int(r,8)
                 bitmask[0:8] = lru_txr.make_label_for_word(label)
             # SDI
-            elif(SDI_flag and r in self.SDIs):
+            elif(SDI_flag and r+f"_{channel}" in self.sdis):
                 SDI_flag = False
-                bitmask[8:10] = self.SDI[r]
+                bitmask[8:10] = self.sdis[r]
             # data -> TODO ADD data: to rules semantics
             # TODO make data have no spaces
             elif(data_flag and r.__contains__("bit[") or r.__contains__("data:")):

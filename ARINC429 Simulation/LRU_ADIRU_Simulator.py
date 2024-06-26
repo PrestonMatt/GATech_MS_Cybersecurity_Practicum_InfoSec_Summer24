@@ -970,12 +970,13 @@ class air_data_inertial_reference_unit:
         elif ( (data_key == 'Track Angle - True' and word_label == 0o313) or
                (data_key == 'True Heading' and word_label == 0o314)
                or data_key == 'Track Angle - Magnetic'
-               or (data_key == 'Magnetic Heading' and word_label == 0o320) ): #0o313: "Track Angle - True"
+               or (data_key == 'Magnetic Heading' and word_label == 0o320)
+               or data_key == 'Grid Heading'): #0o313: "Track Angle - True"
             # Remove Deg from the data point:
             word_data = word_data.split(" ")[0]
             # Range: -180 to 180 Deg
             if(float(word_data) < -180.0 or float(word_data) > 180.0):
-                raise Exception("Track Angle - True/True Heading Error")
+                raise Exception("Track Angle - True/True Heading/Track Angle - Mag/Mag/Grid Heading Error")
             # 15 sig bits
             # Resolution: 0.055
             value = float(word_data)/55.0
@@ -1012,12 +1013,18 @@ class air_data_inertial_reference_unit:
         #    pass
         #elif data_key == 'Flight Path Angle':
         #    pass
-        elif data_key == 'Flight Path Acceleration':
+        elif (data_key == 'Flight Path Acceleration'
+              or data_key == 'Body Longitudinal Acceleration'
+              or data_key == 'Body Lateral Acceleration'
+              or data_key == 'Body Normal Acceleration'
+              or data_key == 'Along Track Horizontal Acceleration'
+              or data_key == 'Cross Track Acceleration'
+              or data_key == 'Vertical Acceleration'):
             # Remove gs from the data point:
             word_data = word_data.split(" ")[0]
             # Range: 0 to 4 Deg
             if(float(word_data) < 0.0 or float(word_data) > 4.0):
-                raise Exception("Flight Path Acceleration Error")
+                raise Exception("Various Acceleration Error")
             # 12 sig bits
             # Resolution: 0.001
             value = float(word_data)
@@ -1037,38 +1044,85 @@ class air_data_inertial_reference_unit:
             value = float(word_data)
             value = round(value, 2)
             word_data_str = self.BNR_bits(value,0.01,14,2)
-        elif data_key == 'Body Pitch Rate':
-            pass
-        elif data_key == 'Body Roll Rate':
-            pass
-        elif data_key == 'Body Yaw Rate':
-            pass
-        elif data_key == 'Body Longitudinal Acceleration':
-            pass
-        elif data_key == 'Body Lateral Acceleration':
-            pass
-        elif data_key == 'Body Normal Acceleration':
-            pass
+        elif (data_key == 'Body Pitch Rate'
+              or data_key == 'Body Roll Rate'
+              or data_key == 'Body Yaw Rate'
+              or data_key == 'Inertial Pitch Rate'
+              or data_key == 'Inertial Roll Rate'):
+            # Remove Degrees from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 128 Deg
+            if(float(word_data) < 0.0 or float(word_data) > 128.0):
+                raise Exception("Body Pitch/Roll/Yaw /Inertial Pitch/Roll Rate Error")
+            # Except, 0b1111111111111 = 8191 -> 8.191 * 15 (from res: 0.015)
+            # = 122.865
+            if(float(word_data) < 0.0 or float(word_data) > 122.865):
+                raise Exception("Body Pitch/Roll/Yaw/Inertial Pitch/Roll Rate Error")
+            # 13 sig bits
+            # Resolution: 0.015
+            value = float(word_data)/15.0
+            value = round(value, 3)
+            word_data_str = self.BNR_bits(value,0.015,13,3)
+        #elif data_key == 'Body Roll Rate':
+        #    pass
+        #elif data_key == 'Body Yaw Rate':
+        #    pass
+        #elif data_key == 'Body Longitudinal Acceleration':
+        #    pass
+        #elif data_key == 'Body Lateral Acceleration':
+        #    pass
+        #elif data_key == 'Body Normal Acceleration':
+        #    pass
         elif data_key == 'Platform Heading':
-            pass
+            # Remove Deg from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: -180 to 180 Deg
+            if(float(word_data) < -180.0 or float(word_data) > 180.0):
+                raise Exception("Platform Heading Error")
+            # 11 sig bits
+            # Resolution: 0.09
+            value = float(word_data) / 9.0
+            value = round(value, 2)
+            word_data_str = self.BNR_bits(value,0.09,11,2)
         elif data_key == 'Track Angle Rate':
-            pass
-        elif data_key == 'Inertial Pitch Rate':
-            pass
-        elif data_key == 'Inertial Roll Rate':
-            pass
-        elif data_key == 'Grid Heading':
-            pass
+            # Remove Deg/Sec from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 32 Deg/Sec
+            if(float(word_data) < 0.0 or float(word_data) > 32.0):
+                raise Exception("Track Angle Rate Error")
+            # 2047 * 15 = 30705 -> 30.705
+            if(float(word_data) < 0.0 or float(word_data) > 30.705):
+                raise Exception("Track Angle Rate Error")
+            # 11 sig bits
+            # Resolution: 0.015
+            value = float(word_data) / 15.0
+            value = round(value, 3)
+            word_data_str = self.BNR_bits(value,0.015,11,3)
+        #elif data_key == 'Inertial Pitch Rate':
+        #    pass
+        #elif data_key == 'Inertial Roll Rate':
+        #    pass
+        #elif data_key == 'Grid Heading':
+        #    pass
         elif data_key == 'Potential Vertical Speed':
-            pass
+            # Remove Ft/Min from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 32768 Ft/Min
+            if(float(word_data) < 0.0 or float(word_data) >= 32768.0):
+                raise Exception("Potential Vertical Speed Error")
+            # 15 sig bits
+            # Resolution: 1
+            value = float(word_data)
+            #value = round(value, 3)
+            word_data_str = self.BNR_bits(value,1,15,0)
         elif data_key == 'Altitude (Inertial)':
             pass
-        elif data_key == 'Along Track Horizontal Acceleration':
-            pass
-        elif data_key == 'Cross Track Acceleration':
-            pass
-        elif data_key == 'Vertical Acceleration':
-            pass
+        #elif data_key == 'Along Track Horizontal Acceleration':
+        #    pass
+        #elif data_key == 'Cross Track Acceleration':
+        #    pass
+        #elif data_key == 'Vertical Acceleration':
+        #    pass
         elif data_key == 'Inertial Vertical Velocity (EFI)':
             pass
         elif data_key == 'North-South Velocity':
