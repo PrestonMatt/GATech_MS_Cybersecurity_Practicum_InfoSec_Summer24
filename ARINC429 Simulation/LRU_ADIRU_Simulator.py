@@ -1104,7 +1104,8 @@ class air_data_inertial_reference_unit:
         #    pass
         #elif data_key == 'Grid Heading':
         #    pass
-        elif data_key == 'Potential Vertical Speed':
+        elif (data_key == 'Potential Vertical Speed'
+              or data_key == 'Inertial Vertical Velocity (EFI)'):
             # Remove Ft/Min from the data point:
             word_data = word_data.split(" ")[0]
             # Range: 0 to 32768 Ft/Min
@@ -1115,24 +1116,44 @@ class air_data_inertial_reference_unit:
             value = float(word_data)
             #value = round(value, 3)
             word_data_str = self.BNR_bits(value,1,15,0)
-        elif data_key == 'Altitude (Inertial)':
-            pass
+        #elif data_key == 'Altitude (Inertial)':
+        #    pass fuck it
         #elif data_key == 'Along Track Horizontal Acceleration':
         #    pass
         #elif data_key == 'Cross Track Acceleration':
         #    pass
         #elif data_key == 'Vertical Acceleration':
         #    pass
-        elif data_key == 'Inertial Vertical Velocity (EFI)':
-            pass
-        elif data_key == 'North-South Velocity':
-            pass
-        elif data_key == 'East-West Velocity':
-            pass
-        elif data_key == 'Along Heading Acceleration':
-            pass
-        elif data_key == 'Cross Heading Acceleration':
-            pass
+        #elif data_key == 'Inertial Vertical Velocity (EFI)':
+        #    pass
+        elif (data_key == 'North-South Velocity'
+              or data_key == 'East-West Velocity'):
+            # Remove Knots from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 4096 Ft/Min
+            if(float(word_data) < 0.0 or float(word_data) >= 4096.0):
+                raise Exception("North-South/East-West Velocity Error")
+            # 15 sig bits
+            # Resolution: 0.0125
+            value = float(word_data)/125.0
+            value = round(value, 3)
+            word_data_str = self.BNR_bits(value,0.0125,15,3)
+        #elif data_key == 'East-West Velocity':
+        #    pass
+        elif (data_key == 'Along Heading Acceleration'
+              or data_key == 'Cross Heading Acceleration'):
+            # Remove gs from the data point:
+            word_data = word_data.split(" ")[0]
+            # Range: 0 to 4 Deg
+            if(float(word_data) < 0.0 or float(word_data) > 4.0):
+                raise Exception("Various Acceleration Error")
+            # 12 sig bits
+            # Resolution: 0.001
+            value = float(word_data) / 153.0
+            value = round(value, 7)
+            word_data_str = self.BNR_bits(value,1.53e-5,18,7)
+        #elif data_key == 'Cross Heading Acceleration':
+        #    pass
         else:
             raise ValueError("Label is wrong!")
 
