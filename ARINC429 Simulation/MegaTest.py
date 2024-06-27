@@ -4013,6 +4013,22 @@ def test_IDS_SDI_masks():
         "WnBS_Green": "11"
     })
 
+def test_rules_default():
+    IDS_test_default = IDS()
+    rulez = IDS_test_default.rules
+    #ADIRU_1 = ADIRU("low",[ARINC429BUS(),ARINC429BUS()])
+    #ADIRU_1.set_value('Ground Speed',"6000 Knots")
+    #produced_word = ADIRU_1.encode_word(0o012)
+    #print(produced_word)
+    assert(rulez == [('alert','Blue','0000000000000000000000000000000',None,False,'Blue bus has a word.'),
+                     ('alert','Blue','0001000000000000000000000000000',None,False,'Latitude word sent'),
+                     ('log', 'Blue', '1001000000000000000000000000000',None,False,''),
+                     ('log', 'Blue', '0000000000000000000000000000000',None,False,''),
+                     ('alert','Blue','0101000000000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
+                     ('alert','Purple','000000000001010101010101010000',None,False,'Funny Pattern!'),
+                     ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!'),
+                     ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!')])
+
 def test_all_IDS_tests():
     test_IDS_log_outfile_path()
     test_IDS_alert_outfile_path()

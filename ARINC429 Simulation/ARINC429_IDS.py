@@ -31,8 +31,9 @@ class arinc429_intrusion_detection_system:
 
         self.sdis = self.get_sdis()
 
-        self.rules = None
+        self.rules = []
         self.get_rules()
+        self.n = 1 # number of words.
 
         #self.rules = self.make_default_rules()
 
@@ -90,7 +91,7 @@ class arinc429_intrusion_detection_system:
                 #print(line.split(" "))
             if(filines and line.__contains__("logs")):
                 self.log_filepath = line.split(" ")[2].replace("\n","")
-                print(line.split(" "))
+                #print(line.split(" "))
             if(line.__contains__("!Channels")):
                 return
         # else keep defaults:
@@ -184,20 +185,26 @@ class arinc429_intrusion_detection_system:
         bitmask = "0"*31
         parity_check = None
         time_notate = False
-        message = line.split('"')[1]
+        message = ""
+        try:
+            message = line.split('"')[1]
+        except IndexError:
+            pass # message is already nothing.
 
         if(not (rule[0].__contains__("alert") or rule.__contains__("log")) ):
+            print(f"Problem with rule: {line}")
             raise ValueError("Rule must delineate between Alerting or Logging.")
         else:
             alert_log = rule[0]
 
         if(not rule[1] in self.get_channelnames()):
+            print(f"Problem with rule: {line}")
             raise ValueError("Rule must delineate between Channels.")
         else:
             channel = rule[1]
 
         rulez = Queue()
-        [rulez.put(word) for word in rule]
+        [rulez.put(rule[i]) for i in range(1,len(rule))]
 
         octal_flag = True
         SDI_flag = True
@@ -207,25 +214,28 @@ class arinc429_intrusion_detection_system:
         time_flag = True
         #message_flag = True
 
-        while(rulez.size() > 0):
-            r = rulez.pop()
+        while(rulez.qsize() > 0):
+            r = rulez.get()
             # octal
             if(r.__contains__("0o") and octal_flag):
                 octal_flag = False
                 label = int(r,8)
-                bitmask[0:8] = lru_txr.make_label_for_word(label)
+                label_chip = lru_txr()
+                l, _ = label_chip.make_label_for_word(label)
+                bitmask = self.replace_index(0,8,bitmask,l)
             # SDI
             elif(SDI_flag and r+f"_{channel}" in self.sdis):
                 SDI_flag = False
-                bitmask[8:10] = self.sdis[r]
+
+                bitmask = self.replace_index(8,10,bitmask,self.sdis[r])
             # data -> TODO ADD data: to rules semantics
             # TODO make data have no spaces
-            elif(data_flag and r.__contains__("bit[") or r.__contains__("data:")):
+            elif(data_flag and r.__contains__("bits[") or r.__contains__("data:")):
                 data_flag = False
-                if(r.__contains__("bit[")):
+                if(r.__contains__("bits[")):
                     # TODO figure out what to do when this contradicts the label/sdi
                     rz = r.split("=")[1].replace('"','')
-                    index1 = int(r.split("[")[0].split(":")[0])
+                    index1 = int(r.split("[")[1].split(":")[0])
                     index2 = int(r.split(":")[1].split(")")[0])
                     cnt = 0
                     for char in bitmask[index1:index2]:
@@ -234,14 +244,19 @@ class arinc429_intrusion_detection_system:
                                 raise ValueError("Bit mask contradicts other flags!!")
                         except IndexError: # reached past the bit mask.
                             break
-                    bitmask[index1:index2] = rz
+                    bitmask = self.replace_index(index1,index2,bitmask,rz)
                     #bitmask += 19 - len(rz)
                 else:
                     # TODO figure out to encode to DISC, BNR or BCD
                     pass
-            elif(SSM_flag and (int(data_flag,2) >= 0 or int(data_flag,2) <= 4)):
-                bitmask[29:31] = data_flag
-                SSM_flag = False
+            elif(SSM_flag):
+                try:
+                    ssmThere = (int(r,2) >= 0 or int(r,2) <= 4)
+                    if(ssmThere):
+                        bitmask = self.replace_index(29,31,bitmask,r)
+                        SSM_flag = False
+                except ValueError:
+                    pass
             elif(parity_flag and (r == "C" or r == "I")):
                 parity_check = True if r == "C" else False
                 parity_flag = False
@@ -256,7 +271,12 @@ class arinc429_intrusion_detection_system:
         if(len(bitmask) != 31):
             raise ValueError("Error in parsing word!")
 
-        self.rules.add((alert_log, channel, bitmask, parity_check, time_notate, message))
+        self.rules.append((alert_log, channel, bitmask, parity_check, time_notate, message))
+
+    def replace_index(self,index1:int,index2:int,ogstring:str,replacestr:str)->str:
+        # ogstring[index1:index2] = replacestr
+        new_str = ogstring[:index1] + replacestr + ogstring[index2:]
+        return(new_str)
 
     def get_channelnames(self)->list:
         channelnames = []
@@ -264,7 +284,7 @@ class arinc429_intrusion_detection_system:
             channelnames.append(chan)
         return(channelnames)
 
-    def alert(self, word:str):
+    def alert_or_log(self, word:str):
 
         #self.rules.add(
         # 0 (alert_log,
@@ -274,32 +294,43 @@ class arinc429_intrusion_detection_system:
         # 4 time_notate,
         # 5 message)
         # )
+        with open(self.log_filepath, "a") as log_fd:
+            with open(self.alert_filepath,"a") as alert_fd:
+                for tuple in self.rules:
+                    parity = tuple[3]
+                    time = tuple[4]
+                    flag_this_tuple = False
+                    # Part 1 Check if you should flag this word.
+                    if(tuple[0].__contains__("alert")):
+                        #TODO Check channel?
+                        p_bitmask = tuple[2] + lru_txr.calc_parity(tuple[2])
+                        bitmask = tuple[2] #+ lru_txr.calc_parity(tuple[2])
+                        if(bitmask == 31*"0"):
+                            flag_this_tuple = True
+                        word_check = word[-1:]
+                        if(int(bitmask,2) & int(word_check,2) == int(bitmask,2) ):
+                            if( (parity == True and word[-1] == p_bitmask)
+                            or (parity == False and word[-1] != p_bitmask) ):
+                                # alert
+                                flag_this_tuple = True
+                            elif(parity == None):
+                                # alert
+                                flag_this_tuple = True
+                    # Part 2: If the word is flagged, the log it appropriately.
+                    if(flag_this_tuple and time):
+                        if(tuple[0].__contains__("alert")):
+                            alert_fd.write(f"{time()}: Alert! {tuple[5]}\n")
+                        if(tuple.__contains__("log")):
+                            log_fd.write(f"{time()}: {word} {tuple[5]}\n")
+                    elif(flag_this_tuple and time == False):
+                        if(tuple[0].__contains__("alert")):
+                            alert_fd.write(f"Alert! {tuple[5]}\n")
+                        if(tuple.__contains__("log")):
+                            log_fd.write(f"Logged word #{self.n}: {word} {tuple[5]}\n")
+            alert_fd.close()
+        log_fd.close()
 
-        with open(self.alert_filepath,"a") as alert_fd:
-            for tuple in self.rules:
-                parity = tuple[3]
-                time = tuple[4]
-                alert_this_tuple = False
-                if(tuple[0].__contains__("alert")):
-                    #TODO Check channel?
-                    p_bitmask = tuple[2] + lru_txr.calc_parity(tuple[2])
-                    bitmask = tuple[2] #+ lru_txr.calc_parity(tuple[2])
-                    word_check = word[-1:]
-                    if(int(bitmask,2) & int(word_check,2) == int(bitmask,2) ):
-                        if( (parity == True and word[-1] == p_bitmask)
-                        or (parity == False and word[-1] != p_bitmask) ):
-                            # alert
-                            alert_this_tuple = True
-                        elif(parity == None):
-                            # alert
-                            alert_this_tuple = True
-                if(alert_this_tuple and time):
-                    alert_fd.write(f"{time()}: Alert! {tuple[5]}\n")
-                elif(alert_this_tuple and time == False):
-                    alert_fd.write(f"Alert! {tuple[5]}\n")
-        alert_fd.close()
-
-    def log_words(self, channel_index):
+    def log_all_words(self, channel_index):
         with open(self.default_filepath + r"Logs/" + f"Logs_{self.start_time}.txt", "a") as logs_fd:
             word = self.communication_chip.receive_given_word(channel_index)
             logs_fd.write(word)
