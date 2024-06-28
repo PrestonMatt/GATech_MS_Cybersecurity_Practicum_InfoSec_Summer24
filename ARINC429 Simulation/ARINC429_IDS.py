@@ -8,20 +8,29 @@ class arinc429_intrusion_detection_system:
 
     all_labels = {
         # Format:
-        # Label 1 in octal: [(Equipment ID 1 in Hex, BCD/BNR/DISC),
-        #                  (Equipment ID 2 in Hex, BCD/BNR/DISC),
+        # Label 1 in octal: {Equipment ID 1 in Hex: [BCD/BNR/DISC/SAL, resolution],
+        #                  Equipment ID 2 in Hex: BCD/BNR/DISC/SAL},
         #                  ... ]
         # Label 2 in octal : ... etc ...
         # 0o0: [ <NOT USED> ],
-        0o001: [],
-        0o002: [],
-        0o003: [],
-        0o004: [],
-        0o005: [],
-        0o006: [],
-        0o007: [],
-        0o010: [],
-        0o011: [],
+        0o001: {0x002: ["BCD", 0.1],
+                0x056: ["BCD", 0.1],
+                0x060: ["BCD", 0.1]},
+        0o002: {0x002: ["BCD", 0.1],
+                0x056: ["BCD", 0.1],
+                0x060: ["BCD", 0.1],
+                0x115: ["BCD", 0.1]},
+        0o003: {0x002: ["BCD", 0.1]},
+        0o004: {0x001: ["BCD", 100.0]},
+        0o005: {0x0D0: ["DISC", 0.0]},
+        0o006: {0x0D0: ["DISC", 0.0]},
+        # 0o007: [], SPARE
+        0o010: {0x002: ["BCD", 0.1],
+                0x004: ["BCD", 0.1],
+                0x038: ["BCD", 0.1]},
+        0o011: {0x002: ["BCD", 0.1],
+                0x004: ["BCD", 0.1],
+                0x038: ["BCD", 0.1]},
         0o012: [],
         0o013: [],
         0o014: [],
@@ -272,7 +281,245 @@ class arinc429_intrusion_detection_system:
     equip_ids = {
         # Format:
         # Equipement ID in hex: "Human Readable Name"
-        0x0: "Not Used"
+        0x0: "Not Used",
+        0x001: "Flight Control Computer",
+        0x002: "Flight Management Computer",
+        0x003: "Thrust Control Computer ",
+        0x004: "Inertial Reference System",
+        0x005: "Attitude and Heading Ref. System",
+        0x006: "Air Data System",
+        0x007: "Radio Altimeter",
+        0x008: "Airborne Weather Radar",
+        0x009: "Airborne DME",
+        0x00A: "FAC",
+        0x00B: "Global Positioning System",
+        0x00D: " AIDS Data Management System",
+        0x010: "Airborne ILS Receiver",
+        0x011: "Airborne VOR Receiver ",
+        0x012: "Airborne ADF System",
+        0x016: "Airborne VHF COM",
+        0x017: "DEFDARS-AIDS",
+        0x018: "ATC Transponder",
+        0x019: "Airborne HF/SSB System",
+        0x01A: "Electronic Supervisory Control",
+        0x01B: "Digital Slat/Flap Computer",
+        0x01D: "A/P & F/D Mode Control Panel ",
+        0x01E: "Performance Data Computer",
+        0x01F: "Fuel Quantity Totalizer",
+        0x020: "DFS System",
+        0x023: "Ground Prox. Warning System",
+        0x024: "ACARS (724) / CMU Mark 2",
+        0x025: "Electronic Flt. Instruments",
+        0x026: "Flight Warning Computer",
+        0x027: "Microwave Landing System",
+        0x029: "ADDCS (729) and EICAS",
+        0x02A: "Thrust Management Computer",
+        0x02B: "Perf. Nav. Computer System",
+        0x02C: "Digital Fuel Gauging System",
+        0x02D: "EPR Indicator (Boeing 757)",
+        0x02E: "Land Rollout CU/Landing C & LU",
+        0x02F: "Full Authority EEC-A 069 030 Airborne Separation Assurance System",
+        0x031: "Chronometer",
+        0x032: "Pass. Entertainment Tape Reproducer",
+        0x033: "Propulsion Multiplexer (PMUX)",
+        0x034: "Fault Isolation & Detection System",
+        0x035: "TCAS",
+        0x036: "Radio Management System",
+        0x037: "Weight and Balance System",
+        0x038: "ADIRS",
+        0x039: "MCDU",
+        0x03A: "Propulsion Discrete Interface Unit",
+        0x03B: "Autopilot Buffer Unit",
+        0x03C: "Tire Pressure Monitoring System",
+        0x03D: "Airborne Vibration Monitor",
+        0x03E: "Center of Gravity Control Computer",
+        0x03F: "Full Authority EEC-B",
+        0x040: "Cockpit Printer",
+        0x041: "Satellite Data Unit",
+        0x04A: "Landing Gear Position Interface Unit",
+        0x04B: "Main Electrical System Controller",
+        0x04C: "Emergency Electrical System Controller",
+        0x04D: "Fuel Qty. Indicating System",
+        0x04E: "Fuel Qty. Indicating System",
+        0x050: "VDR",
+        0x053: "HF Data Unit",
+        0x055: "Multi-Mode Receiver (MMR)",
+        0x057: "Cockpit Voice Recorder",
+        0x05D: "Zone Controller",
+        0x05E: "Cargo Heat",
+        0x05F: "CIDS",
+        0x060: "GNSS Navigation Unit (GNU)",
+        0x061: "High-Speed Data Unit",
+        0x06A: "AMU (A320)",
+        0x06B: "Battery Charge Limiter",
+        0x06C: "Flt. Cont. Data Concentrator",
+        0x06D: "Landing Gear Prox. Control",
+        0x06E: "Brake Steering Unit",
+        0x06F: "Bleed Air",
+        0x07A: "APU Engine Control Unit",
+        0x07B: "Engine Interface Unit)",
+        0x07C: "FADEC Channel A",
+        0x07D: "FADEC Channel B",
+        0x07E: "Centralized Fault Data Interface Unit",
+        0x07F: "Fire Detection Unit",
+        0x08A: "Window Heat Computer",
+        0x08B: "Probes Heat Computer",
+        0x08C: "Avionics c-10 Cooling Computer",
+        0x08D: "Fuel Flow Indicator",
+        0x08E: "Surface Position Digitizer",
+        0x08F: "Vacuum System Controller",
+        0x0A1: "FCC Controller",
+        0x0A2: "FMC Controller",
+        0x0A3: "Thrust Rating Controller",
+        0x0A4: "IRS Controller",
+        0x0A8: "Airborne WXR Controller",
+        0x0A9: "Airborne DME Controller",
+        0x0AA: "Generator Control Unit",
+        0x0AB: "Air Supply Control & Test Unit",
+        0x0AC: "Bus Control Unit",
+        0x0AD: "ADIRS Air Data Module 0E6",
+        0x0AE: "Yaw Damper Module",
+        0x0AF: "Stabilizer Trim Module",
+        0x0B0: "Airborne ILS Controller",
+        0x0B1: "Airborne VOR Controller",
+        0x0B2: "Airborne ADF Controller",
+        0x0B6: "VHF COM Controller",
+        0x0B9: "HF/SSB System Controller",
+        0x0B8: "ATC Transponder Controller",
+        0x0BA: "Power Supply Module",
+        0x0BB: "Flap Control Unit and Flap Slat Electronics Unit",
+        0x0BC: "Fuel System Interface Card",
+        0x0BD: "Hydraulic Quantity Monitor Unit",
+        0x0BE: "Hydraulic Interface Module",
+        0x0BF: "Window Heat Control Unit",
+        0x0C2: "PVS Control Unit",
+        0x0C3: "GPWS Controller",
+        0x0C4: "A429W SDU Controller",
+        0x0C5: "EFI Controller",
+        0x0C7: "MLS Controller",
+        0x0CA: "Brake Temperature Monitor Unit",
+        0x0CB: "Autostart",
+        0x0CC: "Brake System Control Unit",
+        0x0CD: "Pack Temperature Controller",
+        0x0CE: "EICAS/EFIC Interface Unit",
+        0x0CF: "Para Visual Display Computer",
+        0x0D0: "Engine Instrument System",
+        0x0D3: "Thermal Monitoring Unit (General)",
+        0x0D5: "TCAS Control Panel",
+        0x0DA: "Prox. Switch Electronics Unit",
+        0x0DB: "APU Controller",
+        0x0DC: "Zone Temperature Controller",
+        0x0DD: "Cabin Pressure Controller",
+        0x0DE: "Windshear Computer (Sperry)",
+        0x0DF: "Equipment Cooling Card",
+        0x0E0: "Crew Rest Temp. Controller",
+        0x0EA: "Misc. Environment Control",
+        0x0EB: "Fuel Jettison Control Card",
+        0x0EC: "Advance Cabin Entertainment Serv. Sys.",
+        0x0ED: "Fuel System Controller",
+        0x0EE: "Hydraulic System Controller",
+        0x0EF: "Environmental System Controller",
+        0x0FA: "Misc. System controller",
+        0x0FB: "Anti-Skid System",
+        0x0FC: "Cabin Pressure Control Sys.",
+        0x0FD: "Air Condition Control System",
+        0x0FE: "Pneumatic Control System",
+        0x0FF: "Manifold Failure Detection System",
+        0x108: "Electronic Engine Control (EEC) Channel A",
+        0x109: "Elect Eng Control (EEC) Channel B",
+        0x10A: "Full Authority Engine Control A",
+        0x10B: "Full Authority Engine Control B",
+        0x10C: "APU Controller",
+        0x10D: "Data Loader",
+        0x10E: "Fire Detection Unit",
+        0x10F: "Auto Brake Unit",
+        0x110: "Multiplexer PES",
+        0x112: "TACAN Adapter Unit",
+        0x113: "Stall Warning Card",
+        0x114: "Fuel Unit Management System",
+        0x115: "TACAN",
+        0x116: "Eng Interface Vibration Monitoring Unit",
+        0x117: "Engine Control Unit Channel A",
+        0x118: "Engine Control Unit Channel B",
+        0x119: "Centralized Maintenance Computer",
+        0x11A: "Multi-Disk Drive Unit",
+        0x11E: "Integrated Static Probe",
+        0x120: "Multifunction Air Data Probe",
+        0x121: "15B Flight Control Unit",
+        0x122: "Ground Auxiliary Power Unit",
+        0x123: "Ground Power Control Unit",
+        0x124: "Fuel Management Computer",
+        0x125: "Center of Gravity Fuel Control Comp.",
+        0x126: "Circuit breakers Monitoring Unit",
+        0x127: "Electrical Contractor Management Unit",
+        0x128: "Hydraulic Electrical Generator Control Unit",
+        0x129: "Hydraulic System Monitoring Unit",
+        0x12A: "Cargo Bay Conditioning Card",
+        0x12B: "Predictive Windshear System Sensor",
+        0x12C: "Angle of Attack Sensor",
+        0x12D: "Logic Drive Control Computer",
+        0x12E: "Cargo Control Logic Unit",
+        0x12F: "Cargo Electronics Interface Unit",
+        0x130: "Load Management Unit (LMU) Airbus",
+        0x136: "Audio Management System",
+        0x13A: "Full Authority Engine Control (P&W)",
+        0x13B: "Audio Entertainment System (AES) Controller",
+        0x13C: "Boarding Music Machine",
+        0x13D: "Passenger In Flight Info Unit",
+        0x13E: "Video Interface Unit",
+        0x13F: "Camera Interface Unit",
+        0x140: "Supersonic Air Data Computer",
+        0x141: "Satellite RF Unit",
+        0x142: "ADS-B Link Display c-16 Processor Unit (LPDU)",
+        0x143: "Vertical/Horizontal Gyro",
+        0x144: "CDTI Display Unit",
+        0x14A: "Slide Slip Angle (SSA)",
+        0x150: "AIMS Gen. Pur. Bus #1",
+        0x151: "AIMS Gen. Pur. Bus #2",
+        0x152: "AIMS Digital Comm. Mgmt.",
+        0x153: "AIMS Gen. Pur. Bus #3",
+        0x154: "Central Maintenance Computer",
+        0x155: "AIMS EFIS Control Panel",
+        0x156: "AIMS Display Unit",
+        0x157: "AIMS Cursor Control Device",
+        0x158: "AIMS General Purpose Bus #4",
+        0x15A: "Flight Data Interface Unit",
+        0x15C: "Flight Control Primary Computer",
+        0x15D: "Flight Control Secondary Computer",
+        0x15E: "Flight Mgmt Guidance Env Comp",
+        0x160: "Special Fuel Quan. Sys.",
+        0x167: "Air Traffic Service Unit",
+        0x168: "Integ Standby Instr System",
+        0x169: "Data Link Control and Display Unit",
+        0x16A: "Display Unit",
+        0x16B: "Display Management Computer",
+        0x16C: "Head-Up Display Computer",
+        0x16D: "ECAM Control Panel",
+        0x16E: "Clock",
+        0x16F: "Cabin Interphone System",
+        0x170: "Radio Tuning Panel",
+        0x171: "Electronic Flight Bag",
+        0x17A: "Cabin Ventilation Controller",
+        0x17B: "Smoke Detection Control Unit",
+        0x17C: "Proximity Sensor Control Unit",
+        0x18A: "Audio Control Panel",
+        0x18B: "Cockpit Voice recorder",
+        0x18C: "Passenger Entertainment Sys Main MUX",
+        0x18D: "Passenger Entertainment Sys Audio Repro.",
+        0x18E: "Pre-recorded Announcement Music Repro.",
+        0x18F: "Video Control Unit (A330/A340)",
+        0x19F: "Cade Environment System",
+        0x1E2: "ADS-c-12 B LDPU Controller",
+        0x200: "Versatile Integrated Avionics Unit",
+        0x201: "Electronic Spoiler Control Unit",
+        0x202: "Brake Control Unit",
+        0x203: "Pneumatic Overheat Detection Unit",
+        0x204: "Proximity Switch Electronics Unit",
+        0x205: "APU Electronic Control Unit",
+        0x206: "Aircraft Interface Unit",
+        0x207: "Fuel Quantity Gauging Unit",
+        0x241: "High Power Amplifier",
+        0x341: "Satellite ACU c-11"
     }
 
     def __init__(self, bus_speed="low", BUS_CHANNELS=[], rules_file = r"C:\Users\mspreston\Desktop\Grad School Work\7 - Summer Semester 2024\Cybersecurity Practicum\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt"):
@@ -496,7 +743,7 @@ class arinc429_intrusion_detection_system:
             # SDI
             elif(SDI_flag and r+f"_{channel}" in self.sdis):
                 SDI_flag = False
-
+                this_sdi = r
                 bitmask = self.replace_index(8,10,bitmask,self.sdis[r])
             # data -> TODO ADD data: to rules semantics
             # TODO make data have no spaces
@@ -522,9 +769,33 @@ class arinc429_intrusion_detection_system:
                     #bitmask += 19 - len(rz)
                 else:
                     if(octal_flag != False): #Need the label
-                        # May also need to do this without the equipment ID
-                        raise ValueError(f"Label Needed in order to properly search word for given data: {r.split(':')[1]}")
-                    # TODO figure out to encode to DISC, BNR or BCD
+                        raise ValueError(f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
+                    if(SDI_flag != False): # Need the LRU for the equipment ID
+                        raise ValueError(f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
+                    #Figure out if encode to DISC, BNR or BCD
+                    encode_type = self.all_labels[label][this_sdi][0]
+                    resolution = self.all_labels[label][this_sdi][1]
+                    data = r.split(":")[1]
+                    if(encode_type == "BCD"):
+                        bitmask = self.replace_index(9,
+                                                     29,
+                                                     bitmask,
+                                                     self.BCD_digs(data, resolution))
+                    elif(encode_type == "BNR"):
+                        bitmask = self.replace_index(9,
+                                                     29,
+                                                     bitmask,
+                                                     self.BNR_encode())
+                    elif(encode_type == "DISC"):
+                        bitmask = self.replace_index(9,
+                                                     29,
+                                                     bitmask,
+                                                     self.DISC_encode())
+                    elif(encode_type == "SAL"):
+                        bitmask = self.replace_index(0,
+                                                     8,
+                                                     bitmask,
+                                                     self.SAL_encode(r))
             elif(SSM_flag):
                 try:
                     ssmThere = (int(r,2) >= 0 or int(r,2) <= 4)
@@ -613,3 +884,100 @@ class arinc429_intrusion_detection_system:
         logs_fd.close()
         #bus_channel = self.BUS_CHANNELS[channel_index]
 
+    def BCD_digs(self, value, res:float)->str:
+
+        # TODO add handling for special cases for BCD
+
+        SDI = "00"
+        SSM = "00"
+        if(value < 0):
+            SSM = "11"
+
+        digits = str(value).strip("-")
+        if(res >= 1.0): # remove the stuff after 0.000000
+            digits = digits.split(".")[0]
+        digits = digits.replace(".","")
+        digits = "0" * (5 - len(digits)) + digits
+        digits = digits[::-1]
+
+        # e.g. 06572 knots
+        # 11 - 14 -> 2
+        # 15 - 18 -> 7
+        # 19 - 22 -> 5
+        # 23 - 26 -> 6
+        # 27 - 29 -> 0
+
+        digit5 = int(digits[0])
+        dig5 = bin(digit5)[2:]
+        dig5 = "0"*(4-len(dig5)) + dig5
+        dig5 = dig5[::-1]
+
+        digit4 = int(digits[1])
+        dig4 = bin(digit4)[2:]
+        dig4 = "0"*(4-len(dig4)) + dig4
+        dig4 = dig4[::-1]
+
+        digit3 = int(digits[2])
+        dig3 = bin(digit3)[2:]
+        dig3 = "0"*(4-len(dig3)) + dig3
+        dig3 = dig3[::-1]
+
+        digit2 = int(digits[3])
+        dig2 = bin(digit2)[2:]
+        dig2 = "0"*(4-len(dig2)) + dig2
+        dig2 = dig2[::-1]
+
+        digit1 = int(digits[4])
+        dig1 = bin(digit1)[2:]
+        dig1 = "0"*(3-len(dig1)) + dig1
+        dig1 = dig1[::-1]
+
+        partial_data = SDI + dig5 + dig4 + dig3 + dig2 + dig1 + SSM
+        return(partial_data)
+
+    def BNR_encode(self):
+        pass
+
+    def DISC_encode(self):
+        pass
+
+    SALs = {
+        "CVR": 0o157,
+        "FCMC Com A340-500/600": 0o210,
+        "FCMC Mon A340-500/600": 0o211,
+        "FCMC Int A340-500/600": 0o212,
+        "HUD": 0o225,
+        "APM-MMR": 0o241,
+        "MMR": 0o242,
+        "ILS": 0o244,
+        "MLS": 0o245,
+        "AHRS": 0o246,
+        "VDR #1": 0o251,
+        "VDR #2": 0o252,
+        "VDR #3": 0o253,
+        "GPWS": 0o310,
+        "GNLU 1": 0o311,
+        "GNLU 2": 0o312,
+        "GNLU 3": 0o313,
+        "GNU 1": 0o314,
+        "GNU 2": 0o315,
+        "GNU 3": 0o316,
+        "AUTOTHROTTLE COMPUTER": 0o321,
+        "FCC 1": 0o322,
+        "FCC 2": 0o323,
+        "FCC 3": 0o324,
+        "APU": 0o325,
+        "APU CONTROLLER": 0o326,
+        "Mode Control Panel (MCP)": 0o327,
+        "FMC 3": 0o330,
+        "ATC TRANSPONDER": 0o331,
+        "DADC": 0o332,
+        "Passenger Services System (PSS) 767-300,400": 0o362,
+        "Cabin Service System (CSS) 747-400": 0o363,
+        "Audio Entertainment System (AES) Boeing": 0o364,
+        "Multicast": 0o366,
+        "Bridge": 0o367
+    }
+    def SAL_encode(self, SAL_str):
+        sal_label_chip = lru_txr()
+        return(sal_label_chip.decode(self.SALs[SAL_str]))

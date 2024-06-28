@@ -1,241 +1,238 @@
-001 Flight Control Computer
-002 Flight Management Computer
-003 Thrust Control Computer 
-004 Inertial Reference System
-005 Attitude and Heading Ref. System
-006 Air Data System
-007 Radio Altimeter
-008 Airborne Weather Radar
-009 Airborne DME
-00A FAC
-00B Global Positioning System
-00D: AIDS Data Management System
-010 Airborne ILS Receiver
-011 Airborne VOR Receiver 
-012 Airborne ADF System
-016 Airborne VHF COM
-017 DEFDARS-AIDS
-018 ATC Transponder
-019 Airborne HF/SSB System
-01A Electronic Supervisory Control
-01B Digital Slat/Flap Computer
-01D A/P & F/D Mode Control Panel 
-01E Performance Data Computer
-01F Fuel Quantity Totalizer
-020 DFS System
-023 Ground Prox. Warning System
-024 ACARS (724) / CMU Mark 2
-025 Electronic Flt. Instruments
-026 Flight Warning Computer
-027 Microwave Landing System
-029 ADDCS (729) and EICAS
-02A Thrust Management Computer
-02B Perf. Nav. Computer System
-02C Digital Fuel Gauging System
-02D EPR Indicator (Boeing 757)
-02E Land Rollout CU/Landing C & LU
-02F Full Authority EEC-A 069 030 Airborne Separation Assurance System
-031 Chronometer
-032 Pass. Entertainment Tape Reproducer
-033 Propulsion Multiplexer (PMUX)
-034 Fault Isolation & Detection System
-035 TCAS
-036 Radio Management System
-037 Weight and Balance System
-038 ADIRS
-039 MCDU
-03A Propulsion Discrete Interface Unit
-03B Autopilot Buffer Unit
-03C Tire Pressure Monitoring System
-03D Airborne Vibration Monitor
-03E Center of Gravity Control Computer
-03F Full Authority EEC-B
-03B Autopilot Buffer Unit
-040 Cockpit Printer
-041 Satellite Data Unit
-04A Landing Gear Position Interface Unit
-04B Main Electrical System Controller
-04C Emergency Electrical System Controller
-04D Fuel Qty. Indicating System
-04E Fuel Qty. Indicating System
-050 VDR
-053 HF Data Unit
-055 Multi-Mode Receiver (MMR)
-057 Cockpit Voice Recorder
-05D Zone Controller
-05E Cargo Heat
-05F CIDS
-060 GNSS Navigation Unit (GNU)
-061 High-Speed Data Unit
-06A AMU (A320)
-06B Battery Charge Limiter
-06C Flt. Cont. Data Concentrator
-06D Landing Gear Prox. Control
-06E Brake Steering Unit
-06F Bleed Air
-07A APU Engine Control Unit
-07B Engine Interface Unit)
-07C FADEC Channel A
-07D FADEC Channel B
-07E Centralized Fault Data Interface Unit
-07F Fire Detection Unit
-08A Window Heat Computer
-08B Probes Heat Computer
-08C Avionics c-10 Cooling Computer
-08D Fuel Flow Indicator
-08E Surface Position Digitizer
-08F Vacuum System Controller
-0A1 FCC Controller
-0A2 FMC Controller
-0A3 Thrust Rating Controller
-0A4 IRS Controller
-0A8 Airborne WXR Controller
-0A9 Airborne DME Controller
-0AA Generator Control Unit
-0AB Air Supply Control & Test Unit
-0AC Bus Control Unit
-0AD ADIRS Air Data Module 0E6
-0AE Yaw Damper Module
-0AF Stabilizer Trim Module
-0B0 Airborne ILS Controller
-0B1 Airborne VOR Controller
-0B2 Airborne ADF Controller
-0B6 VHF COM Controller
-0B9 HF/SSB System Controller
-0B8 ATC Transponder Controller
-0B9 HF/SSB System Controller
-0BA Power Supply Module
-0BB****** Flap Control Unit
-0BB****** Flap Slat Electronics Unit
-0BC Fuel System Interface Card
-0BD Hydraulic Quantity Monitor Unit
-0BE Hydraulic Interface Module
-0BF Window Heat Control Unit
-0C2 PVS Control Unit
-0C3 GPWS Controller
-0C4 A429W SDU Controller
-0C5 EFI Controller
-0C7 MLS Controller
-0CA Brake Temperature Monitor Unit
-0CB Autostart
-0CC Brake System Control Unit
-0CD Pack Temperature Controller
-0CE EICAS/EFIC Interface Unit
-0CF Para Visual Display Computer
-0D0 Engine Instrument System
-0D3 Thermal Monitoring Unit (General)
-0D5 TCAS Control Panel
-0DA Prox. Switch Electronics Unit
-0DB APU Controller
-0DC Zone Temperature Controller
-0DD Cabin Pressure Controller
-0DE Windshear Computer (Sperry)
-0DF Equipment Cooling Card
-0E0 Crew Rest Temp. Controller
-0EA Misc. Environment Control
-0EB Fuel Jettison Control Card
-0EC Advance Cabin Entertainment Serv. Sys.
-0ED Fuel System Controller
-0EE Hydraulic System Controller
-0EF Environmental System Controller
-0FA Misc. System controller
-0FB Anti-Skid System
-0FC Cabin Pressure Control Sys.
-0FD Air Condition Control System
-0FE Pneumatic Control System
-0FF Manifold Failure Detection System
-108 Electronic Engine Control (EEC) Channel A
-109 Elect Eng Control (EEC) Channel B
-10A Full Authority Engine Control A
-10B Full Authority Engine Control B
-10C APU Controller
-10D Data Loader
-10E Fire Detection Unit
-10F Auto Brake Unit
-110 Multiplexer PES
-112 TACAN Adapter Unit
-113 Stall Warning Card
-114 Fuel Unit Management System
-115 TACAN
-116 Eng Interface Vibration Monitoring Unit
-117 Engine Control Unit Channel A
-118 Engine Control Unit Channel B
-119 Centralized Maintenance Computer
-11A Multi-Disk Drive Unit
-11E Integrated Static Probe
-120 Multifunction Air Data Probe
-121 15B Flight Control Unit
-122 Ground Auxiliary Power Unit
-123 Ground Power Control Unit
-124 Fuel Management Computer
-125 Center of Gravity Fuel Control Comp.
-126 Circuit breakers Monitoring Unit
-127 Electrical Contractor Management Unit
-128 Hydraulic Electrical Generator Control Unit
-129 Hydraulic System Monitoring Unit
-12A Cargo Bay Conditioning Card
-12B Predictive Windshear System Sensor
-12C Angle of Attack Sensor
-12D Logic Drive Control Computer
-12E Cargo Control Logic Unit
-12F Cargo Electronics Interface Unit
-130 Load Management Unit (LMU) Airbus
-136 Audio Management System
-13A Full Authority Engine Control (P&W)
-13B Audio Entertainment System (AES) Controller
-13C Boarding Music Machine
-13D Passenger In Flight Info Unit
-13E Video Interface Unit
-13F Camera Interface Unit
-140 Supersonic Air Data Computer
-141 Satellite RF Unit
-142 ADS-B Link Display c-16 Processor Unit (LPDU)
-143 Vertical/Horizontal Gyro
-144 CDTI Display Unit
-14A Slide Slip Angle (SSA)
-150 AIMS Gen. Pur. Bus #1
-151 AIMS Gen. Pur. Bus #2
-152 AIMS Digital Comm. Mgmt.
-153 AIMS Gen. Pur. Bus #3
-154 Central Maintenance Computer
-155 AIMS EFIS Control Panel
-156 AIMS Display Unit
-157 AIMS Cursor Control Device
-158 AIMS General Purpose Bus #4
-15A Flight Data Interface Unit
-15C Flight Control Primary Computer
-15D Flight Control Secondary Computer
-15E Flight Mgmt Guidance Env Comp
-160 Special Fuel Quan. Sys.
-167 Air Traffic Service Unit
-168 Integ Standby Instr System
-169 Data Link Control and Display Unit
-16A Display Unit
-16B Display Management Computer
-16C Head-Up Display Computer
-16D ECAM Control Panel
-16E Clock
-16F Cabin Interphone System
-170 Radio Tuning Panel
-171 Electronic Flight Bag
-17A Cabin Ventilation Controller
-17B Smoke Detection Control Unit
-17C Proximity Sensor Control Unit
-18A Audio Control Panel
-18B Cockpit Voice recorder
-18C Passenger Entertainment Sys Main MUX
-18D Passenger Entertainment Sys Audio Repro.
-18E Pre-recorded Announcement Music Repro.
-18F Video Control Unit (A330/A340)
-19F Cade Environment System
-1E2 ADS-c-12 B LDPU Controller
-200 Versatile Integrated Avionics Unit
-201 Electronic Spoiler Control Unit
-202 Brake Control Unit
-203 Pneumatic Overheat Detection Unit
-204 Proximity Switch Electronics Unit
-205 APU Electronic Control Unit
-206 Aircraft Interface Unit
-207 Fuel Quantity Gauging Unit
-241 High Power Amplifier
-341 Satellite ACU c-11
+0x001: "Flight Control Computer"
+0x002: "Flight Management Computer"
+0x003: "Thrust Control Computer "
+0x004: "Inertial Reference System"
+0x005: "Attitude and Heading Ref. System"
+0x006: "Air Data System"
+0x007: "Radio Altimeter"
+0x008: "Airborne Weather Radar"
+0x009: "Airborne DME"
+0x00A: "FAC"
+0x00B: "Global Positioning System"
+0x00D: " AIDS Data Management System"
+0x010: "Airborne ILS Receiver"
+0x011: "Airborne VOR Receiver "
+0x012: "Airborne ADF System"
+0x016: "Airborne VHF COM"
+0x017: "DEFDARS-AIDS"
+0x018: "ATC Transponder"
+0x019: "Airborne HF/SSB System"
+0x01A: "Electronic Supervisory Control"
+0x01B: "Digital Slat/Flap Computer"
+0x01D: "A/P & F/D Mode Control Panel "
+0x01E: "Performance Data Computer"
+0x01F: "Fuel Quantity Totalizer"
+0x020: "DFS System"
+0x023: "Ground Prox. Warning System"
+0x024: "ACARS (724) / CMU Mark 2"
+0x025: "Electronic Flt. Instruments"
+0x026: "Flight Warning Computer"
+0x027: "Microwave Landing System"
+0x029: "ADDCS (729) and EICAS"
+0x02A: "Thrust Management Computer"
+0x02B: "Perf. Nav. Computer System"
+0x02C: "Digital Fuel Gauging System"
+0x02D: "EPR Indicator (Boeing 757)"
+0x02E: "Land Rollout CU/Landing C & LU"
+0x02F: "Full Authority EEC-A 069 030 Airborne Separation Assurance System"
+0x031: "Chronometer"
+0x032: "Pass. Entertainment Tape Reproducer"
+0x033: "Propulsion Multiplexer (PMUX)"
+0x034: "Fault Isolation & Detection System"
+0x035: "TCAS"
+0x036: "Radio Management System"
+0x037: "Weight and Balance System"
+0x038: "ADIRS"
+0x039: "MCDU"
+0x03A: "Propulsion Discrete Interface Unit"
+0x03B: "Autopilot Buffer Unit"
+0x03C: "Tire Pressure Monitoring System"
+0x03D: "Airborne Vibration Monitor"
+0x03E: "Center of Gravity Control Computer"
+0x03F: "Full Authority EEC-B"
+0x040: "Cockpit Printer"
+0x041: "Satellite Data Unit"
+0x04A: "Landing Gear Position Interface Unit"
+0x04B: "Main Electrical System Controller"
+0x04C: "Emergency Electrical System Controller"
+0x04D: "Fuel Qty. Indicating System"
+0x04E: "Fuel Qty. Indicating System"
+0x050: "VDR"
+0x053: "HF Data Unit"
+0x055: "Multi-Mode Receiver (MMR)"
+0x057: "Cockpit Voice Recorder"
+0x05D: "Zone Controller"
+0x05E: "Cargo Heat"
+0x05F: "CIDS"
+0x060: "GNSS Navigation Unit (GNU)"
+0x061: "High-Speed Data Unit"
+0x06A: "AMU (A320)"
+0x06B: "Battery Charge Limiter"
+0x06C: "Flt. Cont. Data Concentrator"
+0x06D: "Landing Gear Prox. Control"
+0x06E: "Brake Steering Unit"
+0x06F: "Bleed Air"
+0x07A: "APU Engine Control Unit"
+0x07B: "Engine Interface Unit)"
+0x07C: "FADEC Channel A"
+0x07D: "FADEC Channel B"
+0x07E: "Centralized Fault Data Interface Unit"
+0x07F: "Fire Detection Unit"
+0x08A: "Window Heat Computer"
+0x08B: "Probes Heat Computer"
+0x08C: "Avionics c-10 Cooling Computer"
+0x08D: "Fuel Flow Indicator"
+0x08E: "Surface Position Digitizer"
+0x08F: "Vacuum System Controller"
+0x0A1: "FCC Controller"
+0x0A2: "FMC Controller"
+0x0A3: "Thrust Rating Controller"
+0x0A4: "IRS Controller"
+0x0A8: "Airborne WXR Controller"
+0x0A9: "Airborne DME Controller"
+0x0AA: "Generator Control Unit"
+0x0AB: "Air Supply Control & Test Unit"
+0x0AC: "Bus Control Unit"
+0x0AD: "ADIRS Air Data Module 0E6"
+0x0AE: "Yaw Damper Module"
+0x0AF: "Stabilizer Trim Module"
+0x0B0: "Airborne ILS Controller"
+0x0B1: "Airborne VOR Controller"
+0x0B2: "Airborne ADF Controller"
+0x0B6: "VHF COM Controller"
+0x0B9: "HF/SSB System Controller"
+0x0B8: "ATC Transponder Controller"
+0x0BA: "Power Supply Module"
+0x0BB: "Flap Control Unit and Flap Slat Electronics Unit"
+0x0BC: "Fuel System Interface Card"
+0x0BD: "Hydraulic Quantity Monitor Unit"
+0x0BE: "Hydraulic Interface Module"
+0x0BF: "Window Heat Control Unit"
+0x0C2: "PVS Control Unit"
+0x0C3: "GPWS Controller"
+0x0C4: "A429W SDU Controller"
+0x0C5: "EFI Controller"
+0x0C7: "MLS Controller"
+0x0CA: "Brake Temperature Monitor Unit"
+0x0CB: "Autostart"
+0x0CC: "Brake System Control Unit"
+0x0CD: "Pack Temperature Controller"
+0x0CE: "EICAS/EFIC Interface Unit"
+0x0CF: "Para Visual Display Computer"
+0x0D0: "Engine Instrument System"
+0x0D3: "Thermal Monitoring Unit (General)"
+0x0D5: "TCAS Control Panel"
+0x0DA: "Prox. Switch Electronics Unit"
+0x0DB: "APU Controller"
+0x0DC: "Zone Temperature Controller"
+0x0DD: "Cabin Pressure Controller"
+0x0DE: "Windshear Computer (Sperry)"
+0x0DF: "Equipment Cooling Card"
+0x0E0: "Crew Rest Temp. Controller"
+0x0EA: "Misc. Environment Control"
+0x0EB: "Fuel Jettison Control Card"
+0x0EC: "Advance Cabin Entertainment Serv. Sys."
+0x0ED: "Fuel System Controller"
+0x0EE: "Hydraulic System Controller"
+0x0EF: "Environmental System Controller"
+0x0FA: "Misc. System controller"
+0x0FB: "Anti-Skid System"
+0x0FC: "Cabin Pressure Control Sys."
+0x0FD: "Air Condition Control System"
+0x0FE: "Pneumatic Control System"
+0x0FF: "Manifold Failure Detection System"
+0x108: "Electronic Engine Control (EEC) Channel A"
+0x109: "Elect Eng Control (EEC) Channel B"
+0x10A: "Full Authority Engine Control A"
+0x10B: "Full Authority Engine Control B"
+0x10C: "APU Controller"
+0x10D: "Data Loader"
+0x10E: "Fire Detection Unit"
+0x10F: "Auto Brake Unit"
+0x110: "Multiplexer PES"
+0x112: "TACAN Adapter Unit"
+0x113: "Stall Warning Card"
+0x114: "Fuel Unit Management System"
+0x115: "TACAN"
+0x116: "Eng Interface Vibration Monitoring Unit"
+0x117: "Engine Control Unit Channel A"
+0x118: "Engine Control Unit Channel B"
+0x119: "Centralized Maintenance Computer"
+0x11A: "Multi-Disk Drive Unit"
+0x11E: "Integrated Static Probe"
+0x120: "Multifunction Air Data Probe"
+0x121: "15B Flight Control Unit"
+0x122: "Ground Auxiliary Power Unit"
+0x123: "Ground Power Control Unit"
+0x124: "Fuel Management Computer"
+0x125: "Center of Gravity Fuel Control Comp."
+0x126: "Circuit breakers Monitoring Unit"
+0x127: "Electrical Contractor Management Unit"
+0x128: "Hydraulic Electrical Generator Control Unit"
+0x129: "Hydraulic System Monitoring Unit"
+0x12A: "Cargo Bay Conditioning Card"
+0x12B: "Predictive Windshear System Sensor"
+0x12C: "Angle of Attack Sensor"
+0x12D: "Logic Drive Control Computer"
+0x12E: "Cargo Control Logic Unit"
+0x12F: "Cargo Electronics Interface Unit"
+0x130: "Load Management Unit (LMU) Airbus"
+0x136: "Audio Management System"
+0x13A: "Full Authority Engine Control (P&W)"
+0x13B: "Audio Entertainment System (AES) Controller"
+0x13C: "Boarding Music Machine"
+0x13D: "Passenger In Flight Info Unit"
+0x13E: "Video Interface Unit"
+0x13F: "Camera Interface Unit"
+0x140: "Supersonic Air Data Computer"
+0x141: "Satellite RF Unit"
+0x142: "ADS-B Link Display c-16 Processor Unit (LPDU)"
+0x143: "Vertical/Horizontal Gyro"
+0x144: "CDTI Display Unit"
+0x14A: "Slide Slip Angle (SSA)"
+0x150: "AIMS Gen. Pur. Bus #1"
+0x151: "AIMS Gen. Pur. Bus #2"
+0x152: "AIMS Digital Comm. Mgmt."
+0x153: "AIMS Gen. Pur. Bus #3"
+0x154: "Central Maintenance Computer"
+0x155: "AIMS EFIS Control Panel"
+0x156: "AIMS Display Unit"
+0x157: "AIMS Cursor Control Device"
+0x158: "AIMS General Purpose Bus #4"
+0x15A: "Flight Data Interface Unit"
+0x15C: "Flight Control Primary Computer"
+0x15D: "Flight Control Secondary Computer"
+0x15E: "Flight Mgmt Guidance Env Comp"
+0x160: "Special Fuel Quan. Sys."
+0x167: "Air Traffic Service Unit"
+0x168: "Integ Standby Instr System"
+0x169: "Data Link Control and Display Unit"
+0x16A: "Display Unit"
+0x16B: "Display Management Computer"
+0x16C: "Head-Up Display Computer"
+0x16D: "ECAM Control Panel"
+0x16E: "Clock"
+0x16F: "Cabin Interphone System"
+0x170: "Radio Tuning Panel"
+0x171: "Electronic Flight Bag"
+0x17A: "Cabin Ventilation Controller"
+0x17B: "Smoke Detection Control Unit"
+0x17C: "Proximity Sensor Control Unit"
+0x18A: "Audio Control Panel"
+0x18B: "Cockpit Voice recorder"
+0x18C: "Passenger Entertainment Sys Main MUX"
+0x18D: "Passenger Entertainment Sys Audio Repro."
+0x18E: "Pre-recorded Announcement Music Repro."
+0x18F: "Video Control Unit (A330/A340)"
+0x19F: "Cade Environment System"
+0x1E2: "ADS-c-12 B LDPU Controller"
+0x200: "Versatile Integrated Avionics Unit"
+0x201: "Electronic Spoiler Control Unit"
+0x202: "Brake Control Unit"
+0x203: "Pneumatic Overheat Detection Unit"
+0x204: "Proximity Switch Electronics Unit"
+0x205: "APU Electronic Control Unit"
+0x206: "Aircraft Interface Unit"
+0x207: "Fuel Quantity Gauging Unit"
+0x241: "High Power Amplifier"
+0x341: "Satellite ACU c-11"
