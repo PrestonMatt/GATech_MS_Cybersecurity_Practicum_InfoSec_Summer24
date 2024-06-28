@@ -1,0 +1,185 @@
+A/T Engage Status
+ACMS Timing Used T1hz
+Aileron Position Lh
+Aileron Position Rh
+Airbrake Position
+Aircraft Number
+Altitude Rate
+Angle Of Attack 1
+Angle Of Attack 2
+Animal Bay Smoke
+Ap Fd Status
+APU Fire Warning
+Average Static Pressure 
+Baro Correct Altitude 
+Bleed Air All Valves
+Body Longitudinal Acceleration
+Brake Pressure Lh Green
+Brake Pressure Lh Yellow
+Brake Pressure Rh Green
+Brake Pressure Rh Yellow
+Cabin High Altitude
+Computed Airspeed 
+Control Column Position Capt
+Control Column Position F/o
+Control Wheel Position Capt
+Control Wheel Position F/o
+Core Speed 1 
+Core Speed 2 
+Core Speed 3 
+Core Speed 4 
+Corrected Angle Of Attack
+Cross Track Acceleration
+Database Id Version Char 1
+Database Id Version Char 2
+DFGS 1&2 Master
+DFGS Status 3
+Distance To Waypoint 
+Drift Angle
+Date (day)
+Date (month)
+Date (year)
+Elevator Position Left
+Elevator Position Right
+Engine ANTI ICE All Positions
+Engine Cycle 1 
+Engine Cycle 2 
+Engine Cycle 3 
+Engine Cycle 4 
+Engine Fire #1
+Engine Fire #2
+Engine Fire #3
+Engine Fire #4
+Engine Hours 1 
+Engine Hours 2 
+Engine Hours 3 
+Engine Hours 4 
+Engine Serial Number 1 
+Engine Serial Number 2 
+Engine Serial Number 3 
+Engine Serial Number 4 
+Engine Vibration 1
+Engine Vibration 2
+Engine Vibration 3
+Engine Vibration 4
+Event Marker
+Exhaust Gas Temperature 1
+Exhaust Gas Temperature 2
+Exhaust Gas Temperature 3
+Exhaust Gas Temperature 4
+Full Authority Engine Control Fail All Engines
+Full Authority Engine Control Status All Engines
+Fan Speed 1 
+Fan Speed 2 
+Fan Speed 3 
+Fan Speed 4 
+Flight Path Acceleration
+Flight Phase From ACMS
+Frame Counter
+Fuel Flow 1
+Fuel Flow 2
+Fuel Flow 3
+Fuel Flow 4
+Fuel Quantity Tank 1 Lsb
+Fuel Quantity Tank 2 Lsb
+Fuel Quantity Tank 3 Lsb
+Fuel Quantity Tank 4 Lsb
+Gears Left and Right Down Locked
+Gears Left and Right Up Locked
+Glideslope Deviation
+Ground Proximity Warning System 1-5
+Greenwich Mean Time (hour)
+Greenwich Mean Time (minute)
+Greenwich Mean Time (second)
+Ground Speed 
+Hf Keying #1
+Hf Keying #2
+ILS Frequency 
+Impact Pressure 
+Indicated Angle Of Attack
+Inertial Vertical Speed 
+Inner Wing Deice
+Lateral Acceleration
+Lateral Engage Modes
+Latitude Position 
+Localizer Deviation
+Longitude Position 
+Longitudinal Acceleration
+Low Hydraulic Pressure Green
+Low Hydraulic Pressure Yellow
+Low Oil Pressure All Engines
+Mach 
+Magnetic Heading 
+Manual Snapshot Switch
+Markers- Inner, Middle, Outer
+Master Warning
+Max Allowable Airspeed
+N1 Command 
+N1 Compensation
+N1 Target 
+Oil Pressure 1
+Oil Pressure 2
+Oil Pressure 3
+Oil Pressure 4
+Oil Temperature 1
+Oil Temperature 2
+Oil Temperature 3
+Oil Temperature 4
+Outer Wing ANTI ICE
+Pack Air Conditioning All
+Pitch Angle 
+Pitch Trim Position
+Power Lever Angle 1
+Power Lever Angle 2
+Power Lever Angle 3
+Power Lever Angle 4
+Pressure Altitude 
+Pylon Overheat All Engines
+Radio Altitude 
+Roll Angle 
+Roll Spoiler Left
+Roll Spoiler Right
+Rudder Pedal Position
+Rudder Position
+Selected Airspeed
+Selected Altitude 
+Selected Course
+Selected Heading
+Selected Mach
+Selected Vertical Speed
+Smoke Warning
+Spoiler Deploy Green
+Spoiler Deploy Yellow
+Squat Switch Left Main Gear
+Squat Switch Nose Main Gear
+Squat Switch Right Main Gear
+Static Air Temperature
+Static Pressure 
+Stick Pusher
+Stick Shaker
+Sync Word For Subframe 1
+Sync Word For Subframe 2
+Sync Word For Subframe 3
+Sync Word For Subframe 4
+T.E. Flap Position
+Tail ANTI ICE On
+Takeoff Conf Warning
+TCAS 
+Thrust Automatic On
+Thrust Mode
+Total Air Temperature
+Total Pressure 
+Track Angle Mag 
+Track Angle True 
+True Airspeed 
+True Heading 
+True/mag Heading Select
+Vertical Acceleration
+Vertical Engage Modes
+Vhf Keying #1
+Vhf Keying #2
+Vhf Keying #3
+Weight On Wheels
+Wind Direction True
+Wind Speed
+Windshear Warning
