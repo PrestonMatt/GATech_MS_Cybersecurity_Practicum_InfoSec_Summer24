@@ -29,57 +29,11 @@ Green: FAEC2 -> 10
 Green: WnBS -> 11
 
 !Rules
-# Example formats:
-# <alert/log>* <channel>* <label> <SDI> data:<data> <SSM> <P> <Time> "<message (if alert)>"
-# <log>* <channel>* <label>/<bits>* -> logs the decoded data for this channel & label.
-# <alert/log>* <channel>* <bit[index1:index2)="01..10"> "<message (if alert)>"
-# <alert/log>* <channel>* <label> <BCD/BNR/DISC> "<message (if alert)>"
-
-# Some information:
-# * = required field
-
-# Labels must be in octal format 0oXXX since some of the data is the same for different words!
-# E.G. ACMS Information is for both 0o062 and 0o063
-
-# bit[index1:index2)="10..." option must have indices be integers in [1,33] (length of a word)
-# AND the difference between must match the length of the given string
-# E.G. bit[5:10)="11111" gets bits 5, 6, 7, 8, and 9.
-# bit[20:33)="1011010010110" gets bits 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, and 32
-
-# <SDI> = human-readable name for that channel.
-# E.G. in examples above, Orange: ADIRU -> 11 would be ADIRU and not 11
-
-# SSM must be one of the following options: 00, 01, 10 or 11
-
-# Parity bit <P> is either C for correct or I for incorrect
-
-# Time is an option that prepends the UTC time to the front of the log/alert
-# E.G. <UTC Time recording>:"<message (if any)>"
-# OR
-# <UTC Time recording>:0000...1001 / <UTC Time recording>:<human-readable data point>
-# Either the line will have 'time' in it before the message or it will not have it.
-
-# If alerting / logging at the same time, log can only log the bits version and not the human-readable
-
-# Examples (REPLACE THIS SECTION HERE WITH YOUR OWN RULES):
-# Alert on if there is a word sent through the Blue channel
 alert Blue "Blue bus has a word."
-# Alert on any latitude words sent.
 alert Blue 0o010 "Latitude word sent"
-# Log all the longitudinal data in human-readable format
 log Blue 0o011
-# Log the word-bits that were sent on the Blue channel
 log Blue bits
-# Alert and log on this particular word in the Orange Channel
-# So logs the full bit-string representation of this word into Logs.txt
-# Alerts on 6000 knots for ground speed, with correct parity as message of "Plane's speed is 6000 Knots"
-# SSM = 00
-alert Blue log 0o012 ADIRU 6000 00 C "Plane's speed is 6000 Knots"
-# Alerts on any word containing alternate bits as the data section in the purple bus.
-alert Purple bits[11:29)=0101010101010101 "Funny Pattern!"
-# Alerts on any word with that particular label that is BCD as opposed to BNR
-# For this label there are 6 different things it could be with 5 encoded as BNR and 1 as BCD
+alert Blue log 0o012 ADIRU data:6000 00 C "Plane's speed is 6000 Knots"
+alert Purple bits[11:29)=11111111111111111 "Funny Pattern!"
 alert Purple 0o062 BCD "Tire Loading (Left Wing Main) Word!"
-# Same as above, but just prepends time to the logged alert
 alert Purple 0o062 BCD time "Tire Loading (Left Wing Main) Word!"
-# etc

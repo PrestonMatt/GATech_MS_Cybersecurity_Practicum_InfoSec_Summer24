@@ -76,7 +76,7 @@ log Blue bits
 # SSM = 00
 alert Blue log 0o012 ADIRU data:6000 00 C "Plane's speed is 6000 Knots"
 # Alerts on any word containing alternate bits as the data section in the purple bus.
-alert Purple bits[11:29)=0101010101010101 "Funny Pattern!"
+alert Purple bits[11:29)=01010101010101010 "Funny Pattern!"
 # Alerts on any word with that particular label that is BCD as opposed to BNR
 # For this label there are 6 different things it could be with 5 encoded as BNR and 1 as BCD
 alert Purple 0o062 BCD "Tire Loading (Left Wing Main) Word!"

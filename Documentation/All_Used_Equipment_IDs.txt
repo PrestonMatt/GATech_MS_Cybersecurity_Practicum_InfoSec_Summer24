@@ -1,0 +1,19 @@
+001 Flight Control Computer
+002 Flight Management Computer
+003 Thrust Control Computer 
+004 Inertial Reference System
+005 Attitude and Heading Ref. System
+006 Air Data System
+007 Radio Altimeter
+008 Airborne Weather Radar
+009 Airborne DME
+00A FAC
+00B Global Positioning System
+
+03C Tire Pressure Monitoring System
+03D Airborne Vibration Monitor
+03E Center of Gravity Control Computer
+03F Full Authority EEC-B
+03B Autopilot Buffer Unit
+040 Cockpit Printer
+041 Satellite Data Unit

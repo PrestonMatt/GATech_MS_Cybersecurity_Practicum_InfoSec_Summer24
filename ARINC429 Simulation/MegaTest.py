@@ -4025,7 +4025,7 @@ def test_rules_default():
                      ('log', 'Blue', '1001000000000000000000000000000',None,False,''),
                      ('log', 'Blue', '0000000000000000000000000000000',None,False,''),
                      ('alert','Blue','0101000000000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
-                     ('alert','Purple','000000000001010101010101010000',None,False,'Funny Pattern!'),
+                     ('alert','Purple','0000000000111111111111111110000',None,False,'Funny Pattern!'),
                      ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!'),
                      ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!')])
 
