@@ -714,6 +714,14 @@ class arinc429_intrusion_detection_system:
         else:
             alert_log = rule[0]
 
+        # remove the message from the rule list
+        cnt = 0
+        for item in rule:
+            cnt += 1
+            if(item.__contains__('"')):
+                # message start
+                rule = rule[:cnt]
+
         if(not rule[1] in self.get_channelnames()):
             print(f"Problem with rule: {line}")
             raise ValueError("Rule must delineate between Channels.")
@@ -721,7 +729,7 @@ class arinc429_intrusion_detection_system:
             channel = rule[1]
 
         rulez = Queue()
-        [rulez.put(rule[i]) for i in range(1,len(rule))]
+        [rulez.put(rule[i]) for i in range(2,len(rule))]
 
         octal_flag = True
         SDI_flag = True
@@ -732,7 +740,7 @@ class arinc429_intrusion_detection_system:
         #message_flag = True
 
         while(rulez.qsize() > 0):
-            r = rulez.get()
+            r = rulez.get().replace("\n","")
             # octal
             if(r.__contains__("0o") and octal_flag):
                 octal_flag = False
@@ -744,13 +752,11 @@ class arinc429_intrusion_detection_system:
             elif(SDI_flag and r+f"_{channel}" in self.sdis):
                 SDI_flag = False
                 this_sdi = r
-                bitmask = self.replace_index(8,10,bitmask,self.sdis[r])
-            # data -> TODO ADD data: to rules semantics
-            # TODO make data have no spaces
+                bitmask = self.replace_index(8,10,bitmask,self.sdis[r+f"_{channel}"])
+            # data -> TODO ADD data: to rules semantics in example
             elif(data_flag and r.__contains__("bits[") or r.__contains__("data:")):
                 data_flag = False
                 if(r.__contains__("bits[")):
-                    # TODO figure out what to do when this contradicts the label/sdi
                     rz = r.split("=")[1].replace('"','')
                     index1 = int(r.split("[")[1].split(":")[0])
                     index2 = int(r.split(":")[1].split(")")[0])
@@ -758,6 +764,7 @@ class arinc429_intrusion_detection_system:
                         print(f"Expected bitmask of length {(index2-1)-index1}, got {len(rz)}")
                         raise ValueError("Bit String to look for does not match length!")
                     cnt = 0
+                    # Check if this contradicts the label/sdi
                     for char in bitmask[index1-1:index2]:
                         try:
                             if(char == "1" and rz[cnt] != char):
@@ -767,14 +774,16 @@ class arinc429_intrusion_detection_system:
                             break
                     bitmask = self.replace_index(index1-1,index2-2,bitmask,rz)
                     #bitmask += 19 - len(rz)
-                else:
+                elif(r.__contains__("data:")):
                     if(octal_flag != False): #Need the label
                         raise ValueError(f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
                     if(SDI_flag != False): # Need the LRU for the equipment ID
                         raise ValueError(f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
                     #Figure out if encode to DISC, BNR or BCD
-                    encode_type = self.all_labels[label][this_sdi][0]
-                    resolution = self.all_labels[label][this_sdi][1]
+                    #TODO Flip this dict: equip IDs
+                    equipID = self.equip_ids[this_sdi]
+                    encode_type = self.all_labels[int(label, 2)][equipID][0]
+                    resolution = self.all_labels[int(label, 2)][equipID][1]
                     data = r.split(":")[1]
                     if(encode_type == "BCD"):
                         bitmask = self.replace_index(9,

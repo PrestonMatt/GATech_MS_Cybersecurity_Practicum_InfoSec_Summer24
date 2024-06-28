@@ -17,7 +17,7 @@ Green: FMC -> RWnBS
 
 !SDI
 # Do not identify any TX LRUs SDI here.
-Orange: ADIRU -> 11
+Orange: ADIRS -> 11
 Blue: FMC -> 11
 Purple: RMS -> 00
 Purple: FAEC1 -> 01
@@ -33,7 +33,7 @@ alert Blue "Blue bus has a word."
 alert Blue 0o010 "Latitude word sent"
 log Blue 0o011
 log Blue bits
-alert Blue log 0o012 ADIRU data:6000 00 C "Plane's speed is 6000 Knots"
+alert Orange log 0o012 ADIRS data:6000 00 C "Plane's speed is 6000 Knots"
 alert Purple bits[11:29)=11111111111111111 "Funny Pattern!"
 alert Purple 0o062 BCD "Tire Loading (Left Wing Main) Word!"
 alert Purple 0o062 BCD time "Tire Loading (Left Wing Main) Word!"
