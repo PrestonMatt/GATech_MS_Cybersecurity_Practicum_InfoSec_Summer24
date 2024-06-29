@@ -12,7 +12,6 @@ class weight_and_balance_system:
     applicable_labels_BCD = {
         0o052: 'Longitude Zero Fuel CG', #
         0o056: 'Gross Weight (KG)', #
-        0o052: 'Longitude Zero Fuel CG', #
         0o060: 'Tire Loading (Left Body Main)', #
         0o061: 'Tire Loading (Right Body Main)', #
         0o062: 'Tire Loading (Left Wing Main)', #

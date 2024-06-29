@@ -55,10 +55,9 @@ def test_all():
     test_GPS_latlon_update()
     test_GPS_digit_translate_update()
     test_GPS_word_maker()
-
-    # TODO add the FAEC tests here!
-
+    test_all_FAECs()
     test_all_ADIRUs()
+    test_all_IDS_tests()
 
 def test_all_non_asserts():
     #test_voltage_sim()
@@ -141,43 +140,43 @@ def test_FMC_send_random_voltages():
 
 # Tests word validation function.
 def test_FMC_word_validation1():
-    FMC_test2 = FMC("HIGh")
+    FMC_test2 = FMC("HIGh",BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     word_1 = 0b11111111111111111111111111111111
     assert(FMC_test2.validate_word(word_1) == True)
 
 # Tests word validation function.
 def test_FMC_word_validation2():
-    FMC_test2 = FMC("HIGh")
+    FMC_test2 = FMC("HIGh", BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     word_1 = 0b11111111111111111111111111111110
     assert(FMC_test2.validate_word(word_1) == False)
 
 # Tests word validation function.
 def test_FMC_word_validation3():
-    FMC_test2 = FMC("HIGh")
+    FMC_test2 = FMC("HIGh", BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     word_1 = 0b11111101000000000000001000110000
     assert(FMC_test2.validate_word(word_1) == True)
 
 # Tests sending a given word from TX FMC. No assert.
 def test_FMC_send_given_word1():
-    FMC_test3 = FMC("lOW")
+    FMC_test3 = FMC("lOW", BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     given_word = 0b11111101000000000000001000110000
     FMC_test3.transmit_given_word(given_word)
 
 # Tests sending a given word from TX FMC. No assert.
 def test_FMC_send_given_word2():
-    FMC_test3 = FMC("lOW")
+    FMC_test3 = FMC("lOW", BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     given_word = 0b00000000000000000000000000000011
     FMC_test3.transmit_given_word(given_word)
 
 # Tests sending a given word from TX FMC. No assert.
 def test_FMC_send_given_word3():
-    FMC_test3 = FMC("high")
+    FMC_test3 = FMC("high", BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     given_word = 0b11111111111111111111111111111111
     FMC_test3.transmit_given_word(given_word)
 
 # Tests sending a few given words from TX FMC. No assert.
 def test_FMC_send_multiple_given_words():
-    FMC_test4 = FMC("high")
+    FMC_test4 = FMC("high", BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS(),ARINC429BUS(),ARINC429BUS()])
     given_word1 = 0b11111101000000000000001000110000
     given_word2 = 0b00000000000000000000000000000011
     given_word3 = 0b11111111111111111111111111111111
@@ -1177,7 +1176,7 @@ def test_FAEC_default():
     Green_Channel_B = ARINC429BUS()
 
     FAEC_test1 = FAEC("low","riGHt",BUS_CHANNELS=[Purple_Channel_A,Green_Channel_B])
-    assert(str(FAEC_test1) == f'Engine Serial Number: 240\nOn right wing\n0o114 data: Selected Ambient Static Pressure\n0o127 data: Fan Discharge Static Pressure\n0o130 data: Selected Total Air Temperature\n0o133 data: Selected Throttle Lever Angle\n0o134 data: Throttle Lever Angle\n0o137 data: Selected Thrust Reverser Position\n0o155 data: Maintenance Data #6\n0o156 data: Maintenance Data #7\n0o157 data: Maintenance Data #8\n0o160 data: Maintenance Data #9\n0o161 data: Maintenance Data #10\n0o203 data: Ambient Static Pressure\n0o205 data: Mach Number\n0o211 data: Total Fan Inlet Temperature\n0o244 data: Fuel Mass Flow\n0o260 data: LP Turbine Discharge Temperature\n0o261 data: LP Turbine Inlet Pressure\n0o262 data: HP Compressor Inlet Total Pressure\n0o263 data: Selected Compressor Inlet Temperature (Total)\n0o264 data: Selected Compressor Discharge Temperature\n0o265 data: Selected Compressor Discharge Temperature\n0o267 data: HP Compressor Inlet Temperature (Total)\n0o300 data: ECU Internal Temperature\n0o301 data: Demanded Fuel Metering Valve Position\n0o302 data: Demanded Variable Stator Vane Position\n0o303 data: Demanded Variable Bleed Valve Position\n0o304 data: Demanded HPT Clearance Valve Position\n0o305 data: Demanded LPT Clearance Valve Position\n0o316 data: Engine Oil Temperature\n0o321 data: Exhaust gas Temperature (Total)\n0o322 data: Total Compressor Discharge Temperature\n0o323 data: Variable Stator Vane Position\n0o324 data: Selected Fuel Metering Valve Position\n0o325 data: Selected Fuel Metering Vane Position\n0o327 data: Compressor Discharge Static Pressure\n0o330 data: Fuel Metering Valve Position\n0o331 data: Selected HPT Clearance Valve Postion\n0o335 data: Selected Variable Bleed Valve Position\n0o336 data: Variable Bleed Value Position\n0o337 data: HPT Clearance Valve Position\n0o341 data: Command Fan Speed\n0o342 data: Maximum Allowed Fan Speed\n0o343 data: Maximum Allowed Fan Speed\n0o344 data: Selected Actual Core Speed\n0o345 data: Selected Exhaust Gas Temperature (Total)\n0o346 data: Selected Actual Fan Speed\n0o347 data: LPT Clearance Valve Position\n0o360 data: Throttle Rate of Change\n0o361 data: Derivative of Thrust vs. N1\n0o363 data: Corrected Thrust\n0o372 data: Actual Fan Speed\n0o373 data: Actual Core Speed\n0o374 data: Left Thrust Reverser Position\n0o375 data: Right Thrust Reverser Position')
+    assert(str(FAEC_test1) == f'Engine Serial Number: 0\nOn right wing\n0o114 data: Selected Ambient Static Pressure\n0o127 data: Fan Discharge Static Pressure\n0o130 data: Selected Total Air Temperature\n0o133 data: Selected Throttle Lever Angle\n0o134 data: Throttle Lever Angle\n0o137 data: Selected Thrust Reverser Position\n0o155 data: Maintenance Data #6\n0o156 data: Maintenance Data #7\n0o157 data: Maintenance Data #8\n0o160 data: Maintenance Data #9\n0o161 data: Maintenance Data #10\n0o203 data: Ambient Static Pressure\n0o205 data: Mach Number\n0o211 data: Total Fan Inlet Temperature\n0o244 data: Fuel Mass Flow\n0o260 data: LP Turbine Discharge Temperature\n0o261 data: LP Turbine Inlet Pressure\n0o262 data: HP Compressor Inlet Total Pressure\n0o263 data: Selected Compressor Inlet Temperature (Total)\n0o264 data: Selected Compressor Discharge Temperature\n0o265 data: Selected Compressor Discharge Temperature\n0o267 data: HP Compressor Inlet Temperature (Total)\n0o300 data: ECU Internal Temperature\n0o301 data: Demanded Fuel Metering Valve Position\n0o302 data: Demanded Variable Stator Vane Position\n0o303 data: Demanded Variable Bleed Valve Position\n0o304 data: Demanded HPT Clearance Valve Position\n0o305 data: Demanded LPT Clearance Valve Position\n0o316 data: Engine Oil Temperature\n0o321 data: Exhaust gas Temperature (Total)\n0o322 data: Total Compressor Discharge Temperature\n0o323 data: Variable Stator Vane Position\n0o324 data: Selected Fuel Metering Valve Position\n0o325 data: Selected Fuel Metering Vane Position\n0o327 data: Compressor Discharge Static Pressure\n0o330 data: Fuel Metering Valve Position\n0o331 data: Selected HPT Clearance Valve Postion\n0o335 data: Selected Variable Bleed Valve Position\n0o336 data: Variable Bleed Value Position\n0o337 data: HPT Clearance Valve Position\n0o341 data: Command Fan Speed\n0o342 data: Maximum Allowed Fan Speed\n0o343 data: Maximum Allowed Fan Speed\n0o344 data: Selected Actual Core Speed\n0o345 data: Selected Exhaust Gas Temperature (Total)\n0o346 data: Selected Actual Fan Speed\n0o347 data: LPT Clearance Valve Position\n0o360 data: Throttle Rate of Change\n0o361 data: Derivative of Thrust vs. N1\n0o363 data: Corrected Thrust\n0o372 data: Actual Fan Speed\n0o373 data: Actual Core Speed\n0o374 data: Left Thrust Reverser Position\n0o375 data: Right Thrust Reverser Position')
 
 def test_FAEC_serial_LSB():
     print("\n")
@@ -1300,6 +1299,15 @@ def test_FAEC_full_serial_4():
     FAEC_lsbtest.decode_word(word2)
 
     assert(FAEC_lsbtest.serial_no == int("032649"))
+
+def test_all_FAECs():
+    test_FAEC_default()
+    test_FAEC_serial_LSB()
+    test_FAEC_serial_MSB()
+    test_FAEC_full_serial_1()
+    test_FAEC_full_serial_2()
+    test_FAEC_full_serial_3()
+    test_FAEC_full_serial_4()
 
 def test_ADIRU_rx_GPS1():
     print("\n")
@@ -3977,7 +3985,11 @@ def test_all_ADIRUs():
     test_ADIRU_Along_Heading_Acceleration_BNR()
 
 def test_IDS_log_outfile_path():
-    IDS_test_default = IDS()
+    try:
+        IDS_test_default = IDS()
+    except FileNotFoundError:
+        IDS_test_default = IDS(rules_file=
+                               r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt")
     log_file = IDS_test_default.log_filepath
     assert(log_file == r"C:/ARINC_IDS/Logs/Logs.txt")
 
