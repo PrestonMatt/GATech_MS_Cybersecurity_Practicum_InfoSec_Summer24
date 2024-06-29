@@ -1,0 +1,34 @@
+!Outfiles
+#Default path is C:/ARINC_IDS/ or ./home/ARINC_IDS/
+alerts = C:/ARINC_IDS/Alerts/Alerts.txt
+logs = C:/ARINC_IDS/Logs/Logs.txt
+
+!Channels
+Orange: GPS -> ADIRU
+Blue: ADIRU -> FMC
+Purple: FMC -> RMS
+Purple: FMC -> FAEC1
+Purple: FMC -> FAEC2
+Purple: FMC -> WnBS
+Green: FMC -> RMS
+Green: FMC -> FAEC1
+Green: FMC -> FAEC2
+Green: FMC -> RWnBS
+
+!SDI
+# Do not identify any TX LRUs SDI here.
+Orange: ADIRS -> 11
+Blue: FMC -> 11
+Purple: RMS -> 00
+Purple: FAEC1 -> 01
+Purple: FAEC2 -> 10
+Purple: WnBS -> 11
+Green: RMS -> 00
+Green: FAEC1 -> 01
+Green: FAEC2 -> 10
+Green: WnBS -> 11
+
+!Rules
+# Looking for the encoding type of BCD yet there is no label, so it cannot.
+# This should throw an error.
+alert Purple Encoding:BCD "Tire Loading (Left Wing Main) Word!"

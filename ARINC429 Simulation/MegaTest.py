@@ -4101,6 +4101,81 @@ def test_rules_exception4():
     assert(str(ptE.value) ==
            "Bit mask contradicts other flags!!")
 
+def test_rules_exception5():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_bitsBoundsError_syntax_error.txt"
+    index1 = 10
+    index2 = 7
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           f"Index bounds mismatched. Index 1: {index1} cannot be greater than or equal to Index 2: {index2}.")
+
+def test_rules_exception6():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_bitsOutOfBoundsError_syntax_error.txt"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           "Bits mask out of bounds. Indices must be between 1 and 31, with Index 1 being strictly greater than Index 2.")
+
+def test_rules_exception7():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_dataNoLabel1_syntax_error.txt"
+    r = "data:6000"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
+
+def test_rules_exception8():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_dataNoLabel2_syntax_error.txt"
+    r = "data:6000"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
+
+def test_rules_exception9():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_dataNaN_syntax_error.txt"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           "Data given to check is not a number!")
+
+def test_rules_exception10():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_dataNoLabel3_syntax_error.txt"
+    r = "Encoding:BCD"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
+
+def test_rules_exception11():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_dataMismatchSSM_syntax_error.txt"
+    with pytest.raises(TypeError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           "Data sign does not match SSM!")
+
 def test_all_IDS_tests():
     test_IDS_log_outfile_path()
     test_IDS_alert_outfile_path()
@@ -4110,7 +4185,14 @@ def test_all_IDS_tests():
     test_rules_exception1()
     test_rules_exception2()
     test_rules_exception3()
-
+    test_rules_exception4()
+    test_rules_exception5()
+    test_rules_exception6()
+    test_rules_exception7()
+    test_rules_exception8()
+    test_rules_exception9()
+    test_rules_exception10()
+    test_rules_exception11()
 
 if __name__ == "__main__":
     #test_all()

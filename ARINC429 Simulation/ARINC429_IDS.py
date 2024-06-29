@@ -1150,7 +1150,7 @@ class arinc429_intrusion_detection_system:
                         raise ValueError(f"Index bounds mismatched. Index 1: {index1} cannot be greater than or equal to Index 2: {index2}.")
                     if( (index1 < 1 or index1 > 30)
                             or (index2 < 2 or index2 > 31) ):
-                        raise ValueError("Bits mask out of bounds")
+                        raise ValueError("Bits mask out of bounds. Indices must be between 1 and 31, with Index 1 being strictly greater than Index 2.")
 
                     if((index2-1)-index1 != len(rz)):
                         print(f"Expected bitmask of length {(index2-1)-index1}, got {len(rz)}")
@@ -1215,12 +1215,14 @@ class arinc429_intrusion_detection_system:
             elif(SSM_flag and len(r) == 2
                  and (r == "00" or r == "01" or r == "10" or r == "11")):
                 try:
+                    # This could raise a value error.
                     ssmThere = (int(r,2) >= 0 or int(r,2) <= 4)
                     if(ssmThere):
                         if(data != None
                                 and ( (data < 0.0 and not r.__contains__("1")) # SSM must have 1 to make it negative
-                                     or (data >= 0.0 and r.__contains__("00")) ) ): # Positive must match 00.
-                            raise ValueError("Data sign does not match SSM!")
+                                     or (data >= 0.0 and not r.__contains__("00")) ) ): # Positive must match 00.
+                            #print("\n\nTEST TEST TEST TEST TEST TEST")
+                            raise TypeError("Data sign does not match SSM!")
                         bitmask = self.replace_index(29,31,bitmask,r)
                         SSM_flag = False
                 except ValueError:
