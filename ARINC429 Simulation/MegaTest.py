@@ -4053,7 +4053,7 @@ def test_rules_default():
                      ('log', 'Blue', '1001000000000000000000000000000',None,False,''),
                      ('log', 'Blue', '0000000000000000000000000000000',None,False,''),
                     # Label -> 0o012 = 01010000, ADIRS=11, 6000 = 000...1100
-                     ('alert','Orange','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
+                     ('alert/log','Orange','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
                      ('alert','Purple','0000000000111111111111111110000',None,False,'Funny Pattern!'),
                      ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!'),
                      ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!')])

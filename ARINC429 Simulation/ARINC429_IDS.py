@@ -1175,17 +1175,17 @@ class arinc429_intrusion_detection_system:
                     except ValueError:
                         raise ValueError("Data given to check is not a number!")
                     if(encode_type == "BCD"):
-                        bitmask = self.replace_index(9,
+                        bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.BCD_digs(data, resolution))
                     elif(encode_type == "BNR"):
-                        bitmask = self.replace_index(9,
+                        bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.BNR_encode())
                     elif(encode_type == "DISC"):
-                        bitmask = self.replace_index(9,
+                        bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.DISC_encode())
