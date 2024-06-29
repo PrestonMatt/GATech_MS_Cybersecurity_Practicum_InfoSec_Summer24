@@ -1143,18 +1143,30 @@ class arinc429_intrusion_detection_system:
                     rz = r.split("=")[1].replace('"','')
                     index1 = int(r.split("[")[1].split(":")[0])
                     index2 = int(r.split(":")[1].split(")")[0])
+
+                    # Check if index 1 and 2 are valid, i.e. they have to be between 1 and 31
+                    # and index 1 must be greater than index 2
+                    if(index1 >= index2):
+                        raise ValueError(f"Index bounds mismatched. Index 1: {index1} cannot be greater than or equal to Index 2: {index2}.")
+                    if( (index1 < 1 or index1 > 30)
+                            or (index2 < 2 or index2 > 31) ):
+                        raise ValueError("Bits mask out of bounds")
+
                     if((index2-1)-index1 != len(rz)):
                         print(f"Expected bitmask of length {(index2-1)-index1}, got {len(rz)}")
                         raise ValueError("Bit String to look for does not match length!")
                     cnt = 0
                     # Check if this contradicts the label/sdi
-                    for char in bitmask[index1-1:index2]:
-                        try:
-                            if(char == "1" and rz[cnt] != char):
-                                raise ValueError("Bit mask contradicts other flags!!")
-                            cnt += 1
-                        except IndexError: # reached past the bit mask.
-                            break
+                    bitmask_portion = bitmask[index1-1:index2-2]
+                    if(int(bitmask_portion,3) & int(rz,2) != int(rz,2) and int(bitmask_portion,2) != 0):
+                        raise ValueError("Bit mask contradicts other flags!!")
+                    #for char in bitmask_portion:
+                    #    try:
+                    #        if(char == "1" and rz[cnt] != char):
+                    #            raise ValueError("Bit mask contradicts other flags!!")
+                    #        cnt += 1
+                    #    except IndexError: # reached past the bit mask.
+                    #        break
                     bitmask = self.replace_index(index1-1,index2-2,bitmask,rz)
                     #bitmask += 19 - len(rz)
                 elif(r.__contains__("data:")):

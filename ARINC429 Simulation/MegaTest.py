@@ -4070,6 +4070,37 @@ def test_rules_exception1():
     assert(str(ptE.value) ==
            'Rule must delineate between Alerting or Logging.')
 
+def test_rules_exception2():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_channel_syntax_error.txt"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+        #rulez = IDS_test_default.rules
+    assert(str(ptE.value) ==
+           "Rule must delineate between Channels.")
+
+def test_rules_exception3():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_bitstring_syntax_error.txt"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           "Bit String to look for does not match length!")
+
+def test_rules_exception4():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_bitsMismatch_syntax_error.txt"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+    assert(str(ptE.value) ==
+           "Bit mask contradicts other flags!!")
+
 def test_all_IDS_tests():
     test_IDS_log_outfile_path()
     test_IDS_alert_outfile_path()
@@ -4077,6 +4108,8 @@ def test_all_IDS_tests():
     test_IDS_SDI_masks()
     test_rules_default()
     test_rules_exception1()
+    test_rules_exception2()
+    test_rules_exception3()
 
 
 if __name__ == "__main__":
