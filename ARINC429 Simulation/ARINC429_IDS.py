@@ -4,8 +4,8 @@ from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from time import sleep, time
 from queue import Queue
 
-class arinc429_intrusion_detection_system:
 
+class arinc429_intrusion_detection_system:
     all_labels = {
         # Format:
         # Label 1 in octal: {Equipment ID 1 in Hex: [BCD/BNR/DISC/SAL, resolution, (range)],
@@ -104,180 +104,239 @@ class arinc429_intrusion_detection_system:
                 0x04d: ["BNR", 100.0, (0.0, 204700.0), 11],
                 0x0a1: ["BCD", 1.0, (0.0, 50000.0)]},
 
-        0o26: {0x003: ["BCD", 1.0, (30.0, 450.0)],
-               0x020: ["BNR", 1.0, (30.0, 450.0), 3], # This has a typo in the spec doc. Best guess.
-               0x0a1: ["BCD", 1.0, (30.0, 450.0)]},
+        0o026: {0x003: ["BCD", 1.0, (30.0, 450.0)],
+                0x020: ["BNR", 1.0, (30.0, 450.0), 3],  # This has a typo in the spec doc. Best guess.
+                0x0a1: ["BCD", 1.0, (30.0, 450.0)]},
 
-        0o27: {0x002: ["BCD", 1.0, (0.0, 359.0)],
-               0x011: ["BCD", 1.0, (0.0, 359.0)],
-               0x020: ["BCD", 1.0, (0.0, 359.0)],
-               0x04d: ["BCD", 1.0, (0.0, 359.0)],
-               0x056: ["BCD", 1.0, (0.0, 359.0)],
-               0x060: ["BCD", 1.0, (0.0, 359.0)],
-               0x0a1: ["BCD", 1.0, (0.0, 359.0)],
-               0x0b1: ["BCD", 1.0, (0.0, 359.0)]},
+        0o027: {0x002: ["BCD", 1.0, (0.0, 359.0)],
+                0x011: ["BCD", 1.0, (0.0, 359.0)],
+                0x020: ["BCD", 1.0, (0.0, 359.0)],
+                0x04d: ["BCD", 1.0, (0.0, 359.0)],
+                0x056: ["BCD", 1.0, (0.0, 359.0)],
+                0x060: ["BCD", 1.0, (0.0, 359.0)],
+                0x0a1: ["BCD", 1.0, (0.0, 359.0)],
+                0x0b1: ["BCD", 1.0, (0.0, 359.0)]},
 
-        0o30: {0x020: ["BCD", 0.001, (0.0, 79.999)],
-               0x024: ["BCD", 0.001, (0.0, 79.999)],
-               0x04d: ["BCD", 1.0, (0.0, 79999.0)],
-               0x0b6: ["BCD", 0.001, (0.0, 79.999)]},
+        0o030: {0x020: ["BCD", 0.001, (0.0, 79.999)],
+                0x024: ["BCD", 0.001, (0.0, 79.999)],
+                0x04d: ["BCD", 1.0, (0.0, 79999.0)],
+                0x0b6: ["BCD", 0.001, (0.0, 79.999)]},
 
-        0o31: {0x020: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x0b8: ["BCD", 0.01, (0.0, 79.99)]}, # DISC but drop the first digit (base 10)
+        0o031: {0x020: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x0b8: ["BCD", 0.01, (0.0, 79.99)]},  # DISC but drop the first digit (base 10)
 
-        0o32: {0x012: ["BCD", 1.0, (0.0, 7999.0)], # DISC but drop the first digit (base 10)
-               0x020: ["BCD", 1.0, (0.0, 7999.0)], # DISC but drop the first digit (base 10)
-               0x0b2: ["BCD", 1.0, (0.0, 7999.0)]}, # DISC but drop the first digit (base 10)
+        0o032: {0x012: ["BCD", 1.0, (0.0, 7999.0)],  # DISC but drop the first digit (base 10)
+                0x020: ["BCD", 1.0, (0.0, 7999.0)],  # DISC but drop the first digit (base 10)
+                0x0b2: ["BCD", 1.0, (0.0, 7999.0)]},  # DISC but drop the first digit (base 10)
 
-        0o33: {0x002: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x010: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x020: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x055: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x056: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x060: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x0b0: ["BCD", 0.01, (0.0, 79.99)]}, # DISC but drop the first digit (base 10)
+        0o033: {0x002: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x010: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x020: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x055: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x056: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x060: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x0b0: ["BCD", 0.01, (0.0, 79.99)]},  # DISC but drop the first digit (base 10)
 
-        0o34: {0x002: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x006: ["BCD", 0.1, (745.0, 1050.0)],
-               0x011: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x020: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x025: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x056: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x060: ["BCD", 0.01, (0.0, 79.99)], # DISC but drop the first digit (base 10)
-               0x0b0: ["BCD", 0.01, (0.0, 79.99)]}, # DISC but drop the first digit (base 10)
+        0o034: {0x002: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x006: ["BCD", 0.1, (745.0, 1050.0)],
+                0x011: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x020: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x025: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x056: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x060: ["BCD", 0.01, (0.0, 79.99)],  # DISC but drop the first digit (base 10)
+                0x0b0: ["BCD", 0.01, (0.0, 79.99)]},  # DISC but drop the first digit (base 10)
 
-        0o35: {0x002: ["BCD", 0.1, (0.0, 39.9)],
-               0x006: ["BCD", 0.001, (22.0, 31.0)],
-               0x009: ["BCD", 0.1, (0.0, 39.9)],
-               0x020: ["BCD", 0.1, (0.0, 39.9)],
-               0x025: ["BCD", 0.1, (0.0, 39.9)],
-               0x055: ["BCD", 0.05, (108.0, 159.9)],
-               0x056: ["BCD", 0.1, (0.0, 39.9)],
-               0x060: ["BCD", 0.1, (0.0, 39.9)],
-               0x0a9: ["BCD", 0.1, (0.0, 39.9)],},
+        0o035: {0x002: ["BCD", 0.1, (0.0, 39.9)],
+                0x006: ["BCD", 0.001, (22.0, 31.0)],
+                0x009: ["BCD", 0.1, (0.0, 39.9)],
+                0x020: ["BCD", 0.1, (0.0, 39.9)],
+                0x025: ["BCD", 0.1, (0.0, 39.9)],
+                0x055: ["BCD", 0.05, (108.0, 159.9)],
+                0x056: ["BCD", 0.1, (0.0, 39.9)],
+                0x060: ["BCD", 0.1, (0.0, 39.9)],
+                0x0a9: ["BCD", 0.1, (0.0, 39.9)], },
 
         # https://en.wikipedia.org/wiki/Microwave_landing_system
         # MLS Freq Range: 5031 to 5090.7 MHz
-        0o36: {0x002: ["BCD", 0.1, (5031.0, 5090.7)],
-               0x020: ["BCD", 0.1, (5031.0, 5090.7)],
-               0x055: ["BCD", 1.0, (500.0, 600.0)],
-               0x056: ["BCD", 0.1, (5031.0, 5090.7)],
-               0x060: ["BCD", 0.1, (5031.0, 5090.7)],
-               0x0c7: ["BCD", 0.1, (5031.0, 5090.7)]},
+        0o036: {0x002: ["BCD", 0.1, (5031.0, 5090.7)],
+                0x020: ["BCD", 0.1, (5031.0, 5090.7)],
+                0x055: ["BCD", 1.0, (500.0, 600.0)],
+                0x056: ["BCD", 0.1, (5031.0, 5090.7)],
+                0x060: ["BCD", 0.1, (5031.0, 5090.7)],
+                0x0c7: ["BCD", 0.1, (5031.0, 5090.7)]},
 
-        0o37: {0x002: ["BCD", 0.1, (0.0, 0.9)], # DISC but drop the first four digits (base 10)
-               0x0b9: ["BCD", 0.1, (0.0, 0.9)]}, # DISC but drop the first four digits (base 10)
+        0o037: {0x002: ["BCD", 0.1, (0.0, 0.9)],  # DISC but drop the first four digits (base 10)
+                0x0b9: ["BCD", 0.1, (0.0, 0.9)]},  # DISC but drop the first four digits (base 10)
 
         # 0o40: {}, SPARE
 
-        0o41: {0x002: ["BCD", 0.1, (-180.0, 180.0)],
-               0x004: ["BCD", 0.1, (-180.0, 180.0)],
-               0x020: ["BCD", 0.1, (-180.0, 180.0)],
-               0x056: ["BCD", 0.1, (-180.0, 180.0)],
-               0x060: ["BCD", 0.1, (-180.0, 180.0)],
-               0x0a4: ["BCD", 0.1, (-180.0, 180.0)]},
+        0o041: {0x002: ["BCD", 0.1, (-180.0, 180.0)],
+                0x004: ["BCD", 0.1, (-180.0, 180.0)],
+                0x020: ["BCD", 0.1, (-180.0, 180.0)],
+                0x056: ["BCD", 0.1, (-180.0, 180.0)],
+                0x060: ["BCD", 0.1, (-180.0, 180.0)],
+                0x0a4: ["BCD", 0.1, (-180.0, 180.0)]},
 
-        0o42: {0x002: ["BCD", 0.1, (-180.0, 180.0)],
-               0x004: ["BCD", 0.1, (-180.0, 180.0)],
-               0x020: ["BCD", 0.1, (-180.0, 180.0)],
-               0x056: ["BCD", 0.1, (-180.0, 180.0)],
-               0x060: ["BCD", 0.1, (-180.0, 180.0)],
-               0x0a4: ["BCD", 0.1, (-180.0, 180.0)]},
+        0o042: {0x002: ["BCD", 0.1, (-180.0, 180.0)],
+                0x004: ["BCD", 0.1, (-180.0, 180.0)],
+                0x020: ["BCD", 0.1, (-180.0, 180.0)],
+                0x056: ["BCD", 0.1, (-180.0, 180.0)],
+                0x060: ["BCD", 0.1, (-180.0, 180.0)],
+                0x0a4: ["BCD", 0.1, (-180.0, 180.0)]},
 
-        0o43: {0x002: ["BCD", 1.0, (0.0, 359.0)],
-               0x004: ["BCD", 1.0, (0.0, 359.0)],
-               0x020: ["BCD", 1.0, (0.0, 359.0)],
-               0x056: ["BCD", 1.0, (0.0, 359.0)],
-               0x060: ["BCD", 1.0, (0.0, 359.0)],
-               0x0a4: ["BCD", 1.0, (0.0, 359.0)]},
+        0o043: {0x002: ["BCD", 1.0, (0.0, 359.0)],
+                0x004: ["BCD", 1.0, (0.0, 359.0)],
+                0x020: ["BCD", 1.0, (0.0, 359.0)],
+                0x056: ["BCD", 1.0, (0.0, 359.0)],
+                0x060: ["BCD", 1.0, (0.0, 359.0)],
+                0x0a4: ["BCD", 1.0, (0.0, 359.0)]},
 
-        0o44: {0x004: ["BCD", 0.1, (0.0, 359.9)],
-               0x038: ["BCD", 0.1, (0.0, 359.9)]},
+        0o044: {0x004: ["BCD", 0.1, (0.0, 359.9)],
+                0x038: ["BCD", 0.1, (0.0, 359.9)]},
 
-        0o45: {0x003: ["BCD", 0.1, (0.0, 259.9)]}, # This may be a typo, but this is what the spec sheet says.
+        0o045: {0x003: ["BCD", 0.1, (0.0, 259.9)]},  # This may be a typo, but this is what the spec sheet says.
 
-        0o46: {0x033: ["BCD", 1.0, (0.0, 9999.0)], # Engine serial number half = 0000-9999
-               0x10a: ["BCD", 1.0, (0.0, 9999.0)], # Engine serial number half = 0000-9999
-               0x10b: ["BCD", 1.0, (0.0, 9999.0)],}, # Engine serial number half = 0000-9999
+        0o046: {0x033: ["BCD", 1.0, (0.0, 9999.0)],  # Engine serial number half = 0000-9999
+                0x10a: ["BCD", 1.0, (0.0, 9999.0)],  # Engine serial number half = 0000-9999
+                0x10b: ["BCD", 1.0, (0.0, 9999.0)], },  # Engine serial number half = 0000-9999
 
-        0o47: {0x020: ["BCD", 0.001, (0.0, 79.999)],
-               0x024: ["BCD", 0.001, (0.0, 79.999)],
-               0x033: ["BCD", 1.0, (0.0, 9999.0)], # Engine serial number half = 0000-9999
-               0x0b6: ["BCD", 0.001, (0.0, 79.999)],
-               0x10a: ["BCD", 1.0, (0.0, 9999.0)], # Engine serial number half = 0000-9999
-               0x10b: ["BCD", 1.0, (0.0, 9999.0)]}, # Engine serial number half = 0000-9999
+        0o047: {0x020: ["BCD", 0.001, (0.0, 79.999)],
+                0x024: ["BCD", 0.001, (0.0, 79.999)],
+                0x033: ["BCD", 1.0, (0.0, 9999.0)],  # Engine serial number half = 0000-9999
+                0x0b6: ["BCD", 0.001, (0.0, 79.999)],
+                0x10a: ["BCD", 1.0, (0.0, 9999.0)],  # Engine serial number half = 0000-9999
+                0x10b: ["BCD", 1.0, (0.0, 9999.0)]},  # Engine serial number half = 0000-9999
 
         # 0o50: {}, SPARE
 
         # 0o51: {}, SPARE
 
-        0o52: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
-               0x037: ["BCD", 0.01, (0.0, 100.0)],
-               0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
+        0o052: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
+                0x037: ["BCD", 0.01, (0.0, 100.0)],
+                0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
 
-        0o53: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
-               0x005: ["BCD", 1.0, (0.0, 359.0)],
-               0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
+        0o053: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
+                0x005: ["BCD", 1.0, (0.0, 359.0)],
+                0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
 
-        0o54: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
-               0x037: ["BNR", 20.0, (0.0, 655360.0)],
-               0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
+        0o054: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
+                0x037: ["BNR", 20.0, (0.0, 655360.0)],
+                0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
 
         # 0o55: {}, SPARE
 
-        0o56: {0x002: ["BCD", 0.1, (0.0, 864000.0)], # 0 - 23:59.9, this is tenths of seconds.
-               0x005: ["BCD", 1.0, (0.0, 359.0)],
-               0x037: ["BCD", 1.0, (0.0, 19999.0)],
-               0x056: ["BCD", 1.0, (0.0, 864000.0)], # 0 - 23:59.9, this is tenths of seconds.
-               0x060: ["BCD", 1.0, (0.0, 864000.0)]}, # 0 - 23:59.9, this is tenths of seconds.
+        0o056: {0x002: ["BCD", 0.1, (0.0, 864000.0)],  # 0 - 23:59.9, this is tenths of seconds.
+                0x005: ["BCD", 1.0, (0.0, 359.0)],
+                0x037: ["BCD", 1.0, (0.0, 19999.0)],
+                0x056: ["BCD", 1.0, (0.0, 864000.0)],  # 0 - 23:59.9, this is tenths of seconds.
+                0x060: ["BCD", 1.0, (0.0, 864000.0)]},  # 0 - 23:59.9, this is tenths of seconds.
 
         # 0o57: {}, SPARE
 
-        0o60: {0x025: ["BCD", 1.0, (0.0, 9999.0)], # S/G Hardware Part Number
-               0x037: ["BCD", 1.0, (0.1, 299.9)],
-               0x03c: ["BNR", 1.0, (0.0, 1024.0), 10]},
+        0o060: {0x025: ["BCD", 1.0, (0.0, 9999.0)],  # S/G Hardware Part Number
+                0x037: ["BCD", 1.0, (0.1, 299.9)],
+                0x03c: ["BNR", 1.0, (0.0, 1024.0), 10]},
 
         # ACMS Information IDK man. It's fucking 1:09 am.
-        0o61: {0x002: ["BNR", 1.0, (0.0, 524287.0), 19], # ... there's nothing in the spec ...
-               0x00b: ["BNR", 256.0, (-268435456.0, 268435456.0), 20],
-               0x025: ["BCD", 1.0, (0.0, 9999.0)], # S/G Hardware Part Number
-               0x037: ["BCD", 0.1, (0.0, 299.9)],
-               0x03c: ["BNR", 1.0, (0.0, 1024.0), 10],
-               0x056: ["BNR", 1.0, (0.0, 524287.0), 19], # ... there's nothing in the spec ...
-               0x060: ["BNR", 1.0, (0.0, 524287.0), 19]}, # ... there's nothing in the spec ...
+        0o061: {0x002: ["BNR", 1.0, (0.0, 524287.0), 19],  # ... there's nothing in the spec ...
+                0x00b: ["BNR", 256.0, (-268435456.0, 268435456.0), 20],
+                0x025: ["BCD", 1.0, (0.0, 9999.0)],  # S/G Hardware Part Number
+                0x037: ["BCD", 0.1, (0.0, 299.9)],
+                0x03c: ["BNR", 1.0, (0.0, 1024.0), 10],
+                0x056: ["BNR", 1.0, (0.0, 524287.0), 19],  # ... there's nothing in the spec ...
+                0x060: ["BNR", 1.0, (0.0, 524287.0), 19]},  # ... there's nothing in the spec ...
 
-        0o62: {0x002: ["BNR", 1.0, (0.0, 524287.0), 19], # ... there's nothing in the spec ...
-               0x00b: ["BNR", 256.0, (0.0, 4096.0), 20],
-               0x037: ["BCD", 0.1, (0.0, 299.9)],
-               0x03c: ["BNR", 1.0, (0.0, 1024.0), 10],
-               0x056: ["BNR", 1.0, (0.0, 524287.0), 19], # ... there's nothing in the spec ...
-               0x060: ["BNR", 1.0, (0.0, 524287.0), 19]}, # ... there's nothing in the spec ...
+        0o062: {0x002: ["BNR", 1.0, (0.0, 524287.0), 19],  # ... there's nothing in the spec ...
+                0x00b: ["BNR", 256.0, (0.0, 4096.0), 20],
+                0x037: ["BCD", 0.1, (0.0, 299.9)],
+                0x03c: ["BNR", 1.0, (0.0, 1024.0), 10],
+                0x056: ["BNR", 1.0, (0.0, 524287.0), 19],  # ... there's nothing in the spec ...
+                0x060: ["BNR", 1.0, (0.0, 524287.0), 19]},  # ... there's nothing in the spec ...
 
-        0o63: {},
+        0o063: {0x002: ["BNR", 1.0, (0.0, 524287.0), 19],  # ... there's nothing in the spec ...
+                0x00b: ["BNR", 256.0, (0.0, 4096.0), 20],
+                0x037: ["BCD", 0.1, (0.0, 299.9)],
+                0x03c: ["BNR", 1.0, (0.0, 1024.0), 10],
+                0x056: ["BNR", 1.0, (0.0, 524287.0), 19],  # ... there's nothing in the spec ...
+                0x060: ["BNR", 1.0, (0.0, 524287.0), 19]},  # ... there's nothing in the spec ...},
 
-        0o64: {},
+        0o064: {0x00b: ["BNR", 0.0039, (-4096, 4096), 20],
+                0x037: ["BCD", 1.0, (0.0, 299.9)],
+                0x03c: ["BNR", 1.0, (0.0, 1024.0), 10]},
 
-        0o65: {},
+        0o065: {0x003: ["BCD", 1.0, (0.0 - 12000.0)],
+                0x00b: ["BNR", 64.0, (-67108864.0, 67108864.0), 20],
+                0x037: ["BCD", 1.0, (0.0, 19999.0)]},
 
-        0o66: {},
+        0o066: {0x002: ["BCD", 0.01, (0.0, 100.0)],
+                0x00b: ["BNR", 0.0039, (0.0, 64.0), 14],
+                0x037: ["BCD", 0.01, (0.0, 100.0)]},
 
-        0o67: {},
+        0o067: {0x037: ["BCD", 0.01, (0.0, 100.0)]},
 
-        0o70: {},
+        0o070: {0x002: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x00b: ["BNR", 64.0, (-67108864.0, 67108864.0), 20],
+                0x029: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x037: ["BNR", 1.0, (0.0, 4095.0), 12],  # Spec is not specific here lol
+                0x056: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x060: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x0cc: ["BNR", 1.0, (0.0, 4096.0), 12]},
 
-        0o71: {},
+        0o071: {0x002: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x00b: ["BNR", 0.0039, (0.0, 64.0), 14],
+                0x029: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x033: ["BNR", 0.016, (0.0, 64.0), 12],
+                0x037: ["BNR", 1.0, (0.0, 4095.0), 12],  # Spec is not specific here lol
+                0x0cc: ["BNR", 1.0, (0.0, 4096.0), 12]},
 
-        0o72: {},
+        0o072: {0x002: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x00b: ["BNR", 64.0, (-67108864.0, 67108864.0), 20],
+                0x01c: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x029: ["BNR", 0.25, (0.0, 256.0), 10],
+                0x02f: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x033: ["BNR", 0.016, (0.0, 64.0), 12],
+                0x0cc: ["BNR", 1.0, (0.0, 4096.0), 12]},
 
-        0o73: {},
+        0o073: {0x002: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x00b: ["BNR", 0.0039, (0.0, 64.0), 14],
+                0x01c: ["BNR", 128.0, (0.0, 32768.0), 8],
+                0x0a2: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x0cc: ["BNR", 1.0, (0.0, 4096.0), 12],
+                0x0d0: ["BNR", 0.25, (0.0, 128.0), 9]},
 
-        0o74: {},
+        0o074: {0x002: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x00b: ["BNR", 9.536743e-7, (0.0, 10.0), 20],
+                0x02c: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x033: ["BNR", 0.004, (0.0, 4.0), 10],
+                0x037: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x056: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x060: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x114: ["BNR", 40.0, (0.0, 1310720), 15]},
 
-        0o75: {},
+        0o075: {0x002: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x003: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x008: ["DISC", 0.0],
+                0x029: ["BNR", 0.25, (0.0, 256.0), 10],
+                0x02c: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x037: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x03e: ["BNR", 40.0, (0.0, 1310720), 15],
+                0x114: ["BNR", 40.0, (0.0, 1310720), 15], },
 
-        0o76: {},
+        0o076: {0x008: ["DISC", 0.0],
+                0x00b: ["BNR", 1.0, (0.0, 131072.0), 17],
+                0x029: ["BNR", 0.25, (0.0, 256.0), 10],
+                0x037: ["BNR", 0.01, (0.0, 163.84), 14],
+                0x03e: ["BNR", 0.01, (0.0, 164), 14],
+                0x114: ["BNR", 0.01, (0.0, 163.84), 14]},
 
-        0o77: {},
+        0o077: {0x001: ["BNR", 0.001, (0.0, 128.0), 17], # This is notated as 0x0__ in the spec as Equip ID
+                0x008: ["DISC", 0.0],
+                0x00b: ["BNR", 0.8, (0.0, 128.0), 8],
+                0.029: ["BNR", 1.0, (0.0, 256.0), 8],
+                0x037: ["BNR", 0.01, (0.0, 131.072), 17],
+                0x056: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x060: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x114: ["BNR", 0.01, (0.0, 163.84), 14]},
 
         0o100: {},
 
@@ -908,7 +967,8 @@ class arinc429_intrusion_detection_system:
         0x341: "Satellite ACU c-11"
     }
 
-    def __init__(self, bus_speed="low", BUS_CHANNELS=[], rules_file = r"C:\Users\mspreston\Desktop\Grad School Work\7 - Summer Semester 2024\Cybersecurity Practicum\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt"):
+    def __init__(self, bus_speed="low", BUS_CHANNELS=[],
+                 rules_file=r"C:\Users\mspreston\Desktop\Grad School Work\7 - Summer Semester 2024\Cybersecurity Practicum\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt"):
         # Set bus start time
         self.start_time = time()
         # Set bus channels.
@@ -937,17 +997,17 @@ class arinc429_intrusion_detection_system:
 
         self.rules = []
         self.get_rules()
-        self.n = 1 # number of words.
+        self.n = 1  # number of words.
 
     def make_default_rules(self):
 
         #start_time = time()
 
         #default_filepath = r"C:/ARINC429_IDS/"
-        with open("ARINC429_rules_template.txt","r") as template_fd:
+        with open("ARINC429_rules_template.txt", "r") as template_fd:
             template_lines = template_fd.readlines()
         template_fd.close()
-        with open(self.default_filepath + r"ARINC429_rules_defaults.txt","w") as default_rules_fd:
+        with open(self.default_filepath + r"ARINC429_rules_defaults.txt", "w") as default_rules_fd:
             default_rules_fd.write(template_lines)
         default_rules_fd.close()
 
@@ -964,7 +1024,7 @@ class arinc429_intrusion_detection_system:
         logs_fd.close()
 
     def __str__(self):
-        return(str(self.rules))
+        return (str(self.rules))
 
     def get_log_alert_file_path(self) -> str:
         # Log File location =>
@@ -980,15 +1040,15 @@ class arinc429_intrusion_detection_system:
         files_lines = []
         filines = False
         for line in lines:
-            if(line.__contains__("!Outfile")):
+            if (line.__contains__("!Outfile")):
                 filines = True
-            if(filines and line.__contains__("alerts")):
-                self.alert_filepath = line.split(" ")[2].replace("\n","")
+            if (filines and line.__contains__("alerts")):
+                self.alert_filepath = line.split(" ")[2].replace("\n", "")
                 #print(line.split(" "))
-            if(filines and line.__contains__("logs")):
-                self.log_filepath = line.split(" ")[2].replace("\n","")
+            if (filines and line.__contains__("logs")):
+                self.log_filepath = line.split(" ")[2].replace("\n", "")
                 #print(line.split(" "))
-            if(line.__contains__("!Channels")):
+            if (line.__contains__("!Channels")):
                 return
         # else keep defaults:
         return
@@ -1002,24 +1062,24 @@ class arinc429_intrusion_detection_system:
         #files_lines = []
         filines = False
         for line in lines:
-            if(line == "\n"):
+            if (line == "\n"):
                 continue
-            if(line.__contains__("!SDI")):
+            if (line.__contains__("!SDI")):
                 break
                 #filines = False
                 #return
-            if(filines): # and not line.__contains__("!Channels") or not line.__contains__("!SDI")):
-                channel = line.split(":")[0].replace(":","")
+            if (filines):  # and not line.__contains__("!Channels") or not line.__contains__("!SDI")):
+                channel = line.split(":")[0].replace(":", "")
                 #print(line.split(":"))
-                tx_to_rx = line.split(":")[1][1:].replace("\n","")
+                tx_to_rx = line.split(":")[1][1:].replace("\n", "")
                 try:
                     self.channels[channel].append(tx_to_rx)
                 except KeyError:
                     self.channels[channel] = [tx_to_rx]
-            if(line.__contains__("!Channels")):
+            if (line.__contains__("!Channels")):
                 filines = True
 
-    def get_sdis(self)->dict:
+    def get_sdis(self) -> dict:
 
         sdis = {}
 
@@ -1030,41 +1090,41 @@ class arinc429_intrusion_detection_system:
 
         SDI_flag = False
         for line in lines:
-            if(line == "\n"):
+            if (line == "\n"):
                 continue
-            if(line.__contains__("!Rules")):
+            if (line.__contains__("!Rules")):
                 break
-            if(SDI_flag):
+            if (SDI_flag):
                 # remove endline comments
                 line = line.split("#")[0]
                 # remove full line comments
-                if(line == "" or line == "\n"):
+                if (line == "" or line == "\n"):
                     continue
                 try:
-                    channel = line.split(" ")[0].replace(":","")
+                    channel = line.split(" ")[0].replace(":", "")
                     sdi_name = line.split(" ")[1]
-                    bitmask = line.split(" ")[3].replace("\n","")
-                    sdis[sdi_name+"_"+channel] = bitmask
+                    bitmask = line.split(" ")[3].replace("\n", "")
+                    sdis[sdi_name + "_" + channel] = bitmask
                 except IndexError:
                     raise ValueError("SDI Lines formated incorrectly.")
-            if(line.__contains__("!SDI")):
+            if (line.__contains__("!SDI")):
                 SDI_flag = True
 
-        return(sdis)
+        return (sdis)
 
     def get_rules(self):
-        with open(self.rules_file,"r") as rules_fd:
+        with open(self.rules_file, "r") as rules_fd:
             temp_rules = rules_fd.readlines()
         rules_fd.close()
 
         rules_section = False
         for line in temp_rules:
-            if(line[0] == "#" or line == "\n"):
+            if (line[0] == "#" or line == "\n"):
                 continue
-            if(rules_section):
-                line = line.split("#")[0] # remove endline comments
+            if (rules_section):
+                line = line.split("#")[0]  # remove endline comments
                 self.handle_ruleline(line)
-            if(line.__contains__("!Rules")):
+            if (line.__contains__("!Rules")):
                 rules_section = True
 
         # Example formats:
@@ -1078,20 +1138,20 @@ class arinc429_intrusion_detection_system:
 
         alert_log = ""
         channel = ""
-        bitmask = "0"*31
+        bitmask = "0" * 31
         parity_check = None
         time_notate = False
         message = ""
         try:
             message = line.split('"')[1]
-            temp = line.replace('"',"")
-            temp = temp.replace(message,"")
-            temp = temp.replace("\n","")
+            temp = line.replace('"', "")
+            temp = temp.replace(message, "")
+            temp = temp.replace("\n", "")
             rule = temp.split(" ")
         except IndexError:
-            pass # message is already nothing.
+            pass  # message is already nothing.
 
-        if(not (rule[0].__contains__("alert") or rule.__contains__("log")) ):
+        if (not (rule[0].__contains__("alert") or rule.__contains__("log"))):
             print(f"Problem with rule: {line}")
             raise ValueError("Rule must delineate between Alerting or Logging.")
         else:
@@ -1101,18 +1161,18 @@ class arinc429_intrusion_detection_system:
         cnt = 0
         for item in rule:
             cnt += 1
-            if(item.__contains__('"')):
+            if (item.__contains__('"')):
                 # message start
                 rule = rule[:cnt]
 
-        if(not rule[1] in self.get_channelnames()):
+        if (not rule[1] in self.get_channelnames()):
             print(f"Problem with rule: {line}")
             raise ValueError("Rule must delineate between Channels.")
         else:
             channel = rule[1]
 
         rulez = Queue()
-        [rulez.put(rule[i]) for i in range(2,len(rule))]
+        [rulez.put(rule[i]) for i in range(2, len(rule))]
 
         octal_flag = True
         SDI_flag = True
@@ -1122,43 +1182,45 @@ class arinc429_intrusion_detection_system:
         time_flag = True
         #message_flag = True
 
-        while(rulez.qsize() > 0):
-            r = rulez.get().replace("\n","")
+        while (rulez.qsize() > 0):
+            r = rulez.get().replace("\n", "")
             # octal
-            if(r.__contains__("0o") and octal_flag):
+            if (r.__contains__("0o") and octal_flag):
                 octal_flag = False
-                label = int(r,8)
+                label = int(r, 8)
                 label_chip = lru_txr()
                 l, _ = label_chip.make_label_for_word(label)
-                bitmask = self.replace_index(0,8,bitmask,l)
+                bitmask = self.replace_index(0, 8, bitmask, l)
             # SDI
-            elif(SDI_flag and r+f"_{channel}" in self.sdis):
+            elif (SDI_flag and r + f"_{channel}" in self.sdis):
                 SDI_flag = False
                 this_sdi = r
-                bitmask = self.replace_index(8,10,bitmask,self.sdis[r+f"_{channel}"])
+                bitmask = self.replace_index(8, 10, bitmask, self.sdis[r + f"_{channel}"])
             # Handle data / bits
-            elif(data_flag and r.__contains__("bits[") or r.__contains__("data:") or r.__contains__("Encoding:") ):
+            elif (data_flag and r.__contains__("bits[") or r.__contains__("data:") or r.__contains__("Encoding:")):
                 data_flag = False
-                if(r.__contains__("bits[")):
-                    rz = r.split("=")[1].replace('"','')
+                if (r.__contains__("bits[")):
+                    rz = r.split("=")[1].replace('"', '')
                     index1 = int(r.split("[")[1].split(":")[0])
                     index2 = int(r.split(":")[1].split(")")[0])
 
                     # Check if index 1 and 2 are valid, i.e. they have to be between 1 and 31
                     # and index 1 must be greater than index 2
-                    if(index1 >= index2):
-                        raise ValueError(f"Index bounds mismatched. Index 1: {index1} cannot be greater than or equal to Index 2: {index2}.")
-                    if( (index1 < 1 or index1 > 30)
-                            or (index2 < 2 or index2 > 31) ):
-                        raise ValueError("Bits mask out of bounds. Indices must be between 1 and 31, with Index 1 being strictly greater than Index 2.")
+                    if (index1 >= index2):
+                        raise ValueError(
+                            f"Index bounds mismatched. Index 1: {index1} cannot be greater than or equal to Index 2: {index2}.")
+                    if ((index1 < 1 or index1 > 30)
+                            or (index2 < 2 or index2 > 31)):
+                        raise ValueError(
+                            "Bits mask out of bounds. Indices must be between 1 and 31, with Index 1 being strictly greater than Index 2.")
 
-                    if((index2-1)-index1 != len(rz)):
-                        print(f"Expected bitmask of length {(index2-1)-index1}, got {len(rz)}")
+                    if ((index2 - 1) - index1 != len(rz)):
+                        print(f"Expected bitmask of length {(index2 - 1) - index1}, got {len(rz)}")
                         raise ValueError("Bit String to look for does not match length!")
                     cnt = 0
                     # Check if this contradicts the label/sdi
-                    bitmask_portion = bitmask[index1-1:index2-2]
-                    if(int(bitmask_portion,3) & int(rz,2) != int(rz,2) and int(bitmask_portion,2) != 0):
+                    bitmask_portion = bitmask[index1 - 1:index2 - 2]
+                    if (int(bitmask_portion, 3) & int(rz, 2) != int(rz, 2) and int(bitmask_portion, 2) != 0):
                         raise ValueError("Bit mask contradicts other flags!!")
                     #for char in bitmask_portion:
                     #    try:
@@ -1167,17 +1229,19 @@ class arinc429_intrusion_detection_system:
                     #        cnt += 1
                     #    except IndexError: # reached past the bit mask.
                     #        break
-                    bitmask = self.replace_index(index1-1,index2-2,bitmask,rz)
+                    bitmask = self.replace_index(index1 - 1, index2 - 2, bitmask, rz)
                     #bitmask += 19 - len(rz)
-                elif(r.__contains__("data:")):
-                    if(octal_flag != False): #Need the label
-                        raise ValueError(f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
-                    if(SDI_flag != False): # Need the LRU for the equipment ID
-                        raise ValueError(f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
+                elif (r.__contains__("data:")):
+                    if (octal_flag != False):  #Need the label
+                        raise ValueError(
+                            f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
+                    if (SDI_flag != False):  # Need the LRU for the equipment ID
+                        raise ValueError(
+                            f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
                     #Figure out if encode to DISC, BNR or BCD
 
                     for equipID, equipName in self.equip_ids.items():
-                        if(equipName.__contains__(this_sdi)):
+                        if (equipName.__contains__(this_sdi)):
                             break
 
                     #equipID = self.equip_ids[this_sdi]
@@ -1187,50 +1251,51 @@ class arinc429_intrusion_detection_system:
                         data = float(r.split(":")[1])
                     except ValueError:
                         raise ValueError("Data given to check is not a number!")
-                    if(encode_type == "BCD"):
+                    if (encode_type == "BCD"):
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.BCD_digs(data, resolution))
-                    elif(encode_type == "BNR"):
+                    elif (encode_type == "BNR"):
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.BNR_encode())
-                    elif(encode_type == "DISC"):
+                    elif (encode_type == "DISC"):
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.DISC_encode())
-                    elif(encode_type == "SAL"):
+                    elif (encode_type == "SAL"):
                         bitmask = self.replace_index(0,
                                                      8,
                                                      bitmask,
                                                      self.SAL_encode(r))
-                elif(r.__contains__("Encoding:")):
-                    if(octal_flag != False): #Need the label
-                        raise ValueError(f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
+                elif (r.__contains__("Encoding:")):
+                    if (octal_flag != False):  #Need the label
+                        raise ValueError(
+                            f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
                     encoding = r.split(':')[1]
                     message += f". Percent Chance of being {encoding}: {self.label_percentages[label][encoding]}%."
-            elif(SSM_flag and len(r) == 2
-                 and (r == "00" or r == "01" or r == "10" or r == "11")):
+            elif (SSM_flag and len(r) == 2
+                  and (r == "00" or r == "01" or r == "10" or r == "11")):
                 try:
                     # This could raise a value error.
-                    ssmThere = (int(r,2) >= 0 or int(r,2) <= 4)
-                    if(ssmThere):
-                        if(data != None
-                                and ( (data < 0.0 and not r.__contains__("1")) # SSM must have 1 to make it negative
-                                     or (data >= 0.0 and not r.__contains__("00")) ) ): # Positive must match 00.
+                    ssmThere = (int(r, 2) >= 0 or int(r, 2) <= 4)
+                    if (ssmThere):
+                        if (data != None
+                                and ((data < 0.0 and not r.__contains__("1"))  # SSM must have 1 to make it negative
+                                     or (data >= 0.0 and not r.__contains__("00")))):  # Positive must match 00.
                             #print("\n\nTEST TEST TEST TEST TEST TEST")
                             raise TypeError("Data sign does not match SSM!")
-                        bitmask = self.replace_index(29,31,bitmask,r)
+                        bitmask = self.replace_index(29, 31, bitmask, r)
                         SSM_flag = False
                 except ValueError:
                     pass
-            elif(parity_flag and (r == "C" or r == "I")):
+            elif (parity_flag and (r == "C" or r == "I")):
                 parity_check = True if r == "C" else False
                 parity_flag = False
-            elif(time_flag and (r == "time")):
+            elif (time_flag and (r == "time")):
                 time_flag = False
                 time_notate = True
             #elif(message_flag and r.__contains__('"')):
@@ -1238,23 +1303,23 @@ class arinc429_intrusion_detection_system:
             else:
                 continue
 
-        if(len(bitmask) != 31):
+        if (len(bitmask) != 31):
             raise ValueError(f"Bitmask length error: {len(bitmask)}, for {bitmask}. Error in parsing word!")
 
         self.rules.append((alert_log, channel, bitmask, parity_check, time_notate, message))
 
-    def replace_index(self,index1:int,index2:int,ogstring:str,replacestr:str)->str:
+    def replace_index(self, index1: int, index2: int, ogstring: str, replacestr: str) -> str:
         # ogstring[index1:index2] = replacestr
         new_str = ogstring[:index1] + replacestr + ogstring[index2:]
-        return(new_str)
+        return (new_str)
 
-    def get_channelnames(self)->list:
+    def get_channelnames(self) -> list:
         channelnames = []
         for chan, value in self.channels.items():
             channelnames.append(chan)
-        return(channelnames)
+        return (channelnames)
 
-    def alert_or_log(self, word:str):
+    def alert_or_log(self, word: str):
 
         #self.rules.add(
         # 0 (alert_log,
@@ -1265,37 +1330,37 @@ class arinc429_intrusion_detection_system:
         # 5 message)
         # )
         with open(self.log_filepath, "a") as log_fd:
-            with open(self.alert_filepath,"a") as alert_fd:
+            with open(self.alert_filepath, "a") as alert_fd:
                 for tuple in self.rules:
                     parity = tuple[3]
                     time = tuple[4]
                     flag_this_tuple = False
                     # Part 1 Check if you should flag this word.
-                    if(tuple[0].__contains__("alert")):
+                    if (tuple[0].__contains__("alert")):
                         #TODO Check channel?
                         p_bitmask = tuple[2] + lru_txr.calc_parity(tuple[2])
-                        bitmask = tuple[2] #+ lru_txr.calc_parity(tuple[2])
-                        if(bitmask == 31*"0"):
+                        bitmask = tuple[2]  #+ lru_txr.calc_parity(tuple[2])
+                        if (bitmask == 31 * "0"):
                             flag_this_tuple = True
                         word_check = word[-1:]
-                        if(int(bitmask,2) & int(word_check,2) == int(bitmask,2) ):
-                            if( (parity == True and word[-1] == p_bitmask)
-                            or (parity == False and word[-1] != p_bitmask) ):
+                        if (int(bitmask, 2) & int(word_check, 2) == int(bitmask, 2)):
+                            if ((parity == True and word[-1] == p_bitmask)
+                                    or (parity == False and word[-1] != p_bitmask)):
                                 # alert
                                 flag_this_tuple = True
-                            elif(parity == None):
+                            elif (parity == None):
                                 # alert
                                 flag_this_tuple = True
                     # Part 2: If the word is flagged, the log it appropriately.
-                    if(flag_this_tuple and time):
-                        if(tuple[0].__contains__("alert")):
+                    if (flag_this_tuple and time):
+                        if (tuple[0].__contains__("alert")):
                             alert_fd.write(f"{time()}: Alert! {tuple[5]}\n")
-                        if(tuple.__contains__("log")):
+                        if (tuple.__contains__("log")):
                             log_fd.write(f"{time()}: {word} {tuple[5]}\n")
-                    elif(flag_this_tuple and time == False):
-                        if(tuple[0].__contains__("alert")):
+                    elif (flag_this_tuple and time == False):
+                        if (tuple[0].__contains__("alert")):
                             alert_fd.write(f"Alert! {tuple[5]}\n")
-                        if(tuple.__contains__("log")):
+                        if (tuple.__contains__("log")):
                             log_fd.write(f"Logged word #{self.n}: {word} {tuple[5]}\n")
             alert_fd.close()
         log_fd.close()
@@ -1307,7 +1372,7 @@ class arinc429_intrusion_detection_system:
         logs_fd.close()
         #bus_channel = self.BUS_CHANNELS[channel_index]
 
-    def BCD_digs(self, value, res:float)->str:
+    def BCD_digs(self, value, res: float) -> str:
 
         # TODO add handling for special cases for BCD
 
@@ -1317,9 +1382,9 @@ class arinc429_intrusion_detection_system:
         #    SSM = "11"
 
         digits = str(value).strip("-")
-        if(res >= 1.0): # remove the stuff after 0.000000
+        if (res >= 1.0):  # remove the stuff after 0.000000
             digits = digits.split(".")[0]
-        digits = digits.replace(".","")
+        digits = digits.replace(".", "")
         digits = "0" * (5 - len(digits)) + digits
         digits = digits[::-1]
 
@@ -1332,31 +1397,31 @@ class arinc429_intrusion_detection_system:
 
         digit5 = int(digits[0])
         dig5 = bin(digit5)[2:]
-        dig5 = "0"*(4-len(dig5)) + dig5
+        dig5 = "0" * (4 - len(dig5)) + dig5
         dig5 = dig5[::-1]
 
         digit4 = int(digits[1])
         dig4 = bin(digit4)[2:]
-        dig4 = "0"*(4-len(dig4)) + dig4
+        dig4 = "0" * (4 - len(dig4)) + dig4
         dig4 = dig4[::-1]
 
         digit3 = int(digits[2])
         dig3 = bin(digit3)[2:]
-        dig3 = "0"*(4-len(dig3)) + dig3
+        dig3 = "0" * (4 - len(dig3)) + dig3
         dig3 = dig3[::-1]
 
         digit2 = int(digits[3])
         dig2 = bin(digit2)[2:]
-        dig2 = "0"*(4-len(dig2)) + dig2
+        dig2 = "0" * (4 - len(dig2)) + dig2
         dig2 = dig2[::-1]
 
         digit1 = int(digits[4])
         dig1 = bin(digit1)[2:]
-        dig1 = "0"*(3-len(dig1)) + dig1
+        dig1 = "0" * (3 - len(dig1)) + dig1
         dig1 = dig1[::-1]
 
-        partial_data = dig5 + dig4 + dig3 + dig2 + dig1# + SSM
-        return(partial_data)
+        partial_data = dig5 + dig4 + dig3 + dig2 + dig1  # + SSM
+        return (partial_data)
 
     def BNR_encode(self):
         pass
@@ -1401,9 +1466,10 @@ class arinc429_intrusion_detection_system:
         "Multicast": 0o366,
         "Bridge": 0o367
     }
+
     def SAL_encode(self, SAL_str):
         sal_label_chip = lru_txr()
-        return(sal_label_chip.decode(self.SALs[SAL_str]))
+        return (sal_label_chip.decode(self.SALs[SAL_str]))
 
     def percets_BNR_BCD_DISC_SAL_per_label(self):
         label_percentages = {}
@@ -1426,7 +1492,7 @@ class arinc429_intrusion_detection_system:
             total_encodings = len(encodings.items())
 
             # Placeholder error handing:
-            if(total_encodings == 0):
+            if (total_encodings == 0):
                 label_percentages[word_label] = {"BCD": 0.0,
                                                  "BNR": 0.0,
                                                  "DISC": 0.0,
@@ -1438,13 +1504,13 @@ class arinc429_intrusion_detection_system:
             DISC_cnt = 0
             SAL_cnt = 0
             for hexEquipID, encoding_list in encodings.items():
-                if(encoding_list[0] == "BCD"):
+                if (encoding_list[0] == "BCD"):
                     BCD_cnt += 1
-                elif(encoding_list[0] == "BNR"):
+                elif (encoding_list[0] == "BNR"):
                     BNR_cnt += 1
-                elif(encoding_list[0] == "DISC"):
+                elif (encoding_list[0] == "DISC"):
                     DISC_cnt += 1
-                elif(encoding_list[0] == "SAL"):
+                elif (encoding_list[0] == "SAL"):
                     SAL_cnt += 1
 
             BCD_percentage = round(BCD_cnt / total_encodings * 100.0, 3)
@@ -1457,4 +1523,4 @@ class arinc429_intrusion_detection_system:
                                              "DISC": DISC_percentage,
                                              "SAL": SAL_percentage}
 
-        return(label_percentages)
+        return (label_percentages)
