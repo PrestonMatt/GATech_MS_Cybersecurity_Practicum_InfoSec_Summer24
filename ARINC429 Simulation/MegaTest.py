@@ -4,6 +4,7 @@ import random
 import pytest
 from threading import Thread
 import matplotlib.pyplot as plt
+from os import getcwd
 # Preston's libraries hehe
 from arinc429_voltage_sim import binary_to_voltage as b2v
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
@@ -4025,7 +4026,7 @@ def test_IDS_SDI_masks():
                                r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt")
     sdis = IDS_test_default.sdis
     assert(sdis == {
-        "ADIRU_Orange": "11",
+        "ADIRS_Orange": "11",
         "FMC_Blue": "11",
         "RMS_Purple": "00",
         "FAEC1_Purple": "01",
@@ -4058,11 +4059,24 @@ def test_rules_default():
                      ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.'),
                      ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.')])
 
+def test_rules_exception1():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_alert_syntax_error.txt"
+    with pytest.raises(ValueError) as ptE:
+        IDS_test_default = IDS(rules_file=
+                               filename)
+        #rulez = IDS_test_default.rules
+    assert(str(ptE.value) ==
+           'Rule must delineate between Alerting or Logging.')
+
 def test_all_IDS_tests():
     test_IDS_log_outfile_path()
     test_IDS_alert_outfile_path()
     test_IDS_Channel_inputs()
     test_IDS_SDI_masks()
+    test_rules_default()
+    test_rules_exception1()
 
 
 if __name__ == "__main__":

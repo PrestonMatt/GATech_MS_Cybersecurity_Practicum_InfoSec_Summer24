@@ -939,8 +939,6 @@ class arinc429_intrusion_detection_system:
         self.get_rules()
         self.n = 1 # number of words.
 
-
-
     def make_default_rules(self):
 
         #start_time = time()
@@ -1055,7 +1053,7 @@ class arinc429_intrusion_detection_system:
         return(sdis)
 
     def get_rules(self):
-        with open("ARINC429_rules.txt","r") as rules_fd:
+        with open(self.rules_file,"r") as rules_fd:
             temp_rules = rules_fd.readlines()
         rules_fd.close()
 
@@ -1075,7 +1073,7 @@ class arinc429_intrusion_detection_system:
         # <alert/log>* <channel>* <bit[index1:index2) = "01..10"> "<message (if alert)>"
         # <alert/log>* <channel>* <label> <BCD/BNR/DISC> "<message (if alert)>"
 
-    def handle_ruleline(self,line):
+    def handle_ruleline(self, line):
         rule = line.split(" ")
 
         alert_log = ""

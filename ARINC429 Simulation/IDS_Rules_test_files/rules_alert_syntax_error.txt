@@ -1,0 +1,33 @@
+!Outfiles
+#Default path is C:/ARINC_IDS/ or ./home/ARINC_IDS/
+alerts = C:/ARINC_IDS/Alerts/Alerts.txt
+logs = C:/ARINC_IDS/Logs/Logs.txt
+
+!Channels
+Orange: GPS -> ADIRU
+Blue: ADIRU -> FMC
+Purple: FMC -> RMS
+Purple: FMC -> FAEC1
+Purple: FMC -> FAEC2
+Purple: FMC -> WnBS
+Green: FMC -> RMS
+Green: FMC -> FAEC1
+Green: FMC -> FAEC2
+Green: FMC -> RWnBS
+
+!SDI
+# Do not identify any TX LRUs SDI here.
+Orange: ADIRS -> 11
+Blue: FMC -> 11
+Purple: RMS -> 00
+Purple: FAEC1 -> 01
+Purple: FAEC2 -> 10
+Purple: WnBS -> 11
+Green: RMS -> 00
+Green: FAEC1 -> 01
+Green: FAEC2 -> 10
+Green: WnBS -> 11
+
+!Rules
+# No alert or log this should raise an error.
+Blue "Blue bus has a word."
