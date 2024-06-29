@@ -1423,8 +1423,71 @@ class arinc429_intrusion_detection_system:
         partial_data = dig5 + dig4 + dig3 + dig2 + dig1  # + SSM
         return (partial_data)
 
-    def BNR_encode(self):
-        pass
+    def BNR_encode(self, value:str, res:float, sig_digs:int, range:tuple) -> str:
+        # Taking from the ADIRU.
+        val = float(value) / self.affix_resoultion(res)
+        # Having and alg for finding this round_digs is key to this whole algorithm.
+        if(res >= 1.0):
+            round_digs = 0
+        else:
+            round_digs = self.get_rounding_digits(sig_digs, range, self.affix_resoultion(res))
+
+        val = round(val, round_digs)
+
+        padding = "0" * (19-sig_digs)
+        if(sig_digs == 20):
+            padding = "0" * (20-sig_digs)
+        # Positive sign
+        SSM = "00"
+        if(sig_digs == 20):
+            # Sometimes it sigdigs cuts into this.
+            SSM = "0"
+        # Negative sign.
+        if(val < 0.0):
+            SSM = "11"
+            if(sig_digs == 20):
+                SSM = "1"
+        # Start encoding to string of "0"s and "1"s.
+        val = str(val).strip("-")
+        # get right of a X.0 if the resolution is 1+
+        round_digs_lacking = 0
+        if(res >= 1.0):
+            val = val.split(".")[0]
+        else:
+            round_digs_lacking = round_digs - len(val.split(".")[1])
+        # get rid of any decimal
+        val = val.replace(".","")
+        # get the bitstring from that value now
+        val = bin(int(val + ("0"*round_digs_lacking)))[2:]
+        # add leading zeros as necessary
+        val = "0" * (sig_digs - len(val)) + val
+        # get the full data field
+        data = padding + val
+        # reverse it because everything is fucking reverse order
+        data = data[::-1]
+        return(data+SSM)
+
+    def get_rounding_digits(self, sig_digs:int, v_range:tuple, res:float) -> int:
+        # This is the highest number that can be encoded
+        sans_decpoint = v_range[1] / res
+        binary_bound = int("1" * sig_digs, 2)
+        place = 0
+        # Up to 20 sig digits
+        # Get the one closest to the top of the range.
+        smallest_diff = abs(binary_bound - sans_decpoint)
+        for x in range(1, 20):
+            # move the decimal
+            dec_move = (binary_bound / (10**x))
+            this_diff = abs(dec_move - sans_decpoint)
+            if(this_diff < smallest_diff):
+                smallest_diff = this_diff
+                place = x
+        return(place)
+
+
+    def affix_resoultion(self, res:float)->float:
+        res = str(res).replace(".","").replace("0","")
+        return(float(res))
 
     def DISC_encode(self):
         pass

@@ -4176,6 +4176,84 @@ def test_rules_exception11():
     assert(str(ptE.value) ==
            "Data sign does not match SSM!")
 
+def test_IDS_BNR_Encode_1():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # Example: 0o100, w/ equipID 0x001: Selected Course #1.
+    # Range is (-180, 180)
+    # Sig digs is 12
+    # resolution is 0.05
+    data = IDS_test_default.BNR_encode(100.0, 0.05, 12, (-180.0, 180.0))
+    # 180 / 5 = 36.0
+    # int("1" * 12, 2) = 4095
+    # rounding digits should be 2 because 40.95 is closest to 36.0
+
+    # Manual encode to check
+    x = round(100.0 / 5.0, 2)
+    x_str = str(x).replace(".","")
+    round_digs_lacking = 2 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (19-len(y)) + y
+    n = z[::-1]
+    dat = n + "00" # SSM = 00 as 100 is positive.
+
+    assert(dat == data)
+
+def test_IDS_BNR_Encode_2():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # Example: 0o100, w/ equipID 0x001: Selected Course #1.
+    # Range is (-180, 180)
+    # Sig digs is 12
+    # resolution is 0.05
+    data = IDS_test_default.BNR_encode(-100.0, 0.05, 12, (-180.0, 180.0))
+    # 180 / 5 = 36.0
+    # int("1" * 12, 2) = 4095
+    # rounding digits should be 2 because 40.95 is closest to 36.0
+
+    # Manual encode to check
+    x = round(100.0 / 5.0, 2)
+    x_str = str(x).replace(".","")
+    round_digs_lacking = 2 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (19-len(y)) + y
+    n = z[::-1]
+    dat = n + "11" # SSM = 11 as 100 is negative.
+
+    assert(dat == data)
+
+def test_IDS_BNR_Encode_3():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # Example: 0o116, w/ equipID 0x0cc: Wheel Torque Output.
+    # Range is (0, 16384)
+    # Sig digs is 12
+    # resolution is 4
+    data = IDS_test_default.BNR_encode(1234.0, 4.0, 12, (0.0, 16384.0))
+    # 16384 / 4 = 4096.0
+    # int("1" * 12, 2) = 4095
+    # rounding digits should be 0 because 4096 is closest to 4095
+
+    # Manual encode to check
+    x = round(1234.0 / 4.0, 0)
+    #x_str = str(x).replace(".","")
+    #round_digs_lacking = 0 #2 - len(str(x).split(".")[1])
+    y = bin(int(x))[2:]
+    z = "0" * (19-len(y)) + y
+    n = z[::-1]
+    dat = n + "00" # SSM = 00 as 1234 is positive.
+
+    assert(dat == data)
+
 def test_all_IDS_tests():
     test_IDS_log_outfile_path()
     test_IDS_alert_outfile_path()
@@ -4193,6 +4271,9 @@ def test_all_IDS_tests():
     test_rules_exception9()
     test_rules_exception10()
     test_rules_exception11()
+    test_IDS_BNR_Encode_1()
+    test_IDS_BNR_Encode_2()
+    test_IDS_BNR_Encode_3()
 
 if __name__ == "__main__":
     #test_all()
