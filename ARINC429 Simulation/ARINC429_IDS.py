@@ -933,10 +933,13 @@ class arinc429_intrusion_detection_system:
         self.get_channel_connections()
 
         self.sdis = self.get_sdis()
+        self.label_percentages = self.percets_BNR_BCD_DISC_SAL_per_label()
 
         self.rules = []
         self.get_rules()
         self.n = 1 # number of words.
+
+
 
     def make_default_rules(self):
 
@@ -1136,7 +1139,7 @@ class arinc429_intrusion_detection_system:
                 this_sdi = r
                 bitmask = self.replace_index(8,10,bitmask,self.sdis[r+f"_{channel}"])
             # Handle data / bits
-            elif(data_flag and r.__contains__("bits[") or r.__contains__("data:")):
+            elif(data_flag and r.__contains__("bits[") or r.__contains__("data:") or r.__contains__("Encoding:") ):
                 data_flag = False
                 if(r.__contains__("bits[")):
                     rz = r.split("=")[1].replace('"','')
@@ -1194,13 +1197,20 @@ class arinc429_intrusion_detection_system:
                                                      8,
                                                      bitmask,
                                                      self.SAL_encode(r))
+                elif(r.__contains__("Encoding:")):
+                    if(octal_flag != False): #Need the label
+                        raise ValueError(f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
+                    encoding = r.split(':')[1]
+                    message += f". Percent Chance of being {encoding}: {self.label_percentages[label][encoding]}%."
             elif(SSM_flag and len(r) == 2
                  and (r == "00" or r == "01" or r == "10" or r == "11")):
                 try:
                     ssmThere = (int(r,2) >= 0 or int(r,2) <= 4)
                     if(ssmThere):
-                        if(data < 0.0):
-                            print("hello")
+                        if(data != None
+                                and ( (data < 0.0 and not r.__contains__("1")) # SSM must have 1 to make it negative
+                                     or (data >= 0.0 and r.__contains__("00")) ) ): # Positive must match 00.
+                            raise ValueError("Data sign does not match SSM!")
                         bitmask = self.replace_index(29,31,bitmask,r)
                         SSM_flag = False
                 except ValueError:
@@ -1382,3 +1392,57 @@ class arinc429_intrusion_detection_system:
     def SAL_encode(self, SAL_str):
         sal_label_chip = lru_txr()
         return(sal_label_chip.decode(self.SALs[SAL_str]))
+
+    def percets_BNR_BCD_DISC_SAL_per_label(self):
+        label_percentages = {}
+        """
+        Example:
+        
+        0o012: {0x002: ["BCD", 1.0, (0.0, 7000.0)],
+                0x004: ["BCD", 1.0, (0.0, 7000.0)],
+                0x005: ["BCD", 1.0, (0.0, 79999.0)],
+                0x025: ["BCD", 1.0, (0.0, 7000.0)],
+                0x038: ["BCD", 1.0, (0.0, 7000.0)],
+                0x04d: ["BCD", 1.0, (0.0, 7000.0)],
+                0x056: ["BCD", 1.0, (0.0, 7000.0)],
+                0x060: ["BCD", 1.0, (0.0, 7000.0)]},
+                
+        100% BCD
+        """
+        for word_label, encodings in self.all_labels.items():
+            # Calculate percentage that the word is BNR, BCD, DISC, and SAL.
+            total_encodings = len(encodings.items())
+
+            # Placeholder error handing:
+            if(total_encodings == 0):
+                label_percentages[word_label] = {"BCD": 0.0,
+                                                 "BNR": 0.0,
+                                                 "DISC": 0.0,
+                                                 "SAL": 0.0}
+                continue
+
+            BCD_cnt = 0
+            BNR_cnt = 0
+            DISC_cnt = 0
+            SAL_cnt = 0
+            for hexEquipID, encoding_list in encodings.items():
+                if(encoding_list[0] == "BCD"):
+                    BCD_cnt += 1
+                elif(encoding_list[0] == "BNR"):
+                    BNR_cnt += 1
+                elif(encoding_list[0] == "DISC"):
+                    DISC_cnt += 1
+                elif(encoding_list[0] == "SAL"):
+                    SAL_cnt += 1
+
+            BCD_percentage = round(BCD_cnt / total_encodings * 100.0, 3)
+            BNR_percentage = round(BNR_cnt / total_encodings * 100.0, 3)
+            DISC_percentage = round(DISC_cnt / total_encodings * 100.0, 3)
+            SAL_percentage = round(SAL_cnt / total_encodings * 100.0, 3)
+
+            label_percentages[word_label] = {"BCD": BCD_percentage,
+                                             "BNR": BNR_percentage,
+                                             "DISC": DISC_percentage,
+                                             "SAL": SAL_percentage}
+
+        return(label_percentages)

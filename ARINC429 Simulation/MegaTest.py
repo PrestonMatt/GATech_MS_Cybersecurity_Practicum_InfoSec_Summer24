@@ -4055,8 +4055,8 @@ def test_rules_default():
                     # Label -> 0o012 = 01010000, ADIRS=11, 6000 = 000...1100
                      ('alert/log','Orange','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
                      ('alert','Purple','0000000000111111111111111110000',None,False,'Funny Pattern!'),
-                     ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!'),
-                     ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!')])
+                     ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.'),
+                     ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.')])
 
 def test_all_IDS_tests():
     test_IDS_log_outfile_path()

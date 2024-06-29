@@ -60,6 +60,10 @@ Green: WnBS -> 11
 # Either the line will have 'time' in it before the message or it will not have it.
 
 # If alerting / logging at the same time, log can only log the bits version and not the human-readable
+# When alert/logging on BCD it's impossible to know without the hex ID if it's BCD/BNR/DISC/SAL. And when given the
+# SDI, you know if it's already BCD/BNR/DISC/SAL anyway. So it's redundant.
+# So if you specify BCD/BNR/DISC/SAL option, it gives you the percent change of being encoded to that option.
+# and adds that to the message.
 
 # Examples (REPLACE THIS SECTION HERE WITH YOUR OWN RULES):
 # Alert on if there is a word sent through the Blue channel
@@ -79,6 +83,7 @@ alert Blue log 0o012 ADIRU data:6000 00 C "Plane's speed is 6000 Knots"
 alert Purple bits[11:29)=01010101010101010 "Funny Pattern!"
 # Alerts on any word with that particular label that is BCD as opposed to BNR
 # For this label there are 6 different things it could be with 5 encoded as BNR and 1 as BCD
+# So the message will be appended with: ". Percent Chance of being BCD: 16.667%."
 alert Purple 0o062 BCD "Tire Loading (Left Wing Main) Word!"
 # Same as above, but just prepends time to the logged alert
 alert Purple 0o062 BCD time "Tire Loading (Left Wing Main) Word!"
