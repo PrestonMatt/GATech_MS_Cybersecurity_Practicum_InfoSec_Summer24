@@ -1083,6 +1083,10 @@ class arinc429_intrusion_detection_system:
         message = ""
         try:
             message = line.split('"')[1]
+            temp = line.replace('"',"")
+            temp = temp.replace(message,"")
+            temp = temp.replace("\n","")
+            rule = temp.split(" ")
         except IndexError:
             pass # message is already nothing.
 
@@ -1164,9 +1168,12 @@ class arinc429_intrusion_detection_system:
                             break
 
                     #equipID = self.equip_ids[this_sdi]
-                    encode_type = self.all_labels[int(label, 2)][equipID][0]
-                    resolution = self.all_labels[int(label, 2)][equipID][1]
-                    data = r.split(":")[1]
+                    encode_type = self.all_labels[label][equipID][0]
+                    resolution = self.all_labels[label][equipID][1]
+                    try:
+                        data = float(r.split(":")[1])
+                    except ValueError:
+                        raise ValueError("Data given to check is not a number!")
                     if(encode_type == "BCD"):
                         bitmask = self.replace_index(9,
                                                      29,
@@ -1187,10 +1194,13 @@ class arinc429_intrusion_detection_system:
                                                      8,
                                                      bitmask,
                                                      self.SAL_encode(r))
-            elif(SSM_flag):
+            elif(SSM_flag and len(r) == 2
+                 and (r == "00" or r == "01" or r == "10" or r == "11")):
                 try:
                     ssmThere = (int(r,2) >= 0 or int(r,2) <= 4)
                     if(ssmThere):
+                        if(data < 0.0):
+                            print("hello")
                         bitmask = self.replace_index(29,31,bitmask,r)
                         SSM_flag = False
                 except ValueError:
@@ -1207,7 +1217,7 @@ class arinc429_intrusion_detection_system:
                 continue
 
         if(len(bitmask) != 31):
-            raise ValueError("Error in parsing word!")
+            raise ValueError(f"Bitmask length error: {len(bitmask)}, for {bitmask}. Error in parsing word!")
 
         self.rules.append((alert_log, channel, bitmask, parity_check, time_notate, message))
 
@@ -1279,10 +1289,10 @@ class arinc429_intrusion_detection_system:
 
         # TODO add handling for special cases for BCD
 
-        SDI = "00"
-        SSM = "00"
-        if(value < 0):
-            SSM = "11"
+        #SDI = "00"
+        #SSM = "00"
+        #if(value < 0):
+        #    SSM = "11"
 
         digits = str(value).strip("-")
         if(res >= 1.0): # remove the stuff after 0.000000
@@ -1323,7 +1333,7 @@ class arinc429_intrusion_detection_system:
         dig1 = "0"*(3-len(dig1)) + dig1
         dig1 = dig1[::-1]
 
-        partial_data = SDI + dig5 + dig4 + dig3 + dig2 + dig1 + SSM
+        partial_data = dig5 + dig4 + dig3 + dig2 + dig1# + SSM
         return(partial_data)
 
     def BNR_encode(self):

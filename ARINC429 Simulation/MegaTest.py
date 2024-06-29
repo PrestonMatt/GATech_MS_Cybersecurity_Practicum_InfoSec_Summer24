@@ -3994,12 +3994,20 @@ def test_IDS_log_outfile_path():
     assert(log_file == r"C:/ARINC_IDS/Logs/Logs.txt")
 
 def test_IDS_alert_outfile_path():
-    IDS_test_default = IDS()
+    try:
+        IDS_test_default = IDS()
+    except FileNotFoundError:
+        IDS_test_default = IDS(rules_file=
+                               r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt")
     alert_file = IDS_test_default.alert_filepath
     assert(alert_file == r"C:/ARINC_IDS/Alerts/Alerts.txt")
 
 def test_IDS_Channel_inputs():
-    IDS_test_default = IDS()
+    try:
+        IDS_test_default = IDS()
+    except FileNotFoundError:
+        IDS_test_default = IDS(rules_file=
+                               r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt")
     channels = IDS_test_default.channels
     #print("\n", channels)
     assert(channels == {
@@ -4010,7 +4018,11 @@ def test_IDS_Channel_inputs():
     })
 
 def test_IDS_SDI_masks():
-    IDS_test_default = IDS()
+    try:
+        IDS_test_default = IDS()
+    except FileNotFoundError:
+        IDS_test_default = IDS(rules_file=
+                               r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt")
     sdis = IDS_test_default.sdis
     assert(sdis == {
         "ADIRU_Orange": "11",
@@ -4026,7 +4038,11 @@ def test_IDS_SDI_masks():
     })
 
 def test_rules_default():
-    IDS_test_default = IDS()
+    try:
+        IDS_test_default = IDS()
+    except FileNotFoundError:
+        IDS_test_default = IDS(rules_file=
+                               r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt")
     rulez = IDS_test_default.rules
     #ADIRU_1 = ADIRU("low",[ARINC429BUS(),ARINC429BUS()])
     #ADIRU_1.set_value('Ground Speed',"6000 Knots")
@@ -4036,7 +4052,8 @@ def test_rules_default():
                      ('alert','Blue','0001000000000000000000000000000',None,False,'Latitude word sent'),
                      ('log', 'Blue', '1001000000000000000000000000000',None,False,''),
                      ('log', 'Blue', '0000000000000000000000000000000',None,False,''),
-                     ('alert','Blue','0101000000000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
+                    # Label -> 0o012 = 01010000, ADIRS=11, 6000 = 000...1100
+                     ('alert','Orange','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
                      ('alert','Purple','0000000000111111111111111110000',None,False,'Funny Pattern!'),
                      ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!'),
                      ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!')])
