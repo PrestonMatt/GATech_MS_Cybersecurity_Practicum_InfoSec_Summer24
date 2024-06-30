@@ -633,7 +633,7 @@ class arinc429_intrusion_detection_system:
                 # So, you need 17 bits to fill them all (so range is 131071)
                 0x002: ["BNR", 1.0, (0.0, 86400.0), 17], # UTC Time
                 0x00B: ["BNR", 1.0, (0.0, 86400.0), 17],
-                0x029: ["BNR", 16.0 (0.0, 32768.0), 11], # Cabin Altitude Rate --> nothing about this
+                0x029: ["BNR", 16.0, (0.0, 32768.0), 11], # Cabin Altitude Rate --> nothing about this
                 # ^ So I am just going to copy regular altitude rate.
                 0x031: ["BNR", 1.0, (0.0, 86400.0), 17], # UTC Time
                 0x056: ["BNR", 1.0, (0.0, 86400.0), 17], # UTC Time
@@ -659,7 +659,7 @@ class arinc429_intrusion_detection_system:
                 0o366: ["SAL", 0.0]},
 
         0o153: {0x002: ["BNR", 1.0, (0.0, 65536.0), 16],
-                0x027: ["BNR", 1.0 (0.0, 1.0), 1], # Flare -> idk is this on/off?
+                0x027: ["BNR", 1.0, (0.0, 1.0), 1], # Flare -> idk is this on/off?
                 # Borrowing from other valve position words.
                 0x029: ["BNR", 0.053, (-5.0, 105.0), 11], #Pressurization Valve Position (Gr. #1)
                 # The notes here say to look at ARINC741. I cannot find anything.

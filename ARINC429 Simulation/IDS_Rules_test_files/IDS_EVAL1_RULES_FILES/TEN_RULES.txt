@@ -1,0 +1,26 @@
+!Outfiles
+alerts = C:/Users/mspre/Desktop/Practicum Resources/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24/ARINC429 Simulation/IDS_Rules_test_files/IDS_EVAL1_RULES_FILES/Alerts_Logs/Alerts_EVAL1_10Rules.txt
+logs = C:/Users/mspre/Desktop/Practicum Resources/GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24/ARINC429 Simulation/IDS_Rules_test_files/IDS_EVAL1_RULES_FILES/Alerts_Logs/Logs_EVAL1_10Rules.txt
+
+!Channels
+Channel1: Global_Positioning_System -> ADIRS
+Channel2: ADIRS -> Flight_Control_Computer
+Channel3: Flight_Control_Computer -> XXX
+
+!SDI
+# Do not identify any TX LRUs SDI here.
+Channel1: Flight_Control_Computer -> 00
+Channel2: Global_Positioning_System -> 01
+Channel2: ADIRS -> 10
+
+!Rules
+alert/log Channel2 0o010 ADIRS data:-40.0 C "Longitude is -40.0 Degrees"
+alert Channel3 0o066 Flight_Control_Computer "FMC has sent a directional word."
+alert Channel1 0o011 Global_Positioning_System "GPS Longitude word sent."
+log Channel2 0o015 ADIRS data:123 00 C "Wind Speed is 98.3 Knots"
+alert Channel2 0o221 ADIRS data:70.45 "WARNING!!! ANGLE OF ATTACK DANGEROUS!"
+alert Channel3 I
+log Channel1 Flight_Control_Computer I "FMC is sending incorrect parity words."
+alert Channel2 0o060 Encoding:BCD "BCD Words for label 0o60"
+log Channel1 0o066 bits[11:15)=1111 # "FMC Shifting up."
+log Channel1 bits time
