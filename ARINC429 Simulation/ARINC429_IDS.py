@@ -499,42 +499,117 @@ class arinc429_intrusion_detection_system:
                 0x0A5: ["BNR", 1.0, (0.0, 8192.0), 13],
                 0x1E2: ["BNR", 1.0, (0.0, 8190.0), 13]},
 
-        0o125: {},
+        0o125: {0x002: ["BCD", 0.1, (0.0, .0)],
+                0x00B: ["BCD", 0.1, (0.0, 5.0)],
+                0x031: ["BCD", 0.1, (0.0, 5.0)],
+                0x056: ["BCD", 0.1, (0.0, 4.0)],
+                0x060: ["BCD", 0.1, (0.0, 4.0)]},
 
-        0o126: {},
+        0o126: {0x002: ["BNR", 1.0, (0.0, 32768.0), 15],
+                0x026: ["BNR", 1.0, (0.0, float(int("1"*19,2))), 19], # The Spec says nothing about this.
+                0x029: ["BNR", 1.0, (0.0, float(int("1"*19,2))), 19], # The Spec says nothing about this.
+                0x056: ["BNR", 1.0, (0.0, 32768.0), 15],
+                0x060: ["BNR", 1.0, (0.0, 32768.0), 15]},
 
-        0o127: {},
+        0o127: {0x002: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x01B: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x033: ["BNR", 0.002, (0.0, 32.0), 14],
+                0x10A: ["BNR", 0.016, (1.5, 30.0), 11],
+                0x10B: ["BNR", 0.016, (1.5, 30.0), 11],
+                0x1E2: ["BNR", 1.0, (0.0, 255.0), 8]},
 
-        0o130: {},
+        0o130: {0x00B: ["BNR", 1.2e-4, (0.0, 16.0), 17],
+                0x01A: ["BNR", 0.06, (0.0, 128.0), 11],
+                0x01C: ["BNR", 0.06, (0.0, 128.0), 11],
+                0x02F: ["BNR", 0.06, (0.0, 128.0), 11],
+                0x035: ["BNR", 0.0625, (0.0, 128.0), 11],
+                0x03F: ["BNR", 0.06, (0.0, 128.0), 11],
+                0x10A: ["BNR", 0.125, (-80.0, 90.0), 10],
+                0x10B: ["BNR", 0.125, (-80.0, 90.0), 10],
+                0x13A: ["BNR", 0.0625, (0.0, 128.0), 11]},
 
-        0o131: {},
+        0o131: {0x01A: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x01C: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x02D: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x02F: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x033: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x035: ["BNR", 1.0, (0.0, 31.0), 5], # This is a special case.
+                0x13A: ["BNR", 0.004, (0.0, 32.0), 13]},
 
-        0o132: {},
+        0o132: {0x01A: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x01C: ["BNR", 0.004, (0.0, 32.0), 13],
+                0x033: ["BNR", 0.002, (0.0, 32.0), 14],
+                0x035: ["BNR", 1.0, (0.0, 31.0), 5]}, # This is a special case.
 
-        0o133: {},
+        0o133: {0x00B: ["BNR", 0.125, (0.0, 32786.0), 18],
+                0x01A: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x02F: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x03F: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x10A: ["BNR", 0.088, (0.0, 90.0), 11],
+                0x10B: ["BNR", 0.088, (0.0, 90.0), 11]},
 
-        0o134: {},
+        0o134: {0x01C: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x10A: ["BNR", 0.088, (-128.0, 128.0), 11],
+                0x10B: ["BNR", 0.088, (-128.0, 128.0), 11],
+                0x13A: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o135: {},
+        0o135: {0x01C: ["BNR", 0.002, (0.0, 8.0), 12],
+                0x029: ["BNR", 1.0, (0.0, 128.0), 7],
+                0x05A: ["BCD", 100, (0.0, 9999.0)]},
 
-        0o136: {},
+        0o136: {0x00B: ["BNR", 0.125, (0.0, 32768.0), 18],
+                0x01C: ["BNR", 0.002, (0.0, 8.0), 12],
+                0x05A: ["BCD", 100, (0.0, 9999.0)]},
 
-        0o137: {},
+        0o137: {0x01B: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x02A: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x02F: ["BNR", 0.03, (0.0, 128.0), 12],
+                0x03F: ["BNR", 0.03, (0.0, 128.0), 12],
+                0x05A: ["BCD", 100, (0.0, 9999.0)],
+                0x10A: ["BNR", 0.063, (-5.0, 105.0), 11],
+                0x10B: ["BNR", 0.063, (-5.0, 105.0), 11],
+                0x140: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o140: {
+        0o140: {0x001: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x00B: ["BNR", 9.53674e-7, (0.0, 1.0), 20],
+                0x025: ["BNR", 0.02, (-180.0, 180.0), 10],
+                0x029: ["BNR", 0.06, (0.0, 128.0), 11], #NOTHING IN THE SPEC - this is in dec C so I will borrow another one.
+                0x05A: ["BCD", 100, (0.0, 9999.0)],
                 0x114: ["DISC", 0.0]},
 
-        0o141: {
+        0o141: {0x001: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x00B: ["BNR", 9.31225e-10, (0.0, 9.536743e-7), 10],
+                0x025: ["BNR", 0.02, (-180.0, 180.0), 10],
+                0x029: ["BNR", 0.06, (0.0, 128.0), 11], #NOTHING IN THE SPEC - this is in dec C so I will borrow another one.
+                0x05A: ["BCD", 100, (0.0, 9999.0)],
                 0x114: ["DISC", 0.0]},
 
-        0o142: {
+        0o142: {0x002: ["BNR", 0.008, (0.0, 32.0), 12],
+                0x003: ["BNR", 0.008, (0.0, 32.0), 12],
+                0x00B: ["BNR", 9.31225e-10, (0.0, 9.536743e-7), 10],
+                0x025: ["BNR", 0.125, (0.0, 32.0), 8],
+                0x05A: ["BCD", 100, (0.0, 9999.0)],
                 0x114: ["DISC", 0.0]},
 
-        0o143: {
-                0x114: ["DISC", 0.0]},
+        0o143: {0x001: ["BNR", 0.05, (0.0, 180.0), 12],
+                # The notes here say to look at ARINC741. I cannot find anything.
+                # They will be dead codes.
+                0x041: ["BNR", 0.0, (0.0, 0.0), 0],
+                0x05A: ["BCD", 100, (0.0, 9999.0)],
+                0x114: ["DISC", 0.0],
+                # The notes here say to look at ARINC741. I cannot find anything.
+                # They will be dead codes.
+                0x241: ["BNR", 0.0, (0.0, 0.0), 0]},
 
-        0o144: {
-                0x114: ["DISC", 0.0]},
+        0o144: {0x02B: ["BNR", 1.0, (0.0, 8192.0), 14],
+                # The notes here say to look at ARINC741. I cannot find anything.
+                # They will be dead codes.
+                0x041: ["BNR", 0.0, (0.0, 0.0), 0],
+                0x05A: ["BCD", 100, (0.0, 9999.0)],
+                0x114: ["DISC", 0.0],
+                # The notes here say to look at ARINC741. I cannot find anything.
+                # They will be dead codes.
+                0x341: ["BNR", 0.0, (0.0, 0.0), 0],},
 
         0o145: {0x002: ["BNR", 1.0, (0.0, 126.0), 20], # Sort of wrong. See spec.
                 0x025: ["DISC", 0.0],
@@ -554,46 +629,237 @@ class arinc429_intrusion_detection_system:
                 0x114: ["DISC", 0.0],
                 0x115: ["BNR", 1.0, (0.0, 126.0), 20]}, # Sort of wrong. See spec.
 
-        0o150: {
+        0o150: {# UTC Time: there are 86400 seconds in a day.
+                # So, you need 17 bits to fill them all (so range is 131071)
+                0x002: ["BNR", 1.0, (0.0, 86400.0), 17], # UTC Time
+                0x00B: ["BNR", 1.0, (0.0, 86400.0), 17],
+                0x029: ["BNR", 16.0 (0.0, 32768.0), 11], # Cabin Altitude Rate --> nothing about this
+                # ^ So I am just going to copy regular altitude rate.
+                0x031: ["BNR", 1.0, (0.0, 86400.0), 17], # UTC Time
+                0x056: ["BNR", 1.0, (0.0, 86400.0), 17], # UTC Time
+                0x060: ["BNR", 1.0, (0.0, 86400.0), 17],
                 0x114: ["DISC", 0.0]},
 
-        0o151: {0x05a: ["DISC", 0.0],
+        0o151: {0x002: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x027: ["BNR", 0.0732, (-2400.0, 2400.0), 15],
+                0x055: ["BNR", 0.0732, (-2400.0, 2400.0), 15],
+                0x056: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x05a: ["DISC", 0.0],
+                0x060: ["BNR", 0.1, (-180.0, 180.0), 11],
                 0x114: ["DISC", 0.0]},
 
-        0o152: {0x0114: ["DISC", 0.0],
+        0o152: {0x027: ["BNR", 0.0, (0.0, 0.0), 0], # Notes say nothing. Dead code.
+                0x038: ["BNR", 0.03125, (0.0, 2048.0), 16],
+                # The notes here say to look at ARINC741. I cannot find anything.
+                # A steering wheel can go +180, -180, so I will borrow that.
+                0x041: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x055: ["BNR", 0.0732, (-2400.0, 2400.0), 15],
+                0x0AD: ["BNR", 0.008, (0.0, 2048.0), 18],
+                0x114: ["DISC", 0.0],
                 0o364: ["SAL", 0.0]},
 
-        0o153: {0x114: ["DISC", 0.0]},
+        0o153: {0x002: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x027: ["BNR", 1.0 (0.0, 1.0), 1], # Flare -> idk is this on/off?
+                # Borrowing from other valve position words.
+                0x029: ["BNR", 0.053, (-5.0, 105.0), 11], #Pressurization Valve Position (Gr. #1)
+                # The notes here say to look at ARINC741. I cannot find anything.
+                # A steering wheel can go +180, -180, so I will borrow that.
+                0x041: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x055: ["BNR", 1.0, (0.0, 359.0), 9],
+                0x114: ["DISC", 0.0]},
 
-        0o154: {0x114: ["DISC", 0.0]},
+        0o154: {0x002: ["BNR", 0.008, (0.0, 512.0), 16],
+                # Azimuth which is typically -40, 40
+                # -12.345 -> 12345 < 65535 -> int("1"*16,2)
+                0x027: ["BNR", 0.001, (-40.0, 40.0), 16],
+                0x055: ["BNR", 1.0, (-51.1, 51.1), 9],
+                0x056: ["BNR", 0.008, (0.0, 512.0), 16],
+                0x060: ["BNR", 0.008, (0.0, 512.0), 16],
+                0x114: ["DISC", 0.0]},
 
-        0o155: {},
+        0o155: {0x01c: ["DISC", 0.0],
+                0x025: ["DISC", 0.0],
+                0x027: ["BCD", 0.1, (0.0, 359.9)],
+                0x029: ["DISC", 0.0],
+                0x033: ["DISC", 0.0],
+                0x055: ["BNR", 0.01, (-51.1, 51.1), 9],
+                0x05a: ["DISC", 0.0],
+                0x0bb: ["DISC", 0.0],
+                0x10a: ["DISC", 0.0],
+                0x10b: ["DISC", 0.0],
+                0x114: ["DISC", 0.0]},
 
-        0o156: {},
+        # MLS Data Words: https://en.wikipedia.org/wiki/Microwave_landing_system
+        0o156: {0x01C: ["DISC", 0.0],
+                # MLS Dataword 1 -> I am going to assume that this is Microwave Landing System?
+                #The system may be divided into five functions: Approach azimuth, Back azimuth, Approach elevation, Range and Data communications
+                # Approach azimuth guidance: 40 degrees on either side
+                0x027: ["BNR", 0.001, (-40.0, 40.0), 16],
+                0x029: ["DISC", 0.0],
+                0x033: ["DISC", 0.0],
+                0x04d: ["DISC", 0.0],
+                # MLS Basic Data Wd 1: Approach azimuth guidance: 40 degrees on either side
+                0x055: ["BNR", 0.001, (-40.0, 40.0), 16],
+                0x0bb: ["DISC", 0.0],
+                0x10a: ["DISC", 0.0],
+                0x10b: ["DISC", 0.0],
+                0x114: ["DISC", 0.0]},
 
-        0o157: {},
+        0o157: {0x01c: ["DISC", 0.0],
+                0x027: ["DISC", 0.0],
+                0x033: ["DISC", 0.0],
+                0x04d: ["DISC", 0.0],
+                # MLS Basic Data Wd 2: Elevation guidance: 20,000 feet degrees on either side
+                # 0b111111111111011 -> 32763 feet > 20000
+                0x055: ["BNR", 1.0, (0.0, 20000.0), 15],
+                0x0bb: ["DISC", 0.0],
+                0x10a: ["DISC", 0.0],
+                0x10b: ["DISC", 0.0],
+                0x114: ["BCD", 1.0, (0.0, 400.0)],
+                0o157: ["SAL", 0.0]},
 
-        0o160: {},
+        0o160: {0x01c: ["DISC", 0.0],
+                0x025: ["DISC", 0.0],
+                # MLS Data Word 3: Range guidance, up to 20 Nautical Miles
+                # 0b111111111111011 -> 32.763 N.M. > 20.000 N.M.
+                0x027: ["BNR", 0.001, (0.0, 20.0), 15],
+                0x033: ["DISC", 0.0],
+                0x04d: ["DISC", 0.0],
+                # MLS Data Word 3: Range guidance, up to 20 Nautical Miles
+                # 0b111111111111011 -> 32.763 N.M. > 20.000 N.M.
+                0x055: ["BNR", 0.001, (0.0, 20.0), 15],
+                0x0bb: ["DISC", 0.0],
+                0x10a: ["DISC", 0.0],
+                0x10b: ["DISC", 0.0],
+                0x114: ["DISC", 0.0]},
 
-        0o161: {},
+        0o161: {0x01c: ["DISC", 0.0],
+                0x025: ["DISC", 0.0],
+                # MLS Data Word 4: MLS identification is a four-letter designation starting with the letter M. It is transmitted in
+                # International Morse Code at least six times per minute by the approach azimuth (and back azimuth) ground equipment
+                # There are roughtly 40 morse code codes.
+                # 0b111111 -> 63. This should be enough.
+                0x027: ["BNR", 1.0, (1.0, 40.0), 6],
+                0x033: ["DISC", 0.0],
+                0x04d: ["DISC", 0.0],
+                # MLS Data Word 4: MLS identification is a four-letter designation starting with the letter M. It is transmitted in
+                # International Morse Code at least six times per minute by the approach azimuth (and back azimuth) ground equipment
+                # There are roughtly 40 morse code codes.
+                # 0b111111 -> 63. This should be enough.
+                0x055: ["BNR", 1.0, (1.0, 40.0), 6],
+                0x10a: ["DISC", 0.0],
+                0x10b: ["DISC", 0.0],
+                0x114: ["DISC", 0.0]},
 
-        0o162: {},
+        0o162: {0x012: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x025: ["BNR", 0.05, (-180.0, 180.0), 12],
+                # MLS Data Word 5: Let's do Normal Glide Path -> degrees o to 30.
+                # Auxiliary data content: Representative data include: 3-D locations of MLS equipment,
+                # Waypoint coordinates, Runway conditions and Weather (e.g., RVR, ceiling, altimeter setting,
+                # wind, wake vortex, wind shear)
+                0x027: ["BNR", 0.001, (0.0, 30.0), 15],
+                0x029: ["BNR", 1.0, (0.0, 4096.0), 12],
+                # MLS Data Word 5: Let's do Normal Glide Path -> degrees o to 30.
+                # Auxiliary data content: Representative data include: 3-D locations of MLS equipment,
+                # Waypoint coordinates, Runway conditions and Weather (e.g., RVR, ceiling, altimeter setting,
+                # wind, wake vortex, wind shear)
+                0x055: ["BNR", 0.001, (0.0, 30.0), 15],
+                # Stick Shaker Margin Proportional Signal
+                # Difference between current AoA and the critical AoA
+                # Safe AoA Margin: 10 to 5 degrees below the critical AoA
+                # Warning AoA Margin: 5 to 3 degrees below the critical AoA
+                # Critical AoA Margin: Less than 3 degrees below the critical AoA
+                # 0b111111111111011 -> 32763 -> 32.763 degs > 10.000
+                0x0de: ["BNR", 0.001, (0.0, 10.0), 15],
+                0x114: ["DISC", 0.0],
+                0x140: ["BNR", 2.0, (0.0, 1131072.0), 16]},
 
-        0o163: {},
+        0o163: {# MLS Data Word 6: 3-D locations of MLS equipment
+                # Lat / Long -180 to 180
+                0x027: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x037: ["BCD", 1.0, (0.0, 19999.0)],
+                0x055: ["BNR", 0.001, (0.0, 30.0), 15],
+                0x114: ["DISC", 0.0],
+                # 047 Digital Flight Data Recorder -> 747 DFDR & A330/340 SSFDR - System Address Label
+                0x047: ["SAL", 0.0]},
 
-        0o164: {},
+        0o164: {0x002: ["BNR", 0.125, (0.0, 8192.0), 16],
+                0x003: ["BNR", 0.125, (0.0, 8192.0), 16],
+                0x007: ["BNR", 0.125, (0.0, 8192.0), 16],
+                0x025: ["BNR", 2.0, (0.0, 8192.0), 12],
+                # MLS Data Word 7: Waypoint coordinates
+                0x027: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x03B: ["BNR", 0.015, (0.0, 32.0), 11],
+                0x055: ["BNR", 0.00125, (-41.0, 41.0), 15],
+                0x114: ["DISC", 0.0]},
 
-        0o165: {},
+        0o165: {0x007: ["BCD", 0.1, (-7999.9, 7999.9)],
+                0x00B: ["BNR", 1.0, (0.0, 32768.0), 15],
+                # MLS Data Word 8: Runway conditions and Weather (e.g., RVR, ceiling, altimeter setting, wind, wake vortex, wind shear)
+                # Wind shear: 0 to 30 knots
+                0x027: ["BNR", 0.001, (0.0, 30.0), 15],
+                0x055: ["BNR", 0.00125, (-82.0, 82.0), 16],
+                0x114: ["DISC", 0.0]},
 
-        0o166: {},
+        0o166: {0x007: ["BNR", 0.5, (0.0, 512.0), 10],
+                0x00B: ["BNR", 0.125, (-4096.0, 4096.0), 15],
+                0x114: ["DISC", 0.0]},
 
-        0o167: {},
+        0o167: {0x002: ["BNR", 0.00195, (0.0, 128.0), 16],
+                0x114: ["DISC", 0.0]},
 
-        0o170: {},
+        0o170: {0x025: ["BCD", 4.0, (0.0, 7000.0)],
+                0x0C5: ["BCD", 4.0, (0.0, 7000.0)],
+                0x114: ["DISC", 0.0],
+                0o332: ["SAL", 0.0]},
 
-        0o171: {},
+        0o171: {0x002: ["BNR", 0.001953, (0.0, 128.0), 16],
+                0x0A5: ["BNR", 1.0, (0.0, 256.0), 8]},
 
-        0o172: {},
+        0o172: {0o156: ["SAL", 0.0],
+                0o157: ["SAL", 0.0],
+                0o174: ["SAL", 0.0],
+                0o177: ["SAL", 0.0],
+                0o210: ["SAL", 0.0],
+                0o211: ["SAL", 0.0],
+                0o212: ["SAL", 0.0],
+                0o225: ["SAL", 0.0],
+                0o241: ["SAL", 0.0],
+                0o242: ["SAL", 0.0],
+                0o244: ["SAL", 0.0],
+                0o245: ["SAL", 0.0],
+                0o246: ["SAL", 0.0],
+                0o247: ["SAL", 0.0],
+                0o250: ["SAL", 0.0],
+                0o251: ["SAL", 0.0],
+                0o252: ["SAL", 0.0],
+                0o253: ["SAL", 0.0],
+                0o254: ["SAL", 0.0],
+                0o255: ["SAL", 0.0],
+                0o256: ["SAL", 0.0],
+                0o310: ["SAL", 0.0],
+                0o311: ["SAL", 0.0],
+                0o312: ["SAL", 0.0],
+                0o313: ["SAL", 0.0],
+                0o314: ["SAL", 0.0],
+                0o315: ["SAL", 0.0],
+                0o316: ["SAL", 0.0],
+                0o321: ["SAL", 0.0],
+                0o322: ["SAL", 0.0],
+                0o323: ["SAL", 0.0],
+                0o324: ["SAL", 0.0],
+                0o325: ["SAL", 0.0],
+                0o326: ["SAL", 0.0],
+                0o327: ["SAL", 0.0],
+                0o330: ["SAL", 0.0],
+                0o331: ["SAL", 0.0],
+                0o332: ["SAL", 0.0],
+                0o345: ["SAL", 0.0],
+                0o362: ["SAL", 0.0],
+                0o363: ["SAL", 0.0],
+                0o364: ["SAL", 0.0],
+                0o366: ["SAL", 0.0],
+                0o367: ["SAL", 0.0]}, #Subsystem Identifier
 
         0o173: {},
 
@@ -1408,8 +1674,9 @@ class arinc429_intrusion_detection_system:
                                                      bitmask,
                                                      self.DISC_encode())
                     elif (encode_type == "SAL"):
-                        bitmask = self.replace_index(0,
-                                                     8,
+                        # Check these, but basically, it's a label after the label.
+                        bitmask = self.replace_index(9,
+                                                     16,
                                                      bitmask,
                                                      self.SAL_encode(r))
                 elif (r.__contains__("Encoding:")):
@@ -1639,7 +1906,10 @@ class arinc429_intrusion_detection_system:
         pass
 
     SALs = {
-        "CVR": 0o157,
+        "CVR 1": 0o156,
+        "CVR 1": 0o157,
+        "HGA/IGA HPA": 0o174,
+        "LGA HPA": 0o177,
         "FCMC Com A340-500/600": 0o210,
         "FCMC Mon A340-500/600": 0o211,
         "FCMC Int A340-500/600": 0o212,
@@ -1649,9 +1919,14 @@ class arinc429_intrusion_detection_system:
         "ILS": 0o244,
         "MLS": 0o245,
         "AHRS": 0o246,
+        "High-Speed Data (HSDU #1)": 0o247,
+        "High-Speed Data (HSDU #2)": 0o250,
         "VDR #1": 0o251,
         "VDR #2": 0o252,
         "VDR #3": 0o253,
+        "Network Server System": 0o254,
+        "Electronic Flight Bag Left": 0o255,
+        "Electronic Flight Bag Right": 0o256,
         "GPWS": 0o310,
         "GNLU 1": 0o311,
         "GNLU 2": 0o312,
@@ -1669,6 +1944,7 @@ class arinc429_intrusion_detection_system:
         "FMC 3": 0o330,
         "ATC TRANSPONDER": 0o331,
         "DADC": 0o332,
+        "Remote Data Concentrator": 0o345,
         "Passenger Services System (PSS) 767-300,400": 0o362,
         "Cabin Service System (CSS) 747-400": 0o363,
         "Audio Entertainment System (AES) Boeing": 0o364,
