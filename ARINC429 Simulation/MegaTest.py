@@ -4254,7 +4254,178 @@ def test_IDS_BNR_Encode_3():
 
     assert(dat == data)
 
+def test_IDS_BNR_Encode_4():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # Example: 0o116, w/ equipID 0x055: Horizontal GLS Deviation Rectilinear.
+    # 0 5 5 Horizontal GLS Deviation Rectilinear Feet 24000 18 0.00915
+    # Range is (0, 24000)
+    # Sig digs is 18
+    # resolution is 0.00915
+    data = IDS_test_default.BNR_encode(12345.0, 0.00915, 18, (0.0, 24000.0))
+    # 24000 / 915 = 26.229508196721312
+    # int("1" * 18, 2) = 262143 -> 2.62143
+    # rounding digits should be 4 because 26.2143 is closest to 26.229508196721312
+
+    # Manual encode to check
+    x = round(12345.0 / 915.0, 4)
+    x_str = str(x).replace(".","")
+    round_digs_lacking =  4 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (19-len(y)) + y
+    n = z[::-1]
+    dat = n + "00" # SSM = 00 as 1234 is positive.
+
+    assert(dat == data)
+
+def test_IDS_BNR_Encode_5():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # Example: 0o116, w/ equipID 0x055: Horizontal GLS Deviation Rectilinear.
+    # 0 5 5 Horizontal GLS Deviation Rectilinear Feet 24000 18 0.00915
+    # Range is (0, 24000)
+    # Sig digs is 18
+    # resolution is 0.00915
+    data = IDS_test_default.BNR_encode(12345.0, 0.00915, 18, (0.0, 24000.0))
+    # 24000 / 915 = 26.229508196721312
+    # int("1" * 18, 2) = 262143 -> 2.62143
+    # rounding digits should be 4 because 26.2143 is closest to 26.229508196721312
+
+    # Manual encode to check
+    x = round(12345.0 / 915.0, 4)
+    x_str = str(x).replace(".","")
+    round_digs_lacking = 4 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (19-len(y)) + y
+    n = z[::-1]
+    dat = n + "00" # SSM = 00 as 1234 is positive.
+
+    assert(dat == data)
+
+def test_IDS_BNR_Encode_6():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # Example: 0o116, w/ equipID 0x055: Horizontal GLS Deviation Rectilinear.
+    # 0 5 5 Horizontal GLS Deviation Rectilinear Feet 24000 18 0.00915
+    # Range is (0, 24000)
+    # Sig digs is 18
+    # resolution is 0.00915
+    data = IDS_test_default.BNR_encode(23999.00915, 0.00915, 18, (0.0, 24000.0))
+    # 24000 / 915 = 26.229508196721312
+    # int("1" * 18, 2) = 262143 -> 2.62143
+    # rounding digits should be 4 because 26.2143 is closest to 26.229508196721312
+
+    """
+        So the bounds here are a little funky. Strictly speaking, the spec sheet is lying.
+        Because 0b111111111111111111 = 262143
+        And since the resolution is 00915, that means that:
+        24000 / 915 = 26.229508196721312
+        => So our rounding digits must be:
+        262143 / 10000 = 26.2143
+        26.2143 < 26.2295
+        Let's get that real limit in actual unites: 26.2143 * 915 = 23986.0845
+        So our real limits are 0.0 to 23986.0845
+        
+        What happens when a number is larger than this real bound?
+        We need to account for that otherwise the length of the word will go off the rails.
+    """
+
+    # Manual encode to check
+    # Need to round down in the manual one.
+    x = round(23986.0845 / 915.0, 4)
+    x_str = str(x).replace(".","")
+    round_digs_lacking = 4 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (19-len(y)) + y
+    n = z[::-1]
+    dat = n + "00" # SSM = 00 as 1234 is positive.
+
+    assert(dat == data)
+
+def test_IDS_BNR_Encode_7():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # I want to test a BNR encode where sig digs are 20
+
+    # Example: 0o110, w/ equipID 0x00b: GNSS Latitude.
+    # Range is (-180.0, 180.0)
+    # Sig digs is 20
+    # resolution is 0.000172
+    data = IDS_test_default.BNR_encode(1.000172, 0.000172, 20, (-180.0, 180.0))
+    # 180 / 172 = 1.0465116279069768
+    # int("1" * 18, 2) = 1048575 -> 1.048575
+    # rounding digits should be 6 because 1.048575 is closest to 1.0465116279069768
+
+    # Manual encode to check
+    x = round(1.000172 / 172.0, 6)
+    x_str = str(x).replace(".","")
+    round_digs_lacking = 6 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (20-len(y)) + y
+    n = z[::-1]
+    dat = n + "0" # SSM = 00 as 1234 is positive.
+
+    assert(dat == data)
+
+def test_IDS_BNR_Encode_8():
+    # Get cwd
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_with_no_rules.txt"
+    IDS_test_default = IDS(rules_file=filename)
+
+    # I want to test a BNR encode where sig digs are 20
+
+    # Example: 0o110, w/ equipID 0x00b: GNSS Latitude.
+    # Range is (-180.0, 180.0)
+    # Sig digs is 20
+    # resolution is 0.000172
+    data = IDS_test_default.BNR_encode(-1.000172, 0.000172, 20, (-180.0, 180.0))
+    # 180 / 172 = 1.0465116279069768
+    # int("1" * 18, 2) = 1048575 -> 1.048575
+    # rounding digits should be 6 because 1.048575 is closest to 1.0465116279069768
+
+    # Manual encode to check
+    x = round(1.000172 / 172.0, 6)
+    x_str = str(x).replace(".","")
+    round_digs_lacking = 6 - len(str(x).split(".")[1])
+    y = bin(int(x_str + ("0"*round_digs_lacking)))[2:]
+    z = "0" * (20-len(y)) + y
+    n = z[::-1]
+    dat = n + "1" # SSM = 00 as 1234 is positive.
+
+    assert(dat == data)
+
+def test_rules_AllDataTypes():
+    current_dir = getcwd()
+    filename = current_dir + "\\IDS_Rules_test_files\\" + "rules_data_stress_test.txt"
+    IDS_test_default = IDS(rules_file=filename)
+    sdi = IDS_test_default.sdis
+    print(sdi)
+    rulez = IDS_test_default.rules
+    assert(rulez == [('alert','Blue','0000000000000000000000000000000',None,False,'Blue bus has a word.'),
+                     ('alert','Blue','0001000000000000000000000000000',None,False,'Latitude word sent'),
+                     ('log', 'Blue', '1001000000000000000000000000000',None,False,''),
+                     ('log', 'Blue', '0000000000000000000000000000000',None,False,''),
+                     # Label -> 0o012 = 01010000, ADIRS=11, 6000 = 000...1100
+                     ('alert/log','Orange','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
+                     ('alert','Purple','0000000000111111111111111110000',None,False,'Funny Pattern!'),
+                     ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.'),
+                     ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.')])
+
 def test_all_IDS_tests():
+    print("\n")
     test_IDS_log_outfile_path()
     test_IDS_alert_outfile_path()
     test_IDS_Channel_inputs()
@@ -4274,6 +4445,11 @@ def test_all_IDS_tests():
     test_IDS_BNR_Encode_1()
     test_IDS_BNR_Encode_2()
     test_IDS_BNR_Encode_3()
+    test_IDS_BNR_Encode_4()
+    test_IDS_BNR_Encode_5()
+    test_IDS_BNR_Encode_6()
+    test_IDS_BNR_Encode_7()
+    test_IDS_BNR_Encode_8()
 
 if __name__ == "__main__":
     #test_all()

@@ -338,47 +338,166 @@ class arinc429_intrusion_detection_system:
                 0x060: ["BNR", 0.25, (0.0, 512.0), 11],
                 0x114: ["BNR", 0.01, (0.0, 163.84), 14]},
 
-        0o100: {},
+        0o100: {0x001: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x002: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x011: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x020: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x029: ["BNR", 1.0, (-180.0, 180.0), 8],
+                0x037: ["BNR", 0.05, (0.0, 655360.0), 15],
+                0x056: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x060: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0a1: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0b1: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0bb: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o101: {},
+        0o101: {0x002: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x00b: ["BNR", 0.031, (0.0, 1024.0), 15],
+                0x020: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x025: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x029: ["BNR", 1.0, (0.0, 256.0), 8],
+                0x05a: ["BNR", 4, (4.0, 65532.0), 14],
+                0x0a1: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0bb: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x144: ["BNR", 0.01, (0.0, 164.0), 8],},
 
-        0o102: {},
+        0o102: {0x002: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x00b: ["BNR", 0.031, (0.0, 1024.0), 15],
+                0x020: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x029: ["BNR", 1.0, (0.0, 256.0), 8],
+                0x056: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x060: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x0a1: ["BNR", 1.0, (0.0, 65536.0), 16]},
 
-        0o103: {},
+        0o103: {0x001: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x002: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x003: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x00b: ["BNR", 0.0055, (-108.0, 108.0), 15],
+                0x01B: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x020: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x029: ["BNR", 0.25, (0.0, 128.0), 9],
+                0x056: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x060: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x0a1: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x0bb: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o104: {},
+        0o104: {0x001: ["BNR", 16.0, (0.0, 16384.0), 10],
+                0x002: ["BNR", 16.0, (0.0, 16384.0), 10],
+                0x01B: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x020: ["BNR", 16.0, (0.0, 16384.0), 10],
+                0x029: ["BNR", 0.25, (0.0, 128.0), 9],
+                0x02B: ["BNR", 1.0, (0.0, 16384.0), 14],
+                0x056: ["BNR", 16.0, (0.0, 16384.0), 10],
+                0x060: ["BNR", 16.0, (0.0, 16384.0), 10],
+                0x0A1: ["BNR", 16.0, (0.0, 16384.0), 10],
+                0x0BB: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o105: {},
+        0o105: {0x002: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x010: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x01B: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x020: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x029: ["BNR", 0.5, (-180.0, 2048.0), 12],
+                0x055: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x056: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x060: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x0A1: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x0B0: ["BNR", 0.1, (-180.0, 180.0), 11],
+                0x0BB: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o106: {},
+        0o106: {0x002: ["BNR", 1.0, (0.0, 4096.0), 12],
+                0x01B: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x020: ["BNR", 0.5, (0.0, 4096.0), 12],
+                0x029: ["BNR", 0.5, (0.0, 2048.0), 12],
+                0x056: ["BNR", 1.0, (0.0, 4096.0), 12],
+                0x060: ["BNR", 1.0, (0.0, 4096.0), 12],
+                0x0A1: ["BNR", 1.0, (0.0, 4096.0), 12],
+                0x0BB: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o107: {},
+        0o107: {0x002: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x01B: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x0BB: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x037: ["BNR", 0.01, (0.0, 163.84), 14],
+                0x056: ["BNR", 1.0, (0.0, 65536.0), 16],
+                0x060: ["BNR", 1.0, (0.0, 65536.0), 16]},
 
-        0o110: {},
+        0o110: {0x001: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x002: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x00B: ["BNR", 0.000172, (-180.0, 180.0), 20],
+                0x010: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x011: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x020: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0A1: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0B1: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0BB: ["BNR", 0.000687, (0.0, 180.0), 18]},
 
-        0o111: {},
+        0o111: {0x001: ["DISC", 0.0],
+                0x00B: ["BNR", 0.000172, (0.0, 180.0), 20],
+                0x01d: ["DISC", 0.0]},
 
-        0o112: {},
+        0o112: {0x002: ["BNR", 10.0, (0.0, 20480.0), 11],
+                0x00B: ["BNR", 0.125, (0.0, 4096.0), 15],
+                0x0A1: ["BNR", 0.001, (0.0, 4.0), 12],
+                #0x0A1: ["BNR", 1.0, (0.0, 4096.0), 12],
+                0x0BB: ["BNR", 0.000687, (-180.0, 180.0), 18]},
 
-        0o113: {},
+        # 0o113: {}, SPARE
 
-        0o114: {},
+        0o114: {0x002: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x029: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x02F: ["BNR", 0.002, (0.0, 32.0), 14],
+                0x03F: ["BNR", 0.002, (0.0, 32.0), 14],
+                0x056: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x060: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0BB: ["BNR", 0.000687, (-180.0, 180.0), 18],
+                0x0CC: ["BNR", 4.0, (0.0, 16384.0), 12],
+                0x10A: ["BNR", 0.016, (1.5, 20.0), 11],
+                0x10B: ["BNR", 0.016, (1.5, 20.0), 11],
+                0x13A: ["BNR", 0.002, (0.0, 32.0), 14]},
 
-        0o115: {},
+        0o115: {0x002: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x029: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x02F: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x03F: ["BNR", 0.25, (0.0, 512.0), 11],
+                0x056: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x060: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x0BC: ["BNR", 1.0, (0.0, 256.0), 8],
+                0x0CC: ["BNR", 4.0, (0.0, 16384.0), 12]},
 
-        0o116: {},
+        0o116: {0x002: ["BNR", 0.004, (0.0, 128.0), 15],
+                0x00B: ["BNR", 0.00915, (0.0, 24000.0), 18],
+                0x029: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x055: ["BNR", 0.00915, (0.0, 24000.0), 18],
+                0x056: ["BNR", 0.004, (0.0, 128.0), 15],
+                0x060: ["BNR", 0.004, (0.0, 128.0), 15],
+                0x0CC: ["BNR", 4.0, (0.0, 16384.0), 12]},
 
-        0o117: {},
+        0o117: {0x002: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x00B: ["BNR", 0.0625, (0.0, 1024.0), 14],
+                0x029: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x055: ["BNR", 0.0625, (0.0, 1024.0), 14],
+                0x056: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x060: ["BNR", 1.0, (0.0, 2048.0), 11],
+                0x0CC: ["BNR", 4.0, (0.0, 16384.0), 12]},
 
-        0o120: {},
+        0o120: {0x002: ["BNR", 0.016, (0.0, 512.0), 15],
+                0x00B: ["BNR", 8.38E-8, (0.0, 0.000172), 11],
+                0x056: ["BNR", 0.016, (0.0, 512.0), 15],
+                0x060: ["BNR", 0.016, (0.0, 512.0), 15]},
 
-        0o121: {},
+        0o121: {0x002: ["BNR", 0.01, (-180.0, 180.0), 14],
+                0x00B: ["BNR", 8.38E-8, (0.0, 0.000172), 11],
+                0x025: ["BNR", 0.01, (-180.0, 180.0), 14],
+                0x056: ["BNR", 0.01, (-180.0, 180.0), 14],
+                0x060: ["BNR", 0.01, (-180.0, 180.0), 14]},
 
-        0o122: {},
+        0o122: {0x002: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x056: ["BNR", 0.05, (-180.0, 180.0), 12],
+                0x060: ["BNR", 0.05, (-180.0, 180.0), 12]},
 
-        0o123: {},
+        0o123: {0x002: ["BNR", 0.001, (0.0, 256.0), 18]},
 
-        0o124: {},
+        0o124: {0x00b: ["DISC", 0.0],
+                0x0A5: ["BNR", 1.0, (0.0, 8192.0), 13],
+                0x1E2: ["BNR", 1.0, (0.0, 8190.0), 13]},
 
         0o125: {},
 
@@ -402,31 +521,51 @@ class arinc429_intrusion_detection_system:
 
         0o137: {},
 
-        0o140: {},
+        0o140: {
+                0x114: ["DISC", 0.0]},
 
-        0o141: {},
+        0o141: {
+                0x114: ["DISC", 0.0]},
 
-        0o142: {},
+        0o142: {
+                0x114: ["DISC", 0.0]},
 
-        0o143: {},
+        0o143: {
+                0x114: ["DISC", 0.0]},
 
-        0o144: {},
+        0o144: {
+                0x114: ["DISC", 0.0]},
 
-        0o145: {},
+        0o145: {0x002: ["BNR", 1.0, (0.0, 126.0), 20], # Sort of wrong. See spec.
+                0x025: ["DISC", 0.0],
+                0x029: ["DISC", 0.0],
+                0x0a1: ["DISC", 0.0],
+                0x114: ["DISC", 0.0]},
 
-        0o146: {},
+        0o146: {0x025: ["DISC", 0.0],
+                0x029: ["DISC", 0.0],
+                0x0a1: ["DISC", 0.0],
+                0x112: ["BNR", 1.0, (0.0, 126.0), 20], # Sort of wrong. See spec.
+                0x114: ["DISC", 0.0]},
 
-        0o147: {},
+        0o147: {0x025: ["DISC", 0.0],
+                0x029: ["DISC", 0.0],
+                0x0a1: ["DISC", 0.0],
+                0x114: ["DISC", 0.0],
+                0x115: ["BNR", 1.0, (0.0, 126.0), 20]}, # Sort of wrong. See spec.
 
-        0o150: {},
+        0o150: {
+                0x114: ["DISC", 0.0]},
 
-        0o151: {},
+        0o151: {0x05a: ["DISC", 0.0],
+                0x114: ["DISC", 0.0]},
 
-        0o152: {},
+        0o152: {0x0114: ["DISC", 0.0],
+                0o364: ["SAL", 0.0]},
 
-        0o153: {},
+        0o153: {0x114: ["DISC", 0.0]},
 
-        0o154: {},
+        0o154: {0x114: ["DISC", 0.0]},
 
         0o155: {},
 
@@ -738,7 +877,7 @@ class arinc429_intrusion_detection_system:
         0x009: "Airborne DME",
         0x00A: "FAC",
         0x00B: "Global Positioning System",
-        0x00D: " AIDS Data Management System",
+        0x00D: "AIDS Data Management System",
         0x010: "Airborne ILS Receiver",
         0x011: "Airborne VOR Receiver ",
         0x012: "Airborne ADF System",
@@ -1152,7 +1291,7 @@ class arinc429_intrusion_detection_system:
             pass  # message is already nothing.
 
         if (not (rule[0].__contains__("alert") or rule.__contains__("log"))):
-            print(f"Problem with rule: {line}")
+            print(f"Problem with rule (no alert or log): {line}")
             raise ValueError("Rule must delineate between Alerting or Logging.")
         else:
             alert_log = rule[0]
@@ -1166,7 +1305,7 @@ class arinc429_intrusion_detection_system:
                 rule = rule[:cnt]
 
         if (not rule[1] in self.get_channelnames()):
-            print(f"Problem with rule: {line}")
+            print(f"Problem with rule (no channel): {line}")
             raise ValueError("Rule must delineate between Channels.")
         else:
             channel = rule[1]
@@ -1241,7 +1380,7 @@ class arinc429_intrusion_detection_system:
                     #Figure out if encode to DISC, BNR or BCD
 
                     for equipID, equipName in self.equip_ids.items():
-                        if (equipName.__contains__(this_sdi)):
+                        if (equipName.replace("_"," ").__contains__(this_sdi)):
                             break
 
                     #equipID = self.equip_ids[this_sdi]
@@ -1257,10 +1396,12 @@ class arinc429_intrusion_detection_system:
                                                      bitmask,
                                                      self.BCD_digs(data, resolution))
                     elif (encode_type == "BNR"):
+                        v_range = self.all_labels[label][equipID][2]
+                        sig_digs = self.all_labels[label][equipID][4]
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
-                                                     self.BNR_encode())
+                                                     self.BNR_encode(data, resolution, v_range, sig_digs))
                     elif (encode_type == "DISC"):
                         bitmask = self.replace_index(10,
                                                      29,
@@ -1291,7 +1432,7 @@ class arinc429_intrusion_detection_system:
                         bitmask = self.replace_index(29, 31, bitmask, r)
                         SSM_flag = False
                 except ValueError:
-                    pass
+                    print(self.rules_file)
             elif (parity_flag and (r == "C" or r == "I")):
                 parity_check = True if r == "C" else False
                 parity_flag = False
@@ -1423,15 +1564,21 @@ class arinc429_intrusion_detection_system:
         partial_data = dig5 + dig4 + dig3 + dig2 + dig1  # + SSM
         return (partial_data)
 
-    def BNR_encode(self, value:str, res:float, sig_digs:int, range:tuple) -> str:
-        # Taking from the ADIRU.
-        val = float(value) / self.affix_resoultion(res)
-        # Having and alg for finding this round_digs is key to this whole algorithm.
+    def BNR_encode(self, value:str, res:float, sig_digs:int, v_range:tuple) -> str:
         if(res >= 1.0):
             round_digs = 0
         else:
-            round_digs = self.get_rounding_digits(sig_digs, range, self.affix_resoultion(res))
-
+            round_digs = self.get_rounding_digits(sig_digs, v_range, self.affix_resoultion(res))
+        # Error handling for bounds that is bad.
+        if(round_digs != 0):
+            larger_bounds = v_range[1]
+            temp = int("1"*sig_digs, 2) / (10 ** round_digs)
+            real_larger_bounds = temp * self.affix_resoultion(res)
+            if(real_larger_bounds < larger_bounds and value > real_larger_bounds):
+                value = real_larger_bounds # round down.
+        # Taking from the ADIRU.
+        val = float(value) / self.affix_resoultion(res)
+        # Having and alg for finding this round_digs is key to this whole algorithm.
         val = round(val, round_digs)
 
         padding = "0" * (19-sig_digs)
@@ -1484,7 +1631,6 @@ class arinc429_intrusion_detection_system:
                 place = x
         return(place)
 
-
     def affix_resoultion(self, res:float)->float:
         res = str(res).replace(".","").replace("0","")
         return(float(res))
@@ -1529,7 +1675,6 @@ class arinc429_intrusion_detection_system:
         "Multicast": 0o366,
         "Bridge": 0o367
     }
-
     def SAL_encode(self, SAL_str):
         sal_label_chip = lru_txr()
         return (sal_label_chip.decode(self.SALs[SAL_str]))

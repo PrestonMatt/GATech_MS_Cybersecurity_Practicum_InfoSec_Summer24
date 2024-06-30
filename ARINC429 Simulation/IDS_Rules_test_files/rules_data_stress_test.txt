@@ -1,0 +1,29 @@
+!Outfiles
+#Default path is C:/ARINC_IDS/ or ./home/ARINC_IDS/
+alerts = C:/ARINC_IDS/Alerts/Alerts.txt
+logs = C:/ARINC_IDS/Logs/Logs.txt
+
+!Channels
+Channel1: GPS -> ADIRS
+Channel2: Flight_Control_Computer -> XXX
+
+!SDI
+# Do not identify any TX LRUs SDI here.
+Channel1: ADIRS -> 11
+Channel2: Flight_Control_Computer -> 00
+
+!Rules
+# BCD
+alert/log Channel1 0o010 ADIRS data:-40.0 C "Longitude is -40.0 Degrees"
+alert/log Channel1 0o012 ADIRS data:6000 00 C "Plane's speed is 6000 Knots"
+alert/log Channel1 0o013 ADIRS data:259.9 00 "Plane's Track Angle is 259.9 Degrees"
+alert/log Channel1 0o014 ADIRS data:98.3 "Plane's Magnetic Heading is 98.3 Degrees"
+alert/log Channel1 0o015 ADIRS data:123 00 C "Wind Speed is 98.3 Knots"
+alert/log Channel1 0o237 ADIRS data:25.123 C "Baro Correction (ins. Hg) #2 measured is 25.123 Hg"
+
+# BNR
+alert Channel2 0o100 Flight_Control_Computer data:100.0 "Selected Course #1 is 100.0 degrees"
+
+# DISC
+
+# SAL
