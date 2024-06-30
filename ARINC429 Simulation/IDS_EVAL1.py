@@ -1,10 +1,10 @@
-from ..ARINC429_IDS import arinc429_intrusion_detection_system as IDS
-from ..LRU_FMC_Simulator import flight_management_computer as FMC
-from ..LRU_GPS_Simulator import global_positioning_system as GPS
-from ..LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
-from ..BusQueue_Simulator import GlobalBus as ARINC429BUS
-from ..LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
-from ..LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
+from ARINC429_IDS import arinc429_intrusion_detection_system as IDS
+from LRU_FMC_Simulator import flight_management_computer as FMC
+from LRU_GPS_Simulator import global_positioning_system as GPS
+from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
+from BusQueue_Simulator import GlobalBus as ARINC429BUS
+from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
+from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 from time import sleep
 
 """
@@ -27,7 +27,7 @@ repeat this test with various rules, from 1 to 10 rules.
     Check accuracy percentage of RX'd words.
 """
 
-dir = r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\IDS_Rules_test_files\IDS_EVAL1_RULES_FILES"
+dir = r"/ARINC429 Simulation/IDS_Rules_test_files/IDS_EVAL1_RULES_FILES"
 rules_files = {
     0:r"\ZERO_RULES.txt",
     1:r"\ONE_RULE.txt",
