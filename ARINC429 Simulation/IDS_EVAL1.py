@@ -27,7 +27,7 @@ repeat this test with various rules, from 1 to 10 rules.
     Check accuracy percentage of RX'd words.
 """
 
-dir = r"/ARINC429 Simulation/IDS_Rules_test_files/IDS_EVAL1_RULES_FILES"
+dir = r"C:\Users\mspre\Desktop\Practicum Resources\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\IDS_Rules_test_files\IDS_EVAL1_RULES_FILES"
 rules_files = {
     0:r"\ZERO_RULES.txt",
     1:r"\ONE_RULE.txt",
