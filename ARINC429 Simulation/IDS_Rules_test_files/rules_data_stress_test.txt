@@ -4,7 +4,10 @@ alerts = C:/ARINC_IDS/Alerts/Alerts.txt
 logs = C:/ARINC_IDS/Logs/Logs.txt
 
 !Channels
-Channel1: GPS -> ADIRS
+# GPS = 0x00B
+# ADIRS = 0x038
+# FCC/FMC = 0x001
+Channel1: Global_Positioning_System -> ADIRS
 Channel2: Flight_Control_Computer -> XXX
 
 !SDI
@@ -23,7 +26,17 @@ alert/log Channel1 0o237 ADIRS data:25.123 C "Baro Correction (ins. Hg) #2 measu
 
 # BNR
 alert Channel2 0o100 Flight_Control_Computer data:100.0 "Selected Course #1 is 100.0 degrees"
+alert Channel2 0o104 Flight_Control_Computer data:1432 "Selected Vertical Speed is 1432 Ft/Min upwards"
+log Channel1 0o152 ADIRS data:1748 "Cabin Pressure is 1748 mB"
+log Channel1 0o310 Global_Positioning_System data:-5.16 I "Present Latitude is 180 Deg S, but something wrong with word parity."
+log/alert Channel1 0o221 ADIRS data:-70.05 "Indicated Angle of Attack is -70 WARNING!!"
 
 # DISC
+log Channel2 0o301 Flight_Control_Computer data:0000111100001111000 "Application Dependant Data 1 for FMC"
+log Channel2 0o377 Flight_Control_Computer data:0000000000000000001 "Identification required for FMC"
+log Channel2 0o306 Flight_Control_Computer data:1100110110110010110 "Application Dependant Data 2 for FMC"
+alert Channel2 0o270 ADIRS data:1001001010110110010 "ADIRU Discrete Data #1"
+alert/log Channel2 0o350 ADIRS data:1001001010110110010 "ADIRU MX Data #1"
 
 # SAL
+# alert Channel2 0o360 data:0o261

@@ -4723,7 +4723,7 @@ class arinc429_intrusion_detection_system:
         #files_lines = []
         filines = False
         for line in lines:
-            if (line == "\n"):
+            if (line == "\n" or line[0] == "#"):
                 continue
             if (line.__contains__("!SDI")):
                 break
@@ -4901,13 +4901,19 @@ class arinc429_intrusion_detection_system:
                             f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
                     #Figure out if encode to DISC, BNR or BCD
 
-                    for equipID, equipName in self.equip_ids.items():
-                        if (equipName.replace("_"," ").__contains__(this_sdi)):
-                            break
+                    # This is bugged:
+                    #for equipID, equipName in self.equip_ids.items():
+                    #    if (equipName.replace("_"," ").__contains__(this_sdi)):
+                    #        break
+                    equipID = self.get_equip_ID_from_name(this_sdi)
 
                     #equipID = self.equip_ids[this_sdi]
-                    encode_type = self.all_labels[label][equipID][0]
-                    resolution = self.all_labels[label][equipID][1]
+                    print(self.all_labels[label][equipID])
+                    try:
+                        encode_type = self.all_labels[label][equipID][0]
+                        resolution = self.all_labels[label][equipID][1]
+                    except KeyError:
+                            raise KeyError(f"Equipment ID: {hex(equipID)} is not used for label: {oct(label)} ({this_sdi}).")
                     try:
                         data = float(r.split(":")[1])
                     except ValueError:
@@ -4919,22 +4925,26 @@ class arinc429_intrusion_detection_system:
                                                      self.BCD_digs(data, resolution))
                     elif (encode_type == "BNR"):
                         v_range = self.all_labels[label][equipID][2]
-                        sig_digs = self.all_labels[label][equipID][4]
+                        sig_digs = self.all_labels[label][equipID][3]
                         bitmask = self.replace_index(10,
-                                                     29,
+                                                     31,
                                                      bitmask,
-                                                     self.BNR_encode(data, resolution, v_range, sig_digs))
+                                                     self.BNR_encode(data, resolution, sig_digs, v_range))
                     elif (encode_type == "DISC"):
+                        if(len(data) != 19):
+                            raise IndexError(f"Since DISC is not strictly encoded, each bit must be specified. Expected length 19, got {len(data)}")
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
-                                                     self.DISC_encode())
-                    elif (encode_type == "SAL"):
+                                                     data)
+                    #elif (encode_type == "SAL"):
+                    #    if(len(data) != 8):
+                    #            raise IndexError(f"Since SAL is a sub-label, expected length 8, got {len(data)}")
                         # Check these, but basically, it's a label after the label.
-                        bitmask = self.replace_index(9,
-                                                     16,
-                                                     bitmask,
-                                                     self.SAL_encode(r))
+                    #    bitmask = self.replace_index(9,
+                    #                                 16,
+                    #                                 bitmask,
+                    #                                 self.SAL_encode(data))
                 elif (r.__contains__("Encoding:")):
                     if (octal_flag != False):  #Need the label
                         raise ValueError(
@@ -5139,6 +5149,7 @@ class arinc429_intrusion_detection_system:
 
     def get_rounding_digits(self, sig_digs:int, v_range:tuple, res:float) -> int:
         # This is the highest number that can be encoded
+        #print(v_range)
         sans_decpoint = v_range[1] / res
         binary_bound = int("1" * sig_digs, 2)
         place = 0
@@ -5158,8 +5169,8 @@ class arinc429_intrusion_detection_system:
         res = str(res).replace(".","").replace("0","")
         return(float(res))
 
-    def DISC_encode(self):
-        pass
+    #def DISC_encode(self):
+    #    pass
 
     SALs = {# Guessing:
             "Engine Indication Unit": 0o045,
@@ -5325,3 +5336,11 @@ class arinc429_intrusion_detection_system:
                                              "SAL": SAL_percentage}
 
         return (label_percentages)
+
+    def get_equip_ID_from_name(self, name:str) -> int:
+        for equipID, equipName in self.equip_ids.items():
+            if(equipName == name):
+                return(equipID)
+            if(name.replace('_',' ') == equipName):
+                return(equipID)
+        raise KeyError(f"Equipment, { name.replace('_',' ') } does not exist. Cannot find valid equipment ID.")
