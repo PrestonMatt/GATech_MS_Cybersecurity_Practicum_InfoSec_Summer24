@@ -4,7 +4,7 @@
 equip_ids = {
         # Format:
         # Equipement ID in hex: "Human Readable Name"
-        0x0: "Not Used",
+        #0x0: "Not Used",
         0x001: "Flight Control Computer",
         0x002: "Flight Management Computer",
         0x003: "Thrust Control Computer ",

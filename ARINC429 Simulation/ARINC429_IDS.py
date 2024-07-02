@@ -656,7 +656,7 @@ class arinc429_intrusion_detection_system:
                 0x055: ["BNR", 0.0732, (-2400.0, 2400.0), 15],
                 0x0AD: ["BNR", 0.008, (0.0, 2048.0), 18],
                 0x114: ["DISC", 0.0],
-                0o366: ["SAL", 0.0]},
+                0o152: ["SAL", 0.0]},
 
         0o153: {0x002: ["BNR", 1.0, (0.0, 65536.0), 16],
                 0x027: ["BNR", 1.0, (0.0, 1.0), 1], # Flare -> idk is this on/off?
@@ -703,7 +703,8 @@ class arinc429_intrusion_detection_system:
                 0x0bb: ["DISC", 0.0],
                 0x10a: ["DISC", 0.0],
                 0x10b: ["DISC", 0.0],
-                0x114: ["DISC", 0.0]},
+                0x114: ["DISC", 0.0],
+                0o156: ["SAL", 0.0]},
 
         0o157: {0x01c: ["DISC", 0.0],
                 0x027: ["DISC", 0.0],
@@ -811,23 +812,40 @@ class arinc429_intrusion_detection_system:
         0o170: {0x025: ["BCD", 4.0, (0.0, 7000.0)],
                 0x0C5: ["BCD", 4.0, (0.0, 7000.0)],
                 0x114: ["DISC", 0.0],
-                0o332: ["SAL", 0.0]},
+                0o170: ["SAL", 0.0]},
 
         0o171: {0x002: ["BNR", 0.001953, (0.0, 128.0), 16],
-                0x0A5: ["BNR", 1.0, (0.0, 256.0), 8]},
-
-        0o172: {0o156: ["SAL", 0.0],
+                0x0A5: ["BNR", 1.0, (0.0, 256.0), 8],
+                0o152: ["SAL", 0.0],
+                0o156: ["SAL", 0.0],
                 0o157: ["SAL", 0.0],
+                0o163: ["SAL", 0.0],
+                #0o163: ["SAL", 0.0],
+                0o170: ["SAL", 0.0],
+                0o173: ["SAL", 0.0],
                 0o174: ["SAL", 0.0],
+                0o175: ["SAL", 0.0],
                 0o177: ["SAL", 0.0],
+                0o201: ["SAL", 0.0],
                 0o210: ["SAL", 0.0],
                 0o211: ["SAL", 0.0],
                 0o212: ["SAL", 0.0],
+                0o220: ["SAL", 0.0],
+                0o221: ["SAL", 0.0],
+                0o222: ["SAL", 0.0],
+                0o223: ["SAL", 0.0],
+                0o224: ["SAL", 0.0],
                 0o225: ["SAL", 0.0],
+                0o226: ["SAL", 0.0],
+                0o230: ["SAL", 0.0],
+                0o234: ["SAL", 0.0],
+                0o235: ["SAL", 0.0],
+                0o236: ["SAL", 0.0],
+                0o237: ["SAL", 0.0],
                 0o241: ["SAL", 0.0],
                 0o242: ["SAL", 0.0],
                 0o244: ["SAL", 0.0],
-                0o245: ["SAL", 0.0],
+                #0o245: ["SAL", 0.0],
                 0o246: ["SAL", 0.0],
                 0o247: ["SAL", 0.0],
                 0o250: ["SAL", 0.0],
@@ -837,6 +855,21 @@ class arinc429_intrusion_detection_system:
                 0o254: ["SAL", 0.0],
                 0o255: ["SAL", 0.0],
                 0o256: ["SAL", 0.0],
+                0o266: ["SAL", 0.0],
+                0o300: ["SAL", 0.0],
+                #0o300: ["SAL", 0.0],
+                #0o300: ["SAL", 0.0],
+                0o301: ["SAL", 0.0],
+                0o302: ["SAL", 0.0],
+                #0o303: ["SAL", 0.0],
+                0o303: ["SAL", 0.0],
+                #0o304: ["SAL", 0.0],
+                0o304: ["SAL", 0.0],
+                #0o305: ["SAL", 0.0],
+                0o305: ["SAL", 0.0],
+                #0o306: ["SAL", 0.0],
+                0o306: ["SAL", 0.0],
+                0o307: ["SAL", 0.0],
                 0o310: ["SAL", 0.0],
                 0o311: ["SAL", 0.0],
                 0o312: ["SAL", 0.0],
@@ -854,12 +887,116 @@ class arinc429_intrusion_detection_system:
                 0o330: ["SAL", 0.0],
                 0o331: ["SAL", 0.0],
                 0o332: ["SAL", 0.0],
+                0o334: ["SAL", 0.0],
+                0o340: ["SAL", 0.0],
+                0o344: ["SAL", 0.0],
                 0o345: ["SAL", 0.0],
+                0o360: ["SAL", 0.0],
+                #0o360: ["SAL", 0.0],
+                0o361: ["SAL", 0.0],
+                #0o361: ["SAL", 0.0],
                 0o362: ["SAL", 0.0],
                 0o363: ["SAL", 0.0],
                 0o364: ["SAL", 0.0],
+                0o365: ["SAL", 0.0],
                 0o366: ["SAL", 0.0],
-                0o367: ["SAL", 0.0]}, #Subsystem Identifier
+                0o367: ["SAL", 0.0],
+                0o372: ["SAL", 0.0],
+                0o373: ["SAL", 0.0],
+                0o374: ["SAL", 0.0],
+                0o375: ["SAL", 0.0],
+                0o376: ["SAL", 0.0]}, # Manufacturer Specific Status
+
+        0o172: {0o152: ["SAL", 0.0],
+                0o156: ["SAL", 0.0],
+                0o157: ["SAL", 0.0],
+                0o163: ["SAL", 0.0],
+                #0o163: ["SAL", 0.0],
+                0o170: ["SAL", 0.0],
+                0o173: ["SAL", 0.0],
+                0o174: ["SAL", 0.0],
+                0o175: ["SAL", 0.0],
+                0o177: ["SAL", 0.0],
+                0o201: ["SAL", 0.0],
+                0o210: ["SAL", 0.0],
+                0o211: ["SAL", 0.0],
+                0o212: ["SAL", 0.0],
+                0o220: ["SAL", 0.0],
+                0o221: ["SAL", 0.0],
+                0o222: ["SAL", 0.0],
+                0o223: ["SAL", 0.0],
+                0o224: ["SAL", 0.0],
+                0o225: ["SAL", 0.0],
+                0o226: ["SAL", 0.0],
+                0o230: ["SAL", 0.0],
+                0o234: ["SAL", 0.0],
+                0o235: ["SAL", 0.0],
+                0o236: ["SAL", 0.0],
+                0o237: ["SAL", 0.0],
+                0o241: ["SAL", 0.0],
+                0o242: ["SAL", 0.0],
+                0o244: ["SAL", 0.0],
+                0o245: ["SAL", 0.0],
+                0o246: ["SAL", 0.0],
+                0o247: ["SAL", 0.0],
+                0o250: ["SAL", 0.0],
+                0o251: ["SAL", 0.0],
+                0o252: ["SAL", 0.0],
+                0o253: ["SAL", 0.0],
+                0o254: ["SAL", 0.0],
+                0o255: ["SAL", 0.0],
+                0o256: ["SAL", 0.0],
+                0o266: ["SAL", 0.0],
+                0o300: ["SAL", 0.0],
+                #0o300: ["SAL", 0.0],
+                #0o300: ["SAL", 0.0],
+                0o301: ["SAL", 0.0],
+                0o302: ["SAL", 0.0],
+                #0o303: ["SAL", 0.0],
+                0o303: ["SAL", 0.0],
+                #0o304: ["SAL", 0.0],
+                0o304: ["SAL", 0.0],
+                #0o305: ["SAL", 0.0],
+                0o305: ["SAL", 0.0],
+                #0o306: ["SAL", 0.0],
+                0o306: ["SAL", 0.0],
+                0o307: ["SAL", 0.0],
+                0o310: ["SAL", 0.0],
+                0o311: ["SAL", 0.0],
+                0o312: ["SAL", 0.0],
+                0o313: ["SAL", 0.0],
+                0o314: ["SAL", 0.0],
+                0o315: ["SAL", 0.0],
+                0o316: ["SAL", 0.0],
+                0o321: ["SAL", 0.0],
+                0o322: ["SAL", 0.0],
+                0o323: ["SAL", 0.0],
+                0o324: ["SAL", 0.0],
+                0o325: ["SAL", 0.0],
+                0o326: ["SAL", 0.0],
+                0o327: ["SAL", 0.0],
+                0o330: ["SAL", 0.0],
+                0o331: ["SAL", 0.0],
+                0o332: ["SAL", 0.0],
+                0o334: ["SAL", 0.0],
+                0o340: ["SAL", 0.0],
+                0o344: ["SAL", 0.0],
+                0o345: ["SAL", 0.0],
+                0o360: ["SAL", 0.0],
+                #0o360: ["SAL", 0.0],
+                0o361: ["SAL", 0.0],
+                #0o361: ["SAL", 0.0],
+                0o362: ["SAL", 0.0],
+                0o363: ["SAL", 0.0],
+                0o364: ["SAL", 0.0],
+                0o365: ["SAL", 0.0],
+                0o366: ["SAL", 0.0],
+                0o367: ["SAL", 0.0],
+                0o372: ["SAL", 0.0],
+                0o373: ["SAL", 0.0],
+                0o374: ["SAL", 0.0],
+                0o375: ["SAL", 0.0],
+                0o376: ["SAL", 0.0]}, # Subsystem Identifier
 
         0o173: {0x010: ["BNR", 0.0001, (0.0, 0.4), 12],
                 0x025: ["BNR", 0.0004, (0.0, 0.4), 10],
@@ -882,7 +1019,7 @@ class arinc429_intrusion_detection_system:
         0o175: {0x003: ["BNR", 0.06, (0.0, 1024.0), 14],
                 0x029: ["BNR", 1.0, (0.0, 2048.0), 11],
                 0x033: ["BNR", 0.06, (0.0, 256.0), 12],
-                0o174: ["SAL", 0.0]},
+                0o175: ["SAL", 0.0]},
 
         0o176: {0x003: ["BNR", 0.5, (0.0, 4096.0), 13],
                 0x029: ["BNR", 0.5, (0.0, 256.0), 9],
@@ -1017,8 +1154,7 @@ class arinc429_intrusion_detection_system:
                 0x140: ["BNR", 0.25, (0.0, 512.0), 11],
                 0x142: ["BNR", 0.25, (0.0, 265.0), 10]},
 
-        0o214: {0x000: ["DISC", 0.0],
-                0x001: ["DISC", 0.0],
+        0o214: {0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
                 0x003: ["DISC", 0.0],
                 0x004: ["DISC", 0.0],
@@ -1055,6 +1191,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["DISC", 0.0],
                 0x02e: ["DISC", 0.0],
                 0x02f: ["DISC", 0.0],
+                0x030: ["DISC", 0.0],
                 0x031: ["DISC", 0.0],
                 0x032: ["DISC", 0.0],
                 0x033: ["DISC", 0.0],
@@ -1080,7 +1217,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["DISC", 0.0],
                 0x053: ["DISC", 0.0],
                 0x055: ["DISC", 0.0],
+                0x056: ["DISC", 0.0],
                 0x057: ["DISC", 0.0],
+                0x058: ["DISC", 0.0],
                 0x05d: ["DISC", 0.0],
                 0x05e: ["DISC", 0.0],
                 0x05f: ["DISC", 0.0],
@@ -1267,8 +1406,7 @@ class arinc429_intrusion_detection_system:
                 0x0AD: ["BNR", 0.008, (0.0, 512.0), 16],
                 0x140: ["BNR", 0.03125, (0.0, 512.0), 14]},
 
-        0o216: {0x000: ["DISC", 0.0],
-                0x001: ["DISC", 0.0],
+        0o216: {0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
                 0x003: ["DISC", 0.0],
                 0x004: ["DISC", 0.0],
@@ -1305,6 +1443,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["DISC", 0.0],
                 0x02e: ["DISC", 0.0],
                 0x02f: ["DISC", 0.0],
+                0x030: ["DISC", 0.0],
                 0x031: ["DISC", 0.0],
                 0x032: ["DISC", 0.0],
                 0x033: ["DISC", 0.0],
@@ -1330,7 +1469,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["DISC", 0.0],
                 0x053: ["DISC", 0.0],
                 0x055: ["DISC", 0.0],
+                0x056: ["DISC", 0.0],
                 0x057: ["DISC", 0.0],
+                0x058: ["DISC", 0.0],
                 0x05d: ["DISC", 0.0],
                 0x05e: ["DISC", 0.0],
                 0x05f: ["DISC", 0.0],
@@ -1656,7 +1797,247 @@ class arinc429_intrusion_detection_system:
         0o243: {0x037: ["BCD", 1.0, (0.0, 19999.0)],
                 0x055: ["DISC", 0.0],
                 # Dead word ... again
-                0x777: ["BNR", 0.0, (0.0, 0.0), 0]},
+                0x001: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x002: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x003: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x004: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x005: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x006: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x007: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x008: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x009: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x00a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x00b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x00d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x010: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x011: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x012: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x016: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x017: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x018: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x019: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x01a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x01b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x01d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x01e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x01f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x020: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x023: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x024: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x025: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x026: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x027: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x029: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x02a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x02b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x02c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x02d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x02e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x02f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x030: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x031: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x032: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x033: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x034: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x035: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x036: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+
+                0x038: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x039: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x03a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x03b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x03c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x03d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x03e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x03f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x040: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x041: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x04a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x04b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x04c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x04d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x04e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x050: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x053: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+
+                0x056: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x057: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x058: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x05d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x05e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x05f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x060: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x061: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x06a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x06b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x06c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x06d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x06e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x06f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x07a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x07b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x07c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x07d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x07e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x07f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x08a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x08b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x08c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x08d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x08e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x08f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0a1: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0a2: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0a3: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0a4: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0a8: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0a9: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0aa: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ab: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ac: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ad: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ae: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0af: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0b0: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0b1: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0b2: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0b6: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0b9: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0b8: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ba: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0bb: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0bc: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0bd: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0be: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0bf: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0c2: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0c3: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0c4: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0c5: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0c7: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ca: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0cb: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0cc: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0cd: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ce: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0cf: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0d0: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0d3: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0d5: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0da: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0db: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0dc: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0dd: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0de: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0df: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0e0: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ea: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0eb: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ec: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ed: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ee: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ef: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0fa: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0fb: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0fc: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0fd: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0fe: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x0ff: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x108: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x109: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x10a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x10b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x10c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x10d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x10e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x10f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x110: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x112: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x113: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x114: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x115: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x116: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x117: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x118: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x119: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x11a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x11e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x120: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x121: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x122: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x123: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x124: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x125: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x126: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x127: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x128: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x129: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x12a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x12b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x12c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x12d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x12e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x12f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x130: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x136: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x13a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x13b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x13c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x13d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x13e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x13f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x140: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x141: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x142: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x143: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x144: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x14a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x150: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x151: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x152: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x153: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x154: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x155: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x156: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x157: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x158: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x15a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x15c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x15d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x15e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x160: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x167: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x168: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x169: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x16a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x16b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x16c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x16d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x16e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x16f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x170: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x171: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x17a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x17b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x17c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x18a: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x18b: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x18c: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x18d: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x18e: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x18f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x19f: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x1e2: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x200: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x201: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x202: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x203: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x204: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x205: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x206: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x207: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x241: ["BNR", 0.0, (0.0, 0.0), 0], # Dead word...again
+                0x341: ["BNR", 0.0, (0.0, 0.0), 0]}, # Dead word...again
 
         0o244: {0x009: ["DISC", 0.0],
                 0x010: ["DISC", 0.0],
@@ -1681,7 +2062,7 @@ class arinc429_intrusion_detection_system:
                 0x060: ["BNR", 0.0625, (0.0, 256.0), 12],
                 0x0AD: ["BNR", 0.03125, (0.0, 2048.0), 16],
                 0x140: ["BNR", 0.03125, (0.0, 2048.0), 16],
-                0x247: ["SAL", 0.0]},
+                0o245: ["SAL", 0.0]},
 
         0o246: {0x002: ["BNR", 0.25, (0.0, 512.0), 11],
                 0x006: ["BNR", 0.03, (0.0, 2048.0), 16],
@@ -2120,6 +2501,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["DISC", 0.0],
                 0x02e: ["DISC", 0.0],
                 0x02f: ["DISC", 0.0],
+                0x030: ["DISC", 0.0],
                 0x031: ["DISC", 0.0],
                 0x032: ["DISC", 0.0],
                 0x033: ["DISC", 0.0],
@@ -2145,7 +2527,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["DISC", 0.0],
                 0x053: ["DISC", 0.0],
                 0x055: ["DISC", 0.0],
+                0x056: ["DISC", 0.0],
                 0x057: ["DISC", 0.0],
+                0x058: ["DISC", 0.0],
                 0x05d: ["DISC", 0.0],
                 0x05e: ["DISC", 0.0],
                 0x05f: ["DISC", 0.0],
@@ -2336,7 +2720,7 @@ class arinc429_intrusion_detection_system:
                 0x10A: ["BNR", 0.125, (-55.0, 125.0), 11],
                 0x10B: ["BNR", 0.125, (-55.0, 125.0), 11],
                 #0xTBD: ["DISC", 0.0],"
-                0o322: ["SAL", 0.0]},
+                0o300: ["SAL", 0.0]},
 
         0o301: {0x001: ["DISC", 0.0],
                 0x01a: ["DISC", 0.0],
@@ -2346,7 +2730,7 @@ class arinc429_intrusion_detection_system:
                 0x060: ["DISC", 0.0],
                 0x10A: ["BNR", 0.063, (0.0, 100.0), 11],
                 0x10B: ["BNR", 0.063, (0.0, 100.0), 11],
-                0o323: ["SAL", 0.0]},
+                0o301: ["SAL", 0.0]},
 
         0o302: {0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
@@ -2357,7 +2741,7 @@ class arinc429_intrusion_detection_system:
                 0x10A: ["BNR", 0.063, (0.0, 100.0), 11],
                 0x10B: ["BNR", 0.063, (0.0, 100.0), 11],
                 0x060: ["DISC", 0.0],
-                0o347: ["SAL", 0.0]},
+                0o302: ["SAL", 0.0]},
 
         0o303: {0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
@@ -2398,7 +2782,7 @@ class arinc429_intrusion_detection_system:
                 0x05a: ["BNR", 0.0, (0.0, 0.0), 0],
                 # Spec sheet just says SDU, but there is SDU #1 and #2.
                 0o173: ["SAL", 0.0],
-                0o201: ["SAL", 0.0]},
+                0o307: ["SAL", 0.0]},
 
         0o310: {0x002: ["BNR", 0.000172, (-180.0, 180.0), 20],
                 0x004: ["BNR", 0.000172, (-180.0, 180.0), 20],
@@ -2872,6 +3256,7 @@ class arinc429_intrusion_detection_system:
                 0x026: ["DISC", 0.0],
 
                 0x029: ["DISC", 0.0],
+                0x030: ["DISC", 0.0],
                 0x02a: ["DISC", 0.0],
                 0x02b: ["DISC", 0.0],
                 0x02c: ["DISC", 0.0],
@@ -2903,7 +3288,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["DISC", 0.0],
                 0x053: ["DISC", 0.0],
                 0x055: ["DISC", 0.0],
+                0x056: ["DISC", 0.0],
                 0x057: ["DISC", 0.0],
+                0x058: ["DISC", 0.0],
                 0x05d: ["DISC", 0.0],
                 0x05e: ["DISC", 0.0],
                 0x05f: ["DISC", 0.0],
@@ -3084,7 +3471,6 @@ class arinc429_intrusion_detection_system:
         0o356: {0x03D: ["BNR", 0.01, (0.0, 5.12), 9],
                 # 0xXXX Maintenance ISO #5 Message
                 # 0xYYY BITE Status Word
-                0x000: ["DISC", 0.0],
                 0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
                 0x003: ["DISC", 0.0],
@@ -3122,6 +3508,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["DISC", 0.0],
                 0x02e: ["DISC", 0.0],
                 0x02f: ["DISC", 0.0],
+                0x030: ["DISC", 0.0],
                 0x031: ["DISC", 0.0],
                 0x032: ["DISC", 0.0],
                 0x033: ["DISC", 0.0],
@@ -3147,7 +3534,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["DISC", 0.0],
                 0x053: ["DISC", 0.0],
                 0x055: ["DISC", 0.0],
+                0x056: ["DISC", 0.0],
                 0x057: ["DISC", 0.0],
+                0x058: ["DISC", 0.0],
                 0x05d: ["DISC", 0.0],
                 0x05e: ["DISC", 0.0],
                 0x05f: ["DISC", 0.0],
@@ -3345,7 +3734,7 @@ class arinc429_intrusion_detection_system:
                 0x10A: ["BNR", 1.0, (-16.0, 16.0), 9],
                 0x10B: ["BNR", 1.0, (-16.0, 16.0), 9],
                 0x142: ["BNR", 0.00195, (0.0, 16.0), 13],
-                0o261: ["SAL", 0.0]},
+                0o360: ["SAL", 0.0]},
 
         0o361: {0x004: ["BNR", 0.125, (0.0, 131072.0), 20],
                 0x005: ["BNR", 0.5, (0.0, 131072.0), 18],
@@ -3640,17 +4029,17 @@ class arinc429_intrusion_detection_system:
         0o372: {0x005: ["BNR", 0.35, (-180.0, 180.0), 9],
                 0x10A: ["BNR", 0.063, (0.0, 128.0), 12],
                 0x10B: ["BNR", 0.063, (0.0, 128.0), 12],
-                0o271: ["SAL", 0.0]},
+                0o372: ["SAL", 0.0]},
 
         0o373: {0x005: ["BNR", 0.125, (0.0, 4096.0), 15],
                 0x10A: ["BNR", 0.063, (0.0, 128.0), 12],
                 0x10B: ["BNR", 0.063, (0.0, 128.0), 12],
-                0o272: ["SAL", 0.0]},
+                0o373: ["SAL", 0.0]},
 
         0o374: {0x005: ["BNR", 0.125, (0.0, 4096.0), 15],
                 0x10A: ["BNR", 0.063, (-5.0, 105), 11],
                 0x10B: ["BNR", 0.063, (-5.0, 105), 11],
-                0o267: ["SAL", 0.0]},
+                0o374: ["SAL", 0.0]},
 
         0o375: {0x004: ["BNR", 1.53e-5, (0.0, 4.0), 18],
                 0x005: ["BNR", 10.0, (0.0, 12.0), 0],
@@ -3659,7 +4048,6 @@ class arinc429_intrusion_detection_system:
                 0x10A: ["BNR", 0.063, (-5.0, 105.0), 11],
                 0x10B: ["BNR", 0.063, (-5.0, 105.0), 11],
                 # GPS Differential Correction Word A
-                0x000: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x001: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x002: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x003: ["BNR", 0.000001, (0.000001, 0.001), 10],
@@ -3696,6 +4084,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x02e: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x02f: ["BNR", 0.000001, (0.000001, 0.001), 10],
+                0x030: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x031: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x032: ["BNR", 0.000001, (0.000001, 0.001), 10],
 
@@ -3721,7 +4110,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x053: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x055: ["BNR", 0.000001, (0.000001, 0.001), 10],
+                0x056: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x057: ["BNR", 0.000001, (0.000001, 0.001), 10],
+                0x058: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x05d: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x05e: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x05f: ["BNR", 0.000001, (0.000001, 0.001), 10],
@@ -3799,7 +4190,7 @@ class arinc429_intrusion_detection_system:
                 0x0fa: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x0fb: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x0fc: ["BNR", 0.000001, (0.000001, 0.001), 10],
-                0x0fd: ["BNR", 0.000001, (0.000001, 0.001), 10],
+
                 0x0fe: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x0ff: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x108: ["BNR", 0.000001, (0.000001, 0.001), 10],
@@ -3896,14 +4287,13 @@ class arinc429_intrusion_detection_system:
                 0x207: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x241: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x341: ["BNR", 0.000001, (0.000001, 0.001), 10],
-                0o270: ["SAL", 0.0]},
+                0o375: ["SAL", 0.0]},
 
         0o376: {0x004: ["BNR", 1.53e-5, (0.0, 4.0), 18],
                 0x005: ["BNR", 0.001, (0.0, 4.0), 12],
                 0x033: ["BNR", 0.004, (0.0, 16.0), 12],
                 0x038: ["BNR", 1.53e-5, (0.0, 4.0), 18],
                 #GPS Differential Correction Word B
-                0x000: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x001: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x002: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x003: ["BNR", 0.000001, (0.000001, 0.001), 10],
@@ -3940,6 +4330,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x02e: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x02f: ["BNR", 0.000001, (0.000001, 0.001), 10],
+                0x030: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x031: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x032: ["BNR", 0.000001, (0.000001, 0.001), 10],
 
@@ -3965,7 +4356,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x053: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x055: ["BNR", 0.000001, (0.000001, 0.001), 10],
+                0x056: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x057: ["BNR", 0.000001, (0.000001, 0.001), 10],
+                0x058: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x05d: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x05e: ["BNR", 0.000001, (0.000001, 0.001), 10],
                 0x05f: ["BNR", 0.000001, (0.000001, 0.001), 10],
@@ -4143,8 +4536,7 @@ class arinc429_intrusion_detection_system:
                 0x341: ["BNR", 0.000001, (0.000001, 0.001), 10]
                 },
 
-        0o377: {0x000: ["DISC", 0.0],
-                0x001: ["DISC", 0.0],
+        0o377: {0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
                 0x003: ["DISC", 0.0],
                 0x004: ["DISC", 0.0],
@@ -4181,6 +4573,7 @@ class arinc429_intrusion_detection_system:
                 0x02d: ["DISC", 0.0],
                 0x02e: ["DISC", 0.0],
                 0x02f: ["DISC", 0.0],
+                0x030: ["DISC", 0.0],
                 0x031: ["DISC", 0.0],
                 0x032: ["DISC", 0.0],
                 0x033: ["DISC", 0.0],
@@ -4206,7 +4599,9 @@ class arinc429_intrusion_detection_system:
                 0x050: ["DISC", 0.0],
                 0x053: ["DISC", 0.0],
                 0x055: ["DISC", 0.0],
+                0x056: ["DISC", 0.0],
                 0x057: ["DISC", 0.0],
+                0x058: ["DISC", 0.0],
                 0x05d: ["DISC", 0.0],
                 0x05e: ["DISC", 0.0],
                 0x05f: ["DISC", 0.0],
@@ -4384,10 +4779,13 @@ class arinc429_intrusion_detection_system:
                 0x341: ["DISC", 0.0]}
     }
 
+    # Full original list: Pages 51-54 (43-46)
+    # See page 291, SUPPLEMENT 16 TO ARINC SPECIFICATION 429 PART 1 - Page 2
+    # Page 303: SUPPLEMENT 17 TO ARINC SPECIFICATION 429P1 – Page 2
     equip_ids = {
         # Format:
         # Equipement ID in hex: "Human Readable Name"
-        0x0: "Not Used",
+        #0x0: "Not Used",
         0x001: "Flight Control Computer",
         0x002: "Flight Management Computer",
         0x003: "Thrust Control Computer ",
@@ -4414,17 +4812,20 @@ class arinc429_intrusion_detection_system:
         0x01F: "Fuel Quantity Totalizer",
         0x020: "DFS System",
         0x023: "Ground Prox. Warning System",
-        0x024: "ACARS (724) / CMU Mark 2",
+        # ACARS for 724 and CMU Mark 2 for 758
+        0x024: "ACARS and CMU Mark 2",
         0x025: "Electronic Flt. Instruments",
         0x026: "Flight Warning Computer",
         0x027: "Microwave Landing System",
-        0x029: "ADDCS (729) and EICAS",
+        # ADDCS for 729
+        0x029: "ADDCS and EICAS",
         0x02A: "Thrust Management Computer",
         0x02B: "Perf. Nav. Computer System",
         0x02C: "Digital Fuel Gauging System",
-        0x02D: "EPR Indicator (Boeing 757)",
+        0x02D: "EPR Indicator",
         0x02E: "Land Rollout CU/Landing C & LU",
-        0x02F: "Full Authority EEC-A 069 030 Airborne Separation Assurance System",
+        0x02F: "Full Authority EEC-A",
+        0x030: "Airborne Separation Assurance System",
         0x031: "Chronometer",
         0x032: "Pass. Entertainment Tape Reproducer",
         0x033: "Propulsion Multiplexer (PMUX)",
@@ -4450,11 +4851,14 @@ class arinc429_intrusion_detection_system:
         0x050: "VDR",
         0x053: "HF Data Unit",
         0x055: "Multi-Mode Receiver (MMR)",
+        0x056: "GNSS Navigation Landing Unit (GNLU)",
         0x057: "Cockpit Voice Recorder",
+        0x058: "Communication Management Unit Mark 2",
         0x05D: "Zone Controller",
         0x05E: "Cargo Heat",
         0x05F: "CIDS",
-        0x060: "GNSS Navigation Unit (GNU)",
+        # Satellite Terminal Unit (STU) for the Boeing 761
+        0x060: "GNSS Navigation Unit (GNU) and Satellite Terminal Unit (STU)",
         0x061: "High-Speed Data Unit",
         0x06A: "AMU (A320)",
         0x06B: "Battery Charge Limiter",
@@ -4493,6 +4897,7 @@ class arinc429_intrusion_detection_system:
         0x0B9: "HF/SSB System Controller",
         0x0B8: "ATC Transponder Controller",
         0x0BA: "Power Supply Module",
+        # Flap Control Unit (B747-400) / Flap Slat Electronics Unit (B767-400)
         0x0BB: "Flap Control Unit and Flap Slat Electronics Unit",
         0x0BC: "Fuel System Interface Card",
         0x0BD: "Hydraulic Quantity Monitor Unit",
@@ -4532,7 +4937,7 @@ class arinc429_intrusion_detection_system:
         0x0FE: "Pneumatic Control System",
         0x0FF: "Manifold Failure Detection System",
         0x108: "Electronic Engine Control (EEC) Channel A",
-        0x109: "Elect Eng Control (EEC) Channel B",
+        0x109: "Electronic Engine Control (EEC) Channel B",
         0x10A: "Full Authority Engine Control A",
         0x10B: "Full Authority Engine Control B",
         0x10C: "APU Controller",
@@ -4576,7 +4981,7 @@ class arinc429_intrusion_detection_system:
         0x13F: "Camera Interface Unit",
         0x140: "Supersonic Air Data Computer",
         0x141: "Satellite RF Unit",
-        0x142: "ADS-B Link Display c-16 Processor Unit (LPDU)",
+        0x142: "ADS-B Link Display Processor Unit (LPDU)",
         0x143: "Vertical/Horizontal Gyro",
         0x144: "CDTI Display Unit",
         0x14A: "Slide Slip Angle (SSA)",
@@ -4595,7 +5000,7 @@ class arinc429_intrusion_detection_system:
         0x15E: "Flight Mgmt Guidance Env Comp",
         0x160: "Special Fuel Quan. Sys.",
         0x167: "Air Traffic Service Unit",
-        0x168: "Integ Standby Instr System",
+        0x168: "Integrated Standby Instrument System",
         0x169: "Data Link Control and Display Unit",
         0x16A: "Display Unit",
         0x16B: "Display Management Computer",
@@ -4613,9 +5018,9 @@ class arinc429_intrusion_detection_system:
         0x18C: "Passenger Entertainment Sys Main MUX",
         0x18D: "Passenger Entertainment Sys Audio Repro.",
         0x18E: "Pre-recorded Announcement Music Repro.",
-        0x18F: "Video Control Unit (A330/A340)",
+        0x18F: "Video Control Unit",
         0x19F: "Cade Environment System",
-        0x1E2: "ADS-c-12 B LDPU Controller",
+        0x1E2: "ADS-B LDPU Controller",
         0x200: "Versatile Integrated Avionics Unit",
         0x201: "Electronic Spoiler Control Unit",
         0x202: "Brake Control Unit",
@@ -4625,7 +5030,7 @@ class arinc429_intrusion_detection_system:
         0x206: "Aircraft Interface Unit",
         0x207: "Fuel Quantity Gauging Unit",
         0x241: "High Power Amplifier",
-        0x341: "Satellite ACU c-11"
+        0x341: "Satellite ACU"
     }
 
     def __init__(self, bus_speed="low", BUS_CHANNELS=[],
@@ -5172,112 +5577,112 @@ class arinc429_intrusion_detection_system:
     #def DISC_encode(self):
     #    pass
 
-    SALs = {# Guessing:
-            "Engine Indication Unit": 0o045,
-            "CVR 2": 0o156,
-            "CVR 1": 0o157,
-            # Guessing:
-            "Digital Flight Data Recorder (DFDR) / Solid State Flight Data Recorder (SSFDR)": 0o163,
-            # Guessing:
-            "Satellite Data Unit (SDU) #2": 0o173,
-            # Guessing:
-            "Radio Frequency Unit (RFU)": 0o174,
-            "HGA/IGA HPA": 0o174,
-            "LGA HPA": 0o177,
-            # Guessing:
-            "Satellite Data Unit (SDU) #1": 0o201,
-            "FCMC Com A340-500/600": 0o210,
-            "FCMC Mon A340-500/600": 0o211,
-            "FCMC Int A340-500/600": 0o212,
-            # Guessing:
-            "MCDU #1": 0o220,
-            # Guessing:
-            "MCDU #2": 0o221,
-            # Guessing:
-            "MCDU #3": 0o222,
-            # Guessing:
-            "Printer #1": 0o223,
-            # Guessing:
-            "Printer #2": 0o224,
-            "HUD": 0o225,
-            # Guessing:
-            "MCDU #4": 0o230,
-            # Guessing:
-            "EIVMU #1": 0o234,
-            # Guessing:
-            "EIVMU #2": 0o235,
-            # Guessing:
-            "EIVMU #3": 0o236,
-            # Guessing:
-            "EIVMU #4": 0o237,
-            "APM-MMR": 0o241,
-            "MMR": 0o242,
-            "ILS": 0o244,
-            "MLS": 0o245,
-            "AHRS": 0o246,
-            "High-Speed Data (HSDU #1)": 0o247,
-            "High-Speed Data (HSDU #2)": 0o250,
-            "VDR #1": 0o251,
-            "VDR #2": 0o252,
-            "VDR #3": 0o253,
-            "Network Server System": 0o254,
-            "Electronic Flight Bag Left": 0o255,
-            "Electronic Flight Bag Right": 0o256,
-            # Guessing:
-            "Aircraft Condition and Event Surveillance System (ACESS)": 0o261,
-            # Guessing:
-            "Cabin Video system": 0o266,
-            # Guessing:
-            "Cabin Terminal #1": 0o267,
-            # Guessing:
-            "Cabin Terminal #2": 0o270,
-            # Guessing:
-            "Cabin Terminal #3": 0o271,
-            # Guessing:
-            "Cabin Terminal #4": 0o272,
-            # Guessing:
-            "Data Loader": 0o300,
-            # Guessing:
-            "Centralized Fault Display Interface Unit (CFDIU)": 0o303,
-            # Guessing:
-            "Aircraft Communications Addressing and Reporting System (ACARS)": 0o304,
-            # Guessing:
-            "Weight and Balance System": 0o305,
-            # Guessing:
-            "Traffic Collision Avoidance System (TCAS)": 0o306,
-            "GPWS": 0o310,
-            "GNLU 1": 0o311,
-            "GNLU 2": 0o312,
-            "GNLU 3": 0o313,
-            "GNU 1": 0o314,
-            "GNU 2": 0o315,
-            "GNU 3": 0o316,
-            "AUTOTHROTTLE COMPUTER": 0o321,
-            "FCC 1": 0o322,
-            "FCC 2": 0o323,
-            "FCC 3": 0o324,
-            "APU": 0o325,
-            "APU CONTROLLER": 0o326,
-            "Mode Control Panel (MCP)": 0o327,
-            "FMC 3": 0o330,
-            "ATC TRANSPONDER": 0o331,
-            "DADC": 0o332,
-            # Guessing:
-            "Cabin Telecommunications Unit (CTU)": 0o334,
-            # Guessing:
-            "HF DATA Radio/Data Unit #1": 0o340,
-            # Guessing:
-            "HF DATA Radio/Data Unit #2": 0o344,
-            "Remote Data Concentrator": 0o345,
-            # Guessing:
-            "Digital Flight Data Acquisition Unit (DFDAU)": 0o347,
-            # Guessing:
-            "Electronic Flight Instrument System (EFIS)": 0x361,
-            "Passenger Services System (PSS) 767-300,400": 0o362,
-            "Cabin Service System (CSS) 747-400": 0o363,
-            "Audio Entertainment System (AES) Boeing": 0o364,
-            "Multicast": 0o366, # Cabin Interphone System
-            "Bridge": 0o367
+    # See page 138-139 (130-131),
+    # Page 292: SUPPLEMENT 16 TO ARINC SPECIFICATION 429 PART 1 – Page 3
+    # Page 303: SUPPLEMENT 17 TO ARINC SPECIFICATION 429P1 – Page 2
+    SALs = {
+        "777 CABIN INTERPHONE SYSTEM": 0o152,
+        "CVR #2": 0o156,
+        "CVR #1": 0o157,
+        "747 DFHR AND A330/340 SSFDR": 0o163,
+        # Supplimental, just spelling out above ^
+        "Solid State Flight Data Recorder (SSFDR)": 0o163,
+        "DFDAU (MANDATORY LOAD FUNCTION)": 0o170,
+        "Satellite Data Unit (SDU) #2": 0o173,
+        "Radio Frequency Unit (RFU)": 0o174,
+        "HGA/IGA HPA": 0o174,
+        "HGA/IGA HPA": 0o175,
+        "LGA HPA": 0o177,
+        "GPS/GNSS SENSOR": 0o201,
+        "FCMC Com A340-500/600": 0o210,
+        "FCMC Mon A340-500/600": 0o211,
+        "FCMC Int A340-500/600": 0o212,
+        "MCDU 1": 0o220,
+        "MCDU 2": 0o221,
+        "MCDU 3": 0o222,
+        "PRINTER 1": 0o223,
+        "PRINTER 2": 0o224,
+        "HUD": 0o225,
+        "HIGH SPEED DL (ARINC 615)": 0o226,
+        "MCDU 4": 0o230,
+        "EIVMU 1": 0o234,
+        "EIVMU 2": 0o235,
+        "EIVMU 3": 0o236,
+        "EIVMU 4": 0o237,
+        "APM-MMR": 0o241,
+        "MMR": 0o242,
+        "ILS": 0o244,
+        "MLS": 0o245,
+        "AHRS": 0o246,
+        "HIGH-SPEED DATA (HSDU #1)": 0o247,
+        "HIGH-SPEED DATA (HSDU #2)": 0o250,
+        "VDR #1": 0o251,
+        "VDR #2": 0o252,
+        "VDR #3": 0o253,
+        "NETWORK SERVER SYSTEM": 0o254,
+        "ELECTRONIC FLIGHT BAG LEFT": 0o255,
+        "ELECTRONIC FLIGHT BAG RIGHT": 0o256,
+        "CABIN VIDEO SYSTEM (AIRSHOW)": 0o266,
+        "LOW SPEED DL (ARINC 603)": 0o300,
+        # Supplimental, just spelling out above ^
+        "Data Loader": 0o300,
+        "FMC 1": 0o300,
+        "FMC 2": 0o301,
+        "DFDAU (AIDS)": 0o302,
+        "CFDIU": 0o303,
+        # Supplimental, just spelling out above ^
+        "Centralized Fault Display Interface Unit (CFDIU)": 0o303,
+        "ACARS MU/CMU": 0o304,
+        # Supplimental, just spelling out above ^
+        "Aircraft Communications Addressing and Reporting System (ACARS)": 0o304,
+        "WBS": 0o305,
+        # Supplimental, just spelling out above ^
+        "Weight and Balance System": 0o305,
+        "TCAS": 0o306,
+        # Supplimental, just spelling out above ^
+        "Traffic Collision Avoidance System (TCAS)": 0o306,
+        "Satellite Data Unit (SDU) #1": 0o307,
+        "GPWS": 0o310,
+        "GNLU 1": 0o311,
+        "GNLU 2": 0o312,
+        "GNLU 3": 0o313,
+        "GNU 1": 0o314,
+        "GNU 2": 0o315,
+        "GNU 3": 0o316,
+        "AUTOTHROTTLE COMPUTER": 0o321,
+        "FCC 1": 0o322,
+        "FCC 2": 0o323,
+        "FCC 3": 0o324,
+        "APU": 0o325,
+        "APU CONTROLLER": 0o326,
+        "MODE CONTROL PANEL (MCP)": 0o327,
+        "FMC 3": 0o330,
+        "ATC TRANSPONDER": 0o331,
+        "DADC": 0o332,
+        "CABIN TELECOMMUNICATIONS UNIT (CTU)": 0o334,
+        "HF DATA RADIO/DATA UNIT #1": 0o340,
+        "HF DATA RADIO/DATA UNIT #2": 0o344,
+        "REMOTE DATA CONCENTRATOR": 0o345,
+        "ACESS": 0o360,
+        # Supplimental, just spelling out above ^
+        "Aircraft Condition and Event Surveillance System (ACESS)": 0o360,
+        "EFIS": 0o361,
+        # Supplimental, just spelling out above ^
+        "Electronic Flight Instrument System (EFIS)": 0o361,
+        "PASSENGER SERVICES SYSTEM (PSS)": 0o362,
+        "CABIN SERVICE SYSTEM (CSS)": 0o363,
+        "AUDIO ENTERTAINMENT SYSTEM (AES)": 0o364,
+        "ENGINE INDICATION UNIT": 0o365,
+        "MULTICAST": 0o366,
+        "BRIDGE": 0o367,
+        "CABIN TERMINAL 3": 0o372,
+        "CABIN TERMINAL 4": 0o373,
+        "CABIN TERMINAL 1": 0o374,
+        "CABIN TERMINAL 2": 0o375,
+        "OMEGA NAV. SYSTEMS": 0o376,
+
+        # The following section of codes I have to guess/do a lot of research to find so they may not be correct:
+        "Digital Flight Data Recorder (DFDR)": 0o163
     }
     def SAL_encode(self, SAL_str):
         sal_label_chip = lru_txr()

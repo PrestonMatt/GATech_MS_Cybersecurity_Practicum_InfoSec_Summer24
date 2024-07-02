@@ -11,7 +11,7 @@ SALs = {
 		"DFDAU (MANDATORY LOAD FUNCTION)": 0o170,
 		"Satellite Data Unit (SDU) #2": 0o173,
 		"Radio Frequency Unit (RFU)": 0o174,
-		"HGA/IGA HPA": 0o174
+		"HGA/IGA HPA": 0o174,
 		"HGA/IGA HPA": 0o175,
 		"LGA HPA": 0o177,
 		"GPS/GNSS SENSOR": 0o201,
