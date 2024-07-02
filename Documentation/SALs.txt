@@ -25,11 +25,11 @@ SALs = {
 		"PRINTER 2": 0o224,
 		"HUD": 0o225,
 		"HIGH SPEED DL (ARINC 615)": 0o226,
-		"MCDU": 4 0o230,
-		"EIVMU": 1 0o234,
-		"EIVMU": 2 0o235,
-		"EIVMU": 3 0o236,
-		"EIVMU": 4 0o237,
+		"MCDU 4": 0o230,
+		"EIVMU 1": 0o234,
+		"EIVMU 2": 0o235,
+		"EIVMU 3": 0o236,
+		"EIVMU 4": 0o237,
 		"APM-MMR": 0o241,
 		"MMR": 0o242,
 		"ILS": 0o244,
@@ -104,6 +104,4 @@ SALs = {
 		
 		# The following section of codes I have to guess/do a lot of research to find so they may not be correct:
 		"Digital Flight Data Recorder (DFDR)": 0o163,
-		
-
 }
