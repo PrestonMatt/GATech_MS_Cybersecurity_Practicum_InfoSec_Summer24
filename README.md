@@ -104,3 +104,4 @@ From NIST Special Publication 800-207, there are seven basic tenets of zero trus
 - https://www.logic-fruit.com/blog/arinc-standard/designers-guide-arinc-429-standard-specification/
 - https://www.ueidaq.com/uploads/dnx-429-516-manual.pdf
 - https://c3.ndc.nasa.gov/dashlink/resources/664/
+- https://www.govinfo.gov/content/pkg/FR-2024-02-20/pdf/2024-03254.pdf
