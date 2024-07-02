@@ -2463,8 +2463,7 @@ class arinc429_intrusion_detection_system:
                 0x0bb: ["DISC", 0.0],
                 0x114: ["DISC", 0.0]},
 
-        0o277: {0x000: ["DISC", 0.0],
-                0x001: ["DISC", 0.0],
+        0o277: {0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
                 0x003: ["DISC", 0.0],
 
@@ -3224,7 +3223,7 @@ class arinc429_intrusion_detection_system:
                 0x03D: ["BNR", 0.01, (0.0, 5.12), 9],
                 # 0xXXX ACK:
                 0x04d: ["DISC", 0.0],
-                0x000: ["DISC", 0.0],
+
                 0x001: ["DISC", 0.0],
                 0x002: ["DISC", 0.0],
                 0x003: ["DISC", 0.0],
@@ -3786,7 +3785,6 @@ class arinc429_intrusion_detection_system:
                 0x0C5: ["BNR", 0.125, (0.0, 16384.0), 17]},
 
         0o371: {# General Aviation Equipment Identifier
-                0x000: ["BNR", 1.0, (0.0, 341.0), 9],
                 0x001: ["BNR", 1.0, (0.0, 341.0), 9],
                 0x002: ["BNR", 1.0, (0.0, 341.0), 9],
                 0x003: ["BNR", 1.0, (0.0, 341.0), 9],
