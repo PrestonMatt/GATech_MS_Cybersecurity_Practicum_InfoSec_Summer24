@@ -4414,15 +4414,27 @@ def test_rules_AllDataTypes():
     sdi = IDS_test_default.sdis
     print(sdi)
     rulez = IDS_test_default.rules
-    assert(rulez == [('alert','Blue','0000000000000000000000000000000',None,False,'Blue bus has a word.'),
-                     ('alert','Blue','0001000000000000000000000000000',None,False,'Latitude word sent'),
-                     ('log', 'Blue', '1001000000000000000000000000000',None,False,''),
-                     ('log', 'Blue', '0000000000000000000000000000000',None,False,''),
-                     # Label -> 0o012 = 01010000, ADIRS=11, 6000 = 000...1100
-                     ('alert/log','Orange','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
-                     ('alert','Purple','0000000000111111111111111110000',None,False,'Funny Pattern!'),
-                     ('alert','Purple','0100110000000000000000000000000',None,False,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.'),
-                     ('alert','Purple','0100110000000000000000000000000',None,True,'Tire Loading (Left Wing Main) Word!. Percent Chance of being BCD: 16.667%.')])
+    assert(rulez == [('alert/log','Channel1','0001000011000000000010000000000',True,False,'Longitude is -40.0 Degrees'),
+                     ('alert/log','Channel1','0101000011000000000000011000000',True,False,"Plane's speed is 6000 Knots"),
+                     ('alert/log','Channel1','1101000011100110011010010000000',None,False,"Plane's Track Angle is 259.9 Degrees"),
+                     ('alert/log','Channel1','0011000011110000011001000000000',None,False,"Plane's Magnetic Heading is 98.3 Degrees"),
+                     ('alert/log','Channel1','1011000011110001001000000000000',True,False,'Wind Speed is 98.3 Knots'),
+                     ('alert/log','Channel1','1111100111110001001000101001000',True,False,'Baro Correction (ins. Hg) '),
+                     ('alert','Channel2','0000001000000010111110000000000',None,False,'Selected Course '),
+                     ('alert','Channel2','0010001000010110100000000000000',None,False,'Selected Vertical Speed is 1432 Ft/Min upwards'),
+                     ('log','Channel1','0101011011000000010101101100000',None,False,'Cabin Pressure is 1748 mB'),
+                     ('log','Channel1','1110010101100010011011111000000',False,False,'Horizontal Figure of Merit just under 2 nautical miles.'),
+                     ('log/alert','Channel1','1000100111100111101010000000011',None,False,'Indicated Angle of Attack is -70 WARNING!!'),
+                     ('log','Channel2','1000001100000011110000111100000',None,False,'Application Dependant Data 1 for FMC'),
+                     ('log','Channel2','1111111100000000000000000000100',None,False,'Identification required for FMC'),
+                     ('log','Channel2','0110001100110011011011001011000',None,False,'Application Dependant Data 2 for FMC'),
+                     ('alert','Channel1','0001110111100100101011011001000',None,False,'ADIRU Discrete Data '),
+                     ('alert/log','Channel1','0001011111100100101011011001000',None,False,'ADIRU MX Data '),
+                     ('alert','Channel2','0000111100000001111000000000000',None,False,'Aircraft Condition and Event Surveillance System (ACESS)'),
+                     ('alert','Channel2','1011111000010111110000000000000',None,False,'HGA/IGA HPA'),
+                     ('alert','Channel2','0101111100001011111000000000000',None,False,'CABIN TERMINAL 3'),
+                     ('alert', 'Channel2', '0001001100000010011000000000000', None, False, 'GPWS'),
+                     ('alert','Channel2','1000111100010001111000000000000',None,False,'Electronic Flight Instrument System (EFIS)')])
 
 def test_all_IDS_tests():
     print("\n")
@@ -4450,6 +4462,7 @@ def test_all_IDS_tests():
     test_IDS_BNR_Encode_6()
     test_IDS_BNR_Encode_7()
     test_IDS_BNR_Encode_8()
+    test_rules_AllDataTypes()
 
 if __name__ == "__main__":
     #test_all()

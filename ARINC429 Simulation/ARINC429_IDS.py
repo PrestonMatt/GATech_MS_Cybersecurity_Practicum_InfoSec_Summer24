@@ -5299,7 +5299,18 @@ class arinc429_intrusion_detection_system:
                     if (octal_flag != False):  #Need the label
                         raise ValueError(
                             f"Label needed in order to properly search word for given data: {r.split(':')[1]}")
-                    if (SDI_flag != False):  # Need the LRU for the equipment ID
+                    # SAL Code does not need the SDI flag.
+                    try:
+                        SAL_CODE = self.all_labels[label][int(r.split(':')[1], 8)] == ["SAL", 0.0]
+                    except KeyError:
+                        SAL_CODE = False
+                    except ValueError:
+                        SAL_CODE = False
+                    if(SAL_CODE):
+                        SAL_octal = int(r.split(':')[1], 8)
+                        bitmask = self.replace_index(11, 19, bitmask, self.SAL_encode(SAL_octal))
+                        continue
+                    elif (SDI_flag != False):  # Need the LRU for the equipment ID
                         raise ValueError(
                             f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
                     #Figure out if encode to DISC, BNR or BCD
@@ -5317,11 +5328,12 @@ class arinc429_intrusion_detection_system:
                         resolution = self.all_labels[label][equipID][1]
                     except KeyError:
                             raise KeyError(f"Equipment ID: {hex(equipID)} is not used for label: {oct(label)} ({this_sdi}).")
-                    try:
-                        data = float(r.split(":")[1])
-                    except ValueError:
-                        raise ValueError("Data given to check is not a number!")
+
                     if (encode_type == "BCD"):
+                        try:
+                            data = float(r.split(":")[1])
+                        except ValueError:
+                            raise ValueError("Data given to check is not a number!")
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
@@ -5329,25 +5341,24 @@ class arinc429_intrusion_detection_system:
                     elif (encode_type == "BNR"):
                         v_range = self.all_labels[label][equipID][2]
                         sig_digs = self.all_labels[label][equipID][3]
+                        try:
+                            data = float(r.split(":")[1])
+                        except ValueError:
+                            raise ValueError("Data given to check is not a number!")
                         bitmask = self.replace_index(10,
                                                      31,
                                                      bitmask,
-                                                     self.BNR_encode(data, resolution, sig_digs, v_range))
+                                                     self.BNR_encode(float(data), resolution, sig_digs, v_range))
                     elif (encode_type == "DISC"):
+                        data = r.split(":")[1]
                         if(len(data) != 19):
                             raise IndexError(f"Since DISC is not strictly encoded, each bit must be specified. Expected length 19, got {len(data)}")
+                        if( not (data.__contains__("0") or data.__contains__("1"))):
+                            raise ValueError(f"Discrete data must be bits only - not strings or numbers: {data}.")
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      data)
-                    #elif (encode_type == "SAL"):
-                    #    if(len(data) != 8):
-                    #            raise IndexError(f"Since SAL is a sub-label, expected length 8, got {len(data)}")
-                        # Check these, but basically, it's a label after the label.
-                    #    bitmask = self.replace_index(9,
-                    #                                 16,
-                    #                                 bitmask,
-                    #                                 self.SAL_encode(data))
                 elif (r.__contains__("Encoding:")):
                     if (octal_flag != False):  #Need the label
                         raise ValueError(
@@ -5682,9 +5693,10 @@ class arinc429_intrusion_detection_system:
         # The following section of codes I have to guess/do a lot of research to find so they may not be correct:
         "Digital Flight Data Recorder (DFDR)": 0o163
     }
-    def SAL_encode(self, SAL_str):
+    def SAL_encode(self, SAL_str:str):
         sal_label_chip = lru_txr()
-        return (sal_label_chip.make_label_for_word(self.SALs[SAL_str]))
+        label, _ = sal_label_chip.make_label_for_word(SAL_str)
+        return(label)
 
     def percets_BNR_BCD_DISC_SAL_per_label(self):
         label_percentages = {}
