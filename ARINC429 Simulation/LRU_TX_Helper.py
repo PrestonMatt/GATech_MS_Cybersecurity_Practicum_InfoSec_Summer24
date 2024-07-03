@@ -38,7 +38,8 @@ class arinc429_TX_Helpers():
             except KeyboardInterrupt:
                 break
 
-    def transmit_given_word(self, word:int, bus_usec_start, channel_index=0, slowdown_rate = 5e-7):
+    def transmit_given_word(self, word:int, bus_usec_start, channel_index=0, slowdown_rate=5e-7):
+        #print(f"TX Chip sampling rate: {slowdown_rate}")
         if(self.validate_word(word) == False): # word is invalid:
             raise ValueError("Word is not valid")
         else:
@@ -50,7 +51,7 @@ class arinc429_TX_Helpers():
             ts, vs = self.word_voltage_generator.from_intWord_to_signal(self.word_voltage_generator.get_speed(),
                                                                         word,
                                                                         this_word_usec_start)
-            self.word_voltage_generator.graph_words((ts,vs),tickrate=300)
+            #self.word_voltage_generator.graph_words((ts,vs),tickrate=300)
             #print(ts)
             for voltage in vs:
                 self.transmit_single_voltage_to_wire(voltage, self.BUS_CHANNELS[channel_index])

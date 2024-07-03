@@ -5693,7 +5693,8 @@ class arinc429_intrusion_detection_system:
         # The following section of codes I have to guess/do a lot of research to find so they may not be correct:
         "Digital Flight Data Recorder (DFDR)": 0o163
     }
-    def SAL_encode(self, SAL_str:str):
+    def SAL_encode(self, SAL_str:int):
+        #print(SAL_str)
         sal_label_chip = lru_txr()
         label, _ = sal_label_chip.make_label_for_word(SAL_str)
         return(label)
@@ -5752,8 +5753,15 @@ class arinc429_intrusion_detection_system:
 
         return (label_percentages)
 
-    def receive_words(self):
-        pass
+    def receive_words(self, channel_index:int, sample_rate=5e-7):
+        #print(sample_rate)
+        #self.communication_chip.visualize_LRU_receiveds_mother(self.BUS_CHANNELS[channel_index],
+        #                                                       fig_title="Received Voltages for Eval 1")
+        word_int, word_str = self.communication_chip.receive_given_word(channel_index=channel_index,
+                                                                        slowdown_rate=sample_rate)
+        print(f"IDS Recv'd word: {word_str}")
+        self.n += 1
+        self.alert_or_log(word_str)
 
     def get_equip_ID_from_name(self, name:str) -> int:
         for equipID, equipName in self.equip_ids.items():

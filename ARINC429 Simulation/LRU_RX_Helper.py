@@ -29,7 +29,8 @@ class arinc429_RX_Helpers():
     def __str__(self):
         pass
 
-    def receive_given_word(self, channel_index=0) -> int:
+    def receive_given_word(self, channel_index=0, slowdown_rate=5e-7) -> (int, str):
+        print(f"Sampling Rate: {slowdown_rate}")
         word_bitStr = ""
 
         ts = np.array([])
@@ -37,6 +38,8 @@ class arinc429_RX_Helpers():
 
         while(len(word_bitStr.replace("0b","")) < 32):
             current_time_in_usec = time() - self.usec_start
+            #print(slowdown_rate)
+            sleep(slowdown_rate)
             ts = np.concatenate((ts, np.array([current_time_in_usec])))
             vs = np.concatenate(
                 ( vs,
@@ -45,11 +48,15 @@ class arinc429_RX_Helpers():
                  ]) )
             )
 
+
             word_as_int, word_bitStr = self.binary_voltage_converter.from_voltage_to_bin_word(
                 (ts, vs),
-                self.binary_voltage_converter.get_speed()
+                self.binary_voltage_converter.get_speed(),
+                show_word=False
             )
-        print(word_bitStr)
+            if(len(word_bitStr) > 0):
+                print(f"Bits so far: {word_bitStr}")
+        print(f"Word bitstring received (comm chip): {word_bitStr}")
 
         if(self.validate_word(word_as_int) == False):
             print("Word is not valid")
@@ -96,22 +103,24 @@ class arinc429_RX_Helpers():
     def receive_single_voltage_from_wire(self, channel) -> float:
         if(not channel in self.BUS_CHANNELS):
             raise ValueError("Bus must exist!")
-        #sleep(5e-7)
+        #print(slowdown_rate)
+        #sleep(slowdown_rate)
         voltage = channel.get_voltage()
-        #print(voltage)
+        print(f"Voltage sampled: {voltage}")
         return(voltage)
 
-    def visualize_LRU_receiveds(self, channel):
+    def visualize_LRU_receiveds(self, channel, fig_title="Receive Data", sample_rate=5e-7):
         vs = [0.0 for x in range(100)]
         # interactive plot
         plt.ion()
         fig, ax = plt.subplots()
         line, = ax.plot([], [], 'go--')
-        fig.suptitle("Receive Data")
+        fig.suptitle(fig_title)
 
         ax.set_xlim(100)
         ax.set_ylim(-14, 14) # within spec
         while(True):
+            sleep(sample_rate)
             vs.append(self.receive_single_voltage_from_wire(channel))
 
             line.set_xdata(range(100))
@@ -121,3 +130,8 @@ class arinc429_RX_Helpers():
 
             fig.canvas.draw()
             fig.canvas.flush_events()
+
+    def visualize_LRU_receiveds_mother(self, channel, fig_title="Receive Data", sample_rate=5e-7):
+        visualization_thread = Thread(target=self.visualize_LRU_receiveds, args=(channel,fig_title,sample_rate,))
+        visualization_thread.start()
+        visualization_thread.join()

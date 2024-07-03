@@ -43,7 +43,7 @@ rules_files = {
     10:r"\TEN_RULES.txt"
 }
 
-def _test_(bus_speed:str, sampling_rate:float, num_rules:int, SDI:str):
+def _test_(bus_speed:str, sampling_rate:float, num_rules:int, SDI="ADIRU"):
 
     Channel1 = ARINC429BUS()
     Channel2 = ARINC429BUS()
@@ -80,28 +80,38 @@ def _test_(bus_speed:str, sampling_rate:float, num_rules:int, SDI:str):
         word5 = transmitting_LRU.encode_word(0o220)
         words_to_TX.append(word5)
 
+        print(f"Words: {words_to_TX}")
+
         def send_ADIRU_words(transmitting_LRU_ADIRU, words_to_TX):
             for word in words_to_TX:
+                print(f"Sending word: 0b{word}")
                 # transmit_given_word(self, word:int, bus_usec_start, channel_index=0, slowdown_rate = 5e-7)
                 transmitting_LRU_ADIRU.TXcommunicator_chip.transmit_given_word(word=int(word,2), # Words 1 to 5
                                                               bus_usec_start=time(), #start time.
                                                               channel_index=0, # Channel2
                                                               slowdown_rate=sampling_rate) # this is our test
+            # Stop the threads?
 
         # Start the TXr transmission in thread
         transmitter_thread = Thread(target=send_ADIRU_words, args=(transmitting_LRU,words_to_TX,))
         transmitter_thread.start()
         # Start the receiver in a separate thread
-        receiver_thread = Thread(target=IDS_test_numX.receive_words(), args=(Channel2,))
+        receiver_thread = Thread(target=IDS_test_numX.receive_words, args=(0, sampling_rate,))
         receiver_thread.start()
-        # Start the real-time visualization in a separate thread
-        visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(Channel2, 0.005, "Transmit Data"))
-        visualization_thread.start()
+        # Start the real-time visualization of TX'd voltages in a separate thread
+        visualization_threadTX = Thread(target=ARINC429BUS.queue_visual,
+                                      args=(Channel1, sampling_rate, "Transmitted Voltages for IDS Eval 1",))
+        visualization_threadTX.start()
+        # Start the real-time visualization of RX'd voltages in a final thread
+        visualization_threadRX = Thread(target=IDS_test_numX.communication_chip.visualize_LRU_receiveds_mother,
+                                        args=(Channel1,"Received Voltages for Eval 1",sampling_rate),)
+        visualization_threadRX.start()
 
         # Join threads to main thread keeping simulation running
         transmitter_thread.join()
         receiver_thread.join()
-        visualization_thread.join()
+        visualization_threadTX.join()
+        visualization_threadRX.join()
 
     """
     transmitting_LRU = None
@@ -148,9 +158,11 @@ def main():
     for bus_speed in bus_speeds:
         for sampling_rate in sampling_rates:
             for num_rule in num_rules:
-                for SDI, value in SDIs.items():
-                    print(f"Performing Evaluation Test on IDS with:\n\t{bus_speed} bus speed,\n\t{sampling_rate} second sampling rate,\n\t{num_rule} rules and on,\n\t{SDIs[SDI]} LRU.\n")
-                    _test_(bus_speed, sampling_rate, num_rule, value)
+                #for SDI, value in SDIs.items():
+                print(f"Performing Evaluation Test on IDS with:\n\t{bus_speed} bus speed,\n\t{sampling_rate} second sampling rate,\n\t{num_rule} rules.\n")
+                _test_(bus_speed, sampling_rate, num_rule)
+                    #print(f"Performing Evaluation Test on IDS with:\n\t{bus_speed} bus speed,\n\t{sampling_rate} second sampling rate,\n\t{num_rule} rules and on,\n\t{SDIs[SDI]} LRU.\n")
+                    #_test_(bus_speed, sampling_rate, num_rule, value)
 
 if __name__ == '__main__':
     main()
