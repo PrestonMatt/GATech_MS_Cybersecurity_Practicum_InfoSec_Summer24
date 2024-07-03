@@ -11,8 +11,8 @@ Channel3: Flight_Control_Computer -> XXX
 # Do not identify any TX LRUs SDI here.
 Channel1: Flight_Control_Computer -> 00
 Channel2: Global_Positioning_System -> 01
-Channel3: ADIRS -> 10
+Channel2: ADIRS -> 10
 
 !Rules
 alert/log Channel2 0o010 ADIRS data:-40.0 C "Longitude is -40.0 Degrees"
-alert Chanel3 0o066 Flight_Control_Computer "FMC has sent a directional word."
+alert Channel3 0o066 Flight_Control_Computer "FMC has sent a directional word."

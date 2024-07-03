@@ -22,4 +22,4 @@ alert Channel2 0o221 ADIRS data:70.45 "WARNING!!! ANGLE OF ATTACK DANGEROUS!"
 alert Channel3 I
 log Channel1 Flight_Control_Computer I "FMC is sending incorrect parity words."
 alert Channel2 0o060 Encoding:BCD "BCD Words for label 0o60"
-log Channel1 0o066 bits[11:15)=1111 # "FMC Shifting up."
+log Channel1 0o066 bits[11:16)=1111 # "FMC Shifting up."

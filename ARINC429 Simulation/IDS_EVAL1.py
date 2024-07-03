@@ -5,7 +5,8 @@ from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
 from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
-from time import sleep
+from time import sleep, time
+from threading import Thread
 
 """
 Robustness of the IDS: Right now my bus code can transmit at the actual speed of an ARINC429 bus. However, when
@@ -52,17 +53,69 @@ def _test_(bus_speed:str, sampling_rate:float, num_rules:int, SDI:str):
     filename = dir + rules_files[num_rules]
     IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=bus_channels, rules_file=filename)
 
+    words_to_TX = []
+
+    if(SDI == "ADIRU"):
+        transmitting_LRU = ADIRU(bus_speed, BUS_CHANNELS=bus_channels[:-1]) # only gets channel 1 and 2
+        # Word 1
+        transmitting_LRU.set_value('Present Position - Latitude','N 75 Deg 59.9')
+        word1 = transmitting_LRU.encode_word(0o010)
+        words_to_TX.append(word1)
+
+        # Word 2
+        transmitting_LRU.set_value('Present Position - Latitude','S 40 Deg -40.1')
+        word2 = transmitting_LRU.encode_word(0o010)
+        words_to_TX.append(word2)
+
+        # Word 3
+        transmitting_LRU.set_value('Wind Speed',"123 Knots")
+        word3 = transmitting_LRU.encode_word(0o015)
+        words_to_TX.append(word3)
+
+        transmitting_LRU.set_value('Body Yaw Acceleration',"54.123 Deg/Sec^2")
+        word4 = transmitting_LRU.encode_word(0o054)
+        words_to_TX.append(word4)
+
+        transmitting_LRU.set_value('Baro Corrected Altitude #2',"35242 feet")
+        word5 = transmitting_LRU.encode_word(0o220)
+        words_to_TX.append(word5)
+
+        def send_ADIRU_words(transmitting_LRU_ADIRU, words_to_TX):
+            for word in words_to_TX:
+                # transmit_given_word(self, word:int, bus_usec_start, channel_index=0, slowdown_rate = 5e-7)
+                transmitting_LRU_ADIRU.TXcommunicator_chip.transmit_given_word(word=int(word,2), # Words 1 to 5
+                                                              bus_usec_start=time(), #start time.
+                                                              channel_index=0, # Channel2
+                                                              slowdown_rate=sampling_rate) # this is our test
+
+        # Start the TXr transmission in thread
+        transmitter_thread = Thread(target=send_ADIRU_words, args=(transmitting_LRU,words_to_TX,))
+        transmitter_thread.start()
+        # Start the receiver in a separate thread
+        receiver_thread = Thread(target=IDS_test_numX.receive_words(), args=(Channel2,))
+        receiver_thread.start()
+        # Start the real-time visualization in a separate thread
+        visualization_thread = Thread(target=ARINC429BUS.queue_visual, args=(Channel2, 0.005, "Transmit Data"))
+        visualization_thread.start()
+
+        # Join threads to main thread keeping simulation running
+        transmitter_thread.join()
+        receiver_thread.join()
+        visualization_thread.join()
+
+    """
     transmitting_LRU = None
     if(SDI == "00"):
-        transmitting_LRU = FMC(bus_speed, BUS_CHANNELS=bus_channels)
-        transmitting_LRU.generate_word_to_pitch_plane("up")
-        transmitting_LRU.generate_word_to_pitch_plane("down")
-        transmitting_LRU.generate_word_to_pitch_plane("left") # Transmits 3 words.
+        
+        #transmitting_LRU = FMC(bus_speed, BUS_CHANNELS=bus_channels)
+        #transmitting_LRU.generate_word_to_pitch_plane("up")
+        #transmitting_LRU.generate_word_to_pitch_plane("down")
+        #transmitting_LRU.generate_word_to_pitch_plane("left") # Transmits 3 words.
     elif(SDI == "01"):
         transmitting_LRU = GPS()
     elif(SDI == "02"):
         transmitting_LRU = ADIRU()
-
+    """
 
 def main():
 
@@ -96,6 +149,7 @@ def main():
         for sampling_rate in sampling_rates:
             for num_rule in num_rules:
                 for SDI, value in SDIs.items():
+                    print(f"Performing Evaluation Test on IDS with:\n\t{bus_speed} bus speed,\n\t{sampling_rate} second sampling rate,\n\t{num_rule} rules and on,\n\t{SDIs[SDI]} LRU.\n")
                     _test_(bus_speed, sampling_rate, num_rule, value)
 
 if __name__ == '__main__':

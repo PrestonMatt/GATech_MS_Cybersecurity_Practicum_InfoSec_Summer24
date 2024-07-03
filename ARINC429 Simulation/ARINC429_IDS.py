@@ -5322,7 +5322,7 @@ class arinc429_intrusion_detection_system:
                     equipID = self.get_equip_ID_from_name(this_sdi)
 
                     #equipID = self.equip_ids[this_sdi]
-                    print(self.all_labels[label][equipID])
+                    #print(self.all_labels[label][equipID])
                     try:
                         encode_type = self.all_labels[label][equipID][0]
                         resolution = self.all_labels[label][equipID][1]
@@ -5751,6 +5751,9 @@ class arinc429_intrusion_detection_system:
                                              "SAL": SAL_percentage}
 
         return (label_percentages)
+
+    def receive_words(self):
+        pass
 
     def get_equip_ID_from_name(self, name:str) -> int:
         for equipID, equipName in self.equip_ids.items():
