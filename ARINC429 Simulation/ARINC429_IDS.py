@@ -5419,21 +5419,24 @@ class arinc429_intrusion_detection_system:
         # )
         with open(self.log_filepath, "a") as log_fd:
             with open(self.alert_filepath, "a") as alert_fd:
-                for tuple in self.rules:
-                    parity = tuple[3]
-                    time = tuple[4]
+                for _tuple_ in self.rules:
+                    parity = _tuple_[3]
+                    time = _tuple_[4]
                     flag_this_tuple = False
                     # Part 1 Check if you should flag this word.
-                    if (tuple[0].__contains__("alert")):
+                    if (_tuple_[0].__contains__("alert")):
                         #TODO Check channel?
-                        p_bitmask = tuple[2] + lru_txr.calc_parity(tuple[2])
-                        bitmask = tuple[2]  #+ lru_txr.calc_parity(tuple[2])
+                        psuedo_word = word[:-1]
+                        partity_calc = lru_txr()
+                        correct_parity_bit = partity_calc.calc_parity(psuedo_word)
+                        #p_bitmask = _tuple_[2] + correct_parity_bit
+                        bitmask = _tuple_[2]  #+ lru_txr.calc_parity(_tuple_[2])
                         if (bitmask == 31 * "0"):
                             flag_this_tuple = True
                         word_check = word[-1:]
                         if (int(bitmask, 2) & int(word_check, 2) == int(bitmask, 2)):
-                            if ((parity == True and word[-1] == p_bitmask)
-                                    or (parity == False and word[-1] != p_bitmask)):
+                            if ((parity == True and word[-1] == correct_parity_bit)
+                                    or (parity == False and word[-1] != correct_parity_bit)):
                                 # alert
                                 flag_this_tuple = True
                             elif (parity == None):
@@ -5441,15 +5444,15 @@ class arinc429_intrusion_detection_system:
                                 flag_this_tuple = True
                     # Part 2: If the word is flagged, the log it appropriately.
                     if (flag_this_tuple and time):
-                        if (tuple[0].__contains__("alert")):
-                            alert_fd.write(f"{time()}: Alert! {tuple[5]}\n")
-                        if (tuple.__contains__("log")):
-                            log_fd.write(f"{time()}: {word} {tuple[5]}\n")
+                        if (_tuple_[0].__contains__("alert")):
+                            alert_fd.write(f"{time()}: Alert! {_tuple_[5]}\n")
+                        if (_tuple_.__contains__("log")):
+                            log_fd.write(f"{time()}: {word} {_tuple_[5]}\n")
                     elif (flag_this_tuple and time == False):
-                        if (tuple[0].__contains__("alert")):
-                            alert_fd.write(f"Alert! {tuple[5]}\n")
-                        if (tuple.__contains__("log")):
-                            log_fd.write(f"Logged word #{self.n}: {word} {tuple[5]}\n")
+                        if (_tuple_[0].__contains__("alert")):
+                            alert_fd.write(f"Alert! {_tuple_[5]}\n")
+                        if (_tuple_.__contains__("log")):
+                            log_fd.write(f"Logged word #{self.n}: {word} {_tuple_[5]}\n")
             alert_fd.close()
         log_fd.close()
 
@@ -5757,11 +5760,12 @@ class arinc429_intrusion_detection_system:
         #print(sample_rate)
         #self.communication_chip.visualize_LRU_receiveds_mother(self.BUS_CHANNELS[channel_index],
         #                                                       fig_title="Received Voltages for Eval 1")
-        word_int, word_str = self.communication_chip.receive_given_word(channel_index=channel_index,
-                                                                        slowdown_rate=sample_rate)
-        print(f"IDS Recv'd word: {word_str}")
-        self.n += 1
-        self.alert_or_log(word_str)
+        while(True):
+            word_int, word_str = self.communication_chip.receive_given_word(channel_index=channel_index,
+                                                                            slowdown_rate=sample_rate)
+            print(f"IDS Recv'd word: {word_str}")
+            self.n += 1
+            self.alert_or_log(word_str)
 
     def get_equip_ID_from_name(self, name:str) -> int:
         for equipID, equipName in self.equip_ids.items():

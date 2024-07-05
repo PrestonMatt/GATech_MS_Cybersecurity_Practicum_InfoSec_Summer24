@@ -65,7 +65,7 @@ def _test_(bus_speed:str, sampling_rate:float, num_rules:int, SDI="ADIRU"):
         # Word 2
         transmitting_LRU.set_value('Present Position - Latitude','S 40 Deg -40.1')
         word2 = transmitting_LRU.encode_word(0o010)
-        words_to_TX.append(word2)
+        words_to_TX.append(word2[:-1]+"0")
 
         # Word 3
         transmitting_LRU.set_value('Wind Speed',"123 Knots")
@@ -154,6 +154,16 @@ def main():
 
     num_rules = [y for y in range(0,11)]
     #print(num_rules)
+
+    """
+    user_sampling_rate = input("Please enter the sleep time for the slowdown rate:")
+    if(user_sampling_rate not in sampling_rates):
+        print("Warning, sampling rate arbitrary")
+        try:
+            sampling_rate = float(user_sampling_rate)
+        except ValueError:
+            raise ValueError(f"Please enter a valid sampling rate. Needs to be a float. Got: {user_sampling_rate}\nExpected: {sampling_rates}")
+    """
 
     for bus_speed in bus_speeds:
         for sampling_rate in sampling_rates:
