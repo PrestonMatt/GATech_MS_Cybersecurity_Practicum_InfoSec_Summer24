@@ -5117,6 +5117,12 @@ class arinc429_intrusion_detection_system:
         # else keep defaults:
         return
 
+    def set_logfile(self, new_log_filepath:str):
+        self.log_filepath = new_log_filepath
+
+    def set_alertfile(self, new_alert_filepath:str):
+        self.alert_filepath = new_alert_filepath
+
     def get_channel_connections(self):
         lines = []
         with open(self.rules_file, "r") as rules_fd:

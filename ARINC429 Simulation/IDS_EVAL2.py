@@ -1,14 +1,10 @@
 import os
+import pytest
 
 from ARINC429_IDS import arinc429_intrusion_detection_system as IDS
-from LRU_FMC_Simulator import flight_management_computer as FMC
-from LRU_GPS_Simulator import global_positioning_system as GPS
 from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
-from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
-from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
-from time import sleep, time
-from threading import Thread
+from time import sleep, time, ctime
 def main():
 
     rules_filename = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Eval2_Rules.txt"
@@ -21,6 +17,29 @@ def main():
 
     IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=channels, rules_file=rules_filename)
     transmitting_LRU = ADIRU(bus_speed, BUS_CHANNELS=channels)
+
+    # Check the output files:
+    #print(IDS_test_numX.log_filepath)
+    #print(IDS_test_numX.alert_filepath)
+    alertfilePath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Alerts_EVAL2.txt"
+    logfilePath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Logs_EVAL2.txt"
+    # Reset the files in between runs:
+    with open(alertfilePath,"w") as alert_fd:
+        alert_fd.write(f"Starting EVAL2 test at {ctime()}\n")
+    alert_fd.close()
+    with open(logfilePath,"w") as log_fd:
+        log_fd.write(f"Starting EVAL2 test at {ctime()}\n")
+    log_fd.close()
+    #print(alertfilePath)
+    #print(logfilePath)
+    # Some error handling:
+    if(IDS_test_numX.alert_filepath != alertfilePath):
+        IDS_test_numX.set_alertfile(alertfilePath)
+    if(IDS_test_numX.log_filepath != logfilePath):
+        IDS_test_numX.set_logfile(logfilePath)
+    #print(IDS_test_numX.alert_filepath)
+    #print(IDS_test_numX.log_filepath)
+    #cont = input("")
 
     timer_start = time()
     print("Opening and analyzing flight data...")
