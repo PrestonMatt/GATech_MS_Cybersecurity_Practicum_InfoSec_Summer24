@@ -19,7 +19,7 @@ alert Channel3 0o066 Flight_Control_Computer "FMC has sent a directional word."
 alert Channel1 0o011 Global_Positioning_System "GPS Longitude word sent."
 log Channel2 0o015 ADIRS data:123 00 C "Wind Speed is 98.3 Knots"
 alert Channel2 0o221 ADIRS data:70.45 "WARNING!!! ANGLE OF ATTACK DANGEROUS!"
-alert Channel3 I
+alert Channel3 I "Incorrect Parity"
 log Channel1 Flight_Control_Computer I "FMC is sending incorrect parity words."
 alert Channel2 0o060 Encoding:BCD "BCD Words for label 0o60"
 log Channel1 0o066 bits[11:16)=1111 # "FMC Shifting up."

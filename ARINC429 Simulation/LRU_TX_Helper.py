@@ -136,8 +136,8 @@ class arinc429_TX_Helpers():
     def calc_parity(self, word_bitStr) -> str:
         if(len(word_bitStr) != 31):
             raise ValueError("Checking parity must be for 31 bit incomplete words")
-        # Count the number of '1's in the bit string (excluding the parity bit)
-        num_of_ones = word_bitStr[:-1].count('1')
+        # Count the number of '1's in the bit string
+        num_of_ones = word_bitStr.count('1')
 
         # Check the parity condition
         if(num_of_ones % 2 == 0): # even

@@ -92,36 +92,39 @@ def main():
         # Repeat this for lat and lon, except every 4 words because it tx's 1/4 as much.
         if(index % 4 == 0):
             # Get the Lat/Lon
-            current_lat = lats[index]
-            current_lon = lons[index]
-            # The ADIRU "collects" them
-            transmitting_LRU.set_value('Present Position - Latitude', f"{current_lat} degrees")
-            transmitting_LRU.set_value('Present Position - Longitude', f"{current_lon} degrees")
-            # ADIRU generates words based on those values:
-            lat_word_bnr = transmitting_LRU.encode_word(0o310) # 0o310: "Present Position - Latitude"
-            lon_word_bnr = transmitting_LRU.encode_word(0o311) # 0o311: "Present Position - Longitude"
-            print(f"Latitude BNR:\t\t\t\t\t0b{lat_word_bnr},\nLongitude BNR:\t\t\t\t\t0b{lon_word_bnr}")
-            # Redundant:
-            """
-            # The ADIRU "reformats" them again
-            if(current_lat < 0.0):
-                lat_str = f"S {round(current_lat,0)} Deg {str(round(current_lat, 3))[3:]}"
-            else:
-                lat_str = f"N {round(current_lat,0)} Deg {str(round(current_lat, 3))[3:]}"
-            if(current_lon < 0.0):
-                lon_str = f"W {round(current_lon,0)} Deg {str(round(current_lon, 3))[3:]}"
-            else:
-                lon_str = f"E {round(current_lon,0)} Deg {str(round(current_lon, 3))[3:]}"
-            transmitting_LRU.set_value('Present Position - Latitude', lat_str)
-            transmitting_LRU.set_value('Present Position - Longitude', lon_str)
-            # ADIRU generates words based on those values:
-            lat_word_bcd = transmitting_LRU.encode_word(0o010) # 0o010: "Present Position - Latitude"
-            lon_word_bcd = transmitting_LRU.encode_word(0o011) # 0o011: "Present Position - Longitude"
-            IDS_test_numX.alert_or_log(lon_word_bcd)
-            IDS_test_numX.alert_or_log(lat_word_bcd)
-            """
-            IDS_test_numX.alert_or_log(lat_word_bnr)
-            IDS_test_numX.alert_or_log(lon_word_bnr)
+            try:
+                current_lat = lats[index]
+                current_lon = lons[index]
+                # The ADIRU "collects" them
+                transmitting_LRU.set_value('Present Position - Latitude', f"{current_lat} degrees")
+                transmitting_LRU.set_value('Present Position - Longitude', f"{current_lon} degrees")
+                # ADIRU generates words based on those values:
+                lat_word_bnr = transmitting_LRU.encode_word(0o310) # 0o310: "Present Position - Latitude"
+                lon_word_bnr = transmitting_LRU.encode_word(0o311) # 0o311: "Present Position - Longitude"
+                print(f"Latitude BNR:\t\t\t\t\t0b{lat_word_bnr},\nLongitude BNR:\t\t\t\t\t0b{lon_word_bnr}")
+                # Redundant:
+                """
+                # The ADIRU "reformats" them again
+                if(current_lat < 0.0):
+                    lat_str = f"S {round(current_lat,0)} Deg {str(round(current_lat, 3))[3:]}"
+                else:
+                    lat_str = f"N {round(current_lat,0)} Deg {str(round(current_lat, 3))[3:]}"
+                if(current_lon < 0.0):
+                    lon_str = f"W {round(current_lon,0)} Deg {str(round(current_lon, 3))[3:]}"
+                else:
+                    lon_str = f"E {round(current_lon,0)} Deg {str(round(current_lon, 3))[3:]}"
+                transmitting_LRU.set_value('Present Position - Latitude', lat_str)
+                transmitting_LRU.set_value('Present Position - Longitude', lon_str)
+                # ADIRU generates words based on those values:
+                lat_word_bcd = transmitting_LRU.encode_word(0o010) # 0o010: "Present Position - Latitude"
+                lon_word_bcd = transmitting_LRU.encode_word(0o011) # 0o011: "Present Position - Longitude"
+                IDS_test_numX.alert_or_log(lon_word_bcd)
+                IDS_test_numX.alert_or_log(lat_word_bcd)
+                """
+                IDS_test_numX.alert_or_log(lat_word_bnr)
+                IDS_test_numX.alert_or_log(lon_word_bnr)
+            except IndexError:
+                continue
         # Clear some space to better see each word.
         print("\n\n")
     timer_end = time()
