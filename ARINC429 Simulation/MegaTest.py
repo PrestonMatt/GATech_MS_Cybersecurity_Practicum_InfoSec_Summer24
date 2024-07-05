@@ -4436,6 +4436,27 @@ def test_rules_AllDataTypes():
                      ('alert', 'Channel2', '0001001100000010011000000000000', None, False, 'GPWS'),
                      ('alert','Channel2','1000111100010001111000000000000',None,False,'Electronic Flight Instrument System (EFIS)')])
 
+def test_alert_or_log_function():
+    rules_filename = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Eval2_Rules.txt"
+    bus_speed = "low"
+    Channel1 = ARINC429BUS()
+    Channel2 = ARINC429BUS()
+    channels = [Channel1, Channel2]
+
+    IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=channels, rules_file=rules_filename)
+
+    alertfilePath = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Alerts_EVAL2.txt"
+    logfilePath = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Logs_EVAL2.txt"
+
+    if(IDS_test_numX.alert_filepath != alertfilePath):
+        IDS_test_numX.set_alertfile(alertfilePath)
+    if(IDS_test_numX.log_filepath != logfilePath):
+        IDS_test_numX.set_logfile(logfilePath)
+
+    word1 = "10010011000000000000000000000000"
+    IDS_test_numX.alert_or_log(word1)
+
+
 def test_all_IDS_tests():
     print("\n")
     test_IDS_log_outfile_path()

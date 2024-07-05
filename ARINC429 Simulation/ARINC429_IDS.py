@@ -5431,7 +5431,7 @@ class arinc429_intrusion_detection_system:
                     flag_this_tuple = False
                     # Part 1 Check if you should flag this word.
                     if (_tuple_[0].__contains__("alert")):
-                        #TODO Check channel?
+                        #Check channel? -> done by caller
                         psuedo_word = word[:-1]
                         partity_calc = lru_txr()
                         correct_parity_bit = partity_calc.calc_parity(psuedo_word)
@@ -5439,8 +5439,8 @@ class arinc429_intrusion_detection_system:
                         bitmask = _tuple_[2]  #+ lru_txr.calc_parity(_tuple_[2])
                         if (bitmask == 31 * "0"):
                             flag_this_tuple = True
-                        word_check = word[-1:]
-                        if (int(bitmask, 2) & int(word_check, 2) == int(bitmask, 2)):
+                        #word_check = word[:-1]
+                        if (int(bitmask, 2) & int(psuedo_word, 2) == int(bitmask, 2)):
                             if ((parity == True and word[-1] == correct_parity_bit)
                                     or (parity == False and word[-1] != correct_parity_bit)):
                                 # alert
