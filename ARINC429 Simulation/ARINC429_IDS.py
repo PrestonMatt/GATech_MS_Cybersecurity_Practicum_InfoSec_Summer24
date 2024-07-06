@@ -5442,7 +5442,8 @@ class arinc429_intrusion_detection_system:
                         #if (bitmask == 31 * "0"):
                         #    flag_this_tuple = True
                         #word_check = word[:-1]
-                        if (int(bitmask, 2) & int(psuedo_word, 2) == int(bitmask, 2)):
+                        #if (int(bitmask, 2) & int(psuedo_word, 2) == int(bitmask, 2)):
+                        if (bitmask[0:10] == psuedo_word[0:10] and (int(bitmask[10:],2) == 0 or (int(bitmask[10:],2) ^ int(psuedo_word[10:],2) == 0)) ):
                             if ((parity == True and word[-1] == correct_parity_bit)
                                     or (parity == False and word[-1] != correct_parity_bit)):
                                 # alert

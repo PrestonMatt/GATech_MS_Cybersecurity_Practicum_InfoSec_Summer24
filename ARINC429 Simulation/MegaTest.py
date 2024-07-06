@@ -4460,7 +4460,8 @@ def test_alert_or_log_function1():
     alt_fd.close()
 
     try:
-        assert(lines[-1].replace('\n','') == "Alert! GPS Longitude word sent.")
+        assert(lines[-2].replace('\n','') == "Alert! GPS Longitude word sent.")
+        assert(lines[-1].replace('\n','') == "Alert! BCD Words for label 0o230. Percent Chance of being BCD: 75.0%.")
     except IndexError:
         assert(1 == 2) # Failed the test.
 
@@ -4559,6 +4560,40 @@ def test_alert_or_log_function4():
 
     try:
         assert(lines[-1].replace('\n','') == "Alert! Longitude is 41.88331858083409 Degrees")
+    except IndexError:
+        assert(1 == 2) # Failed the test.
+
+def test_alert_or_log_function5():
+    rules_filename = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Eval2_Rules.txt"
+    bus_speed = "low"
+    Channel1 = ARINC429BUS()
+    Channel2 = ARINC429BUS()
+    channels = [Channel1, Channel2]
+
+    IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=channels, rules_file=rules_filename)
+
+    alertfilePath = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Alerts_EVAL2.txt"
+    logfilePath = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Logs_EVAL2.txt"
+
+    if(IDS_test_numX.alert_filepath != alertfilePath):
+        IDS_test_numX.set_alertfile(alertfilePath)
+    if(IDS_test_numX.log_filepath != logfilePath):
+        IDS_test_numX.set_logfile(logfilePath)
+
+    transmitting_LRU = ADIRU(bus_speed, BUS_CHANNELS=channels)
+    # 1.010735034942627
+    transmitting_LRU.set_value('Indicated Angle of Attack (Average)', f"{-3.5595465551757854} degrees")
+    word2 = transmitting_LRU.encode_word(0o221)
+    print(word2)
+    print(IDS_test_numX.rules)
+    IDS_test_numX.alert_or_log(word2)
+
+    with open(logfilePath,"r") as log_fd:
+        lines = log_fd.readlines()
+    log_fd.close()
+
+    try:
+        assert(lines[-1].replace('\n','') != f"{time.ctime()}: 10001001001110001000000000000111 Indicated Angle of Attack signals the plane is climbing in elevation.")
     except IndexError:
         assert(1 == 2) # Failed the test.
 

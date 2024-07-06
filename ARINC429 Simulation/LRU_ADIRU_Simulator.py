@@ -1254,6 +1254,6 @@ class air_data_inertial_reference_unit:
         #self.TXcommunicator_chip.transmit_given_word(int(word), bus_usec_start=time(), channel_index=0)
 
     def set_sdi(self, newSDI:str):
-        if(newSDI != '00' or newSDI != '01' or newSDI != '10' or newSDI != '11'):
+        if(newSDI != '00' and newSDI != '01' and newSDI != '10' and newSDI != '11'):
             raise ValueError("SDI Error")
         self.SDI = newSDI
