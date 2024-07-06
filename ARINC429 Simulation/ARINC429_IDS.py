@@ -5430,7 +5430,9 @@ class arinc429_intrusion_detection_system:
                     time = _tuple_[4]
                     flag_this_tuple = False
                     # Part 1 Check if you should flag this word.
-                    if (_tuple_[0].__contains__("alert")):
+                    if(_tuple_[2] == "0"*32):
+                        flag_this_tuple = True
+                    if (_tuple_[0].__contains__("alert") or _tuple_[0].__contains__("log")):
                         #Check channel? -> done by caller
                         psuedo_word = word[:-1]
                         partity_calc = lru_txr()

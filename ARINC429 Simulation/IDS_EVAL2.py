@@ -148,7 +148,7 @@ def main():
         # Clear some space to better see each word.
         print("\n\n")
     timer_end = time()
-    print(f"This concludes Eval 2. It took {round(timer_end-timer_start / 3600.0, 3)} Hours.")
+    print(f"This concludes Eval 2. It took {round(timer_end-timer_start, 3)} seconds.")
 
     with open(alertfilePath,"r") as alert_fd:
         numAlertLines = len(alert_fd.readlines())
@@ -159,7 +159,8 @@ def main():
     # See the rules file as for why:
     calculated_numAlertLines = 50 + 2994368 + 11977472
     calculated_numLogLines = 50 + 9622
-
+    print("Number of alerts:", numAlertLines)
+    print("Number of logs:", numLogLines)
     assert(calculated_numAlertLines == numAlertLines and calculated_numLogLines == numLogLines)
 
 if __name__ == '__main__':

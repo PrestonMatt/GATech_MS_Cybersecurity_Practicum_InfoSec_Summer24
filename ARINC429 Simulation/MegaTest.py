@@ -4436,7 +4436,7 @@ def test_rules_AllDataTypes():
                      ('alert', 'Channel2', '0001001100000010011000000000000', None, False, 'GPWS'),
                      ('alert','Channel2','1000111100010001111000000000000',None,False,'Electronic Flight Instrument System (EFIS)')])
 
-def test_alert_or_log_function():
+def test_alert_or_log_function1():
     rules_filename = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Eval2_Rules.txt"
     bus_speed = "low"
     Channel1 = ARINC429BUS()
@@ -4456,6 +4456,28 @@ def test_alert_or_log_function():
     word1 = "10010011000000000000000000000000"
     IDS_test_numX.alert_or_log(word1)
 
+def test_alert_or_log_function2():
+    rules_filename = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Eval2_Rules.txt"
+    bus_speed = "low"
+    Channel1 = ARINC429BUS()
+    Channel2 = ARINC429BUS()
+    channels = [Channel1, Channel2]
+
+    IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=channels, rules_file=rules_filename)
+
+    alertfilePath = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Alerts_EVAL2.txt"
+    logfilePath = getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Logs_EVAL2.txt"
+
+    if(IDS_test_numX.alert_filepath != alertfilePath):
+        IDS_test_numX.set_alertfile(alertfilePath)
+    if(IDS_test_numX.log_filepath != logfilePath):
+        IDS_test_numX.set_logfile(logfilePath)
+
+    transmitting_LRU = ADIRU(bus_speed, BUS_CHANNELS=channels)
+    # 1.010735034942627
+    transmitting_LRU.set_value('Indicated Angle of Attack (Average)', f"{1.010735034942627} degrees")
+    word2 = transmitting_LRU.encode_word(0o221)
+    IDS_test_numX.alert_or_log(word2)
 
 def test_all_IDS_tests():
     print("\n")
@@ -4484,6 +4506,8 @@ def test_all_IDS_tests():
     test_IDS_BNR_Encode_7()
     test_IDS_BNR_Encode_8()
     test_rules_AllDataTypes()
+    test_alert_or_log_function1()
+    test_alert_or_log_function2()
 
 if __name__ == "__main__":
     #test_all()
