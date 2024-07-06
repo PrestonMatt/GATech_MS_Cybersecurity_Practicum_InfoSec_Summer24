@@ -1,0 +1,17944 @@
+n/a
+544 ft/min
+544 ft/min
+544 ft/min
+1344 ft/min
+1344 ft/min
+1824 ft/min
+1984 ft/min
+1984 ft/min
+2112 ft/min
+2112 ft/min
+2240 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2336 ft/min
+2624 ft/min
+2624 ft/min
+2624 ft/min
+3040 ft/min
+2752 ft/min
+2752 ft/min
+2272 ft/min
+2272 ft/min
+2144 ft/min
+1984 ft/min
+1824 ft/min
+1824 ft/min
+1152 ft/min
+1152 ft/min
+672 ft/min
+672 ft/min
+640 ft/min
+736 ft/min
+736 ft/min
+864 ft/min
+864 ft/min
+928 ft/min
+928 ft/min
+832 ft/min
+832 ft/min
+960 ft/min
+1024 ft/min
+1024 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+928 ft/min
+928 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+1184 ft/min
+1184 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1344 ft/min
+1664 ft/min
+1664 ft/min
+2240 ft/min
+2400 ft/min
+2784 ft/min
+3072 ft/min
+3200 ft/min
+3200 ft/min
+3200 ft/min
+3200 ft/min
+3424 ft/min
+3392 ft/min
+2976 ft/min
+2880 ft/min
+2880 ft/min
+2656 ft/min
+2688 ft/min
+2272 ft/min
+2112 ft/min
+2112 ft/min
+2048 ft/min
+2080 ft/min
+2080 ft/min
+2080 ft/min
+2304 ft/min
+2368 ft/min
+2464 ft/min
+2496 ft/min
+2496 ft/min
+2688 ft/min
+2848 ft/min
+2848 ft/min
+3040 ft/min
+2848 ft/min
+2848 ft/min
+2624 ft/min
+2624 ft/min
+2144 ft/min
+2144 ft/min
+2240 ft/min
+2240 ft/min
+2304 ft/min
+2304 ft/min
+2496 ft/min
+2496 ft/min
+2816 ft/min
+2816 ft/min
+2848 ft/min
+2848 ft/min
+2944 ft/min
+2944 ft/min
+2784 ft/min
+2784 ft/min
+2592 ft/min
+2592 ft/min
+2016 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1472 ft/min
+1472 ft/min
+1472 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1088 ft/min
+1088 ft/min
+1088 ft/min
+1088 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1568 ft/min
+1568 ft/min
+1568 ft/min
+1568 ft/min
+1568 ft/min
+1824 ft/min
+1824 ft/min
+1824 ft/min
+1824 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1440 ft/min
+1440 ft/min
+1696 ft/min
+1696 ft/min
+1696 ft/min
+1824 ft/min
+1824 ft/min
+1632 ft/min
+1632 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1792 ft/min
+1792 ft/min
+1888 ft/min
+1888 ft/min
+1888 ft/min
+1888 ft/min
+1888 ft/min
+1664 ft/min
+1664 ft/min
+1664 ft/min
+1664 ft/min
+1664 ft/min
+1664 ft/min
+1472 ft/min
+1472 ft/min
+1472 ft/min
+1472 ft/min
+1472 ft/min
+1824 ft/min
+1824 ft/min
+1824 ft/min
+1824 ft/min
+1440 ft/min
+1120 ft/min
+640 ft/min
+640 ft/min
+640 ft/min
+640 ft/min
+640 ft/min
+640 ft/min
+512 ft/min
+512 ft/min
+512 ft/min
+512 ft/min
+512 ft/min
+480 ft/min
+480 ft/min
+480 ft/min
+480 ft/min
+480 ft/min
+480 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+704 ft/min
+704 ft/min
+704 ft/min
+704 ft/min
+704 ft/min
+704 ft/min
+704 ft/min
+704 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+1088 ft/min
+1088 ft/min
+1088 ft/min
+1088 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1664 ft/min
+1664 ft/min
+1664 ft/min
+1664 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1760 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1568 ft/min
+1568 ft/min
+1568 ft/min
+1568 ft/min
+1568 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1120 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+480 ft/min
+480 ft/min
+480 ft/min
+768 ft/min
+768 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+896 ft/min
+1120 ft/min
+1120 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+1408 ft/min
+1408 ft/min
+1408 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1248 ft/min
+1056 ft/min
+1056 ft/min
+672 ft/min
+672 ft/min
+672 ft/min
+672 ft/min
+672 ft/min
+672 ft/min
+672 ft/min
+672 ft/min
+1024 ft/min
+1024 ft/min
+1024 ft/min
+1024 ft/min
+1024 ft/min
+1408 ft/min
+1792 ft/min
+1792 ft/min
+1792 ft/min
+1792 ft/min
+1696 ft/min
+1696 ft/min
+1696 ft/min
+1696 ft/min
+1696 ft/min
+1696 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1696 ft/min
+1696 ft/min
+1696 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1280 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1600 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1632 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1312 ft/min
+1792 ft/min
+1792 ft/min
+1792 ft/min
+1792 ft/min
+1792 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1536 ft/min
+1536 ft/min
+1536 ft/min
+1536 ft/min
+1536 ft/min
+1536 ft/min
+1440 ft/min
+1440 ft/min
+1440 ft/min
+1440 ft/min
+1440 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1504 ft/min
+1408 ft/min
+1408 ft/min
+1408 ft/min
+1408 ft/min
+1408 ft/min
+1408 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1184 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1344 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+1216 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+928 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+800 ft/min
+416 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+352 ft/min
+352 ft/min
+928 ft/min
+1024 ft/min
+1024 ft/min
+1024 ft/min
+1024 ft/min
+1024 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1376 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+1056 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+960 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+864 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+992 ft/min
+544 ft/min
+544 ft/min
+544 ft/min
+544 ft/min
+544 ft/min
+544 ft/min
+544 ft/min
+544 ft/min
+480 ft/min
+224 ft/min
+224 ft/min
+224 ft/min
+224 ft/min
+224 ft/min
+224 ft/min
+224 ft/min
+224 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-160 ft/min
+-160 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+160 ft/min
+160 ft/min
+96 ft/min
+96 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-224 ft/min
+-224 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-192 ft/min
+-192 ft/min
+-192 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+160 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+256 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-160 ft/min
+-160 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-160 ft/min
+-160 ft/min
+-192 ft/min
+-192 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+160 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-128 ft/min
+-128 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+-128 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+32 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+64 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+96 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+0 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+128 ft/min
+-224 ft/min
+-224 ft/min
+-224 ft/min
+-576 ft/min
+-576 ft/min
+-576 ft/min
+-992 ft/min
+-992 ft/min
+-992 ft/min
+-992 ft/min
+-1472 ft/min
+-1472 ft/min
+-1472 ft/min
+-1472 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-3168 ft/min
+-3168 ft/min
+-3168 ft/min
+-3264 ft/min
+-3264 ft/min
+-3264 ft/min
+-3104 ft/min
+-3104 ft/min
+-3104 ft/min
+-3104 ft/min
+-3104 ft/min
+-3104 ft/min
+-3104 ft/min
+-3168 ft/min
+-3168 ft/min
+-3168 ft/min
+-3168 ft/min
+-3136 ft/min
+-3136 ft/min
+-3136 ft/min
+-3136 ft/min
+-2976 ft/min
+-2592 ft/min
+-2592 ft/min
+-2592 ft/min
+-2240 ft/min
+-2240 ft/min
+-2240 ft/min
+-2240 ft/min
+-2240 ft/min
+-2240 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1856 ft/min
+-1760 ft/min
+-1760 ft/min
+-1760 ft/min
+-1760 ft/min
+-1760 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1728 ft/min
+-1728 ft/min
+-1728 ft/min
+-1728 ft/min
+-1728 ft/min
+-1728 ft/min
+-1792 ft/min
+-1792 ft/min
+-1792 ft/min
+-1792 ft/min
+-1760 ft/min
+-1760 ft/min
+-1760 ft/min
+-1760 ft/min
+-1760 ft/min
+-1792 ft/min
+-1792 ft/min
+-1792 ft/min
+-1792 ft/min
+-1792 ft/min
+-1792 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1888 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1824 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1920 ft/min
+-1984 ft/min
+-1984 ft/min
+-1984 ft/min
+-1984 ft/min
+-1984 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-1952 ft/min
+-2272 ft/min
+-2528 ft/min
+-2848 ft/min
+-2848 ft/min
+-2848 ft/min
+-3424 ft/min
+-3424 ft/min
+-3424 ft/min
+-3584 ft/min
+-3584 ft/min
+-3584 ft/min
+-3936 ft/min
+-3936 ft/min
+-3936 ft/min
+-4224 ft/min
+-4224 ft/min
+-4224 ft/min
+-3936 ft/min
+-3936 ft/min
+-3808 ft/min
+-3808 ft/min
+-3808 ft/min
+-3808 ft/min
+-3808 ft/min
+-3520 ft/min
+-3520 ft/min
+-2944 ft/min
+-2944 ft/min
+-2144 ft/min
+-2144 ft/min
+-1280 ft/min
+-1280 ft/min
+-1280 ft/min
+-1280 ft/min
+-1280 ft/min
+-1280 ft/min
+-1280 ft/min
+-1216 ft/min
+-1216 ft/min
+-1216 ft/min
+-1984 ft/min
+-1984 ft/min
+-1984 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2560 ft/min
+-2560 ft/min
+-2560 ft/min
+-2560 ft/min
+-2560 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2784 ft/min
+-2784 ft/min
+-2784 ft/min
+-2880 ft/min
+-2880 ft/min
+-2880 ft/min
+-2880 ft/min
+-2880 ft/min
+-2656 ft/min
+-2656 ft/min
+-2656 ft/min
+-2656 ft/min
+-2720 ft/min
+-2720 ft/min
+-2720 ft/min
+-2720 ft/min
+-2912 ft/min
+-2912 ft/min
+-2912 ft/min
+-2912 ft/min
+-2912 ft/min
+-2912 ft/min
+-2912 ft/min
+-2912 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2688 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2496 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2016 ft/min
+-2400 ft/min
+-2400 ft/min
+-2400 ft/min
+-2400 ft/min
+-2400 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2528 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2208 ft/min
+-2208 ft/min
+-2272 ft/min
+-2272 ft/min
+-2272 ft/min
+-2304 ft/min
+-2304 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-2176 ft/min
+-992 ft/min
+-992 ft/min
+-992 ft/min
+-992 ft/min
+-992 ft/min
+-960 ft/min
+-960 ft/min
+-960 ft/min
+-960 ft/min
+-960 ft/min
+-928 ft/min
+-928 ft/min
+-928 ft/min
+-960 ft/min
+-960 ft/min
+-960 ft/min
+-832 ft/min
+-832 ft/min
+-832 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-576 ft/min
+-576 ft/min
+-576 ft/min
+-704 ft/min
+-704 ft/min
+-704 ft/min
+-704 ft/min
+-704 ft/min
+-864 ft/min
+-1280 ft/min
+-1280 ft/min
+-1792 ft/min
+-1792 ft/min
+-1984 ft/min
+-1984 ft/min
+-1984 ft/min
+-1728 ft/min
+-1728 ft/min
+-1728 ft/min
+-1568 ft/min
+-1568 ft/min
+-1568 ft/min
+-1024 ft/min
+-1024 ft/min
+-1024 ft/min
+-1024 ft/min
+-1024 ft/min
+-1024 ft/min
+-1056 ft/min
+-1056 ft/min
+-1056 ft/min
+-1376 ft/min
+-1376 ft/min
+-1376 ft/min
+-1664 ft/min
+-1664 ft/min
+-1664 ft/min
+-1664 ft/min
+-1664 ft/min
+-1664 ft/min
+-1664 ft/min
+-1664 ft/min
+-928 ft/min
+-928 ft/min
+-864 ft/min
+-864 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-672 ft/min
+-672 ft/min
+-672 ft/min
+-672 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-960 ft/min
+-960 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-672 ft/min
+-672 ft/min
+-672 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-608 ft/min
+-544 ft/min
+-512 ft/min
+-512 ft/min
+-512 ft/min
+-512 ft/min
+-512 ft/min
+-288 ft/min
+-288 ft/min
+-320 ft/min
+-320 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-160 ft/min
+-320 ft/min
+-320 ft/min
+-320 ft/min
+-320 ft/min
+-320 ft/min
+-320 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-288 ft/min
+-352 ft/min
+-352 ft/min
+-352 ft/min
+-352 ft/min
+-352 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+160 ft/min
+160 ft/min
+32 ft/min
+32 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-256 ft/min
+-256 ft/min
+-256 ft/min
+-256 ft/min
+-256 ft/min
+-544 ft/min
+-544 ft/min
+-576 ft/min
+-576 ft/min
+-640 ft/min
+-640 ft/min
+-640 ft/min
+-640 ft/min
+-416 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+96 ft/min
+96 ft/min
+128 ft/min
+128 ft/min
+192 ft/min
+192 ft/min
+192 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-64 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-32 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-96 ft/min
+-512 ft/min
+-512 ft/min
+-512 ft/min
+-512 ft/min
+-864 ft/min
+-864 ft/min
+-864 ft/min
+-928 ft/min
+-928 ft/min
+-928 ft/min
+-864 ft/min
+-864 ft/min
+-864 ft/min
+-832 ft/min
+-832 ft/min
+-832 ft/min
+-832 ft/min
+-704 ft/min
+-704 ft/min
+-704 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-896 ft/min
+-896 ft/min
+-896 ft/min
+-896 ft/min
+-896 ft/min
+-896 ft/min
+-896 ft/min
+-864 ft/min
+-864 ft/min
+-864 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-640 ft/min
+-640 ft/min
+-640 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-800 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-736 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+-768 ft/min
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a

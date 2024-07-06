@@ -1,0 +1,17944 @@
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+19 kt
+19 kt
+19 kt
+n/a
+n/a
+n/a
+n/a
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+18 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+58 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+74 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+76 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+71 kt
+70 kt
+70 kt
+70 kt
+70 kt
+70 kt
+70 kt
+70 kt
+70 kt
+70 kt
+70 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+65 kt
+65 kt
+65 kt
+65 kt
+65 kt
+65 kt
+65 kt
+65 kt
+65 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+64 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+62 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+60 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+55 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+53 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+51 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+63 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+42 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+45 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+40 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+41 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+43 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+35 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+32 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+31 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+38 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+36 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+44 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+13 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+19 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+8 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+10 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+16 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+11 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+17 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+21 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+23 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+50 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+46 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+49 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+52 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+47 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+4 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+12 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+14 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+15 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+20 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+22 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+25 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+33 kt
+33 kt
+33 kt
+33 kt
+33 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+34 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+37 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+39 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+29 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+27 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+28 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+30 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+26 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+24 kt
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
+n/a
