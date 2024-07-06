@@ -8,22 +8,20 @@ Channel2: ADIRS -> Flight_Control_Computer
 
 !SDI
 # Do not identify any TX LRUs SDI here.
-Channel1: Flight_Control_Computer -> 00
-Channel2: Global_Positioning_System -> 01
-Channel2: ADIRS -> 10
+Channel2: ADIRS -> 00
 
 !Rules
 alert/log Channel2 0o310 ADIRS data:41.88331858083409 C "Longitude is 41.88331858083409 Degrees"
 # There are 50 times the plane reaches this latitude.
 alert Channel1 0o311 ADIRS "GPS Longitude word sent."
 # 2994368 longitude date points.
-log Channel2 0o015 ADIRS data:123 00 C "Wind Speed is 98.3 Knots"
+log Channel2 0o015 ADIRS data:123 00 C "Wind Speed is 123 Knots"
 # Don't have this so this should be ZERO messages.
 alert Channel2 0o221 ADIRS data:70.45 "WARNING!!! ANGLE OF ATTACK DANGEROUS!"
 # Should not pop there are no dangerous Indicated AoAs.
 log Channel2 0o221 ADIRS data:1.010735034942627 time "Indicated Angle of Attack signals the plane is climbing in elevation."
 # 9622 hits here.
-log Channel1 ADIRS I "FMC is sending incorrect parity words."
+log Channel2 ADIRS I "ADIRS is sending incorrect parity words."
 # Shouldn't hit because all parities should be correct.
 alert Channel2 0o230 Encoding:BCD "BCD Words for label 0o230"
 # Should ping 11977472 times.

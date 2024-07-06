@@ -17,6 +17,7 @@ def main():
 
     IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=channels, rules_file=rules_filename)
     transmitting_LRU = ADIRU(bus_speed, BUS_CHANNELS=channels)
+    transmitting_LRU.set_sdi('00')
 
     # Check the output files:
     #print(IDS_test_numX.log_filepath)
@@ -105,9 +106,13 @@ def main():
         print(f"Corrected Angle of Attack:\t\t0b{corrected_aoa_word},\nIndicated Angle of Attack:\t\t0b{indicated_aoa_word},")
         # See if it alerts/logs correctly:
         IDS_test_numX.alert_or_log(airspeed_word_bcd)
+        IDS_test_numX.n += 1 # normally the RX func would update this but since we're just feeding words straight we gotta help IDS out a bit.
         IDS_test_numX.alert_or_log(airspeed_word_bnr)
+        IDS_test_numX.n += 1
         IDS_test_numX.alert_or_log(corrected_aoa_word)
+        IDS_test_numX.n += 1
         IDS_test_numX.alert_or_log(indicated_aoa_word)
+        IDS_test_numX.n += 1
         # Repeat this for lat and lon, except every 4 words because it tx's 1/4 as much.
         if(index % 4 == 0):
             # Get the Lat/Lon
@@ -141,7 +146,9 @@ def main():
                 IDS_test_numX.alert_or_log(lat_word_bcd)
                 """
                 IDS_test_numX.alert_or_log(lat_word_bnr)
+                IDS_test_numX.n += 1
                 IDS_test_numX.alert_or_log(lon_word_bnr)
+                IDS_test_numX.n += 1
                 #cont = input("")
             except IndexError:
                 continue

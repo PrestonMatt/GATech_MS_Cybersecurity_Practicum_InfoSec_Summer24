@@ -202,6 +202,8 @@ class air_data_inertial_reference_unit:
             'Cross Heading Acceleration': ''
         }
 
+        self.SDI = '00'
+
     def __str__(self):
         return str(self.data)
 
@@ -1250,3 +1252,8 @@ class air_data_inertial_reference_unit:
         #word = self.BUS_CHANNELS[0].encode_word(key)
         #word = self.encode_word(key)
         #self.TXcommunicator_chip.transmit_given_word(int(word), bus_usec_start=time(), channel_index=0)
+
+    def set_sdi(self, newSDI:str):
+        if(newSDI != '00' or newSDI != '01' or newSDI != '10' or newSDI != '11'):
+            raise ValueError("SDI Error")
+        self.SDI = newSDI

@@ -1,7 +1,7 @@
 from LRU_RX_Helper import arinc429_RX_Helpers as lru_rxr
 from LRU_TX_Helper import arinc429_TX_Helpers as lru_txr
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
-from time import sleep, time
+from time import sleep, time, ctime
 from queue import Queue
 
 
@@ -5427,10 +5427,10 @@ class arinc429_intrusion_detection_system:
             with open(self.alert_filepath, "a") as alert_fd:
                 for _tuple_ in self.rules:
                     parity = _tuple_[3]
-                    time = _tuple_[4]
+                    time_notate = _tuple_[4]
                     flag_this_tuple = False
                     # Part 1 Check if you should flag this word.
-                    if(_tuple_[2] == "0"*32):
+                    if(_tuple_[2] == "0"*31 and parity == None):
                         flag_this_tuple = True
                     if (_tuple_[0].__contains__("alert") or _tuple_[0].__contains__("log")):
                         #Check channel? -> done by caller
@@ -5439,8 +5439,8 @@ class arinc429_intrusion_detection_system:
                         correct_parity_bit = partity_calc.calc_parity(psuedo_word)
                         #p_bitmask = _tuple_[2] + correct_parity_bit
                         bitmask = _tuple_[2]  #+ lru_txr.calc_parity(_tuple_[2])
-                        if (bitmask == 31 * "0"):
-                            flag_this_tuple = True
+                        #if (bitmask == 31 * "0"):
+                        #    flag_this_tuple = True
                         #word_check = word[:-1]
                         if (int(bitmask, 2) & int(psuedo_word, 2) == int(bitmask, 2)):
                             if ((parity == True and word[-1] == correct_parity_bit)
@@ -5451,12 +5451,12 @@ class arinc429_intrusion_detection_system:
                                 # alert
                                 flag_this_tuple = True
                     # Part 2: If the word is flagged, the log it appropriately.
-                    if (flag_this_tuple and time):
+                    if (flag_this_tuple and time_notate):
                         if (_tuple_[0].__contains__("alert")):
-                            alert_fd.write(f"{time()}: Alert! {_tuple_[5]}\n")
+                            alert_fd.write(f"{ctime()}: Alert! {_tuple_[5]}\n")
                         if (_tuple_.__contains__("log")):
-                            log_fd.write(f"{time()}: {word} {_tuple_[5]}\n")
-                    elif (flag_this_tuple and time == False):
+                            log_fd.write(f"{ctime()}: {word} {_tuple_[5]}\n")
+                    elif (flag_this_tuple and time_notate == False):
                         if (_tuple_[0].__contains__("alert")):
                             alert_fd.write(f"Alert! {_tuple_[5]}\n")
                         if (_tuple_.__contains__("log")):
