@@ -5,11 +5,22 @@
 
 // Function to generate a 32-bit binary word
 void generate_word(char *buffer) {
-    unsigned int word = rand();
-    for (int i = 31; i >= 0; i--) {
-        buffer[31 - i] = (word & (1 << i)) ? '1' : '0';
+    char buff[32];
+    char input[32];
+    printf("Enter the word: ");
+    gets(input);
+    unsigned int word = atoi(input);
+    print_bits(word);
+}
+
+// send the word over (print to std out)
+void print_bits(unsigned int num){
+    int bits = sizeof(num) * 8;
+    for(int i = bits - 1; i >= 0; i--){
+        unsigned int mask = 1 << i;
+        printf("%d", (num & mask) ? 1 : 0);
     }
-    buffer[32] = '\0';
+    printf("\n");
 }
 
 int main() {
