@@ -149,12 +149,13 @@ def main():
     # sampling_rate = 0.0000005 -> 1/2 microsecond
     sampling_rates = []
     for x in range(7):
-        sampling_rates.append( 0.5 / (10 ** x) )
+        sampling_rates.append( 0.05 / (10 ** x) )
     #print(sampling_rate)
 
     num_rules = [y for y in range(0,11)]
     #print(num_rules)
 
+    # Uncomment this when using EVAL1 for specific sampling rates.
     """
     user_sampling_rate = input("Please enter the sleep time for the slowdown rate:")
     if(user_sampling_rate not in sampling_rates):

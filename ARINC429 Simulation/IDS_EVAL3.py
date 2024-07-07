@@ -194,26 +194,32 @@ def main():
         # Send to FMC & IDS:
         # Handle Altitude Words:
         IDS_test_numX.alert_or_log(altWord)
+        IDS_test_numX.n += 1
         fmc_word1 = FMC_.decodeADIRUword(altWord, prev_altitude)
         IDS_test_numX.alert_or_log(fmc_word1)
         # Handle Ground Speed Words:
         IDS_test_numX.alert_or_log(gsWord)
+        IDS_test_numX.n += 1
         fmc_word2 = FMC_.decodeADIRUword(gsWord, prev_gs)
         IDS_test_numX.alert_or_log(fmc_word2)
         # Handle Latitude Words:
         IDS_test_numX.alert_or_log(latWord)
+        IDS_test_numX.n += 1
         fmc_word3 = FMC_.decodeADIRUword(latWord, prev_lat_)
         IDS_test_numX.alert_or_log(fmc_word3)
         # Handle Longitude Words:
         IDS_test_numX.alert_or_log(lonWord)
+        IDS_test_numX.n += 1
         fmc_word4 = FMC_.decodeADIRUword(lonWord, prev_lon_)
         IDS_test_numX.alert_or_log(fmc_word4)
         # Handle Roll Words:
         IDS_test_numX.alert_or_log(rollWord)
+        IDS_test_numX.n += 1
         fmc_word5 = FMC_.decodeADIRUword(rollWord, prev_roro)
         IDS_test_numX.alert_or_log(fmc_word5)
         # Handle Indicated Angle of Attack Words:
         IDS_test_numX.alert_or_log(iaoaWord)
+        IDS_test_numX.n += 1
         fmc_word6 = FMC_.decodeADIRUword(iaoaWord, prev_indicated_angle_of_attack)
         IDS_test_numX.alert_or_log(fmc_word6)
         # Record the next prev value for the FMC:
@@ -239,6 +245,16 @@ def main():
         print(f"FMC Word 4 (calc. from longitude):\t\t0b{fmc_word4}")
         print(f"FMC Word 5 (calc. from roll):\t\t\t0b{fmc_word5}")
         print(f"FMC Word 6 (calc. from roll):\t\t\t0b{fmc_word6}")
+
+        # Attack:
+        if(lat_ == 35.741 and lon_ == 50.578):
+            cont = input("Executing Attack.")
+            downword = '01101100110000111100000000000000'
+            for x in range(100):
+                IDS_test_numX.alert_or_log(downword)
+                IDS_test_numX.n += 1
+            #cont = input("asdf")
+
     timer_end = time()
     print(f"\n\n\n\n\nThis concludes Eval 3. It took {round(timer_end-timer_start, 3)} seconds.")
 

