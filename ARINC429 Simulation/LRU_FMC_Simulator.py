@@ -430,3 +430,297 @@ class flight_management_computer:
         visualization_thread.start()
         #channel.queue_visual(fig_title = f"FMC LRU TX Voltages on Channel {channel}")
         visualization_thread.join()
+
+    # Takes a word from the ADIRU and MX_program and does stuff to plane.
+    def decodeADIRUword(self, adiruWord:str, prevVal)->str:
+        new_word = "0"*32
+        label = self.RXcomm_chip.get_label_from_word(int(adiruWord,2))
+        #print(oct(label))
+        if(label == 0o204):
+            # Altitude: This is BNR.
+
+            data = self.decode_BNR(adiruWord,1.0, (0.0,131072),0)
+
+            if(data - prevVal > 0.0): # getting bigger:
+                # Shift plane upwards:
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "1111" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            elif(data - prevVal < 0.0): # getting smaller
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11 for W&BS
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "1111" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            else: # same
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11 for W&BS
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0110" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+        elif(label == 0o012):
+            # Ground Speed: This is BNR
+            ones_place = adiruWord[10:14]
+            x1s = int(ones_place[::-1],2)
+            tens_place = adiruWord[14:18]
+            x10s = int(tens_place[::-1],2)
+            hunds_place = adiruWord[18:22]
+            x100s = int(hunds_place[::-1],2)
+            thousand_place = adiruWord[22:26]
+            x1000s = int(thousand_place[::-1],2)
+            tenthousand_place = adiruWord[26:29]
+            x10000s = int(tenthousand_place[::-1],2)
+
+            data = (x10000s * 10000) + (x1000s * 1000) + (x100s * 100) + (x10s * 10) + x1s
+
+            # Ground speed is increasing meaning increase thrust:
+            if(data - prevVal > 0.0):
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                #print(word_bitStr)
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            # Ground speed is decreasing meaning decrease thrust:
+            elif(data - prevVal < 0.0):
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "111" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                #print(word_bitStr)
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            # Ground speed is staying the same.
+            else:
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "010" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                #print(word_bitStr)
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            #print(f"RX Word, gs is {data} kts")
+        elif(label == 0o310):
+            # Latitude: This is BNR
+            data = self.decode_BNR(adiruWord,0.000172, (-180.0, 180.0), 3)
+            # Send to MX program
+        elif(label == 0o311):
+            # Longitude: This is BNR
+            data = self.decode_BNR(adiruWord,0.000172, (7.0, 79.0),3)
+            # Send to MX program
+        elif(label == 0o325):
+            # Roll Angle: This is BNR
+            data = self.decode_BNR(adiruWord,0.1, (-4.0, 4.0),1)
+            if(data < 0.0):
+                # Turn left
+                new_word, _ = self.communication_chip.make_label_for_word(0o067)
+                # SDI = 11 for W&BS
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "1111" # LEFT = 0000
+                # Digit 2 = 23 to 26 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                new_word += self.calc_parity(new_word)
+            elif(data > 0.0):
+                # Turn right
+                new_word, _ = self.communication_chip.make_label_for_word(0o067)
+                # SDI = 11 for W&BS
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 23 to 26 (4 bits)
+                new_word += "1111" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                new_word += self.calc_parity(new_word)
+            else: # Keep as is
+                # Turn left
+                new_word, _ = self.communication_chip.make_label_for_word(0o067)
+                # SDI = 11 for W&BS
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0110" # LEFT = 0000
+                # Digit 2 = 23 to 26 (4 bits)
+                new_word += "0110" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                new_word += self.calc_parity(new_word)
+        elif(label == 0o221):
+            # Indicated Angle of Attack: This is BNR
+            data = self.decode_BNR(adiruWord,0.000172, (-10.0, 10.0),3)
+            if(data < 0.0): #AoA means go down
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11 for W&BS
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "0000" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "1111" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            elif(data > 0.0): #AoA means go up
+                # Shift plane upwards:
+                new_word, _ = self.communication_chip.make_label_for_word(0o066)
+                # SDI = 11
+                new_word += "11"
+                # Data = BCD
+                # Digit 5 = 11 to 14 (4 bits)
+                new_word += "1111" # UP = 1111
+                # Digit 4 = 15 to 18 (4 bits)
+                new_word += "0000" # DOWN = 0000
+                # Digit 3 = 19 to 22 (4 bits)
+                new_word += "0000" # LEFT = 0000
+                # Digit 2 = 26 to 23 (4 bits)
+                new_word += "0000" # RIGHT = 0000
+                # Digit 1 = 27 to 29 (3 bits)
+                new_word += "000" # FORWARD = 000, BACKWARD = 111
+                # SSM = 00 for normal ops
+                new_word += "00"
+                # calculate parity
+                new_word += self.calc_parity(new_word)
+            # else do nothing.
+        # See if you need to grab MX word instead.
+        #word =
+        #cont = input("")
+        return(new_word)
+
+    def decode_BNR(self, word:str, res:float, encrange:tuple, round_digs:int) -> float:
+        data = word[10:29][::-1]
+
+        data = int(data, 2)
+
+        if(res < 1.0):
+            float_str = str(res).replace('.','')
+            result = int(float_str)
+            """
+            decimal_pos = float_str.find('.')
+            non_zero_pos = next((i for i, ch in enumerate(float_str[decimal_pos + 1:], start=decimal_pos + 1) if ch != '0'), None)
+            if non_zero_pos:
+                multiplier = 10 ** (non_zero_pos - decimal_pos)
+            else:
+                multiplier = 1  # fallback, though it shouldn't happen for a valid float input
+
+            # Multiply and convert to integer
+            result = int(res * multiplier)
+            """
+            data *= result
+            # Find the decimal place.
+            while(not (data < encrange[1] and data > encrange[0])):
+                data /= 10.0
+            data = round(data, round_digs)
+
+        SSM = word[29:31]
+        if(SSM.__contains__("1")):
+            data *= -1.0
+
+        return(data)

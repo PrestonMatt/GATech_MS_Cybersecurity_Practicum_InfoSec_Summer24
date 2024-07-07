@@ -3,12 +3,15 @@ import pytest
 
 from ARINC429_IDS import arinc429_intrusion_detection_system as IDS
 from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
+from LRU_FMC_Simulator import flight_management_computer as FMC
 from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from time import sleep, time, ctime
 from datetime import datetime
 from random import choice
 def main():
 
+    timer_start = time()
+    print("Setting up LRUs ADIRU and FMC, and setting up IDS")
     rules_filename = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL3_RULES_FILES\Eval3_Rules.txt"
     flightdata_filenames = os.getcwd() + r"\Flight_data\Attack_Demo_Flight_Data"
     bus_speed = "low"
@@ -19,19 +22,20 @@ def main():
 
     IDS_test_numX = IDS(bus_speed, BUS_CHANNELS=channels, rules_file=rules_filename)
     transmitting_LRU = ADIRU(bus_speed, BUS_CHANNELS=channels)
+    FMC_ = FMC(bus_speed, BUS_CHANNELS=channels)
     transmitting_LRU.set_sdi('00')
 
     # Check the output files:
     #print(IDS_test_numX.log_filepath)
     #print(IDS_test_numX.alert_filepath)
-    alertfilePath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Alerts_EVAL2.txt"
-    logfilePath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Alerts_Logs\Logs_EVAL2.txt"
+    alertfilePath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL3_RULES_FILES\Alerts_Logs\Alerts_EVAL3.txt"
+    logfilePath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL3_RULES_FILES\Alerts_Logs\Logs_EVAL3.txt"
     # Reset the files in between runs:
     with open(alertfilePath,"w") as alert_fd:
-        alert_fd.write(f"Starting EVAL2 test at {ctime()}\n")
+        alert_fd.write(f"Starting EVAL3 test at {ctime()}\n")
     alert_fd.close()
     with open(logfilePath,"w") as log_fd:
-        log_fd.write(f"Starting EVAL2 test at {ctime()}\n")
+        log_fd.write(f"Starting EVAL3 test at {ctime()}\n")
     log_fd.close()
     #print(alertfilePath)
     #print(logfilePath)
@@ -43,6 +47,8 @@ def main():
     #print(IDS_test_numX.alert_filepath)
     #print(IDS_test_numX.log_filepath)
     #cont = input("")
+    timer_end = time()
+    print(f"Done setting up LRUs ADIRU, FMC, and IDS in {round(timer_end - timer_start,10)} seconds")
 
     timer_start = time()
     print("Opening and analyzing flight data...")
@@ -154,6 +160,12 @@ def main():
     # Start Eval 3:
     timer_start = time()
     print("Beginning flight data evaluation 3...")
+    prev_altitude = altitudes[0]
+    prev_gs = ground_speeds[0]
+    prev_lat_ = lats[0]
+    prev_lon_ = lons[0]
+    prev_roro = rolls[0]
+    prev_indicated_angle_of_attack = interprolated_aoa[0]
     # I have 17944 data points in each array:
     for index in range(17944):
         # Get all the data points:
@@ -179,16 +191,54 @@ def main():
         lonWord = transmitting_LRU.encode_word(0o311)
         rollWord = transmitting_LRU.encode_word(0o325)
         iaoaWord = transmitting_LRU.encode_word(0o221)
+        # Send to FMC & IDS:
+        # Handle Altitude Words:
+        IDS_test_numX.alert_or_log(altWord)
+        fmc_word1 = FMC_.decodeADIRUword(altWord, prev_altitude)
+        IDS_test_numX.alert_or_log(fmc_word1)
+        # Handle Ground Speed Words:
+        IDS_test_numX.alert_or_log(gsWord)
+        fmc_word2 = FMC_.decodeADIRUword(gsWord, prev_gs)
+        IDS_test_numX.alert_or_log(fmc_word2)
+        # Handle Latitude Words:
+        IDS_test_numX.alert_or_log(latWord)
+        fmc_word3 = FMC_.decodeADIRUword(latWord, prev_lat_)
+        IDS_test_numX.alert_or_log(fmc_word3)
+        # Handle Longitude Words:
+        IDS_test_numX.alert_or_log(lonWord)
+        fmc_word4 = FMC_.decodeADIRUword(lonWord, prev_lon_)
+        IDS_test_numX.alert_or_log(fmc_word4)
+        # Handle Roll Words:
+        IDS_test_numX.alert_or_log(rollWord)
+        fmc_word5 = FMC_.decodeADIRUword(rollWord, prev_roro)
+        IDS_test_numX.alert_or_log(fmc_word5)
+        # Handle Indicated Angle of Attack Words:
+        IDS_test_numX.alert_or_log(iaoaWord)
+        fmc_word6 = FMC_.decodeADIRUword(iaoaWord, prev_indicated_angle_of_attack)
+        IDS_test_numX.alert_or_log(fmc_word6)
+        # Record the next prev value for the FMC:
+        prev_altitude = altitude
+        prev_gs = gs
+        prev_lat_ = lat_
+        prev_lon_ = lon_
+        prev_roro = roro
+        prev_indicated_angle_of_attack = indicated_angle_of_attack
         # Visualization for the test:
         print('\n\n')
         print(f"Flight data points gathered for step #{index+1}:")
         print(f"Time: {datetime_object},")
-        print(f"Altitude: {altitude} ft, corresponding word:\t\t\t\t\t0b{altWord}")
-        print(f"Ground Speed: {gs} knots,  corresponding word:\t\t\t0b{gsWord}")
-        print(f"Latitude: {lat_} degrees, corresponding word:\t\t\t0b{latWord}")
-        print(f"Longitude: {lon_} degrees, corresponding word:\t\t\t0b{lonWord}")
-        print(f"Roll: {roro} degrees, corresponding word:\t\t\t\t\t0b{rollWord}")
-        print(f"Indicated Angle of Attack: {indicated_angle_of_attack}, corresponding word:\t\t0b{iaoaWord}")
+        print(f"Altitude: {altitude} ft, corresponding ADIRU word:\t\t\t\t\t0b{altWord}")
+        print(f"Ground Speed: {gs} knots,  corresponding ADIRU word:\t\t\t0b{gsWord}")
+        print(f"Latitude: {lat_} degrees, corresponding ADIRU word:\t\t\t\t0b{latWord}")
+        print(f"Longitude: {lon_} degrees, corresponding ADIRU word:\t\t\t0b{lonWord}")
+        print(f"Roll: {roro} degrees, corresponding ADIRU word:\t\t\t\t\t0b{rollWord}")
+        print(f"Indicated Angle of Attack: {indicated_angle_of_attack}, corresponding ADIRU word:\t\t0b{iaoaWord}")
+        print(f"\nFMC Word 1 (calc. from altitude):\t\t0b{fmc_word1}")
+        print(f"FMC Word 2 (calc. from ground speed):\t0b{fmc_word2}")
+        print(f"FMC Word 3 (calc. from latitude):\t\t0b{fmc_word3}")
+        print(f"FMC Word 4 (calc. from longitude):\t\t0b{fmc_word4}")
+        print(f"FMC Word 5 (calc. from roll):\t\t\t0b{fmc_word5}")
+        print(f"FMC Word 6 (calc. from roll):\t\t\t0b{fmc_word6}")
     timer_end = time()
     print(f"\n\n\n\n\nThis concludes Eval 3. It took {round(timer_end-timer_start, 3)} seconds.")
 

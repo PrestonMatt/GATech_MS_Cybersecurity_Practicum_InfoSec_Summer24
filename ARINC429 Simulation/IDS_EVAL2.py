@@ -7,6 +7,8 @@ from BusQueue_Simulator import GlobalBus as ARINC429BUS
 from time import sleep, time, ctime
 def main():
 
+    cont = input("ARE YOU SURE YOU WANT TO OVERWRITE THE ALERTS AND LOGS FILES AND START EVAL2?")
+
     rules_filename = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL2_RULES_FILES\Eval2_Rules.txt"
     flightdata_filenames = os.getcwd() + r"\Flight_data\Tail_687_1"
     bus_speed = "low"
