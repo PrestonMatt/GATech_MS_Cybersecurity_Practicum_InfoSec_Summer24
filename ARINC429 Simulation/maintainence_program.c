@@ -7,7 +7,7 @@
 void generate_word(char *buffer) {
     char buff[32];
     char input[32];
-    printf("Enter the word: ");
+    printf("Enter the word:\n");
     gets(input);
     unsigned int word = atoi(input);
     print_bits(word);
@@ -29,7 +29,7 @@ int main() {
 
     srand(time(NULL)); // Seed the random number generator
 
-    printf("Enter the number of words to generate: ");
+    printf("Enter the number of words to generate:\n");
     gets(input);  // Unsafe function, vulnerable to buffer overflow
 
     int num_words = atoi(input);  // Convert user input to integer
