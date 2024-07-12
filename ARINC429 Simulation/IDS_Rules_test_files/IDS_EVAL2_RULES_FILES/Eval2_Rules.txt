@@ -11,7 +11,7 @@ Channel2: ADIRS -> Flight_Control_Computer
 Channel2: ADIRS -> 00
 
 !Rules
-alert/log Channel2 0o310 ADIRS data:41.88331858083409 C "Longitude is 41.88331858083409 Degrees"
+alert/log Channel2 0o310 ADIRS data:41.88331858083409 C "Latitude is 41.88331858083409 Degrees"
 # There are 50 times the plane reaches this latitude.
 alert Channel1 0o311 ADIRS "GPS Longitude word sent."
 # 2994368 longitude date points.
