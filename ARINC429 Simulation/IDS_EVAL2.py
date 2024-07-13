@@ -1,5 +1,6 @@
 import os
 import pytest
+import matplotlib.pyplot as plt
 
 from ARINC429_IDS import arinc429_intrusion_detection_system as IDS
 from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
@@ -87,6 +88,8 @@ def main():
     print(f"Finished opening and analyzing flight data in {round(timer_end-timer_start,3)} seconds.")
     cont = input("Press enter to start the test.")
 
+    times = []
+    als = []
     timer_start = time()
     print("Beginning flight data evaluation 2...")
     # Length of Airspeed, corrected_aoas, and indicated_aoas are 4 times that of length of latitudes and longitudes
@@ -108,13 +111,25 @@ def main():
         print(f"Sending words:\nAirspeed BCD:\t\t\t\t\t0b{airspeed_word_bcd},\nAirspeed BNR:\t\t\t\t\t0b{airspeed_word_bnr},")
         print(f"Corrected Angle of Attack:\t\t0b{corrected_aoa_word},\nIndicated Angle of Attack:\t\t0b{indicated_aoa_word},")
         # See if it alerts/logs correctly:
-        IDS_test_numX.alert_or_log(airspeed_word_bcd)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(airspeed_word_bcd)
+        if(hit):
+            times.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1 # normally the RX func would update this but since we're just feeding words straight we gotta help IDS out a bit.
-        IDS_test_numX.alert_or_log(airspeed_word_bnr)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(airspeed_word_bnr)
+        if(hit):
+            times.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
-        IDS_test_numX.alert_or_log(corrected_aoa_word)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(corrected_aoa_word)
+        if(hit):
+            times.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
-        IDS_test_numX.alert_or_log(indicated_aoa_word)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(indicated_aoa_word)
+        if(hit):
+            times.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         # Repeat this for lat and lon, except every 4 words because it tx's 1/4 as much.
         if(index % 4 == 0):
@@ -148,9 +163,15 @@ def main():
                 IDS_test_numX.alert_or_log(lon_word_bcd)
                 IDS_test_numX.alert_or_log(lat_word_bcd)
                 """
-                IDS_test_numX.alert_or_log(lat_word_bnr)
+                hit, _alert_log_ = IDS_test_numX.alert_or_log(lat_word_bnr)
+                if(hit):
+                    times.append(time())
+                    als.append([time(),_alert_log_])
                 IDS_test_numX.n += 1
-                IDS_test_numX.alert_or_log(lon_word_bnr)
+                hit, _alert_log_ = IDS_test_numX.alert_or_log(lon_word_bnr)
+                if(hit):
+                    times.append(time())
+                    als.append([time(),_alert_log_])
                 IDS_test_numX.n += 1
                 #cont = input("")
             except IndexError:
@@ -172,6 +193,46 @@ def main():
     print("Number of alerts:", numAlertLines)
     print("Number of logs:", numLogLines)
     #assert(calculated_numAlertLines == numAlertLines and calculated_numLogLines == numLogLines)
+    # Graph the number of alerts & logs
+    ts = []
+    itms = []
+    cnt = 0
+    for t in times:
+        ts.append(t - timer_start)
+        itms.append(cnt)
+        cnt += 1
+    plt.plot(ts, itms,'bo-')
+    plt.xlabel("Time (sec) normalized from Eval 3 Start")
+    plt.ylabel("Total Words Flagged")
+    plt.title("Total Number of Words Flagged over (normalized) Time")
+    #plt.xticks(np.arange(min(ts),max(ts)+1,tickrate))
+    plt.show()
+    # Show the plot as stacked histogram.
+    _alerts_ = []
+    a_cnt = 0
+    _logs_ = []
+    l_cnt = 0
+    _alertlog_ = []
+    al_cnt = 0
+    for alelo in als:
+        if(alelo[1] == "alert"):
+            a_cnt += 1
+        elif(alelo[1] == "log"):
+            l_cnt += 1
+        elif(alelo[1] == "alert/log"):
+            al_cnt += 1
+        _alerts_.append(a_cnt)
+        _logs_.append(l_cnt)
+        _alertlog_.append(al_cnt)
+    #print(_logs_, _alertlog_)
+    print(_alerts_, _logs_, _alertlog_)
+    plt.stackplot(ts, _alerts_, _logs_, _alertlog_, labels=['Alerts', 'Logs', 'Both'])
+    plt.title('Stacked Area Chart of Words Flagged Over Time')
+    plt.xlabel('Time (sec) Normalized')
+    plt.ylabel('Total Words Flagged')
+    plt.legend(loc='upper left')
+    plt.grid(True)
+    plt.show()
 
 if __name__ == '__main__':
     main()

@@ -51,7 +51,7 @@ class arinc429_intrusion_detection_system:
 
         0o013: {0x002: ["BCD", 0.1, (0.0, 359.9)],
                 0x004: ["BCD", 0.1, (0.0, 359.9)],
-                0x038: ["BCD", 0.1, (0.0, 79999.0)],
+                0x038: ["BCD", 1.0, (0.0, 79999.0)],
                 0x04d: ["BCD", 1.0, (0.0, 359.9)],
                 0x0b8: ["DISC", 0.0]},
 
@@ -5427,6 +5427,9 @@ class arinc429_intrusion_detection_system:
 
     def alert_or_log(self, word: str):
         flag_this_tuple = False
+
+        this_word_alerted_or_logged = False
+
         #self.rules.add(
         # 0 (alert_log,
         # 1 channel,
@@ -5435,6 +5438,7 @@ class arinc429_intrusion_detection_system:
         # 4 time_notate,
         # 5 message)
         # )
+        a_o_r = "None"
         with open(self.log_filepath, "a") as log_fd:
             with open(self.alert_filepath, "a") as alert_fd:
                 for _tuple_ in self.rules:
@@ -5465,12 +5469,16 @@ class arinc429_intrusion_detection_system:
                                 flag_this_tuple = True
                     # Part 2: If the word is flagged, the log it appropriately.
                     if (flag_this_tuple and time_notate):
+                        a_o_r = _tuple_[0]
+                        this_word_alerted_or_logged = True
                         if (_tuple_[0].__contains__("alert")):
                             alert_fd.write(f"{ctime()}: Alert! {_tuple_[5]}\n")
                         if (_tuple_[0].__contains__("log")):
                             #input(_tuple_)
                             log_fd.write(f"{ctime()}: {word} {_tuple_[5]}\n")
                     elif (flag_this_tuple and time_notate == False):
+                        a_o_r = _tuple_[0]
+                        this_word_alerted_or_logged = True
                         if (_tuple_[0].__contains__("alert")):
                             alert_fd.write(f"Alert! {_tuple_[5]}\n")
                         if (_tuple_[0].__contains__("log")):
@@ -5478,7 +5486,7 @@ class arinc429_intrusion_detection_system:
                             log_fd.write(f"Logged word #{self.n}: {word} {_tuple_[5]}\n")
             alert_fd.close()
         log_fd.close()
-        return((flag_this_tuple, _tuple_[0]))
+        return((this_word_alerted_or_logged, a_o_r))
 
     def log_all_words(self, channel_index):
         with open(self.default_filepath + r"Logs/" + f"Logs_{self.start_time}.txt", "a") as logs_fd:

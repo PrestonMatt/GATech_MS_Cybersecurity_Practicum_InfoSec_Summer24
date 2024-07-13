@@ -168,6 +168,7 @@ def main():
     prev_roro = rolls[0]
     prev_indicated_angle_of_attack = interprolated_aoa[0]
     alert_logs_hits_time = []
+    als = []
     timer_alert_log_start = time()
     # I have 17944 data points in each array:
     for index in range(17944):
@@ -196,47 +197,71 @@ def main():
         iaoaWord = transmitting_LRU.encode_word(0o221)
         # Send to FMC & IDS:
         # Handle Altitude Words:
-        IDS_test_numX.alert_or_log(altWord)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(altWord)
+        if(hit):
+            alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         fmc_word1 = FMC_.decodeADIRUword(altWord, prev_altitude)
-        hit = IDS_test_numX.alert_or_log(fmc_word1)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(fmc_word1)
         if(hit):
             alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         # Handle Ground Speed Words:
-        IDS_test_numX.alert_or_log(gsWord)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(gsWord)
+        if(hit):
+            alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         fmc_word2 = FMC_.decodeADIRUword(gsWord, prev_gs)
-        hit = IDS_test_numX.alert_or_log(fmc_word2)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(fmc_word2)
         if(hit):
             alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         # Handle Latitude Words:
-        IDS_test_numX.alert_or_log(latWord)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(latWord)
+        if(hit):
+            alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         fmc_word3 = FMC_.decodeADIRUword(latWord, prev_lat_)
-        hit = IDS_test_numX.alert_or_log(fmc_word3)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(fmc_word3)
         if(hit):
             alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         # Handle Longitude Words:
-        IDS_test_numX.alert_or_log(lonWord)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(lonWord)
+        if(hit):
+            alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         fmc_word4 = FMC_.decodeADIRUword(lonWord, prev_lon_)
-        hit = IDS_test_numX.alert_or_log(fmc_word4)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(fmc_word4)
         if(hit):
             alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         # Handle Roll Words:
-        IDS_test_numX.alert_or_log(rollWord)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(rollWord)
+        if(hit):
+            alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         fmc_word5 = FMC_.decodeADIRUword(rollWord, prev_roro)
-        hit = IDS_test_numX.alert_or_log(fmc_word5)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(fmc_word5)
         if(hit):
             alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         # Handle Indicated Angle of Attack Words:
-        IDS_test_numX.alert_or_log(iaoaWord)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(iaoaWord)
+        if(hit):
+            alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         IDS_test_numX.n += 1
         fmc_word6 = FMC_.decodeADIRUword(iaoaWord, prev_indicated_angle_of_attack)
-        hit = IDS_test_numX.alert_or_log(fmc_word6)
+        hit, _alert_log_ = IDS_test_numX.alert_or_log(fmc_word6)
         if(hit):
             alert_logs_hits_time.append(time())
+            als.append([time(),_alert_log_])
         # Record the next prev value for the FMC:
         prev_altitude = altitude
         prev_gs = gs
@@ -266,9 +291,10 @@ def main():
             print("Executing Attack.")
             downword = '01101100110000111100000000000000'
             for x in range(100):
-                hit = IDS_test_numX.alert_or_log(downword)
+                hit, _alert_log_ = IDS_test_numX.alert_or_log(downword)
                 if(hit):
                     alert_logs_hits_time.append(time())
+                    als.append([time(),_alert_log_])
                 IDS_test_numX.n += 1
             #cont = input("asdf")
 
@@ -287,6 +313,34 @@ def main():
     plt.ylabel("Total Words Flagged")
     plt.title("Total Number of Words Flagged over (normalized) Time")
     #plt.xticks(np.arange(min(ts),max(ts)+1,tickrate))
+    plt.show()
+    plt.grid(True)
+    plt.clf()
+    # Show the plot as stacked histogram.
+    _alerts_ = []
+    a_cnt = 0
+    _logs_ = []
+    l_cnt = 0
+    _alertlog_ = []
+    al_cnt = 0
+    for alelo in als:
+        if(alelo[1] == "alert"):
+            a_cnt += 1
+        elif(alelo[1] == "log"):
+            l_cnt += 1
+        elif(alelo[1] == "alert/log"):
+            al_cnt += 1
+        _alerts_.append(a_cnt)
+        _logs_.append(l_cnt)
+        _alertlog_.append(al_cnt)
+    #print(_logs_, _alertlog_)
+    print(_alerts_, _logs_, _alertlog_)
+    plt.stackplot(ts, _alerts_, _logs_, _alertlog_, labels=['Alerts', 'Logs', 'Both'])
+    plt.title('Stacked Area Chart of Words Flagged Over Time')
+    plt.xlabel('Time (sec) Normalized')
+    plt.ylabel('Total Words Flagged')
+    plt.legend(loc='upper left')
+    plt.grid(True)
     plt.show()
 
 if __name__ == '__main__':
