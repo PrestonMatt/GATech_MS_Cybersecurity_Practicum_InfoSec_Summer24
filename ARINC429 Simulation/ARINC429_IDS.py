@@ -264,7 +264,7 @@ class arinc429_intrusion_detection_system:
                 0x037: ["BCD", 1.0, (0.0, 299.9)],
                 0x03c: ["BNR", 1.0, (0.0, 1024.0), 10]},
 
-        0o065: {0x003: ["BCD", 1.0, (0.0 - 12000.0)],
+        0o065: {0x003: ["BCD", 1.0, (0.0, 12000.0)],
                 0x00b: ["BNR", 64.0, (-67108864.0, 67108864.0), 20],
                 0x037: ["BCD", 1.0, (0.0, 19999.0)]},
 
@@ -4865,7 +4865,7 @@ class arinc429_intrusion_detection_system:
         0x06E: "Brake Steering Unit",
         0x06F: "Bleed Air",
         0x07A: "APU Engine Control Unit",
-        0x07B: "Engine Interface Unit)",
+        0x07B: "Engine Interface Unit",
         0x07C: "FADEC Channel A",
         0x07D: "FADEC Channel B",
         0x07E: "Centralized Fault Data Interface Unit",
@@ -5033,6 +5033,8 @@ class arinc429_intrusion_detection_system:
 
     def __init__(self, bus_speed="low", BUS_CHANNELS=[],
                  rules_file=r"C:\Users\mspreston\Desktop\Grad School Work\7 - Summer Semester 2024\Cybersecurity Practicum\GATech_MS_Cybersecurity_Practicum_InfoSec_Summer24\ARINC429 Simulation\ARINC429_rules.txt"):
+        for equipID, equipName in self.equip_ids.items():
+            self.equip_ids[equipID] = equipName.replace("#","num")
         # Set bus start time
         self.start_time = time()
         # Set bus channels.
@@ -5176,6 +5178,7 @@ class arinc429_intrusion_detection_system:
                     bitmask = line.split(" ")[3].replace("\n", "")
                     sdis[sdi_name + "_" + channel] = bitmask
                 except IndexError:
+                    #print(line)
                     raise ValueError("SDI Lines formated incorrectly.")
             if (line.__contains__("!SDI")):
                 SDI_flag = True
@@ -5235,8 +5238,10 @@ class arinc429_intrusion_detection_system:
                 # message start
                 rule = rule[:cnt]
 
-        if (not rule[1] in self.get_channelnames()):
-            print(f"Problem with rule (no channel): {line}")
+        if (not rule[1].replace('\n','') in self.get_channelnames()):
+            l = line.replace('\n','')
+            print(f"Problem with rule: {l} | (no channel: {rule[1]})")
+            print(f"Channel List: {self.get_channelnames()}")
             raise ValueError("Rule must delineate between Channels.")
         else:
             channel = rule[1]
@@ -5251,6 +5256,7 @@ class arinc429_intrusion_detection_system:
         parity_flag = True
         time_flag = True
         #message_flag = True
+        data = None
 
         while (rulez.qsize() > 0):
             r = rulez.get().replace("\n", "")
@@ -5285,7 +5291,7 @@ class arinc429_intrusion_detection_system:
                             "Bits mask out of bounds. Indices must be between 1 and 31, with Index 1 being strictly greater than Index 2.")
 
                     if ((index2 - 1) - index1 != len(rz)):
-                        print(f"Expected bitmask of length {(index2 - 1) - index1}, got {len(rz)}")
+                        print(f"Expected bitmask of length {(index2 - 1) - index1}, from {index2 - 1} to {index1} and got {len(rz)}: {rz}")
                         raise ValueError("Bit String to look for does not match length!")
                     cnt = 0
                     # Check if this contradicts the label/sdi
@@ -5317,8 +5323,9 @@ class arinc429_intrusion_detection_system:
                         bitmask = self.replace_index(11, 19, bitmask, self.SAL_encode(SAL_octal))
                         continue
                     elif (SDI_flag != False):  # Need the LRU for the equipment ID
+                        print(f"Equipment: {self.sdis}")
                         raise ValueError(
-                            f"Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
+                            f"In rule: {line}Equipment Name needed in order to properly search word for given data: {r.split(':')[1]}")
                     #Figure out if encode to DISC, BNR or BCD
 
                     # This is bugged:
@@ -5381,6 +5388,7 @@ class arinc429_intrusion_detection_system:
                                 and ((data < 0.0 and not r.__contains__("1"))  # SSM must have 1 to make it negative
                                      or (data >= 0.0 and not r.__contains__("00")))):  # Positive must match 00.
                             #print("\n\nTEST TEST TEST TEST TEST TEST")
+                            #print(line)
                             raise TypeError("Data sign does not match SSM!")
                         bitmask = self.replace_index(29, 31, bitmask, r)
                         SSM_flag = False
@@ -5398,6 +5406,7 @@ class arinc429_intrusion_detection_system:
                 continue
 
         if (len(bitmask) != 31):
+            print(line)
             raise ValueError(f"Bitmask length error: {len(bitmask)}, for {bitmask}. Error in parsing word!")
 
         self.rules.append((alert_log, channel, bitmask, parity_check, time_notate, message))
@@ -5414,7 +5423,7 @@ class arinc429_intrusion_detection_system:
         return (channelnames)
 
     def alert_or_log(self, word: str):
-
+        flag_this_tuple = False
         #self.rules.add(
         # 0 (alert_log,
         # 1 channel,
@@ -5464,6 +5473,7 @@ class arinc429_intrusion_detection_system:
                             log_fd.write(f"Logged word #{self.n}: {word} {_tuple_[5]}\n")
             alert_fd.close()
         log_fd.close()
+        return(flag_this_tuple)
 
     def log_all_words(self, channel_index):
         with open(self.default_filepath + r"Logs/" + f"Logs_{self.start_time}.txt", "a") as logs_fd:

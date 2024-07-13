@@ -1,5 +1,6 @@
 import os
 import pytest
+import matplotlib.pyplot as plt
 
 from ARINC429_IDS import arinc429_intrusion_detection_system as IDS
 from LRU_ADIRU_Simulator import air_data_inertial_reference_unit as ADIRU
@@ -166,6 +167,8 @@ def main():
     prev_lon_ = lons[0]
     prev_roro = rolls[0]
     prev_indicated_angle_of_attack = interprolated_aoa[0]
+    alert_logs_hits_time = []
+    timer_alert_log_start = time()
     # I have 17944 data points in each array:
     for index in range(17944):
         # Get all the data points:
@@ -196,32 +199,44 @@ def main():
         IDS_test_numX.alert_or_log(altWord)
         IDS_test_numX.n += 1
         fmc_word1 = FMC_.decodeADIRUword(altWord, prev_altitude)
-        IDS_test_numX.alert_or_log(fmc_word1)
+        hit = IDS_test_numX.alert_or_log(fmc_word1)
+        if(hit):
+            alert_logs_hits_time.append(time())
         # Handle Ground Speed Words:
         IDS_test_numX.alert_or_log(gsWord)
         IDS_test_numX.n += 1
         fmc_word2 = FMC_.decodeADIRUword(gsWord, prev_gs)
-        IDS_test_numX.alert_or_log(fmc_word2)
+        hit = IDS_test_numX.alert_or_log(fmc_word2)
+        if(hit):
+            alert_logs_hits_time.append(time())
         # Handle Latitude Words:
         IDS_test_numX.alert_or_log(latWord)
         IDS_test_numX.n += 1
         fmc_word3 = FMC_.decodeADIRUword(latWord, prev_lat_)
-        IDS_test_numX.alert_or_log(fmc_word3)
+        hit = IDS_test_numX.alert_or_log(fmc_word3)
+        if(hit):
+            alert_logs_hits_time.append(time())
         # Handle Longitude Words:
         IDS_test_numX.alert_or_log(lonWord)
         IDS_test_numX.n += 1
         fmc_word4 = FMC_.decodeADIRUword(lonWord, prev_lon_)
-        IDS_test_numX.alert_or_log(fmc_word4)
+        hit = IDS_test_numX.alert_or_log(fmc_word4)
+        if(hit):
+            alert_logs_hits_time.append(time())
         # Handle Roll Words:
         IDS_test_numX.alert_or_log(rollWord)
         IDS_test_numX.n += 1
         fmc_word5 = FMC_.decodeADIRUword(rollWord, prev_roro)
-        IDS_test_numX.alert_or_log(fmc_word5)
+        hit = IDS_test_numX.alert_or_log(fmc_word5)
+        if(hit):
+            alert_logs_hits_time.append(time())
         # Handle Indicated Angle of Attack Words:
         IDS_test_numX.alert_or_log(iaoaWord)
         IDS_test_numX.n += 1
         fmc_word6 = FMC_.decodeADIRUword(iaoaWord, prev_indicated_angle_of_attack)
-        IDS_test_numX.alert_or_log(fmc_word6)
+        hit = IDS_test_numX.alert_or_log(fmc_word6)
+        if(hit):
+            alert_logs_hits_time.append(time())
         # Record the next prev value for the FMC:
         prev_altitude = altitude
         prev_gs = gs
@@ -248,15 +263,29 @@ def main():
 
         # Attack:
         if(lat_ == 35.741 and lon_ == 50.578):
-            cont = input("Executing Attack.")
+            print("Executing Attack.")
             downword = '01101100110000111100000000000000'
             for x in range(100):
-                IDS_test_numX.alert_or_log(downword)
+                hit = IDS_test_numX.alert_or_log(downword)
+                if(hit):
+                    alert_logs_hits_time.append(time())
                 IDS_test_numX.n += 1
             #cont = input("asdf")
 
     timer_end = time()
     print(f"\n\n\n\n\nThis concludes Eval 3. It took {round(timer_end-timer_start, 3)} seconds.")
+    # Graph the number of alerts & logs
+    ts = []
+    itms = []
+    cnt = 0
+    for t in alert_logs_hits_time:
+        ts.append(t - timer_alert_log_start)
+        itms.append(cnt)
+        cnt += 1
+    fig, ax = plt.plot(ts, itms,'bo')
+    fig.set_title("Total Number of Words Flagged over (normalized) Time")
+    fig.set_xlabel("Time (sec) normalized from Eval 3 Start")
+    fig.set_ylabel("Total Words Flagged")
 
 if __name__ == '__main__':
     main()
