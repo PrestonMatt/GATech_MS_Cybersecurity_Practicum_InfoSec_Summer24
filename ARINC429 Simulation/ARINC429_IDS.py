@@ -225,11 +225,11 @@ class arinc429_intrusion_detection_system:
 
         # 0o55: {}, SPARE
 
-        0o056: {0x002: ["BCD", 0.1, (0.0, 864000.0)],  # 0 - 23:59.9, this is tenths of seconds.
+        0o056: {0x002: ["BCD", 0.1, (0.0, 2359.9)],  # 0 - 23:59.9, this is tenths of seconds.
                 0x005: ["BCD", 1.0, (0.0, 359.0)],
                 0x037: ["BCD", 1.0, (0.0, 19999.0)],
-                0x056: ["BCD", 1.0, (0.0, 864000.0)],  # 0 - 23:59.9, this is tenths of seconds.
-                0x060: ["BCD", 1.0, (0.0, 864000.0)]},  # 0 - 23:59.9, this is tenths of seconds.
+                0x056: ["BCD", 1.0, (0.0, 2359.9)],  # 0 - 23:59.9, this is tenths of seconds.
+                0x060: ["BCD", 1.0, (0.0, 2359.9)]},  # 0 - 23:59.9, this is tenths of seconds.
 
         # 0o57: {}, SPARE
 
@@ -5390,7 +5390,7 @@ class arinc429_intrusion_detection_system:
                                      or (data >= 0.0 and not r.__contains__("00")))):  # Positive must match 00.
                             #print("\n\nTEST TEST TEST TEST TEST TEST")
                             #print(line)
-                            raise TypeError("Data sign does not match SSM!")
+                            raise TypeError(f"Data sign: {data} does not match SSM: {r}!")
                         bitmask = self.replace_index(29, 31, bitmask, r)
                         SSM_flag = False
                 except ValueError:
@@ -5408,7 +5408,8 @@ class arinc429_intrusion_detection_system:
 
         if (len(bitmask) != 31):
             print(line)
-            print(self.BNR_encode(float(data), resolution, sig_digs, v_range))
+            #print(self.BCD_digs(data, resolution))
+            #print(self.BNR_encode(float(data), resolution, sig_digs, v_range))
             raise ValueError(f"Bitmask length error: {len(bitmask)}, for {bitmask}. Error in parsing word!")
 
         self.rules.append((alert_log, channel, bitmask, parity_check, time_notate, message))
@@ -5466,16 +5467,18 @@ class arinc429_intrusion_detection_system:
                     if (flag_this_tuple and time_notate):
                         if (_tuple_[0].__contains__("alert")):
                             alert_fd.write(f"{ctime()}: Alert! {_tuple_[5]}\n")
-                        if (_tuple_.__contains__("log")):
+                        if (_tuple_[0].__contains__("log")):
+                            #input(_tuple_)
                             log_fd.write(f"{ctime()}: {word} {_tuple_[5]}\n")
                     elif (flag_this_tuple and time_notate == False):
                         if (_tuple_[0].__contains__("alert")):
                             alert_fd.write(f"Alert! {_tuple_[5]}\n")
-                        if (_tuple_.__contains__("log")):
+                        if (_tuple_[0].__contains__("log")):
+                            #input(_tuple_)
                             log_fd.write(f"Logged word #{self.n}: {word} {_tuple_[5]}\n")
             alert_fd.close()
         log_fd.close()
-        return(flag_this_tuple)
+        return((flag_this_tuple, _tuple_[0]))
 
     def log_all_words(self, channel_index):
         with open(self.default_filepath + r"Logs/" + f"Logs_{self.start_time}.txt", "a") as logs_fd:
