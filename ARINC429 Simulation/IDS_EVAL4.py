@@ -165,6 +165,11 @@ def create_rules_files(channel_number:int, LRU_number:int, rules_number:int):
                                                     stop=bcd_range[1],
                                                     step=bcd_res)
                         datum = choice(possible_values)
+                        if(datum < 0.0):
+                            SSM = [" "," ","11 "]
+                        else:
+                            SSM = [" ", " ", "00 "]
+                        rule += f"data:{round(datum,3)}"
                     except ValueError:
                         input(f"BCD Value Error: {label_, encoding_info}")
                     except IndexError: # Dead value
@@ -174,11 +179,6 @@ def create_rules_files(channel_number:int, LRU_number:int, rules_number:int):
                         input(f"BCD Type Error: {label_, encoding_info}")
                     except ZeroDivisionError: # Dead value
                         rule += f"data:0.0"
-                    if(datum < 0.0):
-                        SSM = [" "," ","11 "]
-                    else:
-                        SSM = [" ", " ", "00 "]
-                    rule += f"data:{round(datum,3)}"
                 elif(encoding_type == "DISC"):
                     init_bits = bin(randint(0,2 ** len('0000111100001111000')))[2:]
                     bits = "0" * (len('0000111100001111000') - len(init_bits)) + init_bits

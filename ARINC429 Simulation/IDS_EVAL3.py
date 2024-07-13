@@ -282,10 +282,12 @@ def main():
         ts.append(t - timer_alert_log_start)
         itms.append(cnt)
         cnt += 1
-    fig, ax = plt.plot(ts, itms,'bo')
-    fig.set_title("Total Number of Words Flagged over (normalized) Time")
-    fig.set_xlabel("Time (sec) normalized from Eval 3 Start")
-    fig.set_ylabel("Total Words Flagged")
+    plt.plot(ts, itms,'bo-')
+    plt.xlabel("Time (sec) normalized from Eval 3 Start")
+    plt.ylabel("Total Words Flagged")
+    plt.title("Total Number of Words Flagged over (normalized) Time")
+    #plt.xticks(np.arange(min(ts),max(ts)+1,tickrate))
+    plt.show()
 
 if __name__ == '__main__':
     main()

@@ -220,7 +220,7 @@ class arinc429_intrusion_detection_system:
                 0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
 
         0o054: {0x004: ["BNR", 0.002, (-64.0, 64.0), 15],
-                0x037: ["BNR", 20.0, (0.0, 655360.0)],
+                0x037: ["BNR", 20.0, (0.0, 655360.0), 15],
                 0x038: ["BNR", 0.002, (-64.0, 64.0), 15]},
 
         # 0o55: {}, SPARE
@@ -5346,12 +5346,13 @@ class arinc429_intrusion_detection_system:
                         try:
                             data = float(r.split(":")[1])
                         except ValueError:
-                            raise ValueError("Data given to check is not a number!")
+                            raise ValueError(f"Data given, {data} to check is not a number!")
                         bitmask = self.replace_index(10,
                                                      29,
                                                      bitmask,
                                                      self.BCD_digs(data, resolution))
                     elif (encode_type == "BNR"):
+                        #print(self.all_labels[label][equipID])
                         v_range = self.all_labels[label][equipID][2]
                         sig_digs = self.all_labels[label][equipID][3]
                         try:
@@ -5407,6 +5408,7 @@ class arinc429_intrusion_detection_system:
 
         if (len(bitmask) != 31):
             print(line)
+            print(self.BNR_encode(float(data), resolution, sig_digs, v_range))
             raise ValueError(f"Bitmask length error: {len(bitmask)}, for {bitmask}. Error in parsing word!")
 
         self.rules.append((alert_log, channel, bitmask, parity_check, time_notate, message))
@@ -5565,11 +5567,18 @@ class arinc429_intrusion_detection_system:
                 SSM = "1"
         # Start encoding to string of "0"s and "1"s.
         val = str(val).strip("-")
+        if(val.__contains__("e")):
+            tempV = int(val.split("e")[1])
+            if(tempV > 0.0):
+                val = val.split("e")[0] + "0"*(tempV-1) + ".0"
+            if(tempV < 0.0):
+                val = "0." + "0"*(tempV-1) + val.split("e")[0]
         # get right of a X.0 if the resolution is 1+
         round_digs_lacking = 0
         if(res >= 1.0):
             val = val.split(".")[0]
         else:
+            #print(val)
             round_digs_lacking = round_digs - len(val.split(".")[1])
         # get rid of any decimal
         val = val.replace(".","")
@@ -5581,6 +5590,14 @@ class arinc429_intrusion_detection_system:
         data = padding + val
         # reverse it because everything is fucking reverse order
         data = data[::-1]
+        if(len(data) > 19 and sig_digs <= 19):
+            #print(data)
+            data = data[:19]
+            #print(data)
+        elif(len(data) > 20 and sig_digs <= 20):
+            print(data)
+            data = data[:20]
+            print(data)
         return(data+SSM)
 
     def get_rounding_digits(self, sig_digs:int, v_range:tuple, res:float) -> int:
