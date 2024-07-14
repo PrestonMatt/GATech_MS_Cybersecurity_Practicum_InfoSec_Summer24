@@ -1,0 +1,40 @@
+!Outfiles
+alerts = C:
+logs = C:
+
+!Channels
+Orange: Global_Positioning_System -> ADIRS
+Blue: ADIRS -> Flight_Management_Computer
+Green: Flight_Management_Computer -> FADEC_Channel_A
+Green: Flight_Management_Computer -> FADEC_Channel_B
+Green: Flight_Management_Computer -> Radio_Management_System
+Green: Flight_Management_Computer -> Weight_and_Balance_System
+Purple: Flight_Management_Computer -> FADEC_Channel_A
+Purple: Flight_Management_Computer -> FADEC_Channel_B
+Purple: Flight_Management_Computer -> Radio_Management_System
+Purple: Flight_Management_Computer -> Weight_and_Balance_System:
+
+!SDI
+# Do not identify any TX LRUs SDI here.
+Orange: ADIRS -> 00
+Blue: Flight_Management_Computer -> 00
+Green: FADEC_Channel_A -> 00
+Green: FADEC_Channel_B -> 01
+Green: Radio_Management_System -> 10
+Green: Weight_and_Balance_System -> 11
+Purple: FADEC_Channel_A -> 00
+Purple: FADEC_Channel_B -> 01
+Purple: Radio_Management_System -> 10
+Purple: Weight_and_Balance_System -> 11
+
+!Rules
+alert/log Orange 0o310 ADIRS data:41.88331858083409 C "Longitude is 41.88331858083409 Degrees"
+alert Orange 0o311 ADIRS "GPS Longitude word sent."
+log Orange 0o015 ADIRS data:123 00 C "Wind Speed is 123 Knots"
+alert Orange 0o221 ADIRS data:70.45 "WARNING!!! ANGLE OF ATTACK DANGEROUS!"
+# Should not pop there are no dangerous Indicated AoAs.
+log Orange 0o221 ADIRS data:1.010735034942627 time "Indicated Angle of Attack signals the plane is climbing in elevation."
+log Orange ADIRS I "ADIRS is sending incorrect parity words."
+alert Orange 0o230 Encoding:BCD "BCD Words for label 0o230"
+alert Blue 0o066 Flight_Management_Computer bits[15:20)=1111 time "FMC Sending Spurious downward dive words?!!"
+alert Blue 0o066 bits[15:20)=1111 time "FMC Sending Spurious downward dive words?!!"
