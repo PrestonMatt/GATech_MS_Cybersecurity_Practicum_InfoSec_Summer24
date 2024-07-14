@@ -5366,7 +5366,7 @@ class arinc429_intrusion_detection_system:
                     elif (encode_type == "DISC"):
                         data = r.split(":")[1]
                         if(len(data) != 19):
-                            raise IndexError(f"Since DISC is not strictly encoded, each bit must be specified. Expected length 19, got {len(data)}")
+                            raise IndexError(f"Since DISC is not strictly encoded, each bit must be specified. Expected length 19, got {len(data)}:{data}")
                         if( not (data.__contains__("0") or data.__contains__("1"))):
                             raise ValueError(f"Discrete data must be bits only - not strings or numbers: {data}.")
                         bitmask = self.replace_index(10,
