@@ -228,6 +228,19 @@ def send_ADIRU_words(transmitting_LRU_ADIRU, words_to_TX):
                                                                        channel_index=0, # Channel for the Blue Bus
                                                                        slowdown_rate=sampling_rate)
 
+def send_FMC_words(transmitting_LRU_FMC, words_to_TX):
+    for word in words_to_TX:
+        print(f"Sending word from FMC: 0b{word}")
+        # transmit_given_word(self, word:int, bus_usec_start, channel_index=0, slowdown_rate = 5e-7)
+        transmitting_LRU_FMC.communication_chip.transmit_given_word(word=int(word,2),
+                                                                   bus_usec_start=time(), #start time.
+                                                                   channel_index=0, # Green Bus
+                                                                   slowdown_rate=sampling_rate)
+        transmitting_LRU_FMC.communication_chip.transmit_given_word(word=int(word,2),
+                                                                   bus_usec_start=time(), #start time.
+                                                                   channel_index=1, # Purple Bus
+                                                                   slowdown_rate=sampling_rate)
+
 def receive_ADIRU_words(ADIRU_LRU, channel_index:int, sample_rate=sampling_rate):
     #print(sample_rate)
     #self.communication_chip.visualize_LRU_receiveds_mother(self.BUS_CHANNELS[channel_index],
@@ -236,6 +249,15 @@ def receive_ADIRU_words(ADIRU_LRU, channel_index:int, sample_rate=sampling_rate)
         word_int, word_str = ADIRU_LRU.RXcommunicator_chip.receive_given_word(channel_index=channel_index,
                                                                              slowdown_rate=sample_rate)
         print(f"ADIRU Recv'd word: {word_str}")
+
+def receive_FMC_words(FMC_LRU, channel_index:int, sample_rate=sampling_rate):
+    #print(sample_rate)
+    #self.communication_chip.visualize_LRU_receiveds_mother(self.BUS_CHANNELS[channel_index],
+    #                                                       fig_title="Received Voltages for Eval 1")
+    while(True):
+        word_int, word_str = FMC_LRU.RXcomm_chip.receive_given_word(channel_index=channel_index,
+                                                                    slowdown_rate=sample_rate)
+        print(f"FMC Recv'd word: {word_str}")
 
 def main():
     global bus_speed
@@ -288,27 +310,60 @@ def main():
     GPS_transmitter_thread = Thread(target=send_GPS_words, args=(GPS_LRU, GPS_words_to_TX,))
 
     ADIRU_LRU = ADIRU(bus_speed, [OrangeBus, BlueBus])
-    ADIRU_receiver_thread = Thread(target=receive_ADIRU_words, args=(0, sampling_rate,))
+    FMC_LRU = FMC(bus_speed, "FIFO", BUS_CHANNELS=[BlueBus, PurpleBus, GreenBus])
+    ADIRU_receiver_thread = Thread(target=receive_ADIRU_words, args=(ADIRU_LRU, 0, sampling_rate,))
+    FMC_receiver_thread = Thread(target=receive_FMC_words, args=(FMC_LRU, 0, sampling_rate,))
     # Make the words to send for the ADIRU:
     ADIRU_words = []
+    FMC_words = []
+    prev_alt = altitudes[0]
     for alt in altitudes:
         ADIRU_LRU.set_value("Baro Corrected Altitude #1", str(alt) + " knots")
-        ADIRU_words.append(ADIRU_LRU.encode_word(0o204))
+        altitude_word = ADIRU_LRU.encode_word(0o204)
+        ADIRU_words.append(altitude_word)
+        fmc_word1 = FMC_LRU.decodeADIRUword(altitude_word, prev_alt)
+        FMC_words.append(fmc_word1)
+        prev_alt = alt
+    prev_gs = ground_speeds[0]
     for gs in ground_speeds:
         ADIRU_LRU.set_value("Ground Speed", str(gs) + " knots")
-        ADIRU_words.append(ADIRU_LRU.encode_word(0o012))
+        ground_speed_word = ADIRU_LRU.encode_word(0o012)
+        ADIRU_words.append(ground_speed_word)
+        fmc_word2 = FMC_LRU.decodeADIRUword(ground_speed_word, prev_gs)
+        FMC_words.append(fmc_word2)
+        prev_gs = gs
+    prev_lat = lats[0]
     for lat_ in lats:
         ADIRU_LRU.set_value("Present Position - Latitude", str(lat_) + " degrees")
-        ADIRU_words.append(ADIRU_LRU.encode_word(0o310))
+        lat_word = ADIRU_LRU.encode_word(0o310)
+        ADIRU_words.append(lat_word)
+        fmc_word3 = FMC_LRU.decodeADIRUword(lat_word, prev_lat)
+        FMC_words.append(fmc_word3)
+        prev_lat = lat_
+    prev_lon = lons[0]
     for lon_ in lons:
         ADIRU_LRU.set_value("Present Position - Longitude", str(lon_) + " degrees")
-        ADIRU_words.append(ADIRU_LRU.encode_word(0o311))
+        lon_word = ADIRU_LRU.encode_word(0o311)
+        ADIRU_words.append(lon_word)
+        fmc_word4 = FMC_LRU.decodeADIRUword(lon_word, prev_lon)
+        FMC_words.append(fmc_word4)
+        prev_lon = lon_
+    prev_roll = rolls[0]
     for roro in rolls:
         ADIRU_LRU.set_value("Roll Angle", str(roro) + " deg")
-        ADIRU_words.append(ADIRU_LRU.encode_word(0o325))
+        roll_word = ADIRU_LRU.encode_word(0o325)
+        ADIRU_words.append(roll_word)
+        fmc_word5 = FMC_LRU.decodeADIRUword(roll_word, prev_roll)
+        FMC_words.append(fmc_word5)
+        prev_roll = roro
+    prev_aoa = interprolated_aoa[0]
     for indicated_angle_of_attack in interprolated_aoa:
         ADIRU_LRU.set_value('Indicated Angle of Attack (Average)', str(indicated_angle_of_attack) + ' deg')
-        ADIRU_words.append(ADIRU_LRU.encode_word(0o221))
+        iaoaWord = ADIRU_LRU.encode_word(0o221)
+        ADIRU_words.append(iaoaWord)
+        fmc_word6 = FMC_LRU.decodeADIRUword(iaoaWord, prev_aoa)
+        FMC_words.append(fmc_word6)
+        prev_aoa = indicated_angle_of_attack
     for tHead in true_headings:
         ADIRU_LRU.set_value('True Heading', str(tHead) + ' deg')
         ADIRU_words.append(ADIRU_LRU.encode_word(0o044))
@@ -317,15 +372,21 @@ def main():
         ADIRU_words.append(ADIRU_LRU.encode_word(0o015))
 
     ADIRU_transmitter_thread = Thread(target=send_ADIRU_words, args=(ADIRU_LRU, ADIRU_words,))
+    FMC_transmitter_thread = Thread(target=send_FMC_words, args=(FMC_LRU, FMC_words,))
 
     # Start all the Threads:
+    print("Starting all Threads for buses!")
     GPS_transmitter_thread.start()
     ADIRU_receiver_thread.start()
     ADIRU_transmitter_thread.start()
+    FMC_receiver_thread.start()
+    FMC_transmitter_thread.start()
     # Join all the threads:
     GPS_transmitter_thread.join()
     ADIRU_receiver_thread.join()
     ADIRU_transmitter_thread.join()
+    FMC_receiver_thread.join()
+    FMC_transmitter_thread.join()
 
     """
     orange_thread = Thread(target=START_ORANGE_BUS, args=(GPS_LRU, ADIRU_LRU,))

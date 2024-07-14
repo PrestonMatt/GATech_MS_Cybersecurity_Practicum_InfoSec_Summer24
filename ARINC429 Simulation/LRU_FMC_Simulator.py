@@ -35,7 +35,7 @@ class flight_management_computer:
         # pass bus channels here
         self.BUS_CHANNELS = BUS_CHANNELS
 
-        self.communication_chip = lru_txr(bus_speed = speed.lower(), BUS_CHANNELS = [self.BUS_CHANNELS[1:]])
+        self.communication_chip = lru_txr(bus_speed = speed.lower(), BUS_CHANNELS = self.BUS_CHANNELS[1:])
 
         self.RXcomm_chip = lru_rxr(bus_speed = speed.lower(), BUS_CHANNELS = [self.BUS_CHANNELS[0]])
 

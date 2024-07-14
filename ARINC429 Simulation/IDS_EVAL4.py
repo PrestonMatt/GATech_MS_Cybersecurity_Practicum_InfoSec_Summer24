@@ -121,7 +121,7 @@ def create_rules_files(channel_number:int, LRU_number:int, rules_number:int):
         rule += lru
         rule += " "
         # For SSM later:
-        SSM = [" ", " ", " ", " ", "00", "01", "11", "10"]
+        SSM = [" ", "00 "]
         # Four options here:
         encoding_type = encoding_info[0]
         # 1 in 10 chance to just not check the data at all
@@ -153,7 +153,7 @@ def create_rules_files(channel_number:int, LRU_number:int, rules_number:int):
                             #input(f"{bnr_range,step_,possible_values}")
                             datum = choice(possible_values)
                         if(datum < 0.0):
-                            SSM = [" "," ","11 "]
+                            SSM = [" ", " ", "11 "]
                         else:
                             SSM = [" ", " ", "00 "]
                         rule += f"data:{round(datum,5)}"
@@ -166,7 +166,7 @@ def create_rules_files(channel_number:int, LRU_number:int, rules_number:int):
                                                     step=bcd_res)
                         datum = choice(possible_values)
                         if(datum < 0.0):
-                            SSM = [" "," ","11 "]
+                            SSM = [" ", " ", "11 "]
                         else:
                             SSM = [" ", " ", "00 "]
                         rule += f"data:{round(datum,3)}"
@@ -180,8 +180,11 @@ def create_rules_files(channel_number:int, LRU_number:int, rules_number:int):
                     except ZeroDivisionError: # Dead value
                         rule += f"data:0.0"
                 elif(encoding_type == "DISC"):
-                    init_bits = bin(randint(0,2 ** len('0000111100001111000')))[2:]
-                    bits = "0" * (len('0000111100001111000') - len(init_bits)) + init_bits
+                    bits = ""
+                    #init_bits = bin(randint(0,2 ** len('0000111100001111000')))[2:]
+                    #bits = "0" * (19 - len(init_bits)) + init_bits
+                    for x in range(19):
+                        bits += choice(["0","1"])
                     rule += f"data:{bits}"
                     SSM = [" "]
                 elif(encoding_type == "SAL"):
@@ -260,6 +263,7 @@ def main():
         eval4data_fd.write("# of Channels,# of LRUs,# of Rules,Setup Time (seconds),Alert/Log Time on 1 word (seconds)\n")
     eval4data_fd.close()
 
+    cnt = 1
     for arinc_channels in range(2):
         if(arinc_channels == 0):
             channels = 36
@@ -267,9 +271,11 @@ def main():
             channels = 48
 
         for numLRUs in range(2, 21):
-            for numRules in range(1, 100_000):
+            for numRules in range(1, 500):
                 create_rules_files(channels, numLRUs, numRules)
                 _test_ids_metrics(channels, numLRUs, numRules)
+                print(f"Test #{cnt} of 189962 Done.")
+                cnt += 1
 
 if __name__ == '__main__':
     main()
