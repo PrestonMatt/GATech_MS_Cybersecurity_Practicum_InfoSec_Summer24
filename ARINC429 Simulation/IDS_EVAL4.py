@@ -237,21 +237,25 @@ def randomword(length):
     return ''.join(choice(letters) for i in range(length))
 
 def _test_ids_metrics(channel_number:int, LRU_number:int, rules_number:int):
-    # Test setup:
-    start_time = time()
-    IDS_test = IDS(bus_speed="low",
-                   BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS()],
-                   rules_file=os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\Eval4_Rules.txt")
-    end_time = time()
-    IDS_test.alert_filepath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\Alerts_Logs\Alerts_EVAL4.txt"
-    IDS_test.log_filepath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\Alerts_Logs\Logs_EVAL4.txt"
-    setup_time = end_time - start_time
+    try:
+        # Test setup:
+        start_time = time()
+        IDS_test = IDS(bus_speed="low",
+                       BUS_CHANNELS=[ARINC429BUS(),ARINC429BUS()],
+                       rules_file=os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\Eval4_Rules.txt")
+        end_time = time()
+        IDS_test.alert_filepath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\Alerts_Logs\Alerts_EVAL4.txt"
+        IDS_test.log_filepath = os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\Alerts_Logs\Logs_EVAL4.txt"
+        setup_time = end_time - start_time
 
-    start_time = time()
-    IDS_test.alert_or_log("01"*16)
-    end_time = time()
+        start_time = time()
+        IDS_test.alert_or_log("01"*16)
+        end_time = time()
 
-    alert_log_time = end_time - start_time
+        alert_log_time = end_time - start_time
+    except Exception as err:
+        setup_time = "ERROR"
+        alert_log_time = "ERROR"
 
     with open(os.getcwd() + r"\IDS_Rules_test_files\IDS_EVAL4_RULES_FILES\eval4_data.csv","a") as eval4data_fd:
         eval4data_fd.write(f"{channel_number},{LRU_number},{rules_number},{setup_time},{alert_log_time}\n")
@@ -270,11 +274,11 @@ def main():
         else:
             channels = 48
 
-        for numLRUs in range(2, 21):
-            for numRules in range(1, 500):
+        for numLRUs in range(2, 22):
+            for numRules in range(1, 501):
                 create_rules_files(channels, numLRUs, numRules)
                 _test_ids_metrics(channels, numLRUs, numRules)
-                print(f"Test #{cnt} of 189962 Done.")
+                print(f"Test #{cnt} of 20000 Done.")
                 cnt += 1
 
 if __name__ == '__main__':

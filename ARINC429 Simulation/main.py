@@ -26,47 +26,6 @@ wind_speeds = []
 
 sampling_rate = 0.05
 
-def START_BLUE_BUS(ADIRU_LRU:ADIRU, FMC_LRU:FMC):
-    while(True):
-        data = ADIRU_LRU.data
-        for datum in data:
-            ADIRU_LRU.TXcommunicator_chip.transmit_given_word(ADIRU_LRU.encode_word(datum))
-            FMC_LRU.RXcomm_chip.receive_given_word(0) # Channel index = 0 as this is the blue bus.
-
-def START_ORANGE_BUS(GPS_LRU:GPS, ADIRU_LRU:ADIRU):
-    while(True):
-        GPS_LRU.communicate_to_bus()
-        GPS_LRU.determine_next_position()
-        ADIRU_LRU.RXcommunicator_chip.receive_given_word(channel_index=0)
-
-def START_channel_a_n_b(FMC_LRU:FMC):
-    RMS_LRU = RMS(bus_speed, [PurpleBus, GreenBus])
-    FAEC_1_LRU = FAEC(bus_speed, "left",1,[PurpleBus, GreenBus])
-    FAEC_2_LRU = FAEC(bus_speed, "right",2,[PurpleBus, GreenBus])
-    WnBS_LRU = WnBS(bus_speed, [PurpleBus, GreenBus])
-
-    #START_PURPLE_BUS(FMC_LRU, RMS_LRU, FAEC_1_LRU, FAEC_2_LRU, WnBS_LRU)
-    #START_GREEN_BUS(FMC_LRU, RMS_LRU, FAEC_1_LRU, FAEC_2_LRU, WnBS_LRU)
-
-    # Start the FMC_LRU send words
-    #sendFMCwords = Thread(FMC_LRU.FIFO_mode())
-    while(True):
-        word = FMC_LRU.generate_word_to_pitch_plane(choice(["up","down","left","right","w","s"]))
-        FMC_LRU.communication_chip.transmit_given_word(word,FMC_LRU.usec_start,channel_index=0)
-        FMC_LRU.communication_chip.transmit_given_word(word,FMC_LRU.usec_start,channel_index=1)
-
-        RMS_LRU.communication_chip.receive_given_word(channel_index=0)
-        RMS_LRU.communication_chip.receive_given_word(channel_index=1)
-
-        FAEC_1_LRU.communication_chip.receive_given_word(channel_index=0)
-        FAEC_1_LRU.communication_chip.receive_given_word(channel_index=1)
-
-        FAEC_2_LRU.communication_chip.receive_given_word(channel_index=0)
-        FAEC_2_LRU.communication_chip.receive_given_word(channel_index=1)
-
-        WnBS_LRU.communication_chip.receive_given_word(channel_index=0)
-        WnBS_LRU.communication_chip.receive_given_word(channel_index=1)
-
 def get_data():
     flightdata_filenames = os.getcwd() + r"\Flight_data\Attack_Demo_Flight_Data"
     # Dataset no. 1: Altitude.
@@ -242,22 +201,56 @@ def send_FMC_words(transmitting_LRU_FMC, words_to_TX):
                                                                    slowdown_rate=sampling_rate)
 
 def receive_ADIRU_words(ADIRU_LRU, channel_index:int, sample_rate=sampling_rate):
-    #print(sample_rate)
-    #self.communication_chip.visualize_LRU_receiveds_mother(self.BUS_CHANNELS[channel_index],
-    #                                                       fig_title="Received Voltages for Eval 1")
     while(True):
         word_int, word_str = ADIRU_LRU.RXcommunicator_chip.receive_given_word(channel_index=channel_index,
                                                                              slowdown_rate=sample_rate)
         print(f"ADIRU Recv'd word: {word_str}")
+        ADIRU_LRU.decode_GPS_word(word_str)
 
 def receive_FMC_words(FMC_LRU, channel_index:int, sample_rate=sampling_rate):
-    #print(sample_rate)
-    #self.communication_chip.visualize_LRU_receiveds_mother(self.BUS_CHANNELS[channel_index],
-    #                                                       fig_title="Received Voltages for Eval 1")
     while(True):
-        word_int, word_str = FMC_LRU.RXcomm_chip.receive_given_word(channel_index=channel_index,
+        word_int, word_str = FMC_LRU.RXcomm_chip.receive_given_word(channel_index=channel_index, # Blue
                                                                     slowdown_rate=sample_rate)
         print(f"FMC Recv'd word: {word_str}")
+
+def receive_RMS_words(RMS_LRU, sample_rate=sampling_rate):
+    while(True):
+        word_int_green, word_str_green = RMS_LRU.receive_chip.receive_given_word(channel_index=0, # Green
+                                                                                slowdown_rate=sample_rate)
+        word_int_purple, word_str_purple = RMS_LRU.receive_chip.receive_given_word(channel_index=1, # Purple
+                                                                                  slowdown_rate=sample_rate)
+        print(f"RMS Recv'd word for Green Channel: 0b{word_str_green}")
+        print(f"RMS Recv'd word for Green Channel: 0b{word_str_purple}")
+        RMS_LRU.decode_word(word_str_green)
+        # "send" radio message:
+        print("ADS-B Chirp (Green Info):")
+        print(RMS_LRU.ADS_B_Message)
+        RMS_LRU.decode_word(word_str_purple)
+        # "send" radio message:
+        print("ADS-B Chirp (Purple Info):")
+        print(RMS_LRU.ADS_B_Message)
+
+def receive_FAEC_words(FAEC_LRU, sample_rate=sampling_rate):
+    while(True):
+        word_int_green, word_str_green = FAEC_LRU.receive_chip.receive_given_word(channel_index=0, # Green
+                                                                                 slowdown_rate=sample_rate)
+        word_int_purple, word_str_purple = FAEC_LRU.receive_chip.receive_given_word(channel_index=1, # Purple
+                                                                                   slowdown_rate=sample_rate)
+        print(f"{FAEC_LRU.wingCardinality} FAEC Recv'd word for Green Channel: 0b{word_str_green}")
+        print(f"{FAEC_LRU.wingCardinality} FAEC Recv'd word for Purple Channel: 0b{word_str_purple}")
+        FAEC_LRU.decode_word(word_str_green)
+        FAEC_LRU.decode_word(word_str_purple)
+
+def receive_WnBS_words(WnBS_LRU, sample_rate=sampling_rate):
+    while(True):
+        word_int_green, word_str_green = WnBS_LRU.receive_chip.receive_given_word(channel_index=0, # Green
+                                                                                  slowdown_rate=sample_rate)
+        word_int_purple, word_str_purple = WnBS_LRU.receive_chip.receive_given_word(channel_index=1, # Purple
+                                                                                    slowdown_rate=sample_rate)
+        print(f"W&BS Recv'd word for Green Channel: 0b{word_str_green}")
+        print(f"W&BS Recv'd word for Purple Channel: 0b{word_str_purple}")
+        WnBS_LRU.decode_word(word_str_green)
+        WnBS_LRU.decode_word(word_str_purple)
 
 def main():
     global bus_speed
@@ -374,6 +367,19 @@ def main():
     ADIRU_transmitter_thread = Thread(target=send_ADIRU_words, args=(ADIRU_LRU, ADIRU_words,))
     FMC_transmitter_thread = Thread(target=send_FMC_words, args=(FMC_LRU, FMC_words,))
 
+    # Create all the RX LRUs:
+    # RMS
+    RMS_LRU = RMS(bus_speed, [PurpleBus, GreenBus])
+    RMS_receiver_thread = Thread(target=receive_RMS_words, args=(RMS_LRU, sampling_rate,))
+    # FAECs
+    FAEC_1_LRU = FAEC(bus_speed, "left",1,[PurpleBus, GreenBus])
+    FAEC_2_LRU = FAEC(bus_speed, "right",2,[PurpleBus, GreenBus])
+    leftWing_receiver_thread = Thread(target=receive_FAEC_words, args=(FAEC_1_LRU, sampling_rate,))
+    rightWing_receiver_thread = Thread(target=receive_FAEC_words, args=(FAEC_2_LRU, sampling_rate,))
+    # WnBS
+    WnBS_LRU = WnBS(bus_speed, [PurpleBus, GreenBus])
+    WnBS_LRU_receiver_thread = Thread(target=receive_WnBS_words, args=(WnBS_LRU, sampling_rate,))
+
     # Start all the Threads:
     print("Starting all Threads for buses!")
     GPS_transmitter_thread.start()
@@ -381,29 +387,20 @@ def main():
     ADIRU_transmitter_thread.start()
     FMC_receiver_thread.start()
     FMC_transmitter_thread.start()
+    RMS_receiver_thread.start()
+    leftWing_receiver_thread.start()
+    rightWing_receiver_thread.start()
+    WnBS_LRU_receiver_thread.start()
     # Join all the threads:
     GPS_transmitter_thread.join()
     ADIRU_receiver_thread.join()
     ADIRU_transmitter_thread.join()
     FMC_receiver_thread.join()
     FMC_transmitter_thread.join()
-
-    """
-    orange_thread = Thread(target=START_ORANGE_BUS, args=(GPS_LRU, ADIRU_LRU,))
-    FMC_LRU = FMC(bus_speed, "FIFO", [BlueBus, PurpleBus, GreenBus])
-
-    blue_thread = Thread(target=START_BLUE_BUS, args=(ADIRU_LRU, FMC_LRU,))
-
-    purple_green_thread = Thread(target=START_channel_a_n_b, args=(FMC_LRU,))
-
-    orange_thread.start()
-    blue_thread.start()
-    purple_green_thread.start()
-
-    orange_thread.join()
-    blue_thread.join()
-    purple_green_thread.join()
-    """
+    RMS_receiver_thread.join()
+    leftWing_receiver_thread.join()
+    rightWing_receiver_thread.join()
+    WnBS_LRU_receiver_thread.join()
 
 if __name__ == '__main__':
     main()
