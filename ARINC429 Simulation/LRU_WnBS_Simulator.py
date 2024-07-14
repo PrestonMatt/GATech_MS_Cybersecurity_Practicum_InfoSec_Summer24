@@ -60,7 +60,7 @@ class weight_and_balance_system:
         pass
 
     def decode_word(self, word:str):
-        label = self.receive_chip.get_label(word)
+        label = self.receive_chip.get_label_from_word(int(word,2))
 
         """
         if(label == 0o103):

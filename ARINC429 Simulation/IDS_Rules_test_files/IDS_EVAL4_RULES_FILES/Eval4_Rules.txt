@@ -1,0 +1,2596 @@
+!Outfiles
+alerts = "<placeholder>"
+logs = "<placeholder>"
+
+!Channels
+Channel1: ADS-B_LDPU_Controller -> TCAS
+Channel1: ADS-B_LDPU_Controller -> Air_Condition_Control_System
+Channel1: ADS-B_LDPU_Controller -> Autostart
+Channel1: ADS-B_LDPU_Controller -> Center_of_Gravity_Control_Computer
+Channel1: ADS-B_LDPU_Controller -> Weight_and_Balance_System
+Channel1: ADS-B_LDPU_Controller -> Central_Maintenance_Computer
+Channel1: ADS-B_LDPU_Controller -> Microwave_Landing_System
+Channel1: ADS-B_LDPU_Controller -> APU_Electronic_Control_Unit
+Channel1: ADS-B_LDPU_Controller -> AIMS_General_Purpose_Bus_num4
+Channel1: ADS-B_LDPU_Controller -> TCAS_Control_Panel
+Channel1: ADS-B_LDPU_Controller -> Passenger_Entertainment_Sys_Audio_Repro.
+Channel1: ADS-B_LDPU_Controller -> ADDCS_and_EICAS
+Channel1: ADS-B_LDPU_Controller -> TACAN
+Channel1: ADS-B_LDPU_Controller -> Airborne_VOR_Receiver_
+Channel1: ADS-B_LDPU_Controller -> Auto_Brake_Unit
+Channel1: ADS-B_LDPU_Controller -> Flight_Warning_Computer
+Channel1: ADS-B_LDPU_Controller -> Fuel_Qty._Indicating_System
+Channel1: ADS-B_LDPU_Controller -> Flight_Mgmt_Guidance_Env_Comp
+Channel1: ADS-B_LDPU_Controller -> Smoke_Detection_Control_Unit
+Channel1: ADS-B_LDPU_Controller -> Special_Fuel_Quan._Sys.
+
+Channel2: TCAS_Control_Panel -> Audio_Entertainment_System_(AES)_Controller
+Channel2: TCAS_Control_Panel -> AIMS_Digital_Comm._Mgmt.
+Channel2: TCAS_Control_Panel -> Misc._Environment_Control
+Channel2: TCAS_Control_Panel -> Fuel_System_Interface_Card
+Channel2: TCAS_Control_Panel -> AIMS_Gen._Pur._Bus_num1
+Channel2: TCAS_Control_Panel -> Pneumatic_Overheat_Detection_Unit
+Channel2: TCAS_Control_Panel -> Circuit_breakers_Monitoring_Unit
+Channel2: TCAS_Control_Panel -> Flap_Control_Unit_and_Flap_Slat_Electronics_Unit
+Channel2: TCAS_Control_Panel -> Video_Control_Unit
+Channel2: TCAS_Control_Panel -> ATC_Transponder
+Channel2: TCAS_Control_Panel -> Display_Unit
+Channel2: TCAS_Control_Panel -> AMU_(A320)
+Channel2: TCAS_Control_Panel -> 15B_Flight_Control_Unit
+Channel2: TCAS_Control_Panel -> Ground_Power_Control_Unit
+Channel2: TCAS_Control_Panel -> Cockpit_Voice_recorder
+Channel2: TCAS_Control_Panel -> Weight_and_Balance_System
+Channel2: TCAS_Control_Panel -> Camera_Interface_Unit
+Channel2: TCAS_Control_Panel -> Fuel_Flow_Indicator
+Channel2: TCAS_Control_Panel -> Pre-recorded_Announcement_Music_Repro.
+Channel2: TCAS_Control_Panel -> Landing_Gear_Prox._Control
+
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Thermal_Monitoring_Unit_(General)
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Hydraulic_System_Controller
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Airborne_DME_Controller
+Channel3: AIMS_Gen._Pur._Bus_num3 -> IRS_Controller
+Channel3: AIMS_Gen._Pur._Bus_num3 -> AMU_(A320)
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Power_Supply_Module
+Channel3: AIMS_Gen._Pur._Bus_num3 -> AIMS_Digital_Comm._Mgmt.
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Electronic_Engine_Control_(EEC)_Channel_B
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Para_Visual_Display_Computer
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Multiplexer_PES
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Brake_Control_Unit
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Audio_Management_System
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Stabilizer_Trim_Module
+Channel3: AIMS_Gen._Pur._Bus_num3 -> AIMS_EFIS_Control_Panel
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Slide_Slip_Angle_(SSA)
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Airborne_VHF_COM
+Channel3: AIMS_Gen._Pur._Bus_num3 -> EFI_Controller
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Airborne_VOR_Receiver_
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Smoke_Detection_Control_Unit
+Channel3: AIMS_Gen._Pur._Bus_num3 -> Zone_Temperature_Controller
+
+Channel4: Avionics_c-10_Cooling_Computer -> Microwave_Landing_System
+Channel4: Avionics_c-10_Cooling_Computer -> Centralized_Maintenance_Computer
+Channel4: Avionics_c-10_Cooling_Computer -> ADIRS
+Channel4: Avionics_c-10_Cooling_Computer -> Versatile_Integrated_Avionics_Unit
+Channel4: Avionics_c-10_Cooling_Computer -> IRS_Controller
+Channel4: Avionics_c-10_Cooling_Computer -> Fuel_System_Interface_Card
+Channel4: Avionics_c-10_Cooling_Computer -> Fuel_System_Controller
+Channel4: Avionics_c-10_Cooling_Computer -> HF/SSB_System_Controller
+Channel4: Avionics_c-10_Cooling_Computer -> Airborne_WXR_Controller
+Channel4: Avionics_c-10_Cooling_Computer -> PVS_Control_Unit
+Channel4: Avionics_c-10_Cooling_Computer -> Windshear_Computer_(Sperry)
+Channel4: Avionics_c-10_Cooling_Computer -> ATC_Transponder_Controller
+Channel4: Avionics_c-10_Cooling_Computer -> Communication_Management_Unit_Mark_2
+Channel4: Avionics_c-10_Cooling_Computer -> Bleed_Air
+Channel4: Avionics_c-10_Cooling_Computer -> ADIRS_Air_Data_Module_0E6
+Channel4: Avionics_c-10_Cooling_Computer -> EICAS/EFIC_Interface_Unit
+Channel4: Avionics_c-10_Cooling_Computer -> Ground_Prox._Warning_System
+Channel4: Avionics_c-10_Cooling_Computer -> APU_Controller
+Channel4: Avionics_c-10_Cooling_Computer -> Flight_Control_Computer
+Channel4: Avionics_c-10_Cooling_Computer -> Fire_Detection_Unit
+
+Channel5: Satellite_ACU -> Cargo_Control_Logic_Unit
+Channel5: Satellite_ACU -> Bus_Control_Unit
+Channel5: Satellite_ACU -> APU_Controller
+Channel5: Satellite_ACU -> Anti-Skid_System
+Channel5: Satellite_ACU -> Fire_Detection_Unit
+Channel5: Satellite_ACU -> Airborne_ILS_Controller
+Channel5: Satellite_ACU -> Proximity_Switch_Electronics_Unit
+Channel5: Satellite_ACU -> Prox._Switch_Electronics_Unit
+Channel5: Satellite_ACU -> AIMS_Cursor_Control_Device
+Channel5: Satellite_ACU -> Data_Link_Control_and_Display_Unit
+Channel5: Satellite_ACU -> VHF_COM_Controller
+Channel5: Satellite_ACU -> Airborne_DME
+Channel5: Satellite_ACU -> Passenger_Entertainment_Sys_Main_MUX
+Channel5: Satellite_ACU -> Slide_Slip_Angle_(SSA)
+Channel5: Satellite_ACU -> Airborne_VOR_Receiver_
+Channel5: Satellite_ACU -> Integrated_Standby_Instrument_System
+Channel5: Satellite_ACU -> Fuel_System_Controller
+Channel5: Satellite_ACU -> Airborne_VOR_Controller
+Channel5: Satellite_ACU -> Fuel_Quantity_Gauging_Unit
+Channel5: Satellite_ACU -> Centralized_Fault_Data_Interface_Unit
+
+Channel6: Airborne_DME -> VDR
+Channel6: Airborne_DME -> Stall_Warning_Card
+Channel6: Airborne_DME -> Airborne_VOR_Controller
+Channel6: Airborne_DME -> Display_Unit
+Channel6: Airborne_DME -> Fire_Detection_Unit
+Channel6: Airborne_DME -> Eng_Interface_Vibration_Monitoring_Unit
+Channel6: Airborne_DME -> Cockpit_Voice_Recorder
+Channel6: Airborne_DME -> ADS-B_Link_Display_Processor_Unit_(LPDU)
+Channel6: Airborne_DME -> AIMS_Cursor_Control_Device
+Channel6: Airborne_DME -> Video_Control_Unit
+Channel6: Airborne_DME -> Air_Data_System
+Channel6: Airborne_DME -> CDTI_Display_Unit
+Channel6: Airborne_DME -> FAC
+Channel6: Airborne_DME -> Thrust_Rating_Controller
+Channel6: Airborne_DME -> Airborne_HF/SSB_System
+Channel6: Airborne_DME -> Fuel_Quantity_Totalizer
+Channel6: Airborne_DME -> Fuel_System_Controller
+Channel6: Airborne_DME -> Fuel_System_Interface_Card
+Channel6: Airborne_DME -> Ground_Auxiliary_Power_Unit
+Channel6: Airborne_DME -> Multiplexer_PES
+
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Airborne_Separation_Assurance_System
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Proximity_Switch_Electronics_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> 15B_Flight_Control_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> EICAS/EFIC_Interface_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Data_Link_Control_and_Display_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Air_Traffic_Service_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> ACARS_and_CMU_Mark_2
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Window_Heat_Computer
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Autostart
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Fuel_Unit_Management_System
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Centralized_Maintenance_Computer
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Flight_Control_Secondary_Computer
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Fuel_Qty._Indicating_System
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Equipment_Cooling_Card
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> CDTI_Display_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> AIMS_Gen._Pur._Bus_num3
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Fuel_Management_Computer
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> VDR
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Passenger_In_Flight_Info_Unit
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> Fire_Detection_Unit
+
+Channel8: Radio_Altimeter -> Battery_Charge_Limiter
+Channel8: Radio_Altimeter -> Generator_Control_Unit
+Channel8: Radio_Altimeter -> Cabin_Ventilation_Controller
+Channel8: Radio_Altimeter -> Airborne_VOR_Controller
+Channel8: Radio_Altimeter -> Multiplexer_PES
+Channel8: Radio_Altimeter -> Integrated_Static_Probe
+Channel8: Radio_Altimeter -> Weight_and_Balance_System
+Channel8: Radio_Altimeter -> Airborne_HF/SSB_System
+Channel8: Radio_Altimeter -> Passenger_In_Flight_Info_Unit
+Channel8: Radio_Altimeter -> Hydraulic_Interface_Module
+Channel8: Radio_Altimeter -> Fuel_Quantity_Gauging_Unit
+Channel8: Radio_Altimeter -> ACARS_and_CMU_Mark_2
+Channel8: Radio_Altimeter -> Audio_Management_System
+Channel8: Radio_Altimeter -> Flight_Control_Computer
+Channel8: Radio_Altimeter -> Flight_Warning_Computer
+Channel8: Radio_Altimeter -> FMC_Controller
+Channel8: Radio_Altimeter -> GNSS_Navigation_Landing_Unit_(GNLU)
+Channel8: Radio_Altimeter -> APU_Electronic_Control_Unit
+Channel8: Radio_Altimeter -> Angle_of_Attack_Sensor
+Channel8: Radio_Altimeter -> Airborne_DME_Controller
+
+Channel9: Ground_Power_Control_Unit -> Electronic_Engine_Control_(EEC)_Channel_B
+Channel9: Ground_Power_Control_Unit -> Fuel_Flow_Indicator
+Channel9: Ground_Power_Control_Unit -> Audio_Management_System
+Channel9: Ground_Power_Control_Unit -> Land_Rollout_CU/Landing_C_&_LU
+Channel9: Ground_Power_Control_Unit -> Airborne_ADF_System
+Channel9: Ground_Power_Control_Unit -> Manifold_Failure_Detection_System
+Channel9: Ground_Power_Control_Unit -> Fire_Detection_Unit
+Channel9: Ground_Power_Control_Unit -> Airborne_DME_Controller
+Channel9: Ground_Power_Control_Unit -> Cabin_Pressure_Control_Sys.
+Channel9: Ground_Power_Control_Unit -> ATC_Transponder
+Channel9: Ground_Power_Control_Unit -> Flight_Management_Computer
+Channel9: Ground_Power_Control_Unit -> Satellite_Data_Unit
+Channel9: Ground_Power_Control_Unit -> Airborne_Weather_Radar
+Channel9: Ground_Power_Control_Unit -> High_Power_Amplifier
+Channel9: Ground_Power_Control_Unit -> Pack_Temperature_Controller
+Channel9: Ground_Power_Control_Unit -> Propulsion_Multiplexer_(PMUX)
+Channel9: Ground_Power_Control_Unit -> Flight_Control_Primary_Computer
+Channel9: Ground_Power_Control_Unit -> FCC_Controller
+Channel9: Ground_Power_Control_Unit -> Air_Supply_Control_&_Test_Unit
+Channel9: Ground_Power_Control_Unit -> IRS_Controller
+
+Channel10: AIMS_General_Purpose_Bus_num4 -> Slide_Slip_Angle_(SSA)
+Channel10: AIMS_General_Purpose_Bus_num4 -> Fuel_Management_Computer
+Channel10: AIMS_General_Purpose_Bus_num4 -> Brake_System_Control_Unit
+Channel10: AIMS_General_Purpose_Bus_num4 -> Flight_Data_Interface_Unit
+Channel10: AIMS_General_Purpose_Bus_num4 -> Fuel_Qty._Indicating_System
+Channel10: AIMS_General_Purpose_Bus_num4 -> AIMS_EFIS_Control_Panel
+Channel10: AIMS_General_Purpose_Bus_num4 -> Passenger_Entertainment_Sys_Main_MUX
+Channel10: AIMS_General_Purpose_Bus_num4 -> Autostart
+Channel10: AIMS_General_Purpose_Bus_num4 -> FADEC_Channel_A
+Channel10: AIMS_General_Purpose_Bus_num4 -> Circuit_breakers_Monitoring_Unit
+Channel10: AIMS_General_Purpose_Bus_num4 -> Full_Authority_EEC-A
+Channel10: AIMS_General_Purpose_Bus_num4 -> Airborne_ILS_Controller
+Channel10: AIMS_General_Purpose_Bus_num4 -> AMU_(A320)
+Channel10: AIMS_General_Purpose_Bus_num4 -> Engine_Instrument_System
+Channel10: AIMS_General_Purpose_Bus_num4 -> Landing_Gear_Prox._Control
+Channel10: AIMS_General_Purpose_Bus_num4 -> TACAN
+Channel10: AIMS_General_Purpose_Bus_num4 -> PVS_Control_Unit
+Channel10: AIMS_General_Purpose_Bus_num4 -> MCDU
+Channel10: AIMS_General_Purpose_Bus_num4 -> Central_Maintenance_Computer
+Channel10: AIMS_General_Purpose_Bus_num4 -> Audio_Entertainment_System_(AES)_Controller
+
+Channel11: Pass._Entertainment_Tape_Reproducer -> AIMS_Gen._Pur._Bus_num3
+Channel11: Pass._Entertainment_Tape_Reproducer -> Digital_Slat/Flap_Computer
+Channel11: Pass._Entertainment_Tape_Reproducer -> Cockpit_Voice_Recorder
+Channel11: Pass._Entertainment_Tape_Reproducer -> Generator_Control_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> Air_Traffic_Service_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> FAC
+Channel11: Pass._Entertainment_Tape_Reproducer -> Radio_Altimeter
+Channel11: Pass._Entertainment_Tape_Reproducer -> Airborne_HF/SSB_System
+Channel11: Pass._Entertainment_Tape_Reproducer -> Equipment_Cooling_Card
+Channel11: Pass._Entertainment_Tape_Reproducer -> MLS_Controller
+Channel11: Pass._Entertainment_Tape_Reproducer -> Hydraulic_System_Monitoring_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> Landing_Gear_Position_Interface_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> Fuel_Qty._Indicating_System
+Channel11: Pass._Entertainment_Tape_Reproducer -> Smoke_Detection_Control_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> Integrated_Standby_Instrument_System
+Channel11: Pass._Entertainment_Tape_Reproducer -> Audio_Management_System
+Channel11: Pass._Entertainment_Tape_Reproducer -> Bus_Control_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> Fuel_Unit_Management_System
+Channel11: Pass._Entertainment_Tape_Reproducer -> AIMS_Display_Unit
+Channel11: Pass._Entertainment_Tape_Reproducer -> Video_Control_Unit
+
+Channel12: TACAN -> Electronic_Spoiler_Control_Unit
+Channel12: TACAN -> Pneumatic_Overheat_Detection_Unit
+Channel12: TACAN -> Fuel_Qty._Indicating_System
+Channel12: TACAN -> AIMS_Gen._Pur._Bus_num3
+Channel12: TACAN -> Flight_Mgmt_Guidance_Env_Comp
+Channel12: TACAN -> Full_Authority_EEC-B
+Channel12: TACAN -> FMC_Controller
+Channel12: TACAN -> Audio_Control_Panel
+Channel12: TACAN -> Centralized_Maintenance_Computer
+Channel12: TACAN -> Electronic_Engine_Control_(EEC)_Channel_A
+Channel12: TACAN -> Electrical_Contractor_Management_Unit
+Channel12: TACAN -> Manifold_Failure_Detection_System
+Channel12: TACAN -> Cargo_Bay_Conditioning_Card
+Channel12: TACAN -> Airborne_ADF_System
+Channel12: TACAN -> A/P_&_F/D_Mode_Control_Panel_
+Channel12: TACAN -> Microwave_Landing_System
+Channel12: TACAN -> HF/SSB_System_Controller
+Channel12: TACAN -> 15B_Flight_Control_Unit
+Channel12: TACAN -> ATC_Transponder_Controller
+Channel12: TACAN -> EFI_Controller
+
+Channel13: Fuel_System_Controller -> Yaw_Damper_Module
+Channel13: Fuel_System_Controller -> Flight_Warning_Computer
+Channel13: Fuel_System_Controller -> Vacuum_System_Controller
+Channel13: Fuel_System_Controller -> Air_Condition_Control_System
+Channel13: Fuel_System_Controller -> Slide_Slip_Angle_(SSA)
+Channel13: Fuel_System_Controller -> Fuel_Unit_Management_System
+Channel13: Fuel_System_Controller -> Anti-Skid_System
+Channel13: Fuel_System_Controller -> Ground_Auxiliary_Power_Unit
+Channel13: Fuel_System_Controller -> Electronic_Flight_Bag
+Channel13: Fuel_System_Controller -> Aircraft_Interface_Unit
+Channel13: Fuel_System_Controller -> Power_Supply_Module
+Channel13: Fuel_System_Controller -> Prox._Switch_Electronics_Unit
+Channel13: Fuel_System_Controller -> Load_Management_Unit_(LMU)_Airbus
+Channel13: Fuel_System_Controller -> A/P_&_F/D_Mode_Control_Panel_
+Channel13: Fuel_System_Controller -> Multi-Mode_Receiver_(MMR)
+Channel13: Fuel_System_Controller -> ECAM_Control_Panel
+Channel13: Fuel_System_Controller -> Flap_Control_Unit_and_Flap_Slat_Electronics_Unit
+Channel13: Fuel_System_Controller -> Hydraulic_Interface_Module
+Channel13: Fuel_System_Controller -> ADIRS_Air_Data_Module_0E6
+Channel13: Fuel_System_Controller -> Flight_Control_Secondary_Computer
+
+Channel14: TCAS -> Logic_Drive_Control_Computer
+Channel14: TCAS -> Hydraulic_Electrical_Generator_Control_Unit
+Channel14: TCAS -> Perf._Nav._Computer_System
+Channel14: TCAS -> Cockpit_Printer
+Channel14: TCAS -> Proximity_Switch_Electronics_Unit
+Channel14: TCAS -> Eng_Interface_Vibration_Monitoring_Unit
+Channel14: TCAS -> Fuel_Quantity_Totalizer
+Channel14: TCAS -> Satellite_RF_Unit
+Channel14: TCAS -> Hydraulic_System_Controller
+Channel14: TCAS -> Angle_of_Attack_Sensor
+Channel14: TCAS -> Zone_Temperature_Controller
+Channel14: TCAS -> Battery_Charge_Limiter
+Channel14: TCAS -> Flight_Control_Computer
+Channel14: TCAS -> Air_Condition_Control_System
+Channel14: TCAS -> Engine_Control_Unit_Channel_B
+Channel14: TCAS -> Clock
+Channel14: TCAS -> Auto_Brake_Unit
+Channel14: TCAS -> EFI_Controller
+Channel14: TCAS -> Supersonic_Air_Data_Computer
+Channel14: TCAS -> Microwave_Landing_System
+
+Channel15: ACARS_and_CMU_Mark_2 -> Satellite_Data_Unit
+Channel15: ACARS_and_CMU_Mark_2 -> Fuel_Qty._Indicating_System
+Channel15: ACARS_and_CMU_Mark_2 -> AMU_(A320)
+Channel15: ACARS_and_CMU_Mark_2 -> Fire_Detection_Unit
+Channel15: ACARS_and_CMU_Mark_2 -> Air_Traffic_Service_Unit
+Channel15: ACARS_and_CMU_Mark_2 -> APU_Controller
+Channel15: ACARS_and_CMU_Mark_2 -> Flight_Management_Computer
+Channel15: ACARS_and_CMU_Mark_2 -> EPR_Indicator
+Channel15: ACARS_and_CMU_Mark_2 -> Perf._Nav._Computer_System
+Channel15: ACARS_and_CMU_Mark_2 -> Audio_Control_Panel
+Channel15: ACARS_and_CMU_Mark_2 -> Misc._Environment_Control
+Channel15: ACARS_and_CMU_Mark_2 -> Propulsion_Discrete_Interface_Unit
+Channel15: ACARS_and_CMU_Mark_2 -> Stabilizer_Trim_Module
+Channel15: ACARS_and_CMU_Mark_2 -> Window_Heat_Computer
+Channel15: ACARS_and_CMU_Mark_2 -> Fuel_Flow_Indicator
+Channel15: ACARS_and_CMU_Mark_2 -> Clock
+Channel15: ACARS_and_CMU_Mark_2 -> Ground_Auxiliary_Power_Unit
+Channel15: ACARS_and_CMU_Mark_2 -> Brake_Steering_Unit
+Channel15: ACARS_and_CMU_Mark_2 -> Flight_Control_Secondary_Computer
+Channel15: ACARS_and_CMU_Mark_2 -> DEFDARS-AIDS
+
+Channel16: Data_Link_Control_and_Display_Unit -> DEFDARS-AIDS
+Channel16: Data_Link_Control_and_Display_Unit -> Equipment_Cooling_Card
+Channel16: Data_Link_Control_and_Display_Unit -> Aircraft_Interface_Unit
+Channel16: Data_Link_Control_and_Display_Unit -> Engine_Control_Unit_Channel_A
+Channel16: Data_Link_Control_and_Display_Unit -> Brake_System_Control_Unit
+Channel16: Data_Link_Control_and_Display_Unit -> Airborne_Weather_Radar
+Channel16: Data_Link_Control_and_Display_Unit -> High_Power_Amplifier
+Channel16: Data_Link_Control_and_Display_Unit -> Engine_Control_Unit_Channel_B
+Channel16: Data_Link_Control_and_Display_Unit -> 15B_Flight_Control_Unit
+Channel16: Data_Link_Control_and_Display_Unit -> DFS_System
+Channel16: Data_Link_Control_and_Display_Unit -> Zone_Temperature_Controller
+Channel16: Data_Link_Control_and_Display_Unit -> Environmental_System_Controller
+Channel16: Data_Link_Control_and_Display_Unit -> Manifold_Failure_Detection_System
+Channel16: Data_Link_Control_and_Display_Unit -> Chronometer
+Channel16: Data_Link_Control_and_Display_Unit -> Proximity_Sensor_Control_Unit
+Channel16: Data_Link_Control_and_Display_Unit -> ADS-B_Link_Display_Processor_Unit_(LPDU)
+Channel16: Data_Link_Control_and_Display_Unit -> Fuel_Quantity_Gauging_Unit
+Channel16: Data_Link_Control_and_Display_Unit -> Hydraulic_Electrical_Generator_Control_Unit
+Channel16: Data_Link_Control_and_Display_Unit -> Flight_Control_Computer
+Channel16: Data_Link_Control_and_Display_Unit -> Eng_Interface_Vibration_Monitoring_Unit
+
+Channel17: TCAS -> Environmental_System_Controller
+Channel17: TCAS -> Radio_Altimeter
+Channel17: TCAS -> Air_Data_System
+Channel17: TCAS -> Hydraulic_Interface_Module
+Channel17: TCAS -> Center_of_Gravity_Control_Computer
+Channel17: TCAS -> Fuel_Jettison_Control_Card
+Channel17: TCAS -> Thrust_Management_Computer
+Channel17: TCAS -> DFS_System
+Channel17: TCAS -> Vacuum_System_Controller
+Channel17: TCAS -> Data_Link_Control_and_Display_Unit
+Channel17: TCAS -> Video_Interface_Unit
+Channel17: TCAS -> Circuit_breakers_Monitoring_Unit
+Channel17: TCAS -> Satellite_Data_Unit
+Channel17: TCAS -> High_Power_Amplifier
+Channel17: TCAS -> Proximity_Sensor_Control_Unit
+Channel17: TCAS -> Airborne_ILS_Controller
+Channel17: TCAS -> Pass._Entertainment_Tape_Reproducer
+Channel17: TCAS -> Pneumatic_Overheat_Detection_Unit
+Channel17: TCAS -> Thrust_Rating_Controller
+Channel17: TCAS -> Advance_Cabin_Entertainment_Serv._Sys.
+
+Channel18: Brake_Temperature_Monitor_Unit -> FMC_Controller
+Channel18: Brake_Temperature_Monitor_Unit -> TACAN
+Channel18: Brake_Temperature_Monitor_Unit -> APU_Controller
+Channel18: Brake_Temperature_Monitor_Unit -> FADEC_Channel_B
+Channel18: Brake_Temperature_Monitor_Unit -> AIMS_General_Purpose_Bus_num4
+Channel18: Brake_Temperature_Monitor_Unit -> Satellite_RF_Unit
+Channel18: Brake_Temperature_Monitor_Unit -> AIMS_Digital_Comm._Mgmt.
+Channel18: Brake_Temperature_Monitor_Unit -> Air_Condition_Control_System
+Channel18: Brake_Temperature_Monitor_Unit -> Airborne_VOR_Receiver_
+Channel18: Brake_Temperature_Monitor_Unit -> Global_Positioning_System
+Channel18: Brake_Temperature_Monitor_Unit -> Full_Authority_EEC-A
+Channel18: Brake_Temperature_Monitor_Unit -> Bus_Control_Unit
+Channel18: Brake_Temperature_Monitor_Unit -> A429W_SDU_Controller
+Channel18: Brake_Temperature_Monitor_Unit -> Cockpit_Voice_Recorder
+Channel18: Brake_Temperature_Monitor_Unit -> EICAS/EFIC_Interface_Unit
+Channel18: Brake_Temperature_Monitor_Unit -> Video_Interface_Unit
+Channel18: Brake_Temperature_Monitor_Unit -> Eng_Interface_Vibration_Monitoring_Unit
+Channel18: Brake_Temperature_Monitor_Unit -> Radio_Tuning_Panel
+Channel18: Brake_Temperature_Monitor_Unit -> Audio_Control_Panel
+Channel18: Brake_Temperature_Monitor_Unit -> Boarding_Music_Machine
+
+Channel19: Surface_Position_Digitizer -> Landing_Gear_Prox._Control
+Channel19: Surface_Position_Digitizer -> Head-Up_Display_Computer
+Channel19: Surface_Position_Digitizer -> Flight_Management_Computer
+Channel19: Surface_Position_Digitizer -> Airborne_Weather_Radar
+Channel19: Surface_Position_Digitizer -> Vacuum_System_Controller
+Channel19: Surface_Position_Digitizer -> Centralized_Maintenance_Computer
+Channel19: Surface_Position_Digitizer -> FAC
+Channel19: Surface_Position_Digitizer -> Window_Heat_Computer
+Channel19: Surface_Position_Digitizer -> Cabin_Pressure_Controller
+Channel19: Surface_Position_Digitizer -> Misc._Environment_Control
+Channel19: Surface_Position_Digitizer -> Airborne_VOR_Controller
+Channel19: Surface_Position_Digitizer -> Airborne_DME
+Channel19: Surface_Position_Digitizer -> APU_Controller
+Channel19: Surface_Position_Digitizer -> Ground_Auxiliary_Power_Unit
+Channel19: Surface_Position_Digitizer -> ATC_Transponder
+Channel19: Surface_Position_Digitizer -> Prox._Switch_Electronics_Unit
+Channel19: Surface_Position_Digitizer -> Integrated_Static_Probe
+Channel19: Surface_Position_Digitizer -> Cargo_Heat
+Channel19: Surface_Position_Digitizer -> Pneumatic_Overheat_Detection_Unit
+Channel19: Surface_Position_Digitizer -> Pre-recorded_Announcement_Music_Repro.
+
+Channel20: Bus_Control_Unit -> Brake_Temperature_Monitor_Unit
+Channel20: Bus_Control_Unit -> Supersonic_Air_Data_Computer
+Channel20: Bus_Control_Unit -> Anti-Skid_System
+Channel20: Bus_Control_Unit -> Camera_Interface_Unit
+Channel20: Bus_Control_Unit -> Multifunction_Air_Data_Probe
+Channel20: Bus_Control_Unit -> Flight_Management_Computer
+Channel20: Bus_Control_Unit -> Aircraft_Interface_Unit
+Channel20: Bus_Control_Unit -> FADEC_Channel_A
+Channel20: Bus_Control_Unit -> Proximity_Switch_Electronics_Unit
+Channel20: Bus_Control_Unit -> Air_Traffic_Service_Unit
+Channel20: Bus_Control_Unit -> Display_Unit
+Channel20: Bus_Control_Unit -> Attitude_and_Heading_Ref._System
+Channel20: Bus_Control_Unit -> Versatile_Integrated_Avionics_Unit
+Channel20: Bus_Control_Unit -> Communication_Management_Unit_Mark_2
+Channel20: Bus_Control_Unit -> Advance_Cabin_Entertainment_Serv._Sys.
+Channel20: Bus_Control_Unit -> Weight_and_Balance_System
+Channel20: Bus_Control_Unit -> Flight_Mgmt_Guidance_Env_Comp
+Channel20: Bus_Control_Unit -> ACARS_and_CMU_Mark_2
+Channel20: Bus_Control_Unit -> Misc._Environment_Control
+Channel20: Bus_Control_Unit -> Cockpit_Voice_Recorder
+
+Channel21: Full_Authority_EEC-A -> Pass._Entertainment_Tape_Reproducer
+Channel21: Full_Authority_EEC-A -> GNSS_Navigation_Landing_Unit_(GNLU)
+Channel21: Full_Authority_EEC-A -> Airborne_ILS_Controller
+Channel21: Full_Authority_EEC-A -> Fuel_Quantity_Totalizer
+Channel21: Full_Authority_EEC-A -> Display_Unit
+Channel21: Full_Authority_EEC-A -> FAC
+Channel21: Full_Authority_EEC-A -> Probes_Heat_Computer
+Channel21: Full_Authority_EEC-A -> Inertial_Reference_System
+Channel21: Full_Authority_EEC-A -> Yaw_Damper_Module
+Channel21: Full_Authority_EEC-A -> Ground_Auxiliary_Power_Unit
+Channel21: Full_Authority_EEC-A -> DEFDARS-AIDS
+Channel21: Full_Authority_EEC-A -> Predictive_Windshear_System_Sensor
+Channel21: Full_Authority_EEC-A -> Airborne_HF/SSB_System
+Channel21: Full_Authority_EEC-A -> Environmental_System_Controller
+Channel21: Full_Authority_EEC-A -> Airborne_ADF_Controller
+Channel21: Full_Authority_EEC-A -> Video_Control_Unit
+Channel21: Full_Authority_EEC-A -> Slide_Slip_Angle_(SSA)
+Channel21: Full_Authority_EEC-A -> TCAS
+Channel21: Full_Authority_EEC-A -> Engine_Instrument_System
+Channel21: Full_Authority_EEC-A -> Full_Authority_EEC-B
+
+Channel22: Hydraulic_Interface_Module -> Inertial_Reference_System
+Channel22: Hydraulic_Interface_Module -> FAC
+Channel22: Hydraulic_Interface_Module -> Autopilot_Buffer_Unit
+Channel22: Hydraulic_Interface_Module -> APU_Controller
+Channel22: Hydraulic_Interface_Module -> Audio_Control_Panel
+Channel22: Hydraulic_Interface_Module -> TCAS
+Channel22: Hydraulic_Interface_Module -> Performance_Data_Computer
+Channel22: Hydraulic_Interface_Module -> ATC_Transponder_Controller
+Channel22: Hydraulic_Interface_Module -> Microwave_Landing_System
+Channel22: Hydraulic_Interface_Module -> Land_Rollout_CU/Landing_C_&_LU
+Channel22: Hydraulic_Interface_Module -> Environmental_System_Controller
+Channel22: Hydraulic_Interface_Module -> Thrust_Rating_Controller
+Channel22: Hydraulic_Interface_Module -> Windshear_Computer_(Sperry)
+Channel22: Hydraulic_Interface_Module -> Power_Supply_Module
+Channel22: Hydraulic_Interface_Module -> GNSS_Navigation_Unit_(GNU)_and_Satellite_Terminal_Unit_(STU)
+Channel22: Hydraulic_Interface_Module -> ADS-B_Link_Display_Processor_Unit_(LPDU)
+Channel22: Hydraulic_Interface_Module -> Passenger_Entertainment_Sys_Main_MUX
+Channel22: Hydraulic_Interface_Module -> Hydraulic_System_Controller
+Channel22: Hydraulic_Interface_Module -> Probes_Heat_Computer
+Channel22: Hydraulic_Interface_Module -> AIMS_EFIS_Control_Panel
+
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Passenger_Entertainment_Sys_Main_MUX
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Hydraulic_Interface_Module
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Attitude_and_Heading_Ref._System
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Centralized_Maintenance_Computer
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Generator_Control_Unit
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Clock
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Surface_Position_Digitizer
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Cargo_Heat
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Thrust_Rating_Controller
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Land_Rollout_CU/Landing_C_&_LU
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Flight_Control_Computer
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Avionics_c-10_Cooling_Computer
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Audio_Entertainment_System_(AES)_Controller
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> ADS-B_LDPU_Controller
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Landing_Gear_Position_Interface_Unit
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Passenger_In_Flight_Info_Unit
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> ACARS_and_CMU_Mark_2
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> FCC_Controller
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Airborne_DME_Controller
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> Propulsion_Discrete_Interface_Unit
+
+Channel24: Zone_Controller -> Advance_Cabin_Entertainment_Serv._Sys.
+Channel24: Zone_Controller -> Brake_Temperature_Monitor_Unit
+Channel24: Zone_Controller -> Ground_Power_Control_Unit
+Channel24: Zone_Controller -> Hydraulic_Electrical_Generator_Control_Unit
+Channel24: Zone_Controller -> Cockpit_Voice_recorder
+Channel24: Zone_Controller -> GNSS_Navigation_Unit_(GNU)_and_Satellite_Terminal_Unit_(STU)
+Channel24: Zone_Controller -> ADDCS_and_EICAS
+Channel24: Zone_Controller -> Video_Control_Unit
+Channel24: Zone_Controller -> Special_Fuel_Quan._Sys.
+Channel24: Zone_Controller -> DFS_System
+Channel24: Zone_Controller -> Stabilizer_Trim_Module
+Channel24: Zone_Controller -> Ground_Auxiliary_Power_Unit
+Channel24: Zone_Controller -> Cockpit_Voice_Recorder
+Channel24: Zone_Controller -> Data_Link_Control_and_Display_Unit
+Channel24: Zone_Controller -> Airborne_Weather_Radar
+Channel24: Zone_Controller -> Stall_Warning_Card
+Channel24: Zone_Controller -> Fuel_Quantity_Totalizer
+Channel24: Zone_Controller -> TACAN
+Channel24: Zone_Controller -> FAC
+Channel24: Zone_Controller -> MCDU
+
+Channel25: TACAN_Adapter_Unit -> Electronic_Engine_Control_(EEC)_Channel_A
+Channel25: TACAN_Adapter_Unit -> Predictive_Windshear_System_Sensor
+Channel25: TACAN_Adapter_Unit -> High-Speed_Data_Unit
+Channel25: TACAN_Adapter_Unit -> A429W_SDU_Controller
+Channel25: TACAN_Adapter_Unit -> Global_Positioning_System
+Channel25: TACAN_Adapter_Unit -> Airborne_DME
+Channel25: TACAN_Adapter_Unit -> Propulsion_Multiplexer_(PMUX)
+Channel25: TACAN_Adapter_Unit -> Fuel_System_Interface_Card
+Channel25: TACAN_Adapter_Unit -> Electronic_Flight_Bag
+Channel25: TACAN_Adapter_Unit -> Yaw_Damper_Module
+Channel25: TACAN_Adapter_Unit -> Electronic_Flt._Instruments
+Channel25: TACAN_Adapter_Unit -> Aircraft_Interface_Unit
+Channel25: TACAN_Adapter_Unit -> Fuel_Quantity_Gauging_Unit
+Channel25: TACAN_Adapter_Unit -> ADIRS
+Channel25: TACAN_Adapter_Unit -> EPR_Indicator
+Channel25: TACAN_Adapter_Unit -> HF_Data_Unit
+Channel25: TACAN_Adapter_Unit -> Battery_Charge_Limiter
+Channel25: TACAN_Adapter_Unit -> AIMS_Digital_Comm._Mgmt.
+Channel25: TACAN_Adapter_Unit -> Centralized_Maintenance_Computer
+Channel25: TACAN_Adapter_Unit -> Windshear_Computer_(Sperry)
+
+Channel26: Slide_Slip_Angle_(SSA) -> Thrust_Control_Computer_
+Channel26: Slide_Slip_Angle_(SSA) -> Flight_Control_Secondary_Computer
+Channel26: Slide_Slip_Angle_(SSA) -> AIMS_Gen._Pur._Bus_num2
+Channel26: Slide_Slip_Angle_(SSA) -> Surface_Position_Digitizer
+Channel26: Slide_Slip_Angle_(SSA) -> Flight_Management_Computer
+Channel26: Slide_Slip_Angle_(SSA) -> Airborne_ADF_System
+Channel26: Slide_Slip_Angle_(SSA) -> Angle_of_Attack_Sensor
+Channel26: Slide_Slip_Angle_(SSA) -> Pass._Entertainment_Tape_Reproducer
+Channel26: Slide_Slip_Angle_(SSA) -> AIMS_Gen._Pur._Bus_num1
+Channel26: Slide_Slip_Angle_(SSA) -> Fuel_System_Interface_Card
+Channel26: Slide_Slip_Angle_(SSA) -> Airborne_ADF_Controller
+Channel26: Slide_Slip_Angle_(SSA) -> CDTI_Display_Unit
+Channel26: Slide_Slip_Angle_(SSA) -> MLS_Controller
+Channel26: Slide_Slip_Angle_(SSA) -> AIMS_Cursor_Control_Device
+Channel26: Slide_Slip_Angle_(SSA) -> PVS_Control_Unit
+Channel26: Slide_Slip_Angle_(SSA) -> Ground_Power_Control_Unit
+Channel26: Slide_Slip_Angle_(SSA) -> Full_Authority_Engine_Control_(P&W)
+Channel26: Slide_Slip_Angle_(SSA) -> AIMS_Gen._Pur._Bus_num3
+Channel26: Slide_Slip_Angle_(SSA) -> A/P_&_F/D_Mode_Control_Panel_
+Channel26: Slide_Slip_Angle_(SSA) -> Head-Up_Display_Computer
+
+Channel27: Cargo_Heat -> HF/SSB_System_Controller
+Channel27: Cargo_Heat -> Ground_Prox._Warning_System
+Channel27: Cargo_Heat -> EPR_Indicator
+Channel27: Cargo_Heat -> Electronic_Flight_Bag
+Channel27: Cargo_Heat -> Multi-Disk_Drive_Unit
+Channel27: Cargo_Heat -> FADEC_Channel_A
+Channel27: Cargo_Heat -> Perf._Nav._Computer_System
+Channel27: Cargo_Heat -> AIMS_Digital_Comm._Mgmt.
+Channel27: Cargo_Heat -> ATC_Transponder
+Channel27: Cargo_Heat -> AIMS_Gen._Pur._Bus_num2
+Channel27: Cargo_Heat -> APU_Electronic_Control_Unit
+Channel27: Cargo_Heat -> AMU_(A320)
+Channel27: Cargo_Heat -> Flight_Control_Primary_Computer
+Channel27: Cargo_Heat -> A/P_&_F/D_Mode_Control_Panel_
+Channel27: Cargo_Heat -> Bus_Control_Unit
+Channel27: Cargo_Heat -> Electronic_Engine_Control_(EEC)_Channel_B
+Channel27: Cargo_Heat -> Probes_Heat_Computer
+Channel27: Cargo_Heat -> EICAS/EFIC_Interface_Unit
+Channel27: Cargo_Heat -> APU_Controller
+Channel27: Cargo_Heat -> Propulsion_Multiplexer_(PMUX)
+
+Channel28: Flight_Management_Computer -> FCC_Controller
+Channel28: Flight_Management_Computer -> Bleed_Air
+Channel28: Flight_Management_Computer -> CIDS
+Channel28: Flight_Management_Computer -> Flight_Data_Interface_Unit
+Channel28: Flight_Management_Computer -> Thrust_Control_Computer_
+Channel28: Flight_Management_Computer -> AMU_(A320)
+Channel28: Flight_Management_Computer -> Cockpit_Voice_recorder
+Channel28: Flight_Management_Computer -> Vertical/Horizontal_Gyro
+Channel28: Flight_Management_Computer -> Main_Electrical_System_Controller
+Channel28: Flight_Management_Computer -> TCAS
+Channel28: Flight_Management_Computer -> Probes_Heat_Computer
+Channel28: Flight_Management_Computer -> High-Speed_Data_Unit
+Channel28: Flight_Management_Computer -> ADIRS_Air_Data_Module_0E6
+Channel28: Flight_Management_Computer -> Electronic_Supervisory_Control
+Channel28: Flight_Management_Computer -> Fuel_Flow_Indicator
+Channel28: Flight_Management_Computer -> Circuit_breakers_Monitoring_Unit
+Channel28: Flight_Management_Computer -> Supersonic_Air_Data_Computer
+Channel28: Flight_Management_Computer -> Clock
+Channel28: Flight_Management_Computer -> HF/SSB_System_Controller
+Channel28: Flight_Management_Computer -> Camera_Interface_Unit
+
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Environmental_System_Controller
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Flight_Control_Secondary_Computer
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Load_Management_Unit_(LMU)_Airbus
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Crew_Rest_Temp._Controller
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Fire_Detection_Unit
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Satellite_Data_Unit
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Flight_Warning_Computer
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Flap_Control_Unit_and_Flap_Slat_Electronics_Unit
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Perf._Nav._Computer_System
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Airborne_VOR_Receiver_
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Bleed_Air
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Audio_Entertainment_System_(AES)_Controller
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Avionics_c-10_Cooling_Computer
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> CDTI_Display_Unit
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Bus_Control_Unit
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Cabin_Pressure_Controller
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> ADIRS_Air_Data_Module_0E6
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Engine_Control_Unit_Channel_A
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Pneumatic_Overheat_Detection_Unit
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> Pneumatic_Control_System
+
+Channel30: Multiplexer_PES -> Boarding_Music_Machine
+Channel30: Multiplexer_PES -> Electronic_Flight_Bag
+Channel30: Multiplexer_PES -> Bus_Control_Unit
+Channel30: Multiplexer_PES -> ATC_Transponder
+Channel30: Multiplexer_PES -> Cabin_Ventilation_Controller
+Channel30: Multiplexer_PES -> Main_Electrical_System_Controller
+Channel30: Multiplexer_PES -> Cockpit_Voice_recorder
+Channel30: Multiplexer_PES -> Fuel_Qty._Indicating_System
+Channel30: Multiplexer_PES -> Airborne_ILS_Receiver
+Channel30: Multiplexer_PES -> Emergency_Electrical_System_Controller
+Channel30: Multiplexer_PES -> Multi-Disk_Drive_Unit
+Channel30: Multiplexer_PES -> ECAM_Control_Panel
+Channel30: Multiplexer_PES -> Airborne_Vibration_Monitor
+Channel30: Multiplexer_PES -> Slide_Slip_Angle_(SSA)
+Channel30: Multiplexer_PES -> Power_Supply_Module
+Channel30: Multiplexer_PES -> CIDS
+Channel30: Multiplexer_PES -> Airborne_VOR_Receiver_
+Channel30: Multiplexer_PES -> Equipment_Cooling_Card
+Channel30: Multiplexer_PES -> Thrust_Management_Computer
+Channel30: Multiplexer_PES -> Thrust_Rating_Controller
+
+Channel31: APU_Controller -> Air_Data_System
+Channel31: APU_Controller -> Airborne_DME_Controller
+Channel31: APU_Controller -> Landing_Gear_Prox._Control
+Channel31: APU_Controller -> Communication_Management_Unit_Mark_2
+Channel31: APU_Controller -> ADDCS_and_EICAS
+Channel31: APU_Controller -> Integrated_Standby_Instrument_System
+Channel31: APU_Controller -> Vacuum_System_Controller
+Channel31: APU_Controller -> Brake_Control_Unit
+Channel31: APU_Controller -> Camera_Interface_Unit
+Channel31: APU_Controller -> ECAM_Control_Panel
+Channel31: APU_Controller -> Airborne_ILS_Controller
+Channel31: APU_Controller -> Engine_Instrument_System
+Channel31: APU_Controller -> Audio_Control_Panel
+Channel31: APU_Controller -> Weight_and_Balance_System
+Channel31: APU_Controller -> Radio_Altimeter
+Channel31: APU_Controller -> MCDU
+Channel31: APU_Controller -> Global_Positioning_System
+Channel31: APU_Controller -> A429W_SDU_Controller
+Channel31: APU_Controller -> Airborne_Separation_Assurance_System
+Channel31: APU_Controller -> Flight_Control_Secondary_Computer
+
+Channel32: Full_Authority_Engine_Control_B -> Camera_Interface_Unit
+Channel32: Full_Authority_Engine_Control_B -> Brake_Steering_Unit
+Channel32: Full_Authority_Engine_Control_B -> VHF_COM_Controller
+Channel32: Full_Authority_Engine_Control_B -> Probes_Heat_Computer
+Channel32: Full_Authority_Engine_Control_B -> Brake_Control_Unit
+Channel32: Full_Authority_Engine_Control_B -> Centralized_Maintenance_Computer
+Channel32: Full_Authority_Engine_Control_B -> Air_Condition_Control_System
+Channel32: Full_Authority_Engine_Control_B -> Display_Unit
+Channel32: Full_Authority_Engine_Control_B -> FMC_Controller
+Channel32: Full_Authority_Engine_Control_B -> Video_Control_Unit
+Channel32: Full_Authority_Engine_Control_B -> Airborne_HF/SSB_System
+Channel32: Full_Authority_Engine_Control_B -> Brake_Temperature_Monitor_Unit
+Channel32: Full_Authority_Engine_Control_B -> Airborne_WXR_Controller
+Channel32: Full_Authority_Engine_Control_B -> Power_Supply_Module
+Channel32: Full_Authority_Engine_Control_B -> Airborne_DME
+Channel32: Full_Authority_Engine_Control_B -> Circuit_breakers_Monitoring_Unit
+Channel32: Full_Authority_Engine_Control_B -> Anti-Skid_System
+Channel32: Full_Authority_Engine_Control_B -> ADS-B_LDPU_Controller
+Channel32: Full_Authority_Engine_Control_B -> Thrust_Control_Computer_
+Channel32: Full_Authority_Engine_Control_B -> Landing_Gear_Prox._Control
+
+Channel33: Generator_Control_Unit -> ATC_Transponder
+Channel33: Generator_Control_Unit -> Digital_Fuel_Gauging_System
+Channel33: Generator_Control_Unit -> Electronic_Engine_Control_(EEC)_Channel_A
+Channel33: Generator_Control_Unit -> Airborne_DME_Controller
+Channel33: Generator_Control_Unit -> Cargo_Bay_Conditioning_Card
+Channel33: Generator_Control_Unit -> Flt._Cont._Data_Concentrator
+Channel33: Generator_Control_Unit -> Logic_Drive_Control_Computer
+Channel33: Generator_Control_Unit -> Misc._Environment_Control
+Channel33: Generator_Control_Unit -> Auto_Brake_Unit
+Channel33: Generator_Control_Unit -> Center_of_Gravity_Control_Computer
+Channel33: Generator_Control_Unit -> Prox._Switch_Electronics_Unit
+Channel33: Generator_Control_Unit -> Stall_Warning_Card
+Channel33: Generator_Control_Unit -> Slide_Slip_Angle_(SSA)
+Channel33: Generator_Control_Unit -> ACARS_and_CMU_Mark_2
+Channel33: Generator_Control_Unit -> Power_Supply_Module
+Channel33: Generator_Control_Unit -> Fuel_Quantity_Totalizer
+Channel33: Generator_Control_Unit -> AIMS_Cursor_Control_Device
+Channel33: Generator_Control_Unit -> Fuel_Qty._Indicating_System
+Channel33: Generator_Control_Unit -> High-Speed_Data_Unit
+Channel33: Generator_Control_Unit -> Angle_of_Attack_Sensor
+
+Channel34: Video_Control_Unit -> Integrated_Static_Probe
+Channel34: Video_Control_Unit -> Propulsion_Discrete_Interface_Unit
+Channel34: Video_Control_Unit -> Propulsion_Multiplexer_(PMUX)
+Channel34: Video_Control_Unit -> PVS_Control_Unit
+Channel34: Video_Control_Unit -> FADEC_Channel_A
+Channel34: Video_Control_Unit -> Logic_Drive_Control_Computer
+Channel34: Video_Control_Unit -> ATC_Transponder_Controller
+Channel34: Video_Control_Unit -> Pass._Entertainment_Tape_Reproducer
+Channel34: Video_Control_Unit -> Digital_Fuel_Gauging_System
+Channel34: Video_Control_Unit -> VDR
+Channel34: Video_Control_Unit -> Inertial_Reference_System
+Channel34: Video_Control_Unit -> Land_Rollout_CU/Landing_C_&_LU
+Channel34: Video_Control_Unit -> Equipment_Cooling_Card
+Channel34: Video_Control_Unit -> Cabin_Interphone_System
+Channel34: Video_Control_Unit -> Hydraulic_Quantity_Monitor_Unit
+Channel34: Video_Control_Unit -> Zone_Temperature_Controller
+Channel34: Video_Control_Unit -> Fuel_Quantity_Gauging_Unit
+Channel34: Video_Control_Unit -> Centralized_Maintenance_Computer
+Channel34: Video_Control_Unit -> Electronic_Spoiler_Control_Unit
+Channel34: Video_Control_Unit -> Fuel_System_Interface_Card
+
+Channel35: High-Speed_Data_Unit -> Fire_Detection_Unit
+Channel35: High-Speed_Data_Unit -> ATC_Transponder_Controller
+Channel35: High-Speed_Data_Unit -> ADIRS_Air_Data_Module_0E6
+Channel35: High-Speed_Data_Unit -> Airborne_VOR_Receiver_
+Channel35: High-Speed_Data_Unit -> Pass._Entertainment_Tape_Reproducer
+Channel35: High-Speed_Data_Unit -> Airborne_Vibration_Monitor
+Channel35: High-Speed_Data_Unit -> APU_Electronic_Control_Unit
+Channel35: High-Speed_Data_Unit -> Crew_Rest_Temp._Controller
+Channel35: High-Speed_Data_Unit -> Pack_Temperature_Controller
+Channel35: High-Speed_Data_Unit -> Hydraulic_System_Controller
+Channel35: High-Speed_Data_Unit -> Audio_Management_System
+Channel35: High-Speed_Data_Unit -> Propulsion_Multiplexer_(PMUX)
+Channel35: High-Speed_Data_Unit -> Cabin_Ventilation_Controller
+Channel35: High-Speed_Data_Unit -> CDTI_Display_Unit
+Channel35: High-Speed_Data_Unit -> Engine_Instrument_System
+Channel35: High-Speed_Data_Unit -> Probes_Heat_Computer
+Channel35: High-Speed_Data_Unit -> Electronic_Engine_Control_(EEC)_Channel_B
+Channel35: High-Speed_Data_Unit -> Brake_System_Control_Unit
+Channel35: High-Speed_Data_Unit -> Zone_Controller
+Channel35: High-Speed_Data_Unit -> DEFDARS-AIDS
+
+Channel36: Fuel_Unit_Management_System -> Centralized_Fault_Data_Interface_Unit
+Channel36: Fuel_Unit_Management_System -> Data_Link_Control_and_Display_Unit
+Channel36: Fuel_Unit_Management_System -> Angle_of_Attack_Sensor
+Channel36: Fuel_Unit_Management_System -> Stabilizer_Trim_Module
+Channel36: Fuel_Unit_Management_System -> Ground_Prox._Warning_System
+Channel36: Fuel_Unit_Management_System -> MLS_Controller
+Channel36: Fuel_Unit_Management_System -> Eng_Interface_Vibration_Monitoring_Unit
+Channel36: Fuel_Unit_Management_System -> TCAS_Control_Panel
+Channel36: Fuel_Unit_Management_System -> ECAM_Control_Panel
+Channel36: Fuel_Unit_Management_System -> Hydraulic_Electrical_Generator_Control_Unit
+Channel36: Fuel_Unit_Management_System -> AIMS_Display_Unit
+Channel36: Fuel_Unit_Management_System -> Airborne_VOR_Controller
+Channel36: Fuel_Unit_Management_System -> Air_Traffic_Service_Unit
+Channel36: Fuel_Unit_Management_System -> TCAS
+Channel36: Fuel_Unit_Management_System -> IRS_Controller
+Channel36: Fuel_Unit_Management_System -> Airborne_VHF_COM
+Channel36: Fuel_Unit_Management_System -> Audio_Management_System
+Channel36: Fuel_Unit_Management_System -> Probes_Heat_Computer
+Channel36: Fuel_Unit_Management_System -> Audio_Control_Panel
+Channel36: Fuel_Unit_Management_System -> EICAS/EFIC_Interface_Unit
+
+Channel37: Ground_Auxiliary_Power_Unit -> Airborne_VOR_Controller
+Channel37: Ground_Auxiliary_Power_Unit -> Cargo_Heat
+Channel37: Ground_Auxiliary_Power_Unit -> Stabilizer_Trim_Module
+Channel37: Ground_Auxiliary_Power_Unit -> Airborne_Vibration_Monitor
+Channel37: Ground_Auxiliary_Power_Unit -> Proximity_Switch_Electronics_Unit
+Channel37: Ground_Auxiliary_Power_Unit -> HF/SSB_System_Controller
+Channel37: Ground_Auxiliary_Power_Unit -> Cargo_Bay_Conditioning_Card
+Channel37: Ground_Auxiliary_Power_Unit -> AIMS_Display_Unit
+Channel37: Ground_Auxiliary_Power_Unit -> Electronic_Engine_Control_(EEC)_Channel_A
+Channel37: Ground_Auxiliary_Power_Unit -> Para_Visual_Display_Computer
+Channel37: Ground_Auxiliary_Power_Unit -> Airborne_VOR_Receiver_
+Channel37: Ground_Auxiliary_Power_Unit -> Cargo_Control_Logic_Unit
+Channel37: Ground_Auxiliary_Power_Unit -> Data_Loader
+Channel37: Ground_Auxiliary_Power_Unit -> AIMS_Cursor_Control_Device
+Channel37: Ground_Auxiliary_Power_Unit -> Multi-Disk_Drive_Unit
+Channel37: Ground_Auxiliary_Power_Unit -> Inertial_Reference_System
+Channel37: Ground_Auxiliary_Power_Unit -> Flight_Warning_Computer
+Channel37: Ground_Auxiliary_Power_Unit -> Boarding_Music_Machine
+Channel37: Ground_Auxiliary_Power_Unit -> Angle_of_Attack_Sensor
+Channel37: Ground_Auxiliary_Power_Unit -> APU_Controller
+
+Channel38: Airborne_DME -> ADS-B_LDPU_Controller
+Channel38: Airborne_DME -> Stall_Warning_Card
+Channel38: Airborne_DME -> Cargo_Bay_Conditioning_Card
+Channel38: Airborne_DME -> Communication_Management_Unit_Mark_2
+Channel38: Airborne_DME -> Center_of_Gravity_Fuel_Control_Comp.
+Channel38: Airborne_DME -> Brake_Temperature_Monitor_Unit
+Channel38: Airborne_DME -> Fire_Detection_Unit
+Channel38: Airborne_DME -> Generator_Control_Unit
+Channel38: Airborne_DME -> FADEC_Channel_B
+Channel38: Airborne_DME -> Crew_Rest_Temp._Controller
+Channel38: Airborne_DME -> Airborne_ILS_Receiver
+Channel38: Airborne_DME -> Thrust_Rating_Controller
+Channel38: Airborne_DME -> AMU_(A320)
+Channel38: Airborne_DME -> Flap_Control_Unit_and_Flap_Slat_Electronics_Unit
+Channel38: Airborne_DME -> Full_Authority_Engine_Control_A
+Channel38: Airborne_DME -> Full_Authority_EEC-A
+Channel38: Airborne_DME -> Cargo_Electronics_Interface_Unit
+Channel38: Airborne_DME -> CDTI_Display_Unit
+Channel38: Airborne_DME -> Fuel_Quantity_Gauging_Unit
+Channel38: Airborne_DME -> Center_of_Gravity_Control_Computer
+
+Channel39: AIDS_Data_Management_System -> APU_Electronic_Control_Unit
+Channel39: AIDS_Data_Management_System -> Audio_Control_Panel
+Channel39: AIDS_Data_Management_System -> Microwave_Landing_System
+Channel39: AIDS_Data_Management_System -> Cargo_Electronics_Interface_Unit
+Channel39: AIDS_Data_Management_System -> Data_Loader
+Channel39: AIDS_Data_Management_System -> Stabilizer_Trim_Module
+Channel39: AIDS_Data_Management_System -> Engine_Control_Unit_Channel_B
+Channel39: AIDS_Data_Management_System -> MLS_Controller
+Channel39: AIDS_Data_Management_System -> Crew_Rest_Temp._Controller
+Channel39: AIDS_Data_Management_System -> Central_Maintenance_Computer
+Channel39: AIDS_Data_Management_System -> Anti-Skid_System
+Channel39: AIDS_Data_Management_System -> Environmental_System_Controller
+Channel39: AIDS_Data_Management_System -> Audio_Management_System
+Channel39: AIDS_Data_Management_System -> Windshear_Computer_(Sperry)
+Channel39: AIDS_Data_Management_System -> Multiplexer_PES
+Channel39: AIDS_Data_Management_System -> Power_Supply_Module
+Channel39: AIDS_Data_Management_System -> Manifold_Failure_Detection_System
+Channel39: AIDS_Data_Management_System -> Vertical/Horizontal_Gyro
+Channel39: AIDS_Data_Management_System -> Electronic_Engine_Control_(EEC)_Channel_A
+Channel39: AIDS_Data_Management_System -> Radio_Tuning_Panel
+
+Channel40: Engine_Control_Unit_Channel_A -> Electronic_Flt._Instruments
+Channel40: Engine_Control_Unit_Channel_A -> Main_Electrical_System_Controller
+Channel40: Engine_Control_Unit_Channel_A -> Airborne_VOR_Receiver_
+Channel40: Engine_Control_Unit_Channel_A -> VDR
+Channel40: Engine_Control_Unit_Channel_A -> Windshear_Computer_(Sperry)
+Channel40: Engine_Control_Unit_Channel_A -> Airborne_Vibration_Monitor
+Channel40: Engine_Control_Unit_Channel_A -> Full_Authority_EEC-B
+Channel40: Engine_Control_Unit_Channel_A -> Display_Management_Computer
+Channel40: Engine_Control_Unit_Channel_A -> Cockpit_Voice_recorder
+Channel40: Engine_Control_Unit_Channel_A -> High_Power_Amplifier
+Channel40: Engine_Control_Unit_Channel_A -> Window_Heat_Computer
+Channel40: Engine_Control_Unit_Channel_A -> EPR_Indicator
+Channel40: Engine_Control_Unit_Channel_A -> Airborne_Weather_Radar
+Channel40: Engine_Control_Unit_Channel_A -> APU_Electronic_Control_Unit
+Channel40: Engine_Control_Unit_Channel_A -> A/P_&_F/D_Mode_Control_Panel_
+Channel40: Engine_Control_Unit_Channel_A -> TCAS
+Channel40: Engine_Control_Unit_Channel_A -> Power_Supply_Module
+Channel40: Engine_Control_Unit_Channel_A -> Passenger_In_Flight_Info_Unit
+Channel40: Engine_Control_Unit_Channel_A -> Camera_Interface_Unit
+Channel40: Engine_Control_Unit_Channel_A -> Flap_Control_Unit_and_Flap_Slat_Electronics_Unit
+
+Channel41: Proximity_Switch_Electronics_Unit -> ADS-B_Link_Display_Processor_Unit_(LPDU)
+Channel41: Proximity_Switch_Electronics_Unit -> DFS_System
+Channel41: Proximity_Switch_Electronics_Unit -> Window_Heat_Control_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> Electronic_Flt._Instruments
+Channel41: Proximity_Switch_Electronics_Unit -> Hydraulic_System_Monitoring_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> Brake_System_Control_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> High-Speed_Data_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> Pre-recorded_Announcement_Music_Repro.
+Channel41: Proximity_Switch_Electronics_Unit -> AIMS_EFIS_Control_Panel
+Channel41: Proximity_Switch_Electronics_Unit -> Fuel_Qty._Indicating_System
+Channel41: Proximity_Switch_Electronics_Unit -> Smoke_Detection_Control_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> DEFDARS-AIDS
+Channel41: Proximity_Switch_Electronics_Unit -> Fire_Detection_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> Communication_Management_Unit_Mark_2
+Channel41: Proximity_Switch_Electronics_Unit -> ECAM_Control_Panel
+Channel41: Proximity_Switch_Electronics_Unit -> Propulsion_Discrete_Interface_Unit
+Channel41: Proximity_Switch_Electronics_Unit -> Equipment_Cooling_Card
+Channel41: Proximity_Switch_Electronics_Unit -> Electronic_Engine_Control_(EEC)_Channel_B
+Channel41: Proximity_Switch_Electronics_Unit -> Microwave_Landing_System
+Channel41: Proximity_Switch_Electronics_Unit -> VDR
+
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Pass._Entertainment_Tape_Reproducer
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> HF_Data_Unit
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Stall_Warning_Card
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Satellite_ACU
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> FCC_Controller
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> A/P_&_F/D_Mode_Control_Panel_
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Yaw_Damper_Module
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Fuel_Qty._Indicating_System
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Clock
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Airborne_Vibration_Monitor
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Power_Supply_Module
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Passenger_Entertainment_Sys_Audio_Repro.
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Fuel_Management_Computer
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> AIMS_Gen._Pur._Bus_num2
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Video_Control_Unit
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Integrated_Standby_Instrument_System
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Camera_Interface_Unit
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Full_Authority_Engine_Control_B
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Fire_Detection_Unit
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> Ground_Auxiliary_Power_Unit
+
+Channel43: Tire_Pressure_Monitoring_System -> Ground_Auxiliary_Power_Unit
+Channel43: Tire_Pressure_Monitoring_System -> Airborne_Weather_Radar
+Channel43: Tire_Pressure_Monitoring_System -> Crew_Rest_Temp._Controller
+Channel43: Tire_Pressure_Monitoring_System -> ADIRS
+Channel43: Tire_Pressure_Monitoring_System -> Flight_Data_Interface_Unit
+Channel43: Tire_Pressure_Monitoring_System -> FAC
+Channel43: Tire_Pressure_Monitoring_System -> Fuel_Flow_Indicator
+Channel43: Tire_Pressure_Monitoring_System -> Centralized_Fault_Data_Interface_Unit
+Channel43: Tire_Pressure_Monitoring_System -> Fuel_Qty._Indicating_System
+Channel43: Tire_Pressure_Monitoring_System -> Air_Supply_Control_&_Test_Unit
+Channel43: Tire_Pressure_Monitoring_System -> TCAS
+Channel43: Tire_Pressure_Monitoring_System -> FCC_Controller
+Channel43: Tire_Pressure_Monitoring_System -> Load_Management_Unit_(LMU)_Airbus
+Channel43: Tire_Pressure_Monitoring_System -> TACAN
+Channel43: Tire_Pressure_Monitoring_System -> APU_Controller
+Channel43: Tire_Pressure_Monitoring_System -> Special_Fuel_Quan._Sys.
+Channel43: Tire_Pressure_Monitoring_System -> Attitude_and_Heading_Ref._System
+Channel43: Tire_Pressure_Monitoring_System -> Ground_Prox._Warning_System
+Channel43: Tire_Pressure_Monitoring_System -> Autostart
+Channel43: Tire_Pressure_Monitoring_System -> Satellite_Data_Unit
+
+Channel44: AIMS_Digital_Comm._Mgmt. -> Multi-Mode_Receiver_(MMR)
+Channel44: AIMS_Digital_Comm._Mgmt. -> Full_Authority_EEC-B
+Channel44: AIMS_Digital_Comm._Mgmt. -> Weight_and_Balance_System
+Channel44: AIMS_Digital_Comm._Mgmt. -> Hydraulic_Interface_Module
+Channel44: AIMS_Digital_Comm._Mgmt. -> Cabin_Pressure_Control_Sys.
+Channel44: AIMS_Digital_Comm._Mgmt. -> ADS-B_LDPU_Controller
+Channel44: AIMS_Digital_Comm._Mgmt. -> Central_Maintenance_Computer
+Channel44: AIMS_Digital_Comm._Mgmt. -> Hydraulic_Quantity_Monitor_Unit
+Channel44: AIMS_Digital_Comm._Mgmt. -> Cockpit_Printer
+Channel44: AIMS_Digital_Comm._Mgmt. -> Audio_Entertainment_System_(AES)_Controller
+Channel44: AIMS_Digital_Comm._Mgmt. -> Probes_Heat_Computer
+Channel44: AIMS_Digital_Comm._Mgmt. -> Fuel_Qty._Indicating_System
+Channel44: AIMS_Digital_Comm._Mgmt. -> Airborne_HF/SSB_System
+Channel44: AIMS_Digital_Comm._Mgmt. -> Eng_Interface_Vibration_Monitoring_Unit
+Channel44: AIMS_Digital_Comm._Mgmt. -> Head-Up_Display_Computer
+Channel44: AIMS_Digital_Comm._Mgmt. -> APU_Controller
+Channel44: AIMS_Digital_Comm._Mgmt. -> Passenger_In_Flight_Info_Unit
+Channel44: AIMS_Digital_Comm._Mgmt. -> Thermal_Monitoring_Unit_(General)
+Channel44: AIMS_Digital_Comm._Mgmt. -> Proximity_Switch_Electronics_Unit
+Channel44: AIMS_Digital_Comm._Mgmt. -> VDR
+
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Airborne_VOR_Receiver_
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Hydraulic_Quantity_Monitor_Unit
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Brake_Steering_Unit
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Hydraulic_Interface_Module
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Smoke_Detection_Control_Unit
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Radio_Tuning_Panel
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Weight_and_Balance_System
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Integrated_Standby_Instrument_System
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Perf._Nav._Computer_System
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Full_Authority_EEC-B
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Flap_Control_Unit_and_Flap_Slat_Electronics_Unit
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Cargo_Bay_Conditioning_Card
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Pass._Entertainment_Tape_Reproducer
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Pack_Temperature_Controller
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Central_Maintenance_Computer
+Channel45: AIMS_Gen._Pur._Bus_num1 -> ADIRS
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Airborne_Separation_Assurance_System
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Circuit_breakers_Monitoring_Unit
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Radio_Altimeter
+Channel45: AIMS_Gen._Pur._Bus_num1 -> Chronometer
+
+Channel46: Manifold_Failure_Detection_System -> Flight_Management_Computer
+Channel46: Manifold_Failure_Detection_System -> Bleed_Air
+Channel46: Manifold_Failure_Detection_System -> Air_Data_System
+Channel46: Manifold_Failure_Detection_System -> HF_Data_Unit
+Channel46: Manifold_Failure_Detection_System -> Slide_Slip_Angle_(SSA)
+Channel46: Manifold_Failure_Detection_System -> Bus_Control_Unit
+Channel46: Manifold_Failure_Detection_System -> FCC_Controller
+Channel46: Manifold_Failure_Detection_System -> GNSS_Navigation_Landing_Unit_(GNLU)
+Channel46: Manifold_Failure_Detection_System -> EPR_Indicator
+Channel46: Manifold_Failure_Detection_System -> Airborne_VHF_COM
+Channel46: Manifold_Failure_Detection_System -> Airborne_HF/SSB_System
+Channel46: Manifold_Failure_Detection_System -> Passenger_In_Flight_Info_Unit
+Channel46: Manifold_Failure_Detection_System -> Global_Positioning_System
+Channel46: Manifold_Failure_Detection_System -> Display_Unit
+Channel46: Manifold_Failure_Detection_System -> Audio_Entertainment_System_(AES)_Controller
+Channel46: Manifold_Failure_Detection_System -> ACARS_and_CMU_Mark_2
+Channel46: Manifold_Failure_Detection_System -> Fuel_System_Interface_Card
+Channel46: Manifold_Failure_Detection_System -> Zone_Controller
+Channel46: Manifold_Failure_Detection_System -> Full_Authority_Engine_Control_A
+Channel46: Manifold_Failure_Detection_System -> Fault_Isolation_&_Detection_System
+
+Channel47: ADDCS_and_EICAS -> APU_Controller
+Channel47: ADDCS_and_EICAS -> Autopilot_Buffer_Unit
+Channel47: ADDCS_and_EICAS -> Multiplexer_PES
+Channel47: ADDCS_and_EICAS -> Cockpit_Voice_recorder
+Channel47: ADDCS_and_EICAS -> Global_Positioning_System
+Channel47: ADDCS_and_EICAS -> Fuel_Qty._Indicating_System
+Channel47: ADDCS_and_EICAS -> Thermal_Monitoring_Unit_(General)
+Channel47: ADDCS_and_EICAS -> AIMS_Gen._Pur._Bus_num3
+Channel47: ADDCS_and_EICAS -> Bus_Control_Unit
+Channel47: ADDCS_and_EICAS -> Central_Maintenance_Computer
+Channel47: ADDCS_and_EICAS -> APU_Electronic_Control_Unit
+Channel47: ADDCS_and_EICAS -> Audio_Control_Panel
+Channel47: ADDCS_and_EICAS -> Stabilizer_Trim_Module
+Channel47: ADDCS_and_EICAS -> Fire_Detection_Unit
+Channel47: ADDCS_and_EICAS -> CIDS
+Channel47: ADDCS_and_EICAS -> Propulsion_Multiplexer_(PMUX)
+Channel47: ADDCS_and_EICAS -> Windshear_Computer_(Sperry)
+Channel47: ADDCS_and_EICAS -> AIMS_General_Purpose_Bus_num4
+Channel47: ADDCS_and_EICAS -> Cargo_Electronics_Interface_Unit
+Channel47: ADDCS_and_EICAS -> Airborne_DME
+
+Channel48: Cabin_Pressure_Controller -> ECAM_Control_Panel
+Channel48: Cabin_Pressure_Controller -> FADEC_Channel_A
+Channel48: Cabin_Pressure_Controller -> APU_Controller
+Channel48: Cabin_Pressure_Controller -> Cabin_Pressure_Control_Sys.
+Channel48: Cabin_Pressure_Controller -> Passenger_Entertainment_Sys_Audio_Repro.
+Channel48: Cabin_Pressure_Controller -> Eng_Interface_Vibration_Monitoring_Unit
+Channel48: Cabin_Pressure_Controller -> Data_Link_Control_and_Display_Unit
+Channel48: Cabin_Pressure_Controller -> AIMS_Gen._Pur._Bus_num3
+Channel48: Cabin_Pressure_Controller -> Engine_Instrument_System
+Channel48: Cabin_Pressure_Controller -> Cade_Environment_System
+Channel48: Cabin_Pressure_Controller -> MCDU
+Channel48: Cabin_Pressure_Controller -> Windshear_Computer_(Sperry)
+Channel48: Cabin_Pressure_Controller -> Pneumatic_Control_System
+Channel48: Cabin_Pressure_Controller -> Electrical_Contractor_Management_Unit
+Channel48: Cabin_Pressure_Controller -> AIMS_Display_Unit
+Channel48: Cabin_Pressure_Controller -> Land_Rollout_CU/Landing_C_&_LU
+Channel48: Cabin_Pressure_Controller -> Hydraulic_Interface_Module
+Channel48: Cabin_Pressure_Controller -> Propulsion_Discrete_Interface_Unit
+Channel48: Cabin_Pressure_Controller -> Audio_Management_System
+Channel48: Cabin_Pressure_Controller -> Airborne_ADF_Controller
+
+!SDI
+Channel1: APU_Electronic_Control_Unit -> 01
+Channel1: Passenger_Entertainment_Sys_Audio_Repro. -> 11
+Channel1: APU_Electronic_Control_Unit -> 00
+Channel1: TCAS_Control_Panel -> 10
+Channel1: Central_Maintenance_Computer -> 10
+Channel1: TACAN -> 00
+Channel1: ADDCS_and_EICAS -> 00
+Channel1: Weight_and_Balance_System -> 00
+Channel1: Airborne_VOR_Receiver_ -> 11
+Channel1: AIMS_General_Purpose_Bus_num4 -> 10
+Channel1: Fuel_Qty._Indicating_System -> 01
+Channel1: TCAS_Control_Panel -> 01
+Channel1: Center_of_Gravity_Control_Computer -> 10
+Channel1: Auto_Brake_Unit -> 01
+Channel1: Air_Condition_Control_System -> 01
+Channel1: Flight_Mgmt_Guidance_Env_Comp -> 11
+Channel1: Special_Fuel_Quan._Sys. -> 01
+Channel1: Flight_Warning_Computer -> 11
+Channel1: Microwave_Landing_System -> 11
+Channel1: ADS-B_LDPU_Controller -> 00
+Channel1: Autostart -> 00
+Channel1: TCAS -> 10
+Channel1: Smoke_Detection_Control_Unit -> 10
+
+Channel2: Pneumatic_Overheat_Detection_Unit -> 01
+Channel2: Circuit_breakers_Monitoring_Unit -> 10
+Channel2: Fuel_System_Interface_Card -> 00
+Channel2: ATC_Transponder -> 01
+Channel2: AIMS_Digital_Comm._Mgmt. -> 11
+Channel2: Pre-recorded_Announcement_Music_Repro. -> 10
+Channel2: Landing_Gear_Prox._Control -> 01
+Channel2: Flap_Control_Unit_and_Flap_Slat_Electronics_Unit -> 11
+Channel2: Video_Control_Unit -> 00
+Channel2: Audio_Entertainment_System_(AES)_Controller -> 10
+Channel2: AIMS_Gen._Pur._Bus_num1 -> 11
+Channel2: Weight_and_Balance_System -> 10
+Channel2: Fuel_Flow_Indicator -> 10
+Channel2: Camera_Interface_Unit -> 11
+Channel2: TCAS_Control_Panel -> 00
+Channel2: Cockpit_Voice_recorder -> 00
+Channel2: Display_Unit -> 01
+Channel2: Misc._Environment_Control -> 11
+Channel2: 15B_Flight_Control_Unit -> 00
+Channel2: Ground_Power_Control_Unit -> 01
+Channel2: AMU_(A320) -> 00
+
+Channel3: Airborne_DME_Controller -> 11
+Channel3: Hydraulic_System_Controller -> 11
+Channel3: Smoke_Detection_Control_Unit -> 10
+Channel3: AMU_(A320) -> 00
+Channel3: Electronic_Engine_Control_(EEC)_Channel_B -> 01
+Channel3: Multiplexer_PES -> 10
+Channel3: AIMS_EFIS_Control_Panel -> 00
+Channel3: Audio_Management_System -> 11
+Channel3: EFI_Controller -> 10
+Channel3: IRS_Controller -> 01
+Channel3: AIMS_Gen._Pur._Bus_num3 -> 00
+Channel3: Thermal_Monitoring_Unit_(General) -> 01
+Channel3: Zone_Temperature_Controller -> 00
+Channel3: Brake_Control_Unit -> 01
+Channel3: Slide_Slip_Angle_(SSA) -> 00
+Channel3: AIMS_Digital_Comm._Mgmt. -> 01
+Channel3: Para_Visual_Display_Computer -> 10
+Channel3: Airborne_VHF_COM -> 10
+Channel3: Airborne_VOR_Receiver_ -> 11
+Channel3: Power_Supply_Module -> 00
+Channel3: Stabilizer_Trim_Module -> 11
+
+Channel4: Fuel_System_Controller -> 00
+Channel4: Fire_Detection_Unit -> 11
+Channel4: Bleed_Air -> 11
+Channel4: Centralized_Maintenance_Computer -> 01
+Channel4: Flight_Control_Computer -> 10
+Channel4: APU_Controller -> 10
+Channel4: Ground_Prox._Warning_System -> 01
+Channel4: Windshear_Computer_(Sperry) -> 11
+Channel4: Avionics_c-10_Cooling_Computer -> 00
+Channel4: PVS_Control_Unit -> 00
+Channel4: Airborne_WXR_Controller -> 00
+Channel4: Microwave_Landing_System -> 01
+Channel4: ADIRS -> 01
+Channel4: IRS_Controller -> 10
+Channel4: ATC_Transponder_Controller -> 00
+Channel4: Versatile_Integrated_Avionics_Unit -> 10
+Channel4: EICAS/EFIC_Interface_Unit -> 11
+Channel4: ADIRS_Air_Data_Module_0E6 -> 10
+Channel4: Communication_Management_Unit_Mark_2 -> 11
+Channel4: Fuel_System_Interface_Card -> 01
+Channel4: HF/SSB_System_Controller -> 00
+
+Channel5: Prox._Switch_Electronics_Unit -> 11
+Channel5: Proximity_Switch_Electronics_Unit -> 10
+Channel5: Fuel_Quantity_Gauging_Unit -> 10
+Channel5: Anti-Skid_System -> 10
+Channel5: Bus_Control_Unit -> 11
+Channel5: AIMS_Cursor_Control_Device -> 00
+Channel5: Integrated_Standby_Instrument_System -> 00
+Channel5: Airborne_VOR_Controller -> 01
+Channel5: Slide_Slip_Angle_(SSA) -> 01
+Channel5: Airborne_ILS_Controller -> 01
+Channel5: Satellite_ACU -> 00
+Channel5: Passenger_Entertainment_Sys_Main_MUX -> 10
+Channel5: Airborne_VOR_Receiver_ -> 00
+Channel5: VHF_COM_Controller -> 11
+Channel5: APU_Controller -> 01
+Channel5: Cargo_Control_Logic_Unit -> 10
+Channel5: Fuel_System_Controller -> 11
+Channel5: Data_Link_Control_and_Display_Unit -> 00
+Channel5: Centralized_Fault_Data_Interface_Unit -> 01
+Channel5: Airborne_DME -> 11
+Channel5: Fire_Detection_Unit -> 00
+
+Channel6: VDR -> 01
+Channel6: Fuel_Quantity_Totalizer -> 11
+Channel6: Eng_Interface_Vibration_Monitoring_Unit -> 01
+Channel6: Airborne_HF/SSB_System -> 11
+Channel6: Airborne_DME -> 00
+Channel6: Video_Control_Unit -> 00
+Channel6: Cockpit_Voice_Recorder -> 10
+Channel6: ADS-B_Link_Display_Processor_Unit_(LPDU) -> 11
+Channel6: Ground_Auxiliary_Power_Unit -> 00
+Channel6: Fuel_System_Controller -> 11
+Channel6: Display_Unit -> 10
+Channel6: Fire_Detection_Unit -> 00
+Channel6: Airborne_VOR_Controller -> 10
+Channel6: CDTI_Display_Unit -> 01
+Channel6: Fuel_System_Interface_Card -> 01
+Channel6: Thrust_Rating_Controller -> 01
+Channel6: Stall_Warning_Card -> 00
+Channel6: AIMS_Cursor_Control_Device -> 00
+Channel6: Multiplexer_PES -> 10
+Channel6: FAC -> 11
+Channel6: Air_Data_System -> 10
+
+Channel7: Fuel_Management_Computer -> 00
+Channel7: Fire_Detection_Unit -> 00
+Channel7: EICAS/EFIC_Interface_Unit -> 11
+Channel7: Fuel_Qty._Indicating_System -> 10
+Channel7: ACARS_and_CMU_Mark_2 -> 01
+Channel7: Air_Traffic_Service_Unit -> 11
+Channel7: AIMS_Gen._Pur._Bus_num3 -> 00
+Channel7: Equipment_Cooling_Card -> 10
+Channel7: Data_Link_Control_and_Display_Unit -> 11
+Channel7: Flight_Mgmt_Guidance_Env_Comp -> 00
+Channel7: Centralized_Maintenance_Computer -> 11
+Channel7: CDTI_Display_Unit -> 10
+Channel7: Fuel_Unit_Management_System -> 01
+Channel7: Proximity_Switch_Electronics_Unit -> 01
+Channel7: Airborne_Separation_Assurance_System -> 00
+Channel7: Autostart -> 10
+Channel7: Flight_Control_Secondary_Computer -> 11
+Channel7: 15B_Flight_Control_Unit -> 10
+Channel7: Window_Heat_Computer -> 01
+Channel7: VDR -> 01
+Channel7: Passenger_In_Flight_Info_Unit -> 00
+
+Channel8: Integrated_Static_Probe -> 10
+Channel8: Generator_Control_Unit -> 01
+Channel8: GNSS_Navigation_Landing_Unit_(GNLU) -> 11
+Channel8: Flight_Control_Computer -> 01
+Channel8: Hydraulic_Interface_Module -> 11
+Channel8: FMC_Controller -> 11
+Channel8: Airborne_HF/SSB_System -> 10
+Channel8: Passenger_In_Flight_Info_Unit -> 00
+Channel8: Airborne_VOR_Controller -> 10
+Channel8: Audio_Management_System -> 01
+Channel8: Fuel_Quantity_Gauging_Unit -> 10
+Channel8: APU_Electronic_Control_Unit -> 01
+Channel8: Angle_of_Attack_Sensor -> 11
+Channel8: Radio_Altimeter -> 00
+Channel8: ACARS_and_CMU_Mark_2 -> 11
+Channel8: APU_Electronic_Control_Unit -> 10
+Channel8: Multiplexer_PES -> 00
+Channel8: Weight_and_Balance_System -> 00
+Channel8: Airborne_DME_Controller -> 00
+Channel8: Cabin_Ventilation_Controller -> 01
+Channel8: Flight_Warning_Computer -> 01
+Channel8: Battery_Charge_Limiter -> 00
+
+Channel9: Fuel_Flow_Indicator -> 11
+Channel9: Airborne_Weather_Radar -> 01
+Channel9: Fuel_Flow_Indicator -> 10
+Channel9: Propulsion_Multiplexer_(PMUX) -> 01
+Channel9: Manifold_Failure_Detection_System -> 11
+Channel9: IRS_Controller -> 00
+Channel9: FCC_Controller -> 11
+Channel9: ATC_Transponder -> 00
+Channel9: High_Power_Amplifier -> 00
+Channel9: Airborne_DME_Controller -> 00
+Channel9: Airborne_ADF_System -> 11
+Channel9: Electronic_Engine_Control_(EEC)_Channel_B -> 01
+Channel9: Audio_Management_System -> 10
+Channel9: Air_Supply_Control_&_Test_Unit -> 10
+Channel9: Fire_Detection_Unit -> 01
+Channel9: Cabin_Pressure_Control_Sys. -> 00
+Channel9: Ground_Power_Control_Unit -> 00
+Channel9: Flight_Management_Computer -> 10
+Channel9: Satellite_Data_Unit -> 01
+Channel9: Flight_Control_Primary_Computer -> 10
+Channel9: Pack_Temperature_Controller -> 11
+Channel9: Land_Rollout_CU/Landing_C_&_LU -> 01
+
+Channel10: Flight_Data_Interface_Unit -> 00
+Channel10: AIMS_General_Purpose_Bus_num4 -> 00
+Channel10: Fuel_Qty._Indicating_System -> 10
+Channel10: Engine_Instrument_System -> 01
+Channel10: Airborne_ILS_Controller -> 00
+Channel10: Autostart -> 11
+Channel10: Slide_Slip_Angle_(SSA) -> 01
+Channel10: MCDU -> 01
+Channel10: Passenger_Entertainment_Sys_Main_MUX -> 11
+Channel10: Audio_Entertainment_System_(AES)_Controller -> 01
+Channel10: AIMS_EFIS_Control_Panel -> 10
+Channel10: Central_Maintenance_Computer -> 10
+Channel10: Fuel_Management_Computer -> 11
+Channel10: FADEC_Channel_A -> 00
+Channel10: PVS_Control_Unit -> 01
+Channel10: Landing_Gear_Prox._Control -> 00
+Channel10: Circuit_breakers_Monitoring_Unit -> 11
+Channel10: TACAN -> 11
+Channel10: Brake_System_Control_Unit -> 01
+Channel10: Full_Authority_EEC-A -> 10
+Channel10: AMU_(A320) -> 00
+
+Channel11: Fuel_Qty._Indicating_System -> 00
+Channel11: Equipment_Cooling_Card -> 10
+Channel11: Audio_Management_System -> 01
+Channel11: MLS_Controller -> 11
+Channel11: Smoke_Detection_Control_Unit -> 01
+Channel11: Video_Control_Unit -> 01
+Channel11: AIMS_Display_Unit -> 00
+Channel11: Fuel_Unit_Management_System -> 00
+Channel11: AIMS_Gen._Pur._Bus_num3 -> 10
+Channel11: Air_Traffic_Service_Unit -> 10
+Channel11: Cockpit_Voice_Recorder -> 11
+Channel11: FAC -> 11
+Channel11: Radio_Altimeter -> 11
+Channel11: Hydraulic_System_Monitoring_Unit -> 01
+Channel11: Pass._Entertainment_Tape_Reproducer -> 00
+Channel11: Generator_Control_Unit -> 11
+Channel11: Integrated_Standby_Instrument_System -> 00
+Channel11: Airborne_HF/SSB_System -> 00
+Channel11: Landing_Gear_Position_Interface_Unit -> 10
+Channel11: Bus_Control_Unit -> 01
+Channel11: MLS_Controller -> 01
+Channel11: Digital_Slat/Flap_Computer -> 10
+
+Channel12: Cargo_Bay_Conditioning_Card -> 11
+Channel12: Electrical_Contractor_Management_Unit -> 01
+Channel12: 15B_Flight_Control_Unit -> 11
+Channel12: Manifold_Failure_Detection_System -> 01
+Channel12: Microwave_Landing_System -> 10
+Channel12: Electronic_Spoiler_Control_Unit -> 11
+Channel12: Full_Authority_EEC-B -> 11
+Channel12: Fuel_Qty._Indicating_System -> 01
+Channel12: Electronic_Engine_Control_(EEC)_Channel_A -> 00
+Channel12: FMC_Controller -> 11
+Channel12: HF/SSB_System_Controller -> 01
+Channel12: EFI_Controller -> 10
+Channel12: 15B_Flight_Control_Unit -> 01
+Channel12: Airborne_ADF_System -> 10
+Channel12: Pneumatic_Overheat_Detection_Unit -> 00
+Channel12: ATC_Transponder_Controller -> 10
+Channel12: Flight_Mgmt_Guidance_Env_Comp -> 01
+Channel12: Audio_Control_Panel -> 00
+Channel12: TACAN -> 00
+Channel12: A/P_&_F/D_Mode_Control_Panel_ -> 00
+Channel12: Centralized_Maintenance_Computer -> 10
+Channel12: AIMS_Gen._Pur._Bus_num3 -> 00
+
+Channel13: Power_Supply_Module -> 00
+Channel13: Yaw_Damper_Module -> 11
+Channel13: A/P_&_F/D_Mode_Control_Panel_ -> 00
+Channel13: Vacuum_System_Controller -> 11
+Channel13: Fuel_System_Controller -> 00
+Channel13: Power_Supply_Module -> 10
+Channel13: Flight_Control_Secondary_Computer -> 10
+Channel13: Electronic_Flight_Bag -> 11
+Channel13: Fuel_Unit_Management_System -> 01
+Channel13: Multi-Mode_Receiver_(MMR) -> 10
+Channel13: Prox._Switch_Electronics_Unit -> 10
+Channel13: Slide_Slip_Angle_(SSA) -> 00
+Channel13: ECAM_Control_Panel -> 00
+Channel13: Aircraft_Interface_Unit -> 01
+Channel13: Flap_Control_Unit_and_Flap_Slat_Electronics_Unit -> 01
+Channel13: Ground_Auxiliary_Power_Unit -> 01
+Channel13: Hydraulic_Interface_Module -> 11
+Channel13: Flight_Warning_Computer -> 01
+Channel13: ADIRS_Air_Data_Module_0E6 -> 11
+Channel13: Air_Condition_Control_System -> 01
+Channel13: Load_Management_Unit_(LMU)_Airbus -> 00
+Channel13: Anti-Skid_System -> 10
+
+Channel14: Clock -> 11
+Channel14: Angle_of_Attack_Sensor -> 01
+Channel14: Microwave_Landing_System -> 10
+Channel14: Battery_Charge_Limiter -> 00
+Channel14: Flight_Control_Computer -> 01
+Channel14: EFI_Controller -> 00
+Channel14: Cockpit_Printer -> 11
+Channel14: Zone_Temperature_Controller -> 11
+Channel14: Perf._Nav._Computer_System -> 00
+Channel14: TCAS -> 00
+Channel14: Auto_Brake_Unit -> 00
+Channel14: Proximity_Switch_Electronics_Unit -> 00
+Channel14: Hydraulic_Electrical_Generator_Control_Unit -> 11
+Channel14: Satellite_RF_Unit -> 10
+Channel14: Eng_Interface_Vibration_Monitoring_Unit -> 01
+Channel14: Logic_Drive_Control_Computer -> 10
+Channel14: Fuel_Quantity_Totalizer -> 01
+Channel14: Engine_Control_Unit_Channel_B -> 10
+Channel14: Supersonic_Air_Data_Computer -> 01
+Channel14: Hydraulic_System_Controller -> 11
+Channel14: Air_Condition_Control_System -> 10
+
+Channel15: Flight_Management_Computer -> 10
+Channel15: Perf._Nav._Computer_System -> 10
+Channel15: Propulsion_Discrete_Interface_Unit -> 11
+Channel15: Flight_Control_Secondary_Computer -> 00
+Channel15: Window_Heat_Computer -> 11
+Channel15: Satellite_Data_Unit -> 01
+Channel15: Audio_Control_Panel -> 01
+Channel15: Fuel_Flow_Indicator -> 01
+Channel15: Stabilizer_Trim_Module -> 01
+Channel15: EPR_Indicator -> 11
+Channel15: Fuel_Qty._Indicating_System -> 11
+Channel15: Clock -> 00
+Channel15: Misc._Environment_Control -> 00
+Channel15: Ground_Auxiliary_Power_Unit -> 10
+Channel15: AMU_(A320) -> 01
+Channel15: APU_Controller -> 00
+Channel15: DEFDARS-AIDS -> 10
+Channel15: Fire_Detection_Unit -> 10
+Channel15: Brake_Steering_Unit -> 11
+Channel15: Air_Traffic_Service_Unit -> 00
+Channel15: ACARS_and_CMU_Mark_2 -> 00
+
+Channel16: Brake_System_Control_Unit -> 01
+Channel16: 15B_Flight_Control_Unit -> 11
+Channel16: DFS_System -> 01
+Channel16: Engine_Control_Unit_Channel_B -> 11
+Channel16: Zone_Temperature_Controller -> 00
+Channel16: Eng_Interface_Vibration_Monitoring_Unit -> 11
+Channel16: Aircraft_Interface_Unit -> 01
+Channel16: Environmental_System_Controller -> 00
+Channel16: High_Power_Amplifier -> 10
+Channel16: Proximity_Sensor_Control_Unit -> 11
+Channel16: Chronometer -> 10
+Channel16: Hydraulic_Electrical_Generator_Control_Unit -> 10
+Channel16: DEFDARS-AIDS -> 00
+Channel16: Data_Link_Control_and_Display_Unit -> 00
+Channel16: Fuel_Quantity_Gauging_Unit -> 01
+Channel16: Flight_Control_Computer -> 00
+Channel16: ADS-B_Link_Display_Processor_Unit_(LPDU) -> 01
+Channel16: Equipment_Cooling_Card -> 11
+Channel16: Brake_System_Control_Unit -> 00
+Channel16: Engine_Control_Unit_Channel_A -> 10
+Channel16: Manifold_Failure_Detection_System -> 10
+Channel16: Airborne_Weather_Radar -> 01
+
+Channel17: Thrust_Rating_Controller -> 00
+Channel17: Proximity_Sensor_Control_Unit -> 10
+Channel17: Center_of_Gravity_Control_Computer -> 01
+Channel17: Vacuum_System_Controller -> 11
+Channel17: Satellite_Data_Unit -> 11
+Channel17: Fuel_Jettison_Control_Card -> 11
+Channel17: TCAS -> 00
+Channel17: Advance_Cabin_Entertainment_Serv._Sys. -> 01
+Channel17: Thrust_Management_Computer -> 01
+Channel17: Video_Interface_Unit -> 01
+Channel17: Airborne_ILS_Controller -> 10
+Channel17: DFS_System -> 01
+Channel17: Circuit_breakers_Monitoring_Unit -> 10
+Channel17: Environmental_System_Controller -> 10
+Channel17: Pneumatic_Overheat_Detection_Unit -> 01
+Channel17: Data_Link_Control_and_Display_Unit -> 00
+Channel17: High_Power_Amplifier -> 10
+Channel17: Pass._Entertainment_Tape_Reproducer -> 10
+Channel17: Advance_Cabin_Entertainment_Serv._Sys. -> 11
+Channel17: Hydraulic_Interface_Module -> 00
+Channel17: Radio_Altimeter -> 11
+Channel17: Air_Data_System -> 00
+
+Channel18: Full_Authority_EEC-A -> 10
+Channel18: FADEC_Channel_B -> 01
+Channel18: A429W_SDU_Controller -> 00
+Channel18: Boarding_Music_Machine -> 01
+Channel18: Brake_Temperature_Monitor_Unit -> 00
+Channel18: AIMS_General_Purpose_Bus_num4 -> 11
+Channel18: Audio_Control_Panel -> 00
+Channel18: Cockpit_Voice_Recorder -> 11
+Channel18: Cockpit_Voice_Recorder -> 01
+Channel18: Airborne_VOR_Receiver_ -> 10
+Channel18: Radio_Tuning_Panel -> 10
+Channel18: Satellite_RF_Unit -> 11
+Channel18: TACAN -> 11
+Channel18: FMC_Controller -> 01
+Channel18: Video_Interface_Unit -> 01
+Channel18: EICAS/EFIC_Interface_Unit -> 00
+Channel18: Eng_Interface_Vibration_Monitoring_Unit -> 11
+Channel18: AIMS_Digital_Comm._Mgmt. -> 00
+Channel18: APU_Controller -> 10
+Channel18: Air_Condition_Control_System -> 01
+Channel18: Bus_Control_Unit -> 10
+Channel18: Global_Positioning_System -> 00
+
+Channel19: Window_Heat_Computer -> 01
+Channel19: Airborne_VOR_Controller -> 00
+Channel19: Airborne_Weather_Radar -> 11
+Channel19: FAC -> 00
+Channel19: Airborne_DME -> 11
+Channel19: Prox._Switch_Electronics_Unit -> 01
+Channel19: Landing_Gear_Prox._Control -> 10
+Channel19: Surface_Position_Digitizer -> 00
+Channel19: Head-Up_Display_Computer -> 11
+Channel19: Flight_Management_Computer -> 01
+Channel19: ATC_Transponder -> 10
+Channel19: Centralized_Maintenance_Computer -> 00
+Channel19: Integrated_Static_Probe -> 01
+Channel19: Cabin_Pressure_Controller -> 00
+Channel19: Cargo_Heat -> 11
+Channel19: Pneumatic_Overheat_Detection_Unit -> 01
+Channel19: Ground_Auxiliary_Power_Unit -> 10
+Channel19: Misc._Environment_Control -> 10
+Channel19: APU_Controller -> 00
+Channel19: Pre-recorded_Announcement_Music_Repro. -> 11
+Channel19: Vacuum_System_Controller -> 10
+
+Channel20: Camera_Interface_Unit -> 11
+Channel20: Anti-Skid_System -> 01
+Channel20: Flight_Mgmt_Guidance_Env_Comp -> 10
+Channel20: Multifunction_Air_Data_Probe -> 01
+Channel20: Supersonic_Air_Data_Computer -> 00
+Channel20: Versatile_Integrated_Avionics_Unit -> 01
+Channel20: Bus_Control_Unit -> 00
+Channel20: Weight_and_Balance_System -> 11
+Channel20: Attitude_and_Heading_Ref._System -> 11
+Channel20: Flight_Management_Computer -> 00
+Channel20: Air_Traffic_Service_Unit -> 00
+Channel20: Misc._Environment_Control -> 10
+Channel20: Brake_Temperature_Monitor_Unit -> 00
+Channel20: Proximity_Switch_Electronics_Unit -> 10
+Channel20: Display_Unit -> 11
+Channel20: ACARS_and_CMU_Mark_2 -> 11
+Channel20: Aircraft_Interface_Unit -> 01
+Channel20: Cockpit_Voice_Recorder -> 01
+Channel20: Advance_Cabin_Entertainment_Serv._Sys. -> 10
+Channel20: Communication_Management_Unit_Mark_2 -> 10
+Channel20: Weight_and_Balance_System -> 01
+Channel20: FADEC_Channel_A -> 00
+
+Channel21: Probes_Heat_Computer -> 11
+Channel21: Ground_Auxiliary_Power_Unit -> 11
+Channel21: Fuel_Quantity_Totalizer -> 00
+Channel21: Airborne_ILS_Controller -> 00
+Channel21: Yaw_Damper_Module -> 00
+Channel21: GNSS_Navigation_Landing_Unit_(GNLU) -> 01
+Channel21: Display_Unit -> 00
+Channel21: Inertial_Reference_System -> 01
+Channel21: Airborne_HF/SSB_System -> 10
+Channel21: DEFDARS-AIDS -> 11
+Channel21: Engine_Instrument_System -> 10
+Channel21: Full_Authority_EEC-B -> 01
+Channel21: Pass._Entertainment_Tape_Reproducer -> 00
+Channel21: Predictive_Windshear_System_Sensor -> 10
+Channel21: FAC -> 10
+Channel21: TCAS -> 01
+Channel21: Environmental_System_Controller -> 10
+Channel21: Full_Authority_EEC-A -> 00
+Channel21: Slide_Slip_Angle_(SSA) -> 11
+Channel21: Airborne_ADF_Controller -> 01
+Channel21: Video_Control_Unit -> 11
+
+Channel22: TCAS -> 00
+Channel22: Thrust_Rating_Controller -> 11
+Channel22: Autopilot_Buffer_Unit -> 00
+Channel22: Passenger_Entertainment_Sys_Main_MUX -> 11
+Channel22: Windshear_Computer_(Sperry) -> 10
+Channel22: Probes_Heat_Computer -> 01
+Channel22: Performance_Data_Computer -> 10
+Channel22: FAC -> 11
+Channel22: Microwave_Landing_System -> 01
+Channel22: Inertial_Reference_System -> 01
+Channel22: ATC_Transponder_Controller -> 10
+Channel22: APU_Controller -> 10
+Channel22: ADS-B_Link_Display_Processor_Unit_(LPDU) -> 00
+Channel22: Environmental_System_Controller -> 01
+Channel22: Hydraulic_Interface_Module -> 00
+Channel22: GNSS_Navigation_Unit_(GNU)_and_Satellite_Terminal_Unit_(STU) -> 11
+Channel22: Power_Supply_Module -> 00
+Channel22: AIMS_EFIS_Control_Panel -> 11
+Channel22: Hydraulic_System_Controller -> 10
+Channel22: Audio_Control_Panel -> 00
+Channel22: Land_Rollout_CU/Landing_C_&_LU -> 01
+
+Channel23: Generator_Control_Unit -> 10
+Channel23: Surface_Position_Digitizer -> 10
+Channel23: Cargo_Heat -> 11
+Channel23: Clock -> 00
+Channel23: Propulsion_Discrete_Interface_Unit -> 01
+Channel23: Passenger_Entertainment_Sys_Main_MUX -> 01
+Channel23: Thrust_Rating_Controller -> 00
+Channel23: Land_Rollout_CU/Landing_C_&_LU -> 01
+Channel23: Attitude_and_Heading_Ref._System -> 10
+Channel23: Hydraulic_Interface_Module -> 01
+Channel23: Eng_Interface_Vibration_Monitoring_Unit -> 00
+Channel23: Avionics_c-10_Cooling_Computer -> 11
+Channel23: ACARS_and_CMU_Mark_2 -> 10
+Channel23: Airborne_DME_Controller -> 00
+Channel23: Audio_Entertainment_System_(AES)_Controller -> 00
+Channel23: Passenger_In_Flight_Info_Unit -> 01
+Channel23: FCC_Controller -> 01
+Channel23: ADS-B_LDPU_Controller -> 10
+Channel23: Attitude_and_Heading_Ref._System -> 11
+Channel23: Flight_Control_Computer -> 11
+Channel23: Landing_Gear_Position_Interface_Unit -> 00
+Channel23: Centralized_Maintenance_Computer -> 11
+
+Channel24: MCDU -> 10
+Channel24: DFS_System -> 00
+Channel24: Data_Link_Control_and_Display_Unit -> 10
+Channel24: TACAN -> 11
+Channel24: Hydraulic_Electrical_Generator_Control_Unit -> 00
+Channel24: Cockpit_Voice_recorder -> 10
+Channel24: Ground_Power_Control_Unit -> 01
+Channel24: Airborne_Weather_Radar -> 00
+Channel24: ADDCS_and_EICAS -> 11
+Channel24: Stall_Warning_Card -> 01
+Channel24: Ground_Auxiliary_Power_Unit -> 01
+Channel24: Fuel_Quantity_Totalizer -> 00
+Channel24: Zone_Controller -> 00
+Channel24: GNSS_Navigation_Unit_(GNU)_and_Satellite_Terminal_Unit_(STU) -> 00
+Channel24: Brake_Temperature_Monitor_Unit -> 01
+Channel24: FAC -> 01
+Channel24: Advance_Cabin_Entertainment_Serv._Sys. -> 11
+Channel24: Video_Control_Unit -> 11
+Channel24: Stabilizer_Trim_Module -> 10
+Channel24: Cockpit_Voice_Recorder -> 11
+Channel24: Special_Fuel_Quan._Sys. -> 10
+Channel24: Advance_Cabin_Entertainment_Serv._Sys. -> 01
+
+Channel25: Centralized_Maintenance_Computer -> 01
+Channel25: Electronic_Flight_Bag -> 01
+Channel25: EPR_Indicator -> 11
+Channel25: Fuel_System_Interface_Card -> 11
+Channel25: HF_Data_Unit -> 10
+Channel25: Electronic_Flt._Instruments -> 00
+Channel25: A429W_SDU_Controller -> 01
+Channel25: TACAN_Adapter_Unit -> 00
+Channel25: Centralized_Maintenance_Computer -> 11
+Channel25: High-Speed_Data_Unit -> 11
+Channel25: Airborne_DME -> 10
+Channel25: Battery_Charge_Limiter -> 10
+Channel25: Aircraft_Interface_Unit -> 01
+Channel25: Propulsion_Multiplexer_(PMUX) -> 00
+Channel25: AIMS_Digital_Comm._Mgmt. -> 00
+Channel25: Windshear_Computer_(Sperry) -> 11
+Channel25: Predictive_Windshear_System_Sensor -> 01
+Channel25: Global_Positioning_System -> 01
+Channel25: Yaw_Damper_Module -> 10
+Channel25: Fuel_Quantity_Gauging_Unit -> 10
+Channel25: Electronic_Engine_Control_(EEC)_Channel_A -> 00
+Channel25: ADIRS -> 10
+
+Channel26: Slide_Slip_Angle_(SSA) -> 00
+Channel26: Flight_Management_Computer -> 10
+Channel26: Airborne_ADF_System -> 01
+Channel26: AIMS_Gen._Pur._Bus_num2 -> 00
+Channel26: PVS_Control_Unit -> 01
+Channel26: MLS_Controller -> 00
+Channel26: Flight_Control_Secondary_Computer -> 10
+Channel26: Angle_of_Attack_Sensor -> 00
+Channel26: A/P_&_F/D_Mode_Control_Panel_ -> 11
+Channel26: Pass._Entertainment_Tape_Reproducer -> 11
+Channel26: Full_Authority_Engine_Control_(P&W) -> 01
+Channel26: AIMS_Cursor_Control_Device -> 01
+Channel26: Fuel_System_Interface_Card -> 11
+Channel26: AIMS_Gen._Pur._Bus_num3 -> 01
+Channel26: Surface_Position_Digitizer -> 10
+Channel26: Thrust_Control_Computer_ -> 01
+Channel26: Full_Authority_Engine_Control_(P&W) -> 00
+Channel26: Ground_Power_Control_Unit -> 00
+Channel26: Airborne_ADF_Controller -> 11
+Channel26: CDTI_Display_Unit -> 10
+Channel26: AIMS_Gen._Pur._Bus_num1 -> 11
+Channel26: Head-Up_Display_Computer -> 10
+
+Channel27: Cargo_Heat -> 00
+Channel27: Electronic_Engine_Control_(EEC)_Channel_B -> 10
+Channel27: HF/SSB_System_Controller -> 11
+Channel27: AIMS_Gen._Pur._Bus_num2 -> 00
+Channel27: APU_Controller -> 00
+Channel27: Bus_Control_Unit -> 01
+Channel27: Probes_Heat_Computer -> 10
+Channel27: Propulsion_Multiplexer_(PMUX) -> 00
+Channel27: A/P_&_F/D_Mode_Control_Panel_ -> 00
+Channel27: AMU_(A320) -> 00
+Channel27: ATC_Transponder -> 10
+Channel27: AIMS_Digital_Comm._Mgmt. -> 11
+Channel27: Multi-Disk_Drive_Unit -> 01
+Channel27: Flight_Control_Primary_Computer -> 01
+Channel27: Electronic_Flight_Bag -> 01
+Channel27: EICAS/EFIC_Interface_Unit -> 01
+Channel27: FADEC_Channel_A -> 11
+Channel27: APU_Electronic_Control_Unit -> 10
+Channel27: Perf._Nav._Computer_System -> 11
+Channel27: Ground_Prox._Warning_System -> 11
+Channel27: EPR_Indicator -> 10
+
+Channel28: Bleed_Air -> 01
+Channel28: Supersonic_Air_Data_Computer -> 01
+Channel28: ADIRS_Air_Data_Module_0E6 -> 00
+Channel28: FCC_Controller -> 01
+Channel28: Flight_Data_Interface_Unit -> 10
+Channel28: Flight_Management_Computer -> 00
+Channel28: AMU_(A320) -> 00
+Channel28: Clock -> 10
+Channel28: Fuel_Flow_Indicator -> 11
+Channel28: HF/SSB_System_Controller -> 10
+Channel28: High-Speed_Data_Unit -> 00
+Channel28: Main_Electrical_System_Controller -> 11
+Channel28: Cockpit_Voice_recorder -> 10
+Channel28: Circuit_breakers_Monitoring_Unit -> 01
+Channel28: Vertical/Horizontal_Gyro -> 01
+Channel28: Camera_Interface_Unit -> 11
+Channel28: TCAS -> 01
+Channel28: Thrust_Control_Computer_ -> 00
+Channel28: CIDS -> 11
+Channel28: Probes_Heat_Computer -> 10
+Channel28: Electronic_Supervisory_Control -> 11
+Channel28: Main_Electrical_System_Controller -> 00
+
+Channel29: Avionics_c-10_Cooling_Computer -> 11
+Channel29: Engine_Control_Unit_Channel_A -> 01
+Channel29: Pneumatic_Overheat_Detection_Unit -> 11
+Channel29: Bleed_Air -> 10
+Channel29: Audio_Entertainment_System_(AES)_Controller -> 01
+Channel29: ADIRS_Air_Data_Module_0E6 -> 00
+Channel29: Flap_Control_Unit_and_Flap_Slat_Electronics_Unit -> 01
+Channel29: Fire_Detection_Unit -> 10
+Channel29: Cabin_Pressure_Controller -> 10
+Channel29: Airborne_VOR_Receiver_ -> 11
+Channel29: Bus_Control_Unit -> 10
+Channel29: Perf._Nav._Computer_System -> 11
+Channel29: Pneumatic_Control_System -> 10
+Channel29: Passenger_Entertainment_Sys_Main_MUX -> 00
+Channel29: CDTI_Display_Unit -> 00
+Channel29: Satellite_Data_Unit -> 01
+Channel29: Satellite_Data_Unit -> 11
+Channel29: Environmental_System_Controller -> 10
+Channel29: Crew_Rest_Temp._Controller -> 00
+Channel29: Flight_Warning_Computer -> 00
+Channel29: Load_Management_Unit_(LMU)_Airbus -> 00
+Channel29: Flight_Control_Secondary_Computer -> 01
+
+Channel30: Power_Supply_Module -> 00
+Channel30: Airborne_Vibration_Monitor -> 00
+Channel30: Fuel_Qty._Indicating_System -> 01
+Channel30: ATC_Transponder -> 10
+Channel30: Airborne_VOR_Receiver_ -> 10
+Channel30: Thrust_Rating_Controller -> 00
+Channel30: Main_Electrical_System_Controller -> 11
+Channel30: Thrust_Management_Computer -> 10
+Channel30: Multiplexer_PES -> 00
+Channel30: Multi-Disk_Drive_Unit -> 11
+Channel30: CIDS -> 10
+Channel30: Cockpit_Voice_recorder -> 11
+Channel30: Electronic_Flight_Bag -> 01
+Channel30: Airborne_ILS_Receiver -> 10
+Channel30: Boarding_Music_Machine -> 11
+Channel30: Equipment_Cooling_Card -> 00
+Channel30: Bus_Control_Unit -> 01
+Channel30: ECAM_Control_Panel -> 01
+Channel30: Cabin_Ventilation_Controller -> 01
+Channel30: Emergency_Electrical_System_Controller -> 11
+Channel30: Slide_Slip_Angle_(SSA) -> 00
+
+Channel31: Flight_Control_Secondary_Computer -> 10
+Channel31: Brake_Control_Unit -> 11
+Channel31: APU_Controller -> 00
+Channel31: Audio_Control_Panel -> 00
+Channel31: Airborne_DME_Controller -> 01
+Channel31: Airborne_Separation_Assurance_System -> 01
+Channel31: Radio_Altimeter -> 11
+Channel31: Air_Data_System -> 10
+Channel31: Landing_Gear_Prox._Control -> 11
+Channel31: Weight_and_Balance_System -> 10
+Channel31: MCDU -> 00
+Channel31: Global_Positioning_System -> 00
+Channel31: ECAM_Control_Panel -> 10
+Channel31: Camera_Interface_Unit -> 01
+Channel31: Vacuum_System_Controller -> 11
+Channel31: A429W_SDU_Controller -> 10
+Channel31: Communication_Management_Unit_Mark_2 -> 01
+Channel31: Engine_Instrument_System -> 00
+Channel31: ADDCS_and_EICAS -> 11
+Channel31: Integrated_Standby_Instrument_System -> 01
+Channel31: Airborne_ILS_Controller -> 00
+
+Channel32: Camera_Interface_Unit -> 01
+Channel32: ADS-B_LDPU_Controller -> 10
+Channel32: Brake_Control_Unit -> 10
+Channel32: Landing_Gear_Prox._Control -> 11
+Channel32: Full_Authority_Engine_Control_B -> 00
+Channel32: Display_Unit -> 11
+Channel32: Centralized_Maintenance_Computer -> 01
+Channel32: VHF_COM_Controller -> 11
+Channel32: Brake_Temperature_Monitor_Unit -> 00
+Channel32: Airborne_WXR_Controller -> 10
+Channel32: Brake_Steering_Unit -> 00
+Channel32: Video_Control_Unit -> 00
+Channel32: FMC_Controller -> 11
+Channel32: Anti-Skid_System -> 11
+Channel32: Airborne_DME -> 10
+Channel32: Airborne_HF/SSB_System -> 00
+Channel32: Circuit_breakers_Monitoring_Unit -> 00
+Channel32: Probes_Heat_Computer -> 01
+Channel32: Power_Supply_Module -> 01
+Channel32: Thrust_Control_Computer_ -> 10
+Channel32: Air_Condition_Control_System -> 01
+
+Channel33: Logic_Drive_Control_Computer -> 11
+Channel33: Stall_Warning_Card -> 00
+Channel33: Digital_Fuel_Gauging_System -> 11
+Channel33: ATC_Transponder -> 01
+Channel33: ACARS_and_CMU_Mark_2 -> 00
+Channel33: Cargo_Bay_Conditioning_Card -> 10
+Channel33: Flt._Cont._Data_Concentrator -> 10
+Channel33: Prox._Switch_Electronics_Unit -> 10
+Channel33: AIMS_Cursor_Control_Device -> 01
+Channel33: Generator_Control_Unit -> 00
+Channel33: Fuel_Quantity_Totalizer -> 11
+Channel33: Center_of_Gravity_Control_Computer -> 11
+Channel33: Fuel_Qty._Indicating_System -> 00
+Channel33: Fuel_Quantity_Totalizer -> 01
+Channel33: Misc._Environment_Control -> 01
+Channel33: Angle_of_Attack_Sensor -> 11
+Channel33: Auto_Brake_Unit -> 10
+Channel33: Power_Supply_Module -> 10
+Channel33: Slide_Slip_Angle_(SSA) -> 00
+Channel33: High-Speed_Data_Unit -> 10
+Channel33: Electronic_Engine_Control_(EEC)_Channel_A -> 01
+Channel33: Airborne_DME_Controller -> 00
+
+Channel34: Propulsion_Discrete_Interface_Unit -> 00
+Channel34: Zone_Temperature_Controller -> 01
+Channel34: ATC_Transponder_Controller -> 10
+Channel34: Logic_Drive_Control_Computer -> 01
+Channel34: Land_Rollout_CU/Landing_C_&_LU -> 11
+Channel34: Pass._Entertainment_Tape_Reproducer -> 10
+Channel34: Inertial_Reference_System -> 00
+Channel34: Fuel_Quantity_Gauging_Unit -> 11
+Channel34: Centralized_Maintenance_Computer -> 00
+Channel34: Digital_Fuel_Gauging_System -> 01
+Channel34: Propulsion_Multiplexer_(PMUX) -> 11
+Channel34: Integrated_Static_Probe -> 01
+Channel34: VDR -> 11
+Channel34: FADEC_Channel_A -> 00
+Channel34: PVS_Control_Unit -> 10
+Channel34: Hydraulic_Quantity_Monitor_Unit -> 10
+Channel34: Equipment_Cooling_Card -> 11
+Channel34: Fuel_System_Interface_Card -> 00
+Channel34: Cabin_Interphone_System -> 10
+Channel34: Electronic_Spoiler_Control_Unit -> 01
+Channel34: Video_Control_Unit -> 00
+
+Channel35: Hydraulic_System_Controller -> 01
+Channel35: Pass._Entertainment_Tape_Reproducer -> 00
+Channel35: Brake_System_Control_Unit -> 10
+Channel35: Fire_Detection_Unit -> 11
+Channel35: Propulsion_Multiplexer_(PMUX) -> 00
+Channel35: Cabin_Ventilation_Controller -> 01
+Channel35: Zone_Controller -> 01
+Channel35: Probes_Heat_Computer -> 11
+Channel35: Engine_Instrument_System -> 01
+Channel35: CDTI_Display_Unit -> 00
+Channel35: Electronic_Engine_Control_(EEC)_Channel_B -> 11
+Channel35: DEFDARS-AIDS -> 11
+Channel35: ATC_Transponder_Controller -> 00
+Channel35: Pack_Temperature_Controller -> 10
+Channel35: APU_Electronic_Control_Unit -> 01
+Channel35: Crew_Rest_Temp._Controller -> 11
+Channel35: ADIRS_Air_Data_Module_0E6 -> 10
+Channel35: Airborne_Vibration_Monitor -> 10
+Channel35: High-Speed_Data_Unit -> 00
+Channel35: Audio_Management_System -> 00
+Channel35: Airborne_VOR_Receiver_ -> 10
+
+Channel36: Fuel_Unit_Management_System -> 00
+Channel36: MLS_Controller -> 11
+Channel36: Air_Traffic_Service_Unit -> 01
+Channel36: IRS_Controller -> 11
+Channel36: EICAS/EFIC_Interface_Unit -> 00
+Channel36: Angle_of_Attack_Sensor -> 10
+Channel36: Probes_Heat_Computer -> 00
+Channel36: AIMS_Display_Unit -> 01
+Channel36: ECAM_Control_Panel -> 11
+Channel36: Airborne_VOR_Controller -> 00
+Channel36: Data_Link_Control_and_Display_Unit -> 00
+Channel36: Audio_Control_Panel -> 10
+Channel36: Stabilizer_Trim_Module -> 10
+Channel36: Ground_Prox._Warning_System -> 10
+Channel36: Audio_Management_System -> 11
+Channel36: TCAS -> 00
+Channel36: Centralized_Fault_Data_Interface_Unit -> 01
+Channel36: Eng_Interface_Vibration_Monitoring_Unit -> 11
+Channel36: Airborne_VHF_COM -> 10
+Channel36: TCAS_Control_Panel -> 01
+Channel36: Hydraulic_Electrical_Generator_Control_Unit -> 01
+
+Channel37: Airborne_VOR_Controller -> 00
+Channel37: Electronic_Engine_Control_(EEC)_Channel_A -> 00
+Channel37: Stabilizer_Trim_Module -> 00
+Channel37: Boarding_Music_Machine -> 01
+Channel37: AIMS_Display_Unit -> 10
+Channel37: Cargo_Bay_Conditioning_Card -> 10
+Channel37: Data_Loader -> 01
+Channel37: Airborne_VOR_Receiver_ -> 01
+Channel37: Multi-Disk_Drive_Unit -> 00
+Channel37: Flight_Warning_Computer -> 10
+Channel37: HF/SSB_System_Controller -> 11
+Channel37: APU_Controller -> 10
+Channel37: Proximity_Switch_Electronics_Unit -> 11
+Channel37: Cargo_Heat -> 11
+Channel37: Angle_of_Attack_Sensor -> 11
+Channel37: Ground_Auxiliary_Power_Unit -> 00
+Channel37: Inertial_Reference_System -> 10
+Channel37: Airborne_Vibration_Monitor -> 01
+Channel37: AIMS_Cursor_Control_Device -> 01
+Channel37: Cargo_Control_Logic_Unit -> 00
+Channel37: Para_Visual_Display_Computer -> 01
+
+Channel38: Cargo_Bay_Conditioning_Card -> 01
+Channel38: Center_of_Gravity_Fuel_Control_Comp. -> 01
+Channel38: Brake_Temperature_Monitor_Unit -> 10
+Channel38: ADS-B_LDPU_Controller -> 00
+Channel38: Thrust_Rating_Controller -> 01
+Channel38: Generator_Control_Unit -> 00
+Channel38: Center_of_Gravity_Control_Computer -> 11
+Channel38: Crew_Rest_Temp._Controller -> 00
+Channel38: Flap_Control_Unit_and_Flap_Slat_Electronics_Unit -> 11
+Channel38: AMU_(A320) -> 10
+Channel38: Full_Authority_Engine_Control_A -> 10
+Channel38: Airborne_DME -> 00
+Channel38: Cargo_Electronics_Interface_Unit -> 11
+Channel38: Airborne_ILS_Receiver -> 11
+Channel38: Fuel_Quantity_Gauging_Unit -> 01
+Channel38: FADEC_Channel_B -> 10
+Channel38: Fire_Detection_Unit -> 01
+Channel38: CDTI_Display_Unit -> 00
+Channel38: Stall_Warning_Card -> 00
+Channel38: Generator_Control_Unit -> 10
+Channel38: Full_Authority_EEC-A -> 01
+Channel38: Communication_Management_Unit_Mark_2 -> 10
+Channel38: AMU_(A320) -> 11
+
+Channel39: Power_Supply_Module -> 11
+Channel39: Electronic_Engine_Control_(EEC)_Channel_A -> 11
+Channel39: Multiplexer_PES -> 10
+Channel39: Cargo_Electronics_Interface_Unit -> 10
+Channel39: APU_Electronic_Control_Unit -> 10
+Channel39: Crew_Rest_Temp._Controller -> 01
+Channel39: Audio_Management_System -> 11
+Channel39: Vertical/Horizontal_Gyro -> 01
+Channel39: MLS_Controller -> 01
+Channel39: Central_Maintenance_Computer -> 10
+Channel39: Environmental_System_Controller -> 00
+Channel39: Audio_Control_Panel -> 01
+Channel39: AIDS_Data_Management_System -> 00
+Channel39: Microwave_Landing_System -> 00
+Channel39: Anti-Skid_System -> 00
+Channel39: Data_Loader -> 11
+Channel39: Radio_Tuning_Panel -> 01
+Channel39: Engine_Control_Unit_Channel_B -> 00
+Channel39: Manifold_Failure_Detection_System -> 00
+Channel39: Stabilizer_Trim_Module -> 10
+Channel39: Windshear_Computer_(Sperry) -> 11
+
+Channel40: Camera_Interface_Unit -> 01
+Channel40: Full_Authority_EEC-B -> 00
+Channel40: Airborne_Vibration_Monitor -> 00
+Channel40: EPR_Indicator -> 10
+Channel40: Display_Management_Computer -> 01
+Channel40: Windshear_Computer_(Sperry) -> 11
+Channel40: APU_Electronic_Control_Unit -> 00
+Channel40: TCAS -> 01
+Channel40: Flap_Control_Unit_and_Flap_Slat_Electronics_Unit -> 10
+Channel40: VDR -> 10
+Channel40: Passenger_In_Flight_Info_Unit -> 11
+Channel40: A/P_&_F/D_Mode_Control_Panel_ -> 10
+Channel40: Window_Heat_Computer -> 00
+Channel40: Airborne_VOR_Receiver_ -> 11
+Channel40: Display_Management_Computer -> 00
+Channel40: Cockpit_Voice_recorder -> 11
+Channel40: Power_Supply_Module -> 11
+Channel40: Electronic_Flt._Instruments -> 10
+Channel40: Engine_Control_Unit_Channel_A -> 00
+Channel40: Airborne_Weather_Radar -> 01
+Channel40: Main_Electrical_System_Controller -> 01
+Channel40: High_Power_Amplifier -> 01
+
+Channel41: Equipment_Cooling_Card -> 11
+Channel41: VDR -> 11
+Channel41: Smoke_Detection_Control_Unit -> 00
+Channel41: AIMS_EFIS_Control_Panel -> 10
+Channel41: Brake_System_Control_Unit -> 01
+Channel41: Pre-recorded_Announcement_Music_Repro. -> 10
+Channel41: ECAM_Control_Panel -> 00
+Channel41: Hydraulic_System_Monitoring_Unit -> 00
+Channel41: DEFDARS-AIDS -> 11
+Channel41: Fire_Detection_Unit -> 10
+Channel41: High-Speed_Data_Unit -> 01
+Channel41: Communication_Management_Unit_Mark_2 -> 00
+Channel41: Window_Heat_Control_Unit -> 10
+Channel41: Electronic_Engine_Control_(EEC)_Channel_B -> 01
+Channel41: Microwave_Landing_System -> 11
+Channel41: Fuel_Qty._Indicating_System -> 01
+Channel41: ADS-B_Link_Display_Processor_Unit_(LPDU) -> 10
+Channel41: DFS_System -> 00
+Channel41: Proximity_Switch_Electronics_Unit -> 00
+Channel41: Electronic_Flt._Instruments -> 11
+Channel41: Propulsion_Discrete_Interface_Unit -> 01
+
+Channel42: A/P_&_F/D_Mode_Control_Panel_ -> 01
+Channel42: Yaw_Damper_Module -> 10
+Channel42: Ground_Auxiliary_Power_Unit -> 00
+Channel42: HF_Data_Unit -> 01
+Channel42: FCC_Controller -> 01
+Channel42: Fuel_Qty._Indicating_System -> 00
+Channel42: Full_Authority_Engine_Control_B -> 00
+Channel42: Clock -> 11
+Channel42: Integrated_Standby_Instrument_System -> 10
+Channel42: Power_Supply_Module -> 10
+Channel42: Land_Rollout_CU/Landing_C_&_LU -> 00
+Channel42: Passenger_Entertainment_Sys_Audio_Repro. -> 00
+Channel42: FCC_Controller -> 10
+Channel42: Camera_Interface_Unit -> 10
+Channel42: Stall_Warning_Card -> 11
+Channel42: Fire_Detection_Unit -> 11
+Channel42: Pass._Entertainment_Tape_Reproducer -> 11
+Channel42: Video_Control_Unit -> 01
+Channel42: Airborne_Vibration_Monitor -> 00
+Channel42: AIMS_Gen._Pur._Bus_num2 -> 01
+Channel42: Satellite_ACU -> 10
+Channel42: Fuel_Management_Computer -> 11
+Channel42: Integrated_Standby_Instrument_System -> 01
+
+Channel43: Tire_Pressure_Monitoring_System -> 00
+Channel43: TACAN -> 01
+Channel43: FCC_Controller -> 01
+Channel43: Fuel_Qty._Indicating_System -> 11
+Channel43: Centralized_Fault_Data_Interface_Unit -> 11
+Channel43: Ground_Prox._Warning_System -> 00
+Channel43: Attitude_and_Heading_Ref._System -> 11
+Channel43: FAC -> 10
+Channel43: Air_Supply_Control_&_Test_Unit -> 10
+Channel43: Load_Management_Unit_(LMU)_Airbus -> 01
+Channel43: Special_Fuel_Quan._Sys. -> 01
+Channel43: Satellite_Data_Unit -> 00
+Channel43: Flight_Data_Interface_Unit -> 11
+Channel43: TCAS -> 00
+Channel43: Autostart -> 10
+Channel43: Fuel_Flow_Indicator -> 01
+Channel43: Airborne_Weather_Radar -> 00
+Channel43: Crew_Rest_Temp._Controller -> 10
+Channel43: Ground_Auxiliary_Power_Unit -> 00
+Channel43: APU_Controller -> 11
+Channel43: ADIRS -> 10
+
+Channel44: Hydraulic_Interface_Module -> 00
+Channel44: Proximity_Switch_Electronics_Unit -> 11
+Channel44: Head-Up_Display_Computer -> 00
+Channel44: Full_Authority_EEC-B -> 11
+Channel44: Cockpit_Printer -> 01
+Channel44: Eng_Interface_Vibration_Monitoring_Unit -> 00
+Channel44: Central_Maintenance_Computer -> 11
+Channel44: Passenger_In_Flight_Info_Unit -> 01
+Channel44: Fuel_Qty._Indicating_System -> 01
+Channel44: VDR -> 11
+Channel44: Audio_Entertainment_System_(AES)_Controller -> 00
+Channel44: AIMS_Digital_Comm._Mgmt. -> 00
+Channel44: Thermal_Monitoring_Unit_(General) -> 01
+Channel44: Probes_Heat_Computer -> 10
+Channel44: Weight_and_Balance_System -> 10
+Channel44: ADS-B_LDPU_Controller -> 01
+Channel44: Hydraulic_Quantity_Monitor_Unit -> 11
+Channel44: Multi-Mode_Receiver_(MMR) -> 10
+Channel44: Airborne_HF/SSB_System -> 10
+Channel44: Cabin_Pressure_Control_Sys. -> 00
+Channel44: APU_Controller -> 10
+
+Channel45: Chronometer -> 00
+Channel45: Airborne_VOR_Receiver_ -> 11
+Channel45: ADIRS -> 10
+Channel45: Circuit_breakers_Monitoring_Unit -> 10
+Channel45: Pass._Entertainment_Tape_Reproducer -> 00
+Channel45: Central_Maintenance_Computer -> 01
+Channel45: Hydraulic_Quantity_Monitor_Unit -> 10
+Channel45: Flap_Control_Unit_and_Flap_Slat_Electronics_Unit -> 01
+Channel45: Radio_Altimeter -> 01
+Channel45: Hydraulic_Interface_Module -> 01
+Channel45: Weight_and_Balance_System -> 00
+Channel45: Smoke_Detection_Control_Unit -> 11
+Channel45: Perf._Nav._Computer_System -> 11
+Channel45: AIMS_Gen._Pur._Bus_num1 -> 00
+Channel45: Brake_Steering_Unit -> 01
+Channel45: Radio_Tuning_Panel -> 10
+Channel45: Full_Authority_EEC-B -> 00
+Channel45: Integrated_Standby_Instrument_System -> 11
+Channel45: Airborne_Separation_Assurance_System -> 10
+Channel45: Cargo_Bay_Conditioning_Card -> 00
+Channel45: Pack_Temperature_Controller -> 11
+
+Channel46: Zone_Controller -> 10
+Channel46: Airborne_HF/SSB_System -> 11
+Channel46: Bleed_Air -> 01
+Channel46: HF_Data_Unit -> 11
+Channel46: Slide_Slip_Angle_(SSA) -> 10
+Channel46: Manifold_Failure_Detection_System -> 00
+Channel46: Fuel_System_Interface_Card -> 00
+Channel46: Bus_Control_Unit -> 01
+Channel46: Airborne_VHF_COM -> 00
+Channel46: EPR_Indicator -> 11
+Channel46: GNSS_Navigation_Landing_Unit_(GNLU) -> 01
+Channel46: Audio_Entertainment_System_(AES)_Controller -> 01
+Channel46: Global_Positioning_System -> 11
+Channel46: Full_Authority_Engine_Control_A -> 11
+Channel46: FCC_Controller -> 00
+Channel46: ACARS_and_CMU_Mark_2 -> 10
+Channel46: Fault_Isolation_&_Detection_System -> 10
+Channel46: Flight_Management_Computer -> 01
+Channel46: Air_Data_System -> 10
+Channel46: Display_Unit -> 01
+Channel46: Passenger_In_Flight_Info_Unit -> 00
+
+Channel47: Global_Positioning_System -> 01
+Channel47: Propulsion_Multiplexer_(PMUX) -> 10
+Channel47: AIMS_Gen._Pur._Bus_num3 -> 00
+Channel47: Bus_Control_Unit -> 01
+Channel47: Multiplexer_PES -> 10
+Channel47: Fuel_Qty._Indicating_System -> 01
+Channel47: ADDCS_and_EICAS -> 00
+Channel47: APU_Controller -> 10
+Channel47: Audio_Control_Panel -> 11
+Channel47: Thermal_Monitoring_Unit_(General) -> 11
+Channel47: Cargo_Electronics_Interface_Unit -> 11
+Channel47: Autopilot_Buffer_Unit -> 00
+Channel47: Central_Maintenance_Computer -> 11
+Channel47: AIMS_General_Purpose_Bus_num4 -> 01
+Channel47: Cockpit_Voice_recorder -> 10
+Channel47: APU_Electronic_Control_Unit -> 10
+Channel47: Fire_Detection_Unit -> 01
+Channel47: Stabilizer_Trim_Module -> 00
+Channel47: Airborne_DME -> 01
+Channel47: Windshear_Computer_(Sperry) -> 10
+Channel47: Cockpit_Voice_recorder -> 11
+Channel47: CIDS -> 00
+
+Channel48: Passenger_Entertainment_Sys_Audio_Repro. -> 11
+Channel48: Cabin_Pressure_Control_Sys. -> 01
+Channel48: Audio_Management_System -> 10
+Channel48: Electrical_Contractor_Management_Unit -> 11
+Channel48: Pneumatic_Control_System -> 10
+Channel48: Eng_Interface_Vibration_Monitoring_Unit -> 00
+Channel48: Pneumatic_Control_System -> 00
+Channel48: Airborne_ADF_Controller -> 00
+Channel48: AIMS_Display_Unit -> 10
+Channel48: Data_Link_Control_and_Display_Unit -> 00
+Channel48: APU_Controller -> 01
+Channel48: Cabin_Pressure_Controller -> 00
+Channel48: ECAM_Control_Panel -> 10
+Channel48: Cade_Environment_System -> 01
+Channel48: Hydraulic_Interface_Module -> 01
+Channel48: Land_Rollout_CU/Landing_C_&_LU -> 01
+Channel48: MCDU -> 00
+Channel48: AIMS_Gen._Pur._Bus_num3 -> 11
+Channel48: Windshear_Computer_(Sperry) -> 10
+Channel48: Engine_Instrument_System -> 11
+Channel48: FADEC_Channel_A -> 11
+Channel48: Propulsion_Discrete_Interface_Unit -> 01
+
+!Rules
+alert Channel28 0o277 Main_Electrical_System_Controller bits[22:26)=001 I time kdphhyymimjzxtjdtghzmayvylvequqmrkrawtzevzqhdtyhekr
+log Channel33 0o355 ATC_Transponder data:0110101110110100101  time hticeblinzvnyqqsetaylqrhckomskwqdrxfngrrmwdxqnjpcuzuelnbmtuyrksymvycgnhbomlxpgtjxni
+alert Channel10 0o375 Autostart bits[20:23)=11 C time cydgsbabeawgcbisucfrctqnhryfubxyulaspdgqfupjrtlm
+alert/log Channel17 0o376 Video_Interface_Unit Encoding:BNR C xnipbigqetao
+alert Channel11 0o377 Smoke_Detection_Control_Unit data:1011010000000000100 C xmnwjhzuxlipibijdbdffrdtotehkpoghpuubuwosfelpxmvklhzroivvvdyjqfwxotkdogbihapxrhacgtdkts
+alert Channel45 0o216 Central_Maintenance_Computer bits[15:20)=1111 C time kegmmqpzbhuousjnszzxmhsstxjfueyizfkpseiukqevitbcsnaev
+log Channel41 0o377 Window_Heat_Control_Unit bits[21:25)=110  uxfdgwdcevdzvlyrgkrdoscefuz
+alert Channel21 0o375 Predictive_Windshear_System_Sensor bits[18:26)=1011000 C time jykixaepogrehtxpkgsmmdkshucolohzpc
+alert Channel27 0o172 FADEC_Channel_A data:0o211 C time cie
+alert/log Channel22 0o371 Performance_Data_Computer bits[17:19)=0  time xvesvbigmppeabdkcgyyhbbpjoneztmezymgvf
+alert Channel36 0o376 TCAS_Control_Panel Encoding:BNR 00 C qvnszywvxlzbbaaugaareflaquvpmbiukyjnsvcegzzmtgaougnhqtktydfsqilmkdxdkzygwbyjxnsghnurgqnntcwcxzir
+log Channel39 0o356 Audio_Management_System bits[22:27)=0111 C lx
+log Channel13 0o371 Flight_Control_Secondary_Computer Encoding:BNR  time 
+alert/log Channel40 0o214 Windshear_Computer_(Sperry) Encoding:DISC 00 C time eibaqajgntnlltwnffzvgqbfdckdjxxprgxjycekwxqgosrcthczbmciu
+log Channel22 0o216 Passenger_Entertainment_Sys_Main_MUX Encoding:DISC 00 time rp
+alert Channel5 0o377 Bus_Control_Unit data:0000100111101010111 I mnqvolwtiiktvfyedesuwgmejwumqmqp
+alert/log Channel14 0o277 Engine_Control_Unit_Channel_B  time hriydvolchswaapvufpggbddmifspinzuulcwrvbwsbnviyqlsmeqmggticeamjmbrwu
+alert Channel40 0o356 TCAS 00 I ccynmudsfdwwrgagjnuzndlskzllqupmblvzxurlxxbbjlevkoblydhjliqxuuwoidsjdergmoxeqic
+alert Channel2 0o371 Cockpit_Voice_recorder Encoding:BNR 00 I ryuiqrehlyihrcldvtmqauscuncqonyystwgryrtmgmemyfalwntduesnqpdbwqdgeczuln
+alert/log Channel34 0o371 Cabin_Interphone_System bits[25:27)=1 I time zuzbeyqjgowuvzxmclthyjrkknkvwtcxpcrzkojoupengwstsbfvlgyointkpdemgtzknwjfatyqrkzljsg
+alert Channel26 0o355 AIMS_Cursor_Control_Device 00 C time gmipeq
+log Channel5 0o214 Fuel_Quantity_Gauging_Unit Encoding:DISC  time rizifvtmjqdbyyipxllndvuknvoqhcyihmqnkeekkdnntuekvtsskbmxxhqgnqjziwlozxeto
+log Channel15 0o277 Propulsion_Discrete_Interface_Unit data:0000001101110111001  lmughdxozxtigu
+alert Channel34 0o355 Propulsion_Discrete_Interface_Unit data:0010100001100100010 I time gkqrdtvawccszkiaxrkbtgtegbmkhgqrbfdxqiznqfknmispkvsgukwgzeyyxicch
+log Channel9 0o41 IRS_Controller Encoding:BCD  vwnj
+alert Channel5 0o377 Fuel_Quantity_Gauging_Unit bits[15:19)=110 C ofdpyobjsdcogqmtixzxylxuuaocpaqxwlafkffscwggizoxschiiychke
+alert/log Channel27 0o356 Flight_Control_Primary_Computer data:1111110011011000111 I time ecfypjpmjngxuvgzjflemklgoqsjkmmqcduioaedxwuyjqugveiakxyojgukcycnkzmhngkjtlhasiqpmfkjzjskhbjxzugyka
+log Channel25 0o356 Aircraft_Interface_Unit bits[15:19)=001 I time rakvknwmbafogchcqzitcarlnxqkbzkrnskczocewbnhyupkntcxeclrrkvnncrfybtnumsaawgmnvaldsvhknpherljzjcz
+alert/log Channel41 0o216 ECAM_Control_Panel Encoding:DISC C ppjlhfiryvrenwbtiwnmjwlougsuplhlmjogyilxwmlnzpgdyxaksacvivbjhwsysynkfzzrnypcishbhu
+log Channel43 0o243 TCAS Encoding:BNR C 
+alert/log Channel46 0o376 Display_Unit bits[13:17)=001 C ytswkozmbwmyotvamqhvbkbktiyfyvwbrvalhjdkyaozronmqawlxmilghecfgqpjnqchrsiolquwvjudrhbgo
+alert/log Channel26 0o277 Pass._Entertainment_Tape_Reproducer  eudoahgwsqspojkayeepdobemeybffclmppnvetksd
+alert/log Channel30 0o371 Thrust_Rating_Controller Encoding:BNR 00 I recmgausxgiafkupc
+alert/log Channel31 0o351 Air_Data_System bits[11:27)=101001101101101 I time lyljlsvhgepmowoiglgyknbuuxepledneorytmkysedbkdbsfuewrkrzcmksmbwdywxphmdsshmiv
+alert/log Channel37 0o243 AIMS_Display_Unit bits[14:25)=1110010011 C time lsheqcgdkuklhpmvfnhqiiyjojqdebenkxmuxcfqkyahwmxrpllrphxzyejqopsabrmdgzpjtylaiijmtq
+alert/log Channel3 0o371 Power_Supply_Module bits[22:27)=0110 C clhxqwhfgcypezoghwcrzobzakazqybuvszijvcmupegapolbhhdympgwzrgiltb
+alert/log Channel17 0o355 Thrust_Rating_Controller data:1011110100001111010  time conjsozkcw
+alert/log Channel19 0o277 Centralized_Maintenance_Computer  qjwlvbqahfydclcynjxmkeescxtupvsvcd
+log Channel9 0o277 IRS_Controller bits[24:27)=10 C 
+alert/log Channel36 0o164 Fuel_Unit_Management_System data:1010110000110010110 I time qahholiejnkmtrgcixlbxrqvqxxrorcccnlehiphbifbwupjadgafaysfbffwarrgaiq
+alert/log Channel32 0o243 Video_Control_Unit bits[24:27)=11 C wowijepetacoynqnzpkbsrkhqeccemsidybwmhtifzojwgvxetntpcodnzefqmywmjzsjcnrocriq
+alert/log Channel41 0o375 Fire_Detection_Unit bits[21:24)=01  time mnbzcnrzcqxdclwdtakewhsg
+alert/log Channel1 0o243 Air_Condition_Control_System  yszlmmcenohvtjuxqjrofulawrmkjedbhmadjdsjvtrtvvfwewqperurtqylyqcoqavr
+alert Channel11 0o214 Smoke_Detection_Control_Unit Encoding:DISC 00 C twufqxdccvtqkfxyppgglgglgsdgeeyqjmuqhjnxyeswrbelzkzwfwzpqmsokrelbhpiqrogisqcndvshdbhrcercnuetpanacra
+alert Channel33 0o277 Logic_Drive_Control_Computer Encoding:DISC I time jigvvloqnqlvuwalxluwnmtglfjrmaotxkosomdff
+alert Channel44 0o216 Central_Maintenance_Computer bits[13:17)=110 C lybbpdtvrkebyiuigqwuqxlvmopjqxulmgxkwvdfnxysbs
+alert/log Channel44 0o161 Multi-Mode_Receiver_(MMR) data:1.0 C jurpfdgxqqhhzkmlpfyszlvknvhlfzikxrtnllxvllpuhfsinpypawxohfbzzlcywobzmgwynkekmdrexxqsy
+alert Channel14 0o355 Clock Encoding:DISC  asymmnscgbfgngbajcpcksshhowiwqpwzylnpmcgimssidiikvwukdxhabinhjruollakwwesvwstlwrsoqkizfoeuuejtrackqj
+alert Channel11 0o355 AIMS_Display_Unit Encoding:DISC I time mdbfdntisumtutdtlmhcxplkpusxssjrvovagmzilhhrgmmilalswwaobmvd
+alert Channel24 0o270 MCDU Encoding:DISC 00 C time dlbizjiuxwjgbdkwbhwcsieyvxcdqtayodtwjsoiiwjbfngocbuzavmjrzbigpmnokycdzcpphruqxigkpso
+log Channel38 0o375 ADS-B_LDPU_Controller data:0.00075 00 C nnsguezjlgjjwokknpfwkexvsptnwklptemxoxspqmhbalii
+alert/log Channel37 0o375 Multi-Disk_Drive_Unit I vwoclicswpjpapcsahnryfimgfqnrgnjtlflwkewgtmpfuxsyvmasmkeedgttmjtletnkzvwjprugeopleyfdzmsqx
+alert/log Channel42 0o243 Clock Encoding:BNR C bsidtfowzlzhiipbyp
+alert Channel17 0o371 Data_Link_Control_and_Display_Unit data:255.0 C bdouitnmlwghtyqgtlicpexqtfbnuhhsqqcfuvbtpjdsdedmmyasdiizptqxt
+alert/log Channel15 0o277 Propulsion_Discrete_Interface_Unit 00 I yxlsqes
+log Channel7 0o350 Fuel_Unit_Management_System Encoding:BCD 00 I time ehkkfygsblhtuwtqrnvwjtjrfykxwlaezsossaykjilnuymikulwxjoudzdachqasqepisfimclfjrlnayqbjqfgmiawdczkajxn
+alert Channel41 0o376 Window_Heat_Control_Unit data:0.00064  egpgjgvqerxqurzvgreehwhzaktnoly
+alert/log Channel17 0o375 Radio_Altimeter C jgwhleczy
+alert/log Channel46 0o214 Bleed_Air data:0001110110010011111  time byupgvggtjlfhivognvubkktubiwryziqfqigqittegamwuacwthddoafhjltuvzeqgftzrcomdfqvjqfplorynbpofwuls
+alert Channel45 0o214 Chronometer Encoding:DISC I time nzxigahtsfmayogmlviufkzbyeiaccxrqnsztlpkjlvfftmsbnas
+alert Channel13 0o214 Hydraulic_Interface_Module bits[18:27)=10101011  time kidurucuivibacvkwcauiruiyuuywnyptakkghtnciqpwvqtmfvqgsjpojtclzqyxuhforywemuzzlrbpiik
+log Channel40 0o375 Full_Authority_EEC-B Encoding:BNR C 
+alert Channel25 0o377 Fuel_Quantity_Gauging_Unit data:1010100100000001110 I time bkvmfdivboucvtqigkwwrghgxeonjyifibgtlvebzugqtgn
+alert Channel24 0o243 Ground_Power_Control_Unit Encoding:BNR  time idiahsgwgjotlesgvdsofvwnfxuaofznhiwaorprfdmxlixpykqstvkzkqhfeo
+alert/log Channel38 0o356 Crew_Rest_Temp._Controller bits[17:22)=0110 C vzkjruettpolqtfrpopulhchypgsbimhmjngyzeclncywcwvxkx
+log Channel27 0o214 Electronic_Engine_Control_(EEC)_Channel_B data:0100001100011000111  vxrxlxenbgntblzvwmjuyknizjzllsnbvgciywyrihlecnitkyrmcblkpncwzbttqlznqdrztuqqufazcwfkwbkmrd
+log Channel45 0o350 Pass._Entertainment_Tape_Reproducer bits[11:16)=0001 I time 
+alert/log Channel15 0o277 Perf._Nav._Computer_System bits[11:25)=1001000101001 I time hzozmqto
+alert Channel37 0o356 AIMS_Display_Unit 00 I time qcesm
+log Channel24 0o376 MCDU bits[18:27)=01000110 C time qrjbvqtiymvbrcnoafqsl
+alert/log Channel30 0o17 Fuel_Qty._Indicating_System Encoding:BCD 00 C xfltvaksihcyuujjagblhuxuiaohninunbwglndxwlctmspaymkkvnincpmvayluupwfczjximigzxqprsczxuxgqj
+log Channel42 0o277 Fire_Detection_Unit Encoding:DISC I dktrhpewaybemhfe
+alert Channel38 0o243 Airborne_ILS_Receiver bits[14:17)=11 I time nafkzbwlfnqznqxevucojcudwlnbazmcsgusoobazonljipxniq
+alert Channel8 0o66 Weight_and_Balance_System Encoding:BCD 00 C djxwbcvmkjzkzwgdcekjuuhkalpsrspqjbztkpzagdxusbcezwsm
+alert/log Channel20 0o375 Advance_Cabin_Entertainment_Serv._Sys. bits[12:21)=11111001 C time bdhvmt
+alert Channel2 0o216 Display_Unit bits[16:27)=0001100010 I time ryrsoqjlafedgqtufupqvshxmdyrzgtofnmflqlvmqvhltczqmzfntpnxevlvuqafcpnrcpprhuiuashcijtzsoqvwd
+alert/log Channel25 0o46 Propulsion_Multiplexer_(PMUX) Encoding:BCD 00 I time egmcauwrwlfzizrqfplakjgfdfdokgyhmcunofzzgzhwtbinvkxrwdhgbvwosshnhijjprrrirtfjeelnclyrbkxrqqcepmzz
+alert Channel4 0o162 Windshear_Computer_(Sperry) bits[18:23)=0001 I sodvyxrqbxizvgfoypntxxny
+alert Channel43 0o347 TCAS bits[22:26)=101 C 
+alert/log Channel45 0o375 Smoke_Detection_Control_Unit C cltkeypxkgmtbzdgpdhjxbbzvtnxgzmtm
+alert/log Channel45 0o133 Full_Authority_EEC-B data:-115.05 C time vfduvnlczeloqaxdeiqqloaqxmtusisfydaylfawfquehidahmsjwsfntxjmw
+alert Channel20 0o271 Supersonic_Air_Data_Computer data:0101110001001100001  time wfquvueuyuhthofnvnxtlhfvmupxxfkmrfjgmpkwxocmymymmzdewgfttkazugtvezsucspvrw
+alert/log Channel35 0o176 ADIRS_Air_Data_Module_0E6 bits[15:18)=00 I time sdxcmdsyjooxpnpjlddfbjfyfsxfqruytwazhomfogkdanfowqngwxdfpniupui
+alert/log Channel15 0o216 DEFDARS-AIDS data:1011010011111010110 C time yxkelckssojpfchqfdwfiwldhcazm
+alert Channel7 0o243 Fuel_Qty._Indicating_System Encoding:BNR 00 I time cpfhzkwtvevprd
+alert/log Channel5 0o243 Centralized_Fault_Data_Interface_Unit Encoding:BNR 00 C time tbcaqliterxybqyyxfznjkxsriabhedctkoyzszssucsdjlcsonvwdq
+log Channel29 0o356 Avionics_c-10_Cooling_Computer bits[23:25)=0  time hrekfymfybdukuwavjrzsugwokwijarqfkvengxcukilolinskudg
+alert Channel8 0o356 Airborne_HF/SSB_System Encoding:DISC 00 I rkqkdgsbrpsutftuptagjftaqxhffswyhrmqekhtjshiqszuqrhcuguxbcvxlvkkunzqy
+alert Channel33 0o376 Digital_Fuel_Gauging_System bits[24:27)=01 C invuuxeqypeqeshkstahedpzhamvvkcrhtkjalnsvgkthtnbcba
+alert/log Channel27 0o277 Multi-Disk_Drive_Unit Encoding:DISC C time bxxxoxigghemafznnqtxstck
+alert/log Channel29 0o144 Perf._Nav._Computer_System bits[19:22)=10 C time koebnlwnpxlqaaajgvvdbbhudzssczgafqatayosztasjdsxroymxbbaaonmhlbxdjxyaraoccomvuuexdvfhlkro
+log Channel22 0o377 Performance_Data_Computer data:0000110010111100001  
+alert Channel12 0o377 Electronic_Engine_Control_(EEC)_Channel_A I time hhfnrbxtmirvtpqktlrrrwwwfxrucctfjsrtyvvsuuleyxxnwjbybxyoijdovtdnntmeutxpmqobpulqg
+log Channel25 0o146 TACAN_Adapter_Unit Encoding:BNR I gpfg
+alert Channel39 0o214 MLS_Controller bits[18:27)=00111110  time wghohyndpcmsjcuvzdmabtcpkawauoetwiuuvoefodsipjgkngtdjmvmjqjvorunb
+alert/log Channel9 0o214 Electronic_Engine_Control_(EEC)_Channel_B data:0101110100000100110  nbbvwxhmiuycucoiwadrfhmogwxascxzjajbhkstefpub
+log Channel31 0o371 Camera_Interface_Unit bits[24:27)=11 C time gc
+log Channel15 0o355 APU_Controller Encoding:DISC 00 C time ntytsvqerytiajefylekfujayaisfxltgqxzwlc
+alert Channel46 0o214 Audio_Entertainment_System_(AES)_Controller bits[20:26)=10110 I time hujlnpdcwmie
+alert Channel2 0o216 AIMS_Digital_Comm._Mgmt. bits[11:18)=111110  time xafiftthqwanwlhi
+log Channel36 0o243 Stabilizer_Trim_Module 00 C 
+alert Channel6 0o356 Eng_Interface_Vibration_Monitoring_Unit bits[19:23)=000  ntrmqdhepwxtcmjmqtertdgymytcfday
+alert/log Channel5 0o356 Fuel_System_Controller bits[23:27)=011 C time cxcadfdvivipefxkxwrijvxwujpsjkuhvceefrdgprxjbtuvxozsonurngebmtmnswdjnedbztbujjymjicpzjclhq
+alert Channel39 0o243 Audio_Management_System bits[19:26)=101010 C time htbyfrttfclkzpmihmkezlnyqimdntimhoicixpiohrgvqzoueclrywxoraae
+log Channel37 0o376 Ground_Auxiliary_Power_Unit Encoding:BNR C 
+alert Channel34 0o173 Hydraulic_Quantity_Monitor_Unit data:12.0  time njdeyzrqbirefhjlohicnfxnmreetdprmefzarmeupqrnduqacbobozqfgqjovshzwgboo
+alert/log Channel9 0o375 Propulsion_Multiplexer_(PMUX) Encoding:BNR C xwhm
+log Channel5 0o377 Airborne_DME data:0111000100111110000 C time 
+alert/log Channel12 0o371 Electrical_Contractor_Management_Unit data:89.0 00  nmnejtluqonccnlemartyoxepukcdaexcplykk
+alert Channel26 0o356 Airborne_ADF_Controller data:0001011001000011000  niiteibsenubwknssaf
+alert Channel25 0o52 ADIRS bits[20:27)=010000  time vzdmddsidqchuehiqvksiteoqfiwtnybhywbzgfjuxaflegycbepwxhsbyodnwtodyzwnkjwjnigpfqnvkuahbzmjscwnz
+log Channel39 0o356 Environmental_System_Controller bits[24:27)=10 I vpijxopldmpoubb
+log Channel23 0o214 Passenger_In_Flight_Info_Unit data:0000011010101100110 C 
+alert Channel11 0o376 Hydraulic_System_Monitoring_Unit bits[18:20)=1 C tpycgymzepiydgdvfwzjzatmwfskylqzaiiqzzjnocoskuqyfnyrgdpeefijexht
+alert Channel47 0o271 Propulsion_Multiplexer_(PMUX) Encoding:DISC 00 I rmxortrkklllicvkfqsznrayqpmpvrpdxhnthofikwdixqgacaezbdiuhofffyifrcrajylvuwvcfgyzgrmytyfbnsny
+log Channel3 0o243 Hydraulic_System_Controller 00  
+log Channel10 0o216 Audio_Entertainment_System_(AES)_Controller bits[22:25)=00  time jmcoznittwxrbfmdsctgrooqtaeqremeldcwlmlufjzyamfidtwqryzzsypasulc
+log Channel17 0o376 High_Power_Amplifier Encoding:BNR 00 I rkgppoinfclkssbfemvtcrtyhkmkcsxkdicvwfhr
+alert Channel22 0o273 TCAS Encoding:DISC 00 C time xjyoztftcvhkuywnqcrcsqbtxgwcczsufkngmtkfespxgqqkpeqxwuncgtfrjxvnclueiyc
+alert/log Channel31 0o355 ECAM_Control_Panel bits[18:20)=1 I voclscvtujcpa
+alert/log Channel28 0o231 ADIRS_Air_Data_Module_0E6 Encoding:BNR C hxzgzvwtpqfjiibltjkxqyhflfr
+alert Channel16 0o376 Zone_Temperature_Controller Encoding:BNR 00  oktnqsctxpzrrnducg
+alert/log Channel16 0o371 Airborne_Weather_Radar 00 time spvyxacfjigbhy
+log Channel46
+log Channel48 0o243 Airborne_ADF_Controller  time 
+alert Channel17 0o272 TCAS I time zbwoblwhnwoyubkbuyuifgvbqdufxnjhccvdivdvtzuristyfvwqnlluexavdvrwfgjxomglbbxlxnbwdzutal
+alert/log Channel18 0o277 Air_Condition_Control_System data:0101100101001001001  time vchnrznagrcpizbhtpjlqtppeauhpeaotswgsradbebzghylliykmgccfwuvfabpoeb
+alert Channel18 0o243 Boarding_Music_Machine bits[23:26)=00  time mygsztcxywyoffouyuxjbugffrdqknyzihlzxwrufslsfskiobbfwgerdimlfymt
+alert/log Channel3 0o214 Zone_Temperature_Controller Encoding:DISC I ligtjckmnhzefshrkjjbecqlsvdzjednnxcvqp
+alert Channel34 0o214 PVS_Control_Unit bits[23:25)=0  jwrkyxianxhhrzfmumffrwhuzomglxujgsutnqhzbgehhorinnkbcyevcogdknzxbkv
+alert/log Channel33 0o243 Digital_Fuel_Gauging_System Encoding:BNR 00 I bctkpludsrfpemtxgvoqvtkyrrdgzxgbdzpxgslnizfkqstwyoppbliizpjroibuhlrndzgfivnkal
+log Channel33 0o276 ATC_Transponder bits[25:27)=0  time lmjebekskvpeublbyruxqzagh
+log Channel9 0o376 Air_Supply_Control_&_Test_Unit bits[13:27)=1100100001010 C time srwgzizbldqesdbewwuqgtmwrtytpwvlxmzibrdmfcyamdtswwxgvwqzdoomnxhrdgmfyn
+alert/log Channel15 0o277 Propulsion_Discrete_Interface_Unit Encoding:DISC I yhgjmkjhplrhvuzseqmeqvgjeedupshzgliyvnzc
+log Channel6 0o356 Thrust_Rating_Controller  
+alert/log Channel2 0o377 ATC_Transponder Encoding:DISC I apifanty
+alert/log Channel47 0o376 Central_Maintenance_Computer Encoding:BNR C time zhbophnjayeuknsgycmhappaiysudhigssfjsmiundvkfkjxayddwitsbhgjy
+alert/log Channel1 0o277 Center_of_Gravity_Control_Computer bits[17:25)=1011100 C time dqssvyntwobrkwldg
+log Channel20 0o277 Cockpit_Voice_Recorder bits[13:25)=00110100011 I time 
+alert Channel29 0o214 Crew_Rest_Temp._Controller Encoding:DISC C wkymdgkuenyyyodruueyjsvaywsuvjkmaewwjdyhcjbzihomfqzbgclrjocrvdfewopoqredahvgawrffdvuskt
+log Channel31 0o356 Communication_Management_Unit_Mark_2 Encoding:DISC  time yzywaxqhjgmqfpissmsttspjepnqbcbbmdbbetjclzzvomsjumy
+alert Channel3 0o214 Airborne_VOR_Receiver_ Encoding:DISC I time jhgiuzlgahejrjmdytusevcahmvqyhnitulgonffdzlumpwycdbpuecmlfggyhecmrocwtsxrrziwxyjgmvmjphhkzfsm
+log Channel48 0o355 FADEC_Channel_A bits[21:23)=0 C time kmgrmeickfhzjfjjbcfovdrhourulxsdfkplpqvxhzeyksfvzyrgoqqjgltlzalmwdajfnucrtfcgmmrpoveshwzrqany
+alert/log Channel27 0o376 Cargo_Heat bits[14:26)=01011101110 I time rgauprsgpojuwggoonhkyknursreriwwvoidraqrhecgiwvzpewoomsumbcxcitiappkhpfmev
+alert/log Channel5 0o376 Fuel_Quantity_Gauging_Unit data:8e-05  time zkesmdqoocigectnnxdxpwjxszxogioszoeudhvuafkksffxhrdcjlmbxhksahmxearwmadzqhmyedfsmjwbwzorbvrlgzm
+log Channel34 0o375 Equipment_Cooling_Card Encoding:BNR C ixudckhouutzrurlrkyiijgncv
+log Channel12 0o375 Manifold_Failure_Detection_System data:0.00043  
+log Channel21 0o216 FAC I 
+log Channel4 0o243 Communication_Management_Unit_Mark_2 bits[15:18)=11 I time 
+alert Channel37 0o214 Para_Visual_Display_Computer Encoding:DISC I time byzrnnqvcotiqrfwlmglwvzavoeiiqmslwcxcyyyjoupfvuzstreuhpjgvbi
+alert Channel38 0o252 Full_Authority_EEC-A data:1.676 00 time fdenhjypbbtkagdnobejfajqvaqfbvivwyzxfzfhtxiixutbcyrbwwcrdyokhegsmyvjiotrdfhtutbbkwxguodiomra
+log Channel24 0o355 Cockpit_Voice_recorder I time 
+alert/log Channel1 0o356 Special_Fuel_Quan._Sys.  isu
+log Channel36 0o371 ECAM_Control_Panel Encoding:BNR 00  aj
+alert Channel17 0o242 Air_Data_System 00 I idlwuvipgrtwobpidodgbuddiggdnxrexwnozewrwgzipebyawgqfqzdugtcgnmciswucrgfnfmlbg
+alert/log Channel2 0o355 Fuel_Flow_Indicator bits[12:21)=11111011 I cpjvvuvbrexxagehhaqwrypijxijcwpjbfovhhftzsltvgye
+log Channel1 0o371 Auto_Brake_Unit Encoding:BNR 00  dnenbotoldeeoktmxdktszjteailsthd
+alert/log Channel28 0o250 ADIRS_Air_Data_Module_0E6 data:153.52 00 time ugyrtpaawsmcplgcpqzmhybtyjovp
+alert/log Channel22 0o376 TCAS 00 time jevdoqkycamddaknigvtkwyycikinajar
+alert/log Channel36 0o272 Fuel_Unit_Management_System data:0011110010100010011 C time rifclvqqoeuvcxtbbxaxnetpinxzcwgqqbjrajoyucvuvdocoifrtlkrnpfnxsbwh
+alert/log Channel46 0o102 Global_Positioning_System Encoding:BNR 00 I time agvaqpjpadcnlthotisvkepruxuoxjbpwmnvccsgdgjhupzujwoqsswfjwusyzhrwsnt
+alert Channel37 0o355 Data_Loader bits[20:22)=1 C mhxgflmxfqbhmtfuydafhhpyvsxyarmxirumpexoynxtvczcuzkipfyfrajihtej
+alert/log Channel46 0o12 GNSS_Navigation_Landing_Unit_(GNLU) data:5200.0 C fk
+alert Channel25 0o336 ADIRS bits[21:26)=1111  lolxxupjdvyrkociovsdzbgpeslcirqvpcvmiwhafrxoynowohizbgqlzsrkctwmdwyamdotbzgoyvjdzlwjy
+log Channel12 0o162 Airborne_ADF_System data:32.55 I 
+alert Channel26 0o371 Thrust_Control_Computer_ Encoding:BNR 00 I fozkrgmvboedmkdpnmqolftlulsstelrggxhmdbjpodapuzisofqawmswxifrneebjbhlmtxqvffnnzaduniwubnlmjbfakhsl
+alert Channel6 0o216 Display_Unit Encoding:DISC 00 time slmzkmjsbwgeevpmaeeejyosdzlbigxvkehoiykx
+log Channel12 0o376 AIMS_Gen._Pur._Bus_num3 data:0.00085 I 
+log Channel46 0o127 Full_Authority_Engine_Control_A bits[21:26)=1010 C 
+log Channel29 0o371 Audio_Entertainment_System_(AES)_Controller data:48.0 C 
+log Channel27 0o214 Multi-Disk_Drive_Unit data:1111001110101010110 C 
+alert/log Channel7 0o377 EICAS/EFIC_Interface_Unit Encoding:DISC  time zsojwdgckgwpnaborb
+alert/log Channel22 0o206 GNSS_Navigation_Unit_(GNU)_and_Satellite_Terminal_Unit_(STU) data:625.8125 00 C time frhuhnj
+alert/log Channel36 0o216 Probes_Heat_Computer Encoding:DISC C time mhqnpjieaesaipekcrctrjxkpmjvfdkhcuygblkoogztafabxomwtmqhmkzlyjpmpdvyruzkudvuufzhhsumsvis
+log Channel9 0o216 Fire_Detection_Unit bits[22:27)=1010 I amhekawubzherqgybhjnxmmegqfgminazzkey
+log Channel10 0o214 Audio_Entertainment_System_(AES)_Controller bits[19:24)=1101  time ynhaohkjawrxf
+alert/log Channel40 0o243 Passenger_In_Flight_Info_Unit bits[19:25)=11011 C vzivdpidhqjtxelnxtecucfgkhjvygjpbs
+alert Channel14 0o355 Battery_Charge_Limiter 00 C asghtvniokenwlbzsg
+alert Channel15 0o277 Propulsion_Discrete_Interface_Unit data:0010001000010100101 I time bgansmmpvqketgtuijeljvyyfjhnwnzhstlytomzzlglggb
+log Channel9 0o243 Air_Supply_Control_&_Test_Unit Encoding:BNR 00 time bloeumuavyvbvsvnuwzoctlibasptatgwheqdecoudzbpltmhbbuecfqconprzoyfhqxtdrcbd
+alert/log Channel5 0o216 Bus_Control_Unit bits[18:21)=11 C time soxtootpmmhxrpcgeqmvuzuhsichwgsubexpoicpuuazzexiwcxtuqakptkpwnsrk
+log Channel48 0o355 Land_Rollout_CU/Landing_C_&_LU Encoding:DISC 00 time 
+log Channel21 0o371 Airborne_ILS_Controller bits[17:24)=101101 C 
+alert/log Channel36 0o203 TCAS Encoding:BNR 00 time agxybleggobggvrhbuqiwvroglfggvmulveshzlptwjwuvsirfxyjvlfgovfbbrczixudrlhfngrxyrccwprxaimkwfuq
+alert/log Channel18 0o356 Brake_Temperature_Monitor_Unit bits[14:23)=10110011 C deonnftxjhygpylochgktjdfwzgd
+alert Channel8 0o243 Hydraulic_Interface_Module Encoding:BNR  nwrlwmlnupcotcrbsptwchidurtqgoaoaamvfwkzscyeerhszoxsoqjax
+alert Channel25 0o216 Fuel_System_Interface_Card bits[20:26)=00011 I omsabhdvzkpqewjpaywogfblkjdebvz
+alert/log Channel13 0o17 Multi-Mode_Receiver_(MMR) C time mcyxwlrqoryqitla
+alert Channel17 0o270 Satellite_Data_Unit Encoding:DISC  time gxureztxabybpfojslwrzxnwnidonnhjujrvbjjbmoqenvypfvdbkwh
+alert/log Channel7 0o214 AIMS_Gen._Pur._Bus_num3 data:1101010001110110111 C time mhknpvhcpulliqfittjfpijmjpolzmjthavpllmszvglxhoglrxpdxzqiqrj
+alert/log Channel22 0o216 TCAS data:0110011110000111100  time rmcrivwxpjgtcocihyzxycqeahedqdwh
+alert/log Channel21 0o214 Full_Authority_EEC-A data:0001101010100001010 C time ermdwleahaskdbeedwjfklgiptdohldepsejdyvshxkzqrrigzzxymlak
+alert/log Channel17 0o31 DFS_System C time zcijfvepiwvfmfipwmzrklhsvdoeynuiqnrutpiwiexhhmxvexudez
+log Channel40 0o356 Display_Management_Computer data:1110101111100101001  time xdsnbyarcaovbondjrhbqwfnriskovvvxpayzwzbdpoudneejeymaohtabwzgghzrgteuhroharzxssjxd
+alert/log Channel33 0o371 Logic_Drive_Control_Computer Encoding:BNR I zoimouccdtul
+log Channel47 0o356 APU_Controller Encoding:DISC 00 time umurdkumiciukxpaozqwqewlcmqnotjmahxnrdzjrtomppnnusqftyrujvzrnqvvlzptnlrpbmjm
+alert Channel8 0o243 Integrated_Static_Probe  C time gpamoxqfsyqvmrucmrigknprkylazvcjzbtxblwjlhfmziwgqxuoqpqfcdmgjbtdiy
+alert Channel10 0o376 Slide_Slip_Angle_(SSA) data:0.00038 C time ssxldqbcvdwmggvghfnqbtqsrviefovdpampaqjrutajxhwlyterpaltjpnututxvpd
+alert/log Channel40 0o313 Electronic_Flt._Instruments data:-4.8  gimajehbykgsnaspvigkxkzhonmcjkmshuhgukewyddqfndvyexsijjzxgavdpgrqsvihxirtdrjk
+alert/log Channel6 0o216 Airborne_VOR_Controller bits[18:26)=0010011 C time yohgkdjppwgtfccudvckbprtffrxsccgwonltvangumdsbcdyxfgkfxmpaxtijsqurwr
+alert Channel4 0o355 PVS_Control_Unit bits[13:20)=111111 C ecexgzdwszhgmmzmwxiqqzplqlqzohhptkveggpotcgtijafbwrycowfvvlpjrqapbmmjgiumtjabs
+alert/log Channel44 0o277 Airborne_HF/SSB_System bits[20:23)=00 I time ajavl
+alert/log Channel6 0o376 Thrust_Rating_Controller Encoding:BNR I agykqshrtjnrykwxvfyecxaiommxkghgdclviltpxtibtjco
+alert/log Channel44 0o377 Probes_Heat_Computer Encoding:DISC  time ftgrxfzyhwbilykkejvmbiqvgxbidp
+alert Channel13 0o214 ECAM_Control_Panel bits[14:26)=11101000111 I jsbintwrih
+alert/log Channel36 0o356 Data_Link_Control_and_Display_Unit Encoding:DISC  ubazjqcjmfizvicnovhkedrjnsfkaflmmcye
+alert Channel32 0o214 Brake_Temperature_Monitor_Unit Encoding:DISC 00 I time paqucfmmfrxljylbndqeu
+alert Channel47 0o244 Autopilot_Buffer_Unit bits[20:25)=1011 I ktfqhvigjaice
+log Channel10 0o344 Engine_Instrument_System bits[20:27)=101011  jltjrlxqhzbgmreb
+alert Channel47 0o375 Cargo_Electronics_Interface_Unit Encoding:BNR 00 I unhcjcedujkswjvuqfzckgtjedegbxqbzj
+log Channel23 0o376 Airborne_DME_Controller Encoding:BNR I time 
+alert Channel19 0o355 Landing_Gear_Prox._Control Encoding:DISC 00 I time lufvgcpdsvqveqjmimfljuiogamqjdpamdwtguxejbjqkfhjjzkxvfrbpsyjlvnivjzhovupfuriaglns
+alert/log Channel36 0o355 Airborne_VHF_COM data:1000000000100000110 C xwselwyudbsyvxppywttncjpraepflmyawrxwqoyesyokzzvivtcgzbsysyngxrtbmggpghfr
+log Channel25 0o356 Centralized_Maintenance_Computer Encoding:DISC  
+log Channel13
+log Channel41 0o377 Proximity_Switch_Electronics_Unit Encoding:DISC I azzcigvbigncqwsvjmrcipbdymofyzxaftyvuceolorhhzdprkaisagmkoxwkwzuikxnxzzbbs
+alert Channel26 0o356 Ground_Power_Control_Unit bits[24:26)=1 C jsahbplptmpghdudlxbusxzvcadwjbwucynhiyaccnlwibgwqizlylorsobsivzkdtqwuxmmmivbucjjrhrfvifeqredgemd
+alert Channel17 0o377 Environmental_System_Controller bits[16:19)=10 C time nfoiortkirbnuolvpgasmqoqbnhkibznvrvgdmblrosxgkhxeiawgqsknyldjcrhbfihnmuqqgtvghw
+alert Channel35 0o356 Audio_Management_System Encoding:DISC 00 time agtfofnmdgrmfrwwnlv
+alert Channel29 0o376 Fire_Detection_Unit bits[23:25)=0 I time txgrnklnvnacsuenggmpfbpgrxywdupnlhgfzsaxdpfuhxyxuougdqhffncmgysbeoixijdufrpqcbxyb
+alert Channel9 0o350 High_Power_Amplifier data:0100101111101010111 C time jiadacxfefedtkbbhvanqgjbnlswwesqoiovvhpajymlprlyfuyxcmdshehaycnqbugx
+alert/log Channel13 0o356 Slide_Slip_Angle_(SSA) 00 C xyelrfvvibwgwenuhfrazmjubdlgdpeifqbxakykxcdkfaerhkyx
+alert/log Channel17 0o214 Thrust_Management_Computer bits[25:27)=0 I time llbyctlzgy
+alert/log Channel24 0o355 Stall_Warning_Card 00 C time sxmdvhzuthptkttyshnppgyhvycilyipfccssmfpbrthjigdagdtllcggqrchccabstwvqqeexhidqzgocbdjvrvjski
+log Channel28 0o377 HF/SSB_System_Controller bits[20:26)=11101 C time bryczxbxccfjzzchgmkbjbymdflenkqbjpdjatjuehedepfrlhshhlrhnvzpgqcdnqnkjxshurawe
+log Channel29 0o377 Flight_Control_Secondary_Computer bits[20:26)=10111  time knqmsturhywlaayqultgqpaqwc
+alert Channel18 0o214 A429W_SDU_Controller data:0011100000010101110  time mhzwtrlozorvsdkbmuiujz
+alert/log Channel8 0o356 Integrated_Static_Probe bits[11:18)=100111 I pojejziujyitjhgwitemecqgxahazmhudcrrmweipdonsyrzsyytbedqbbzzs
+log Channel12 0o371 Audio_Control_Panel data:109.0 00 C time lqmutpfksptuefobfwczrwyydnghpy
+alert Channel15 0o377 Clock Encoding:DISC  time pxfgccipylisxqidttzsuiliiwizfcwdvzshmacrosbitdemraogrbjtaetivoczkmvwp
+log Channel5 0o171 Bus_Control_Unit Encoding:SAL 00  znceuegfccfaovnhj
+alert/log Channel41 0o214 Fire_Detection_Unit bits[23:25)=1  rfvijodalrkbxqaoxsnzkqigeduocpruhximzwstcfvyvegmnyhsqzgewqujzbaghmctxksjrgvujqmmaqwrruqtuneggpr
+log Channel8 0o171 FMC_Controller Encoding:SAL  time 
+alert Channel33 0o214 Power_Supply_Module bits[20:26)=00101 C time enzwydjbdlvixgovsuncmcliyljxssgtzvcfbeoptceipzydrusrtgolpwtdetxpzjknotainsuxmo
+log Channel30 0o243 ATC_Transponder bits[11:22)=1100110110  
+alert/log Channel22 0o376 Power_Supply_Module Encoding:BNR C time puybwptievfyiosxmmdwahzsrhtydenwyesggtkvvacipsxrikllyjkgp
+log Channel46 0o375 Display_Unit Encoding:BNR 00 I 
+alert/log Channel34 0o355 Fuel_Quantity_Gauging_Unit bits[22:27)=1011  ogrbqnsutnrdydrtakrudvawwwqylpajm
+alert/log Channel27 0o277 EICAS/EFIC_Interface_Unit bits[13:27)=0000100010111 C vchcxzuiwkxteamgsjajqyoqjfahifganyfnqrhqqxjhycxidvbfmelharhybkuymqaqbjjfaxtjbfxxszouhnczp
+log Channel17 0o216 Pneumatic_Overheat_Detection_Unit Encoding:DISC I time uenjxxgitrxhqepfyquysu
+log Channel23 0o356 Land_Rollout_CU/Landing_C_&_LU data:1110001110000011001  time 
+alert/log Channel8 0o27 Airborne_VOR_Controller data:98.0 00  ilhpjlfljxzezbhubdozrtpjeoghzcazirwjjwxfszvuvhojndvncphbxztwpdjfomceeyvqckjeghzgjvjebdodkznyhfbrtmx
+alert Channel41 0o377 Propulsion_Discrete_Interface_Unit bits[22:26)=001 C time lxfrhapkijynxvkidoxmmkgnefrukklbhktwhvwsjwsnsdsxxgthdpajmvkc
+alert/log Channel46 0o371 Fault_Isolation_&_Detection_System Encoding:BNR 00 time jhbyvoetrqlxpflqvvetvrcsgajbavukzobnvukcybxoowudpdnhnjvkqjftfyxsihwipxozksswiemxh
+alert/log Channel47 0o273 Propulsion_Multiplexer_(PMUX) Encoding:DISC 00 time mgiuusrxjcwwjndmzsdsqemirprzawrmkgxtxakxeuiupzjyk
+log Channel12 0o260 FMC_Controller data:24204.0 I time 
+log Channel34 0o355 Electronic_Spoiler_Control_Unit Encoding:DISC 00 C time 
+log Channel35 0o375 High-Speed_Data_Unit data:5e-05 C unndxkanonslfxdslgeypbnksmpfgpudlvs
+alert Channel46 0o272 Full_Authority_Engine_Control_A Encoding:DISC 00 C oewzbqacqgxxbwsxyssfrqerlwifiicuqetfjytyarorgxfzadpcprqvzhzl
+log Channel19 0o376 Ground_Auxiliary_Power_Unit Encoding:BNR 00 time 
+alert Channel22 0o375 Hydraulic_System_Controller Encoding:BNR 00 C rx
+alert Channel23 0o356 Avionics_c-10_Cooling_Computer data:1100100100101110000 I time pwyjkyxhoqszcarhneoheivfncazgtnlxfmikhookvzwmaedhelxmtoaepukgqcync
+log Channel12 0o216 Electronic_Engine_Control_(EEC)_Channel_A Encoding:DISC C time amrqebpbzeqdyhpjczrzpqbwzxqopwocwaldminqhuqexrybtewkkbnfwlgebonnlhudwkcjmbpflesah
+alert/log Channel24 0o356 Cockpit_Voice_Recorder bits[25:27)=1  dyjyvwodgeshnthuzqykzgmfcngucfkwmtihgax
+log Channel45 0o216 Smoke_Detection_Control_Unit bits[22:24)=1  
+log Channel4 0o355 PVS_Control_Unit bits[13:16)=01 C ohaiumlaetriezsdembkumnvuhuqdydzgbpvzadquyliyqqszvzyhaxbpcopyj
+log Channel45 0o375 Radio_Altimeter Encoding:BNR  khjrxnwcanjdagbledvpuvljrsjzqigjwsywmezejjligqxiiuuvbfhhflbfcmochynjfezkkyqfsuikkbhzvlfpppljfffgdt
+alert/log Channel17 0o216 High_Power_Amplifier bits[13:17)=000  yqgdnglyvtejmqcbdojqgysesh
+alert/log Channel48 0o277 Cabin_Pressure_Control_Sys. bits[22:24)=0 I time vwjttrabexpkdhuclmccckztrhqkudjgjcmmyymaoovyurzvjuliwajhlosgnvifctdrbomksxbkmbqkuvqq
+alert Channel29 0o355 Flight_Control_Secondary_Computer 00 C p
+alert Channel13 0o355 Anti-Skid_System data:0001110010000001100 I obktiwporerjetytqjnykbb
+alert Channel2 0o100 Flap_Control_Unit_and_Flap_Slat_Electronics_Unit Encoding:BNR 00 I time whmdphflrfvdjvpnoylkyouttwzxthoybhliqhjpkqgtnxj
+alert/log Channel34 0o371 Logic_Drive_Control_Computer Encoding:BNR 00 C time ldupoogskutorrhlkeblkgadkcibaifjkqedahqjmgjsvfrxrvjuyuhllqykkh
+alert Channel21 0o375 Display_Unit data:0.00046 00 time txfvavwmvtzilbaodluhdhvqbmcgymzylyogndndgxrmaglrgxxgmnjsiwknnmbvmqmsajny
+log Channel19 0o206 ATC_Transponder Encoding:BNR 00 time 
+log Channel13 0o371 
+alert Channel2 0o277 Fuel_Flow_Indicator bits[12:16)=000  time jd
+log Channel28 0o245 Thrust_Control_Computer_ Encoding:BNR I time ngrtpqqilejnfmqknkouhqzygryykfflyfwneycvcyfhohtfztxznmxvmtqwtffakgrzivdqvzsym
+alert Channel46 0o376 Zone_Controller data:0.00043  pwfmltornuzdanpmzjzahxvmxunpocvlweyjjcbgppcaickynzirhvsmxuyzzhwmrcwfcci
+log Channel1 0o356 TACAN Encoding:DISC I time 
+alert Channel34 0o216 Digital_Fuel_Gauging_System Encoding:DISC  ah
+log Channel22 0o371 Environmental_System_Controller bits[15:22)=011000 C time 
+log Channel9 0o375 Manifold_Failure_Detection_System data:0.00049  time 
+log Channel46 0o375 Zone_Controller bits[23:27)=110  
+log Channel36 0o214 TCAS_Control_Panel Encoding:DISC C time zhyljkgxmqsaotmocywxiohwjmmzevytehjlrfgkzyk
+alert Channel26 0o376 AIMS_Cursor_Control_Device data:0.00046  
+alert Channel44 0o376 Passenger_In_Flight_Info_Unit I time tfvmblcgrhhgauxfxtfsuacla
+log Channel17 0o355 Advance_Cabin_Entertainment_Serv._Sys. data:1110010111101100101 I nwclmuqcpfnywnlkojgudbcfilfibafdrvffqovltlebldhxohxbzyd
+log Channel36 0o277 Airborne_VOR_Controller data:0111001011000111000 C time szrgbockgrzfvekxxzpdsodfqadwvfarlhdgkrckrgaeocibjnmioixtinvxwlluomszkkjbjqbneqzopceql
+log Channel5 0o27 Airborne_VOR_Receiver_ Encoding:BCD I dwbtoqwxjssqrlropeqngykdrcc
+alert Channel42 0o376 HF_Data_Unit data:0.00066  time puxjuokffwlutadrekwuwgepgawnphneu
+log Channel18 0o277 FMC_Controller Encoding:DISC  luigmstjzojtwiuvdkrabhbwmhdmyljizepqmisdiwbetrmlgdsg
+log Channel36 0o277 AIMS_Display_Unit Encoding:DISC 00  
+alert/log Channel5 0o243 Airborne_ILS_Controller  time ltsiccgpbxvpdrsmknhgqiiyslbqmfpnaugculdqehnjsfbbwrczllusvhthbqjsyorrsvflvdw
+log Channel25 0o216 Fuel_Quantity_Gauging_Unit bits[15:24)=10111111  time oolydofpfxqhcwcaorswtfybcjqpwbjcecfvnvblpqlwvafgfuvbbnryxrullop
+log Channel33 0o214 Stall_Warning_Card data:0001010110101011101 C 
+alert Channel7 0o216 
+alert/log Channel14 0o271 Supersonic_Air_Data_Computer bits[17:20)=00 C phyembi
+log Channel15 0o377 Window_Heat_Computer bits[24:26)=1 C 
+alert Channel17 0o243 Thrust_Rating_Controller Encoding:BNR I bdwspnxwoyjziqzohoxgacdjiilycybdzpuzfliwmogznezdqycr
+alert Channel34 0o216 Zone_Temperature_Controller bits[17:19)=0 I gfcdkzkxgnywxvcqlvdzkwqvytpkgddpkaukssxqhpeywxiiensekokvauhzbyysvupbspxcvijtljqsmtvlautf
+log Channel30 0o243 Slide_Slip_Angle_(SSA) bits[11:13)=1  
+alert/log Channel40 0o216 Main_Electrical_System_Controller data:1100111011011111010 I time mrgplwauvaxlwryfge
+alert/log Channel44 0o214 APU_Controller Encoding:DISC 00 C time hiexeqdpyxvwuxpoytuazxocevdrjcxrxenbbtlpzkalhclqxrjheqxtoojwbwlxzpdicxjhlczc
+alert Channel33 0o355 High-Speed_Data_Unit Encoding:DISC 00 C zijhrr
+log Channel6 0o244 Airborne_DME bits[24:27)=00 C time falzrobhguociituivcynmgunsinlzfgpveqqjwfqejtgsueflcjmtrkesylxhoxutyphcraeirefwalo
+alert/log Channel3 0o171 AMU_(A320) data:0o315  rxetbmcalipyupchawkyjlbzlpqcqlxonzuhqmfaq
+alert Channel25 0o375 AIMS_Digital_Comm._Mgmt. data:0.00085  time rokybrznvdkdfhohyqwjgzwkupwolyz
+log Channel44 0o214 Passenger_In_Flight_Info_Unit data:0111010011110011011 I vwbzzhbpzhxs
+alert Channel31 0o277 APU_Controller bits[21:25)=101 C 
+alert Channel44 0o243 Cockpit_Printer 00  vyzvvbaso
+log Channel45 0o315 ADIRS 00 I 
+alert Channel7 0o352 ACARS_and_CMU_Mark_2 Encoding:DISC 00  pmgmxqcdxhagnbgp
+alert/log Channel36 0o377 Audio_Control_Panel bits[20:27)=111111 C time hywkqyojzyqvmkbljhjqwztjyhliuqubmhvnbswuosdnxovdqdghbuhettvlfccbrhcsvucpfe
+alert/log Channel38 0o371 Brake_Temperature_Monitor_Unit 00 C time ebcsfacdcrmzmhfgkwbotewbyymcewjsojaj
+alert/log Channel41 0o375 Hydraulic_System_Monitoring_Unit Encoding:BNR 00 time feusfkvckulmzxkscsobvdaljnoyxdnbmiwgapivxowpbjvlcbevxhdbjajytktobzvoidrpyvgesfitfezrbzere
+alert/log Channel33 0o377 Logic_Drive_Control_Computer Encoding:DISC C ojo
+alert/log Channel30 0o371 Thrust_Rating_Controller bits[24:26)=0 C time udbxhyhwhhooiynyhjxaatfvbfhfkjxuiokqirksqojugeapqatoc
+log Channel30 0o214 Power_Supply_Module data:0110111111101001100  time ggfkckojqvgcexfmncsmxumlbyfdxu
+log Channel12 0o171 EFI_Controller Encoding:SAL 00 I time ifcksrgyjgitpglzbwwehbnxayunxufnsweoxmolmxokpodzhutscsfkvvzenfckxlfcynmtbtqwgbfuioggdhfdpbsbfnvb
+log Channel17 0o243 Thrust_Management_Computer Encoding:BNR  time xzrwgumalgvyowvqlpbhpjcqfmcjeqxrswpeqynhwgihljahxsgcqtnfdeqlvbizxmgwfqnzmxmtfxy
+log Channel29 0o214 Environmental_System_Controller Encoding:DISC C time 
+alert Channel17 0o375 Pass._Entertainment_Tape_Reproducer 00 C time eoulzgmnsiggifbfediuvxzbatmebqbbtfkgenzuhvxjzcenyxvityzxiqkjdthdbzscuikqhogpdxjyrrrsvhdqq
+alert/log Channel31 0o375 Communication_Management_Unit_Mark_2 bits[16:21)=1001  gpzzysxtrwjurxwxhejjklkrqhxdmktaivbrngoxdzjndclfztubuzlexroimjnynii
+alert/log Channel16 0o216 15B_Flight_Control_Unit 00 I twwjmrapqizczsfnaqksctrtttxfkwdy
+log Channel26 0o214 Ground_Power_Control_Unit 00 I time osvclivnjpyuxmmtjhwwniamswilnvniojohwskgdljlfhqanouswyeerniyokkugkzywviqiqnscybvsvlbvckcnpo
+alert Channel34 0o277 Land_Rollout_CU/Landing_C_&_LU data:1110101011110101110 C abjrtjjrcmcfnwybzhrcghhnrivcponuolkzdbbchonpmhtjrtjaupdzpduhfjluprrcvsxvisbjipxtutrlegehasgvdymkkh
+alert Channel42 0o243 Fire_Detection_Unit bits[14:24)=111101000  time sehctqijkhsvmvwxiznhnjtkpiwqcuugwctkfsmlacqpwu
+log Channel7 0o243 Air_Traffic_Service_Unit bits[22:27)=0011 C nebsyhxomudrlquyflsimjwefmcdmimssfheqzhieqlzipfympkfhzoowrdyaliakcpevomf
+alert/log Channel38 0o355 Thrust_Rating_Controller bits[12:21)=00001101 C time gytphslrxyyxeqcqymbvqfi
+alert Channel6 0o356 Fuel_Quantity_Totalizer Encoding:DISC C time vyvgswpjvbmevgrecwuppaziahorfkvqttcwgtkdmesvykbrblwkcheaqwaenskmdzxdralpgepfkwdzdmycqfee
+alert/log Channel11 0o355 Smoke_Detection_Control_Unit data:0011101110001110000 I qwduezrzeugyddgcrlerboqtmgpqyxlfefxvofhqmgpuiiuvlcwpjdebvsbuoxprtkurjgwitjhyytn
+alert Channel38 0o75 Center_of_Gravity_Control_Computer data:1042240.0 C time sxftzpxuisxavppobrionpyzztqmehuvidfxuhaldeinvdyzef
+alert/log Channel37 0o317 Inertial_Reference_System data:68.963 C dzindqmeadejkpefxyynvvvvqsnyqpkknzgddktkyizfpcydodu
+alert/log Channel5 0o214 Proximity_Switch_Electronics_Unit bits[12:14)=0  pznhwlmufcqjochbcp
+alert/log Channel40 0o216 Cockpit_Voice_recorder 00 I xxosyxiydgetyylwqtmbmzjyvqpezjycmsvstashepetbxoronebpdtgboauozygeztfjvdsvppycdftwtfpctddoppvgz
+alert Channel12 0o243 Airborne_ADF_System bits[25:27)=1 C kwvwybvwccbhycmvhzcfhfjijaajpnbgwfzgzsnfvltwgzdidfktjkowvljvvigvesqbrvkg
+alert Channel2 0o377 AMU_(A320) Encoding:DISC 00 time giaakdcwyaiznykxxkrdzlpqzxwkfeqlgpnwbajvzfhrfxbwvjsniatuikyxmrdlskdunixyenzqejvhvfcyj
+log Channel21 0o355 Probes_Heat_Computer Encoding:DISC I 
+alert Channel1 0o355 Flight_Warning_Computer data:1101111101101010011 C djvwpvvx
+log Channel37 0o356 Cargo_Bay_Conditioning_Card Encoding:DISC 00 C lnajbtsagxrjthiryyvfgvlghdlcgnwvtboccpne
+log Channel42 0o160 Full_Authority_Engine_Control_B data:1100001110111001000 I sljrdzgsymounlellmesfhkgr
+log Channel26 0o171 PVS_Control_Unit bits[16:18)=1 I 
+alert Channel36 0o243 Audio_Control_Panel 00 time dgoieqcvzksqqdxwmwvsmvftajcpebhseiagokssgxcnwydcqkixfypydupyjejanshhlmn
+alert/log Channel44 0o270 Multi-Mode_Receiver_(MMR) bits[14:20)=11100 C time ebtacqjvequhqublbr
+alert Channel1 0o216 AIMS_General_Purpose_Bus_num4 bits[12:26)=1010111011000 I time zaqsgijaxwxjla
+alert Channel8 0o310 GNSS_Navigation_Landing_Unit_(GNLU) Encoding:BNR C time ltzmuyfvcjwyycszcsmtxkkanzrbuvjgrgojfvxsnzusmwfuglmwjjapozqsrucfbsdekrhtvsguqmyjijyoybmehwgc
+log Channel28 0o214 AMU_(A320) bits[14:16)=0  time 
+alert Channel45 0o375 Perf._Nav._Computer_System bits[13:18)=1111 I lmkysfdclgnultytmwiorcdiepwqeidknmnmesprkiqpknbiyyrdlrujyvpbvqxwumwhxufdkacxlnjfsekzjitflbnqufmjexew
+alert Channel17 0o216 Circuit_breakers_Monitoring_Unit Encoding:DISC I time nwpijesymemrqxtyjedmvbhfkytlbbqwlrboqcqlojoxyzkmsavjpeoaghgabaajgfuzpnusgk
+alert/log Channel31 0o216 Radio_Altimeter bits[23:25)=1  time mtdznfealuojzwtuecpneuuxttwderlgmujawniqwciqjpfrrvaflqh
+alert/log Channel7 0o355 Equipment_Cooling_Card Encoding:DISC  time vicikmdcwennlrunplcjbnbjuehp
+alert/log Channel13 0o277 Electronic_Flight_Bag Encoding:DISC 00 C qbvyqxxztkaruxdnmvxtesnmtxlishvhyebtydsrhzrfxbaxnnnsueaywaqngejzt
+log Channel17 0o271 TCAS Encoding:DISC 00 time soeomzcqxvfxsktyzguvgxztvvkcefpsgslzxjrycypejdtxrowfavfnnykz
+alert Channel9 0o371 Land_Rollout_CU/Landing_C_&_LU Encoding:BNR 00 C srovfnwkunxtmqignldlqelffhcvbudxxlfxcgotgg
+alert/log Channel20 0o216 Communication_Management_Unit_Mark_2 00 I nfcddmgukngnsdtcuqowyfufujcobpegkwgbqqkeijvqisvdrknszzfstiujvupqzvwlkcwivvebreuhjt
+alert Channel9 0o376 Pack_Temperature_Controller bits[16:26)=100111110  time cbhotelomcjjoioaazcmyttrohvmdbroqbgbithdomslcufncupvjtsufikuukuddvtdlmlmjmy
+alert/log Channel3 0o371 Stabilizer_Trim_Module data:85.0 00 C time hjnfemjycpgynauammiyodqhwavakjzyvjqjksuxvukkvcnndpblmtxirlqnc
+alert/log Channel36 0o144 Fuel_Unit_Management_System 00 C qdrdmrxewatvtdbvkuebh
+alert/log Channel41 0o377 ADS-B_Link_Display_Processor_Unit_(LPDU) Encoding:DISC 00  rmrjubtuslvtfivknnxhbjtmtyvwdrbujkebacvw
+alert Channel6 0o355 Display_Unit data:1101001111001010100 I xgbxyflsmddhfpjqlffowicftdqxuwcuwkanagltsunuorgjonjwunlhdygwjetylcbtzpzyo
+alert Channel33 0o216 Stall_Warning_Card bits[14:16)=1 I time bfjtiipzchaifbojoumsdtabhybloraunkyxfueszrafmwlyuvusnh
+log Channel48 0o356 Windshear_Computer_(Sperry) bits[19:27)=1010010 I 
+alert/log Channel30 0o376 Multi-Disk_Drive_Unit bits[25:27)=1 C xkpotncvjokdgyhqfsogaohjywxjhjtbhebgcoejrjmk
+alert/log Channel34 0o214 Electronic_Spoiler_Control_Unit Encoding:DISC  uezbrpdefyteukazzogccexnnbxqiifoerofhkpwxvzbgzjxwrfcvtpnyzyciccrsfvgjtqsbb
+alert/log Channel16 0o356 Equipment_Cooling_Card Encoding:DISC 00 I time bjbrvyxxicugbiwbdsrhipinxoizheigcmpbkjphylcjgimfliuvkobbpjujovirfnloxghramfmqbianu
+alert/log Channel14 0o100 
+alert/log Channel46 0o375 Audio_Entertainment_System_(AES)_Controller Encoding:BNR  njzsiothbvmtvlvtrjrptkhuqeqsvcemsvlw
+log Channel43 0o371 Flight_Data_Interface_Unit 00 time yndfrgvsj
+alert/log Channel35 0o375 ADIRS_Air_Data_Module_0E6 Encoding:BNR I time stjdjgtnlagspvqxkdvwuigcsvasgutsnniqwynnrsxlswlwrznuuavtqflerfzccybfkshpgdcagklgczxcwbzucpnjlv
+alert/log Channel17 0o213 Air_Data_System bits[21:26)=0000  time kokyhixqaeudlgubttvjurogbvbfzgcscmytaqxpcofvzqbassrdygvnebqvkref
+log Channel16 0o271 ADS-B_Link_Display_Processor_Unit_(LPDU) Encoding:DISC I time mglywopaxuldlcmocxvkorfrcrybocxoecehcojcrhagggjuylhleoeypepmkllffnilpqafpvhxmockfh
+alert Channel26 0o355 AIMS_Gen._Pur._Bus_num1 bits[20:27)=101001 C time olepgybqzjysjjmylhuzpbgnbbcrtvzarwxsoptbckmcvyclswxmqgaffbulzgepbvmwgnijmyjtytthngrgzwoocoooqatoo
+alert Channel48 0o243 Hydraulic_Interface_Module Encoding:BNR 00 I ybwtlxxrffwqkmlqvekfarnpkqspsbskypuiyfyrowvsbsbobffcalukspyshjyshmsldrtxhykaxcbgxuhloucoxgmvaffpq
+alert/log Channel15 0o277 Flight_Control_Secondary_Computer data:1110101001001011100 C time qvbtciflexwkwccocqpulybifrcnlwgysehsaeglltdjdlbutwubfaeovbyhmawkmvjynpypufphzpef
+alert Channel25 0o356 TACAN_Adapter_Unit Encoding:DISC  time ciyktssttabiv
+alert Channel4 0o4 Flight_Control_Computer data:2100.0 I time votppdpgjkqwdbxqcvxczlkrwrfjeibteirxkdutyfeoqtwneknqtpyfrmyacoepydrizofpbddzeasznmsptcejry
+alert/log Channel5 0o277 Data_Link_Control_and_Display_Unit bits[12:23)=1010000011 C time mlxdvsjscpkdmribudtoqmrsnceyofonddwgzcssnvntgielvpymfaejnvohd
+log Channel29 0o243 Avionics_c-10_Cooling_Computer Encoding:BNR C time jdpiqvjwkcbsrpwnylwaheyfainozyoklxdluzgfow
+alert/log Channel4 0o377 Bleed_Air Encoding:DISC 00 I time wu
+alert/log Channel27 0o371 FADEC_Channel_A bits[23:26)=11  time pwqgqwxofvexasoayjyrlyiqvijjyqbeibbgbysltldbfdgjouwikpgedrtwcxvlcp
+alert/log Channel14 0o272 Supersonic_Air_Data_Computer bits[25:27)=0  time wuyvqsnbbfk
+log Channel24 0o216 Zone_Controller Encoding:DISC I time 
+alert Channel11 0o356 Landing_Gear_Position_Interface_Unit 00 C time vpotx
+alert Channel40 0o214 Windshear_Computer_(Sperry) data:1111010100100000100 C time pnfrknanyfalbfaazokechtletplknhkbmgfvosnjqpciad
+alert/log Channel4 0o355 Avionics_c-10_Cooling_Computer data:1101000011000010011 I gyloxeuniinldvoalgteocuscmonbananrumqlptsrhgtflbstcibclxsygnsefarbsqrlzethptkhhcxgtuzieasddib
+log Channel42 0o243 Camera_Interface_Unit bits[19:26)=111001 I time ygcnscopnocawrwybuv
+alert/log Channel42 0o216 Ground_Auxiliary_Power_Unit Encoding:DISC C bvneesghsmryrjzgsfbhdnvpfepapngyudcezxlbwn
+alert/log Channel2 0o377 Display_Unit bits[23:25)=0 I time poyijyjqwkkxs
+alert/log Channel15 0o355 DEFDARS-AIDS data:1110110101110000111 C xjyvfaqdxikgsncjqzotblfmvzvvdbesswkxbaasfmzlstjtnvlsdj
+log Channel11 0o277 Fuel_Qty._Indicating_System data:27.86 00 C 
+log Channel35 0o375 DEFDARS-AIDS Encoding:BNR 00 I time 
+alert Channel11 0o167 Fuel_Unit_Management_System bits[18:23)=0111  time ifutsrtwdkqcpmcokbazcqqiyhmnbwrfvzdtd
+alert/log Channel42 0o356 Integrated_Standby_Instrument_System data:0100100010010000000 I time qlgavcipfibwwkwatmbibwqlcicrkltvmjoagaaochyjcuiwwsvmzcjfxtdivjtvofuyrxijnleajte
+log Channel16 0o277 Hydraulic_Electrical_Generator_Control_Unit Encoding:DISC  time ppfcfcpyuifyijsilobxjbconlzvxd
+log Channel36 0o355 Probes_Heat_Computer bits[16:20)=010 I time pwgovsnsohoxrovgxqwutwnhwpjmccxxfykxntqehyggdgmzhurydpifpzvakubkflsmlyccesmjfkugx
+alert/log Channel29 0o355 Fire_Detection_Unit bits[11:15)=110  dvuxbcextedhsuggdlpfft
+alert Channel28 0o356 Bleed_Air bits[24:27)=01 I ymrelwadnvjvgvjlxnqbhmkpksqndfyvinuxvkqibjkzcmjewfwk
+log Channel23 0o275 Flight_Control_Computer bits[25:27)=1 C time 
+log Channel44 0o243 Head-Up_Display_Computer Encoding:BNR I mnquiguezvnoxwjsdkiwmjdaichrctqxqsmdekrncnwwqgggdjjenthllabfpicxmhwcbicd
+alert Channel39 0o277 Electronic_Engine_Control_(EEC)_Channel_A data:0010011010000000000  time nwpexrqbxljqhuothwgssyfhvhtfmblkqulyvsvavmyswawvalftwndezpaeojhlaobkrfekhxwevjvjyfx
+alert/log Channel29 0o176 ADIRS_Air_Data_Module_0E6 Encoding:BNR I time yjfblypc
+log Channel46 0o342 Flight_Management_Computer bits[14:21)=010101  time 
+alert/log Channel13 0o170 Fuel_Unit_Management_System I time rzjtchzkdftiicygjjelwiuutfztedrckx
+alert/log Channel23 0o355 Generator_Control_Unit bits[14:24)=000101011  gnzdhrqueoofnsfpuphxxfasyqnxdumjulmaacylyikovecinxncypndpvnon
+alert Channel20 0o62 Weight_and_Balance_System Encoding:BCD  time zwruigwwykwmdkxrknsqbvbphpseaeastaizmbmnwdddikxejcdeaxpxxihyrxajoyomlsvujoaskyirsrjurbrolfrsd
+alert/log Channel19 0o277 Vacuum_System_Controller data:0011100001001110010 I k
+alert/log Channel32 0o375 Brake_Temperature_Monitor_Unit 00 C time uguzzxxxyqqmrvbvegyuxkkkvbimxhrjzqgvsdxqrppjaazyqofsl
+alert Channel33 0o377 Angle_of_Attack_Sensor Encoding:DISC  time pwvk
+alert Channel27 0o277 Electronic_Engine_Control_(EEC)_Channel_B Encoding:DISC 00  pahqahkrrxatjtxfczmbvxzklmmomwbwdukxmshtrupswikpkotypkzqlcfcfnngrfmbqnvgrvfwwtrdyarerludgbpfii
+alert Channel41 0o277 ADS-B_Link_Display_Processor_Unit_(LPDU) bits[24:26)=0  mqzcskxevwagjniigosseobkzmfvalfhqqxxeuezkiwkojkskulvpjsqbwuzrznvgeapljiugrsystyabpvhnzrouxfqrggbhtn
+alert Channel45 0o214 
+log Channel12 0o243 Electrical_Contractor_Management_Unit Encoding:BNR I uluzplxxevwbdruvvqtjejbjuanigyhseyiojkottlhmqgglyvnnfjaivpizpatczxxxlmhyudsnpf
+alert Channel38 0o375 Center_of_Gravity_Control_Computer Encoding:BNR I time fchmntclwzxgewlpjzjknxkueoxlrbrqdzdhlpvgumjdhxat
+alert/log Channel4 0o371 PVS_Control_Unit data:274.0  time yzmfmsumlvzswxnrblsqbxnihtnyhrrntvlijmszguobfymjbzygojyevbkxcmmhlyycbfumvansleoghqzgyic
+log Channel42 0o145 FCC_Controller bits[12:27)=00011001111010 C 
+alert/log Channel28 0o216 Cockpit_Voice_recorder bits[20:25)=0011  cxvukqtveulzrzrpggtwdxnbajtymksopvzinwqtxrohaxkjsdxgylurkluztibrlnbnsiprjjxxmdsbaml
+log Channel28 0o277 Flight_Data_Interface_Unit bits[18:20)=1 I time mspnqdelndqsmoayxuogreuubwb
+alert/log Channel27 0o356 APU_Controller data:0100011110110101100  time nuacidlruznnwbxcdrkqepfhzuzxsujvistpaynppojopvgmqhmgjjwqywbwzqfsmohgb
+log Channel43 0o362 TACAN bits[16:18)=1 C wzazvxtfkcjaegzwpthpiewsjffxlkryboojvjzzdxqqrwhpkwvrupuubggrm
+alert Channel29 0o377 Bus_Control_Unit  axmejigwgprnlfnv
+alert/log Channel45 0o222 Airborne_VOR_Receiver_ data:-68.9  time mjlszic
+alert Channel20 0o277 Aircraft_Interface_Unit data:1110011100010100010 I time mshxqsjwitegvvinqnprbzjdrpkjsiz
+log Channel6 0o214 VDR bits[18:27)=00111011  
+log Channel19 0o275 ATC_Transponder 00 time 
+alert/log Channel15 0o216 Audio_Control_Panel data:0010011100100111101 C vqtrgturfwtpmtiaiebatszomgktrgmudngwpaifvvpryzqgqcmqszunyxo
+alert Channel33 0o356 Electronic_Engine_Control_(EEC)_Channel_A bits[22:24)=0 C time lxzcngdczmugulyymprdzkikobhvzadcylgkyyykxqgvhqpcmwqujbevbzujfxkwzijsundjnymtdzpjaafvgbvssb
+alert/log Channel3 0o214 Electronic_Engine_Control_(EEC)_Channel_B data:1100001110001010110 I stbondddqpetiodhlqyeuqqzomnzowaspvrxkihliifgngqqjubtjhlpnrntq
+log Channel25 0o214 Aircraft_Interface_Unit 00 I 
+alert/log Channel1 0o371 Special_Fuel_Quan._Sys. data:154.0  exkchtcksddztrwyvemofkyivdatixnkewdeyslwhggqzmgpkvnsqrhfzfvzextxezoiypgx
+log Channel12 0o242 FMC_Controller data:0o237 I 
+alert Channel37 0o331 Inertial_Reference_System Encoding:BNR 00 I hhfayficdfmoszzxpqbvodfvcwvhkpezkccmfmazxcjrxihjldnawoyqdplbmogfvquxrcznrvvfysudtatxlehshflodnfq
+alert Channel9 0o371 Ground_Power_Control_Unit Encoding:BNR I time hiacpmhdji
+alert Channel14 0o151 Microwave_Landing_System bits[21:23)=0 I zjwdnywreaotldevxsdvwowhoebiflobavmmjwhzoukyzunnirthzcjievvolkmsjayddmawttjwdeuflgjfptxpqhmfnp
+alert Channel29 0o356 Pneumatic_Overheat_Detection_Unit data:0111110000110000101 C mctgucqhelnojtocbierafabspzrdmppxjmdututjxrh
+alert Channel22 0o375 Power_Supply_Module bits[14:26)=01010100111 C time lbhgnxdozsyombndxdoptmkdjblryhantziaszrlarqwcbqrxiejxqbg
+alert/log Channel46 0o377 Audio_Entertainment_System_(AES)_Controller bits[17:27)=100101111 C time nwrljtqkywzettcgnsjrmtjxeryjgtehqdhnttjrqmvounjsourdvrdesuiqbjovqjavfklkwdkkxpaojzwgipxeqacnojsczsmb
+alert/log Channel19 0o355 Integrated_Static_Probe Encoding:DISC 00  tfqxutsqnxojhknnrosugewgxllbszhzwxypqahqqjamkadryucdmdbrvjmuigsiubzqabkvzzpvifckfsv
+log Channel44 0o277 APU_Controller bits[16:27)=0110100001  
+alert/log Channel18 0o242 Airborne_VOR_Receiver_ bits[23:25)=0  time kxsiiyeqdnnolxoxwvbpljpzxvjyuijehsztskunankqzmmigeqadaxkbkfvyywnwdunomgahlpv
+alert/log Channel22 0o216 
+alert Channel37 0o371 Electronic_Engine_Control_(EEC)_Channel_A bits[12:22)=111011011 I time jmmdcdyclvufhcbjvjyefblkqtnzkkukslgnhnbpavawdkyagyjfxaslwyhegzoxdqzwzfzfgbkhmxnpmh
+alert Channel1 0o277 Flight_Mgmt_Guidance_Env_Comp Encoding:DISC 00 I time ghjvzmftqekyvqvymcel
+log Channel18 0o216 APU_Controller Encoding:DISC 00 C time 
+log Channel12 0o355 AIMS_Gen._Pur._Bus_num3 bits[13:26)=011111001001 I time 
+log Channel42 0o355 Fuel_Management_Computer data:0010100000100111101  
+alert/log Channel11 0o216 Landing_Gear_Position_Interface_Unit bits[20:22)=0 C megwrywfpwtrymfmnpxwaxjhbkxlgkohqglaxlektkctdgqxfbbtporldnpcmdadhponcmikmujezqahmlamjllybhqfr
+alert Channel34 0o271 Propulsion_Discrete_Interface_Unit bits[25:27)=0  vkwkzowfhlaqdmzffbgmctjnotfznkzcewrtimficrmzvpumqlrrgceqsnncpilvrjrqyxhnakiinbpahcmkaddehbrfm
+alert Channel34 0o377 Electronic_Spoiler_Control_Unit bits[19:25)=01011  mglnsirerkilypgvkzwnjrwbcjtkqqlizlicvweqxpgnhbncntavoxhjsjtthnzepolmuarlqkxahqfsntxvzis
+alert Channel39 0o375 Audio_Management_System Encoding:BNR C time lplfqvnnpeq
+alert/log Channel10 0o377 AIMS_EFIS_Control_Panel data:0001000110100110001  time jivttfnydexnzhyzewqosgxrchvsgzebmremcjciouhbtx
+log Channel35 0o214 Probes_Heat_Computer bits[11:24)=111110110100 C 
+alert Channel28 0o171 AMU_(A320) bits[12:19)=011111  time hskkkeyrajlwqukuqtfwcfpsutmvhkpmvolwjibccpggmboyjbhufysr
+log Channel36 0o376 Audio_Management_System bits[17:21)=100 I 
+alert Channel8 0o214 Weight_and_Balance_System data:1000111111010110011 I zjfpgzglqjjqemivzynelgelktxtqedv
+alert/log Channel40 0o270 VDR data:0011110011000111011  qrfoexliljnzfptcfhzysjxkghowudkmzjbfdcruqcqbkenppftxeuguovsmkrzqhzogxuhfdvakcltqhvp
+alert Channel19 0o377 Surface_Position_Digitizer bits[17:27)=011011000  time ncobopfkxnmcjsijmzincsnmskmbyakwyvripdlsh
+alert/log Channel5 0o371 APU_Controller bits[12:17)=1010 I time afipengfgggugrlcwvjdmpqkxriyvygbfrgtzqatracxaveyjkmgaqxjofrvhjswqskcfjnkoyivrsvvpkmviqo
+alert Channel8 0o214 Radio_Altimeter Encoding:DISC 00 time mfmjkmihsmrnwrejcfkposxkjgkyehmiujhnqlammmeyqdfwdavcfwctt
+log Channel9 0o260 Propulsion_Multiplexer_(PMUX) data:960.0  xedpjrtvczaltmqbqdjrewszgooexylhphwwc
+log Channel29 0o243 Passenger_Entertainment_Sys_Main_MUX 00 C time noshdydhggghuaz
+log Channel28 0o243 AMU_(A320) Encoding:BNR C wikctvzpbtrewrnkunwqrtbcdydqtydhqshnhrcwi
+log Channel24 0o371 Stall_Warning_Card Encoding:BNR 00 C time sumwqmlbddxhhfhtvndkbaethpybmhbimjcuqrutcmbsniknxpgqvyrptnuhgowoff
+log Channel36 0o371 Eng_Interface_Vibration_Monitoring_Unit data:101.0  time 
+log Channel33 0o310 Fuel_Qty._Indicating_System Encoding:BNR  
+alert Channel44 0o76 Weight_and_Balance_System bits[18:20)=1  time wcgvqqlis
+alert/log Channel21 0o173 Engine_Instrument_System Encoding:BNR I time lvoqzulmwzxunmcvoryiwyfhntsfggfqnszomsjssldmecdjdwsycqifygkvim
+log Channel26 0o214 AIMS_Gen._Pur._Bus_num1 00 C time 
+alert/log Channel15 0o276 Fuel_Qty._Indicating_System data:174.43 I kvrtaperdxumtmxnmvxfymlozsyutfmqjcbbnomrsnfupbmnvbipdsqvnrhmrvgqjpxwtnqht
+alert Channel40 0o214 Main_Electrical_System_Controller bits[12:22)=001110011 I xbzqrukzmkyssnsjbowbqopxlcpwlvirwzcwuyelatxwohwvlmbdtguyzutou
+alert/log Channel31 0o375 Audio_Control_Panel data:0.00077 C time hicclbswcgmqufkwncalovkxdceracjamggdjyhf
+alert Channel7 0o375 Fire_Detection_Unit Encoding:BNR 00 C ysz
+alert/log Channel36 0o277 Data_Link_Control_and_Display_Unit bits[11:20)=01000101 C swrpbayozqpfrqfchlylghlsvcznyggnxfrclyxdrrokbsfevvwistupxzcyinixnkrrilteu
+alert/log Channel45 0o214 Cargo_Bay_Conditioning_Card data:1010111010001011000  time kmmdkskjblmstjkpsmdrkvyupn
+alert/log Channel17 0o371 Circuit_breakers_Monitoring_Unit bits[15:23)=1101101  ouvkjmkekbfkxhqbkfkbhxn
+log Channel44 0o214 Weight_and_Balance_System data:1111001111111001101 I 
+alert/log Channel27 0o377 Electronic_Engine_Control_(EEC)_Channel_B data:1001000100010101011  time grjgaqxfuyviv
+alert Channel17 0o131 TCAS bits[15:22)=111110 I hfnkngvkcrjgoy
+alert/log Channel37 0o214 Electronic_Engine_Control_(EEC)_Channel_A Encoding:DISC  time rdtjfqgodoeuwvgygnmhnpsodsbsoqbszjkqjclnvyxxazuhmjnrkglfnochwqxbavsmvd
+log Channel21 0o216 Yaw_Damper_Module data:1110000101100000000  fgawjntjx
+log Channel16 0o304 Flight_Control_Computer data:1101011110101011100 I time 
+alert/log Channel14 0o371 Microwave_Landing_System bits[24:27)=00  fupxnzchqflhhnbronltxeftxwvhrvhguxzlgjawbfgcqdcqjckvuphprgmaghbrcvakysbogaycilibfxqmvyodvyj
+alert Channel26 0o355 Full_Authority_Engine_Control_(P&W) 00 I nkpbeobdewpntmvqwdemhncrryxwvylacjacjacfxscpdltuwwczyypgkotlsxusslegbdnjmrcvjd
+alert Channel20 0o243 Versatile_Integrated_Avionics_Unit Encoding:BNR 00 time cjqkavfnnxgavyvbrykrtshmkvvjjtymn
+alert Channel21 0o316 Engine_Instrument_System data:1800.0 00 time rmw
+alert/log Channel17 0o355 Proximity_Sensor_Control_Unit Encoding:DISC I time pusaedewotyjxxozzchugxiysiiqtgbivutvlceqgzipitlhjackguxlfuzfiawbezuimfdjksqrrhbkfuhzkqyucazojosvb
+alert/log Channel45 0o356 Brake_Steering_Unit Encoding:DISC 00 C time dzogxuvhxqhspojzhhvzlnalnowzgzogimrghzikseuwveemxptgslzsxwsgjcmdtampzfwrdolbxc
+alert Channel16 0o355 Fuel_Quantity_Gauging_Unit Encoding:DISC  time zculvncrxpduhyzavtkwtmnyupheocflxuhmpwznezsrqldvzfigbohixmxheb
+log Channel7 0o214 AIMS_Gen._Pur._Bus_num3 bits[22:27)=0000 C time 
+alert Channel38 0o377 Cargo_Bay_Conditioning_Card data:0000010010011111000 C umwhpnqbkmajdkyutxwalmgllmuaoxhzgxpwnvgxtbkqweitddjhqtyjucogwlygwiavxkjklmpmskmpspudobvaqebvsquyhpt
+alert Channel47 0o376 Audio_Control_Panel bits[11:26)=00001100010010 I time zskjrlipcvqdmhfeg
+alert Channel9 0o243 Audio_Management_System  I ildrcyvjfccfkpwminrrkdtcltsrxdqpl
+log Channel45 0o267 Perf._Nav._Computer_System bits[20:25)=1100  time oeedrxbpwzlahaiiufsmyjtedywqnqxwlvrqfbtfjzbiskidqanenskfftbitvtzflzzbvcrkvvc
+alert/log Channel2 0o355 Cockpit_Voice_recorder bits[21:25)=010  wexlwrxbcluzisjgzufgmozsoptmkquidhahhbpizhksiahpalefhwuhaemntlfgdum
+alert/log Channel7 0o243 Data_Link_Control_and_Display_Unit bits[21:27)=01010 I rodmrnmplngncwxafinpfrmvvqqghfjfgypkineele
+alert Channel35 0o243 
+alert/log Channel10 0o216 Engine_Instrument_System I cvxnmbwezbtmsauijqrispgnvlarohzreoulsykfjvjb
+alert Channel12 0o216 A/P_&_F/D_Mode_Control_Panel_ data:0000000110000011111 C time yfoqvumvtyvdphexshhphmfqqpcjbktdxgvhsqpunnysrvmvkpzerhucvhnubrikksfojdrobnwoex
+alert/log Channel36 0o277 Stabilizer_Trim_Module Encoding:DISC 00 I bwhwaeooqsjfrmn
+log Channel36 0o325 Fuel_Unit_Management_System Encoding:BNR  qrecpdrxqeefrtzuqwxpmphwsgtbintclsfqldvbjlphljwuuptlqfdbomujcuennrzsudpuugcbzileka
+log Channel34 0o270 Inertial_Reference_System 00  
+log Channel39 0o216 Windshear_Computer_(Sperry) Encoding:DISC 00 time nenjfpwasstdrxhnazuknipomklnzcadsxnoartuvmdmzmphormjvqdcqmnafkyajdevnoyfmkimzcrdlproedlmdgrwqp
+log Channel36 0o325 TCAS_Control_Panel C time xjlzeccfhmwjnnoknswxzbqtjcaloqeygdkdemosbmyrbwrgrnapmfqsrljwccry
+alert Channel10 0o147 TACAN bits[14:16)=0 I time ewxyzwbcmizoxsycmhzilbrwtnszjsqdqwkbzuvcemksczrydg
+alert/log Channel5 0o216 Anti-Skid_System data:1101010001001101010 C time ghdjdnbgrysmpgacphboaomiaz
+alert Channel7 0o243 Air_Traffic_Service_Unit bits[18:24)=00110  time tloekilarsyuppekeewzywnreqozscmd
+alert Channel19 0o216 Window_Heat_Computer Encoding:DISC 00 I kjkvrn
+log Channel11 0o214 Air_Traffic_Service_Unit data:0001001110110110011 C vlzyvkyzuwmybrmlabnxjnlxdunzfyhljpmqlwmhxkdkakflbklggivgpglzdrgcemxwofxpzaov
+log Channel2 0o216 ATC_Transponder bits[21:26)=1001 I time 
+log Channel2 0o243 Display_Unit 00 time biodkcihycrjpdedfetxjgcxutbzyzeyqjqqrokzpyzclxpatspiatmraababoirsmys
