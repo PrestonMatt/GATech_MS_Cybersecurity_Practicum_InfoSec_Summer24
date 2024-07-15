@@ -106,7 +106,7 @@ class arinc429_RX_Helpers():
         #print(slowdown_rate)
         #sleep(slowdown_rate)
         voltage = channel.get_voltage()
-        print(f"Voltage sampled: {voltage}")
+        #print(f"Voltage sampled: {voltage}")
         return(voltage)
 
     def visualize_LRU_receiveds(self, channel, fig_title="Receive Data", sample_rate=5e-7):
