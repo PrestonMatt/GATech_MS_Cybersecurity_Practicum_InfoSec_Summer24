@@ -77,6 +77,8 @@ From NIST Special Publication 800-207, there are seven basic tenets of zero trus
 - D. De Santo, C.S. Malavenda, S.P. Romano, C. Vecchio, “Exploiting the MIL-STD-1553 avionic data bus with an active cyber device.” Computers & Security, Volume 100, 2021, 102097, ISSN 0167-4048, https://doi.org/10.1016/j.cose.2020.102097. (https://www.sciencedirect.com/science/article/pii/S0167404820303709) 
 - Gilboa-Markevich, N., Wool, A. (2020). “Hardware Fingerprinting for the ARINC 429 Avionic Bus.” In: Chen, L., Li, N., Liang, K., Schneider, S. (eds) Computer Security – ESORICS 2020. ESORICS 2020. Lecture Notes in Computer Science(), vol 12309. Springer, Cham. https://doi.org/10.1007/978-3-030-59013-0_3  
 - Kiley, Patrick. “Investigating CAN Bus Network Integrity in Avionics Systems.” Rapid7, 30 Jul. 2019, https://www.rapid7.com/research/report/investigating-can-bus-network-integrity-in-avionics-systems/
+- Matthews, Bryan. "Flight Data for Tail 687." DASHlink, National Aeronautics and Space Administration, 4 Dec. 2012, https://c3.ndc.nasa.gov/dashlink/resources/664/
+- "DLH754, Leg 2, 2024-07-02." ADS-B Exchange, adsbexchange.com, Last Accessed: 15 Jul. 2024, Published: 2 Jul. 2024 https://globe.adsbexchange.com/?icao=3c4b35&lat=40.621&lon=52.094&zoom=4.7&showTrace=2024-07-02&leg=2
 
 ## Floating Research Links that are also helpful:
 
