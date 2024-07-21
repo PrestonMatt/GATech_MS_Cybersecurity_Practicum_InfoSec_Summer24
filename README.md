@@ -111,3 +111,4 @@ https://youtu.be/y04ax1ywRq4?si=4AYWsDZ_-O31drAP
 - https://www.ueidaq.com/uploads/dnx-429-516-manual.pdf
 - https://c3.ndc.nasa.gov/dashlink/resources/664/
 - https://www.govinfo.gov/content/pkg/FR-2024-02-20/pdf/2024-03254.pdf
+- https://content.instructables.com/FP6/557Q/GMJT3SUG/FP6557QGMJT3SUG.pdf
