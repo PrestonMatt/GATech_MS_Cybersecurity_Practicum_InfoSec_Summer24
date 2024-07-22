@@ -55,7 +55,11 @@ From NIST Special Publication 800-207, there are seven basic tenets of zero trus
 4. “Access to resources is determined by dynamic policy—including the observable state of client identity, application/service, and the requesting asset—and may include other behavioral and environmental attributes.” This is addressed similarly as tenet 2, with the rules-based IDS system that I will implement, itself can changed based on needs of the operators.   
 5. “The enterprise monitors and measures the integrity and security posture of all owned and associated assets.” As part of the IDS, monitoring of the bus is required. However, it will not continuously monitor LRUs continuously for vulnerabilities in their software.  
 6. “All resource authentication and authorization are dynamic and strictly enforced before access is allowed.” This will not be addressed by my model or defenses.  
-7. “The enterprise collects as much information as possible about the current state of assets, network infrastructure and communications and uses it to improve its security posture.” I plan to incorporate logging bus traffic as part of the defense functionality.  
+7. “The enterprise collects as much information as possible about the current state of assets, network infrastructure and communications and uses it to improve its security posture.” I plan to incorporate logging bus traffic as part of the defense functionality.
+
+## Final Presentation:
+https://youtu.be/y04ax1ywRq4?si=4AYWsDZ_-O31drAP
+
 ## Citations:
 - Gilboa-Markevich, N., Wool, A. (2020). Hardware Fingerprinting for the ARINC 429 Avionic Bus. In: Chen, L., Li, N., Liang, K., Schneider, S. (eds) Computer Security – ESORICS 2020. ESORICS 2020. Lecture Notes in Computer Science(), vol 12309. Springer, Cham. https://doi.org/10.1007/978-3-030-59013-0_3
 - D. De Santo, C.S. Malavenda, S.P. Romano, C. Vecchio, “Exploiting the MIL-STD-1553 avionic data bus with an active cyber device.” Computers & Security, Volume 100, 2021, 102097, ISSN 0167-4048, https://doi.org/10.1016/j.cose.2020.102097. (https://www.sciencedirect.com/science/article/pii/S0167404820303709) 
@@ -107,3 +111,4 @@ From NIST Special Publication 800-207, there are seven basic tenets of zero trus
 - https://www.ueidaq.com/uploads/dnx-429-516-manual.pdf
 - https://c3.ndc.nasa.gov/dashlink/resources/664/
 - https://www.govinfo.gov/content/pkg/FR-2024-02-20/pdf/2024-03254.pdf
+- https://content.instructables.com/FP6/557Q/GMJT3SUG/FP6557QGMJT3SUG.pdf
