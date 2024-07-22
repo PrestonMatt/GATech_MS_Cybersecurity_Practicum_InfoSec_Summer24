@@ -237,6 +237,7 @@ class flight_management_computer:
                 self.scheduler_mode(second_word, 20_000_000) # send 20 sec later
                 self.scheduler_mode(third_word, 20_000_000) # send 20 sec later
         if(direction.lower() == "w"):
+            word_bitStr, _ = self.communication_chip.make_label_for_word(0o067)
             # SDI = 11
             word_bitStr += "11"
 
@@ -259,6 +260,7 @@ class flight_management_computer:
             # calculate parity
             word_bitStr += self.calc_parity(word_bitStr)
         if(direction.lower() == "s"):
+            word_bitStr, _ = self.communication_chip.make_label_for_word(0o067)
             # SDI = 11
             word_bitStr += "11"
 

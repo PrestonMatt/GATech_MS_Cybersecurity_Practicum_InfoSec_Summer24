@@ -5497,8 +5497,6 @@ class arinc429_intrusion_detection_system:
 
     def BCD_digs(self, value, res: float) -> str:
 
-        # TODO add handling for special cases for BCD
-
         #SDI = "00"
         #SSM = "00"
         #if(value < 0):

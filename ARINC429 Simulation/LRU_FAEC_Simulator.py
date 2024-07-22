@@ -141,6 +141,15 @@ class full_authority_engine_control:
             else:
                 self.serial_no = upper_half
             """
+        elif label == 0o067:
+            if(word[19:22] == "1111"):
+                print("Thrust pushing plane right.")
+            if(word[23:26] == "1111"):
+                print("Thrust pushing plane left.")
+            if(word[27:29] == "111" or word[10:14] == "1111"):
+                print("Thrust pushing plane forward.")
+            if(word[27:29] == "000" or word[10:14] == "0000"):
+                print("Thrust pushing plane backwards.")
         elif label >= 0o270 and label <= 0o275: # Discrete Data #1-6, DISC
             """ # save this for later
             # Discrete Data #2, DISC
