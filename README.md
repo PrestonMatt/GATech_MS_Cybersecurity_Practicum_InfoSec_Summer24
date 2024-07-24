@@ -60,6 +60,9 @@ From NIST Special Publication 800-207, there are seven basic tenets of zero trus
 ## Final Presentation:
 https://youtu.be/y04ax1ywRq4?si=4AYWsDZ_-O31drAP
 
+## Final Report:
+See: "\Documentation\Final Report\Matthew_Preston_Practicum_Paper_Final_Draft.pdf"
+
 ## Citations:
 - Gilboa-Markevich, N., Wool, A. (2020). Hardware Fingerprinting for the ARINC 429 Avionic Bus. In: Chen, L., Li, N., Liang, K., Schneider, S. (eds) Computer Security – ESORICS 2020. ESORICS 2020. Lecture Notes in Computer Science(), vol 12309. Springer, Cham. https://doi.org/10.1007/978-3-030-59013-0_3
 - D. De Santo, C.S. Malavenda, S.P. Romano, C. Vecchio, “Exploiting the MIL-STD-1553 avionic data bus with an active cyber device.” Computers & Security, Volume 100, 2021, 102097, ISSN 0167-4048, https://doi.org/10.1016/j.cose.2020.102097. (https://www.sciencedirect.com/science/article/pii/S0167404820303709) 
